@@ -1,10 +1,13 @@
-import 'dart:async';
-
 import 'package:material_ui/material_ui.dart';
 
 import '../content/curriculum.dart';
+import '../core/routes.dart';
 import '../db/database.dart';
+import '../games/arabic_games.dart';
+import '../games/english_games.dart';
+import '../games/game_modes.dart';
 import '../games/game_screen.dart';
+import '../games/islamic_games.dart';
 import '../models/game_result.dart';
 import '../models/question.dart';
 
@@ -72,7 +75,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
         child: Padding(
           padding: EdgeInsets.all(24),
           child: Text(
-            'هيكل هذه المادة قيد الإعداد — لم يُوثَّق بعد في ملف المنهج.',
+            'هيكل هذه المادة لم يُوثَّق بعد في ملف المنهج.',
             textAlign: TextAlign.center,
           ),
         ),
@@ -82,6 +85,10 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
       _infoCard(subject),
       if (subject.conflictNote != null) _warningCard(subject),
       if (subject.adenComparison != null) _adenCard(subject.adenComparison!),
+      if (widget.subjectId == 'arabic' ||
+          widget.subjectId == 'english' ||
+          widget.subjectId == 'islamic')
+        _subjectGameCard(),
       const Padding(
         padding: EdgeInsets.fromLTRB(16, 16, 16, 4),
         child: Text(
@@ -212,9 +219,48 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     );
   }
 
-  /// يفتح أسئلة درس واحد في `GameScreen` (وضع quiz).
-  /// معرّف الدرس يطابق نمط زرع المنهج (`<subject>-u<unit>-l<lesson>`).
-  /// درس بلا أسئلة: رسالة صادقة، بلا لعبة وبلا أسئلة مخترعة.
+  /// Special game of this subject, fed by real database questions
+  /// (Arabic / English sentence building from real correct answers,
+  /// Islamic lesson-ordering from the real curriculum structure).
+  /// Each screen records its own real result.
+  Widget _subjectGameCard() {
+    late final String title;
+    late final String subtitle;
+    late final Widget screen;
+    switch (widget.subjectId) {
+      case 'arabic':
+        title = 'لعبة بناء الجمل';
+        subtitle = 'رتّب كلمات الإجابات الصحيحة من أسئلة اللغة العربية';
+        screen = const ArabicSentenceGameScreen();
+      case 'english':
+        title = 'Sentence building game';
+        subtitle = 'رتّب كلمات الإجابات الصحيحة من أسئلة اللغة الإنجليزية';
+        screen = const EnglishSentenceGameScreen();
+      case 'islamic':
+      default:
+        title = 'لعبة ترتيب الدروس';
+        subtitle = 'رتّب دروس كل وحدة بالترتيب الصحيح من المنهج';
+        screen = const IslamicOrderingGameScreen();
+    }
+    return Card(
+      margin: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+      child: ListTile(
+        leading: const Icon(Icons.extension),
+        title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
+        subtitle: Text(subtitle),
+        trailing: const Icon(Icons.play_circle_fill),
+        onTap: () => Navigator.of(context).push<void>(
+          MaterialPageRoute<void>(builder: (_) => screen),
+        ),
+      ),
+    );
+  }
+
+  /// يفتح أسئلة درس واحد: أولاً منتقي الأنماط (الأنماط الخمسة القابلة
+  /// للعب فعلاً + محاكاة الامتحان الوزاري)، ثم `GameScreen` بالنمط
+  /// المختار. درس بلا أسئلة: رسالة صادقة، بلا لعبة وبلا أسئلة مخترعة.
+  /// تُحفظ المرحلة الأخيرة عند بدء اللعبة، وتُسجَّل النتيجة كاملة
+  /// (مع معرّف الدرس وعنوانه) قبل ظهور شاشة النتيجة.
   Future<void> _playLesson(String lessonTitle, String lessonId) async {
     final List<Question> questions = await DatabaseHelper.instance
         .getQuestionsForLesson(widget.subjectId, lessonId);
@@ -230,21 +276,80 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
       );
       return;
     }
+    final String? picked = await _showModePicker(lessonTitle);
+    if (!mounted || picked == null) return;
+    if (picked == 'ministerial_exam') {
+      await Navigator.of(context).pushNamed(AppRoutes.exam);
+      return;
+    }
+    final GameModeConfig mode = modeConfigByRouteId(picked);
+    // Game start: remember this lesson as the last stage.
+    await DatabaseHelper.instance.setLastStage(lessonId, lessonTitle);
+    if (!mounted) return;
     await Navigator.of(context).push<void>(
       MaterialPageRoute<void>(
         builder: (_) => GameScreen(
-          modeRouteId: 'quiz',
+          modeRouteId: mode.routeId,
           subject: widget.subjectId,
           subjectTitleAr: lessonTitle,
           questions: questions,
-          onFinished: (GameResult result) {
-            unawaited(
-              DatabaseHelper.instance.recordGameResult(
-                result: result,
-                playedQuestions: questions,
-              ),
+          lessonId: lessonId,
+          stageId: lessonId,
+          onFinished: (GameResult result) async {
+            await DatabaseHelper.instance.recordGameResult(
+              result: result,
+              playedQuestions: questions,
+              mode: mode.routeId,
+              stageId: lessonId,
+              lessonId: lessonId,
+              lessonTitle: lessonTitle,
             );
           },
+        ),
+      ),
+    );
+  }
+
+  /// Mode picker: ONLY the 5 really playable modes, plus the
+  /// ministerial-exam entry (which opens ExamScreen). Every entry
+  /// launches a real playable game — no placeholder entries.
+  Future<String?> _showModePicker(String lessonTitle) {
+    final playable =
+        kGameModes.where((m) => m.isPlayable).toList(growable: false);
+    return showModalBottomSheet<String>(
+      context: context,
+      builder: (BuildContext context) => SafeArea(
+        child: ListView(
+          shrinkWrap: true,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
+              child: Text(
+                'اختاري نمط اللعب — $lessonTitle',
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            for (final GameModeConfig mode in playable)
+              ListTile(
+                leading: const Icon(Icons.play_circle_outline),
+                title: Text(mode.titleAr),
+                subtitle: Text(
+                  '${mode.descriptionAr}\n${mode.scoringRuleAr}',
+                ),
+                isThreeLine: true,
+                onTap: () => Navigator.of(context).pop(mode.routeId),
+              ),
+            ListTile(
+              leading: const Icon(Icons.school),
+              title: const Text('محاكاة الامتحان الوزاري'),
+              subtitle: const Text('جلسة امتحان مؤقتة كاملة — شاشة مستقلة.'),
+              onTap: () =>
+                  Navigator.of(context).pop('ministerial_exam'),
+            ),
+          ],
         ),
       ),
     );
@@ -274,33 +379,51 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
               ),
             ),
           for (int i = 0; i < unit.lessons.length; i++)
-            ListTile(
-              dense: true,
-              leading: CircleAvatar(
-                radius: 13,
-                backgroundColor: widget.color.withValues(alpha: 0.15),
-                child: Text(
-                  '${i + 1}',
-                  style: TextStyle(fontSize: 12, color: widget.color),
+            if (allowPlay)
+              ListTile(
+                dense: true,
+                leading: CircleAvatar(
+                  radius: 13,
+                  backgroundColor: widget.color.withValues(alpha: 0.15),
+                  child: Text(
+                    '${i + 1}',
+                    style: TextStyle(fontSize: 12, color: widget.color),
+                  ),
+                ),
+                title: Text(unit.lessons[i]),
+                trailing: const Icon(Icons.play_circle_outline),
+                onTap: () => _playLesson(
+                  unit.lessons[i],
+                  '${widget.subjectId}-u${unit.number}-l${i + 1}',
+                ),
+              )
+            else
+              // Variant lesson rows are NOT tappable: plain text, never
+              // a silent ListTile that looks tappable but does nothing.
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 16, vertical: 6),
+                child: Row(
+                  children: <Widget>[
+                    CircleAvatar(
+                      radius: 13,
+                      backgroundColor: widget.color.withValues(alpha: 0.15),
+                      child: Text(
+                        '${i + 1}',
+                        style: TextStyle(fontSize: 12, color: widget.color),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(child: Text(unit.lessons[i])),
+                  ],
                 ),
               ),
-              title: Text(unit.lessons[i]),
-              trailing: allowPlay
-                  ? const Icon(Icons.play_circle_outline)
-                  : null,
-              onTap: allowPlay
-                  ? () => _playLesson(
-                        unit.lessons[i],
-                        '${widget.subjectId}-u${unit.number}-l${i + 1}',
-                      )
-                  : null,
-            ),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
             child: Text(
               allowPlay
                   ? 'اضغطي على أي درس لبدء أسئلته.'
-                  : 'أسئلة هذه النسخة البديلة قيد الإعداد.',
+                  : 'لا تتوفر أسئلة لهذه النسخة البديلة — المعروضة للاطلاع فقط.',
               style: const TextStyle(color: Colors.grey),
             ),
           ),
@@ -356,8 +479,13 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
           '${lessons.length} درساً — ${alt['note'] ?? ''}',
         ),
         children: <Widget>[
+          // Non-tappable reference rows: plain text, never a ListTile.
           for (final dynamic lesson in lessons)
-            ListTile(dense: true, title: Text(lesson.toString())),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+              child: Text('• ${lesson.toString()}'),
+            ),
         ],
       ),
     );
@@ -377,7 +505,11 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
                   style: const TextStyle(fontStyle: FontStyle.italic)),
             ),
           for (final String item in items)
-            ListTile(dense: true, title: Text('• $item')),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+              child: Text('• $item'),
+            ),
         ],
       ),
     );
