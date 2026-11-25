@@ -8,6 +8,7 @@ class AppRoutes {
   static const String home = '/';
   static const String worlds = '/worlds';
   static const String labs = '/labs';
+  static const String lab = '/lab';
   static const String dailyChallenge = '/daily';
   static const String exam = '/exam';
   static const String analytics = '/analytics';
