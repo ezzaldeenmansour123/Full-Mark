@@ -888,6 +888,38 @@ class DatabaseHelper {
     );
   }
 
+  /// كل صفوف الإنجازات (للنسخ الاحتياطي — تُحفظ حالات القفل أيضاً).
+  Future<List<Map<String, Object?>>> getAllAchievements() async {
+    final Database db = await database;
+    return db.query(tableAchievements, orderBy: 'id ASC');
+  }
+
+  /// كل صفوف قائمة المراجعة (للنسخ الاحتياطي) — كل الصفوف، ليست
+  /// المستحقة فقط.
+  Future<List<Map<String, Object?>>> getAllReviewItems() async {
+    final Database db = await database;
+    return db.query(tableReviewQueue, orderBy: 'question_id ASC');
+  }
+
+  /// كل صفوف نتائج الامتحانات (للنسخ الاحتياطي).
+  Future<List<Map<String, Object?>>> getAllExamResults() async {
+    final Database db = await database;
+    return db.query(tableExamResults, orderBy: 'finished_at ASC');
+  }
+
+  /// كل صفوف التقدّم (للنسخ الاحتياطي).
+  Future<List<Map<String, Object?>>> getAllProgressRows() async {
+    final Database db = await database;
+    return db.query(tableProgress, orderBy: 'id ASC');
+  }
+
+  /// كل مفاتيح app_meta مع وقت تحديثها (للنسخ الاحتياطي — تُستعاد
+  /// منها مفاتيح الإعدادات المسموحة فقط، انظر lib/core/backup.dart).
+  Future<List<Map<String, Object?>>> getAllAppMeta() async {
+    final Database db = await database;
+    return db.query(tableAppMeta, orderBy: 'key ASC');
+  }
+
   /// عدد محاولات اليوم (من منتصف الليل المحلي) لوضع لعب معيّن.
   Future<int> getTodayAttemptsCountForMode(String mode) async {
     final Database db = await database;

@@ -133,8 +133,8 @@ CREATE TABLE IF NOT EXISTS stages (
   mode            TEXT NOT NULL CHECK (mode IN (
                       'quiz', 'time_race', 'unlock', 'complete_equation',
                       'lab', 'aim', 'memory_match', 'true_false',
-                      'link_concepts', 'boss', 'smart_memory',
-                      'ministerial_exam')),
+                      'link_concepts', 'concept_match', 'boss',
+                      'smart_memory', 'ministerial_exam')),
   title_ar        TEXT NOT NULL,
   sort_order      INTEGER NOT NULL DEFAULT 0,
   question_count  INTEGER NOT NULL DEFAULT 10 CHECK (question_count >= 1),
