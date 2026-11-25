@@ -14,6 +14,7 @@ import 'screens/analytics_screen.dart';
 import 'screens/daily_challenge_screen.dart';
 import 'screens/exam_screen.dart';
 import 'screens/home_screen.dart';
+import 'screens/lab_detail_screen.dart';
 import 'screens/labs_screen.dart';
 import 'screens/placeholder_screen.dart';
 import 'screens/review_screen.dart';
@@ -132,6 +133,24 @@ class _AbqariyaAppState extends State<AbqariyaApp> {
           settings: settings,
           builder: (_) => const LabsScreen(),
         );
+      case AppRoutes.lab:
+        final LabDetailScreen? labScreen =
+            LabDetailScreen.fromRoute(settings.arguments);
+        if (labScreen == null) {
+          return MaterialPageRoute<void>(
+            settings: settings,
+            builder: (_) => const PlaceholderScreen(
+              args: PlaceholderArgs(
+                title: 'المختبر غير موجود',
+                subtitle: 'تحقق من معرّف المختبر وحاول مجددًا.',
+              ),
+            ),
+          );
+        }
+        return MaterialPageRoute<void>(
+          settings: settings,
+          builder: (_) => labScreen,
+        );
       case AppRoutes.dailyChallenge:
         return MaterialPageRoute<void>(
           settings: settings,
@@ -169,7 +188,7 @@ class _AbqariyaAppState extends State<AbqariyaApp> {
         final Object? args = settings.arguments;
         final PlaceholderArgs placeholderArgs = args is PlaceholderArgs
             ? args
-            : const PlaceholderArgs(title: 'قيد الإعداد');
+            : const PlaceholderArgs(title: 'الصفحة غير موجودة');
         return MaterialPageRoute<void>(
           settings: settings,
           builder: (_) => PlaceholderScreen(args: placeholderArgs),
