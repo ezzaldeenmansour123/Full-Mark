@@ -38,7 +38,7 @@ class QuestionPacks {
   /// Assets skipped by the last [loadAll] call (missing file, corrupt
   /// JSON, demo pack, or a pack without id/source) — reported to the
   /// user via the home banner instead of being silently dropped.
-  static List<String> lastSkippedAssets = <String>[],
+  static List<String> lastSkippedAssets = <String>[];
 
   static const List<String> packAssets = <String>[
     'assets/data/questions/chemistry.json',
