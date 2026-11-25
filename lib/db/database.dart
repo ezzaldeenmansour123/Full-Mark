@@ -115,7 +115,6 @@ class DatabaseHelper {
     int legacyCorrect = 0;
     int legacyXp = 0;
     int legacyReview = 0;
-    int legacyAchievements = 0;
     int playerXp = 0;
     int playerStars = 0;
     String? lastStageId;
@@ -141,7 +140,7 @@ class DatabaseHelper {
         final List<Map<String, Object?>> settingsRows = await db.query('settings');
         for (final Map<String, Object?> row in settingsRows) {
           legacySettings[row['key'] as String] =
-              (row['value'] as Object?)?.toString() ?? '';
+              row['value']?.toString() ?? '';
         }
         final List<Map<String, Object?>> progressRows =
             await db.query('progress', limit: 1);
@@ -164,7 +163,6 @@ class DatabaseHelper {
             await db.query('achievements');
         legacyAchievementIds.addAll(
             achRows.map((Map<String, Object?> r) => r['id'] as String));
-        legacyAchievements = legacyAchievementIds.length;
         final List<Map<String, Object?>> reviewRows =
             await db.rawQuery('SELECT COUNT(*) AS c FROM review_queue');
         legacyReview = (reviewRows.first['c'] as int? ?? 0);
