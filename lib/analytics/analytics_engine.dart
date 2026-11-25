@@ -1,4 +1,4 @@
-// ABQARIYA — AnalyticsEngine: pure local analytics logic.
+// FULL MARK — AnalyticsEngine: pure local analytics logic.
 // Input is real attempt data passed in by the caller (from local storage).
 // Honesty rules:
 //  - Fewer than 5 attempts overall -> "insufficient data" (see
