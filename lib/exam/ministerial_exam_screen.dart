@@ -1,4 +1,4 @@
-// ABQARIYA — MinisterialExamScreen: real exam UI wired to ExamSession.
+// FULL MARK — MinisterialExamScreen: real exam UI wired to ExamSession.
 // Timed session, question navigation, mark-for-review, submit,
 // auto-grading, per-question review with explanations.
 // Demo exams are labelled "محاكاة تجريبية" — never presented as a real

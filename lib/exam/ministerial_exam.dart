@@ -1,4 +1,4 @@
-// ABQARIYA — MinisterialExam: exam session logic (pure, no UI).
+// FULL MARK — MinisterialExam: exam session logic (pure, no UI).
 // A timed session with navigation, mark-for-review, submit, auto-grading
 // and per-question review.
 // HONESTY: demo questions must NEVER be labelled real ministerial
