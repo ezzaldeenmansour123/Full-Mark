@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// لوحة ألوان عَبْقَرِيّة: علمية حديثة (كحلي / تركوازي / ذهبي)، وليست طفولية.
 ///
