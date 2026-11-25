@@ -1,0 +1,49 @@
+# عَبْقَرِيّة | ABQARIYA
+# منصة ألعاب تعليمية دون اتصال — الصف الثالث الثانوي العلمي، المنهج اليمني.
+#
+# إصدارات مثبّتة بعد التحقق عبر الويب بتاريخ 2026-11-25:
+# - Flutter المستقر الحالي: 3.50.1 مع Dart 3.14.0 (صدر 20 تشرين الثاني/نوفمبر 2026).
+#   نطلب حدًّا أدنى محافظًا (>=3.22 / Dart >=3.4) حتى يعمل المشروع أيضًا على
+#   إصدارات أقدم، بينما يثبّت CI إصدار stable الأحدث.
+# - sqflite الأحدث: 2.4.6 (نوفمبر 2026) — يفي بشرط المهمة (^2.4.2) ويتجاوزه.
+# - path الأحدث: 1.9.1.
+name: abqariya
+description: "عبقرية | ABQARIYA — منصة ألعاب تعليمية دون اتصال للصف الثالث الثانوي العلمي (المنهج اليمني). افهم، جرّب، اكتشف، وتفوّق."
+# منع النشر على pub.dev — هذا تطبيق وليس حزمة.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # flutter_localizations: ترجمة عناصر Material (التواريخ، الأزرار...)
+  # إلى العربية — ضرورية لتجربة RTL كاملة. جزء من SDK، بلا إنترنت.
+  flutter_localizations:
+    sdk: flutter
+  # cupertino_icons: أيقونات iOS-style؛ مستخدمة لأيقونات بعض الأزرار.
+  # ليست ضرورية للمنطق، ويمكن حذفها دون كسر التطبيق.
+  cupertino_icons: ^1.0.8
+  # sqflite: قاعدة بيانات SQLite محلية — كل التقدم والأسئلة والمحاولات
+  # تُحفظ على الجهاز فقط. لا حسابات ولا خوادم ولا إنترنت.
+  sqflite: ^2.4.6
+  # path: بناء مسارات ملفات آمنة عبر المنصات (مسار ملف قاعدة البيانات).
+  path: ^1.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # flutter_lints: قواعد التحليل الرسمية (انظر analysis_options.yaml).
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  # أصول خفيفة في v1: بيانات JSON فقط (هيكل المنهج + الأسئلة التجريبية
+  # + مخطط الاستيراد). لا صور ولا فيديو ولا محرك 3D ولا ملفات صوتية.
+  assets:
+    - assets/data/curriculum.json
+    - assets/data/demo_questions.json
+    - assets/schema/content_schema.json

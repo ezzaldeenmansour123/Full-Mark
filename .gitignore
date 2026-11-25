@@ -1,0 +1,27 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+# Android
+local.properties
+*.jks
+*.keystore
+# iOS (not targeted in v1, kept for hygiene)
+ios/Pods/
+ios/.symlinks/
+# Misc
+.DS_Store
+*.log
+
+# Source books / research scratch — NEVER commit
+# books/ holds Ministry textbook PDFs (copyright: rights reserved to
+# the Ministry of Education) and research downloads including a session
+# cookie file (books/tmp/cookies.txt). These are local reference
+# material only; they are NOT part of the app and must never reach the
+# public repo. Content enters the app only through the documented
+# import pipeline (docs/CONTENT_IMPORT.md) after verification.
+books/

@@ -1,0 +1,18 @@
+# قواعد التحليل الرسمية من Flutter.
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # العربية نصوص ثابتة في الواجهة؛ لا نريد تحذيرات حول ترتيب الكلمات.
+    prefer_const_constructors: true
+    prefer_final_locals: true
+    avoid_print: true
+    # لا نستخدم أي قيمة من الإنترنت؛ أي استدعاء http محظور في هذا المشروع.
+    # (لا توجد قاعدة linter له، لكن يُراجَع يدويًا في كل PR.)
+
+analyzer:
+  errors:
+    # أي استخدام لـ dart:io للشبكة أو http يجب أن يفشل التحليل في المراجعة.
+    # لا يوجد بديل آلي؛ التزم بعدم إضافة أي اعتماد شبكي.
+    missing_required_param: error
+    missing_return: error
