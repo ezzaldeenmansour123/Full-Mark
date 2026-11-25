@@ -97,8 +97,10 @@ class GameEngine {
   int get bestStreak => _bestStreak;
   int get streakBonus => _streakBonus;
   int get elapsedSeconds => _elapsedSeconds;
-  int get xpSoFar => xpFor(correct: _correct, streakBonus: _streakBonus);
-  List<AnswerRecord> get history => List.unmodifiable(_history);
+  // NOTE: no xpSoFar / history / isTimeUp / skipCurrent API: they had
+  // zero callers, and skipCurrent recorded a deliberate skip as a
+  // wrong answer. The screen owns the countdown; per-question times
+  // leave through finish() -> GameResult.secondsByQuestionId.
 
   Question? get currentQuestion =>
       isFinished ? null : questions[_index];
@@ -146,35 +148,12 @@ class GameEngine {
     return correct;
   }
 
-  /// Skip the current question (counts as neither correct nor wrong,
-  /// but breaks the streak). Moves to the next question.
-  void skipCurrent({int secondsTaken = 0}) {
-    if (currentQuestion == null || _answeredCurrent) return;
-    _skipped++;
-    _streak = 0;
-    _elapsedSeconds += secondsTaken < 0 ? 0 : secondsTaken;
-    _perQuestionCorrect.add(false);
-    _history.add(AnswerRecord(
-      questionId: currentQuestion!.id,
-      givenAnswer: '',
-      correct: false,
-      secondsTaken: secondsTaken < 0 ? 0 : secondsTaken,
-      streakAfter: 0,
-    ));
-    _index++;
-  }
-
   /// Advance after feedback has been shown. No-op if not yet answered.
   void next() {
     if (!_answeredCurrent) return;
     _answeredCurrent = false;
     _index++;
   }
-
-  /// True when the per-question timer has run out for this question.
-  /// The screen owns the actual countdown; this is the rule it checks.
-  bool isTimeUp(int secondsSpentOnQuestion) =>
-      secondsPerQuestion > 0 && secondsSpentOnQuestion >= secondsPerQuestion;
 
   GameResult finish() => GameResult(
         modeId: modeId,
@@ -188,6 +167,13 @@ class GameEngine {
         elapsedSeconds: _elapsedSeconds,
         perQuestionCorrect: List.unmodifiable(_perQuestionCorrect),
         wrongQuestionIds: List.unmodifiable(_wrongIds),
+        playedQuestionIds:
+            questions.map((Question q) => q.id).toList(growable: false),
+        secondsByQuestionId: Map<String, int>.unmodifiable(
+          <String, int>{
+            for (final AnswerRecord r in _history) r.questionId: r.secondsTaken,
+          },
+        ),
       );
 
   static bool _isCorrect(Question q, String given) {

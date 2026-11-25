@@ -1,8 +1,8 @@
 // ABQARIYA — 12 game modes: enum + config.
 // The registry keeps all 12 configs (tests pin the count), but the UI
-// exposes ONLY the 7 truly playable modes (see [isPlayable]: quiz,
+// exposes ONLY the 8 truly playable modes (see [isPlayable]: quiz,
 // true_false, time_race, memory_match, boss_20, complete_equation,
-// concept_match). The other 5 never appear in any picker, and
+// concept_match, unlock). The other 4 never appear in any picker, and
 // GameScreen never shows a placeholder screen for them;
 // ministerial_exam links to ExamScreen instead.
 //
@@ -87,11 +87,11 @@ const List<GameModeConfig> kGameModes = <GameModeConfig>[
     routeId: 'unlock',
     titleAr: 'افتح القفل',
     descriptionAr: 'أجب إجابات صحيحة متتالية لفتح الأقفال واحداً تلو الآخر.',
-    questionCount: 8,
+    questionCount: 12,
     secondsPerQuestion: 60,
     totalSeconds: 0,
-    scoringRuleAr: 'قفل يُفتح كل 3 إجابات صحيحة متتالية.',
-    isPlayable: false,
+    scoringRuleAr: 'قفل يُفتح كل 3 إجابات صحيحة متتالية — 4 أقفال في الجولة.',
+    isPlayable: true,
   ),
   GameModeConfig(
     id: GameModeId.completeEquation,
@@ -101,7 +101,9 @@ const List<GameModeConfig> kGameModes = <GameModeConfig>[
         'وازن معادلات كيميائية حقيقية باختيار المعاملات الصحيحة — '
         '4 معادلات موثقة من المختبر وبنك الأسئلة (الكيمياء فقط).',
     questionCount: 4,
-    secondsPerQuestion: 90,
+    // 0 = no per-question timer: the equation screen has no countdown,
+    // and the old "90 s" was fiction. (v0.1.4 follow-up.)
+    secondsPerQuestion: 0,
     totalSeconds: 0,
     scoringRuleAr: '10 نقاط لكل معادلة موزونة صحيحة بأصغر المعاملات.',
     isPlayable: true,
@@ -204,6 +206,12 @@ GameModeConfig modeConfigByRouteId(String routeId) =>
       orElse: () => kGameModes.first,
     );
 
+/// True only for a route id that exists in the registry. GameScreen
+/// shows an honest "unknown mode" screen for anything else instead
+/// of silently playing a quiz (the old firstWhere fallback hid typos).
+bool isKnownRouteId(String routeId) =>
+    kGameModes.any((GameModeConfig m) => m.routeId == routeId);
+
 /// Which question types a mode can use. Playable modes filter the bank
 /// to these types; other types are excluded at load time and reported
 /// honestly by GameScreen (never silently dropped). `match` is not
@@ -221,6 +229,10 @@ List<QuestionType> questionTypesForMode(GameModeId id) {
         QuestionType.fill,
         QuestionType.ordering,
       ];
+    case GameModeId.unlock:
+      // MCQ + true/false only: the lock mechanic stays snappy and
+      // every question has one tap answer.
+      return const [QuestionType.mcq, QuestionType.trueFalse];
     case GameModeId.trueFalse:
       return const [QuestionType.trueFalse];
     case GameModeId.memoryMatch:

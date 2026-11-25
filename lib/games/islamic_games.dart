@@ -4,10 +4,10 @@
 // and no hadith text is quoted — nothing is reproduced from memory.
 // The ordering game below is fed by the REAL documented curriculum
 // structure (lesson titles of each unit, in their real order — see
-// [IslamicOrderingGameScreen]); the linking game has NO entry point in
-// the app because the database holds no concept↔category pairs to feed
-// it honestly. Every demo item is labelled «تجريبي» only when it is
-// actually demo data.
+// [IslamicOrderingGameScreen]). There is no concept-linking game: the
+// database holds no concept↔category pairs, so that widget was deleted
+// rather than shown with invented content. Every demo item is labelled
+// «تجريبي» only when it is actually demo data.
 
 import 'package:material_ui/material_ui.dart';
 
@@ -43,34 +43,6 @@ class ConceptOrderingItem {
   }
 }
 
-/// A concept-linking item: link each concept to its matching category.
-/// Keys and values are topic titles only — no quoted texts.
-class ConceptLinkItem {
-  final String id;
-  final String titleAr;
-  final Map<String, String> correctLinks;
-  final String source;
-
-  const ConceptLinkItem({
-    required this.id,
-    required this.titleAr,
-    required this.correctLinks,
-    required this.source,
-  });
-
-  bool get isDemo => source.trim() == 'demo — not Yemeni curriculum';
-  List<String> get concepts => correctLinks.keys.toList();
-  List<String> get categories => correctLinks.values.toSet().toList();
-}
-
-/// Pure logic: check an ordering attempt.
-bool checkConceptOrder(ConceptOrderingItem item, List<String> attempt) =>
-    item.isCorrectOrder(attempt);
-
-/// Pure logic: check one link.
-bool checkConceptLink(ConceptLinkItem item, String concept, String category) =>
-    item.correctLinks[concept] == category;
-
 /// Demo only: the five Pillars of Islam as topic titles, in their
 /// well-established order. Topic titles only — no quoted text.
 /// Labelled demo; never shown as curriculum content.
@@ -79,20 +51,6 @@ const ConceptOrderingItem kDemoPillarsOrdering = ConceptOrderingItem(
   titleAr: 'رتّب أركان الإسلام',
   items: <String>['الصلاة', 'الشهادتان', 'الحج', 'الزكاة', 'الصوم'],
   correctOrder: <String>['الشهادتان', 'الصلاة', 'الزكاة', 'الصوم', 'الحج'],
-  source: 'demo — not Yemeni curriculum',
-);
-
-/// Demo only: link each worship topic to its general category (topic
-/// titles only). Labelled demo; never shown as curriculum content.
-const ConceptLinkItem kDemoWorshipLinks = ConceptLinkItem(
-  id: 'demo-islamic-links-001',
-  titleAr: 'اربط كل عبادة بنوعها',
-  correctLinks: <String, String>{
-    'الصلاة': 'عبادة بدنية',
-    'الزكاة': 'عبادة مالية',
-    'الصوم': 'عبادة بدنية',
-    'الحج': 'عبادة بدنية ومالية',
-  },
   source: 'demo — not Yemeni curriculum',
 );
 
@@ -118,7 +76,10 @@ class IslamicOrderingGame extends StatefulWidget {
 }
 
 class _IslamicOrderingGameState extends State<IslamicOrderingGame> {
-  final List<String> _picked = [];
+  // Indices into item.items, not values: a repeated lesson title used
+  // to make the round unfinishable (picking it once removed both
+  // copies from `remaining`).
+  final List<int> _picked = [];
   String? _feedback;
   bool _answered = false;
   bool _lastCorrect = false;
@@ -126,8 +87,10 @@ class _IslamicOrderingGameState extends State<IslamicOrderingGame> {
   @override
   Widget build(BuildContext context) {
     final item = widget.item;
-    final remaining =
-        item.items.where((w) => !_picked.contains(w)).toList();
+    final remaining = List<int>.generate(
+      item.items.length,
+      (int i) => i,
+    ).where((int i) => !_picked.contains(i)).toList();
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -140,7 +103,7 @@ class _IslamicOrderingGameState extends State<IslamicOrderingGame> {
           Wrap(
             spacing: 8,
             children: _picked
-                .map((w) => Chip(label: Text(w)))
+                .map((int i) => Chip(label: Text(item.items[i])))
                 .toList(),
           ),
           const Divider(),
@@ -148,11 +111,11 @@ class _IslamicOrderingGameState extends State<IslamicOrderingGame> {
             spacing: 8,
             runSpacing: 8,
             children: remaining
-                .map((w) => FilledButton.tonal(
+                .map((int i) => FilledButton.tonal(
                       onPressed: _answered
                           ? null
-                          : () => setState(() => _picked.add(w)),
-                      child: Text(w),
+                          : () => setState(() => _picked.add(i)),
+                      child: Text(item.items[i]),
                     ))
                 .toList(),
           ),
@@ -162,7 +125,11 @@ class _IslamicOrderingGameState extends State<IslamicOrderingGame> {
               onPressed: _picked.isEmpty
                   ? null
                   : () {
-                      final ok = checkConceptOrder(item, _picked);
+                      final ok = checkConceptOrder(
+                          item,
+                          _picked
+                              .map((int i) => item.items[i])
+                              .toList(growable: false));
                       setState(() {
                         _feedback =
                             ok ? 'صحيح ✓' : 'غير صحيح ✗ — حاول مجدداً';
@@ -181,84 +148,6 @@ class _IslamicOrderingGameState extends State<IslamicOrderingGame> {
             const SizedBox(height: 8),
             Text(_feedback!),
           ],
-        ],
-      ),
-    );
-  }
-}
-
-/// Linking widget: tap a concept, then tap its matching category.
-/// NOTE: no entry point in the app — the database holds no
-/// concept↔category pairs, so this widget is never shown with real data
-/// (and never with demo data presented as content).
-class IslamicLinkGame extends StatefulWidget {
-  final ConceptLinkItem item;
-  const IslamicLinkGame({super.key, this.item = kDemoWorshipLinks});
-
-  @override
-  State<IslamicLinkGame> createState() => _IslamicLinkGameState();
-}
-
-class _IslamicLinkGameState extends State<IslamicLinkGame> {
-  String? _selectedConcept;
-  final Set<String> _linked = {};
-  String? _feedback;
-
-  @override
-  Widget build(BuildContext context) {
-    final item = widget.item;
-    return Padding(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          if (item.isDemo) const Chip(label: Text('تجريبي')),
-          Text(item.titleAr,
-              style: Theme.of(context).textTheme.titleMedium),
-          const SizedBox(height: 12),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: item.concepts.map((c) {
-              final done = _linked.contains(c);
-              return FilledButton.tonal(
-                onPressed: done
-                    ? null
-                    : () => setState(() => _selectedConcept = c),
-                child: Text(c),
-              );
-            }).toList(),
-          ),
-          const Divider(),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: item.categories.map((cat) => FilledButton(
-                  onPressed: _selectedConcept == null
-                      ? null
-                      : () {
-                          final ok = checkConceptLink(
-                              item, _selectedConcept!, cat);
-                          setState(() {
-                            _feedback =
-                                ok ? 'صحيح ✓' : 'غير صحيح ✗ — حاول مجدداً';
-                            if (ok) _linked.add(_selectedConcept!);
-                            _selectedConcept = null;
-                          });
-                        },
-                  child: Text(cat),
-                )).toList(),
-          ),
-          if (_feedback != null) ...[
-            const SizedBox(height: 8),
-            Text(_feedback!),
-          ],
-          if (_linked.length == item.concepts.length)
-            const Padding(
-              padding: EdgeInsets.only(top: 12),
-              child: Text('أحسنت! أكملت كل الروابط ✓',
-                  style: TextStyle(fontWeight: FontWeight.bold)),
-            ),
         ],
       ),
     );
@@ -292,9 +181,13 @@ class _IslamicOrderingGameScreenState
   bool _loading = true;
   bool _saved = false;
 
+  /// When the game started — the recorded time is measured, never 0.
+  DateTime? _startedAt;
+
   @override
   void initState() {
     super.initState();
+    _startedAt = DateTime.now();
     _load();
   }
 
@@ -354,8 +247,10 @@ class _IslamicOrderingGameScreenState
       wrong: total - correct,
       skipped: 0,
       bestStreak: bestStreak,
-      streakBonus: 0,
-      elapsedSeconds: 0,
+      streakBonus: GameResult.streakBonusFor(_results),
+      elapsedSeconds: _startedAt == null
+          ? 0
+          : DateTime.now().difference(_startedAt!).inSeconds,
       perQuestionCorrect: List<bool>.unmodifiable(_results),
       wrongQuestionIds: const [],
     );
@@ -374,7 +269,9 @@ class _IslamicOrderingGameScreenState
         content: Text(
           'رتّبت $correct من $total وحدات ترتيباً صحيحاً '
           '(${(correct * 100 / total).round()}٪)\n'
-          'النقاط (XP): ${result.xpEarned}',
+          'النقاط (XP): ${result.xpEarned}\n\n'
+          'ملاحظة: هذه اللعبة لا تُحتسب في إحصائيات المواد لأنها '
+          'لا تلعب أسئلة من البنك.',
         ),
         actions: <Widget>[
           FilledButton(

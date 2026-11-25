@@ -1,9 +1,10 @@
-// ABQARIYA — Arabic games: sentence building + i'rab.
-// DEMO DATA ONLY. The Yemeni Arabic textbook was not provided, so no
-// sentence here is presented as Yemeni curriculum. Every demo item is
-// labelled «تجريبي». The widgets take their data as parameters; the only
-// built-in example below is explicitly marked demo and is a generic
-// language exercise, not a curriculum sentence.
+// ABQARIYA — Arabic games: sentence building.
+// The sentence game is fed by REAL Arabic database questions (see
+// [ArabicSentenceGameScreen]); the built-in example below is explicitly
+// marked demo and is a generic language exercise, not a curriculum
+// sentence. There is no i'rab game: the database holds no verified
+// i'rab data, so that widget was deleted rather than shown with
+// invented content.
 
 import 'package:material_ui/material_ui.dart';
 
@@ -38,38 +39,6 @@ class SentenceItem {
     return true;
   }
 }
-
-/// One i'rab item: tap a word, then choose its i'rab from [options].
-class IrabItem {
-  final String id;
-  final String sentence;
-  final List<String> words;
-
-  /// word -> correct i'rab label, e.g. {"العلمُ": "مبتدأ مرفوع"}.
-  /// Labels are grammatical terms, not quoted textbook text.
-  final Map<String, String> correctIrab;
-  final List<String> options;
-  final String source;
-
-  const IrabItem({
-    required this.id,
-    required this.sentence,
-    required this.words,
-    required this.correctIrab,
-    required this.options,
-    required this.source,
-  });
-
-  bool get isDemo => source.trim() == 'demo — not Yemeni curriculum';
-}
-
-/// Pure logic: score a sentence-building attempt.
-bool checkSentenceOrder(SentenceItem item, List<String> attempt) =>
-    item.isCorrectOrder(attempt);
-
-/// Pure logic: score one i'rab choice.
-bool checkIrab(IrabItem item, String word, String chosen) =>
-    item.correctIrab[word] == chosen;
 
 /// A single generic demo sentence, labelled demo. It is NOT curriculum.
 /// Used only when the caller passes no data at all, so the widget never
@@ -109,7 +78,10 @@ class ArabicSentenceGame extends StatefulWidget {
 
 class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
   int _index = 0;
-  final List<String> _picked = [];
+  // Indices into item.words, not values: a sentence whose correct
+  // answer repeats a word used to make the round unfinishable
+  // (picking the word once removed both copies from `remaining`).
+  final List<int> _picked = [];
   String? _feedback;
   int _correct = 0;
 
@@ -133,14 +105,13 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
       while (_perItemCorrect.length < widget.items.length) {
         _perItemCorrect.add(false);
       }
+      // The result dialog in the screen already reports the score;
+      // a SnackBar here would flash underneath it and never be read.
       widget.onFinished?.call(
         _correct,
         widget.items.length,
         List<bool>.unmodifiable(_perItemCorrect),
         widget.items.map((i) => i.id).toList(growable: false),
-      );
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('انتهت اللعبة: $_correct / ${widget.items.length}')),
       );
     } else {
       setState(() {
@@ -160,8 +131,10 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
       );
     }
     final item = widget.items[_index];
-    final remaining =
-        item.words.where((w) => !_picked.contains(w)).toList();
+    final remaining = List<int>.generate(
+      item.words.length,
+      (int i) => i,
+    ).where((int i) => !_picked.contains(i)).toList();
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -176,7 +149,7 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
           Wrap(
             spacing: 8,
             children: _picked
-                .map((w) => Chip(label: Text(w)))
+                .map((int i) => Chip(label: Text(item.words[i])))
                 .toList(),
           ),
           const Divider(),
@@ -184,11 +157,11 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
             spacing: 8,
             runSpacing: 8,
             children: remaining
-                .map((w) => FilledButton.tonal(
+                .map((int i) => FilledButton.tonal(
                       onPressed: _answered
                           ? null
-                          : () => setState(() => _picked.add(w)),
-                      child: Text(w),
+                          : () => setState(() => _picked.add(i)),
+                      child: Text(item.words[i]),
                     ))
                 .toList(),
           ),
@@ -200,7 +173,11 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
                 onPressed: _picked.isEmpty || _answered
                     ? null
                     : () {
-                        final ok = checkSentenceOrder(item, _picked);
+                        final ok = checkSentenceOrder(
+                            item,
+                            _picked
+                                .map((int i) => item.words[i])
+                                .toList(growable: false));
                         setState(() {
                           _feedback = ok ? 'صحيحة ✓' : 'غير صحيحة ✗ — حاول مجدداً';
                           _answered = true;
@@ -230,71 +207,6 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
               ),
             ],
           ),
-        ],
-      ),
-    );
-  }
-}
-
-/// I'rab widget: tap a word, then choose its i'rab from the options.
-class ArabicIrabGame extends StatefulWidget {
-  final IrabItem item;
-  const ArabicIrabGame({super.key, required this.item});
-
-  @override
-  State<ArabicIrabGame> createState() => _ArabicIrabGameState();
-}
-
-class _ArabicIrabGameState extends State<ArabicIrabGame> {
-  String? _selectedWord;
-  String? _feedback;
-
-  @override
-  Widget build(BuildContext context) {
-    final item = widget.item;
-    return Padding(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          if (item.isDemo) const Chip(label: Text('تجريبي')),
-          Text(item.sentence, style: Theme.of(context).textTheme.titleLarge),
-          const SizedBox(height: 12),
-          const Text('اضغط على كلمة ثم اختر إعرابها:'),
-          Wrap(
-            spacing: 8,
-            children: item.words
-                .map((w) => ChoiceChip(
-                      label: Text(w),
-                      selected: _selectedWord == w,
-                      onSelected: (_) =>
-                          setState(() => _selectedWord = w),
-                    ))
-                .toList(),
-          ),
-          const SizedBox(height: 12),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: item.options
-                .map((opt) => FilledButton.tonal(
-                      onPressed: _selectedWord == null
-                          ? null
-                          : () {
-                              final ok =
-                                  checkIrab(item, _selectedWord!, opt);
-                              setState(() => _feedback = ok
-                                  ? 'صحيح ✓ — «$_selectedWord» إعرابها: $opt'
-                                  : 'غير صحيح ✗ — حاول مجدداً');
-                            },
-                      child: Text(opt),
-                    ))
-                .toList(),
-          ),
-          if (_feedback != null) ...[
-            const SizedBox(height: 12),
-            Text(_feedback!),
-          ],
         ],
       ),
     );
@@ -336,9 +248,13 @@ class _ArabicSentenceGameScreenState extends State<ArabicSentenceGameScreen> {
   bool _loading = true;
   bool _saved = false;
 
+  /// When the game started — the recorded time is measured, never 0.
+  DateTime? _startedAt;
+
   @override
   void initState() {
     super.initState();
+    _startedAt = DateTime.now();
     _load();
   }
 
@@ -394,10 +310,15 @@ class _ArabicSentenceGameScreenState extends State<ArabicSentenceGameScreen> {
       wrong: total - correct,
       skipped: 0,
       bestStreak: _longestTrueRun(perItemCorrect),
-      streakBonus: 0,
-      elapsedSeconds: 0,
+      streakBonus: GameResult.streakBonusFor(perItemCorrect),
+      elapsedSeconds: _startedAt == null
+          ? 0
+          : DateTime.now().difference(_startedAt!).inSeconds,
       perQuestionCorrect: List<bool>.unmodifiable(perItemCorrect),
       wrongQuestionIds: wrongIds,
+      playedQuestionIds: _sourceQuestions
+          .map((Question q) => q.id)
+          .toList(growable: false),
     );
     await DatabaseHelper.instance.recordGameResult(
       result: result,

@@ -1,156 +1,16 @@
-// ABQARIYA — English games: vocabulary matching + sentence building.
+// ABQARIYA — English games: sentence building.
 // PRONUNCIATION: removed — there is no audio/TTS in this app, so no
 // speaker button is shown anywhere. Nothing here pretends audio exists.
 // The sentence game below is fed by real database questions (see
-// [EnglishSentenceGameScreen]); the vocab game has NO entry point in
-// the app because the database holds no English↔Arabic word pairs to
-// feed it honestly — it stays as unused library code, never shown.
+// [EnglishSentenceGameScreen]). There is no vocabulary-matching game:
+// the database holds no English↔Arabic word pairs, so that widget was
+// deleted rather than shown with invented content.
 
 import 'package:material_ui/material_ui.dart';
 
 import '../db/database.dart';
 import '../models/game_result.dart';
 import '../models/question.dart';
-
-/// One vocabulary pair for the matching game.
-class VocabPair {
-  final String english;
-  final String arabic;
-  final String source;
-
-  const VocabPair({
-    required this.english,
-    required this.arabic,
-    required this.source,
-  });
-
-  bool get isDemo => source.trim() == 'demo — not Yemeni curriculum';
-}
-
-/// Pure logic: does [english] match [arabic] in [pairs]?
-bool checkVocabMatch(List<VocabPair> pairs, String english, String arabic) =>
-    pairs.any((p) => p.english == english && p.arabic == arabic);
-
-/// Pure logic: is [attempt] the correct order for [correctOrder]?
-bool checkEnglishSentenceOrder(List<String> correctOrder, List<String> attempt) {
-  if (attempt.length != correctOrder.length) return false;
-  for (var i = 0; i < attempt.length; i++) {
-    if (attempt[i] != correctOrder[i]) return false;
-  }
-  return true;
-}
-
-/// Demo vocab pairs, labelled demo — generic words, NOT curriculum.
-const List<VocabPair> kDemoVocab = <VocabPair>[
-  VocabPair(english: 'book', arabic: 'كتاب', source: 'demo — not Yemeni curriculum'),
-  VocabPair(english: 'water', arabic: 'ماء', source: 'demo — not Yemeni curriculum'),
-  VocabPair(english: 'school', arabic: 'مدرسة', source: 'demo — not Yemeni curriculum'),
-  VocabPair(english: 'science', arabic: 'علم', source: 'demo — not Yemeni curriculum'),
-];
-
-/// Vocabulary matching widget: tap an English word, then its Arabic match.
-/// NOTE: no entry point in the app — the database holds no English↔Arabic
-/// word pairs, so this widget is never shown with real data (and never
-/// with demo data presented as content).
-class EnglishVocabMatchGame extends StatefulWidget {
-  final List<VocabPair> pairs;
-
-  const EnglishVocabMatchGame({
-    super.key,
-    this.pairs = kDemoVocab,
-  });
-
-  @override
-  State<EnglishVocabMatchGame> createState() => _EnglishVocabMatchGameState();
-}
-
-class _EnglishVocabMatchGameState extends State<EnglishVocabMatchGame> {
-  String? _selectedEnglish;
-  final Set<String> _matched = {};
-  String? _feedback;
-
-  // Shuffled once in initState — never in build(), or the words would
-  // jump around on every rebuild.
-  late final List<String> _englishWords;
-  late final List<String> _arabicWords;
-
-  @override
-  void initState() {
-    super.initState();
-    _englishWords = widget.pairs.map((p) => p.english).toList()..shuffle();
-    _arabicWords = widget.pairs.map((p) => p.arabic).toList()..shuffle();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    if (widget.pairs.isEmpty) {
-      return const Center(
-        child: Text('لا توجد مفردات متاحة بعد من المنهج اليمني.'),
-      );
-    }
-    final englishWords = _englishWords;
-    final arabicWords = _arabicWords;
-    final isDemo = widget.pairs.any((p) => p.isDemo);
-    return Padding(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          if (isDemo) const Chip(label: Text('تجريبي')),
-          const Text('طابق كل كلمة إنجليزية بمعناها العربي',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-          const SizedBox(height: 12),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: englishWords.map((w) {
-              final done = _matched.contains(w);
-              return FilledButton.tonal(
-                onPressed: done
-                    ? null
-                    : () => setState(() => _selectedEnglish = w),
-                child: Text(w),
-              );
-            }).toList(),
-          ),
-          const Divider(),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: arabicWords.map((a) {
-              final done = _matched.any((e) =>
-                  checkVocabMatch(widget.pairs, e, a));
-              return FilledButton(
-                onPressed: done || _selectedEnglish == null
-                    ? null
-                    : () {
-                        final ok = checkVocabMatch(
-                            widget.pairs, _selectedEnglish!, a);
-                        setState(() {
-                          _feedback = ok ? 'صحيح ✓' : 'غير صحيح ✗ — حاول مجدداً';
-                          if (ok) _matched.add(_selectedEnglish!);
-                          _selectedEnglish = null;
-                        });
-                      },
-                child: Text(a),
-              );
-            }).toList(),
-          ),
-          if (_feedback != null) ...[
-            const SizedBox(height: 12),
-            Text(_feedback!),
-          ],
-          if (_matched.length == widget.pairs.length)
-            const Padding(
-              padding: EdgeInsets.only(top: 12),
-              child: Text('أحسنت! طابقت كل المفردات ✓',
-                  style: TextStyle(fontWeight: FontWeight.bold)),
-            ),
-        ],
-      ),
-    );
-  }
-}
 
 /// English sentence-building widget: tap words in the correct order.
 /// Shows a «تجريبي» badge ONLY when [isDemo] is true (real curriculum
@@ -179,15 +39,19 @@ class EnglishSentenceGame extends StatefulWidget {
 }
 
 class _EnglishSentenceGameState extends State<EnglishSentenceGame> {
-  final List<String> _picked = [];
+  // Indices into widget.words, not values: a repeated word used to
+  // make the round unfinishable (picking it once removed both copies).
+  final List<int> _picked = [];
   String? _feedback;
   bool _answered = false;
   bool _lastCorrect = false;
 
   @override
   Widget build(BuildContext context) {
-    final remaining =
-        widget.words.where((w) => !_picked.contains(w)).toList();
+    final remaining = List<int>.generate(
+      widget.words.length,
+      (int i) => i,
+    ).where((int i) => !_picked.contains(i)).toList();
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -199,18 +63,20 @@ class _EnglishSentenceGameState extends State<EnglishSentenceGame> {
           const SizedBox(height: 12),
           Wrap(
             spacing: 8,
-            children: _picked.map((w) => Chip(label: Text(w))).toList(),
+            children: _picked
+                .map((int i) => Chip(label: Text(widget.words[i])))
+                .toList(),
           ),
           const Divider(),
           Wrap(
             spacing: 8,
             runSpacing: 8,
             children: remaining
-                .map((w) => FilledButton.tonal(
+                .map((int i) => FilledButton.tonal(
                       onPressed: _answered
                           ? null
-                          : () => setState(() => _picked.add(w)),
-                      child: Text(w),
+                          : () => setState(() => _picked.add(i)),
+                      child: Text(widget.words[i]),
                     ))
                 .toList(),
           ),
@@ -221,7 +87,10 @@ class _EnglishSentenceGameState extends State<EnglishSentenceGame> {
                   ? null
                   : () {
                       final ok = checkEnglishSentenceOrder(
-                          widget.correctOrder, _picked);
+                          widget.correctOrder,
+                          _picked
+                              .map((int i) => widget.words[i])
+                              .toList(growable: false));
                       setState(() {
                         _feedback =
                             ok ? 'Correct ✓' : 'Not correct ✗ — try again';
@@ -269,9 +138,19 @@ class _EnglishSentenceGameScreenState
   bool _loading = true;
   bool _saved = false;
 
+  /// Display order per question id, shuffled ONCE in [_load].
+  /// Shuffling in build() re-randomised the words on every rebuild
+  /// (e.g. after every tap), so the buttons jumped under the player's
+  /// finger.
+  final Map<String, List<String>> _displayById = <String, List<String>>{};
+
+  /// When the game started — the recorded time is measured, never 0.
+  DateTime? _startedAt;
+
   @override
   void initState() {
     super.initState();
+    _startedAt = DateTime.now();
     _load();
   }
 
@@ -284,6 +163,10 @@ class _EnglishSentenceGameScreenState
     }).toList()
       ..shuffle();
     final picked = usable.take(8).toList();
+    for (final Question q in picked) {
+      final List<String> words = q.correctAnswer.trim().split(' ');
+      _displayById[q.id] = List<String>.from(words)..shuffle();
+    }
     await DatabaseHelper.instance.setLastStage(
       'english',
       'لعبة بناء الجمل — اللغة الإنجليزية',
@@ -327,10 +210,15 @@ class _EnglishSentenceGameScreenState
       wrong: total - correct,
       skipped: 0,
       bestStreak: bestStreak,
-      streakBonus: 0,
-      elapsedSeconds: 0,
+      streakBonus: GameResult.streakBonusFor(_results),
+      elapsedSeconds: _startedAt == null
+          ? 0
+          : DateTime.now().difference(_startedAt!).inSeconds,
       perQuestionCorrect: List<bool>.unmodifiable(_results),
       wrongQuestionIds: wrongIds,
+      playedQuestionIds: _sourceQuestions
+          .map((Question q) => q.id)
+          .toList(growable: false),
     );
     await DatabaseHelper.instance.recordGameResult(
       result: result,
@@ -385,7 +273,7 @@ class _EnglishSentenceGameScreenState
     }
     final q = _sourceQuestions[_index];
     final words = q.correctAnswer.trim().split(' ');
-    final display = List<String>.from(words)..shuffle();
+    final display = _displayById[q.id] ?? List<String>.from(words);
     return Scaffold(
       appBar: AppBar(
         title: Text(

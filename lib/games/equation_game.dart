@@ -40,7 +40,7 @@ class EquationGameScreen extends StatefulWidget {
     required this.lessonTitle,
     this.stageId,
     required this.sourceQuestions,
-    this.onFinished,
+    required this.onFinished,
   });
 
   /// Lesson id (e.g. 'chemistry-u1-l2') for progress / continue.
@@ -55,8 +55,9 @@ class EquationGameScreen extends StatefulWidget {
   /// recordGameResult — this screen never invents question rows.
   final List<Question> sourceQuestions;
 
-  /// Awaited before the result dialog appears.
-  final EquationGameFinished? onFinished;
+  /// Awaited before the result dialog appears. Required: the result
+  /// (stars/XP) must never be displayed without being saved.
+  final EquationGameFinished onFinished;
 
   @override
   State<EquationGameScreen> createState() => _EquationGameScreenState();
@@ -175,9 +176,13 @@ class _EquationGameScreenState extends State<EquationGameScreen> {
       widget.stageId ?? widget.lessonId,
       widget.lessonTitle,
     );
-    await widget.onFinished?.call(result, _waterCorrect);
+    await widget.onFinished(result, _waterCorrect);
     if (!mounted) return;
-    await showDialog<void>(
+    // The dialog returns true when the player chose replay: only then
+    // do we stay; any other choice pops the screen. (Before, the
+    // screen popped unconditionally after the dialog, so "إعادة اللعب"
+    // reset the game and then immediately closed it.)
+    final bool replay = await showDialog<bool>(
       context: context,
       barrierDismissible: false,
       builder: (BuildContext context) => AlertDialog(
@@ -190,31 +195,32 @@ class _EquationGameScreenState extends State<EquationGameScreen> {
         ),
         actions: <Widget>[
           TextButton(
-            onPressed: () => Navigator.of(context).pop(),
+            onPressed: () => Navigator.of(context).pop(false),
             child: const Text('رجوع'),
           ),
           FilledButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-              setState(() {
-                _items.shuffle();
-                _index = 0;
-                _coeffs =
-                    List<int>.filled(_items.first.allTerms.length, 1);
-                _showFeedback = false;
-                _lastCorrect = false;
-                _balancedButNotMinimal = false;
-                _perItemCorrect.clear();
-                _waterCorrect = false;
-                _startedAt = DateTime.now();
-                _saved = false;
-              });
-            },
+            onPressed: () => Navigator.of(context).pop(true),
             child: const Text('إعادة اللعب'),
           ),
         ],
       ),
     );
+    if (!mounted) return;
+    if (replay) {
+      setState(() {
+        _items.shuffle();
+        _index = 0;
+        _coeffs = List<int>.filled(_items.first.allTerms.length, 1);
+        _showFeedback = false;
+        _lastCorrect = false;
+        _balancedButNotMinimal = false;
+        _perItemCorrect.clear();
+        _waterCorrect = false;
+        _startedAt = DateTime.now();
+        _saved = false;
+      });
+      return;
+    }
     if (mounted) Navigator.of(context).pop();
   }
 
