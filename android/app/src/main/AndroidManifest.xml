@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!--
-      عَبْقَرِيّة تعمل دون اتصال بالإنترنت بالكامل.
+      فُل مارك يعمل دون اتصال بالإنترنت بالكامل.
       لا يوجد إذن INTERNET هنا عمدًا — ولا يجوز إضافته.
       أي اعتماد شبكي (http/firebase/إعلانات) ممنوع في هذا المشروع.
     -->
     <application
-        android:label="عبقرية"
+        android:label="فُل مارك"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
