@@ -160,7 +160,7 @@ void main() {
         lesson: 'l1',
         type: QuestionType.mcq,
         text: 'سؤال حقيقي؟',
-        options: const ['أ', 'ب'],
+        options: ['أ', 'ب'],
         correctAnswer: 'أ',
         source: 'كتاب الفيزياء — طبعة صنعاء 2027',
         sourcePage: 12,
@@ -183,7 +183,7 @@ void main() {
         lesson: 'l1',
         type: QuestionType.fill,
         text: 'أكمل: ...؟',
-        options: const [],
+        options: [],
         correctAnswer: 'شيء',
         source: 'demo — not Yemeni curriculum',
       );
