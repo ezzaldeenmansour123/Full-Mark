@@ -5,10 +5,10 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import '../lib/games/game_engine.dart';
-import '../lib/games/game_modes.dart';
-import '../lib/models/game_result.dart';
-import '../lib/models/question.dart';
+import 'package:abqariya/games/game_engine.dart';
+import 'package:abqariya/games/game_modes.dart';
+import 'package:abqariya/models/game_result.dart';
+import 'package:abqariya/models/question.dart';
 
 Question demoQuestion(String id, {String correct = 'ب'}) => Question(
       id: id,

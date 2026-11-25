@@ -6,10 +6,10 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import '../lib/achievements/achievements.dart';
-import '../lib/analytics/analytics_engine.dart';
-import '../lib/exam/ministerial_exam.dart';
-import '../lib/models/question.dart';
+import 'package:abqariya/achievements/achievements.dart';
+import 'package:abqariya/analytics/analytics_engine.dart';
+import 'package:abqariya/exam/ministerial_exam.dart';
+import 'package:abqariya/models/question.dart';
 
 Question demoQ(String id, String subject) => Question(
       id: id,

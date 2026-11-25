@@ -5,7 +5,7 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import '../lib/analytics/analytics_engine.dart';
+import 'package:abqariya/analytics/analytics_engine.dart';
 
 Attempt attempt({
   required String subject,
