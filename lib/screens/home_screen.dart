@@ -346,6 +346,12 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: Icons.replay,
         route: AppRoutes.review,
       ),
+      _MenuEntry(
+        title: 'النسخة الدراسية',
+        subtitle: 'صنعاء 2027',
+        icon: Icons.menu_book,
+        route: AppRoutes.edition,
+      ),
     ];
     return GridView.builder(
       shrinkWrap: true,

@@ -5,6 +5,8 @@ import '../core/routes.dart';
 import '../db/database.dart';
 import '../games/arabic_games.dart';
 import '../games/english_games.dart';
+import '../games/equation_game.dart';
+import '../games/equation_items.dart';
 import '../games/game_modes.dart';
 import '../games/game_screen.dart';
 import '../games/islamic_games.dart';
@@ -276,13 +278,38 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
       );
       return;
     }
-    final String? picked = await _showModePicker(lessonTitle);
+    final String? picked = await _showModePicker(lessonTitle, questions);
     if (!mounted || picked == null) return;
     if (picked == 'ministerial_exam') {
       await Navigator.of(context).pushNamed(AppRoutes.exam);
       return;
     }
+    if (picked == 'complete_equation') {
+      await _playEquationGame(lessonTitle, lessonId);
+      return;
+    }
     final GameModeConfig mode = modeConfigByRouteId(picked);
+    // Only the questions this mode can actually play: the result's
+    // per-question record is built from exactly these, so recording
+    // the whole lesson here would invent «correct» attempts for
+    // questions the player never saw (e.g. MCQ rows in a true/false
+    // game). Defense in depth — the picker already hides modes with
+    // no usable question in this lesson.
+    final List<Question> usable = questions
+        .where((Question q) =>
+            questionTypesForMode(mode.id).contains(q.type))
+        .toList(growable: false);
+    if (usable.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            'لا توجد أسئلة مناسبة لنمط «${mode.titleAr}» في درس '
+            '«$lessonTitle» بعد — جرّبي نمطاً آخر.',
+          ),
+        ),
+      );
+      return;
+    }
     // Game start: remember this lesson as the last stage.
     await DatabaseHelper.instance.setLastStage(lessonId, lessonTitle);
     if (!mounted) return;
@@ -298,7 +325,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
           onFinished: (GameResult result) async {
             await DatabaseHelper.instance.recordGameResult(
               result: result,
-              playedQuestions: questions,
+              playedQuestions: usable,
               mode: mode.routeId,
               stageId: lessonId,
               lessonId: lessonId,
@@ -310,12 +337,73 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     );
   }
 
-  /// Mode picker: ONLY the 5 really playable modes, plus the
+  /// «أكمل المعادلة» — chemistry only: the 4 verified equations
+  /// (lab + bank) are all chemistry. The bank questions the items
+  /// are taken from are loaded for recordGameResult; the water item
+  /// has no bank question, so its attempt is recorded anonymously.
+  Future<void> _playEquationGame(String lessonTitle, String lessonId) async {
+    final List<Question> bankQuestions = <Question>[];
+    for (final EquationItem item in kEquationItems) {
+      final String? qid = item.sourceQuestionId;
+      if (qid == null) continue;
+      final Question? q =
+          await DatabaseHelper.instance.getQuestionById(qid);
+      if (q != null) bankQuestions.add(q);
+    }
+    if (!mounted) return;
+    await DatabaseHelper.instance.setLastStage(lessonId, lessonTitle);
+    if (!mounted) return;
+    await Navigator.of(context).push<void>(
+      MaterialPageRoute<void>(
+        builder: (_) => EquationGameScreen(
+          lessonId: lessonId,
+          lessonTitle: lessonTitle,
+          stageId: lessonId,
+          sourceQuestions: bankQuestions,
+          onFinished: (GameResult result, bool waterCorrect) async {
+            await DatabaseHelper.instance.recordGameResult(
+              result: result,
+              playedQuestions: bankQuestions,
+              mode: 'complete_equation',
+              stageId: lessonId,
+              lessonId: lessonId,
+              lessonTitle: lessonTitle,
+            );
+            // The water item has no bank question: count its attempt
+            // anonymously so the totals still match the 4 rounds.
+            await DatabaseHelper.instance.recordAttempt(
+              questionId: null,
+              isCorrect: waterCorrect,
+              mode: 'complete_equation',
+            );
+          },
+        ),
+      ),
+    );
+  }
+
+  /// Mode picker: ONLY the 7 really playable modes, plus the
   /// ministerial-exam entry (which opens ExamScreen). Every entry
   /// launches a real playable game — no placeholder entries.
-  Future<String?> _showModePicker(String lessonTitle) {
-    final playable =
-        kGameModes.where((m) => m.isPlayable).toList(growable: false);
+  /// «أكمل المعادلة» is chemistry-only: its 4 equations are all
+  /// chemistry, so it is hidden for other subjects. A mode is also
+  /// hidden when this lesson has no question of a type it can play
+  /// (e.g. «مطابقة المفاهيم» in a lesson with only true/false
+  /// questions) — offering it would crash or play an empty board.
+  Future<String?> _showModePicker(
+    String lessonTitle,
+    List<Question> questions,
+  ) {
+    final playable = kGameModes
+        .where((m) => m.isPlayable)
+        .where((m) =>
+            m.routeId != 'complete_equation' ||
+            widget.subjectId == 'chemistry')
+        .where((m) =>
+            m.routeId == 'complete_equation' ||
+            questions.any((Question q) =>
+                questionTypesForMode(m.id).contains(q.type)))
+        .toList(growable: false);
     return showModalBottomSheet<String>(
       context: context,
       builder: (BuildContext context) => SafeArea(
