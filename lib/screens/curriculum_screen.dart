@@ -1,12 +1,21 @@
+import 'dart:async';
+
 import 'package:material_ui/material_ui.dart';
 
 import '../content/curriculum.dart';
+import '../db/database.dart';
+import '../games/game_screen.dart';
+import '../models/game_result.dart';
+import '../models/question.dart';
 
 /// شاشة تفاصيل عالم (مادة): تعرض هيكل المنهج اليمني الموثّق
 /// (الوحدات والدروس) من `assets/data/curriculum.json`.
 ///
-/// هيكل فقط — لا نصوص دروس ولا أسئلة. أسفل كل مادة تظهر حالة صادقة:
-/// «الأسئلة قيد الإعداد» لأن الكتب أو إذن الوزارة لم يصلا بعد.
+/// هيكل فقط — لا نصوص دروس. الضغط على درس يفتح أسئلته الحقيقية
+/// من قاعدة البيانات (`GameScreen` بوضع quiz)؛ والدرس الذي لا
+/// أسئلة له بعد يُظهر رسالة صادقة بذلك، لا أسئلة مخترعة.
+/// دروس النسخ البديلة الموثقة (غير المزروعة في قاعدة البيانات)
+/// غير قابلة للعب، حتى لا تُعرض أسئلة درس آخر على أنها أسئلتها.
 class CurriculumScreen extends StatefulWidget {
   const CurriculumScreen({
     super.key,
@@ -98,9 +107,9 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
           child: Padding(
             padding: EdgeInsets.all(16),
             child: Text(
-              'الأسئلة قيد الإعداد — ستُبنى حصرياً من الكتاب الوزاري '
-              'المعتمد بعد توفيره أو الحصول على إذن الوزارة، ولن يُعرض '
-              'أي سؤال قبل التأكد من مصدره ورقم صفحته.',
+              'أسئلة الدروس متوفرة من الحزم الموثقة — اضغطي على أي درس '
+              'لبدء لعب أسئلته. كل سؤال يعرض مصدره ورقم صفحته، ولا يُعرض '
+              'أي سؤال مخترع أو بلا مصدر.',
               textAlign: TextAlign.center,
             ),
           ),
@@ -203,7 +212,45 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     );
   }
 
-  Widget _unitTile(CurriculumUnit unit) {
+  /// يفتح أسئلة درس واحد في `GameScreen` (وضع quiz).
+  /// معرّف الدرس يطابق نمط زرع المنهج (`<subject>-u<unit>-l<lesson>`).
+  /// درس بلا أسئلة: رسالة صادقة، بلا لعبة وبلا أسئلة مخترعة.
+  Future<void> _playLesson(String lessonTitle, String lessonId) async {
+    final List<Question> questions = await DatabaseHelper.instance
+        .getQuestionsForLesson(widget.subjectId, lessonId);
+    if (!mounted) return;
+    if (questions.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            'لا توجد أسئلة بعد في درس «$lessonTitle» — ستُضاف فور '
+            'توفرها من الكتاب المعتمد.',
+          ),
+        ),
+      );
+      return;
+    }
+    await Navigator.of(context).push<void>(
+      MaterialPageRoute<void>(
+        builder: (_) => GameScreen(
+          modeRouteId: 'quiz',
+          subject: widget.subjectId,
+          subjectTitleAr: lessonTitle,
+          questions: questions,
+          onFinished: (GameResult result) {
+            unawaited(
+              DatabaseHelper.instance.recordGameResult(
+                result: result,
+                playedQuestions: questions,
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+
+  Widget _unitTile(CurriculumUnit unit, {bool allowPlay = true}) {
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
       child: ExpansionTile(
@@ -238,12 +285,23 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
                 ),
               ),
               title: Text(unit.lessons[i]),
+              trailing: allowPlay
+                  ? const Icon(Icons.play_circle_outline)
+                  : null,
+              onTap: allowPlay
+                  ? () => _playLesson(
+                        unit.lessons[i],
+                        '${widget.subjectId}-u${unit.number}-l${i + 1}',
+                      )
+                  : null,
             ),
-          const Padding(
-            padding: EdgeInsets.fromLTRB(16, 0, 16, 12),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
             child: Text(
-              'أسئلة هذا الدرس: قيد الإعداد',
-              style: TextStyle(color: Colors.grey),
+              allowPlay
+                  ? 'اضغطي على أي درس لبدء أسئلته.'
+                  : 'أسئلة هذه النسخة البديلة قيد الإعداد.',
+              style: const TextStyle(color: Colors.grey),
             ),
           ),
         ],
@@ -280,7 +338,9 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
           ),
         );
       }
-      out.addAll(variant.units.map(_unitTile));
+      out.addAll(variant.units.map(
+        (CurriculumUnit u) => _unitTile(u, allowPlay: false),
+      ));
     }
     return out;
   }
