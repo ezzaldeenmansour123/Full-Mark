@@ -144,11 +144,11 @@ class _AbqariyaAppState extends State<AbqariyaApp> {
     final String? initError = widget.initError;
     if (initError != null) {
       return MaterialApp(
-        title: 'عبقرية',
+        title: 'فُل مارك',
         debugShowCheckedModeBanner: false,
         locale: const Locale('ar'),
         home: Scaffold(
-          appBar: AppBar(title: const Text('عبقرية')),
+          appBar: AppBar(title: const Text('فُل مارك')),
           body: Center(
             child: Padding(
               padding: const EdgeInsets.all(24),
@@ -167,7 +167,7 @@ class _AbqariyaAppState extends State<AbqariyaApp> {
       valueListenable: _themeMode,
       builder: (BuildContext context, ThemeMode mode, Widget? child) {
         return MaterialApp(
-          title: 'عبقرية',
+          title: 'فُل مارك',
           debugShowCheckedModeBanner: false,
           // عربي RTL بالكامل.
           locale: const Locale('ar'),
