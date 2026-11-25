@@ -25,13 +25,17 @@
 import 'dart:math' as math;
 import 'package:material_ui/material_ui.dart';
 
+import '../db/database.dart';
+import '../models/question.dart';
+
 /// Physics Lab — free fall, pendulum, DC circuit.
 ///
 /// Public constructor: `const PhysicsLab({super.key, this.onComplete})`.
 class PhysicsLab extends StatefulWidget {
   const PhysicsLab({super.key, this.onComplete});
 
-  final void Function(int score)? onComplete;
+  /// (score, total) — total is the number of quiz questions.
+  final void Function(int score, int total)? onComplete;
 
   static const String labId = 'physics_lab';
   static const String title = 'مختبر الفيزياء: السقوط الحر والبندول والدوائر';
@@ -63,31 +67,49 @@ class _PhysicsLabState extends State<PhysicsLab>
 
   late final AnimationController _ctrl;
 
-  // Demo mini-quiz (demo — not Yemeni curriculum).
+  // «اختبر نفسك»: 3 أسئلة حقيقية من بنك الفيزياء (MCQ / صح-خطأ)
+  // تُحمَّل من قاعدة البيانات مع مصدرها ورقم صفحتها — لا أسئلة
+  // مخترعة. (v0.1.4: كانت 3 أسئلة تجريبية ثابتة بلا مصدر.)
+  List<Question> _quizQuestions = <Question>[];
+  bool _quizLoaded = false;
   int _quizIndex = 0, _quizScore = 0;
   bool _quizDone = false;
   int? _selected;
-  static const _quiz = [
-    (
-      q: 'جسم سقط من ارتفاع 20 m (g = 9.8 m/s²). ما زمن وصوله للأرض تقريبًا؟',
-      options: ['2.0 s', '4.0 s', '1.0 s', '9.8 s'],
-      correct: 0, // √(40/9.8) ≈ 2.02 s ✓
-    ),
-    (
-      q: 'بندول طوله 1 m، ما دوره تقريبًا؟ (g = 9.8 m/s²)',
-      options: ['2.0 s', '1.0 s', '3.1 s', '6.3 s'],
-      correct: 0, // 2π√(1/9.8) ≈ 2.01 s ✓
-    ),
-    (
-      q: 'دائرة V = 12 V و R = 6 Ω، ما شدة التيار؟',
-      options: ['2 A', '72 A', '0.5 A', '18 A'],
-      correct: 0, // 12/6 = 2 A ✓
-    ),
-  ];
+
+  Future<void> _loadQuiz() async {
+    final List<Question> bank =
+        await DatabaseHelper.instance.getQuestionsForSubject('physics');
+    final List<Question> usable = bank
+        .where((Question q) =>
+            (q.type == QuestionType.mcq &&
+                q.options.contains(q.correctAnswer)) ||
+            (q.type == QuestionType.trueFalse &&
+                (q.correctAnswer.trim() == 'صح' ||
+                    q.correctAnswer.trim() == 'خطأ')))
+        .toList()
+      ..shuffle();
+    if (!mounted) return;
+    setState(() {
+      _quizQuestions = usable.take(3).toList();
+      _quizLoaded = true;
+    });
+  }
+
+  List<String> _quizOptions(Question q) => q.type == QuestionType.trueFalse
+      ? const <String>['صح', 'خطأ']
+      : q.options;
+
+  int _quizCorrect(Question q) => q.type == QuestionType.trueFalse
+      ? (q.correctAnswer.trim() == 'صح' ? 0 : 1)
+      : q.options.indexOf(q.correctAnswer);
+
+  String _quizSource(Question q) => 'المصدر: ${q.source}'
+      '${q.sourcePage != null ? ' — ص ${q.sourcePage}' : ''}';
 
   @override
   void initState() {
     super.initState();
+    _loadQuiz();
     _ctrl = AnimationController(
         vsync: this, duration: const Duration(milliseconds: 50))
       ..addListener(() {
@@ -104,8 +126,16 @@ class _PhysicsLabState extends State<PhysicsLab>
           }
           if (_swinging) _pendulumTime += 0.05;
         });
-      })
-      ..repeat();
+        // Stop the ticker as soon as nothing is animating — it used
+        // to repeat() forever, calling setState() 20 times a second
+        // even on a perfectly still screen.
+        if (!_falling && !_swinging) _ctrl.stop();
+      });
+  }
+
+  /// Start the 50 ms ticker, but only while something animates.
+  void _kickAnimation() {
+    if (!_ctrl.isAnimating) _ctrl.repeat();
   }
 
   @override
@@ -122,20 +152,20 @@ class _PhysicsLabState extends State<PhysicsLab>
   static double power(double v, double r) => v * current(v, r); // P = VI
 
   void _answer(int i) {
-    if (_quizDone) return;
+    if (_quizDone || _quizQuestions.isEmpty) return;
     setState(() {
       _selected = i;
-      if (i == _quiz[_quizIndex].correct) _quizScore++;
+      if (i == _quizCorrect(_quizQuestions[_quizIndex])) _quizScore++;
     });
     Future.delayed(const Duration(milliseconds: 700), () {
       if (!mounted) return;
       setState(() {
-        if (_quizIndex < _quiz.length - 1) {
+        if (_quizIndex < _quizQuestions.length - 1) {
           _quizIndex++;
           _selected = null;
         } else {
           _quizDone = true;
-          widget.onComplete?.call(_quizScore);
+          widget.onComplete?.call(_quizScore, _quizQuestions.length);
         }
       });
     });
@@ -187,10 +217,13 @@ class _PhysicsLabState extends State<PhysicsLab>
               ElevatedButton(
                 onPressed: _falling
                     ? null
-                    : () => setState(() {
+                    : () {
+                        setState(() {
                           _fallProgress = 0;
                           _falling = true;
-                        }),
+                        });
+                        _kickAnimation();
+                      },
                 child: const Text('أسقط الجسم'),
               ),
               const SizedBox(width: 8),
@@ -227,10 +260,23 @@ class _PhysicsLabState extends State<PhysicsLab>
                 value: _length,
                 min: 0.1,
                 max: 2.0,
-                onChanged: (v) => setState(() => _length = v)),
+                onChanged: (v) => setState(() {
+                      _length = v;
+                      // The period changed: restart the swing clock so
+                      // the angle matches the new period from t = 0.
+                      _pendulumTime = 0;
+                    })),
             Row(children: [
               ElevatedButton(
-                onPressed: () => setState(() => _swinging = !_swinging),
+                onPressed: () {
+                  final bool start = !_swinging;
+                  setState(() {
+                    _swinging = start;
+                    // Stopping returns the bob to rest (angle 0).
+                    if (!start) _pendulumTime = 0;
+                  });
+                  if (start) _kickAnimation();
+                },
                 child: Text(_swinging ? 'إيقاف التأرجح' : 'ابدأ التأرجح'),
               ),
             ]),
@@ -272,16 +318,34 @@ class _PhysicsLabState extends State<PhysicsLab>
               'القدرة: P = ${powerP.toStringAsFixed(1)} W (سطوع المصباح يتناسب معها)',
             ]),
             const SizedBox(height: 16),
-            _QuizCard(
-              question: _quiz[_quizIndex].q,
-              options: _quiz[_quizIndex].options,
-              correct: _quiz[_quizIndex].correct,
-              selected: _selected,
-              done: _quizDone,
-              score: _quizScore,
-              total: _quiz.length,
-              onAnswer: _answer,
-            ),
+            if (!_quizLoaded)
+              const Card(
+                child: Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Center(child: CircularProgressIndicator()),
+                ),
+              )
+            else if (_quizQuestions.isEmpty)
+              const Card(
+                child: Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Text(
+                    'لا توجد أسئلة بعد في بنك الفيزياء لاختبار نفسك.',
+                  ),
+                ),
+              )
+            else
+              _QuizCard(
+                question: _quizQuestions[_quizIndex].text,
+                options: _quizOptions(_quizQuestions[_quizIndex]),
+                correct: _quizCorrect(_quizQuestions[_quizIndex]),
+                source: _quizSource(_quizQuestions[_quizIndex]),
+                selected: _selected,
+                done: _quizDone,
+                score: _quizScore,
+                total: _quizQuestions.length,
+                onAnswer: _answer,
+              ),
           ],
         ),
       ),
@@ -321,7 +385,10 @@ class _FallPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final groundY = size.height - 24;
-    final topY = 24.0;
+    // The drop starts higher for a larger height, so the picture
+    // actually shows the chosen h (it used to start at a fixed y
+    // whatever the height was).
+    final topY = groundY - (height / 50) * (groundY - 24);
     // True accelerated motion: distance ∝ t².
     final y = topY + (groundY - topY) * progress * progress;
     final ground = Paint()..color = Colors.brown;
@@ -330,7 +397,9 @@ class _FallPainter extends CustomPainter {
     canvas.drawCircle(Offset(size.width / 2, y), 12,
         Paint()..color = Colors.blue);
     final tp = TextPainter(
-        text: const TextSpan(text: 'h', style: TextStyle(color: Colors.grey)),
+        text: TextSpan(
+            text: 'h = ${height.toStringAsFixed(0)} m',
+            style: const TextStyle(color: Colors.grey)),
         textDirection: TextDirection.rtl)
       ..layout();
     tp.paint(canvas, Offset(8, (topY + groundY) / 2));
@@ -458,6 +527,7 @@ class _QuizCard extends StatelessWidget {
     required this.question,
     required this.options,
     required this.correct,
+    required this.source,
     required this.selected,
     required this.done,
     required this.score,
@@ -467,6 +537,7 @@ class _QuizCard extends StatelessWidget {
   final String question;
   final List<String> options;
   final int correct;
+  final String source;
   final int? selected;
   final bool done;
   final int score, total;
@@ -477,8 +548,8 @@ class _QuizCard extends StatelessWidget {
       return Card(
           child: Padding(
               padding: const EdgeInsets.all(16),
-              child: Text('انتهى الاختبار التجريبي — نتيجتك: $score / $total\n'
-                  'أسئلة تجريبية (demo — ليست من المنهج اليمني).')));
+              child: Text('انتهى الاختبار — نتيجتك: $score / $total\n'
+                  'أسئلة من بنك المنهج اليمني الموثق (مع المصدر والصفحة).')));
     }
     return Card(
       child: Padding(
@@ -486,7 +557,7 @@ class _QuizCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('اختبر نفسك (تجريبي)',
+            Text('اختبر نفسك — أسئلة من المنهج',
                 style: Theme.of(context).textTheme.titleMedium),
             const SizedBox(height: 6),
             Text(question),
@@ -508,8 +579,8 @@ class _QuizCard extends StatelessWidget {
                   ),
                 ),
               ),
-            const Text('أسئلة تجريبية (demo — ليست من المنهج اليمني).',
-                style: TextStyle(fontSize: 11, color: Colors.grey)),
+            Text(source,
+                style: const TextStyle(fontSize: 11, color: Colors.grey)),
           ],
         ),
       ),

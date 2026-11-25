@@ -19,8 +19,9 @@
 //  Cell: nucleus (controls cell, contains DNA), mitochondria (respiration /
 //  ATP energy), cytoplasm (jelly-like substance where reactions happen),
 //  cell membrane (controls entry/exit). Ribosomes / ER / Golgi are NOT
-//  drawn here — omitted deliberately to keep the diagram honest at this
-//  level; a fuller cell is listed as remaining work. ✓
+//  drawn in this 2D diagram — omitted deliberately to keep it honest at
+//  this level; the fuller cell (ER, Golgi, ribosomes, lysosomes,
+//  chloroplasts, vacuole) lives in the 3D viewer lib/labs/cell_3d.dart. ✓
 //  Digestive system (simplified overview, in order): mouth → oesophagus →
 //  stomach → small intestine → large intestine → rectum/anus; liver and
 //  pancreas shown as accessory glands (liver makes bile, pancreas makes
@@ -33,13 +34,16 @@
 import 'dart:math' as math;
 import 'package:material_ui/material_ui.dart';
 
+import '../core/routes.dart';
+
 /// Biology Lab — heart, cell, digestive system diagrams.
 ///
 /// Public constructor: `const BiologyLab({super.key, this.onComplete})`.
 class BiologyLab extends StatefulWidget {
   const BiologyLab({super.key, this.onComplete});
 
-  final void Function(int score)? onComplete;
+  /// (score, total) — total is 3 for the diagram quiz.
+  final void Function(int score, int total)? onComplete;
 
   static const String labId = 'biology_lab';
   static const String title = 'مختبر الأحياء: القلب والخلية والجهاز الهضمي';
@@ -118,6 +122,10 @@ const Map<_System, List<_Part>> _parts = {
 class _BiologyLabState extends State<BiologyLab> {
   _System _system = _System.heart;
   double _scale = 1.0;
+
+  /// Scale at the start of the current pinch — the pinch factor is
+  /// RELATIVE to it (see onScaleStart below).
+  double _baseScale = 1.0;
   Offset _offset = Offset.zero;
   double _rotation = 0; // radians, small range via slider (pinch zoom + drag pan)
   String? _selectedPartId;
@@ -125,6 +133,11 @@ class _BiologyLabState extends State<BiologyLab> {
   String? _quizTargetId;
   int _quizScore = 0, _quizAsked = 0;
   bool _quizDone = false;
+
+  /// Parts already asked in this quiz — the next target is always a
+  /// part not asked yet (before, the same part could repeat within
+  /// the 3 questions).
+  final Set<String> _askedTargetIds = <String>{};
 
   List<_Part> get _currentParts => _parts[_system]!;
 
@@ -152,14 +165,17 @@ class _BiologyLabState extends State<BiologyLab> {
             if (part.id == _quizTargetId) {
               _quizScore++;
               _selectedPartId = part.id;
-              _nextQuizTarget();
             } else {
               _selectedPartId = part.id; // shows what was tapped (wrong)
             }
             if (_quizAsked >= 3) {
               _quizDone = true;
               _quizMode = false;
-              widget.onComplete?.call(_quizScore);
+              widget.onComplete?.call(_quizScore, 3);
+            } else {
+              // Advance only while questions remain: calling this
+              // after the 3rd question generated a throwaway target.
+              _nextQuizTarget();
             }
           } else {
             _selectedPartId = part.id;
@@ -178,15 +194,22 @@ class _BiologyLabState extends State<BiologyLab> {
       _quizScore = 0;
       _quizAsked = 0;
       _selectedPartId = null;
+      _askedTargetIds.clear();
       _nextQuizTarget();
     });
   }
 
   void _nextQuizTarget() {
-    final remaining =
-        _currentParts.where((p) => p.id != _quizTargetId).toList();
-    _quizTargetId =
-        remaining[math.Random().nextInt(remaining.length)].id;
+    final remaining = _currentParts
+        .where((p) => !_askedTargetIds.contains(p.id))
+        .toList();
+    // Fallback (cannot happen with 3 questions and 4+ parts per
+    // system): reuse any part except the current target.
+    final pool = remaining.isEmpty
+        ? _currentParts.where((p) => p.id != _quizTargetId).toList()
+        : remaining;
+    _quizTargetId = pool[math.Random().nextInt(pool.length)].id;
+    _askedTargetIds.add(_quizTargetId!);
   }
 
   String get _quizTargetName =>
@@ -217,6 +240,13 @@ class _BiologyLabState extends State<BiologyLab> {
               ),
             ),
             const SizedBox(height: 12),
+            FilledButton.icon(
+              onPressed: () =>
+                  Navigator.of(context).pushNamed(AppRoutes.cell3d),
+              icon: const Icon(Icons.view_in_ar),
+              label: const Text('عرض الخلية ثلاثية الأبعاد — دوّرها واضغط على عضياتها'),
+            ),
+            const SizedBox(height: 12),
             SegmentedButton<_System>(
               segments: const [
                 ButtonSegment(value: _System.heart, label: Text('القلب')),
@@ -236,8 +266,12 @@ class _BiologyLabState extends State<BiologyLab> {
             LayoutBuilder(builder: (context, constraints) {
               final w = constraints.maxWidth;
               return GestureDetector(
+                // d.scale is relative to the PINCH START, not to the
+                // current scale: without remembering the start scale,
+                // every new pinch snapped the zoom back to ~1x.
+                onScaleStart: (d) => _baseScale = _scale,
                 onScaleUpdate: (d) => setState(() {
-                  _scale = (d.scale).clamp(0.6, 2.5);
+                  _scale = (_baseScale * d.scale).clamp(0.6, 2.5);
                   _offset += d.focalPointDelta;
                 }),
                 onTapUp: (d) => _handleTap(d, Size(w, 280)),
@@ -299,8 +333,9 @@ class _BiologyLabState extends State<BiologyLab> {
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Text(
-                      'انتهى الاختبار التجريبي — نتيجتك: $_quizScore / 3\n'
-                      'أسئلة تجريبية (demo — ليست من المنهج اليمني).'),
+                      'انتهى اختبار الرسم — نتيجتك: $_quizScore / 3\n'
+                      'أسئلة من أجزاء الرسم التعليمي نفسه (ليست أسئلة '
+                      'من الكتاب).'),
                 ),
               )
             else if (selected != null)
@@ -331,13 +366,16 @@ class _BiologyLabState extends State<BiologyLab> {
             const SizedBox(height: 8),
             ElevatedButton(
               onPressed: _quizMode ? null : _startQuiz,
-              child: const Text('اختبر نفسك: إخفاء التسميات (تجريبي)'),
+              child: Text(_quizDone
+                  ? 'أعد الاختبار'
+                  : 'اختبر نفسك: إخفاء التسميات'),
             ),
             const SizedBox(height: 8),
             const Text(
               'ملاحظة: الرسوم مبسطة للتعليم؛ القلب الحقيقي له صمامات وأوعية '
-              'أكثر تفصيلًا، والخلية الحقيقية تحوي عضيات إضافية (الشبكة '
-              'الإندوبلازمية وجهاز جولجي والريبوسومات) لم تُرسم هنا.',
+              'أكثر تفصيلًا. والخلية الكاملة بعضياتها (الشبكة الإندوبلازمية '
+              'وجهاز جولجي والريبوسومات وغيرها) تجدينها في العرض ثلاثي '
+              'الأبعاد أعلاه.',
               style: TextStyle(fontSize: 11, color: Colors.grey),
             ),
           ],

@@ -15,10 +15,14 @@
 //  5. y = x², x∈[0,1] → exact area 1/3 ≈ 0.333. Trapezoid n=100:
 //     error ≈ (b−a)³·f″/(12n²) = 2/(12·10⁴) ≈ 0.0000167 → shows ≈ 0.33. ✓
 //  6. Linear mode y = mx + b: root x = −b/m (m≠0); m=0 → horizontal line,
-//     root only if b=0 (infinite) else none — handled explicitly.
+//     root only if b=0 (infinite) else none — shown explicitly in the
+//     results card (v0.1.4: it wrongly said "no real roots" for y = 0).
 
 import 'dart:math' as math;
 import 'package:material_ui/material_ui.dart';
+
+import '../db/database.dart';
+import '../models/question.dart';
 
 /// Math Lab — function plotter + quadratic solver.
 ///
@@ -28,7 +32,8 @@ class MathLab extends StatefulWidget {
   const MathLab({super.key, this.onComplete});
 
   /// Called once when the user finishes the built-in mini-quiz.
-  final void Function(int score)? onComplete;
+  /// (score, total) — total is the number of quiz questions.
+  final void Function(int score, int total)? onComplete;
 
   static const String labId = 'math_lab';
   static const String title = 'مختبر الرياضيات: الدوال التربيعية والخطية';
@@ -45,12 +50,57 @@ enum _Mode { quadratic, linear }
 class _MathLabState extends State<MathLab> {
   _Mode _mode = _Mode.quadratic;
   double _a = 1, _b = -5, _c = 6; // quadratic coefficients
+
+  /// Integration interval for the trapezoid area (was hardcoded [0,2]
+  /// with no control — the number could not be changed at all).
+  double _areaX0 = 0, _areaX1 = 2;
   double _m = 2, _bb = 1; // linear: y = mx + b
   final double _xMin = -10, _xMax = 10;
+  // «اختبر نفسك»: 3 أسئلة حقيقية من بنك الرياضيات (MCQ / صح-خطأ)
+  // تُحمَّل من قاعدة البيانات مع مصدرها ورقم صفحتها — لا أسئلة
+  // مخترعة. (v0.1.4: كانت 3 أسئلة تجريبية ثابتة بلا مصدر.)
+  List<Question> _quizQuestions = <Question>[];
+  bool _quizLoaded = false;
   int _quizIndex = 0;
   int _quizScore = 0;
   bool _quizDone = false;
   int? _selectedAnswer;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadQuiz();
+  }
+
+  Future<void> _loadQuiz() async {
+    final List<Question> bank =
+        await DatabaseHelper.instance.getQuestionsForSubject('math');
+    final List<Question> usable = bank
+        .where((Question q) =>
+            (q.type == QuestionType.mcq &&
+                q.options.contains(q.correctAnswer)) ||
+            (q.type == QuestionType.trueFalse &&
+                (q.correctAnswer.trim() == 'صح' ||
+                    q.correctAnswer.trim() == 'خطأ')))
+        .toList()
+      ..shuffle();
+    if (!mounted) return;
+    setState(() {
+      _quizQuestions = usable.take(3).toList();
+      _quizLoaded = true;
+    });
+  }
+
+  List<String> _quizOptions(Question q) => q.type == QuestionType.trueFalse
+      ? const <String>['صح', 'خطأ']
+      : q.options;
+
+  int _quizCorrect(Question q) => q.type == QuestionType.trueFalse
+      ? (q.correctAnswer.trim() == 'صح' ? 0 : 1)
+      : q.options.indexOf(q.correctAnswer);
+
+  String _quizSource(Question q) => 'المصدر: ${q.source}'
+      '${q.sourcePage != null ? ' — ص ${q.sourcePage}' : ''}';
 
   // --- Pure math (kept as separate static helpers so the logic is testable) ---
 
@@ -93,45 +143,21 @@ class _MathLabState extends State<MathLab> {
       ? quadraticRoots(_a, _b, _c)
       : (_m == 0 ? const [] : [-_bb / _m]);
 
-  // Demo mini-quiz — labelled demo, NOT Yemeni curriculum.
-  static const _quiz = [
-    (
-      q: 'ما جذرا المعادلة x² − 5x + 6 = 0؟',
-      options: ['2 و 3', '1 و 6', '−2 و −3', 'لا جذور حقيقية'],
-      correct: 0,
-    ),
-    (
-      q: 'ما إحداثي x للرأس في y = x² − 4x + 3؟',
-      options: ['x = 2', 'x = −2', 'x = 4', 'x = 0'],
-      correct: 0, // xᵥ = 4/2 = 2 ✓
-    ),
-    (
-      q: 'متى لا توجد جذور حقيقية لمعادلة تربيعية؟',
-      options: [
-        'عندما يكون المميز Δ سالبًا',
-        'عندما يكون a = 0',
-        'عندما يكون c = 0',
-        'عندما يكون b = 0'
-      ],
-      correct: 0,
-    ),
-  ];
-
   void _answer(int i) {
-    if (_quizDone) return;
+    if (_quizDone || _quizQuestions.isEmpty) return;
     setState(() {
       _selectedAnswer = i;
-      if (i == _quiz[_quizIndex].correct) _quizScore++;
+      if (i == _quizCorrect(_quizQuestions[_quizIndex])) _quizScore++;
     });
     Future.delayed(const Duration(milliseconds: 700), () {
       if (!mounted) return;
       setState(() {
-        if (_quizIndex < _quiz.length - 1) {
+        if (_quizIndex < _quizQuestions.length - 1) {
           _quizIndex++;
           _selectedAnswer = null;
         } else {
           _quizDone = true;
-          widget.onComplete?.call(_quizScore);
+          widget.onComplete?.call(_quizScore, _quizQuestions.length);
         }
       });
     });
@@ -141,7 +167,7 @@ class _MathLabState extends State<MathLab> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final roots = _roots;
-    final area = trapezoidArea(_current, 0, 2, 100);
+    final area = trapezoidArea(_current, _areaX0, _areaX1, 100);
     final (vx, vy) = _mode == _Mode.quadratic
         ? vertex(_a, _b, _c)
         : (0.0, 0.0); // linear: no vertex
@@ -194,6 +220,11 @@ class _MathLabState extends State<MathLab> {
                   min: -5,
                   max: 5,
                   onChanged: (v) => setState(() => _a = v == 0 ? 0.1 : v)),
+              const Text(
+                'ملاحظة: a ≠ 0 — عند 0 تصبح المعادلة خطية، فيُثبَّت a على 0.1 '
+                '(القيمة الظاهرة في التسمية هي القيمة الحقيقية المستخدمة).',
+                style: TextStyle(fontSize: 11, color: Colors.grey),
+              ),
               _SliderRow(
                   label: 'b = ${_b.toStringAsFixed(1)}',
                   value: _b,
@@ -221,6 +252,24 @@ class _MathLabState extends State<MathLab> {
                   onChanged: (v) => setState(() => _bb = v)),
             ],
             const SizedBox(height: 8),
+            Text('فترة حساب المساحة',
+                style: theme.textTheme.titleMedium
+                    ?.copyWith(fontWeight: FontWeight.bold)),
+            _SliderRow(
+                label: 'بداية الفترة x₀ = ${_areaX0.toStringAsFixed(1)}',
+                value: _areaX0,
+                min: -10,
+                max: 10,
+                onChanged: (v) => setState(
+                    () => _areaX0 = math.min(v, _areaX1 - 0.5))),
+            _SliderRow(
+                label: 'نهاية الفترة x₁ = ${_areaX1.toStringAsFixed(1)}',
+                value: _areaX1,
+                min: -10,
+                max: 10,
+                onChanged: (v) => setState(
+                    () => _areaX1 = math.max(v, _areaX0 + 0.5))),
+            const SizedBox(height: 8),
             _ResultCard(
               title: 'النتائج العددية',
               lines: [
@@ -229,10 +278,14 @@ class _MathLabState extends State<MathLab> {
                   'الرأس: (${vx.toStringAsFixed(2)} ، ${vy.toStringAsFixed(2)})',
                   'محور التماثل: x = ${vx.toStringAsFixed(2)}',
                 ],
-                roots.isEmpty
-                    ? 'لا توجد جذور حقيقية (المنحنى لا يقطع محور x)'
-                    : 'الجذور: ${roots.map((r) => r.toStringAsFixed(2)).join(' ، ')}',
-                'المساحة تحت المنحنى من x=0 إلى x=2 (تقريب شبه المنحرف، n=100): '
+                _mode == _Mode.linear && _m == 0 && _bb == 0
+                    ? 'الجذور: كل قيمة x جذر — الخط y = 0 منطبق على محور x'
+                    : roots.isEmpty
+                        ? 'لا توجد جذور حقيقية (المنحنى لا يقطع محور x)'
+                        : 'الجذور: ${roots.map((r) => r.toStringAsFixed(2)).join(' ، ')}',
+                'المساحة تحت المنحنى من x=${_areaX0.toStringAsFixed(1)} '
+                    'إلى x=${_areaX1.toStringAsFixed(1)} '
+                    '(تقريب شبه المنحرف، n=100): '
                     '${area.toStringAsFixed(2)} وحدة مربعة',
               ],
             ),
@@ -240,17 +293,35 @@ class _MathLabState extends State<MathLab> {
             if (_mode == _Mode.quadratic)
               _QuadraticSolver(a: _a, b: _b, c: _c),
             const SizedBox(height: 16),
-            _QuizCard(
-              title: 'اختبر نفسك (تجريبي)',
-              question: _quiz[_quizIndex].q,
-              options: _quiz[_quizIndex].options,
-              correct: _quiz[_quizIndex].correct,
-              selected: _selectedAnswer,
-              done: _quizDone,
-              score: _quizScore,
-              total: _quiz.length,
-              onAnswer: _answer,
-            ),
+            if (!_quizLoaded)
+              const Card(
+                child: Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Center(child: CircularProgressIndicator()),
+                ),
+              )
+            else if (_quizQuestions.isEmpty)
+              const Card(
+                child: Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Text(
+                    'لا توجد أسئلة بعد في بنك الرياضيات لاختبار نفسك.',
+                  ),
+                ),
+              )
+            else
+              _QuizCard(
+                title: 'اختبر نفسك — أسئلة من المنهج',
+                question: _quizQuestions[_quizIndex].text,
+                options: _quizOptions(_quizQuestions[_quizIndex]),
+                correct: _quizCorrect(_quizQuestions[_quizIndex]),
+                source: _quizSource(_quizQuestions[_quizIndex]),
+                selected: _selectedAnswer,
+                done: _quizDone,
+                score: _quizScore,
+                total: _quizQuestions.length,
+                onAnswer: _answer,
+              ),
           ],
         ),
       ),
@@ -460,14 +531,16 @@ class _ResultCard extends StatelessWidget {
       );
 }
 
-/// Shared demo-quiz card (also used by the other labs via copy — labs stay
+/// Shared quiz card (also used by the other labs via copy — labs stay
 /// independent of each other, so each file carries its own copy).
+/// Questions come from the verified bank, with source + page.
 class _QuizCard extends StatelessWidget {
   const _QuizCard({
     required this.title,
     required this.question,
     required this.options,
     required this.correct,
+    required this.source,
     required this.selected,
     required this.done,
     required this.score,
@@ -477,6 +550,7 @@ class _QuizCard extends StatelessWidget {
   final String title, question;
   final List<String> options;
   final int correct;
+  final String source;
   final int? selected;
   final bool done;
   final int score, total;
@@ -488,8 +562,8 @@ class _QuizCard extends StatelessWidget {
       return Card(
         child: Padding(
           padding: const EdgeInsets.all(16),
-          child: Text('انتهى الاختبار التجريبي — نتيجتك: $score / $total\n'
-              'أسئلة تجريبية (demo — ليست من المنهج اليمني).'),
+          child: Text('انتهى الاختبار — نتيجتك: $score / $total\n'
+              'أسئلة من بنك المنهج اليمني الموثق (مع المصدر والصفحة).'),
         ),
       );
     }
@@ -520,8 +594,8 @@ class _QuizCard extends StatelessWidget {
                   ),
                 ),
               ),
-            const Text('أسئلة تجريبية (demo — ليست من المنهج اليمني).',
-                style: TextStyle(fontSize: 11, color: Colors.grey)),
+            Text(source,
+                style: const TextStyle(fontSize: 11, color: Colors.grey)),
           ],
         ),
       ),

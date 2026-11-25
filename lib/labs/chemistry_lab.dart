@@ -31,7 +31,8 @@ import 'package:material_ui/material_ui.dart';
 class ChemistryLab extends StatefulWidget {
   const ChemistryLab({super.key, this.onComplete});
 
-  final void Function(int score)? onComplete;
+  /// (score, total) — always (1, 1): one molecule / one equation.
+  final void Function(int score, int total)? onComplete;
 
   static const String labId = 'chemistry_lab';
   static const String title = 'مختبر الكيمياء: بناء الجزيئات وموازنة المعادلات';
@@ -80,6 +81,10 @@ class _ChemistryLabState extends State<ChemistryLab> {
   // --- Balancer state (2H₂ + O₂ → 2H₂O) ---
   int _cH2 = 1, _cO2 = 1, _cH2O = 1; // coefficients, each 1..4
   bool _balancerSolved = false;
+
+  /// True once the current builder target was solved — so the
+  /// completion is reported (and XP awarded) exactly once per build.
+  bool _builderSolved = false;
 
   // --- Pure helpers (hand-verified above) ---
 
@@ -133,6 +138,9 @@ class _ChemistryLabState extends State<ChemistryLab> {
       final dy = 70.0 + (_atoms.length ~/ 4) * 70.0;
       _atoms.add(_PlacedAtom(kind, Offset(dx, dy)));
       _builderMessage = 'أُضيفت ذرة ${kind.symbol}.';
+      // Re-check: adding the last missing atom can complete a
+      // molecule whose bonds were already placed.
+      _checkTarget();
     });
   }
 
@@ -169,13 +177,54 @@ class _ChemistryLabState extends State<ChemistryLab> {
     });
   }
 
+  /// Required bonds for each target, as sorted "X-Y-order" signatures:
+  /// H₂O needs two H–O singles, CO₂ two C=O doubles, O₂ one O=O double,
+  /// NH₃ three N–H singles. (v0.1.4: the check used to verify atom
+  /// COUNTS only, so unbonded atoms could "build" a molecule.)
+  Map<String, int> get _targetBonds => switch (_target) {
+        'H₂O' => {'H-O-1': 2},
+        'CO₂' => {'C-O-2': 2},
+        'O₂' => {'O-O-2': 1},
+        'NH₃' => {'H-N-1': 3},
+        _ => {},
+      };
+
+  Map<String, int> get _currentBonds {
+    final Map<String, int> m = <String, int>{};
+    for (final _Bond b in _bonds) {
+      final String s1 = _atoms[b.a].kind.symbol;
+      final String s2 = _atoms[b.b].kind.symbol;
+      final String key = s1.compareTo(s2) <= 0
+          ? '$s1-$s2-${b.order}'
+          : '$s2-$s1-${b.order}';
+      m[key] = (m[key] ?? 0) + 1;
+    }
+    return m;
+  }
+
   void _checkTarget() {
     final want = _targetCounts;
     final have = _currentCounts;
-    final match = want.length == have.length &&
+    final countsMatch = want.length == have.length &&
         want.entries.every((e) => have[e.key] == e.value);
-    if (match) {
-      _builderMessage = 'أحسنت! بنيت $_target بعدد ذرات صحيح. جرّب هدفًا آخر.';
+    final wantBonds = _targetBonds;
+    final haveBonds = _currentBonds;
+    final bondsMatch = wantBonds.length == haveBonds.length &&
+        wantBonds.entries.every((e) => haveBonds[e.key] == e.value);
+    if (countsMatch && bondsMatch) {
+      _builderMessage =
+          'أحسنت! بنيت $_target بالذرات والروابط الصحيحة. جرّب هدفًا آخر.';
+      // Report the build once: before, a solved molecule only set a
+      // message and the lab never counted as completed.
+      if (!_builderSolved) {
+        _builderSolved = true;
+        widget.onComplete?.call(1, 1);
+      }
+    } else if (countsMatch) {
+      // Atoms are right but the bonds are not the molecule yet.
+      _builderMessage =
+          'عدد الذرات صحيح لـ $_target، لكن الروابط ليست صحيحة بعد — '
+          'أكمل الربط كما في الجزيء.';
     }
   }
 
@@ -183,7 +232,7 @@ class _ChemistryLabState extends State<ChemistryLab> {
     setState(() {
       if (_balanced && !_balancerSolved) {
         _balancerSolved = true;
-        widget.onComplete?.call(1);
+        widget.onComplete?.call(1, 1);
       } else if (!_balanced) {
         _balancerSolved = false;
       }
@@ -251,6 +300,7 @@ class _ChemistryLabState extends State<ChemistryLab> {
                 _atoms.clear();
                 _bonds.clear();
                 _bondFrom = null;
+                _builderSolved = false;
                 _builderMessage = 'ابنِ $_target — عدد الذرات المطلوب: '
                     '${_targetCounts.entries.map((e) => '${e.key}×${e.value}').join(' ، ')}';
               }),
@@ -266,6 +316,7 @@ class _ChemistryLabState extends State<ChemistryLab> {
                         _atoms.clear();
                         _bonds.clear();
                         _bondFrom = null;
+                        _builderSolved = false;
                         _builderMessage = 'مسحت اللوحة.';
                       }),
                   child: const Text('مسح')),
