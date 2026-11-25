@@ -130,6 +130,74 @@ void main() {
       expect(result.isDemoExam, true);
     });
 
+    test('unanswered questions are not counted as wrong', () {
+      final session = ExamSession.start(
+        subject: 'physics',
+        units: [],
+        bank: [
+          demoQ('q1', 'physics'),
+          demoQ('q2', 'physics'),
+          demoQ('q3', 'physics'),
+        ],
+      );
+      session.answerCurrent('أ'); // correct
+      session.next();
+      session.answerCurrent('ب'); // wrong
+      session.next();
+      // q3 left unanswered
+      final result = session.submit();
+      expect(result.correct, 1);
+      expect(result.wrong, 1);
+      expect(result.unanswered, 1);
+      expect(result.totalQuestions, 3);
+    });
+
+    test('mixed demo/real pool is a partial demo, never a full simulation', () {
+      final realQ = Question(
+        id: 'r1',
+        subject: 'physics',
+        unit: 'u1',
+        lesson: 'l1',
+        type: QuestionType.mcq,
+        text: 'سؤال حقيقي؟',
+        options: const ['أ', 'ب'],
+        correctAnswer: 'أ',
+        source: 'كتاب الفيزياء — طبعة صنعاء 2027',
+        sourcePage: 12,
+      );
+      final session = ExamSession.start(
+        subject: 'physics',
+        units: [],
+        bank: [demoQ('q1', 'physics'), realQ],
+      );
+      expect(session.isDemoExam, false);
+      expect(session.isPartialDemoExam, true);
+      expect(session.examLabel, 'محاكاة تجريبية (جزئياً)');
+    });
+
+    test('types filter keeps only answerable types in the exam', () {
+      final fillQ = Question(
+        id: 'f1',
+        subject: 'physics',
+        unit: 'u1',
+        lesson: 'l1',
+        type: QuestionType.fill,
+        text: 'أكمل: ...؟',
+        options: const [],
+        correctAnswer: 'شيء',
+        source: 'demo — not Yemeni curriculum',
+      );
+      final session = ExamSession.start(
+        subject: 'physics',
+        units: [],
+        bank: [demoQ('q1', 'physics'), fillQ],
+        types: const <QuestionType>[QuestionType.mcq],
+      );
+      expect(session.questions.length, 1);
+      expect(session.poolSize, 1);
+      expect(session.questions.first.id, 'q1');
+    });
+
     test('mark-for-review toggles and survives navigation', () {
       final session = ExamSession.start(
         subject: 'physics',

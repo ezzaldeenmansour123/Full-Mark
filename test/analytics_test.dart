@@ -45,6 +45,39 @@ void main() {
     });
   });
 
+  group('trend dates', () {
+    test('trend carries the real calendar date of each day', () {
+      final attempts = <Attempt>[
+        attempt(subject: 'physics', unit: 'u1', correct: true,
+            at: DateTime(2026, 11, 24)),
+        attempt(subject: 'physics', unit: 'u1', correct: true,
+            at: DateTime(2026, 11, 24)),
+        attempt(subject: 'physics', unit: 'u1', correct: false,
+            at: DateTime(2026, 11, 25)),
+        attempt(subject: 'physics', unit: 'u1', correct: true,
+            at: DateTime(2026, 11, 25)),
+        attempt(subject: 'physics', unit: 'u1', correct: true,
+            at: DateTime(2026, 11, 25)),
+      ];
+      final summary = AnalyticsEngine.summarize(attempts);
+      expect(summary.accuracyTrend.length, 2);
+      expect(summary.trendDates.length, 2);
+      expect(summary.trendDates[0], DateTime(2026, 11, 24));
+      expect(summary.trendDates[1], DateTime(2026, 11, 25));
+      expect(summary.accuracyTrend[0], 100);
+      expect(summary.accuracyTrend[1], closeTo(66.666, 0.01));
+    });
+
+    test('too little data -> trend and dates both empty', () {
+      final summary = AnalyticsEngine.summarize([
+        attempt(subject: 'physics', unit: 'u1', correct: true),
+        attempt(subject: 'physics', unit: 'u1', correct: true),
+      ]);
+      expect(summary.accuracyTrend, isEmpty);
+      expect(summary.trendDates, isEmpty);
+    });
+  });
+
   group('mastery', () {
     test('mastery % per subject is correct', () {
       final summary = AnalyticsEngine.summarize([

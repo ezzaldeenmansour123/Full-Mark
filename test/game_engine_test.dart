@@ -149,10 +149,10 @@ void main() {
   });
 
   group('game modes gating', () {
-    test('exactly 7 modes are playable', () {
+    test('exactly 8 modes are playable', () {
       final playable =
           kGameModes.where((m) => m.isPlayable).map((m) => m.routeId).toList();
-      expect(playable.length, 7);
+      expect(playable.length, 8);
       expect(playable, containsAll(<String>[
         'quiz',
         'true_false',
@@ -161,12 +161,13 @@ void main() {
         'boss_20',
         'complete_equation',
         'concept_match',
+        'unlock',
       ]));
     });
 
-    test('other 5 modes are defined but not playable', () {
+    test('other 4 modes are defined but not playable', () {
       expect(kGameModes.length, 12);
-      expect(kGameModes.where((m) => !m.isPlayable).length, 5);
+      expect(kGameModes.where((m) => !m.isPlayable).length, 4);
     });
   });
 }
