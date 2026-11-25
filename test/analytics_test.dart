@@ -1,4 +1,4 @@
-// ABQARIYA tests — analytics engine + SM-2 + mastery.
+// FULL MARK tests — analytics engine + SM-2 + mastery.
 // NOTE: NOT RUN HERE. No Flutter/Dart SDK is available in this
 // environment, so these tests were written carefully but never executed.
 // Run with: flutter test

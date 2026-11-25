@@ -1,4 +1,4 @@
-// ABQARIYA tests — game engine, scoring, stars, XP, gating.
+// FULL MARK tests — game engine, scoring, stars, XP, gating.
 // NOTE: NOT RUN HERE. No Flutter/Dart SDK is available in this
 // environment, so these tests were written carefully but never executed.
 // Run with: flutter test

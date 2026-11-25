@@ -1,4 +1,4 @@
-// ABQARIYA tests — balancer / gating logic: stars + XP rules,
+// FULL MARK tests — balancer / gating logic: stars + XP rules,
 // exam gating, analytics readiness.
 // NOTE: NOT RUN HERE. No Flutter/Dart SDK is available in this
 // environment, so these tests were written carefully but never executed.
