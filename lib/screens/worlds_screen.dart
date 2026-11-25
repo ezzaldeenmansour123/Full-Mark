@@ -3,7 +3,6 @@ import 'package:material_ui/material_ui.dart';
 import '../core/theme.dart';
 import '../db/database.dart';
 import 'curriculum_screen.dart';
-import 'placeholder_screen.dart';
 
 /// تعريف عالم واحد (مادة دراسية).
 class WorldDef {
@@ -72,9 +71,10 @@ const List<WorldDef> kWorlds = <WorldDef>[
 
 /// خريطة العوالم: بطاقة لكل مادة بلونها وأيقونتها وشريط تقدّمها.
 ///
-/// قاعدة الفتح في v1: العالم الأول مفتوح، وكل عالم لاحق يُفتح عند إحراز
-/// أي تقدّم في العالم الذي قبله. الضغط على عالم بلا محتوى بعد يفتح
-/// شاشته الحقيقية «قيد الإعداد» — لا دروس مزيّفة أبدًا.
+/// كل العوالم السبعة مفتوحة من أول تثبيت — لا قفل تسلسلي: الضغط على أي
+/// عالم يعرض هيكل منهجه اليمني الموثّق من curriculum.json (وحدات ودروس
+/// بمصادرها وطبعاتها)، مع حالة «الأسئلة قيد الإعداد» حيث لا أسئلة بعد.
+/// شريط التقدّم والنجوم حقيقيان من قاعدة البيانات ويتحركان بعد اللعب.
 class WorldsScreen extends StatefulWidget {
   const WorldsScreen({super.key});
 
@@ -105,12 +105,6 @@ class _WorldsScreenState extends State<WorldsScreen> {
     });
   }
 
-  bool _isUnlocked(int index) {
-    if (index == 0) return true;
-    final String previousId = kWorlds[index - 1].id;
-    return (_completion[previousId] ?? 0) > 0;
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -123,13 +117,12 @@ class _WorldsScreenState extends State<WorldsScreen> {
               itemBuilder: (BuildContext context, int index) {
                 final WorldDef world = kWorlds[index];
                 final double progress = _completion[world.id] ?? 0;
-                final bool unlocked = _isUnlocked(index);
                 return Card(
                   child: ListTile(
                     leading: CircleAvatar(
                       backgroundColor: world.color,
                       foregroundColor: Colors.white,
-                      child: Icon(unlocked ? world.icon : Icons.lock),
+                      child: Icon(world.icon),
                     ),
                     title: Text(
                       world.name,
@@ -153,10 +146,9 @@ class _WorldsScreenState extends State<WorldsScreen> {
                       ],
                     ),
                     isThreeLine: true,
-                    trailing: unlocked
-                        ? const Icon(Icons.arrow_forward_ios, size: 16)
-                        : const Icon(Icons.lock_outline, size: 16),
-                    onTap: () => _openWorld(context, world, unlocked),
+                    trailing:
+                        const Icon(Icons.arrow_forward_ios, size: 16),
+                    onTap: () => _openWorld(context, world),
                   ),
                 );
               },
@@ -164,24 +156,8 @@ class _WorldsScreenState extends State<WorldsScreen> {
     );
   }
 
-  void _openWorld(BuildContext context, WorldDef world, bool unlocked) {
-    if (!unlocked) {
-      Navigator.of(context).push(
-        MaterialPageRoute<void>(
-          builder: (_) => PlaceholderScreen(
-            args: PlaceholderArgs(
-              title: 'عالم ${world.name}',
-              subtitle: 'هذا العالم مغلق حاليًا.\nأكملي أي مرحلة في عالم '
-                  '${kWorlds[kWorlds.indexOf(world) - 1].name} لفتحه.',
-              comingSoon: const <String>[],
-              icon: world.icon,
-            ),
-          ),
-        ),
-      );
-      return;
-    }
-    // عالم مفتوح: يعرض هيكل المنهج اليمني الموثّق من curriculum.json
+  void _openWorld(BuildContext context, WorldDef world) {
+    // كل عالم مفتوح: يعرض هيكل المنهج اليمني الموثّق من curriculum.json
     // (وحدات ودروس بمصادرها وطبعاتها)، مع حالة «الأسئلة قيد الإعداد».
     Navigator.of(context).push(
       MaterialPageRoute<void>(

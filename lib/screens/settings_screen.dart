@@ -2,8 +2,10 @@ import 'package:material_ui/material_ui.dart';
 
 import '../core/progress_store.dart';
 
-/// الإعدادات: كتم الصوت، الوضع الداكن، إعادة تعيين التقدّم (بتأكيد)،
-/// وحول التطبيق (دون اتصال / بلا إعلانات / بلا حسابات) ورقم الإصدار.
+/// الإعدادات: الوضع الداكن، إعادة تعيين التقدّم (بتأكيد)، وحول التطبيق
+/// (دون اتصال / بلا إعلانات / بلا حسابات) ورقم الإصدار.
+/// لا يوجد مبدّل صوت هنا: لا توجد أي أصوات في التطبيق بعد، فلا معنى
+/// لمبدّل يتحكم بشيء غير موجود.
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({
     super.key,
@@ -19,7 +21,6 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  bool _soundEnabled = true;
   bool _darkMode = false;
   bool _loading = true;
 
@@ -30,11 +31,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Future<void> _load() async {
-    final bool sound = await widget.store.isSoundEnabled();
     final bool dark = await widget.store.isDarkMode();
     if (!mounted) return;
     setState(() {
-      _soundEnabled = sound;
       _darkMode = dark;
       _loading = false;
     });
@@ -86,7 +85,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             '• بلا إعلانات وبلا حسابات وبلا اشتراكات.\n'
             '• كل بياناتك محفوظة على جهازك فقط.\n'
             '• المحتوى التعليمي من الكتب الوزارية المعتمدة فقط، '
-            'وما لم يُعتمد بعد يظهر «قيد الإعداد» بصراحة.\n\n'
+            'وما لم يُعتمد بعد يظهر بصراحة على أنه غير متوفر بعد.\n\n'
             'الشعار: افهم، جرّب، اكتشف، وتفوّق.',
           ),
         ),
@@ -109,15 +108,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
           : ListView(
               padding: const EdgeInsets.all(16),
               children: <Widget>[
-                SwitchListTile(
-                  title: const Text('الصوت'),
-                  subtitle: const Text('المؤثرات الصوتية داخل اللعبة'),
-                  value: _soundEnabled,
-                  onChanged: (bool value) async {
-                    await widget.store.setSoundEnabled(value);
-                    setState(() => _soundEnabled = value);
-                  },
-                ),
                 SwitchListTile(
                   title: const Text('الوضع الداكن'),
                   subtitle: const Text('مريح للعين في الإضاءة الخافتة'),
@@ -144,7 +134,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 const ListTile(
                   leading: Icon(Icons.verified),
                   title: Text('الإصدار'),
-                  subtitle: Text('0.1.0+1 — نسخة الهيكل الأولى (v1 skeleton)'),
+                  subtitle: Text('0.1.2+3'),
                 ),
                 const ListTile(
                   leading: Icon(Icons.wifi_off),

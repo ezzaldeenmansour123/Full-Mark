@@ -1,21 +1,24 @@
+import 'dart:async';
+
 import 'package:material_ui/material_ui.dart';
 
+import '../core/routes.dart';
 import '../db/database.dart';
+import '../exam/ministerial_exam.dart';
 import '../exam/ministerial_exam_screen.dart';
 import '../models/question.dart';
 import 'worlds_screen.dart';
 
 /// محاكاة الامتحان الوزاري — شاشة الإطلاق القابلة للتوجيه.
 ///
-/// في v1 هذه شاشة هيكل صادقة: تعرض ما ستقدمه المحاكاة عند توفر أسئلة
-/// وزارية موثّقة، وتعرض عدد الأسئلة المتوفرة فعليًا (صفر الآن).
-/// لا تُعرض أسئلة مزيّفة على أنها أسئلة وزارية سابقة أبدًا.
+/// تعرض المواد التي لديها أسئلة موثّقة فعلاً في قاعدة البيانات مع عدد
+/// أسئلة كل مادة؛ والمواد بلا أسئلة لا تظهر أصلاً. الضغط على مادة
+/// يفتح شاشة الامتحان الحقيقية (`MinisterialExamScreen`) بأسئلة تلك
+/// المادة، وتُحفظ نتيجة كل امتحان مكتمل في جدول `exam_results` عبر
+/// `recordExamResult`.
 ///
-/// عند توفر أسئلة في قاعدة البيانات، تعرض أزرار المواد؛ والضغط على
-/// مادة يفتح شاشة الامتحان الحقيقية (`MinisterialExamScreen` في
-/// `lib/exam/`) بأسئلة تلك المادة من قاعدة البيانات — لا زرّ هنا
-/// وهمي: الزر المعطّل الوحيد هو زر البدء عند غياب الأسئلة، مع شرح
-/// السبب تحته.
+/// لا تُعرض أسئلة تجريبية على أنها أسئلة وزارية حقيقية أبداً: أي
+/// سؤال تجريبي يظهر داخل المحاكاة بعلامة «تجريبي» واضحة.
 class ExamScreen extends StatefulWidget {
   const ExamScreen({super.key});
 
@@ -25,6 +28,7 @@ class ExamScreen extends StatefulWidget {
 
 class _ExamScreenState extends State<ExamScreen> {
   int _questionCount = 0;
+  Map<String, int> _countsBySubject = const <String, int>{};
   bool _loading = true;
 
   @override
@@ -34,24 +38,33 @@ class _ExamScreenState extends State<ExamScreen> {
   }
 
   Future<void> _load() async {
-    final int count = await DatabaseHelper.instance.getTotalQuestions();
+    final DatabaseHelper db = DatabaseHelper.instance;
+    final int total = await db.getTotalQuestions();
+    final Map<String, int> counts = <String, int>{};
+    for (final WorldDef world in kWorlds) {
+      final List<Question> bank = await db.getQuestionsForSubject(world.id);
+      counts[world.id] = bank.length;
+    }
     if (!mounted) return;
     setState(() {
-      _questionCount = count;
+      _questionCount = total;
+      _countsBySubject = counts;
       _loading = false;
     });
   }
+
+  /// المواد التي لديها أسئلة فعلاً — فقط هذه تظهر كأزرار بدء.
+  List<WorldDef> get _availableWorlds => kWorlds
+      .where((WorldDef w) => (_countsBySubject[w.id] ?? 0) > 0)
+      .toList();
 
   Future<void> _startSubjectExam(WorldDef world) async {
     final List<Question> bank =
         await DatabaseHelper.instance.getQuestionsForSubject(world.id);
     if (!mounted) return;
     if (bank.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('لا توجد أسئلة موثّقة بعد في عالم ${world.name}.'),
-        ),
-      );
+      // سباق نادر (حُذفت الأسئلة بعد عرض العدد): حدّثي القائمة فقط.
+      await _load();
       return;
     }
     await Navigator.of(context).push<void>(
@@ -60,6 +73,20 @@ class _ExamScreenState extends State<ExamScreen> {
           subject: world.id,
           subjectTitleAr: world.name,
           bank: bank,
+          onSubmitted: (ExamResult result) {
+            // كل امتحان مكتمل يُحفظ في exam_results.
+            unawaited(
+              DatabaseHelper.instance.recordExamResult(
+                examType: 'ministerial_exam',
+                subjectId: world.id,
+                totalQuestions: result.totalQuestions,
+                correctCount: result.correct,
+                scorePct: result.accuracyPercent.round(),
+                durationMs: result.secondsUsed * 1000,
+                isDemo: result.isDemoExam,
+              ),
+            );
+          },
         ),
       ),
     );
@@ -69,6 +96,7 @@ class _ExamScreenState extends State<ExamScreen> {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
+    final List<WorldDef> available = _availableWorlds;
     return Scaffold(
       appBar: AppBar(title: const Text('الامتحان الوزاري')),
       body: _loading
@@ -91,14 +119,15 @@ class _ExamScreenState extends State<ExamScreen> {
                 ),
                 const SizedBox(height: 12),
                 const Text(
-                  'قيد الإعداد — ستُبنى هذه المحاكاة من أسئلة وزارية سابقة '
-                  'موثّقة المصدر فقط، بتوقيت الامتحان الحقيقي وتصحيح فوري '
-                  'وتقرير أداء لكل مادة.',
+                  'محاكاة بتوقيت الامتحان الحقيقي وتصحيح فوري وتقرير '
+                  'أداء لكل مادة، من أسئلة موثّقة المصدر فقط. الأسئلة '
+                  'التجريبية — إن وُجدت — تظهر داخل المحاكاة بعلامة '
+                  '«تجريبي» ولا تُقدَّم على أنها أسئلة وزارية حقيقية.',
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 24),
                 const Text(
-                  'ما الذي ستتضمنه المحاكاة؟',
+                  'ما الذي تتضمنه المحاكاة؟',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8),
@@ -111,7 +140,7 @@ class _ExamScreenState extends State<ExamScreen> {
                 const Card(
                   child: ListTile(
                     leading: Icon(Icons.assignment),
-                    title: Text('أسئلة وزارية سابقة موثّقة المصدر'),
+                    title: Text('أسئلة موثّقة المصدر'),
                   ),
                 ),
                 const Card(
@@ -129,19 +158,19 @@ class _ExamScreenState extends State<ExamScreen> {
                   ),
                 ),
                 const SizedBox(height: 16),
-                if (_questionCount == 0) ...<Widget>[
-                  ElevatedButton.icon(
-                    onPressed: null,
-                    icon: const Icon(Icons.play_arrow),
-                    label: const Text('ابدئي المحاكاة'),
+                if (available.isEmpty) ...<Widget>[
+                  const Text(
+                    'لا توجد أسئلة موثّقة بعد في أي مادة، لذلك لا يمكن '
+                    'بدء محاكاة حقيقية — لن نمتحنك بأسئلة مخترعة. '
+                    'ستظهر المواد هنا فور توفر أسئلة موثّقة فيها.',
+                    textAlign: TextAlign.center,
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(top: 8),
-                    child: Text(
-                      'الزر معطّل حتى تتوفر أسئلة موثّقة — لن نمتحنك بأسئلة مخترعة.',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.grey),
-                    ),
+                  const SizedBox(height: 16),
+                  ElevatedButton.icon(
+                    onPressed: () => Navigator.of(context)
+                        .pushNamed(AppRoutes.worlds),
+                    icon: const Icon(Icons.play_arrow),
+                    label: const Text('تصفحي العوالم'),
                   ),
                 ] else ...<Widget>[
                   const Text(
@@ -149,13 +178,16 @@ class _ExamScreenState extends State<ExamScreen> {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),
-                  for (final WorldDef world in kWorlds)
+                  for (final WorldDef world in available)
                     Padding(
                       padding: const EdgeInsets.only(bottom: 8),
                       child: FilledButton.icon(
                         onPressed: () => _startSubjectExam(world),
                         icon: Icon(world.icon),
-                        label: Text('محاكاة ${world.name}'),
+                        label: Text(
+                          'محاكاة ${world.name} — '
+                          '${_countsBySubject[world.id]} سؤالاً',
+                        ),
                       ),
                     ),
                 ],

@@ -14,10 +14,10 @@ import '../models/question.dart';
 /// المحاولات فتظهر الشاشة حالة الإكمال بعد اللعب.
 ///
 /// السلوك الحقيقي:
-/// - إن كان بنك الأسئلة فارغًا، تعرض الشاشة بصراحة أن التحدي
-///   قيد الإعداد — بلا سؤال مزيّف.
-/// - إن لعبتِ تحدي اليوم (أي محاولة مسجلة اليوم)، تعرض الشاشة
-///   أنك أكملتِه (من جدول المحاولات).
+/// - إن كان بنك الأسئلة فارغًا، تعرض الشاشة بصراحة أنه لا توجد أسئلة
+///   موثّقة بعد — بلا سؤال مزيّف.
+/// - إن لعبتِ تحدي اليوم (محاولة تحدي يومي مسجلة اليوم)، تعرض الشاشة
+///   أنك أكملتِه مع نتيجتك الأخيرة وزر لإعادته.
 class DailyChallengeScreen extends StatefulWidget {
   const DailyChallengeScreen({super.key});
 
@@ -27,7 +27,12 @@ class DailyChallengeScreen extends StatefulWidget {
 
 class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
   int _questionCount = 0;
+
+  /// محاولات اليوم بوضع التحدي اليومي فقط — لا محاولات الأوضاع
+  /// الأخرى (انظر `getTodayAttemptsCountForMode`).
   int _attemptsToday = 0;
+  int? _lastDailyScore;
+  String? _lastDailyDate;
   bool _loading = true;
 
   @override
@@ -39,13 +44,42 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
   Future<void> _load() async {
     final DatabaseHelper db = DatabaseHelper.instance;
     final int questions = await db.getTotalQuestions();
-    final int today = await db.getAttemptsTodayCount();
+    final int today =
+        await db.getTodayAttemptsCountForMode('daily_challenge');
+    final int? lastScore =
+        int.tryParse(await db.getSetting('last_daily_score') ?? '');
+    final String? lastDate = await db.getSetting('last_daily_date');
     if (!mounted) return;
     setState(() {
       _questionCount = questions;
       _attemptsToday = today;
+      _lastDailyScore = lastScore;
+      _lastDailyDate = lastDate;
       _loading = false;
     });
+  }
+
+  /// يحفظ نتيجة تحدي يومي مكتمل: محاولاته في جدول المحاولات بوضع
+  /// `daily_challenge` (وهو ما يجعل عدّاد اليوم يعمل) + آخر نتيجة
+  /// وتاريخها في الإعدادات لعرضهما في حالة الإكمال.
+  Future<void> _saveDailyResult(
+    GameResult result,
+    List<Question> questions,
+  ) async {
+    final DatabaseHelper db = DatabaseHelper.instance;
+    await db.recordGameResult(
+      result: result,
+      playedQuestions: questions,
+      mode: 'daily_challenge',
+    );
+    await db.setSetting(
+      'last_daily_score',
+      '${result.accuracyPercent.round()}',
+    );
+    await db.setSetting(
+      'last_daily_date',
+      DateTime.now().toIso8601String(),
+    );
   }
 
   /// يبدأ تحدي اليوم الحقيقي: 10 أسئلة حتمية من البنك، في لعبة
@@ -70,14 +104,8 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
           subject: 'daily',
           subjectTitleAr: 'تحدي اليوم',
           questions: questions,
-          onFinished: (GameResult result) {
-            unawaited(
-              DatabaseHelper.instance.recordGameResult(
-                result: result,
-                playedQuestions: questions,
-                mode: 'daily_challenge',
-              ),
-            );
+          onFinished: (GameResult result) async {
+            await _saveDailyResult(result, questions);
           },
         ),
       ),
@@ -111,7 +139,7 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
                 const SizedBox(height: 12),
                 if (_questionCount == 0) ...<Widget>[
                   const Text(
-                    'قيد الإعداد',
+                    'لا توجد أسئلة موثّقة بعد',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 18,
@@ -136,9 +164,21 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
                     ),
                   ),
                   const SizedBox(height: 8),
+                  if (_lastDailyScore != null)
+                    Text(
+                      'نتيجتك الأخيرة: $_lastDailyScore٪'
+                      '${_lastDailyDate != null && _lastDailyDate!.length >= 10 ? ' — ${_lastDailyDate!.substring(0, 10)}' : ''}',
+                      textAlign: TextAlign.center,
+                    ),
                   Text(
-                    'محاولاتك اليوم: $_attemptsToday. عودي غدًا لتحدٍّ جديد.',
+                    'محاولات تحدي اليوم: $_attemptsToday. عودي غدًا لتحدٍّ جديد، أو أعيدي تحدي اليوم الآن.',
                     textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 16),
+                  ElevatedButton.icon(
+                    onPressed: _startChallenge,
+                    icon: const Icon(Icons.replay),
+                    label: const Text('أعيدي تحدي اليوم'),
                   ),
                 ] else ...<Widget>[
                   const Text(

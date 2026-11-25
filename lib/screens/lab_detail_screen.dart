@@ -1,11 +1,15 @@
 // ABQARIYA — Lab Detail Screen (شاشة المختبر)
 // Hosts a chosen lab by id. Route: '/lab', argument = lab id (String).
 // Example: Navigator.pushNamed(context, '/lab', arguments: 'physics_lab');
-// 100% offline. Labs are independent widgets; this screen does NOT depend
-// on any database code — onComplete is reported locally only.
+// 100% offline. Labs are independent widgets. When a hosted lab reports
+// completion via onComplete, this screen persists it in the database
+// (markStageCompleted + setLastStage, stage id 'lab:<labId>') and then
+// forwards the score to the optional [onComplete] callback. Labs are
+// replayable: completing again upserts the same progress row.
 // NOT run — no Flutter/Dart SDK here.
 
 import 'package:material_ui/material_ui.dart';
+import '../db/database.dart';
 import '../labs/math_lab.dart';
 import '../labs/physics_lab.dart';
 import '../labs/chemistry_lab.dart';
@@ -24,6 +28,8 @@ class LabDetailScreen extends StatelessWidget {
   final String labId;
 
   /// Optional score callback forwarded to the hosted lab.
+  /// Persistence happens inside this screen regardless of whether
+  /// a callback was supplied (see [_persistingOnComplete]).
   final void Function(int score)? onComplete;
 
   /// Build from a route: `LabDetailScreen.fromRoute(settings.arguments)`.
@@ -32,6 +38,24 @@ class LabDetailScreen extends StatelessWidget {
     if (arguments is String) return LabDetailScreen(labId: arguments);
     return null;
   }
+
+  /// Stable stage id used for progress persistence of this lab.
+  String get _stageId => 'lab:$labId';
+
+  /// Persist a completed lab run, then forward the score to the
+  /// optional external callback. Idempotent: re-completing the same
+  /// lab upserts the same progress row, so labs stay replayable.
+  Future<void> _persistCompletion() async {
+    await DatabaseHelper.instance.markStageCompleted(_stageId);
+    await DatabaseHelper.instance.setLastStage(_stageId, _title());
+  }
+
+  /// Callback handed to the hosted lab: persist first, then forward.
+  void Function(int score) get _persistingOnComplete =>
+      (int score) async {
+        await _persistCompletion();
+        onComplete?.call(score);
+      };
 
   static const Map<String, ({String law, String explanation})> _lawCards = {
     MathLab.labId: (
@@ -64,13 +88,13 @@ class LabDetailScreen extends StatelessWidget {
   Widget _labWidget() {
     switch (labId) {
       case MathLab.labId:
-        return MathLab(onComplete: onComplete);
+        return MathLab(onComplete: _persistingOnComplete);
       case PhysicsLab.labId:
-        return PhysicsLab(onComplete: onComplete);
+        return PhysicsLab(onComplete: _persistingOnComplete);
       case ChemistryLab.labId:
-        return ChemistryLab(onComplete: onComplete);
+        return ChemistryLab(onComplete: _persistingOnComplete);
       case BiologyLab.labId:
-        return BiologyLab(onComplete: onComplete);
+        return BiologyLab(onComplete: _persistingOnComplete);
       default:
         return const Padding(
           padding: EdgeInsets.all(24),

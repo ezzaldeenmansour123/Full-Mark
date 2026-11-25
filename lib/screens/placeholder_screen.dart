@@ -1,6 +1,7 @@
 import 'package:material_ui/material_ui.dart';
 
-/// شاشة «قيد الإعداد» القابلة لإعادة الاستخدام.
+/// شاشة احتياطية صادقة تُستخدم فقط لمسارات غير معروفة أو معرّفات
+/// غير صالحة — لا يصل إليها أي زر في التطبيق.
 ///
 /// مبدأ الصدق في هذا التطبيق: أي ميزة أو محتوى غير جاهز بعد يفتح شاشة
 /// حقيقية كهذه — تشرح ما القادم ومتى — ولا يظهر أبدًا زر ميّت أو سؤال
@@ -40,7 +41,7 @@ class PlaceholderScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            'قيد الإعداد',
+            args.title,
             textAlign: TextAlign.center,
             style: theme.textTheme.headlineSmall?.copyWith(
               fontWeight: FontWeight.bold,

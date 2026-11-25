@@ -3,6 +3,10 @@ import 'package:material_ui/material_ui.dart';
 import '../core/progress_store.dart';
 import '../core/routes.dart';
 import '../core/theme.dart';
+import '../db/database.dart';
+import '../games/game_screen.dart';
+import '../models/game_result.dart';
+import '../models/question.dart';
 
 /// الشاشة الرئيسية: الشعار، اسم اللاعبة، المستوى والخبرة والنجوم ونسبة
 /// الإنجاز، زر متابعة آخر مرحلة، وأزرار كل أقسام التطبيق.
@@ -224,14 +228,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return SizedBox(
       width: double.infinity,
       child: ElevatedButton.icon(
-        onPressed: () {
-          if (hasLastStage) {
-            // المرحلة نفسها تُبنى من المحتوى؛ حتى تتوفر، نفتح خريطة العوالم.
-            Navigator.of(context).pushNamed(AppRoutes.worlds);
-          } else {
-            Navigator.of(context).pushNamed(AppRoutes.worlds);
-          }
-        },
+        onPressed: hasLastStage ? _continueLastStage : _goToWorlds,
         icon: const Icon(Icons.play_arrow),
         label: Text(
           hasLastStage
@@ -240,6 +237,69 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );
+  }
+
+  void _goToWorlds() {
+    Navigator.of(context).pushNamed(AppRoutes.worlds);
+  }
+
+  /// Continue: launch the saved lesson's quiz DIRECTLY — no
+  /// intermediate screen. The last stage id is a lesson id of the form
+  /// `<subject>-u<unit>-l<lesson>`; its subject is the first segment.
+  /// A lesson with no questions yet (or an unparseable id) falls back
+  /// to the worlds map with an honest message.
+  Future<void> _continueLastStage() async {
+    final String? stageId = _progress.lastStageId;
+    final String? stageTitle = _progress.lastStageTitle;
+    if (stageId == null) {
+      _goToWorlds();
+      return;
+    }
+    final RegExpMatch? match =
+        RegExp(r'^([a-z]+)-u\d+-l\d+$').firstMatch(stageId);
+    if (match == null) {
+      if (mounted) _goToWorlds();
+      return;
+    }
+    final String subjectId = match.group(1)!;
+    final List<Question> questions = await DatabaseHelper.instance
+        .getQuestionsForLesson(subjectId, stageId);
+    if (!mounted) return;
+    if (questions.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            'لا توجد أسئلة بعد في درس «${stageTitle ?? stageId}» — '
+            'اختاري درساً آخر من خريطة العوالم.',
+          ),
+        ),
+      );
+      _goToWorlds();
+      return;
+    }
+    await Navigator.of(context).push<void>(
+      MaterialPageRoute<void>(
+        builder: (_) => GameScreen(
+          modeRouteId: 'quiz',
+          subject: subjectId,
+          subjectTitleAr: stageTitle ?? stageId,
+          questions: questions,
+          lessonId: stageId,
+          stageId: stageId,
+          onFinished: (GameResult result) async {
+            await DatabaseHelper.instance.recordGameResult(
+              result: result,
+              playedQuestions: questions,
+              mode: 'quiz',
+              stageId: stageId,
+              lessonId: stageId,
+              lessonTitle: stageTitle,
+            );
+          },
+        ),
+      ),
+    );
+    if (mounted) _load();
   }
 
   Widget _buildMenuGrid() {
