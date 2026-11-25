@@ -20,7 +20,9 @@ class MinisterialExamScreen extends StatefulWidget {
   /// Full question bank (JSON/DB). May be empty.
   final List<Question> bank;
   final int totalSeconds;
-  final void Function(ExamResult result)? onSubmitted;
+
+  /// Required: a finished exam must always be saved by the caller.
+  final void Function(ExamResult result) onSubmitted;
 
   const MinisterialExamScreen({
     super.key,
@@ -29,7 +31,7 @@ class MinisterialExamScreen extends StatefulWidget {
     this.units = const [],
     required this.bank,
     this.totalSeconds = 3600,
-    this.onSubmitted,
+    required this.onSubmitted,
   });
 
   @override
@@ -53,6 +55,13 @@ class _MinisterialExamScreenState extends State<MinisterialExamScreen> {
         units: widget.units,
         bank: widget.bank,
         totalSeconds: widget.totalSeconds,
+        // Only MCQ / true-false can be answered here (radio buttons).
+        // Fill / ordering / match questions would render as an empty
+        // or meaningless radio list and count as wrong forever.
+        types: const <QuestionType>[
+          QuestionType.mcq,
+          QuestionType.trueFalse,
+        ],
         // بذرة جديدة في كل جلسة: ترتيب أسئلة مختلف في كل محاولة.
         seed: DateTime.now().millisecondsSinceEpoch,
       );
@@ -79,7 +88,7 @@ class _MinisterialExamScreenState extends State<MinisterialExamScreen> {
     if (session == null || _result != null) return;
     _timer?.cancel();
     final result = session.submit();
-    widget.onSubmitted?.call(result);
+    widget.onSubmitted(result);
     setState(() => _result = result);
     if (auto && mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -164,6 +173,15 @@ class _MinisterialExamScreenState extends State<MinisterialExamScreen> {
           children: [
             if (session.isDemoExam)
               const Chip(label: Text('محاكاة تجريبية — ليست أسئلة وزارية حقيقية')),
+            if (session.isPartialDemoExam)
+              const Chip(
+                  label: Text('محاكاة تجريبية (جزئياً) — بعض الأسئلة تجريبية')),
+            if (session.poolSize <= 20)
+              Text(
+                'أسئلة هذه المادة ${session.poolSize} فقط — كل جلسة '
+                'تستخدم نفس الأسئلة بترتيب مختلف، حتى تُضاف أسئلة جديدة.',
+                style: const TextStyle(fontSize: 12, color: Colors.grey),
+              ),
             Wrap(
               spacing: 6,
               runSpacing: 6,
@@ -270,12 +288,20 @@ class _MinisterialExamScreenState extends State<MinisterialExamScreen> {
 
   Widget _buildResult(BuildContext context, ExamResult r) {
     return Scaffold(
-      appBar: AppBar(title: Text(r.isDemoExam ? 'نتيجة المحاكاة التجريبية' : 'نتيجة المحاكاة')),
+      appBar: AppBar(
+          title: Text(r.isDemoExam
+              ? 'نتيجة المحاكاة التجريبية'
+              : r.isPartialDemoExam
+                  ? 'نتيجة المحاكاة التجريبية (جزئياً)'
+                  : 'نتيجة المحاكاة')),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
           if (r.isDemoExam)
             const Chip(label: Text('محاكاة تجريبية — ليست أسئلة وزارية حقيقية')),
+          if (r.isPartialDemoExam)
+            const Chip(
+                label: Text('محاكاة تجريبية (جزئياً) — بعض الأسئلة تجريبية')),
           const SizedBox(height: 8),
           Text(
             '${r.correct} / ${r.totalQuestions} صحيحة '
@@ -309,7 +335,9 @@ class _MinisterialExamScreenState extends State<MinisterialExamScreen> {
                         Text('الإجابة الصحيحة: ${item.question.correctAnswer}'),
                         if (item.question.explanation.isNotEmpty)
                           Text('الشرح: ${item.question.explanation}'),
-                        Text('المصدر: ${item.question.source}',
+                        Text(
+                            'المصدر: ${item.question.source}'
+                            '${item.question.sourcePage != null ? ' — ص ${item.question.sourcePage}' : ''}',
                             style: const TextStyle(fontSize: 12)),
                       ],
                     ),

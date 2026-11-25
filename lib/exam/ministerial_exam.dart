@@ -20,6 +20,15 @@ class ExamSession {
   /// "محاكاة تجريبية" and never call it a real ministerial exam.
   final bool isDemoExam;
 
+  /// True when SOME (not all) questions are demo — the exam is a
+  /// partial simulation and must be labelled "محاكاة تجريبية (جزئياً)".
+  /// (Before, a mixed pool was labelled a full ministerial simulation.)
+  final bool isPartialDemoExam;
+
+  /// Size of the matching pool BEFORE the 20-question cap, so the UI
+  /// can say honestly when every sitting reuses the same questions.
+  final int poolSize;
+
   int _index = 0;
   final Map<int, String> _answers = {};
   final Set<int> _markedForReview = {};
@@ -33,6 +42,8 @@ class ExamSession {
     required this.questions,
     required this.totalSeconds,
     required this.isDemoExam,
+    required this.isPartialDemoExam,
+    required this.poolSize,
   });
 
   /// Start a session. Throws [ExamStartError] (as a StateError carrying
@@ -70,6 +81,7 @@ class ExamSession {
         pool[j] = tmp;
       }
     }
+    final int fullPoolSize = pool.length;
     if (pool.length > maxQuestions) pool = pool.sublist(0, maxQuestions);
     return ExamSession._(
       subject: subject,
@@ -77,6 +89,9 @@ class ExamSession {
       questions: List.unmodifiable(pool),
       totalSeconds: totalSeconds,
       isDemoExam: pool.every((q) => q.isDemo),
+      isPartialDemoExam:
+          pool.any((q) => q.isDemo) && !pool.every((q) => q.isDemo),
+      poolSize: fullPoolSize,
     ).._startedAt = DateTime.now();
   }
 
@@ -150,17 +165,24 @@ class ExamSession {
       subject: subject,
       totalQuestions: questions.length,
       correct: correct,
-      wrong: questions.length - correct,
+      // `wrong` counts answered-but-wrong only; unanswered questions
+      // are reported separately (before, they were double-counted
+      // inside `wrong`).
+      wrong: questions.length - correct - unansweredCount,
       unanswered: unansweredCount,
       secondsUsed: _secondsUsed,
       perQuestion: perQuestion,
       isDemoExam: isDemoExam,
+      isPartialDemoExam: isPartialDemoExam,
     );
   }
 
   /// Human-readable label for the exam type — never claims demo is real.
-  String get examLabel =>
-      isDemoExam ? 'محاكاة تجريبية' : 'محاكاة الامتحان الوزاري';
+  String get examLabel => isDemoExam
+      ? 'محاكاة تجريبية'
+      : isPartialDemoExam
+          ? 'محاكاة تجريبية (جزئياً)'
+          : 'محاكاة الامتحان الوزاري';
 }
 
 class ExamQuestionReview {
@@ -188,6 +210,7 @@ class ExamResult {
   final int secondsUsed;
   final List<ExamQuestionReview> perQuestion;
   final bool isDemoExam;
+  final bool isPartialDemoExam;
 
   const ExamResult({
     required this.subject,
@@ -198,6 +221,7 @@ class ExamResult {
     required this.secondsUsed,
     required this.perQuestion,
     required this.isDemoExam,
+    this.isPartialDemoExam = false,
   });
 
   double get accuracyPercent =>
