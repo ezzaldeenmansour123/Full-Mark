@@ -4,6 +4,7 @@ import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 
 import '../content/question_packs.dart';
+import '../models/game_result.dart';
 import '../models/question.dart';
 import 'schema.dart';
 
@@ -843,6 +844,152 @@ class DatabaseHelper {
       }
     }
     return out;
+  }
+
+  /// كل أسئلة درس واحد كنماذج [Question] (للعب أسئلة الدرس من شاشة المنهج).
+  /// يطابق `lesson_id` المخزّن في الحزم نمط زرع المنهج تماماً
+  /// (`<subject>-u<unit>-l<lesson>`، مثال: `math-u1-l1`)، فلا حاجة
+  /// لمطابقة نصوص العناوين. درس بلا أسئلة يرجع قائمة فارغة — على
+  /// الواجهة إظهار ذلك بصراحة، لا اختراع أسئلة.
+  Future<List<Question>> getQuestionsForLesson(
+    String subjectId,
+    String lessonId,
+  ) async {
+    final Database db = await database;
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      '''
+      SELECT q.*, u.title_ar AS unit_title, l.title_ar AS lesson_title
+      FROM $tableQuestions q
+      JOIN $tableUnits u ON u.id = q.unit_id
+      JOIN $tableLessons l ON l.id = q.lesson_id
+      WHERE q.subject_id = ? AND q.lesson_id = ?
+      ORDER BY q.id
+      ''',
+      <Object?>[subjectId, lessonId],
+    );
+    final List<Question> out = <Question>[];
+    for (final Map<String, Object?> row in rows) {
+      try {
+        out.add(_questionFromRow(row));
+      } catch (_) {
+        continue;
+      }
+    }
+    return out;
+  }
+
+  /// أسئلة التحدي اليومي: اختيار حتمي من بنك الأسئلة حسب التاريخ
+  /// (نفس التاريخ = نفس الأسئلة)، مخلوط عبر المواد بجولات دائرية
+  /// (سؤال من كل مادة بالتناوب) حتى العدد المطلوب. خلط مزروع بـ
+  /// xorshift32 من `YYYYMMDD` — من نفس عائلة `GameEngine._SeededRandom`
+  /// دون الاعتماد على `dart:math` عبر المنصات.
+  Future<List<Question>> getDailyChallengeQuestions(
+    DateTime date, {
+    int count = 10,
+  }) async {
+    final Database db = await database;
+    final List<Map<String, Object?>> idRows = await db.rawQuery(
+      'SELECT id, subject_id FROM $tableQuestions ORDER BY subject_id, id',
+    );
+    if (idRows.isEmpty) return <Question>[];
+    final Map<String, List<String>> bySubject = <String, List<String>>{};
+    for (final Map<String, Object?> row in idRows) {
+      (bySubject[row['subject_id'] as String] ??= <String>[])
+          .add(row['id'] as String);
+    }
+    int state =
+        (date.year * 10000 + date.month * 100 + date.day) & 0xFFFFFFFF;
+    if (state == 0) state = 0x9E3779B9;
+    int nextInt(int max) {
+      state ^= (state << 13) & 0xFFFFFFFF;
+      state ^= state >> 17;
+      state ^= (state << 5) & 0xFFFFFFFF;
+      state &= 0xFFFFFFFF;
+      return state % max;
+    }
+
+    void shuffleIds(List<String> list) {
+      for (int i = list.length - 1; i > 0; i--) {
+        final int j = nextInt(i + 1);
+        final String tmp = list[i];
+        list[i] = list[j];
+        list[j] = tmp;
+      }
+    }
+
+    for (final List<String> ids in bySubject.values) {
+      shuffleIds(ids);
+    }
+    final List<String> picked = <String>[];
+    int round = 0;
+    while (picked.length < count) {
+      bool anyLeft = false;
+      for (final List<String> ids in bySubject.values) {
+        if (round < ids.length) {
+          picked.add(ids[round]);
+          anyLeft = true;
+          if (picked.length >= count) break;
+        }
+      }
+      if (!anyLeft) break;
+      round++;
+    }
+    if (picked.isEmpty) return <Question>[];
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      '''
+      SELECT q.*, u.title_ar AS unit_title, l.title_ar AS lesson_title
+      FROM $tableQuestions q
+      JOIN $tableUnits u ON u.id = q.unit_id
+      JOIN $tableLessons l ON l.id = q.lesson_id
+      WHERE q.id IN (${List<String>.filled(picked.length, '?').join(',')})
+      ''',
+      picked,
+    );
+    final Map<String, Question> byId = <String, Question>{};
+    for (final Map<String, Object?> row in rows) {
+      try {
+        final Question q = _questionFromRow(row);
+        byId[q.id] = q;
+      } catch (_) {
+        continue;
+      }
+    }
+    return <Question>[
+      for (final String id in picked)
+        if (byId.containsKey(id)) byId[id]!,
+    ];
+  }
+
+  /// يسجّل نتيجة لعبة مكتملة في جدول المحاولات + نقاط الخبرة، عبر
+  /// [recordAttempt] الموجود (لا سلك جديد).
+  ///
+  /// افتراض موثّق: يصحّ فقط لأنماط يجيب فيها اللاعب عن كل سؤال معروض
+  /// (quiz/time_race/boss_20 — لا زر تخطٍّ في `GameScreen`، وانتهاء
+  /// المؤقّت يُسجَّل إجابة خاطئة)؛ عندها تكون الإجابات الصحيحة هي
+  /// الأسئلة المعروضة ناقص `wrongQuestionIds`. كل محاولة تُسجَّل
+  /// بمعرّف سؤالها الحقيقي من قاعدة البيانات، ونقاط الخبرة تُضاف مرة
+  /// واحدة من `result.xpEarned` (10 لكل صحيحة + 5 مكافأة السلسلة)
+  /// حتى لا تُضاعَف.
+  Future<void> recordGameResult({
+    required GameResult result,
+    required List<Question> playedQuestions,
+    String mode = 'quiz',
+  }) async {
+    final String session =
+        'game-${DateTime.now().millisecondsSinceEpoch}';
+    final Set<String> wrongIds = result.wrongQuestionIds.toSet();
+    for (final Question q in playedQuestions) {
+      await recordAttempt(
+        questionId: q.id,
+        isCorrect: !wrongIds.contains(q.id),
+        xpEarned: 0,
+        mode: mode,
+        sessionId: session,
+      );
+    }
+    if (result.xpEarned > 0) {
+      await addXp(result.xpEarned);
+    }
   }
 
   Question _questionFromRow(Map<String, Object?> row) {
