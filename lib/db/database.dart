@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 
+import '../content/question_packs.dart';
 import '../models/question.dart';
 import 'schema.dart';
 
@@ -478,6 +479,63 @@ class DatabaseHelper {
     if ((rows.first['c'] as int? ?? 0) > 0) return;
     final List<Map<String, Object>> seedRows = await loadRows();
     await seedCurriculumRows(seedRows);
+  }
+
+  /// يزرع حزم الأسئلة الموثقة بعد زرع هيكل المنهج (مفاتيح أجنبية).
+  /// آمن لإعادة التشغيل: الحزمة التي سُجّلت في `content_packs` بنفس
+  /// عدد الأسئلة تُتخطَّى، وغيرها تُستبدل صفوفها (INSERT OR REPLACE)
+  /// في معاملة واحدة — لا حزمة نصف مستوردة أبداً. يحدّث إجمالي
+  /// أسئلة حزمة `sanaa-2027`. يُستدعى من `main()` بعد زرع المنهج؛
+  /// أي فشل لا يمنع التشغيل (تبقى الأسئلة «قيد الإعداد»).
+  Future<void> seedQuestionPacks(List<QuestionPackSeed> packs) async {
+    final Database db = await database;
+    final int now = DateTime.now().millisecondsSinceEpoch;
+    for (final QuestionPackSeed pack in packs) {
+      if (pack.rows.isEmpty) continue;
+      final List<Map<String, Object?>> existing = await db.query(
+        'content_packs',
+        columns: <String>['question_count'],
+        where: 'id = ?',
+        whereArgs: <Object?>[pack.packId],
+        limit: 1,
+      );
+      if (existing.isNotEmpty &&
+          (existing.first['question_count'] as int? ?? -1) ==
+              pack.rows.length) {
+        continue;
+      }
+      await db.transaction((Transaction txn) async {
+        for (final Map<String, Object?> row in pack.rows) {
+          await txn.insert(
+            tableQuestions,
+            <String, Object?>{...row, 'created_at': now, 'updated_at': now},
+            conflictAlgorithm: ConflictAlgorithm.replace,
+          );
+        }
+        await txn.insert(
+          'content_packs',
+          <String, Object?>{
+            'id': pack.packId,
+            'title_ar': pack.titleAr,
+            'source': pack.source,
+            'is_demo': 0,
+            'schema_version': 1,
+            'question_count': pack.rows.length,
+            'file_sha256': null,
+            'status': 'imported',
+            'imported_at': now,
+          },
+          conflictAlgorithm: ConflictAlgorithm.replace,
+        );
+      });
+    }
+    final int total = await getTotalQuestions();
+    await db.update(
+      'content_packs',
+      <String, Object>{'question_count': total},
+      where: 'id = ?',
+      whereArgs: <Object?>['sanaa-2027'],
+    );
   }
 
   // ------------------------------------------------------------- app_meta
