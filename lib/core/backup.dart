@@ -143,7 +143,7 @@ Future<Map<String, Object?>> buildBackupData(
   for (final Map<String, Object?> row in meta) {
     final String key = (row['key'] as String?) ?? '';
     if (!kBackupSettingKeys.contains(key)) continue;
-    settings[key] = (row['value'] as Object?)?.toString() ?? '';
+    settings[key] = row['value']?.toString() ?? '';
     settingsUpdatedAt[key] = (row['updated_at'] as int?) ?? 0;
   }
 
@@ -666,7 +666,7 @@ Future<_ImportPlan> _computePlan(
   for (final Map<String, Object?> row in metaRows) {
     final String key = (row['key'] as String?) ?? '';
     if (!kBackupSettingKeys.contains(key)) continue;
-    currentValues[key] = (row['value'] as Object?)?.toString() ?? '';
+    currentValues[key] = row['value']?.toString() ?? '';
     currentUpdatedAt[key] = (row['updated_at'] as int?) ?? 0;
   }
   final Map<String, String> settingsToWrite = <String, String>{};
