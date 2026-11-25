@@ -1,4 +1,4 @@
-// ABQARIYA — Backup: export / import of the player's progress as JSON.
+// FULL MARK — Backup: export / import of the player's progress as JSON.
 //
 // Offline only: the file is written by the player via the system save
 // dialog and read back via the system file picker (file_picker);
@@ -203,12 +203,12 @@ Map<String, dynamic> decodeBackupJson(String text) {
     decoded = jsonDecode(text);
   } on FormatException {
     throw const FormatException(
-      'الملف ليس ملف JSON صالحاً — تأكد أنك اخترت ملف نسخة احتياطية من عبقرية.',
+      'الملف ليس ملف JSON صالحاً — تأكد أنك اخترت ملف نسخة احتياطية من فُل مارك.',
     );
   }
   if (decoded is! Map<String, dynamic>) {
     throw const FormatException(
-      'الملف ليس نسخة احتياطية من عبقرية.',
+      'الملف ليس نسخة احتياطية من فُل مارك.',
     );
   }
   return decoded;
@@ -330,7 +330,7 @@ double _requireDouble(
 _ParsedBackup _parseBackup(Map<String, dynamic> data) {
   if (data['app'] != kBackupAppId) {
     throw const FormatException(
-      'هذا الملف ليس نسخة احتياطية من عبقرية.',
+      'هذا الملف ليس نسخة احتياطية من فُل مارك.',
     );
   }
   if (data['format_version'] != kBackupFormatVersion) {
