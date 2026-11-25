@@ -3,7 +3,7 @@
 // 100% offline. Procedural CustomPainter only — no images, no assets.
 // Content note: teaches general mathematical principles (quadratic / linear
 // functions). Yemeni-curriculum questions are NOT invented here.
-// «المحتوى مبني على المبادئ العلمية العامة — أسئلة المنهج اليمني قيد الإعداد»
+// «المحتوى مبني على المبادئ العلمية العامة من المنهج اليمني»
 //
 // HAND-VERIFIED LOGIC (checked by hand, NOT run — no Flutter/Dart SDK here):
 //  1. y = x² − 5x + 6, a=1,b=−5,c=6 → Δ = 25 − 24 = 1, √Δ = 1,
@@ -400,7 +400,7 @@ class _NoteBanner extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: const Text(
-          'المحتوى مبني على المبادئ العلمية العامة — أسئلة المنهج اليمني قيد الإعداد',
+          'المحتوى مبني على المبادئ العلمية العامة من المنهج اليمني',
           style: TextStyle(fontSize: 12),
         ),
       );

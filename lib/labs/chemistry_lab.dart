@@ -4,7 +4,7 @@
 // Atom counts must balance exactly; valency rules are enforced.
 // Content note: general chemistry principles. Yemeni-curriculum questions
 // are NOT invented here.
-// «المحتوى مبني على المبادئ العلمية العامة — أسئلة المنهج اليمني قيد الإعداد»
+// «المحتوى مبني على المبادئ العلمية العامة من المنهج اليمني»
 //
 // HAND-VERIFIED LOGIC (checked by hand, NOT run — no Flutter/Dart SDK here):
 //  Valency (max bonds): H=1, O=2, C=4, N=3. Bond counts in the builder are
@@ -226,7 +226,7 @@ class _ChemistryLabState extends State<ChemistryLab> {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: const Text(
-                'المحتوى مبني على المبادئ العلمية العامة — أسئلة المنهج اليمني قيد الإعداد',
+                'المحتوى مبني على المبادئ العلمية العامة من المنهج اليمني',
                 style: TextStyle(fontSize: 12),
               ),
             ),

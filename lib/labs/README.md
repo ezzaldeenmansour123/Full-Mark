@@ -10,7 +10,7 @@ no 3D-engine dependency in v1. Arabic RTL, dark-mode friendly
 > questions are invented and no invented fact is presented as Yemeni
 > curriculum. Labs teach general scientific principles that are in the
 > curriculum (laws, concepts), with the note:
-> «المحتوى مبني على المبادئ العلمية العامة — أسئلة المنهج اليمني قيد الإعداد».
+> «المحتوى مبني على المبادئ العلمية العامة من المنهج اليمني».
 > The question bank itself stays empty except for demo quizzes inside the
 > labs, each labelled `demo — not Yemeni curriculum`.
 

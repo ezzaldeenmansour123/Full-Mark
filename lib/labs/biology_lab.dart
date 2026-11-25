@@ -6,7 +6,7 @@
 // anything uncertain is omitted rather than drawn wrong.
 // Content note: general biology principles. Yemeni-curriculum questions
 // are NOT invented here.
-// «المحتوى مبني على المبادئ العلمية العامة — أسئلة المنهج اليمني قيد الإعداد»
+// «المحتوى مبني على المبادئ العلمية العامة من المنهج اليمني»
 //
 // ANATOMY CHECKS (standard textbook anatomy, verified against general
 // knowledge — NOT run, no SDK here):
@@ -212,8 +212,7 @@ class _BiologyLabState extends State<BiologyLab> {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: const Text(
-                'رسوم تعليمية مبسطة — المحتوى مبني على المبادئ العلمية العامة، '
-                'وأسئلة المنهج اليمني قيد الإعداد',
+                'رسوم تعليمية مبسطة — المحتوى مبني على المبادئ العلمية العامة من المنهج اليمني',
                 style: TextStyle(fontSize: 12),
               ),
             ),

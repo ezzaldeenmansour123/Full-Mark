@@ -4,7 +4,7 @@
 // Formulas are standard physics; units are shown with every result.
 // Content note: general scientific principles. Yemeni-curriculum questions
 // are NOT invented here.
-// «المحتوى مبني على المبادئ العلمية العامة — أسئلة المنهج اليمني قيد الإعداد»
+// «المحتوى مبني على المبادئ العلمية العامة من المنهج اليمني»
 //
 // HAND-VERIFIED LOGIC (checked by hand, NOT run — no Flutter/Dart SDK here):
 //  Free fall, g = 9.8 m/s²:
@@ -308,7 +308,7 @@ class _Note extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: const Text(
-          'المحتوى مبني على المبادئ العلمية العامة — أسئلة المنهج اليمني قيد الإعداد',
+          'المحتوى مبني على المبادئ العلمية العامة من المنهج اليمني',
           style: TextStyle(fontSize: 12),
         ),
       );
