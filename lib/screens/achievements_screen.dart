@@ -38,7 +38,7 @@ List<AchievementDef> kAchievementDefs = <AchievementDef>[
   ),
   AchievementDef(
     id: 'fifty_attempts',
-    title: 'عبقرية صاعدة',
+    title: 'متفوقة صاعدة',
     description: 'أكملي 50 محاولة.',
     icon: Icons.trending_up,
     isUnlocked: (PlayerProgress p) => p.totalAttempts >= 50,

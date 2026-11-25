@@ -111,7 +111,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       final String json = encodeBackupJson(data);
       final Uint8List bytes =
           Uint8List.fromList(utf8.encode(json));
-      final String fileName = 'abqariya-backup-${_todayStamp()}.json';
+      final String fileName = 'full-mark-backup-${_todayStamp()}.json';
       final String? path = await FilePicker.platform.saveFile(
         dialogTitle: 'حفظ النسخة الاحتياطية',
         fileName: fileName,
@@ -133,7 +133,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               XFile.fromData(bytes, mimeType: 'application/json'),
             ],
             fileNameOverrides: <String>[fileName],
-            text: 'نسخة احتياطية من تقدّمك في عبقرية',
+            text: 'نسخة احتياطية من تقدّمك في فُل مارك',
           ),
         );
       } catch (_) {
@@ -252,10 +252,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
     showDialog<void>(
       context: context,
       builder: (BuildContext context) => AlertDialog(
-        title: const Text('حول عَبْقَرِيّة'),
+        title: const Text('حول فُل مارك'),
         content: const SingleChildScrollView(
           child: Text(
-            'عَبْقَرِيّة | ABQARIYA\n'
+            'فُل مارك | FULL MARK\n'
             'منصة ألعاب تعليمية للصف الثالث الثانوي العلمي — المنهج اليمني.\n\n'
             '• تعمل دون اتصال بالإنترنت بالكامل.\n'
             '• بلا إعلانات وبلا حسابات وبلا اشتراكات.\n'

@@ -1,4 +1,4 @@
-// ABQARIYA — «النسخة الدراسية»: the active study edition, from the
+// FULL MARK — «النسخة الدراسية»: the active study edition, from the
 // verified curriculum data itself (assets/data/curriculum.json) and
 // the live question database. Honest by construction: every number
 // is computed from what the app actually contains, and the screen

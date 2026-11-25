@@ -78,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final ThemeData theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('عبقرية'),
+        title: const Text('فُل مارك'),
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.settings),
@@ -149,7 +149,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           alignment: Alignment.center,
           child: const Text(
-            'ع',
+            'ف',
             style: TextStyle(
               fontSize: 44,
               fontWeight: FontWeight.bold,
@@ -159,7 +159,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         const SizedBox(height: 12),
         Text(
-          'عَبْقَرِيّة',
+          'فُل مارك',
           style: theme.textTheme.headlineMedium?.copyWith(
             fontWeight: FontWeight.bold,
             color: AbqariyaColors.navy,

@@ -1,4 +1,4 @@
-// ABQARIYA — Lab Detail Screen (شاشة المختبر)
+// FULL MARK — Lab Detail Screen (شاشة المختبر)
 // Hosts a chosen lab by id. Route: '/lab', argument = lab id (String).
 // Example: Navigator.pushNamed(context, '/lab', arguments: 'physics_lab');
 // 100% offline. Labs are independent widgets. When a hosted lab reports
