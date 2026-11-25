@@ -1,4 +1,4 @@
-// ABQARIYA — GameResult: score, XP and stars for one finished game.
+// FULL MARK — GameResult: score, XP and stars for one finished game.
 // Pure data + pure rules. No UI, no I/O.
 
 /// Star rules (single source of truth — mirrored in tools/verify_logic.py):

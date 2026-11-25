@@ -1,4 +1,4 @@
-// ABQARIYA — Question model.
+// FULL MARK — Question model.
 // Content honesty: Yemeni textbooks were NOT provided. No question may be
 // presented as Yemeni curriculum unless its `source` says so explicitly.
 // Every Question MUST carry a non-empty `source`. Validation throws on a
