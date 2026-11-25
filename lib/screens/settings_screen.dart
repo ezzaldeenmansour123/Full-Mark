@@ -361,7 +361,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 const ListTile(
                   leading: Icon(Icons.verified),
                   title: Text('الإصدار'),
-                  subtitle: const Text(kAppVersion),
+                  subtitle: Text(kAppVersion),
                 ),
                 const ListTile(
                   leading: Icon(Icons.wifi_off),
