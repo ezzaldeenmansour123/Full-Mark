@@ -11,7 +11,6 @@ class AbqariyaColors {
 
   static const Color navy = Color(0xFF0B2545);
   static const Color navyDeep = Color(0xFF081A33);
-  static const Color navySoft = Color(0xFF13315C);
   static const Color teal = Color(0xFF0E7C7B);
   static const Color tealLight = Color(0xFF17A398);
   static const Color gold = Color(0xFFC9A227);
@@ -20,7 +19,6 @@ class AbqariyaColors {
   static const Color paper = Color(0xFFFFFFFF);
   static const Color ink = Color(0xFF1B2A41);
   static const Color muted = Color(0xFF5A6B84);
-  static const Color danger = Color(0xFFB3261E);
 
   /// ألوان العوالم السبعة — مميزة لكل عالم، ومتباينة بما يكفي في الوضعين.
   static const Map<String, Color> worldColors = <String, Color>{
@@ -38,8 +36,9 @@ class AbqariyaColors {
 class AbqariyaTheme {
   AbqariyaTheme._();
 
-  static const String? _fontFamily = null; // الخط الافتراضي للنظام (عربي سليم) في v1.
-
+  // No custom font: the system default renders Arabic correctly.
+  // (A `_fontFamily = null` placeholder used to sit here and in both
+  // themes — it said nothing and was deleted.)
   static ThemeData get lightTheme {
     const ColorScheme scheme = ColorScheme.light(
       primary: AbqariyaColors.navy,
@@ -51,7 +50,6 @@ class AbqariyaTheme {
     return ThemeData(
       colorScheme: scheme,
       scaffoldBackgroundColor: AbqariyaColors.ivory,
-      fontFamily: _fontFamily,
       useMaterial3: true,
       appBarTheme: const AppBarTheme(
         backgroundColor: AbqariyaColors.navy,
@@ -110,7 +108,6 @@ class AbqariyaTheme {
     return ThemeData(
       colorScheme: scheme,
       scaffoldBackgroundColor: AbqariyaColors.navyDeep,
-      fontFamily: _fontFamily,
       useMaterial3: true,
       appBarTheme: const AppBarTheme(
         backgroundColor: AbqariyaColors.navyDeep,

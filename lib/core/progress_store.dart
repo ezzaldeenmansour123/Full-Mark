@@ -54,21 +54,18 @@ class PlayerProgress {
 /// التطبيق الحالي يستخدم [SqliteProgressStore]؛ ويمكن استبداله بتخزين
 /// آخر دون تغيير أي شاشة.
 abstract class ProgressStore {
+  // NOTE (v0.1.4): addXp / saveLastStage / recordAttempt were deleted
+  // from this interface — no screen ever called them through the
+  // store; callers use DatabaseHelper directly (recordGameResult,
+  // markStageCompleted, setLastStage, recordAttempt). Keeping dead
+  // interface methods invited a second, divergent write path.
   Future<void> init();
   Future<PlayerProgress> loadProgress();
-  Future<void> addXp(int xp, {int stars = 0});
-  Future<void> saveLastStage(String stageId, String stageTitle);
-  Future<void> recordAttempt({
-    String? stageId,
-    String? questionId,
-    required bool isCorrect,
-    int xpEarned = 0,
-  });
   Future<void> resetAll();
   Future<String?> getPlayerName();
   Future<void> setPlayerName(String name);
-  Future<bool> isSoundEnabled();
-  Future<void> setSoundEnabled(bool enabled);
+  // لا إعداد صوت: لا توجد أي أصوات في التطبيق، فإعداد الصوت كان
+  // ميتاً (بلا زر في الواجهة وبلا أي تشغيل). أُزيل في v0.1.4.
   Future<bool> isDarkMode();
   Future<void> setDarkMode(bool enabled);
 }
@@ -104,28 +101,6 @@ class SqliteProgressStore implements ProgressStore {
   }
 
   @override
-  Future<void> addXp(int xp, {int stars = 0}) =>
-      _db.addXp(xp, stars: stars);
-
-  @override
-  Future<void> saveLastStage(String stageId, String stageTitle) =>
-      _db.setLastStage(stageId, stageTitle);
-
-  @override
-  Future<void> recordAttempt({
-    String? stageId,
-    String? questionId,
-    required bool isCorrect,
-    int xpEarned = 0,
-  }) =>
-      _db.recordAttempt(
-        stageId: stageId,
-        questionId: questionId,
-        isCorrect: isCorrect,
-        xpEarned: xpEarned,
-      );
-
-  @override
   Future<void> resetAll() => _db.clearAllProgress();
 
   @override
@@ -134,16 +109,6 @@ class SqliteProgressStore implements ProgressStore {
   @override
   Future<void> setPlayerName(String name) =>
       _db.setSetting('player_name', name.trim());
-
-  @override
-  Future<bool> isSoundEnabled() async {
-    final String? value = await _db.getSetting('sound_enabled');
-    return value != '0'; // الافتراضي: الصوت مفعّل.
-  }
-
-  @override
-  Future<void> setSoundEnabled(bool enabled) =>
-      _db.setSetting('sound_enabled', enabled ? '1' : '0');
 
   @override
   Future<bool> isDarkMode() async {

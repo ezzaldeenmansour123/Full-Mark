@@ -16,5 +16,6 @@ class AppRoutes {
   static const String review = '/review';
   static const String settings = '/settings';
   static const String edition = '/edition';
+  static const String cell3d = '/cell3d';
   static const String placeholder = '/placeholder';
 }

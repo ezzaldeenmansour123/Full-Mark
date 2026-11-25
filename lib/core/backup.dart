@@ -36,7 +36,6 @@ const int kBackupFormatVersion = 1;
 const List<String> kBackupSettingKeys = <String>[
   'player_name',
   'dark_mode',
-  'sound_enabled',
   'last_stage_id',
   'last_stage_title',
   'last_daily_score',
@@ -61,6 +60,7 @@ class BackupImportSummary {
     required this.progressRestored,
     required this.settingsRestored,
     this.darkModeValue,
+    this.progressSkippedOrphan = 0,
   });
 
   final int attemptsAdded;
@@ -73,6 +73,10 @@ class BackupImportSummary {
   final int examsSkipped;
   final int progressRestored;
   final int settingsRestored;
+
+  /// Progress rows skipped because their entity does not exist on
+  /// this device (orphan rows from another install) — never merged.
+  final int progressSkippedOrphan;
 
   /// Final dark-mode value after the import, when the backup carried
   /// one (the UI applies the theme from this). Null = not in the file.
@@ -112,6 +116,12 @@ class BackupImportSummary {
       );
     }
     if (progressRestored > 0) lines.add('• تقدّم دروس يُستعاد: $progressRestored');
+    if (progressSkippedOrphan > 0) {
+      lines.add(
+        '• تقدّم تُخطّى: $progressSkippedOrphan '
+        '(لدروس/مراحل غير موجودة على هذا الجهاز)',
+      );
+    }
     if (settingsRestored > 0) lines.add('• إعدادات تُستعاد: $settingsRestored');
     if (lines.isEmpty) {
       return 'الملف لا يحتوي على أي بيانات تقدّم — لم يتغيّر شيء.';
@@ -125,7 +135,7 @@ class BackupImportSummary {
 // ---------------------------------------------------------------------------
 
 /// Build the backup document for the current device state.
-/// [appVersion] is informational only (e.g. '0.1.3+4').
+/// [appVersion] is informational only (e.g. '0.1.4+5').
 Future<Map<String, Object?>> buildBackupData(
   DatabaseHelper db, {
   String appVersion = '',
@@ -265,10 +275,14 @@ int _requireInt(
   return value;
 }
 
-int? _optionalInt(Map<String, Object?> row, String key) {
+/// Optional int: null stays null, but a WRONG TYPE is corrupt data —
+/// it used to be silently swallowed as null, hiding tampered files.
+int? _optionalInt(Map<String, Object?> row, String key, String where) {
   final Object? value = row[key];
   if (value == null) return null;
-  if (value is! int) return null;
+  if (value is! int) {
+    throw FormatException('صف تالف في «$where»: الحقل «$key» ليس عدداً.');
+  }
   return value;
 }
 
@@ -280,10 +294,15 @@ String _requireString(Map<String, Object?> row, String key, String where) {
   return value;
 }
 
-String? _optionalString(Map<String, Object?> row, String key) {
+/// Optional string: null/empty stays null, but a WRONG TYPE is
+/// corrupt data — it used to be silently swallowed as null.
+String? _optionalString(Map<String, Object?> row, String key, String where) {
   final Object? value = row[key];
-  if (value is! String || value.isEmpty) return null;
-  return value;
+  if (value == null) return null;
+  if (value is! String) {
+    throw FormatException('صف تالف في «$where»: الحقل «$key» ليس نصاً.');
+  }
+  return value.isEmpty ? null : value;
 }
 
 double _requireDouble(
@@ -326,7 +345,7 @@ _ParsedBackup _parseBackup(Map<String, dynamic> data) {
     final Map<String, Object?> row = _requireRowMap(raw, 'attempts');
     attempts.add(<String, Object?>{
       'question_id': _requireString(row, 'question_id', 'attempts'),
-      'stage_id': _optionalString(row, 'stage_id'),
+      'stage_id': _optionalString(row, 'stage_id', 'attempts'),
       'mode': _requireString(row, 'mode', 'attempts'),
       'session_id': _requireString(row, 'session_id', 'attempts'),
       'is_correct': _requireInt(row, 'is_correct', 'attempts', min: 0, max: 1),
@@ -343,7 +362,7 @@ _ParsedBackup _parseBackup(Map<String, dynamic> data) {
       'id': _requireString(row, 'id', 'achievements'),
       'is_unlocked':
           _requireInt(row, 'is_unlocked', 'achievements', min: 0, max: 1),
-      'unlocked_at': _optionalInt(row, 'unlocked_at'),
+      'unlocked_at': _optionalInt(row, 'unlocked_at', 'achievements'),
     });
   }
 
@@ -360,7 +379,7 @@ _ParsedBackup _parseBackup(Map<String, dynamic> data) {
       'lapses': _requireInt(row, 'lapses', 'review_queue', min: 0),
       'next_review_at':
           _requireInt(row, 'next_review_at', 'review_queue', min: 0),
-      'last_reviewed_at': _optionalInt(row, 'last_reviewed_at'),
+      'last_reviewed_at': _optionalInt(row, 'last_reviewed_at', 'review_queue'),
     });
   }
 
@@ -375,18 +394,37 @@ _ParsedBackup _parseBackup(Map<String, dynamic> data) {
         'صف تالف في «exam_results»: نوع امتحان غير معروف «$examType».',
       );
     }
+    // Cross-field consistency (each field alone was range-checked,
+    // but a file could still claim 9/5 correct or a 42% score for
+    // 4/5 — both are impossible and now rejected).
+    final int examTotal =
+        _requireInt(row, 'total_questions', 'exam_results', min: 1);
+    final int examCorrect =
+        _requireInt(row, 'correct_count', 'exam_results', min: 0);
+    final int examPct =
+        _requireInt(row, 'score_pct', 'exam_results', min: 0, max: 100);
+    if (examCorrect > examTotal) {
+      throw FormatException(
+        'صف تالف في «exam_results»: عدد الإجابات الصحيحة '
+        '($examCorrect) أكبر من عدد الأسئلة ($examTotal).',
+      );
+    }
+    if (examPct != (examCorrect * 100 / examTotal).round()) {
+      throw FormatException(
+        'صف تالف في «exam_results»: النسبة ($examPct٪) لا تطابق '
+        '$examCorrect من $examTotal.',
+      );
+    }
     exams.add(<String, Object?>{
       'exam_type': examType,
-      'subject_id': _optionalString(row, 'subject_id'),
-      'unit_id': _optionalString(row, 'unit_id'),
-      'total_questions':
-          _requireInt(row, 'total_questions', 'exam_results', min: 1),
-      'correct_count':
-          _requireInt(row, 'correct_count', 'exam_results', min: 0),
-      'score_pct': _requireInt(row, 'score_pct', 'exam_results', min: 0, max: 100),
+      'subject_id': _optionalString(row, 'subject_id', 'exam_results'),
+      'unit_id': _optionalString(row, 'unit_id', 'exam_results'),
+      'total_questions': examTotal,
+      'correct_count': examCorrect,
+      'score_pct': examPct,
       'duration_ms': _requireInt(row, 'duration_ms', 'exam_results', min: 0),
       'is_demo': _requireInt(row, 'is_demo', 'exam_results', min: 0, max: 1),
-      'note': _optionalString(row, 'note'),
+      'note': _optionalString(row, 'note', 'exam_results'),
       'started_at': _requireInt(row, 'started_at', 'exam_results', min: 0),
       'finished_at': _requireInt(row, 'finished_at', 'exam_results', min: 0),
     });
@@ -416,7 +454,7 @@ _ParsedBackup _parseBackup(Map<String, dynamic> data) {
           _requireInt(row, 'attempts_count', 'progress', min: 0),
       'correct_count': _requireInt(row, 'correct_count', 'progress', min: 0),
       'mastery_pct': _requireInt(row, 'mastery_pct', 'progress', min: 0, max: 100),
-      'last_played_at': _optionalInt(row, 'last_played_at'),
+      'last_played_at': _optionalInt(row, 'last_played_at', 'progress'),
       'updated_at': _requireInt(row, 'updated_at', 'progress', min: 0),
     });
   }
@@ -481,6 +519,16 @@ class _ImportPlan {
   final Map<String, String> settingsToWrite;
 }
 
+/// Stage ids for the four real labs — progress rows for labs use
+/// 'lab:<labId>' (see LabDetailScreen._stageId). Kept here so the
+/// orphan check recognises them without importing the lab widgets.
+const Set<String> _kLabStageIds = <String>{
+  'lab:math_lab',
+  'lab:physics_lab',
+  'lab:chemistry_lab',
+  'lab:biology_lab',
+};
+
 Future<Set<String>> _idSet(
   DatabaseExecutor exec,
   String table,
@@ -505,6 +553,8 @@ Future<_ImportPlan> _computePlan(
       await _idSet(exec, DatabaseHelper.tableSubjects, 'id');
   final Set<String> unitIds =
       await _idSet(exec, DatabaseHelper.tableUnits, 'id');
+  final Set<String> lessonIds =
+      await _idSet(exec, DatabaseHelper.tableLessons, 'id');
   final Set<String> achievementIds =
       await _idSet(exec, DatabaseHelper.tableAchievements, 'id');
 
@@ -608,7 +658,28 @@ Future<_ImportPlan> _computePlan(
   }
 
   final List<Map<String, Object?>> progressToMerge = <Map<String, Object?>>[];
+  var progressSkippedOrphan = 0;
   for (final Map<String, Object?> row in parsed.progress) {
+    // Orphan guard: a progress row for an entity that does not exist
+    // on this device (another install's lesson/stage, or a tampered
+    // file) used to be merged blindly, creating progress for content
+    // that is not here.
+    final String entityType = row['entity_type'] as String;
+    final String entityId = row['entity_id'] as String;
+    final bool entityExists = switch (entityType) {
+      'subject' => subjectIds.contains(entityId),
+      'unit' => unitIds.contains(entityId),
+      'lesson' => lessonIds.contains(entityId),
+      // Stage ids are 'stage:<lessonId>:quiz' from the stages table,
+      // or 'lab:<labId>' for the four real labs.
+      'stage' =>
+        stageIds.contains(entityId) || _kLabStageIds.contains(entityId),
+      _ => false,
+    };
+    if (!entityExists) {
+      progressSkippedOrphan++;
+      continue;
+    }
     final List<Map<String, Object?>> existing = await exec.query(
       DatabaseHelper.tableProgress,
       where: 'id = ?',
@@ -729,6 +800,7 @@ Future<_ImportPlan> _computePlan(
     progressRestored: progressToMerge.length,
     settingsRestored: settingsToWrite.length,
     darkModeValue: darkModeValue,
+    progressSkippedOrphan: progressSkippedOrphan,
   );
 
   return _ImportPlan(
