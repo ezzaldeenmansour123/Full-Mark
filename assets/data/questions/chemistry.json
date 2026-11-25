@@ -1,0 +1,3706 @@
+{
+  "format": "abqariya-content-pack",
+  "version": 1,
+  "pack": {
+    "id": "ye-chemistry-3sec-2027",
+    "title_ar": "أسئلة الكيمياء — ثالث ثانوي علمي (صنعاء 2027)",
+    "title_en": "Chemistry questions — Grade 12 (Sanaa 2027)",
+    "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+    "is_demo": false,
+    "curriculum_year": "2025-2026",
+    "created_at": "2026-11-25"
+  },
+  "subjects": [
+    {
+      "id": "chemistry",
+      "name_ar": "الكيمياء",
+      "name_en": "Chemistry",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027"
+    }
+  ],
+  "units": [
+    {
+      "id": "chemistry-u1",
+      "subject_id": "chemistry",
+      "title_ar": "العناصر الانتقالية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 11
+    },
+    {
+      "id": "chemistry-u2",
+      "subject_id": "chemistry",
+      "title_ar": "الطاقة الحرارية المصاحبة لتغيرات المادة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 22
+    },
+    {
+      "id": "chemistry-u3",
+      "subject_id": "chemistry",
+      "title_ar": "الطاقة الكهربائية وتفاعلات الأكسدة والاختزال",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 42
+    },
+    {
+      "id": "chemistry-u4",
+      "subject_id": "chemistry",
+      "title_ar": "الطاقة والتفاعلات النووية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 69
+    },
+    {
+      "id": "chemistry-u5",
+      "subject_id": "chemistry",
+      "title_ar": "مركبات النيتروجين العضوية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 91
+    },
+    {
+      "id": "chemistry-u6",
+      "subject_id": "chemistry",
+      "title_ar": "الكيمياء الحيوية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 104
+    },
+    {
+      "id": "chemistry-u7",
+      "subject_id": "chemistry",
+      "title_ar": "الذهب الأسود",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 123
+    },
+    {
+      "id": "chemistry-u8",
+      "subject_id": "chemistry",
+      "title_ar": "صناعات كيميائية في خدمة الإنسان",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 138
+    },
+    {
+      "id": "chemistry-u9",
+      "subject_id": "chemistry",
+      "title_ar": "الكيمياء والبيئة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 167
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-u1-l1",
+      "unit_id": "chemistry-u1",
+      "subject_id": "chemistry",
+      "title_ar": "موقع العناصر في الجدول",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "sort_order": 1
+    },
+    {
+      "id": "chemistry-u1-l2",
+      "unit_id": "chemistry-u1",
+      "subject_id": "chemistry",
+      "title_ar": "الخواص العامة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "sort_order": 2
+    },
+    {
+      "id": "chemistry-u1-l3",
+      "unit_id": "chemistry-u1",
+      "subject_id": "chemistry",
+      "title_ar": "التركيب الإلكتروني وحالات التأكسد",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 14,
+      "sort_order": 3
+    },
+    {
+      "id": "chemistry-u1-l4",
+      "unit_id": "chemistry-u1",
+      "subject_id": "chemistry",
+      "title_ar": "الحديد",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 16,
+      "sort_order": 4
+    },
+    {
+      "id": "chemistry-u2-l1",
+      "unit_id": "chemistry-u2",
+      "subject_id": "chemistry",
+      "title_ar": "صور الطاقة وتحولاتها",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 23,
+      "sort_order": 1
+    },
+    {
+      "id": "chemistry-u2-l2",
+      "unit_id": "chemistry-u2",
+      "subject_id": "chemistry",
+      "title_ar": "السعة الحرارية والحرارة النوعية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 26,
+      "sort_order": 2
+    },
+    {
+      "id": "chemistry-u2-l3",
+      "unit_id": "chemistry-u2",
+      "subject_id": "chemistry",
+      "title_ar": "التفاعلات الكيميائية وحرارة التفاعل",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 27,
+      "sort_order": 3
+    },
+    {
+      "id": "chemistry-u2-l4",
+      "unit_id": "chemistry-u2",
+      "subject_id": "chemistry",
+      "title_ar": "أنواع التغيرات الحرارية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 31,
+      "sort_order": 4
+    },
+    {
+      "id": "chemistry-u2-l5",
+      "unit_id": "chemistry-u2",
+      "subject_id": "chemistry",
+      "title_ar": "حرارة التكوين القياسية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 35,
+      "sort_order": 5
+    },
+    {
+      "id": "chemistry-u2-l6",
+      "unit_id": "chemistry-u2",
+      "subject_id": "chemistry",
+      "title_ar": "علاقة حرارة التكوين القياسية بثبات المركب",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 35,
+      "sort_order": 6
+    },
+    {
+      "id": "chemistry-u2-l7",
+      "unit_id": "chemistry-u2",
+      "subject_id": "chemistry",
+      "title_ar": "حساب حرارة التفاعل",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 36,
+      "sort_order": 7
+    },
+    {
+      "id": "chemistry-u3-l1",
+      "unit_id": "chemistry-u3",
+      "subject_id": "chemistry",
+      "title_ar": "الأكسدة والاختزال",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 43,
+      "sort_order": 1
+    },
+    {
+      "id": "chemistry-u3-l2",
+      "unit_id": "chemistry-u3",
+      "subject_id": "chemistry",
+      "title_ar": "تفاعلات الأكسدة والاختزال",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 46,
+      "sort_order": 2
+    },
+    {
+      "id": "chemistry-u3-l3",
+      "unit_id": "chemistry-u3",
+      "subject_id": "chemistry",
+      "title_ar": "الخلايا الكهروكيميائية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 47,
+      "sort_order": 3
+    },
+    {
+      "id": "chemistry-u3-l4",
+      "unit_id": "chemistry-u3",
+      "subject_id": "chemistry",
+      "title_ar": "الخلايا الجلفانية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 48,
+      "sort_order": 4
+    },
+    {
+      "id": "chemistry-u3-l5",
+      "unit_id": "chemistry-u3",
+      "subject_id": "chemistry",
+      "title_ar": "مزايا السلسلة الكهروكيميائية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 53,
+      "sort_order": 5
+    },
+    {
+      "id": "chemistry-u3-l6",
+      "unit_id": "chemistry-u3",
+      "subject_id": "chemistry",
+      "title_ar": "بعض الخلايا الجلفانية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 54,
+      "sort_order": 6
+    },
+    {
+      "id": "chemistry-u3-l7",
+      "unit_id": "chemistry-u3",
+      "subject_id": "chemistry",
+      "title_ar": "خلايا التحليل الكهربي",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 58,
+      "sort_order": 7
+    },
+    {
+      "id": "chemistry-u3-l8",
+      "unit_id": "chemistry-u3",
+      "subject_id": "chemistry",
+      "title_ar": "تطبيقات على التحليل الكهربائي",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 60,
+      "sort_order": 8
+    },
+    {
+      "id": "chemistry-u3-l9",
+      "unit_id": "chemistry-u3",
+      "subject_id": "chemistry",
+      "title_ar": "تفاعلات غير مرغوبة للتأكسد",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 65,
+      "sort_order": 9
+    },
+    {
+      "id": "chemistry-u4-l1",
+      "unit_id": "chemistry-u4",
+      "subject_id": "chemistry",
+      "title_ar": "اكتشاف النظائر",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 71,
+      "sort_order": 1
+    },
+    {
+      "id": "chemistry-u4-l2",
+      "unit_id": "chemistry-u4",
+      "subject_id": "chemistry",
+      "title_ar": "أنواع النظائر",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 72,
+      "sort_order": 2
+    },
+    {
+      "id": "chemistry-u4-l3",
+      "unit_id": "chemistry-u4",
+      "subject_id": "chemistry",
+      "title_ar": "معادلات التفاعلات النووية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 73,
+      "sort_order": 3
+    },
+    {
+      "id": "chemistry-u4-l4",
+      "unit_id": "chemistry-u4",
+      "subject_id": "chemistry",
+      "title_ar": "طاقة الترابط النووي وعلاقتها بالكتلة المفقودة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 74,
+      "sort_order": 4
+    },
+    {
+      "id": "chemistry-u4-l5",
+      "unit_id": "chemistry-u4",
+      "subject_id": "chemistry",
+      "title_ar": "استقرار النواة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 76,
+      "sort_order": 5
+    },
+    {
+      "id": "chemistry-u4-l6",
+      "unit_id": "chemistry-u4",
+      "subject_id": "chemistry",
+      "title_ar": "العلاقة بين نسبة عدد البروتونات والنيوترونات واستقرار النواة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 77,
+      "sort_order": 6
+    },
+    {
+      "id": "chemistry-u4-l7",
+      "unit_id": "chemistry-u4",
+      "subject_id": "chemistry",
+      "title_ar": "الجسيمات والإشعاعات الصادرة من الأنوية غير المستقرة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "sort_order": 7
+    },
+    {
+      "id": "chemistry-u4-l8",
+      "unit_id": "chemistry-u4",
+      "subject_id": "chemistry",
+      "title_ar": "التفاعلات النووية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 80,
+      "sort_order": 8
+    },
+    {
+      "id": "chemistry-u4-l9",
+      "unit_id": "chemistry-u4",
+      "subject_id": "chemistry",
+      "title_ar": "الوقاية من خطر التلوث الإشعاعي",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 87,
+      "sort_order": 9
+    },
+    {
+      "id": "chemistry-u5-l1",
+      "unit_id": "chemistry-u5",
+      "subject_id": "chemistry",
+      "title_ar": "الأمينات",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 92,
+      "sort_order": 1
+    },
+    {
+      "id": "chemistry-u5-l2",
+      "unit_id": "chemistry-u5",
+      "subject_id": "chemistry",
+      "title_ar": "الأميدات",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 95,
+      "sort_order": 2
+    },
+    {
+      "id": "chemistry-u5-l3",
+      "unit_id": "chemistry-u5",
+      "subject_id": "chemistry",
+      "title_ar": "النيتريلات",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 97,
+      "sort_order": 3
+    },
+    {
+      "id": "chemistry-u5-l4",
+      "unit_id": "chemistry-u5",
+      "subject_id": "chemistry",
+      "title_ar": "الحموض الأمينية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 97,
+      "sort_order": 4
+    },
+    {
+      "id": "chemistry-u6-l1",
+      "unit_id": "chemistry-u6",
+      "subject_id": "chemistry",
+      "title_ar": "مقدمة عن الكيمياء الحيوية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 105,
+      "sort_order": 1
+    },
+    {
+      "id": "chemistry-u6-l2",
+      "unit_id": "chemistry-u6",
+      "subject_id": "chemistry",
+      "title_ar": "المواد الأساسية التي يحتاجها الإنسان في غذائه",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 106,
+      "sort_order": 2
+    },
+    {
+      "id": "chemistry-u6-l3",
+      "unit_id": "chemistry-u6",
+      "subject_id": "chemistry",
+      "title_ar": "الكربوهيدرات",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 106,
+      "sort_order": 3
+    },
+    {
+      "id": "chemistry-u6-l4",
+      "unit_id": "chemistry-u6",
+      "subject_id": "chemistry",
+      "title_ar": "البروتينات",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 112,
+      "sort_order": 4
+    },
+    {
+      "id": "chemistry-u6-l5",
+      "unit_id": "chemistry-u6",
+      "subject_id": "chemistry",
+      "title_ar": "الليبيدات",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 115,
+      "sort_order": 5
+    },
+    {
+      "id": "chemistry-u6-l6",
+      "unit_id": "chemistry-u6",
+      "subject_id": "chemistry",
+      "title_ar": "الفيتامينات",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 118,
+      "sort_order": 6
+    },
+    {
+      "id": "chemistry-u6-l7",
+      "unit_id": "chemistry-u6",
+      "subject_id": "chemistry",
+      "title_ar": "الأنزيمات",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 119,
+      "sort_order": 7
+    },
+    {
+      "id": "chemistry-u7-l1",
+      "unit_id": "chemistry-u7",
+      "subject_id": "chemistry",
+      "title_ar": "الذهب الأسود مصدر من مصادر الطاقة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 124,
+      "sort_order": 1
+    },
+    {
+      "id": "chemistry-u7-l2",
+      "unit_id": "chemistry-u7",
+      "subject_id": "chemistry",
+      "title_ar": "أصل النفط الخام",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 125,
+      "sort_order": 2
+    },
+    {
+      "id": "chemistry-u7-l3",
+      "unit_id": "chemistry-u7",
+      "subject_id": "chemistry",
+      "title_ar": "الكشف عن وجود النفط",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 128,
+      "sort_order": 3
+    },
+    {
+      "id": "chemistry-u7-l4",
+      "unit_id": "chemistry-u7",
+      "subject_id": "chemistry",
+      "title_ar": "استخراج النفط",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 130,
+      "sort_order": 4
+    },
+    {
+      "id": "chemistry-u7-l5",
+      "unit_id": "chemistry-u7",
+      "subject_id": "chemistry",
+      "title_ar": "تكرير النفط",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 131,
+      "sort_order": 5
+    },
+    {
+      "id": "chemistry-u7-l6",
+      "unit_id": "chemistry-u7",
+      "subject_id": "chemistry",
+      "title_ar": "النفط كمصدر للطاقة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 134,
+      "sort_order": 6
+    },
+    {
+      "id": "chemistry-u7-l7",
+      "unit_id": "chemistry-u7",
+      "subject_id": "chemistry",
+      "title_ar": "النفط كمصدر للمنتجات الصناعية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 135,
+      "sort_order": 7
+    },
+    {
+      "id": "chemistry-u8-l1",
+      "unit_id": "chemistry-u8",
+      "subject_id": "chemistry",
+      "title_ar": "صناعات كيميائية في مجال الزراعة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 139,
+      "sort_order": 1
+    },
+    {
+      "id": "chemistry-u8-l2",
+      "unit_id": "chemistry-u8",
+      "subject_id": "chemistry",
+      "title_ar": "الأسمدة والمخصبات",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 140,
+      "sort_order": 2
+    },
+    {
+      "id": "chemistry-u8-l3",
+      "unit_id": "chemistry-u8",
+      "subject_id": "chemistry",
+      "title_ar": "صناعة الأسمدة النيتروجينية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 143,
+      "sort_order": 3
+    },
+    {
+      "id": "chemistry-u8-l4",
+      "unit_id": "chemistry-u8",
+      "subject_id": "chemistry",
+      "title_ar": "صناعات كيميائية لمكافحة الحشرات الضارة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "sort_order": 4
+    },
+    {
+      "id": "chemistry-u8-l5",
+      "unit_id": "chemistry-u8",
+      "subject_id": "chemistry",
+      "title_ar": "مبيدات حديثة غير ضارة بالبيئة والإنسان",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 150,
+      "sort_order": 5
+    },
+    {
+      "id": "chemistry-u8-l6",
+      "unit_id": "chemistry-u8",
+      "subject_id": "chemistry",
+      "title_ar": "صناعات كيميائية في مجال الكساء",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 151,
+      "sort_order": 6
+    },
+    {
+      "id": "chemistry-u8-l7",
+      "unit_id": "chemistry-u8",
+      "subject_id": "chemistry",
+      "title_ar": "الصناعات الكيميائية للمواد الاستهلاكية",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 157,
+      "sort_order": 7
+    },
+    {
+      "id": "chemistry-u9-l1",
+      "unit_id": "chemistry-u9",
+      "subject_id": "chemistry",
+      "title_ar": "مفهوم البيئة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 168,
+      "sort_order": 1
+    },
+    {
+      "id": "chemistry-u9-l2",
+      "unit_id": "chemistry-u9",
+      "subject_id": "chemistry",
+      "title_ar": "مفهوم التلوث",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 169,
+      "sort_order": 2
+    },
+    {
+      "id": "chemistry-u9-l3",
+      "unit_id": "chemistry-u9",
+      "subject_id": "chemistry",
+      "title_ar": "الملوثات",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 169,
+      "sort_order": 3
+    },
+    {
+      "id": "chemistry-u9-l4",
+      "unit_id": "chemistry-u9",
+      "subject_id": "chemistry",
+      "title_ar": "ملوثات الهواء",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 169,
+      "sort_order": 4
+    },
+    {
+      "id": "chemistry-u9-l5",
+      "unit_id": "chemistry-u9",
+      "subject_id": "chemistry",
+      "title_ar": "ملوثات المياه",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 178,
+      "sort_order": 5
+    },
+    {
+      "id": "chemistry-u9-l6",
+      "unit_id": "chemistry-u9",
+      "subject_id": "chemistry",
+      "title_ar": "ملوثات التربة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 179,
+      "sort_order": 6
+    },
+    {
+      "id": "chemistry-u9-l7",
+      "unit_id": "chemistry-u9",
+      "subject_id": "chemistry",
+      "title_ar": "الحلول المقترحة للحد من تلوث البيئة",
+      "title_en": "",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 180,
+      "sort_order": 7
+    }
+  ],
+  "questions": [
+    {
+      "id": "ye-chemistry-u1-l1-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u1",
+      "lesson_id": "chemistry-u1-l1",
+      "difficulty": 1,
+      "question_text": "أين تقع العناصر الانتقالية في الجدول الدوري؟",
+      "explanation": "تقع العناصر الانتقالية بين مجموعتي العناصر الرئيسية IIA و IIIA، وتمتلئ فيها المستويات الفرعية d و f تدريجيًا.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس: موقع العناصر في الجدول",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بين المجموعتين IIA و IIIA",
+        "في المجموعة الأولى",
+        "في المجموعة الثامنة عشرة",
+        "أسفل الجدول الدوري فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بين المجموعتين IIA و IIIA"
+    },
+    {
+      "id": "ye-chemistry-u1-l1-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u1",
+      "lesson_id": "chemistry-u1-l1",
+      "difficulty": 1,
+      "question_text": "يُعد العنصر انتقاليًا إذا كان غلافه الفرعي d أو f ممتلئًا جزئيًا، سواء في حالته الذرية أو في إحدى حالات تأكسده.",
+      "explanation": "هذا هو تعريف العنصر الانتقالي: غلاف فرعي d أو f غير ممتلئ تمامًا في الذرة أو في أحد أيوناتها.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس: موقع العناصر في الجدول",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u1-l2-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u1",
+      "lesson_id": "chemistry-u1-l2",
+      "difficulty": 1,
+      "question_text": "ما أول عنصر في السلسلة الانتقالية الرئيسية الأولى؟",
+      "explanation": "تبدأ السلسلة الانتقالية الرئيسية الأولى بعنصر السكانديوم Sc وعدده الذري 21، وفيه إلكترون واحد في المستوى الفرعي 3d.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس: الخواص العامة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "السكانديوم Sc",
+        "التيتانيوم Ti",
+        "الحديد Fe",
+        "الخارصين Zn"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "السكانديوم Sc"
+    },
+    {
+      "id": "ye-chemistry-u1-l2-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u1",
+      "lesson_id": "chemistry-u1-l2",
+      "difficulty": 2,
+      "question_text": "أي عنصر ينهي السلسلة الانتقالية الرئيسية الأولى؟",
+      "explanation": "تنتهي السلسلة الانتقالية الرئيسية الأولى بعنصر الخارصين Zn وعدده الذري 30، بامتلاء المستوى الفرعي 3d.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس: الخواص العامة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "النيكل Ni",
+        "النحاس Cu",
+        "الخارصين Zn",
+        "الحديد Fe"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "الخارصين Zn"
+    },
+    {
+      "id": "ye-chemistry-u1-l3-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u1",
+      "lesson_id": "chemistry-u1-l3",
+      "difficulty": 2,
+      "question_text": "ما التركيب الإلكتروني لذرة الحديد Fe وعددها الذري 26؟",
+      "explanation": "يتوزع إلكترونات الحديد 26 على النحو [Ar] 3d6 4s2، أي ستة إلكترونات في المستوى الفرعي 3d واثنان في 4s.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس: التركيب الإلكتروني وحالات التأكسد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "[Ar] 3d6 4s2",
+        "[Ar] 3d8 4s2",
+        "[Ar] 3d5 4s1",
+        "[Ar] 3d10 4s2"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "[Ar] 3d6 4s2"
+    },
+    {
+      "id": "ye-chemistry-u1-l3-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u1",
+      "lesson_id": "chemistry-u1-l3",
+      "difficulty": 2,
+      "question_text": "أي مما يأتي من حالات تأكسد المنغنيز Mn؟",
+      "explanation": "يكوّن المنغنيز مركبات بحالات تأكسد متعددة منها +2 و+3 و+4 و+6 و+7، وأكثرها وفرة في القشرة الأرضية حالة +2.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس: التركيب الإلكتروني وحالات التأكسد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "+7",
+        "+1",
+        "-2",
+        "+8"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "+7"
+    },
+    {
+      "id": "ye-chemistry-u1-l4-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u1",
+      "lesson_id": "chemistry-u1-l4",
+      "difficulty": 1,
+      "question_text": "ما أكسيد الحديد المغناطيسي الذي يُسمى الماجنيتيت؟",
+      "explanation": "أكسيد الحديد المغناطيسي هو Fe3O4 ويُعرف باسم الماجنيتيت، وفيه الحديد بحالتي تأكسد مختلفتين II و III.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 16,
+      "source_detail": "الدرس: الحديد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "FeO",
+        "Fe2O3",
+        "Fe3O4",
+        "Fe(OH)3"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "Fe3O4"
+    },
+    {
+      "id": "ye-chemistry-u1-l4-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u1",
+      "lesson_id": "chemistry-u1-l4",
+      "difficulty": 2,
+      "question_text": "ما المعادلة التي تمثل الخطوة الأخيرة لاختزال خام الحديد في الفرن العالي؟",
+      "explanation": "في أسفل الفرن العالي يختزل أول أكسيد الكربون أكسيد الحديد الثنائي FeO إلى الحديد المنصهر وفق المعادلة FeO + CO → Fe + CO2.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 18,
+      "source_detail": "الدرس: الحديد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "FeO + CO → Fe + CO2",
+        "Fe2O3 + CO → Fe + CO2",
+        "Fe3O4 + CO → Fe + CO2",
+        "FeO + C → Fe + CO"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "FeO + CO → Fe + CO2"
+    },
+    {
+      "id": "ye-chemistry-u2-l1-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l1",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي ليس من صور الطاقة؟",
+      "explanation": "من صور الطاقة: الحرارية والميكانيكية والكهربائية والضوئية والكيميائية والنووية والإشعاعية، والكتلة ليست صورة من صورها.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 23,
+      "source_detail": "الدرس: صور الطاقة وتحولاتها",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الطاقة الحرارية",
+        "الطاقة الكيميائية",
+        "الطاقة النووية",
+        "الكتلة"
+      ],
+      "correct_option_index": 3,
+      "correct_answer": "الكتلة"
+    },
+    {
+      "id": "ye-chemistry-u2-l1-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l1",
+      "difficulty": 1,
+      "question_text": "ينص قانون بقاء الطاقة على أن الطاقة لا تفنى ولا تُستحدث من عدم، ولكن يمكن نقلها من مكان إلى آخر أو تحويلها من شكل إلى آخر.",
+      "explanation": "هذا نص قانون بقاء الطاقة: الطاقة محفوظة في نظام مغلق، فهي لا تفنى ولا تُستحدث وإنما تتحول من شكل إلى آخر.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 23,
+      "source_detail": "الدرس: صور الطاقة وتحولاتها",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u2-l2-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l2",
+      "difficulty": 1,
+      "question_text": "ما وحدة الحرارة النوعية؟",
+      "explanation": "الحرارة النوعية هي كمية الحرارة اللازمة لرفع درجة حرارة جرام واحد من المادة درجة مئوية واحدة، ووحدتها جول / جم × °م.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 26,
+      "source_detail": "الدرس: السعة الحرارية والحرارة النوعية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "جول / جم × °م",
+        "جول / مول",
+        "كيلوجول / مول",
+        "سعر / جم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "جول / جم × °م"
+    },
+    {
+      "id": "ye-chemistry-u2-l2-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l2",
+      "difficulty": 2,
+      "question_text": "ما العلاقة التي تُحسب بها كمية الحرارة الممتصة أو المنطلقة؟",
+      "explanation": "كمية الحرارة q تساوي حاصل ضرب كتلة المادة m في حرارتها النوعية c في التغير في درجة الحرارة ΔT.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 26,
+      "source_detail": "الدرس: السعة الحرارية والحرارة النوعية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "q = m × c × ΔT",
+        "q = c ÷ (m × ΔT)",
+        "q = m ÷ (c × ΔT)",
+        "q = m × c + T"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "q = m × c × ΔT"
+    },
+    {
+      "id": "ye-chemistry-u2-l3-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l3",
+      "difficulty": 1,
+      "question_text": "ما المقصود بالمحتوى الحراري H للمادة؟",
+      "explanation": "المحتوى الحراري H هو كمية الحرارة المختزنة في المادة عند تكوينها، ويعتمد على طبيعة المادة وحالتها الفيزيائية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس: التفاعلات الكيميائية وحرارة التفاعل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "كمية الحرارة المختزنة في المادة عند تكوينها",
+        "درجة حرارة المادة",
+        "كتلة المادة",
+        "سرعة جزيئات المادة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "كمية الحرارة المختزنة في المادة عند تكوينها"
+    },
+    {
+      "id": "ye-chemistry-u2-l3-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l3",
+      "difficulty": 1,
+      "question_text": "حرارة التفاعل هي كمية الحرارة المنطلقة أو الممتصة عند تفاعل المواد الداخلة في التفاعل بشكل تام لتكوين النواتج، ويُرمز لها بالرمز ΔH.",
+      "explanation": "هذا تعريف حرارة التفاعل: الحرارة المصاحبة للتفاعل الكيميائي التام، وتقاس بالتغير في المحتوى الحراري ΔH.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس: التفاعلات الكيميائية وحرارة التفاعل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u2-l4-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l4",
+      "difficulty": 2,
+      "question_text": "ذوبان نترات الأمونيوم NH4NO3 في الماء مصحوب بتغير حراري ΔH = +25.7 كيلوجول/مول، فما نوع هذا التغير؟",
+      "explanation": "إشارة ΔH الموجبة تعني أن العملية تمتص الحرارة من الوسط، فيبرد المحلول، فذوبان نترات الأمونيوم تغير ماص للحرارة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 31,
+      "source_detail": "الدرس: أنواع التغيرات الحرارية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ماص للحرارة",
+        "طارد للحرارة",
+        "لا يصاحبه تغير حراري",
+        "متعادل حراريًا"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ماص للحرارة"
+    },
+    {
+      "id": "ye-chemistry-u2-l4-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l4",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من التغيرات الحرارية الفيزيائية؟",
+      "explanation": "التغيرات الحرارية الفيزيائية تشمل حرارة الذوبان وحرارة التبخير وحرارة التكثيف وحرارة الانصهار، أما الاحتراق والتكوين والتعادل فتغيرات كيميائية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 31,
+      "source_detail": "الدرس: أنواع التغيرات الحرارية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "حرارة الذوبان",
+        "حرارة الاحتراق",
+        "حرارة التكوين",
+        "حرارة التعادل"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "حرارة الذوبان"
+    },
+    {
+      "id": "ye-chemistry-u2-l5-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l5",
+      "difficulty": 1,
+      "question_text": "ما حرارة التكوين القياسية للعناصر في حالتها القياسية؟",
+      "explanation": "حرارة التكوين القياسية لأي عنصر في حالته القياسية تساوي صفرًا، لأن العنصر لا يحتاج إلى حرارة ليتكون من نفسه.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 35,
+      "source_detail": "الدرس: حرارة التكوين القياسية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "صفر",
+        "100 كيلوجول/مول",
+        "-100 كيلوجول/مول",
+        "1000 كيلوجول/مول"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "صفر"
+    },
+    {
+      "id": "ye-chemistry-u2-l5-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l5",
+      "difficulty": 2,
+      "question_text": "ما الحالة القياسية للعنصر؟",
+      "explanation": "الحالة القياسية للعنصر هي حالة وجوده في الطبيعة عند درجة حرارة 25°م وضغط 1 ضغط جوي.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 35,
+      "source_detail": "الدرس: حرارة التكوين القياسية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "حالته الطبيعية عند درجة حرارة 25°م وضغط 1 ضغط جوي",
+        "حالته الغازية دائمًا",
+        "حالته عند درجة حرارة صفر مئوية",
+        "حالته السائلة عند أي درجة حرارة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "حالته الطبيعية عند درجة حرارة 25°م وضغط 1 ضغط جوي"
+    },
+    {
+      "id": "ye-chemistry-u2-l6-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l6",
+      "difficulty": 2,
+      "question_text": "كلما كانت حرارة التكوين القياسية للمركب أكثر سالبية كان المركب:",
+      "explanation": "حرارة التكوين السالبة الكبيرة تعني انطلاق حرارة كبيرة عند التكوين، فيكون المركب الناتج أكثر ثباتًا وأقل ميلًا للتفكك.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 35,
+      "source_detail": "الدرس: علاقة حرارة التكوين القياسية بثبات المركب",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أكثر ثباتًا",
+        "أقل ثباتًا",
+        "أسرع تفككًا",
+        "غازًا دائمًا"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أكثر ثباتًا"
+    },
+    {
+      "id": "ye-chemistry-u2-l6-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l6",
+      "difficulty": 2,
+      "question_text": "حرارة تكوين الماء السائل (-285.8 كيلوجول/مول) أكثر سالبية من حرارة تكوين بخار الماء (-241.8 كيلوجول/مول)، لذا الماء السائل أكثر ثباتًا من بخاره.",
+      "explanation": "بحسب جدول حرارة التكوين القياسية، الماء السائل ΔHf = -285.8 والبخار -241.8 كيلوجول/مول، والقيمة الأكثر سالبية تدل على ثبات أكبر.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 36,
+      "source_detail": "الدرس: علاقة حرارة التكوين القياسية بثبات المركب",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u2-l7-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l7",
+      "difficulty": 2,
+      "question_text": "حسب قانون هس، كيف تُحسب حرارة التفاعل من حرارة التكوين القياسية؟",
+      "explanation": "حرارة التفاعل ΔH تساوي مجموع حرارة التكوين القياسية للنواتج ناقص مجموع حرارة التكوين القياسية للمتفاعلات.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 36,
+      "source_detail": "الدرس: حساب حرارة التفاعل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مجموع حرارة تكوين النواتج ناقص مجموع حرارة تكوين المتفاعلات",
+        "مجموع حرارة تكوين المتفاعلات ناقص مجموع حرارة تكوين النواتج",
+        "حاصل ضرب حرارة تكوين النواتج في حرارة تكوين المتفاعلات",
+        "مجموع حرارة تكوين النواتج والمتفاعلات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مجموع حرارة تكوين النواتج ناقص مجموع حرارة تكوين المتفاعلات"
+    },
+    {
+      "id": "ye-chemistry-u2-l7-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u2",
+      "lesson_id": "chemistry-u2-l7",
+      "difficulty": 3,
+      "question_text": "احسب حرارة تفاعل احتراق الكربون C + O2 → CO2 إذا كانت حرارة التكوين القياسية لـ CO2 تساوي -393.5 كيلوجول/مول.",
+      "explanation": "ΔH = ΔHf(CO2) - [ΔHf(C) + ΔHf(O2)] = -393.5 - [0 + 0] = -393.5 كيلوجول/مول، فالتفاعل طارد للحرارة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 36,
+      "source_detail": "الدرس: حساب حرارة التفاعل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "-393.5 كيلوجول/مول",
+        "+393.5 كيلوجول/مول",
+        "-787 كيلوجول/مول",
+        "صفر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "-393.5 كيلوجول/مول"
+    },
+    {
+      "id": "ye-chemistry-u3-l1-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l1",
+      "difficulty": 1,
+      "question_text": "ما الأكسدة؟",
+      "explanation": "الأكسدة هي فقد الذرة أو الأيون للإلكترونات، أما اكتساب الإلكترونات فهو الاختزال.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 43,
+      "source_detail": "الدرس: الأكسدة والاختزال",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "فقد الإلكترونات",
+        "اكتساب الإلكترونات",
+        "فقد البروتونات",
+        "اكتساب النيوترونات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "فقد الإلكترونات"
+    },
+    {
+      "id": "ye-chemistry-u3-l1-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l1",
+      "difficulty": 2,
+      "question_text": "في التفاعل Mg + O → Mg2+ + O2- أي الذرتين تأكسدت؟",
+      "explanation": "فقدت ذرة المغنيسيوم إلكترونين من مستواها الخارجي فتأكسدت إلى أيون Mg2+، بينما اكتسبت ذرة الأكسجين الإلكترونين فاختُزلت.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 43,
+      "source_detail": "الدرس: الأكسدة والاختزال",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "المغنيسيوم",
+        "الأكسجين",
+        "كلتاهما",
+        "لا أحد منهما"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "المغنيسيوم"
+    },
+    {
+      "id": "ye-chemistry-u3-l2-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l2",
+      "difficulty": 2,
+      "question_text": "في تفاعل الأكسدة والاختزال، العامل المؤكسد هو المادة التي:",
+      "explanation": "العامل المؤكسد يكتسب الإلكترونات من المادة الأخرى فيُختزل هو، ويسبب تأكسد المادة الأخرى.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 46,
+      "source_detail": "الدرس: تفاعلات الأكسدة والاختزال",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تكتسب إلكترونات وتُختزل",
+        "تفقد إلكترونات وتتأكسد",
+        "لا تشارك في التفاعل",
+        "تتحد مع الأكسجين فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تكتسب إلكترونات وتُختزل"
+    },
+    {
+      "id": "ye-chemistry-u3-l2-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l2",
+      "difficulty": 1,
+      "question_text": "لا يحدث تأكسد دون اختزال مصاحب له في التفاعل نفسه.",
+      "explanation": "الأكسدة والاختزال عمليتان متلازمتان: الإلكترونات التي يفقدها المُتأكسد يكتسبها المُختزل في التفاعل نفسه.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 46,
+      "source_detail": "الدرس: تفاعلات الأكسدة والاختزال",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u3-l3-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l3",
+      "difficulty": 1,
+      "question_text": "ما الخلية الكهروكيميائية التي تولّد طاقة كهربائية من تفاعل أكسدة واختزال تلقائي؟",
+      "explanation": "الخلية الجلفانية مصدرها تفاعل أكسدة واختزال تلقائي يولّد طاقة كهربائية، أما خلية التحليل الكهربي فتستهلك الطاقة الكهربائية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس: الخلايا الكهروكيميائية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الخلية الجلفانية",
+        "الخلية الإلكتروليتية",
+        "الخلية الشمسية",
+        "خلية الوقود"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الخلية الجلفانية"
+    },
+    {
+      "id": "ye-chemistry-u3-l3-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l3",
+      "difficulty": 1,
+      "question_text": "ما الخلية الكهروكيميائية التي تستهلك طاقة كهربائية لإحداث تفاعل غير تلقائي؟",
+      "explanation": "خلية التحليل الكهربي (الإلكتروليتية) يُمرَّر فيها تيار كهربائي لإحداث تفاعل أكسدة واختزال غير تلقائي.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس: الخلايا الكهروكيميائية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "خلية التحليل الكهربي (الإلكتروليتية)",
+        "الخلية الجلفانية",
+        "الخلية الشمسية",
+        "البطارية الجافة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "خلية التحليل الكهربي (الإلكتروليتية)"
+    },
+    {
+      "id": "ye-chemistry-u3-l4-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l4",
+      "difficulty": 2,
+      "question_text": "في خلية دانيال Zn/Cu، أين تحدث عملية الأكسدة؟",
+      "explanation": "يتأكسد الخارصين عند المصعد (القطب السالب) فيفقد إلكترونين: Zn → Zn2+ + 2e-، بينما تختزل أيونات النحاس عند المهبط.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 48,
+      "source_detail": "الدرس: الخلايا الجلفانية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "عند قطب الخارصين (المصعد)",
+        "عند قطب النحاس (المهبط)",
+        "في القنطرة الملحية",
+        "في محلول كبريتات النحاس فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عند قطب الخارصين (المصعد)"
+    },
+    {
+      "id": "ye-chemistry-u3-l4-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l4",
+      "difficulty": 1,
+      "question_text": "ما نصف تفاعل الأكسدة عند قطب الخارصين في الخلية الجلفانية؟",
+      "explanation": "عند مصعد خلية دانيال يتأكسد الخارصين فيفقد إلكترونين: Zn → Zn2+ + 2e-.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 48,
+      "source_detail": "الدرس: الخلايا الجلفانية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "Zn → Zn2+ + 2e-",
+        "Cu2+ + 2e- → Cu",
+        "Zn2+ + 2e- → Zn",
+        "Cu → Cu2+ + 2e-"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Zn → Zn2+ + 2e-"
+    },
+    {
+      "id": "ye-chemistry-u3-l5-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l5",
+      "difficulty": 2,
+      "question_text": "بماذا تفيد السلسلة الكهروكيميائية للعناصر؟",
+      "explanation": "بترتيب العناصر في السلسلة الكهروكيميائية حسب جهود اختزالها يمكن التنبؤ بأي الفلزات يزيح الآخر، وهل يتفاعل فلز مع حمض، وتلقائية التفاعل.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 53,
+      "source_detail": "الدرس: مزايا السلسلة الكهروكيميائية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "التنبؤ بتلقائية تفاعلات الأكسدة والاختزال واتجاهها",
+        "قياس كتلة العناصر",
+        "تحديد لون العناصر",
+        "قياس حجم الغازات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "التنبؤ بتلقائية تفاعلات الأكسدة والاختزال واتجاهها"
+    },
+    {
+      "id": "ye-chemistry-u3-l5-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l5",
+      "difficulty": 1,
+      "question_text": "الفلز الأعلى في السلسلة الكهروكيميائية (الأكثر نشاطًا) يزيح الفلز الأدنى منه من محلول أملاحه.",
+      "explanation": "الفلز الأنشط يفقد إلكتروناته بسهولة أكبر فيزيح الفلز الأقل نشاطًا من محلول ملحه، وهذه من أهم مزايا السلسلة الكهروكيميائية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 53,
+      "source_detail": "الدرس: مزايا السلسلة الكهروكيميائية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u3-l6-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l6",
+      "difficulty": 1,
+      "question_text": "أي خلية تُستخدم في السيارات كبطارية قابلة لإعادة الشحن؟",
+      "explanation": "بطارية الرصاص الحمضية (بطارية السيارة) خلية جلفانية قابلة لإعادة الشحن، وتُفحص شحنتها بقياس كثافة الحمض فيها.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 54,
+      "source_detail": "الدرس: بعض الخلايا الجلفانية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بطارية الرصاص الحمضية",
+        "خلية دانيال",
+        "الخلية الجافة",
+        "خلية الوقود"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بطارية الرصاص الحمضية"
+    },
+    {
+      "id": "ye-chemistry-u3-l6-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l6",
+      "difficulty": 2,
+      "question_text": "ما القطب الموجب في الخلية الجافة (خلية لكلانشيه)؟",
+      "explanation": "في الخلية الجافة يكون غلاف الخارصين هو المصعد (السالب)، وقضيب الكربون في الوسط هو المهبط (الموجب).",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 54,
+      "source_detail": "الدرس: بعض الخلايا الجلفانية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "قضيب الكربون (الجرافيت)",
+        "قضيب الخارصين",
+        "عجينة كلوريد الأمونيوم",
+        "غلاف الخارصين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "قضيب الكربون (الجرافيت)"
+    },
+    {
+      "id": "ye-chemistry-u3-l7-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l7",
+      "difficulty": 1,
+      "question_text": "عند التحليل الكهربي، أين يحدث الاختزال؟",
+      "explanation": "في خلية التحليل الكهربي يحدث الاختزال (اكتساب الإلكترونات) عند المهبط، والأكسدة (فقد الإلكترونات) عند المصعد.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 58,
+      "source_detail": "الدرس: خلايا التحليل الكهربي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "عند المهبط (القطب السالب)",
+        "عند المصعد (القطب الموجب)",
+        "في القنطرة الملحية",
+        "في المحلول فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عند المهبط (القطب السالب)"
+    },
+    {
+      "id": "ye-chemistry-u3-l7-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l7",
+      "difficulty": 2,
+      "question_text": "عند تحليل مصهور كلوريد الصوديوم كهربيًا، أي غاز يتصاعد عند المصعد؟",
+      "explanation": "عند المصعد تتأكسد أيونات الكلوريد فتفقد إلكتروناتها: 2Cl- → Cl2 + 2e-، فيتصاعد غاز الكلور، بينما يختزل الصوديوم عند المهبط.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 58,
+      "source_detail": "الدرس: خلايا التحليل الكهربي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الكلور Cl2",
+        "الهيدروجين H2",
+        "الأكسجين O2",
+        "النيتروجين N2"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الكلور Cl2"
+    },
+    {
+      "id": "ye-chemistry-u3-l8-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l8",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من تطبيقات التحليل الكهربائي؟",
+      "explanation": "من تطبيقات التحليل الكهربائي: الطلاء الكهربائي للمعادن، وتنقية النحاس، واستخلاص الألمنيوم، وإنتاج هيدروكسيد الصوديوم والكلور.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 60,
+      "source_detail": "الدرس: تطبيقات على التحليل الكهربائي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الطلاء الكهربائي",
+        "توليد البخار",
+        "التقطير التجزيئي",
+        "الترشيح"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الطلاء الكهربائي"
+    },
+    {
+      "id": "ye-chemistry-u3-l8-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l8",
+      "difficulty": 2,
+      "question_text": "كيف يُستخلص الألمنيوم صناعيًا؟",
+      "explanation": "يُستخلص الألمنيوم بالتحليل الكهربائي للألومينا (أكسيد الألمنيوم) المذابة في الكريوليت المنصهر، لأن اختزاله بالكربون غير مجدٍ.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 60,
+      "source_detail": "الدرس: تطبيقات على التحليل الكهربائي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بالتحليل الكهربائي للألومينا المنصهرة",
+        "باختزال خامه بالكربون",
+        "بالتقطير التجزيئي",
+        "بالترسيب من محاليله"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بالتحليل الكهربائي للألومينا المنصهرة"
+    },
+    {
+      "id": "ye-chemistry-u3-l9-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l9",
+      "difficulty": 1,
+      "question_text": "ما صدأ الحديد؟",
+      "explanation": "صدأ الحديد هو أكسيد الحديديك المميه Fe2O3.xH2O، وينتج من تأكسد الحديد بوجود الماء والأكسجين، وهو تفاعل أكسدة غير مرغوب فيه.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 65,
+      "source_detail": "الدرس: تفاعلات غير مرغوبة للتأكسد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أكسيد الحديديك المميه Fe2O3.xH2O",
+        "أكسيد الحديد الثنائي FeO",
+        "هيدروكسيد الصوديوم",
+        "كبريتات الحديد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أكسيد الحديديك المميه Fe2O3.xH2O"
+    },
+    {
+      "id": "ye-chemistry-u3-l9-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u3",
+      "lesson_id": "chemistry-u3-l9",
+      "difficulty": 2,
+      "question_text": "أي طريقة تحمي الحديد من الصدأ بتغطيته بفلز أنشط منه؟",
+      "explanation": "في الجلفنة يُغطى الحديد بطبقة من الخارصين الأنشط منه، فيتأكسد الخارصين بدلًا من الحديد ويحميه حتى لو انكشفت الطبقة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 65,
+      "source_detail": "الدرس: تفاعلات غير مرغوبة للتأكسد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الجلفنة (التغطية بالخارصين)",
+        "الطلاء بالذهب",
+        "التسخين الشديد",
+        "التبريد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الجلفنة (التغطية بالخارصين)"
+    },
+    {
+      "id": "ye-chemistry-u4-l1-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l1",
+      "difficulty": 1,
+      "question_text": "ما النظائر؟",
+      "explanation": "النظائر ذرات للعنصر نفسه تتفق في العدد الذري (عدد البروتونات) وتختلف في العدد الكتلي لاختلاف عدد النيوترونات.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 71,
+      "source_detail": "الدرس: اكتشاف النظائر",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ذرات لعنصر واحد لها العدد الذري نفسه والعدد الكتلي مختلف",
+        "ذرات لعناصر مختلفة لها العدد الكتلي نفسه",
+        "ذرات لها العدد الذري نفسه والعدد الكتلي نفسه",
+        "أيونات لعنصر واحد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ذرات لعنصر واحد لها العدد الذري نفسه والعدد الكتلي مختلف"
+    },
+    {
+      "id": "ye-chemistry-u4-l1-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l1",
+      "difficulty": 1,
+      "question_text": "تختلف نظائر العنصر الواحد في عدد البروتونات.",
+      "explanation": "نظائر العنصر الواحد تتفق في عدد البروتونات (العدد الذري)، وتختلف في عدد النيوترونات وبالتالي في العدد الكتلي.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 71,
+      "source_detail": "الدرس: اكتشاف النظائر",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "خطأ"
+    },
+    {
+      "id": "ye-chemistry-u4-l2-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l2",
+      "difficulty": 1,
+      "question_text": "ما نظائر الهيدروجين؟",
+      "explanation": "للهيدروجين ثلاثة نظائر: البروتيوم 1H والديوتيريوم 2H والتريتيوم 3H، وتختلف في عدد النيوترونات.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس: أنواع النظائر",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "البروتيوم والديوتيريوم والتريتيوم",
+        "الأكسجين والنيتروجين والهيليوم",
+        "الكربون 12 والكربون 14 فقط",
+        "اليورانيوم 235 واليورانيوم 238"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "البروتيوم والديوتيريوم والتريتيوم"
+    },
+    {
+      "id": "ye-chemistry-u4-l2-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l2",
+      "difficulty": 2,
+      "question_text": "أي نظير من نظائر الهيدروجين عددُه الكتلي 3؟",
+      "explanation": "التريتيوم 3H فيه بروتون واحد ونيوترونان، فعدده الكتلي 3، وهو نظير مشع للهيدروجين.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس: أنواع النظائر",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "البروتيوم",
+        "الديوتيريوم",
+        "التريتيوم",
+        "الهيليوم"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "التريتيوم"
+    },
+    {
+      "id": "ye-chemistry-u4-l3-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l3",
+      "difficulty": 2,
+      "question_text": "في معادلة التفاعل النووي، ماذا يجب أن يتساوى في طرفي المعادلة؟",
+      "explanation": "في المعادلات النووية يجب حفظ العدد الذري الكلي والعدد الكتلي الكلي، فيتساوى مجموع كل منهما في طرفي المعادلة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 73,
+      "source_detail": "الدرس: معادلات التفاعلات النووية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مجموع العددين الذري والكتلي",
+        "عدد الإلكترونات فقط",
+        "عدد الجزيئات فقط",
+        "الكتلة بالجرامات فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مجموع العددين الذري والكتلي"
+    },
+    {
+      "id": "ye-chemistry-u4-l3-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l3",
+      "difficulty": 1,
+      "question_text": "في التفاعلات النووية يبقى عدد البروتونات في النواة ثابتًا دائمًا.",
+      "explanation": "في التفاعلات النووية قد يتغير العدد الذري، كما في تحلل بيتا حيث يتحول نيوترون إلى بروتون فيزداد العدد الذري بمقدار واحد.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 73,
+      "source_detail": "الدرس: معادلات التفاعلات النووية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "خطأ"
+    },
+    {
+      "id": "ye-chemistry-u4-l4-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l4",
+      "difficulty": 2,
+      "question_text": "ما مصدر طاقة الترابط النووي؟",
+      "explanation": "كتلة النواة أقل من مجموع كتل مكوناتها، وهذا النقص في الكتلة يتحول إلى طاقة ترابط تربط النيوكليونات معًا.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 74,
+      "source_detail": "الدرس: طاقة الترابط النووي وعلاقتها بالكتلة المفقودة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "النقص في الكتلة (الكتلة المفقودة) عند تكوين النواة",
+        "الطاقة الحرارية للنواة",
+        "حركة الإلكترونات حول النواة",
+        "الشحنة الكهربائية للنواة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "النقص في الكتلة (الكتلة المفقودة) عند تكوين النواة"
+    },
+    {
+      "id": "ye-chemistry-u4-l4-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l4",
+      "difficulty": 2,
+      "question_text": "ما العلاقة بين طاقة الترابط النووي والكتلة المفقودة؟",
+      "explanation": "بحسب علاقة أينشتاين، طاقة الترابط تساوي الكتلة المفقودة مضروبة في مربع سرعة الضوء: E = Δm × c².",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 74,
+      "source_detail": "الدرس: طاقة الترابط النووي وعلاقتها بالكتلة المفقودة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "E = Δm × c²",
+        "E = m × v",
+        "E = Δm ÷ c²",
+        "E = c² ÷ Δm"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "E = Δm × c²"
+    },
+    {
+      "id": "ye-chemistry-u4-l5-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l5",
+      "difficulty": 1,
+      "question_text": "أكثر الأنوية استقرارًا هي التي تكون طاقة الترابط لكل نوكليون فيها:",
+      "explanation": "كلما زادت طاقة الترابط لكل نوكليون (بروتون أو نيوترون) كانت النواة أكثر استقرارًا وأصعب تفكيكًا.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 76,
+      "source_detail": "الدرس: استقرار النواة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أكبر ما يمكن",
+        "أصغر ما يمكن",
+        "صفرًا",
+        "سالبة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أكبر ما يمكن"
+    },
+    {
+      "id": "ye-chemistry-u4-l5-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l5",
+      "difficulty": 2,
+      "question_text": "النواة التي فيها عدد متساوٍ من البروتونات والنيوترونات تكون مستقرة دائمًا مهما كان عددها الكتلي.",
+      "explanation": "تساوي العددين وحده لا يكفي للاستقرار؛ فالاستقرار يعتمد أيضًا على العدد الكتلي وعلى نسبة النيوترونات إلى البروتونات المناسبة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 76,
+      "source_detail": "الدرس: استقرار النواة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "خطأ"
+    },
+    {
+      "id": "ye-chemistry-u4-l6-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l6",
+      "difficulty": 2,
+      "question_text": "في الأنوية الخفيفة المستقرة، تكون نسبة عدد النيوترونات إلى عدد البروتونات تقريبًا:",
+      "explanation": "في الأنوية الخفيفة المستقرة تتساوى أعداد البروتونات والنيوترونات تقريبًا، أي أن النسبة n/p تساوي 1 تقريبًا.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 77,
+      "source_detail": "الدرس: العلاقة بين نسبة عدد البروتونات والنيوترونات واستقرار النواة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1 : 1",
+        "1.5 : 1",
+        "2 : 1",
+        "1 : 2"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1 : 1"
+    },
+    {
+      "id": "ye-chemistry-u4-l6-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l6",
+      "difficulty": 2,
+      "question_text": "في الأنوية الثقيلة المستقرة، إلى نحو كم تزداد نسبة عدد النيوترونات إلى عدد البروتونات؟",
+      "explanation": "مع زيادة العدد الذري يزداد التنافر بين البروتونات، فتحتاج النواة الثقيلة المستقرة إلى نيوترونات أكثر، فتقترب النسبة n/p من 1.5.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 77,
+      "source_detail": "الدرس: العلاقة بين نسبة عدد البروتونات والنيوترونات واستقرار النواة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1.5",
+        "1",
+        "0.5",
+        "3"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1.5"
+    },
+    {
+      "id": "ye-chemistry-u4-l7-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l7",
+      "difficulty": 1,
+      "question_text": "ما جسيم ألفا؟",
+      "explanation": "جسيم ألفا هو نواة الهيليوم 4He، أي بروتونان ونيوترونان، ويصدر من الأنوية غير المستقرة الثقيلة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "source_detail": "الدرس: الجسيمات والإشعاعات الصادرة من الأنوية غير المستقرة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نواة ذرة الهيليوم (بروتونان ونيوترونان)",
+        "إلكترون سريع",
+        "بروتون منفرد",
+        "فوتون من الأشعة الكهرومغناطيسية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نواة ذرة الهيليوم (بروتونان ونيوترونان)"
+    },
+    {
+      "id": "ye-chemistry-u4-l7-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l7",
+      "difficulty": 2,
+      "question_text": "أي الإشعاعات النووية أكبر قدرة على النفاذ؟",
+      "explanation": "أشعة جاما موجات كهرومغناطيسية عالية الطاقة، فهي الأكبر قدرة على النفاذ، ثم بيتا، ثم ألفا الأقل نفاذًا.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "source_detail": "الدرس: الجسيمات والإشعاعات الصادرة من الأنوية غير المستقرة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أشعة جاما",
+        "جسيمات ألفا",
+        "جسيمات بيتا",
+        "الأشعة فوق البنفسجية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أشعة جاما"
+    },
+    {
+      "id": "ye-chemistry-u4-l8-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l8",
+      "difficulty": 2,
+      "question_text": "ما التفاعل النووي الذي تنشطر فيه نواة ثقيلة إلى نواتين أخف مع انطلاق طاقة؟",
+      "explanation": "الانشطار النووي انقسام نواة ثقيلة مثل اليورانيوم 235 إلى نواتين أخف مع انطلاق طاقة ونيوترونات، وهو أساس المفاعلات النووية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 80,
+      "source_detail": "الدرس: التفاعلات النووية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الانشطار النووي",
+        "الاندماج النووي",
+        "التحلل الكيميائي",
+        "التأين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الانشطار النووي"
+    },
+    {
+      "id": "ye-chemistry-u4-l8-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l8",
+      "difficulty": 2,
+      "question_text": "ما التفاعل النووي الذي يحدث في الشمس وينتج طاقتها؟",
+      "explanation": "في الشمس تندمج أنوية الهيدروجين الخفيفة لتكوين الهيليوم مع انطلاق طاقة هائلة، وهذا هو الاندماج النووي.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 80,
+      "source_detail": "الدرس: التفاعلات النووية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الاندماج النووي",
+        "الانشطار النووي",
+        "الاحتراق الكيميائي",
+        "التحلل الإشعاعي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الاندماج النووي"
+    },
+    {
+      "id": "ye-chemistry-u4-l9-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l9",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من وسائل الوقاية من خطر التلوث الإشعاعي؟",
+      "explanation": "من وسائل الوقاية من الإشعاع: تقليل مدة التعرض، وزيادة المسافة عن المصدر، واستخدام حواجز واقية كالرصاص.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 87,
+      "source_detail": "الدرس: الوقاية من خطر التلوث الإشعاعي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "زيادة المسافة عن المصدر المشع",
+        "الاقتراب من المصدر المشع",
+        "زيادة مدة التعرض للإشعاع",
+        "إزالة الحواجز الواقية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "زيادة المسافة عن المصدر المشع"
+    },
+    {
+      "id": "ye-chemistry-u4-l9-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u4",
+      "lesson_id": "chemistry-u4-l9",
+      "difficulty": 1,
+      "question_text": "تقل شدة الإشعاع كلما زادت المسافة عن مصدره.",
+      "explanation": "تتناقص شدة الإشعاع مع مربع المسافة عن المصدر، لذا تعد زيادة المسافة من أهم وسائل الوقاية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 87,
+      "source_detail": "الدرس: الوقاية من خطر التلوث الإشعاعي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u5-l1-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u5",
+      "lesson_id": "chemistry-u5-l1",
+      "difficulty": 1,
+      "question_text": "الأمينات مشتقات عضوية من:",
+      "explanation": "الأمينات مركبات عضوية مشتقة من الأمونيا باستبدال ذرة هيدروجين أو أكثر بمجموعة ألكيل أو أريل.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 92,
+      "source_detail": "الدرس: الأمينات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الأمونيا",
+        "الماء",
+        "الميثان",
+        "البنزين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الأمونيا"
+    },
+    {
+      "id": "ye-chemistry-u5-l1-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u5",
+      "lesson_id": "chemistry-u5-l1",
+      "difficulty": 2,
+      "question_text": "ما صيغة الأمين الأولي؟",
+      "explanation": "الأمين الأولي فيه مجموعة أمينو NH2 واحدة متصلة بمجموعة ألكيل R، وصيغته R-NH2، أما R2NH فأمين ثانوي وR3N أمين ثالثي.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 92,
+      "source_detail": "الدرس: الأمينات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "R-NH2",
+        "R2NH",
+        "R3N",
+        "R-CONH2"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "R-NH2"
+    },
+    {
+      "id": "ye-chemistry-u5-l2-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u5",
+      "lesson_id": "chemistry-u5-l2",
+      "difficulty": 1,
+      "question_text": "ما المجموعة الوظيفية في الأميدات؟",
+      "explanation": "الأميدات مركبات عضوية فيها مجموعة الكربونيل متصلة بمجموعة الأمينو، أي المجموعة الوظيفية -CONH2.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 95,
+      "source_detail": "الدرس: الأميدات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "-CONH2",
+        "-NH2",
+        "-C≡N",
+        "-COOH"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "-CONH2"
+    },
+    {
+      "id": "ye-chemistry-u5-l2-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u5",
+      "lesson_id": "chemistry-u5-l2",
+      "difficulty": 1,
+      "question_text": "تتكون الأميدات عمومًا من تفاعل الحمض الكربوكسيلي (أو مشتقاته) مع الأمونيا أو الأمينات.",
+      "explanation": "الأميدات تنتج من تفاعل الأحماض الكربوكسيلية أو مشتقاتها مع الأمونيا، وتدخل في تركيب البروتينات والنايلون.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 95,
+      "source_detail": "الدرس: الأميدات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u5-l3-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u5",
+      "lesson_id": "chemistry-u5-l3",
+      "difficulty": 1,
+      "question_text": "ما المجموعة الوظيفية في النيتريلات؟",
+      "explanation": "النيتريلات مركبات عضوية فيها مجموعة السيانيد -C≡N، أي ذرة كربون مرتبطة بذرة نيتروجين برابطة ثلاثية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 97,
+      "source_detail": "الدرس: النيتريلات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "-C≡N",
+        "-NH2",
+        "-CONH2",
+        "-OH"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "-C≡N"
+    },
+    {
+      "id": "ye-chemistry-u5-l3-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u5",
+      "lesson_id": "chemistry-u5-l3",
+      "difficulty": 2,
+      "question_text": "ما اسم المركب CH3-C≡N؟",
+      "explanation": "المركب CH3-C≡N نيتريل فيه مجموعتا كربون، واسمه إيثان نيتريل، ويُعرف شائعًا باسم أسيتونتريل.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 97,
+      "source_detail": "الدرس: النيتريلات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أسيتونتريل (إيثان نيتريل)",
+        "ميثيل أمين",
+        "أسيتاميد",
+        "حمض الخليك"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أسيتونتريل (إيثان نيتريل)"
+    },
+    {
+      "id": "ye-chemistry-u5-l4-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u5",
+      "lesson_id": "chemistry-u5-l4",
+      "difficulty": 1,
+      "question_text": "ما المجموعتان الوظيفيتان الموجودتان في الحمض الأميني؟",
+      "explanation": "الحمض الأميني جزيء فيه مجموعة أمينو -NH2 ومجموعة كربوكسيل -COOH متصلتان بذرة الكربون نفسها.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 97,
+      "source_detail": "الدرس: الحموض الأمينية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مجموعة الأمينو -NH2 ومجموعة الكربوكسيل -COOH",
+        "مجموعة الهيدروكسيل -OH ومجموعة الميثيل",
+        "مجموعة السيانيد -C≡N ومجموعة الكربونيل",
+        "مجموعة الأميد -CONH2 فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مجموعة الأمينو -NH2 ومجموعة الكربوكسيل -COOH"
+    },
+    {
+      "id": "ye-chemistry-u5-l4-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u5",
+      "lesson_id": "chemistry-u5-l4",
+      "difficulty": 2,
+      "question_text": "بماذا ترتبط الحموض الأمينية مع بعضها لتكوين البروتينات؟",
+      "explanation": "ترتبط الحموض الأمينية بروابط ببتيدية تنشأ بين مجموعة الكربوكسيل لأحدها ومجموعة الأمينو للآخر، فتتكون سلاسل البروتين.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 97,
+      "source_detail": "الدرس: الحموض الأمينية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بالرابطة الببتيدية",
+        "بالرابطة الهيدروجينية",
+        "بالرابطة الأيونية",
+        "بالرابطة الفلزية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بالرابطة الببتيدية"
+    },
+    {
+      "id": "ye-chemistry-u6-l1-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l1",
+      "difficulty": 1,
+      "question_text": "ما الكيمياء الحيوية؟",
+      "explanation": "الكيمياء الحيوية فرع يدرس التفاعلات الكيميائية والمواد الكيميائية داخل الكائنات الحية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 105,
+      "source_detail": "الدرس: مقدمة عن الكيمياء الحيوية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "دراسة التفاعلات الكيميائية في الكائنات الحية",
+        "دراسة الصخور والمعادن",
+        "دراسة الغلاف الجوي فقط",
+        "دراسة التفاعلات النووية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "دراسة التفاعلات الكيميائية في الكائنات الحية"
+    },
+    {
+      "id": "ye-chemistry-u6-l1-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l1",
+      "difficulty": 1,
+      "question_text": "تدرس الكيمياء الحيوية العمليات الكيميائية داخل الخلايا الحية.",
+      "explanation": "موضوع الكيمياء الحيوية هو التفاعلات والمواد الكيميائية في الخلايا والكائنات الحية، كالهضم والتنفس وبناء البروتينات.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 105,
+      "source_detail": "الدرس: مقدمة عن الكيمياء الحيوية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u6-l2-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l2",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من المواد الأساسية التي يحتاجها الإنسان في غذائه؟",
+      "explanation": "يحتاج الإنسان في غذائه إلى الكربوهيدرات والبروتينات والليبيدات والفيتامينات والأملاح المعدنية والماء.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 106,
+      "source_detail": "الدرس: المواد الأساسية التي يحتاجها الإنسان في غذائه",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الكربوهيدرات والبروتينات والليبيدات والفيتامينات",
+        "البلاستيك والمطاط",
+        "الحديد والنحاس فقط",
+        "الغازات النبيلة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الكربوهيدرات والبروتينات والليبيدات والفيتامينات"
+    },
+    {
+      "id": "ye-chemistry-u6-l2-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l2",
+      "difficulty": 2,
+      "question_text": "أي المواد الغذائية المصدر الرئيس للطاقة في الجسم؟",
+      "explanation": "الكربوهيدرات هي المصدر الرئيس للطاقة، إذ يحرر الجسم الطاقة من أكسدتها، بينما الفيتامينات والماء والأملاح لا تمد الجسم بطاقة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 106,
+      "source_detail": "الدرس: المواد الأساسية التي يحتاجها الإنسان في غذائه",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الكربوهيدرات",
+        "الفيتامينات",
+        "الماء",
+        "الأملاح المعدنية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الكربوهيدرات"
+    },
+    {
+      "id": "ye-chemistry-u6-l3-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l3",
+      "difficulty": 1,
+      "question_text": "ما الصيغة العامة للكربوهيدرات؟",
+      "explanation": "الكربوهيدرات مركبات عضوية من الكربون والهيدروجين والأكسجين، وصيغتها العامة (CH2O)n.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 106,
+      "source_detail": "الدرس: الكربوهيدرات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "(CH2O)n",
+        "CnH2n",
+        "CnH2n+2",
+        "CnH2n-2"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "(CH2O)n"
+    },
+    {
+      "id": "ye-chemistry-u6-l3-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l3",
+      "difficulty": 2,
+      "question_text": "ما سكر العنب؟",
+      "explanation": "الجلوكوز سكر أحادي صيغته C6H12O6، ويُعرف بسكر العنب، وهو مصدر الطاقة المباشر في الجسم.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 106,
+      "source_detail": "الدرس: الكربوهيدرات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الجلوكوز C6H12O6",
+        "الفركتوز",
+        "السكروز",
+        "اللاكتوز"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الجلوكوز C6H12O6"
+    },
+    {
+      "id": "ye-chemistry-u6-l4-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l4",
+      "difficulty": 1,
+      "question_text": "مما تتكون البروتينات؟",
+      "explanation": "البروتينات جزيئات كبيرة تتكون من سلاسل طويلة من الحموض الأمينية المرتبطة بروابط ببتيدية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 112,
+      "source_detail": "الدرس: البروتينات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من الحموض الأمينية",
+        "من الجلوكوز",
+        "من الحموض الدهنية",
+        "من النيوكليوتيدات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من الحموض الأمينية"
+    },
+    {
+      "id": "ye-chemistry-u6-l4-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l4",
+      "difficulty": 1,
+      "question_text": "ترتبط الحموض الأمينية في البروتين بروابط ببتيدية.",
+      "explanation": "الرابطة الببتيدية تربط الحموض الأمينية بعضها ببعض لتكوين سلاسل عديد الببتيد والبروتينات.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 112,
+      "source_detail": "الدرس: البروتينات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u6-l5-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l5",
+      "difficulty": 1,
+      "question_text": "من خصائص الليبيدات أنها:",
+      "explanation": "الليبيدات (الدهون والزيوت) مركبات عضوية لا تذوب في الماء، وتذوب في المذيبات العضوية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 115,
+      "source_detail": "الدرس: الليبيدات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "لا تذوب في الماء",
+        "تذوب في الماء بسهولة",
+        "تتأين في الماء",
+        "تتكون من الحموض الأمينية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لا تذوب في الماء"
+    },
+    {
+      "id": "ye-chemistry-u6-l5-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l5",
+      "difficulty": 2,
+      "question_text": "مما تتكون الدهون والزيوت؟",
+      "explanation": "الدهون والزيوت إسترات تتكون من الجليسرول مع الحموض الدهنية، وتُعد مخزنًا للطاقة في الجسم.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 115,
+      "source_detail": "الدرس: الليبيدات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من الجليسرول والحموض الدهنية",
+        "من الجلوكوز والفركتوز",
+        "من الحموض الأمينية",
+        "من النيوكليوتيدات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من الجليسرول والحموض الدهنية"
+    },
+    {
+      "id": "ye-chemistry-u6-l6-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l6",
+      "difficulty": 1,
+      "question_text": "أي الفيتامينات الآتية يذوب في الدهون؟",
+      "explanation": "الفيتامينات الذائبة في الدهون هي A و D و E و K، أما فيتامينات B و C فتذوب في الماء.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 118,
+      "source_detail": "الدرس: الفيتامينات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "فيتامين A",
+        "فيتامين B",
+        "فيتامين C",
+        "فيتامين B12"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "فيتامين A"
+    },
+    {
+      "id": "ye-chemistry-u6-l6-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l6",
+      "difficulty": 2,
+      "question_text": "نقص فيتامين C في الغذاء يسبب مرض:",
+      "explanation": "نقص فيتامين C يسبب مرض الأسقربوط الذي تضعف فيه اللثة وتنزف، أما الكساح فنقص فيتامين D، والعمى الليلي نقص فيتامين A.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 118,
+      "source_detail": "الدرس: الفيتامينات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الأسقربوط (الإسقربوط)",
+        "الكساح",
+        "العمى الليلي",
+        "البري بري"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الأسقربوط (الإسقربوط)"
+    },
+    {
+      "id": "ye-chemistry-u6-l7-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l7",
+      "difficulty": 1,
+      "question_text": "ما الأنزيمات؟",
+      "explanation": "الأنزيمات بروتينات تعمل محفزات حيوية تسرّع التفاعلات الكيميائية في الخلايا دون أن تُستهلك فيها.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 119,
+      "source_detail": "الدرس: الأنزيمات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "محفزات حيوية (بروتينات) تسرّع التفاعلات الكيميائية في الجسم",
+        "هرمونات تنظم النمو",
+        "فيتامينات تذوب في الماء",
+        "دهون تخزن الطاقة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "محفزات حيوية (بروتينات) تسرّع التفاعلات الكيميائية في الجسم"
+    },
+    {
+      "id": "ye-chemistry-u6-l7-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u6",
+      "lesson_id": "chemistry-u6-l7",
+      "difficulty": 1,
+      "question_text": "يفقد الأنزيم نشاطه عند درجات الحرارة المرتفعة جدًا.",
+      "explanation": "الأنزيمات بروتينات، فالحرارة المرتفعة تُفسد تركيبها (تمسخها) فتفقد نشاطها التحفيزي.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 119,
+      "source_detail": "الدرس: الأنزيمات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u7-l1-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l1",
+      "difficulty": 1,
+      "question_text": "ما المقصود بالذهب الأسود؟",
+      "explanation": "يُطلق اسم الذهب الأسود على النفط الخام لأهميته الاقتصادية الكبيرة كمصدر للطاقة والمنتجات الصناعية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 124,
+      "source_detail": "الدرس: الذهب الأسود مصدر من مصادر الطاقة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "النفط (البترول)",
+        "الفحم الحجري",
+        "الذهب",
+        "الألمنيوم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "النفط (البترول)"
+    },
+    {
+      "id": "ye-chemistry-u7-l1-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l1",
+      "difficulty": 1,
+      "question_text": "يُعد النفط المصدر الرئيس للطاقة في العالم الحديث.",
+      "explanation": "يعتمد العالم الحديث اعتمادًا كبيرًا على النفط مصدرًا رئيسًا للطاقة في النقل وتوليد الكهرباء والصناعة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 124,
+      "source_detail": "الدرس: الذهب الأسود مصدر من مصادر الطاقة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u7-l2-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l2",
+      "difficulty": 2,
+      "question_text": "كيف تكون النفط الخام؟",
+      "explanation": "تكون النفط من بقايا كائنات حية دُفنت تحت طبقات رسوبية، فتحللت بفعل الضغط والحرارة على مدى ملايين السنين.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 125,
+      "source_detail": "الدرس: أصل النفط الخام",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من بقايا كائنات حية دُفنت في باطن الأرض وتعرضت للضغط والحرارة عبر ملايين السنين",
+        "من تبخر مياه البحر",
+        "من تجمد الغازات في الغلاف الجوي",
+        "من تفاعل المعادن مع الماء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من بقايا كائنات حية دُفنت في باطن الأرض وتعرضت للضغط والحرارة عبر ملايين السنين"
+    },
+    {
+      "id": "ye-chemistry-u7-l2-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l2",
+      "difficulty": 1,
+      "question_text": "النفط مورد متجدد يتكون خلال سنوات قليلة.",
+      "explanation": "النفط مورد غير متجدد، إذ يحتاج تكونه إلى ملايين السنين، واستهلاكه أسرع بكثير من تكونه.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 125,
+      "source_detail": "الدرس: أصل النفط الخام",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "خطأ"
+    },
+    {
+      "id": "ye-chemistry-u7-l3-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l3",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من طرق الكشف عن وجود النفط؟",
+      "explanation": "يُكشف عن النفط بالدراسات الجيولوجية والمسح الزلزالي الذي يرسم صورة لطبقات الأرض، ثم بحفر آبار استكشافية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 128,
+      "source_detail": "الدرس: الكشف عن وجود النفط",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "المسح الزلزالي (السيزمي)",
+        "التقطير التجزيئي",
+        "الترشيح",
+        "التبخر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "المسح الزلزالي (السيزمي)"
+    },
+    {
+      "id": "ye-chemistry-u7-l3-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l3",
+      "difficulty": 2,
+      "question_text": "بعد الدراسات الجيولوجية والمسح الزلزالي، ماذا يُحفر للتأكد من وجود النفط؟",
+      "explanation": "بعد الدراسات الجيولوجية والجيوفيزيائية تُحفر بئر استكشافية للتأكد من وجود النفط وكميته.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 128,
+      "source_detail": "الدرس: الكشف عن وجود النفط",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بئر استكشافية",
+        "بئر ارتوازية للمياه",
+        "منجم للفحم",
+        "خزان سطحي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بئر استكشافية"
+    },
+    {
+      "id": "ye-chemistry-u7-l4-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l4",
+      "difficulty": 1,
+      "question_text": "كيف يُستخرج النفط من باطن الأرض؟",
+      "explanation": "يُستخرج النفط بحفر آبار تصل إلى مكمنه، فيتدفق أو يُضخ إلى السطح ثم يُنقل إلى مصافي التكرير.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 130,
+      "source_detail": "الدرس: استخراج النفط",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بالحفر والضخ",
+        "بالتقطير التجزيئي",
+        "بالترشيح",
+        "بالصهر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بالحفر والضخ"
+    },
+    {
+      "id": "ye-chemistry-u7-l4-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l4",
+      "difficulty": 1,
+      "question_text": "قد يتدفق النفط تلقائيًا من البئر بفعل ضغط الغاز المصاحب له.",
+      "explanation": "في بداية الإنتاج قد يدفع ضغط الغاز المصاحب النفط إلى السطح تلقائيًا، ثم يُلجأ إلى الضخ عند انخفاض الضغط.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 130,
+      "source_detail": "الدرس: استخراج النفط",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u7-l5-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l5",
+      "difficulty": 1,
+      "question_text": "ما طريقة تكرير النفط الخام؟",
+      "explanation": "يُكرر النفط بالتقطير التجزيئي في برج التكرير، فيفصل إلى مشتقات حسب درجات غليانها.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 131,
+      "source_detail": "الدرس: تكرير النفط",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "التقطير التجزيئي",
+        "الترشيح البسيط",
+        "التبخر البسيط",
+        "التبلور"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "التقطير التجزيئي"
+    },
+    {
+      "id": "ye-chemistry-u7-l5-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l5",
+      "difficulty": 2,
+      "question_text": "أي مشتقات النفط يخرج أولًا من أعلى برج التقطير لانخفاض درجة غليانه؟",
+      "explanation": "في برج التقطير التجزيئي تخرج من الأعلى المشتقات الأخف والأقل درجة غليان كالغازات والبنزين، وتبقى الأسفلت في الأسفل.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 131,
+      "source_detail": "الدرس: تكرير النفط",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الغازات والبنزين",
+        "الديزل",
+        "زيت الوقود",
+        "الأسفلت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الغازات والبنزين"
+    },
+    {
+      "id": "ye-chemistry-u7-l6-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l6",
+      "difficulty": 1,
+      "question_text": "لماذا يُعد النفط مصدرًا مهمًا للطاقة؟",
+      "explanation": "يحترق النفط ومشتقاته فيعطي طاقة حرارية عالية، لذا يُستخدم وقودًا في النقل وتوليد الكهرباء والتدفئة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 134,
+      "source_detail": "الدرس: النفط كمصدر للطاقة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "لأن مركباته تعطي طاقة حرارية عالية عند احتراقها",
+        "لأنه لا يحترق أبدًا",
+        "لأنه يوجد في كل مكان بكميات لا نهائية",
+        "لأنه لا يلوث البيئة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأن مركباته تعطي طاقة حرارية عالية عند احتراقها"
+    },
+    {
+      "id": "ye-chemistry-u7-l6-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l6",
+      "difficulty": 1,
+      "question_text": "يُستخدم النفط وقودًا للسيارات والطائرات وفي توليد الكهرباء.",
+      "explanation": "مشتقات النفط كالبنزين والكيروسين والديزل وقود أساسي لوسائل النقل، ويُستخدم النفط أيضًا في توليد الكهرباء.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 134,
+      "source_detail": "الدرس: النفط كمصدر للطاقة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u7-l7-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l7",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من المنتجات الصناعية المشتقة من النفط؟",
+      "explanation": "من مشتقات النفط تُصنع البلاستيك والمطاط الصناعي والألياف الصناعية والأسمدة والأدوية، فيما يُعرف بالصناعات البتروكيماوية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 135,
+      "source_detail": "الدرس: النفط كمصدر للمنتجات الصناعية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "البلاستيك",
+        "الزجاج",
+        "الحديد",
+        "الخشب"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "البلاستيك"
+    },
+    {
+      "id": "ye-chemistry-u7-l7-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u7",
+      "lesson_id": "chemistry-u7-l7",
+      "difficulty": 2,
+      "question_text": "ما الصناعة التي تعتمد على مشتقات النفط مادةً أولية؟",
+      "explanation": "الصناعات البتروكيماوية تستخدم مشتقات النفط والغاز مادة أولية لإنتاج البلاستيك والأسمدة والألياف والمذيبات وغيرها.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 135,
+      "source_detail": "الدرس: النفط كمصدر للمنتجات الصناعية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "صناعة البتروكيماويات",
+        "صناعة الورق",
+        "صناعة السيراميك",
+        "صناعة الطوب"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "صناعة البتروكيماويات"
+    },
+    {
+      "id": "ye-chemistry-u8-l1-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l1",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من الصناعات الكيميائية في مجال الزراعة؟",
+      "explanation": "من الصناعات الكيميائية في مجال الزراعة: صناعة الأسمدة والمخصبات، وصناعة المبيدات لمكافحة الحشرات الضارة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 139,
+      "source_detail": "الدرس: صناعات كيميائية في مجال الزراعة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "صناعة الأسمدة",
+        "صناعة البلاستيك",
+        "صناعة الزجاج",
+        "صناعة الأدوية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "صناعة الأسمدة"
+    },
+    {
+      "id": "ye-chemistry-u8-l1-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l1",
+      "difficulty": 1,
+      "question_text": "تسهم الصناعات الكيميائية في زيادة الإنتاج الزراعي وحماية المحاصيل.",
+      "explanation": "الأسمدة تزيد خصوبة التربة والمبيدات تحمي المحاصيل من الآفات، فترتفع إنتاجية الزراعة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 139,
+      "source_detail": "الدرس: صناعات كيميائية في مجال الزراعة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u8-l2-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l2",
+      "difficulty": 1,
+      "question_text": "ما العناصر الغذائية الكبرى التي تزود بها الأسمدة النبات؟",
+      "explanation": "أهم الأسمدة تزود النبات بالعناصر الكبرى الثلاثة: النيتروجين N والفوسفور P والبوتاسيوم K.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 140,
+      "source_detail": "الدرس: الأسمدة والمخصبات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "النيتروجين والفوسفور والبوتاسيوم",
+        "الكالسيوم والمغنيسيوم",
+        "الحديد والزنك",
+        "الكربون والهيدروجين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "النيتروجين والفوسفور والبوتاسيوم"
+    },
+    {
+      "id": "ye-chemistry-u8-l2-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l2",
+      "difficulty": 2,
+      "question_text": "ما فائدة الأسمدة النيتروجينية للنبات؟",
+      "explanation": "النيتروجين عنصر أساسي في بناء البروتينات والكلوروفيل، فالأسمدة النيتروجينية تعزز النمو الخضري للنبات.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 140,
+      "source_detail": "الدرس: الأسمدة والمخصبات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "النمو الخضري للأوراق والسيقان",
+        "تكوين الثمار فقط",
+        "تلوين الأزهار",
+        "مقاومة الصقيع"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "النمو الخضري للأوراق والسيقان"
+    },
+    {
+      "id": "ye-chemistry-u8-l3-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l3",
+      "difficulty": 2,
+      "question_text": "ما المادة الأولية لصناعة الأسمدة النيتروجينية؟",
+      "explanation": "الأمونيا NH3 هي المادة الأولية لصناعة الأسمدة النيتروجينية كاليوريا ونترات الأمونيوم.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 143,
+      "source_detail": "الدرس: صناعة الأسمدة النيتروجينية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الأمونيا NH3",
+        "الميثان",
+        "ثاني أكسيد الكربون",
+        "الأكسجين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الأمونيا NH3"
+    },
+    {
+      "id": "ye-chemistry-u8-l3-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l3",
+      "difficulty": 2,
+      "question_text": "كيف تُحضّر الأمونيا صناعيًا؟",
+      "explanation": "تُحضر الأمونيا صناعيًا باتحاد النيتروجين مع الهيدروجين: N2 + 3H2 → 2NH3، في طريقة هابر-بوش.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 143,
+      "source_detail": "الدرس: صناعة الأسمدة النيتروجينية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من النيتروجين والهيدروجين بطريقة هابر-بوش",
+        "من الأكسجين والهيدروجين",
+        "من الكربون والنيتروجين",
+        "من الماء والهواء فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من النيتروجين والهيدروجين بطريقة هابر-بوش"
+    },
+    {
+      "id": "ye-chemistry-u8-l4-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l4",
+      "difficulty": 1,
+      "question_text": "ما المبيدات؟",
+      "explanation": "المبيدات مواد كيميائية تُستخدم لمكافحة الحشرات والآفات الضارة بالمحاصيل والمخزون الغذائي.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "source_detail": "الدرس: صناعات كيميائية لمكافحة الحشرات الضارة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مواد كيميائية تقتل الحشرات الضارة أو تطردها",
+        "أسمدة تزيد خصوبة التربة",
+        "أدوية تعالج الإنسان",
+        "أصباغ تلوّن الأقمشة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مواد كيميائية تقتل الحشرات الضارة أو تطردها"
+    },
+    {
+      "id": "ye-chemistry-u8-l4-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l4",
+      "difficulty": 1,
+      "question_text": "للمبيدات أضرار على الإنسان والبيئة إذا أُسيء استخدامها.",
+      "explanation": "الإفراط في المبيدات أو سوء استخدامها يلوث التربة والمياه ويضر بالإنسان والكائنات النافعة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "source_detail": "الدرس: صناعات كيميائية لمكافحة الحشرات الضارة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u8-l5-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l5",
+      "difficulty": 2,
+      "question_text": "ما صفة المبيدات الحديثة الصديقة للبيئة؟",
+      "explanation": "المبيدات الحديثة غير الضارة صُممت لتتحلل بسرعة في البيئة فلا تتراكم في التربة أو في أجسام الكائنات الحية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 150,
+      "source_detail": "الدرس: مبيدات حديثة غير ضارة بالبيئة والإنسان",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تتحلل بسرعة ولا تتراكم في التربة",
+        "تبقى في التربة عشرات السنين",
+        "تقتل كل الكائنات الحية",
+        "لا تتحلل أبدًا"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تتحلل بسرعة ولا تتراكم في التربة"
+    },
+    {
+      "id": "ye-chemistry-u8-l5-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l5",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من أساليب المكافحة غير الضارة بالبيئة والإنسان؟",
+      "explanation": "المكافحة الحيوية تستغل الأعداء الطبيعيين للآفات كالمفترسات والطفيليات، فتقلل الحاجة إلى المبيدات الكيميائية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 150,
+      "source_detail": "الدرس: مبيدات حديثة غير ضارة بالبيئة والإنسان",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "المكافحة الحيوية باستخدام أعداء طبيعيين للحشرات",
+        "رش المبيدات بجرعات مضاعفة",
+        "حرق المحاصيل المصابة دائمًا",
+        "إهمال الحشرات تمامًا"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "المكافحة الحيوية باستخدام أعداء طبيعيين للحشرات"
+    },
+    {
+      "id": "ye-chemistry-u8-l6-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l6",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من الألياف الطبيعية المستخدمة في الكساء؟",
+      "explanation": "القطن والصوف والكتان ألياف طبيعية، أما النايلون والبوليستر والأكريليك فألياف صناعية تُنتج كيميائيًا.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 151,
+      "source_detail": "الدرس: صناعات كيميائية في مجال الكساء",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "القطن",
+        "النايلون",
+        "البوليستر",
+        "الأكريليك"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "القطن"
+    },
+    {
+      "id": "ye-chemistry-u8-l6-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l6",
+      "difficulty": 2,
+      "question_text": "أي مما يأتي من الألياف الصناعية؟",
+      "explanation": "النايلون من الألياف الصناعية التي تُنتج كيميائيًا من مشتقات النفط، ويتميز بالقوة والمتانة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 151,
+      "source_detail": "الدرس: صناعات كيميائية في مجال الكساء",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "النايلون",
+        "القطن",
+        "الصوف",
+        "الكتان"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "النايلون"
+    },
+    {
+      "id": "ye-chemistry-u8-l7-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l7",
+      "difficulty": 1,
+      "question_text": "كيف يُصنع الصابون؟",
+      "explanation": "يُصنع الصابون بعملية التصبن: تفاعل الدهون أو الزيوت مع هيدروكسيد الصوديوم فتتكون أملاح الحموض الدهنية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 157,
+      "source_detail": "الدرس: الصناعات الكيميائية للمواد الاستهلاكية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من تفاعل الدهون أو الزيوت مع القلوي (التصبن)",
+        "من تفاعل الأحماض مع الكحولات",
+        "من تقطير النفط الخام",
+        "من تفاعل المعادن مع الماء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من تفاعل الدهون أو الزيوت مع القلوي (التصبن)"
+    },
+    {
+      "id": "ye-chemistry-u8-l7-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u8",
+      "lesson_id": "chemistry-u8-l7",
+      "difficulty": 1,
+      "question_text": "يُصنع الصابون من الزيوت والدهون مع هيدروكسيد الصوديوم.",
+      "explanation": "عملية التصبن هي تفاعل الزيوت أو الدهون مع هيدروكسيد الصوديوم لإنتاج الصابون والجليسرول.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 157,
+      "source_detail": "الدرس: الصناعات الكيميائية للمواد الاستهلاكية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u9-l1-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l1",
+      "difficulty": 1,
+      "question_text": "ما البيئة؟",
+      "explanation": "البيئة هي الوسط الذي يعيش فيه الكائن الحي، وتشمل العوامل الحية كالنبات والحيوان والعوامل غير الحية كالهواء والماء والتربة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 168,
+      "source_detail": "الدرس: مفهوم البيئة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الوسط الذي يعيش فيه الكائن الحي بما فيه من عوامل حية وغير حية",
+        "الهواء فقط",
+        "الماء فقط",
+        "التربة فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الوسط الذي يعيش فيه الكائن الحي بما فيه من عوامل حية وغير حية"
+    },
+    {
+      "id": "ye-chemistry-u9-l1-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l1",
+      "difficulty": 1,
+      "question_text": "تشمل البيئة العوامل الحية وغير الحية معًا.",
+      "explanation": "البيئة نظام متكامل من العوامل الحية وغير الحية التي تتفاعل مع بعضها وتؤثر في حياة الكائنات الحية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 168,
+      "source_detail": "الدرس: مفهوم البيئة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u9-l2-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l2",
+      "difficulty": 1,
+      "question_text": "ما التلوث؟",
+      "explanation": "التلوث هو إدخال مواد أو طاقة إلى البيئة بكميات تخل بتوازنها الطبيعي وتضر بالكائنات الحية.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 169,
+      "source_detail": "الدرس: مفهوم التلوث",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "إدخال مواد ضارة إلى البيئة تخل بتوازنها",
+        "زيادة عدد الكائنات الحية",
+        "تحسين خصوبة التربة",
+        "تنقية المياه"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "إدخال مواد ضارة إلى البيئة تخل بتوازنها"
+    },
+    {
+      "id": "ye-chemistry-u9-l2-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l2",
+      "difficulty": 1,
+      "question_text": "يحدث التلوث بفعل الإنسان فقط.",
+      "explanation": "للتلوث مصادر طبيعية أيضًا كالبراكين والعواصف الترابية، إضافة إلى المصادر البشرية كالمصانع والسيارات.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 169,
+      "source_detail": "الدرس: مفهوم التلوث",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "خطأ"
+    },
+    {
+      "id": "ye-chemistry-u9-l3-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l3",
+      "difficulty": 1,
+      "question_text": "ما الملوثات؟",
+      "explanation": "الملوثات مواد تخل بالتوازن البيئي وتضر بصحة الإنسان والكائنات الحية، سواء كانت غازات أو سوائل أو مواد صلبة.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 169,
+      "source_detail": "الدرس: الملوثات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "المواد التي تخل بأنظمة التوازن البيئي وتضر بالكائنات الحية",
+        "المواد النافعة للنباتات",
+        "الغازات النبيلة فقط",
+        "المعادن الثمينة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "المواد التي تخل بأنظمة التوازن البيئي وتضر بالكائنات الحية"
+    },
+    {
+      "id": "ye-chemistry-u9-l3-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l3",
+      "difficulty": 2,
+      "question_text": "قد يكون التلوث ماديًا (كيميائيًا)، أو غير مادي مثل:",
+      "explanation": "التلوث ليس ماديًا فقط؛ فالتلوث الضوضائي (الضجيج) والتلوث الإشعاعي والحراري أنواع غير مادية من التلوث.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 169,
+      "source_detail": "الدرس: الملوثات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "التلوث الضوضائي والإشعاعي",
+        "تلوث الهواء فقط",
+        "تلوث المياه فقط",
+        "تلوث التربة فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "التلوث الضوضائي والإشعاعي"
+    },
+    {
+      "id": "ye-chemistry-u9-l4-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l4",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من ملوثات الهواء الأولية؟",
+      "explanation": "الملوثات الأولية تنبعث مباشرة من المصدر، ومنها أول أكسيد الكربون وثاني أكسيد الكبريت وثاني أكسيد النيتروجين.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 169,
+      "source_detail": "الدرس: ملوثات الهواء",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أول أكسيد الكربون CO",
+        "الأوزون O3",
+        "حمض النيتريك HNO3",
+        "حمض الكبريتيك H2SO4"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أول أكسيد الكربون CO"
+    },
+    {
+      "id": "ye-chemistry-u9-l4-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l4",
+      "difficulty": 2,
+      "question_text": "أي مما يأتي من ملوثات الهواء الثانوية؟",
+      "explanation": "الملوثات الثانوية تتكون في الجو بتفاعل الملوثات الأولية، ومنها الأوزون وحمض النيتريك وحمض الكبريتيك المسبب للمطر الحمضي.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 169,
+      "source_detail": "الدرس: ملوثات الهواء",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الأوزون O3",
+        "ثاني أكسيد الكبريت SO2",
+        "أول أكسيد الكربون CO",
+        "ثاني أكسيد النيتروجين NO2"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الأوزون O3"
+    },
+    {
+      "id": "ye-chemistry-u9-l5-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l5",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من مصادر تلوث المياه؟",
+      "explanation": "تتلوث المياه بمياه الصرف الصحي والصناعي والزراعي، وما تحمله من مواد كيميائية وجراثيم.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 178,
+      "source_detail": "الدرس: ملوثات المياه",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مياه الصرف الصحي والصناعي",
+        "مياه الأمطار النقية",
+        "المياه الجوفية العميقة",
+        "الثلج النقي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مياه الصرف الصحي والصناعي"
+    },
+    {
+      "id": "ye-chemistry-u9-l5-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l5",
+      "difficulty": 1,
+      "question_text": "يؤدي تلوث المياه إلى انتشار الأمراض بين الإنسان والحيوان.",
+      "explanation": "المياه الملوثة تنقل الجراثيم والمواد السامة، فتسبب الأمراض للإنسان والحيوان والنبات.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 178,
+      "source_detail": "الدرس: ملوثات المياه",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u9-l6-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l6",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من ملوثات التربة؟",
+      "explanation": "تتلوث التربة بالإفراط في الأسمدة والمبيدات، وبتراكم المعادن الثقيلة والنفايات الصناعية فيها.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 179,
+      "source_detail": "الدرس: ملوثات التربة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الإفراط في استخدام الأسمدة والمبيدات",
+        "زراعة الأشجار",
+        "الري بمياه نظيفة",
+        "تدوير المخلفات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الإفراط في استخدام الأسمدة والمبيدات"
+    },
+    {
+      "id": "ye-chemistry-u9-l6-002",
+      "type": "true_false",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l6",
+      "difficulty": 1,
+      "question_text": "تتراكم المعادن الثقيلة في التربة فتلوث المحاصيل وتضر بصحة الإنسان.",
+      "explanation": "المعادن الثقيلة كالرصاص والكادميوم لا تتحلل، فتتراكم في التربة وتمتصها النباتات فتصل إلى الإنسان.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 179,
+      "source_detail": "الدرس: ملوثات التربة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-chemistry-u9-l7-001",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l7",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من الحلول المقترحة للحد من تلوث البيئة؟",
+      "explanation": "من الحلول المقترحة: استخدام الطاقة النظيفة، وترشيد استهلاك الوقود، وإعادة التدوير، ومعالجة مياه الصرف قبل تصريفها.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 180,
+      "source_detail": "الدرس: الحلول المقترحة للحد من تلوث البيئة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "استخدام مصادر طاقة نظيفة كالشمسية",
+        "زيادة حرق الوقود الأحفوري",
+        "رمي النفايات في الأنهار",
+        "إزالة الغابات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "استخدام مصادر طاقة نظيفة كالشمسية"
+    },
+    {
+      "id": "ye-chemistry-u9-l7-002",
+      "type": "mcq",
+      "subject_id": "chemistry",
+      "unit_id": "chemistry-u9",
+      "lesson_id": "chemistry-u9-l7",
+      "difficulty": 2,
+      "question_text": "أي الإجراءات الآتية يحد من تلوث الهواء الناتج عن المصانع؟",
+      "explanation": "تركيب المرشحات على المداخن يمنع انبعاث الجسيمات والغازات الضارة إلى الهواء، فيحد من تلوثه.",
+      "source": "كتاب الكيمياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 180,
+      "source_detail": "الدرس: الحلول المقترحة للحد من تلوث البيئة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تركيب مرشحات على مداخن المصانع",
+        "رفع مداخن المصانع دون مرشحات",
+        "زيادة ساعات تشغيل المصانع",
+        "حرق النفايات في الهواء الطلق"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تركيب مرشحات على مداخن المصانع"
+    }
+  ]
+}

@@ -1,0 +1,2597 @@
+{
+  "format": "abqariya-content-pack",
+  "version": 1,
+  "pack": {
+    "id": "ye-math-3sec-2027",
+    "title_ar": "أسئلة الرياضيات — ثالث ثانوي علمي (صنعاء 2027)",
+    "title_en": "Mathematics questions — Grade 12 (Sanaa 2027)",
+    "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+    "is_demo": false,
+    "curriculum_year": "2025-2026",
+    "created_at": "2026-11-25"
+  },
+  "subjects": [
+    {
+      "id": "math",
+      "name_ar": "الرياضيات",
+      "name_en": "Mathematics",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027"
+    }
+  ],
+  "units": [
+    {
+      "id": "math-u1",
+      "subject_id": "math",
+      "title_ar": "الأعداد المركبة",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 7
+    },
+    {
+      "id": "math-u2",
+      "subject_id": "math",
+      "title_ar": "مبدأ العد ومبرهنة ذات الحدين",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 45
+    },
+    {
+      "id": "math-u3",
+      "subject_id": "math",
+      "title_ar": "الاحتمالات",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 74
+    },
+    {
+      "id": "math-u4",
+      "subject_id": "math",
+      "title_ar": "القطوع المخروطية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 104
+    },
+    {
+      "id": "math-u5",
+      "subject_id": "math",
+      "title_ar": "الهندسة الفضائية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 133
+    },
+    {
+      "id": "math-u6",
+      "subject_id": "math",
+      "title_ar": "التفاضل",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 154
+    },
+    {
+      "id": "math-u7",
+      "subject_id": "math",
+      "title_ar": "التكامل",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 210
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-u1-l1",
+      "unit_id": "math-u1",
+      "subject_id": "math",
+      "title_ar": "العدد المركب",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 7,
+      "sort_order": 1
+    },
+    {
+      "id": "math-u1-l2",
+      "unit_id": "math-u1",
+      "subject_id": "math",
+      "title_ar": "جمع وطرح الأعداد المركبة",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "sort_order": 2
+    },
+    {
+      "id": "math-u1-l3",
+      "unit_id": "math-u1",
+      "subject_id": "math",
+      "title_ar": "ضرب وقسمة الأعداد المركبة",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 16,
+      "sort_order": 3
+    },
+    {
+      "id": "math-u1-l4",
+      "unit_id": "math-u1",
+      "subject_id": "math",
+      "title_ar": "الصورة القطبية للعدد المركب",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 23,
+      "sort_order": 4
+    },
+    {
+      "id": "math-u1-l5",
+      "unit_id": "math-u1",
+      "subject_id": "math",
+      "title_ar": "القوى والجذور",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 33,
+      "sort_order": 5
+    },
+    {
+      "id": "math-u1-l6",
+      "unit_id": "math-u1",
+      "subject_id": "math",
+      "title_ar": "حل المعادلة من الدرجة الثانية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 40,
+      "sort_order": 6
+    },
+    {
+      "id": "math-u2-l1",
+      "unit_id": "math-u2",
+      "subject_id": "math",
+      "title_ar": "مبدأ العد",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 45,
+      "sort_order": 1
+    },
+    {
+      "id": "math-u2-l2",
+      "unit_id": "math-u2",
+      "subject_id": "math",
+      "title_ar": "التباديل",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 49,
+      "sort_order": 2
+    },
+    {
+      "id": "math-u2-l3",
+      "unit_id": "math-u2",
+      "subject_id": "math",
+      "title_ar": "التوافيق",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 55,
+      "sort_order": 3
+    },
+    {
+      "id": "math-u2-l4",
+      "unit_id": "math-u2",
+      "subject_id": "math",
+      "title_ar": "مبرهنة ذات الحدين",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 65,
+      "sort_order": 4
+    },
+    {
+      "id": "math-u3-l1",
+      "unit_id": "math-u3",
+      "subject_id": "math",
+      "title_ar": "بعض المفاهيم الأساسية في الاحتمالات",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 74,
+      "sort_order": 1
+    },
+    {
+      "id": "math-u3-l2",
+      "unit_id": "math-u3",
+      "subject_id": "math",
+      "title_ar": "بناء النموذج الاحتمالي",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "sort_order": 2
+    },
+    {
+      "id": "math-u3-l3",
+      "unit_id": "math-u3",
+      "subject_id": "math",
+      "title_ar": "الاحتمال الشرطي وقانون الضرب والحوادث المستقلة",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 86,
+      "sort_order": 3
+    },
+    {
+      "id": "math-u3-l4",
+      "unit_id": "math-u3",
+      "subject_id": "math",
+      "title_ar": "متتابعات التكرارات المستقلة وقانون الاحتمال الثنائي",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 93,
+      "sort_order": 4
+    },
+    {
+      "id": "math-u3-l5",
+      "unit_id": "math-u3",
+      "subject_id": "math",
+      "title_ar": "السحب مع الإعادة وبدون إعادة",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 98,
+      "sort_order": 5
+    },
+    {
+      "id": "math-u4-l1",
+      "unit_id": "math-u4",
+      "subject_id": "math",
+      "title_ar": "تمهيد",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 104,
+      "sort_order": 1
+    },
+    {
+      "id": "math-u4-l2",
+      "unit_id": "math-u4",
+      "subject_id": "math",
+      "title_ar": "القطع المكافئ",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 105,
+      "sort_order": 2
+    },
+    {
+      "id": "math-u4-l3",
+      "unit_id": "math-u4",
+      "subject_id": "math",
+      "title_ar": "القطع الناقص",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 110,
+      "sort_order": 3
+    },
+    {
+      "id": "math-u4-l4",
+      "unit_id": "math-u4",
+      "subject_id": "math",
+      "title_ar": "القطع الزائد",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 118,
+      "sort_order": 4
+    },
+    {
+      "id": "math-u4-l5",
+      "unit_id": "math-u4",
+      "subject_id": "math",
+      "title_ar": "انسحاب المحاور الإحداثية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 124,
+      "sort_order": 5
+    },
+    {
+      "id": "math-u4-l6",
+      "unit_id": "math-u4",
+      "subject_id": "math",
+      "title_ar": "دوران المحاور الإحداثية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 129,
+      "sort_order": 6
+    },
+    {
+      "id": "math-u5-l1",
+      "unit_id": "math-u5",
+      "subject_id": "math",
+      "title_ar": "المستقيم العمودي على مستوى",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 133,
+      "sort_order": 1
+    },
+    {
+      "id": "math-u5-l2",
+      "unit_id": "math-u5",
+      "subject_id": "math",
+      "title_ar": "العمود والنائل",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 142,
+      "sort_order": 2
+    },
+    {
+      "id": "math-u5-l3",
+      "unit_id": "math-u5",
+      "subject_id": "math",
+      "title_ar": "الزاوية الزوجية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "sort_order": 3
+    },
+    {
+      "id": "math-u6-l1",
+      "unit_id": "math-u6",
+      "subject_id": "math",
+      "title_ar": "نهايات واتصال الدوال الخفية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 154,
+      "sort_order": 1
+    },
+    {
+      "id": "math-u6-l2",
+      "unit_id": "math-u6",
+      "subject_id": "math",
+      "title_ar": "المشتقات",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 160,
+      "sort_order": 2
+    },
+    {
+      "id": "math-u6-l3",
+      "unit_id": "math-u6",
+      "subject_id": "math",
+      "title_ar": "مشتقة تركيب الدالتين (قاعدة السلسلة)",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 162,
+      "sort_order": 3
+    },
+    {
+      "id": "math-u6-l4",
+      "unit_id": "math-u6",
+      "subject_id": "math",
+      "title_ar": "مشتقة الدالة الضمنية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 166,
+      "sort_order": 4
+    },
+    {
+      "id": "math-u6-l5",
+      "unit_id": "math-u6",
+      "subject_id": "math",
+      "title_ar": "مشتقة الدالة اللوغاريتمية والأسية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 171,
+      "sort_order": 5
+    },
+    {
+      "id": "math-u6-l6",
+      "unit_id": "math-u6",
+      "subject_id": "math",
+      "title_ar": "مشتقة الدوال الخفية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 175,
+      "sort_order": 6
+    },
+    {
+      "id": "math-u6-l7",
+      "unit_id": "math-u6",
+      "subject_id": "math",
+      "title_ar": "مبرهنة رول والقيمة المتوسطة",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 182,
+      "sort_order": 7
+    },
+    {
+      "id": "math-u6-l8",
+      "unit_id": "math-u6",
+      "subject_id": "math",
+      "title_ar": "القيم القصوى",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 187,
+      "sort_order": 8
+    },
+    {
+      "id": "math-u6-l9",
+      "unit_id": "math-u6",
+      "subject_id": "math",
+      "title_ar": "دراسة تغير الدالة",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 200,
+      "sort_order": 9
+    },
+    {
+      "id": "math-u7-l1",
+      "unit_id": "math-u7",
+      "subject_id": "math",
+      "title_ar": "التكامل المحدد",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 210,
+      "sort_order": 1
+    },
+    {
+      "id": "math-u7-l2",
+      "unit_id": "math-u7",
+      "subject_id": "math",
+      "title_ar": "التكامل غير المحدد",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 222,
+      "sort_order": 2
+    },
+    {
+      "id": "math-u7-l3",
+      "unit_id": "math-u7",
+      "subject_id": "math",
+      "title_ar": "التكامل بالتعويض",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 235,
+      "sort_order": 3
+    },
+    {
+      "id": "math-u7-l4",
+      "unit_id": "math-u7",
+      "subject_id": "math",
+      "title_ar": "التكامل بالتجزئة",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 240,
+      "sort_order": 4
+    },
+    {
+      "id": "math-u7-l5",
+      "unit_id": "math-u7",
+      "subject_id": "math",
+      "title_ar": "تكامل الدوال الكسرية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 244,
+      "sort_order": 5
+    },
+    {
+      "id": "math-u7-l6",
+      "unit_id": "math-u7",
+      "subject_id": "math",
+      "title_ar": "تطبيقات التكامل",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 248,
+      "sort_order": 6
+    },
+    {
+      "id": "math-u7-l7",
+      "unit_id": "math-u7",
+      "subject_id": "math",
+      "title_ar": "حساب مساحات المناطق المستوية",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 248,
+      "sort_order": 7
+    },
+    {
+      "id": "math-u7-l8",
+      "unit_id": "math-u7",
+      "subject_id": "math",
+      "title_ar": "الحجم الدوراني",
+      "title_en": "",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 251,
+      "sort_order": 8
+    }
+  ],
+  "questions": [
+    {
+      "id": "ye-math-u1-l1-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l1",
+      "difficulty": 1,
+      "question_text": "ما قيمة ت² حيث ت = √(-1)؟",
+      "explanation": "الوحدة التخيلية ت هي الجذر التربيعي للعدد -1، لذا ت² = -1.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 7,
+      "source_detail": "الدرس: العدد المركب",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "-1",
+        "1",
+        "ت",
+        "0"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "-1"
+    },
+    {
+      "id": "ye-math-u1-l1-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l1",
+      "difficulty": 2,
+      "question_text": "ما الجزء الحقيقي للعدد المركب ع = 3 + 4ت؟",
+      "explanation": "العدد المركب ع = س + ص ت فيه الجزء الحقيقي س = 3 والجزء التخيلي ص = 4.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 7,
+      "source_detail": "الدرس: العدد المركب",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "3",
+        "4",
+        "7",
+        "5"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "3"
+    },
+    {
+      "id": "ye-math-u1-l2-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l2",
+      "difficulty": 2,
+      "question_text": "ما ناتج (2 + 3ت) + (4 - ت)؟",
+      "explanation": "يُجمع الجزء الحقيقي مع الحقيقي والتخيلي مع التخيلي: (2+4) + (3-1)ت = 6 + 2ت.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس: جمع وطرح الأعداد المركبة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "6 + 2ت",
+        "6 + 4ت",
+        "2 + 2ت",
+        "6 - 2ت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "6 + 2ت"
+    },
+    {
+      "id": "ye-math-u1-l2-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l2",
+      "difficulty": 2,
+      "question_text": "ما ناتج (5 + 2ت) - (3 + ت)؟",
+      "explanation": "يُطرح الجزء الحقيقي من الحقيقي والتخيلي من التخيلي: (5-3) + (2-1)ت = 2 + ت.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس: جمع وطرح الأعداد المركبة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "2 + ت",
+        "8 + 3ت",
+        "2 + 3ت",
+        "8 + ت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "2 + ت"
+    },
+    {
+      "id": "ye-math-u1-l3-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l3",
+      "difficulty": 2,
+      "question_text": "ما ناتج (1 + ت)(1 - ت)؟",
+      "explanation": "(1+ت)(1-ت) = 1 - ت² = 1 - (-1) = 2، لأن ت² = -1.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 16,
+      "source_detail": "الدرس: ضرب وقسمة الأعداد المركبة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "2",
+        "0",
+        "2ت",
+        "1"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "2"
+    },
+    {
+      "id": "ye-math-u1-l3-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l3",
+      "difficulty": 2,
+      "question_text": "ما ناتج (2 + 3ت)(1 + ت)؟",
+      "explanation": "(2+3ت)(1+ت) = 2 + 2ت + 3ت + 3ت² = 2 + 5ت - 3 = -1 + 5ت.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 16,
+      "source_detail": "الدرس: ضرب وقسمة الأعداد المركبة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "-1 + 5ت",
+        "5 + 5ت",
+        "-1 + ت",
+        "2 + 5ت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "-1 + 5ت"
+    },
+    {
+      "id": "ye-math-u1-l4-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l4",
+      "difficulty": 2,
+      "question_text": "ما مقياس (معيار) العدد المركب ع = 3 + 4ت؟",
+      "explanation": "مقياس العدد المركب ع = س + ص ت هو |ع| = √(س² + ص²) = √(9 + 16) = √25 = 5.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 23,
+      "source_detail": "الدرس: الصورة القطبية للعدد المركب",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "5",
+        "7",
+        "25",
+        "1"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "5"
+    },
+    {
+      "id": "ye-math-u1-l4-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l4",
+      "difficulty": 2,
+      "question_text": "ما الصورة القطبية للعدد المركب ع = 1 + ت؟",
+      "explanation": "المقياس ر = √(1+1) = √2، والسعة θ = 45° لأن ظا θ = 1/1 = 1، فالصورة القطبية ع = √2 (جتا 45° + ت جا 45°).",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 23,
+      "source_detail": "الدرس: الصورة القطبية للعدد المركب",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "√2 (جتا 45° + ت جا 45°)",
+        "2 (جتا 45° + ت جا 45°)",
+        "√2 (جتا 30° + ت جا 30°)",
+        "جتا 45° + ت جا 45°"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "√2 (جتا 45° + ت جا 45°)"
+    },
+    {
+      "id": "ye-math-u1-l5-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l5",
+      "difficulty": 2,
+      "question_text": "ما قيمة ت⁴؟",
+      "explanation": "قوى ت تتكرر بدورة 4: ت¹ = ت، ت² = -1، ت³ = -ت، ت⁴ = 1.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 33,
+      "source_detail": "الدرس: القوى والجذور",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1",
+        "-1",
+        "ت",
+        "-ت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1"
+    },
+    {
+      "id": "ye-math-u1-l5-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l5",
+      "difficulty": 3,
+      "question_text": "باستخدام مبرهنة ديموافر، ما قيمة (جتا 30° + ت جا 30°)²؟",
+      "explanation": "بمبرهنة ديموافر (جتا θ + ت جا θ)^ن = جتا نθ + ت جا نθ، فعند ن = 2 وθ = 30° يكون الناتج جتا 60° + ت جا 60°.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 33,
+      "source_detail": "الدرس: القوى والجذور",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "جتا 60° + ت جا 60°",
+        "جتا 30° + ت جا 30°",
+        "جتا 90° + ت جا 90°",
+        "جتا 15° + ت جا 15°"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "جتا 60° + ت جا 60°"
+    },
+    {
+      "id": "ye-math-u1-l6-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l6",
+      "difficulty": 2,
+      "question_text": "ما حلا المعادلة س² + 1 = 0 في مجموعة الأعداد المركبة؟",
+      "explanation": "س² = -1، وبأخذ الجذر التربيعي يكون س = ±√(-1) = ±ت، فالمعادلة التي لا حل لها في الأعداد الحقيقية لها حل في الأعداد المركبة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 40,
+      "source_detail": "الدرس: حل المعادلة من الدرجة الثانية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "س = ±ت",
+        "س = ±1",
+        "س = 0",
+        "لا يوجد حل"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "س = ±ت"
+    },
+    {
+      "id": "ye-math-u1-l6-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u1",
+      "lesson_id": "math-u1-l6",
+      "difficulty": 3,
+      "question_text": "ما حلا المعادلة س² - 2س + 5 = 0؟",
+      "explanation": "المميز = 4 - 20 = -16، فالحلان س = (2 ± √(-16))/2 = (2 ± 4ت)/2 = 1 ± 2ت.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 40,
+      "source_detail": "الدرس: حل المعادلة من الدرجة الثانية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "1 ± 2ت",
+        "2 ± ت",
+        "1 ± 4ت",
+        "-1 ± 2ت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1 ± 2ت"
+    },
+    {
+      "id": "ye-math-u2-l1-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u2",
+      "lesson_id": "math-u2-l1",
+      "difficulty": 2,
+      "question_text": "إذا كان لديك 3 قمصان و4 بناطيل، فبكم طريقة يمكنك اختيار قميص وبنطال؟",
+      "explanation": "بمبدأ العد (الضرب): عدد الطرق = 3 × 4 = 12 طريقة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 45,
+      "source_detail": "الدرس: مبدأ العد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "12",
+        "7",
+        "3",
+        "4"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "12"
+    },
+    {
+      "id": "ye-math-u2-l1-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u2",
+      "lesson_id": "math-u2-l1",
+      "difficulty": 1,
+      "question_text": "ينص مبدأ العد (الضرب) على أنه إذا تم الأمر الأول بـ م طريقة والثاني بـ ن طريقة، فإن عدد طرق إتمامهما معًا يساوي:",
+      "explanation": "مبدأ العد: إذا أمكن إنجاز عمل على مرحلتين، الأولى بـ م طريقة والثانية بـ ن طريقة، فعدد الطرق الكلي م × ن.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 45,
+      "source_detail": "الدرس: مبدأ العد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "م × ن",
+        "م + ن",
+        "م - ن",
+        "م ÷ ن"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "م × ن"
+    },
+    {
+      "id": "ye-math-u2-l2-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u2",
+      "lesson_id": "math-u2-l2",
+      "difficulty": 2,
+      "question_text": "ما قيمة التباديل 5ل3 (تباديل 5 عناصر مأخوذة 3)؟",
+      "explanation": "5ل3 = 5! / (5-3)! = 5 × 4 × 3 = 60.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 49,
+      "source_detail": "الدرس: التباديل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "60",
+        "10",
+        "20",
+        "120"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "60"
+    },
+    {
+      "id": "ye-math-u2-l2-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u2",
+      "lesson_id": "math-u2-l2",
+      "difficulty": 2,
+      "question_text": "بكم طريقة يمكن ترتيب 4 كتب مختلفة على رف؟",
+      "explanation": "عدد ترتيبات 4 عناصر مختلفة = 4! = 4 × 3 × 2 × 1 = 24 طريقة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 49,
+      "source_detail": "الدرس: التباديل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "24",
+        "12",
+        "16",
+        "4"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "24"
+    },
+    {
+      "id": "ye-math-u2-l3-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u2",
+      "lesson_id": "math-u2-l3",
+      "difficulty": 2,
+      "question_text": "ما قيمة التوافيق 6ق3؟",
+      "explanation": "6ق3 = 6! / (3! × 3!) = 20.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 55,
+      "source_detail": "الدرس: التوافيق",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "20",
+        "120",
+        "60",
+        "15"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "20"
+    },
+    {
+      "id": "ye-math-u2-l3-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u2",
+      "lesson_id": "math-u2-l3",
+      "difficulty": 2,
+      "question_text": "بكم طريقة يمكن اختيار 3 طلاب من مجموعة من 5 طلاب؟",
+      "explanation": "الاختيار لا يهم فيه الترتيب، فعدد الطرق = 5ق3 = 10.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 55,
+      "source_detail": "الدرس: التوافيق",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "10",
+        "60",
+        "20",
+        "15"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "10"
+    },
+    {
+      "id": "ye-math-u2-l4-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u2",
+      "lesson_id": "math-u2-l4",
+      "difficulty": 2,
+      "question_text": "ما معامل س² في مفكوك (س + 1)^4؟",
+      "explanation": "الحد الذي فيه س² في مفكوك (س+1)^4 معامله التوافيق 4ق2 = 6.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 65,
+      "source_detail": "الدرس: مبرهنة ذات الحدين",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "6",
+        "4",
+        "12",
+        "1"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "6"
+    },
+    {
+      "id": "ye-math-u2-l4-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u2",
+      "lesson_id": "math-u2-l4",
+      "difficulty": 3,
+      "question_text": "ما الحد الثالث في مفكوك (أ + ب)^5؟",
+      "explanation": "الحد العام: الحد (ك+1) = 5قك أ^(5-ك) ب^ك، فالحد الثالث (ك=2) = 5ق2 أ³ ب² = 10 أ³ ب².",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 65,
+      "source_detail": "الدرس: مبرهنة ذات الحدين",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "10 أ³ ب²",
+        "5 أ⁴ ب",
+        "10 أ² ب³",
+        "أ⁵"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "10 أ³ ب²"
+    },
+    {
+      "id": "ye-math-u3-l1-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u3",
+      "lesson_id": "math-u3-l1",
+      "difficulty": 1,
+      "question_text": "ما فضاء العينة عند رمي قطعة نقود مرة واحدة؟",
+      "explanation": "فضاء العينة هو مجموعة جميع النتائج الممكنة، وعند رمي قطعة نقود مرة واحدة تكون النتيجتان: صورة أو كتابة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 74,
+      "source_detail": "الدرس: بعض المفاهيم الأساسية في الاحتمالات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "{صورة، كتابة}",
+        "{صورة}",
+        "{1، 2}",
+        "{صورة، كتابة، حافة}"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "{صورة، كتابة}"
+    },
+    {
+      "id": "ye-math-u3-l1-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u3",
+      "lesson_id": "math-u3-l1",
+      "difficulty": 2,
+      "question_text": "ما احتمال ظهور عدد زوجي عند رمي حجر نرد مرة واحدة؟",
+      "explanation": "الأعداد الزوجية على حجر النرد هي {2، 4، 6}، أي 3 نتائج من 6، فالاحتمال = 3/6 = 1/2.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 74,
+      "source_detail": "الدرس: بعض المفاهيم الأساسية في الاحتمالات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1/2",
+        "1/3",
+        "1/6",
+        "2/3"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1/2"
+    },
+    {
+      "id": "ye-math-u3-l2-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u3",
+      "lesson_id": "math-u3-l2",
+      "difficulty": 2,
+      "question_text": "في نموذج احتمالي منتظم لحجر نرد، ما احتمال كل نتيجة من النتائج الست؟",
+      "explanation": "في النموذج الاحتمالي المنتظم تتساوى احتمالات جميع النتائج، وعددها 6، فاحتمال كل نتيجة = 1/6.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "source_detail": "الدرس: بناء النموذج الاحتمالي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1/6",
+        "1/2",
+        "1/3",
+        "1"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1/6"
+    },
+    {
+      "id": "ye-math-u3-l2-002",
+      "type": "true_false",
+      "subject_id": "math",
+      "unit_id": "math-u3",
+      "lesson_id": "math-u3-l2",
+      "difficulty": 1,
+      "question_text": "مجموع احتمالات جميع نتائج فضاء العينة يساوي 1.",
+      "explanation": "من خصائص النموذج الاحتمالي أن مجموع احتمالات جميع النتائج الممكنة يساوي 1، وكل احتمال بين 0 و 1.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "source_detail": "الدرس: بناء النموذج الاحتمالي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-math-u3-l3-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u3",
+      "lesson_id": "math-u3-l3",
+      "difficulty": 2,
+      "question_text": "إذا كان ل(أ) = 0.5 ول(ب) = 0.4 ول(أ ∩ ب) = 0.2، فما ل(أ | ب)؟",
+      "explanation": "الاحتمال الشرطي ل(أ|ب) = ل(أ ∩ ب) / ل(ب) = 0.2 / 0.4 = 0.5.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 86,
+      "source_detail": "الدرس: الاحتمال الشرطي وقانون الضرب والحوادث المستقلة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "0.5",
+        "0.2",
+        "0.4",
+        "0.1"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "0.5"
+    },
+    {
+      "id": "ye-math-u3-l3-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u3",
+      "lesson_id": "math-u3-l3",
+      "difficulty": 2,
+      "question_text": "إذا كان الحادثان أ، ب مستقلين ول(أ) = 0.3 ول(ب) = 0.5، فما ل(أ ∩ ب)؟",
+      "explanation": "للحادثين المستقلين: ل(أ ∩ ب) = ل(أ) × ل(ب) = 0.3 × 0.5 = 0.15.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 86,
+      "source_detail": "الدرس: الاحتمال الشرطي وقانون الضرب والحوادث المستقلة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "0.15",
+        "0.8",
+        "0.2",
+        "0.35"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "0.15"
+    },
+    {
+      "id": "ye-math-u3-l4-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u3",
+      "lesson_id": "math-u3-l4",
+      "difficulty": 3,
+      "question_text": "ما احتمال الحصول على 3 صور عند رمي قطعة نقود 5 مرات؟",
+      "explanation": "بقانون الاحتمال الثنائي: ل = 5ق3 × (1/2)³ × (1/2)² = 10 × (1/32) = 10/32 = 5/16.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 93,
+      "source_detail": "الدرس: متتابعات التكرارات المستقلة وقانون الاحتمال الثنائي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "5/16",
+        "1/16",
+        "3/16",
+        "1/2"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "5/16"
+    },
+    {
+      "id": "ye-math-u3-l4-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u3",
+      "lesson_id": "math-u3-l4",
+      "difficulty": 2,
+      "question_text": "في توزيع ثنائي فيه ن = 4 وف = 1/2، ما احتمال حدوث نجاحين بالضبط؟",
+      "explanation": "ل(س=2) = 4ق2 × (1/2)² × (1/2)² = 6 × (1/16) = 6/16 = 3/8.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 93,
+      "source_detail": "الدرس: متتابعات التكرارات المستقلة وقانون الاحتمال الثنائي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "3/8",
+        "1/4",
+        "1/2",
+        "1/16"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "3/8"
+    },
+    {
+      "id": "ye-math-u3-l5-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u3",
+      "lesson_id": "math-u3-l5",
+      "difficulty": 2,
+      "question_text": "صندوق فيه 3 كرات حمراء وكرتان بيضاوان، سُحبت كرة ثم أُعيدت إلى الصندوق، ما احتمال أن تكون الكرة حمراء في السحبة الثانية؟",
+      "explanation": "السحب مع الإعادة يعيد الكرة إلى الصندوق، فلا يتغير عدد الكرات، ويبقى احتمال الحمراء = 3/5 في كل سحبة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 98,
+      "source_detail": "الدرس: السحب مع الإعادة وبدون إعادة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "3/5",
+        "2/5",
+        "1/2",
+        "3/4"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "3/5"
+    },
+    {
+      "id": "ye-math-u3-l5-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u3",
+      "lesson_id": "math-u3-l5",
+      "difficulty": 3,
+      "question_text": "صندوق فيه 3 كرات حمراء وكرتان بيضاوان، سُحبت كرتان بدون إعادة، ما احتمال أن تكون الكرتان حمراوين؟",
+      "explanation": "بدون إعادة: احتمال الأولى حمراء = 3/5، ثم احتمال الثانية حمراء = 2/4، فالاحتمال الكلي = (3/5) × (2/4) = 3/10.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 98,
+      "source_detail": "الدرس: السحب مع الإعادة وبدون إعادة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "3/10",
+        "9/25",
+        "1/2",
+        "3/5"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "3/10"
+    },
+    {
+      "id": "ye-math-u4-l1-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l1",
+      "difficulty": 1,
+      "question_text": "ما القطوع المخروطية؟",
+      "explanation": "القطوع المخروطية منحنيات تنتج من تقاطع مستوى مع مخروط دائري قائم، وهي: الدائرة والقطع المكافئ والناقص والزائد.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 104,
+      "source_detail": "الدرس: تمهيد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "منحنيات ناتجة من قطع مخروط بستوٍ",
+        "أشكال ثلاثية الأبعاد فقط",
+        "خطوط مستقيمة متقاطعة",
+        "دوائر متحدة المركز فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "منحنيات ناتجة من قطع مخروط بستوٍ"
+    },
+    {
+      "id": "ye-math-u4-l1-002",
+      "type": "true_false",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l1",
+      "difficulty": 1,
+      "question_text": "الدائرة والقطع المكافئ والقطع الناقص والقطع الزائد كلها قطوع مخروطية.",
+      "explanation": "كل هذه المنحنيات تنتج من قطع المخروط بمستوٍ بزوايا مختلفة، فهي جميعًا قطوع مخروطية.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 104,
+      "source_detail": "الدرس: تمهيد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-math-u4-l2-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l2",
+      "difficulty": 2,
+      "question_text": "ما بؤرة القطع المكافئ ص² = 8س؟",
+      "explanation": "الصورة القياسية ص² = 4أس، فبمقارنة 4أ = 8 يكون أ = 2، والبؤرة (أ، 0) = (2، 0).",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 105,
+      "source_detail": "الدرس: القطع المكافئ",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "(2، 0)",
+        "(0، 2)",
+        "(4، 0)",
+        "(8، 0)"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "(2، 0)"
+    },
+    {
+      "id": "ye-math-u4-l2-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l2",
+      "difficulty": 2,
+      "question_text": "ما معادلة دليل القطع المكافئ ص² = 8س؟",
+      "explanation": "للقطع المكافئ ص² = 4أس يكون الدليل س = -أ، وهنا أ = 2، فالدليل س = -2.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 105,
+      "source_detail": "الدرس: القطع المكافئ",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "س = -2",
+        "س = 2",
+        "ص = -2",
+        "ص = 2"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "س = -2"
+    },
+    {
+      "id": "ye-math-u4-l3-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l3",
+      "difficulty": 2,
+      "question_text": "ما مجموع بعدي أي نقطة على القطع الناقص عن بؤرتيه؟",
+      "explanation": "تعريف القطع الناقص: مجموع بعدي أي نقطة عليه عن البؤرتين مقدار ثابت يساوي 2أ، وهو طول المحور الأكبر.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 110,
+      "source_detail": "الدرس: القطع الناقص",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "2أ (طول المحور الأكبر)",
+        "2ب",
+        "أ + ب",
+        "4أ"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "2أ (طول المحور الأكبر)"
+    },
+    {
+      "id": "ye-math-u4-l3-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l3",
+      "difficulty": 2,
+      "question_text": "في القطع الناقص س²/25 + ص²/9 = 1، ما طول المحور الأكبر؟",
+      "explanation": "أ² = 25 فيكون أ = 5، وطول المحور الأكبر = 2أ = 10.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 110,
+      "source_detail": "الدرس: القطع الناقص",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "10",
+        "6",
+        "5",
+        "3"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "10"
+    },
+    {
+      "id": "ye-math-u4-l4-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l4",
+      "difficulty": 2,
+      "question_text": "ما معادلتا خطي تقارب القطع الزائد س²/9 - ص²/16 = 1؟",
+      "explanation": "خطا التقارب للقطع الزائد س²/أ² - ص²/ب² = 1 هما ص = ±(ب/أ) س، وهنا أ = 3 وب = 4، فهما ص = ±(4/3) س.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 118,
+      "source_detail": "الدرس: القطع الزائد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ص = ±(4/3) س",
+        "ص = ±(3/4) س",
+        "ص = ±(16/9) س",
+        "ص = ±(9/16) س"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ص = ±(4/3) س"
+    },
+    {
+      "id": "ye-math-u4-l4-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l4",
+      "difficulty": 2,
+      "question_text": "في القطع الزائد س²/9 - ص²/16 = 1، ما البعد بين رأسيه؟",
+      "explanation": "أ² = 9 فيكون أ = 3، والبعد بين الرأسين = 2أ = 6.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 118,
+      "source_detail": "الدرس: القطع الزائد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "6",
+        "8",
+        "3",
+        "4"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "6"
+    },
+    {
+      "id": "ye-math-u4-l5-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l5",
+      "difficulty": 2,
+      "question_text": "بانسحاب المحاور س = سَ + 2، ص = صَ - 1، ما إحداثيات النقطة (5، 3) في المحاور الجديدة؟",
+      "explanation": "سَ = س - 2 = 5 - 2 = 3، وصَ = ص + 1 = 3 + 1 = 4، فالإحداثيات الجديدة (3، 4).",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 124,
+      "source_detail": "الدرس: انسحاب المحاور الإحداثية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "(3، 4)",
+        "(7، 2)",
+        "(5، 3)",
+        "(3، 2)"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "(3، 4)"
+    },
+    {
+      "id": "ye-math-u4-l5-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l5",
+      "difficulty": 2,
+      "question_text": "ما رأس القطع المكافئ (ص - 1)² = 4(س + 2)؟",
+      "explanation": "الصورة (ص - ك)² = 4أ(س - هـ) رأسها (هـ، ك)، وهنا هـ = -2 وك = 1، فالرأس (-2، 1).",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 124,
+      "source_detail": "الدرس: انسحاب المحاور الإحداثية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "(-2، 1)",
+        "(2، -1)",
+        "(2، 1)",
+        "(-2، -1)"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "(-2، 1)"
+    },
+    {
+      "id": "ye-math-u4-l6-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l6",
+      "difficulty": 2,
+      "question_text": "عند دوران المحاور بزاوية θ، متى يختفي الحد س ص من معادلة الدرجة الثانية؟",
+      "explanation": "يزول الحد س ص بدوران المحاور بزاوية θ تحقق ظا 2θ = ب / (أ - ج)، حيث ب معامل س ص.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 129,
+      "source_detail": "الدرس: دوران المحاور الإحداثية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "عندما تكون ظا 2θ = ب / (أ - ج)",
+        "عندما تكون ظا θ = أ / ب",
+        "عندما تكون θ = 90° دائمًا",
+        "عندما تكون θ = 0° دائمًا"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عندما تكون ظا 2θ = ب / (أ - ج)"
+    },
+    {
+      "id": "ye-math-u4-l6-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u4",
+      "lesson_id": "math-u4-l6",
+      "difficulty": 3,
+      "question_text": "ما زاوية الدوران التي تزيل الحد س ص من المعادلة س² + 2√3 س ص + 3 ص² = 8؟",
+      "explanation": "ظا 2θ = ب/(أ-ج) = 2√3/(1-3) = -√3، فتكون 2θ = 120°، ومنها θ = 60°.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 129,
+      "source_detail": "الدرس: دوران المحاور الإحداثية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "60°",
+        "30°",
+        "45°",
+        "90°"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "60°"
+    },
+    {
+      "id": "ye-math-u5-l1-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u5",
+      "lesson_id": "math-u5-l1",
+      "difficulty": 1,
+      "question_text": "متى يكون المستقيم عموديًا على مستوى؟",
+      "explanation": "المستقيم عمودي على مستوى إذا كان عموديًا على مستقيمين متقاطعين في ذلك المستوى يمران بقدمه.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 133,
+      "source_detail": "الدرس: المستقيم العمودي على مستوى",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "إذا كان عموديًا على مستقيمين متقاطعين في المستوى",
+        "إذا كان موازيًا لأحد مستقيمات المستوى",
+        "إذا قطع المستوى في أي نقطة",
+        "إذا كان مائلًا على المستوى"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "إذا كان عموديًا على مستقيمين متقاطعين في المستوى"
+    },
+    {
+      "id": "ye-math-u5-l1-002",
+      "type": "true_false",
+      "subject_id": "math",
+      "unit_id": "math-u5",
+      "lesson_id": "math-u5-l1",
+      "difficulty": 1,
+      "question_text": "المستقيم العمودي على مستوى يكون عموديًا على كل مستقيم في المستوى يمر بقدمه.",
+      "explanation": "من تعريف العمود على المستوى: هو مستقيم عمودي على جميع المستقيمات في المستوى التي تمر بنقطة تقاطعه معه (قدمه).",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 133,
+      "source_detail": "الدرس: المستقيم العمودي على مستوى",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-math-u5-l2-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u5",
+      "lesson_id": "math-u5-l2",
+      "difficulty": 1,
+      "question_text": "ما العمود من نقطة إلى مستوى؟",
+      "explanation": "العمود من نقطة إلى مستوى هو القطعة المستقيمة العمودية على المستوى، وهي أقصر مسافة بين النقطة والمستوى.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 142,
+      "source_detail": "الدرس: العمود والنائل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أقصر مسافة من النقطة إلى المستوى",
+        "أطول مسافة من النقطة إلى المستوى",
+        "أي قطعة تصل النقطة بالمستوى",
+        "المسافة الأفقية فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أقصر مسافة من النقطة إلى المستوى"
+    },
+    {
+      "id": "ye-math-u5-l2-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u5",
+      "lesson_id": "math-u5-l2",
+      "difficulty": 2,
+      "question_text": "أيهما أقصر: العمود أم النائل من نقطة إلى مستوى؟",
+      "explanation": "العمود هو أقصر مسافة من النقطة إلى المستوى، وأي نائل (مائل) من النقطة نفسها يكون أطول منه.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 142,
+      "source_detail": "الدرس: العمود والنائل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "العمود",
+        "النائل",
+        "متساويان دائمًا",
+        "لا يمكن المقارنة بينهما"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "العمود"
+    },
+    {
+      "id": "ye-math-u5-l3-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u5",
+      "lesson_id": "math-u5-l3",
+      "difficulty": 1,
+      "question_text": "ما الزاوية الزوجية؟",
+      "explanation": "الزاوية الزوجية هي الزاوية المحصورة بين مستويين متقاطعين، وتُقاس بالزاوية الخطية بين عمودين على خط تقاطعهما.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "source_detail": "الدرس: الزاوية الزوجية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الزاوية بين مستويين متقاطعين",
+        "الزاوية بين مستقيمين متوازيين",
+        "الزاوية بين مستقيم ومستوى",
+        "الزاوية القائمة فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الزاوية بين مستويين متقاطعين"
+    },
+    {
+      "id": "ye-math-u5-l3-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u5",
+      "lesson_id": "math-u5-l3",
+      "difficulty": 2,
+      "question_text": "تُقاس الزاوية الزوجية بالزاوية بين:",
+      "explanation": "الزاوية الخطية للزاوية الزوجية هي الزاوية بين مستقيمين، أحدهما في كل مستوى، وكلاهما عمودي على خط تقاطع المستويين عند النقطة نفسها.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "source_detail": "الدرس: الزاوية الزوجية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "عمودين على خط تقاطع المستويين، أحدهما في كل مستوى",
+        "مستقيمين متوازيين",
+        "العمود والنائل",
+        "مستقيمين متخالفين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عمودين على خط تقاطع المستويين، أحدهما في كل مستوى"
+    },
+    {
+      "id": "ye-math-u6-l1-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l1",
+      "difficulty": 2,
+      "question_text": "ما قيمة نهاية جا س / س عندما س ← 0؟",
+      "explanation": "من النهايات المثلثية الأساسية: نهـا (جا س / س) عندما س ← 0 تساوي 1.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 154,
+      "source_detail": "الدرس: نهايات واتصال الدوال الخفية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1",
+        "0",
+        "∞",
+        "غير موجودة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1"
+    },
+    {
+      "id": "ye-math-u6-l1-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l1",
+      "difficulty": 2,
+      "question_text": "ما قيمة نهاية (1 - جتا س) / س عندما س ← 0؟",
+      "explanation": "نهـا (1 - جتا س)/س عندما س ← 0 تساوي 0، لأن البسط يقترب من 0 أسرع من المقام.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 154,
+      "source_detail": "الدرس: نهايات واتصال الدوال الخفية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "0",
+        "1",
+        "1/2",
+        "∞"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "0"
+    },
+    {
+      "id": "ye-math-u6-l2-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l2",
+      "difficulty": 2,
+      "question_text": "ما مشتقة الدالة د(س) = س³؟",
+      "explanation": "بقاعدة القوة: مشتقة س^ن تساوي ن س^(ن-1)، فمشتقة س³ تساوي 3س².",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 160,
+      "source_detail": "الدرس: المشتقات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "3س²",
+        "س²",
+        "3س",
+        "س³"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "3س²"
+    },
+    {
+      "id": "ye-math-u6-l2-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l2",
+      "difficulty": 2,
+      "question_text": "ما مشتقة الدالة د(س) = 5س⁴ - 2س؟",
+      "explanation": "مشتقة 5س⁴ هي 20س³، ومشتقة 2س هي 2، فالمشتقة الكلية 20س³ - 2.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 160,
+      "source_detail": "الدرس: المشتقات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "20س³ - 2",
+        "5س³ - 2",
+        "20س³",
+        "4س³ - 2"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "20س³ - 2"
+    },
+    {
+      "id": "ye-math-u6-l3-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l3",
+      "difficulty": 2,
+      "question_text": "ما مشتقة الدالة د(س) = (س² + 1)³؟",
+      "explanation": "بقاعدة السلسلة: مشتقة (ع)^3 هي 3ع² × مشتقة ع، وهنا ع = س²+1 ومشتقتها 2س، فيكون الناتج 3(س²+1)² × 2س = 6س(س²+1)².",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 162,
+      "source_detail": "الدرس: مشتقة تركيب الدالتين (قاعدة السلسلة)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "6س (س² + 1)²",
+        "3 (س² + 1)²",
+        "2س (س² + 1)²",
+        "6س² (س² + 1)"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "6س (س² + 1)²"
+    },
+    {
+      "id": "ye-math-u6-l3-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l3",
+      "difficulty": 3,
+      "question_text": "ما مشتقة الدالة د(س) = √(س² + 1)؟",
+      "explanation": "بقاعدة السلسلة: مشتقة √(ع) هي (1/(2√ع)) × مشتقة ع، وهنا ع = س²+1 ومشتقتها 2س، فيكون الناتج س/√(س²+1).",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 162,
+      "source_detail": "الدرس: مشتقة تركيب الدالتين (قاعدة السلسلة)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "س / √(س² + 1)",
+        "2س / √(س² + 1)",
+        "1 / √(س² + 1)",
+        "س² / √(س² + 1)"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "س / √(س² + 1)"
+    },
+    {
+      "id": "ye-math-u6-l4-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l4",
+      "difficulty": 3,
+      "question_text": "إذا كانت س² + ص² = 25، فما دص/دس؟",
+      "explanation": "بالاشتقاق الضمني بالنسبة إلى س: 2س + 2ص (دص/دس) = 0، ومنها دص/دس = -س/ص.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 166,
+      "source_detail": "الدرس: مشتقة الدالة الضمنية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "-س / ص",
+        "س / ص",
+        "-ص / س",
+        "ص / س"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "-س / ص"
+    },
+    {
+      "id": "ye-math-u6-l4-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l4",
+      "difficulty": 2,
+      "question_text": "إذا كانت س ص = 6، فما دص/دس؟",
+      "explanation": "بالاشتقاق الضمني: ص + س (دص/دس) = 0، ومنها دص/دس = -ص/س.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 166,
+      "source_detail": "الدرس: مشتقة الدالة الضمنية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "-ص / س",
+        "ص / س",
+        "-س / ص",
+        "س / ص"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "-ص / س"
+    },
+    {
+      "id": "ye-math-u6-l5-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l5",
+      "difficulty": 2,
+      "question_text": "ما مشتقة الدالة د(س) = لو س (اللوغاريتم الطبيعي)؟",
+      "explanation": "مشتقة اللوغاريتم الطبيعي لو س تساوي 1/س.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 171,
+      "source_detail": "الدرس: مشتقة الدالة اللوغاريتمية والأسية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1 / س",
+        "س",
+        "لو س",
+        "هـ^س"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1 / س"
+    },
+    {
+      "id": "ye-math-u6-l5-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l5",
+      "difficulty": 2,
+      "question_text": "ما مشتقة الدالة د(س) = هـ^(2س)؟",
+      "explanation": "بقاعدة السلسلة: مشتقة هـ^(2س) تساوي هـ^(2س) مضروبة في مشتقة الأس 2س، أي 2 هـ^(2س).",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 171,
+      "source_detail": "الدرس: مشتقة الدالة اللوغاريتمية والأسية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "2 هـ^(2س)",
+        "هـ^(2س)",
+        "هـ^س",
+        "2س هـ^(2س)"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "2 هـ^(2س)"
+    },
+    {
+      "id": "ye-math-u6-l6-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l6",
+      "difficulty": 2,
+      "question_text": "ما مشتقة جا س؟",
+      "explanation": "مشتقة الدالة المثلثية جا س تساوي جتا س.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 175,
+      "source_detail": "الدرس: مشتقة الدوال الخفية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "جتا س",
+        "-جتا س",
+        "-جا س",
+        "ظا س"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "جتا س"
+    },
+    {
+      "id": "ye-math-u6-l6-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l6",
+      "difficulty": 2,
+      "question_text": "ما مشتقة جتا س؟",
+      "explanation": "مشتقة الدالة المثلثية جتا س تساوي -جا س.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 175,
+      "source_detail": "الدرس: مشتقة الدوال الخفية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "-جا س",
+        "جا س",
+        "جتا س",
+        "-ظا س"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "-جا س"
+    },
+    {
+      "id": "ye-math-u6-l7-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l7",
+      "difficulty": 2,
+      "question_text": "ماذا تنص مبرهنة رول؟",
+      "explanation": "مبرهنة رول: إذا تساوت قيمتا الدالة عند طرفي الفترة مع الاتصال وقابلية الاشتقاق، وُجدت نقطة داخلية تنعدم فيها المشتقة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 182,
+      "source_detail": "الدرس: مبرهنة رول والقيمة المتوسطة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "إذا كانت د متصلة على [أ، ب] وقابلة للاشتقاق على (أ، ب) ود(أ) = د(ب)، فهناك جـ في (أ، ب) حيث دَ(جـ) = 0",
+        "إذا كانت د متصلة فإن مشتقتها صفر دائمًا",
+        "كل دالة لها قيمة قصوى",
+        "مشتقة الدالة الثابتة تساوي 1"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "إذا كانت د متصلة على [أ، ب] وقابلة للاشتقاق على (أ، ب) ود(أ) = د(ب)، فهناك جـ في (أ، ب) حيث دَ(جـ) = 0"
+    },
+    {
+      "id": "ye-math-u6-l7-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l7",
+      "difficulty": 3,
+      "question_text": "طبق مبرهنة القيمة المتوسطة على الدالة د(س) = س² على الفترة [0، 2]، ما قيمة جـ؟",
+      "explanation": "بمبرهنة القيمة المتوسطة: دَ(جـ) = (د(2) - د(0)) / (2 - 0) = 4/2 = 2، ودَ(س) = 2س، فتكون 2جـ = 2، أي جـ = 1.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 182,
+      "source_detail": "الدرس: مبرهنة رول والقيمة المتوسطة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "1",
+        "2",
+        "0",
+        "4"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1"
+    },
+    {
+      "id": "ye-math-u6-l8-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l8",
+      "difficulty": 2,
+      "question_text": "ما النقطة الحرجة للدالة د(س) = س² - 4س + 3؟",
+      "explanation": "النقطة الحرجة حيث تنعدم المشتقة: دَ(س) = 2س - 4 = 0، ومنها س = 2.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 187,
+      "source_detail": "الدرس: القيم القصوى",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "س = 2",
+        "س = 4",
+        "س = -2",
+        "س = 0"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "س = 2"
+    },
+    {
+      "id": "ye-math-u6-l8-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l8",
+      "difficulty": 3,
+      "question_text": "ما القيمة الصغرى للدالة د(س) = س² - 4س + 3؟",
+      "explanation": "النقطة الحرجة س = 2، وقيمة الدالة عندها د(2) = 4 - 8 + 3 = -1، وهي قيمة صغرى لأن المشتقة الثانية موجبة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 187,
+      "source_detail": "الدرس: القيم القصوى",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "-1",
+        "3",
+        "2",
+        "0"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "-1"
+    },
+    {
+      "id": "ye-math-u6-l9-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l9",
+      "difficulty": 2,
+      "question_text": "الدالة د(س) = س³ - 3س تتزايد عندما:",
+      "explanation": "دَ(س) = 3س² - 3، وتكون الدالة متزايدة عندما دَ(س) > 0، أي 3س² > 3، ومنها س < -1 أو س > 1.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 200,
+      "source_detail": "الدرس: دراسة تغير الدالة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "س < -1 أو س > 1",
+        "-1 < س < 1",
+        "س > 0",
+        "س < 0"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "س < -1 أو س > 1"
+    },
+    {
+      "id": "ye-math-u6-l9-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u6",
+      "lesson_id": "math-u6-l9",
+      "difficulty": 3,
+      "question_text": "ما نقطة الانقلاب للدالة د(س) = س³؟",
+      "explanation": "المشتقة الثانية دََ(س) = 6س تنعدم عند س = 0 وتتغير إشارتها حوله، فنقطة الانقلاب (0، 0).",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 200,
+      "source_detail": "الدرس: دراسة تغير الدالة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "(0، 0)",
+        "(1، 1)",
+        "(-1، -1)",
+        "لا توجد نقطة انقلاب"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "(0، 0)"
+    },
+    {
+      "id": "ye-math-u7-l1-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l1",
+      "difficulty": 2,
+      "question_text": "ما قيمة التكامل المحدد ∫ من 0 إلى 1 لـ 2س دس؟",
+      "explanation": "∫₀¹ 2س دس = [س²]₀¹ = 1 - 0 = 1.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 210,
+      "source_detail": "الدرس: التكامل المحدد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1",
+        "2",
+        "0",
+        "1/2"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1"
+    },
+    {
+      "id": "ye-math-u7-l1-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l1",
+      "difficulty": 2,
+      "question_text": "ما قيمة التكامل المحدد ∫ من 1 إلى 2 لـ س² دس؟",
+      "explanation": "∫₁² س² دس = [س³/3]₁² = 8/3 - 1/3 = 7/3.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 210,
+      "source_detail": "الدرس: التكامل المحدد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "7/3",
+        "3",
+        "8/3",
+        "1/3"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "7/3"
+    },
+    {
+      "id": "ye-math-u7-l2-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l2",
+      "difficulty": 2,
+      "question_text": "ما ∫ 3س² دس؟",
+      "explanation": "التكامل غير المحدد لـ 3س² هو س³ + ث، حيث ث ثابت التكامل.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 222,
+      "source_detail": "الدرس: التكامل غير المحدد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "س³ + ث",
+        "3س³ + ث",
+        "س² + ث",
+        "6س + ث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "س³ + ث"
+    },
+    {
+      "id": "ye-math-u7-l2-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l2",
+      "difficulty": 2,
+      "question_text": "ما ∫ (2س + 1) دس؟",
+      "explanation": "∫ 2س دس = س²، و∫ 1 دس = س، فيكون الناتج س² + س + ث.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 222,
+      "source_detail": "الدرس: التكامل غير المحدد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "س² + س + ث",
+        "س² + ث",
+        "2س² + س + ث",
+        "س + ث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "س² + س + ث"
+    },
+    {
+      "id": "ye-math-u7-l3-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l3",
+      "difficulty": 2,
+      "question_text": "ما ∫ 2س (س² + 1)³ دس؟",
+      "explanation": "بالتعويض ع = س² + 1، دع = 2س دس، فيصبح التكامل ∫ ع³ دع = ع⁴/4 + ث = (س²+1)⁴/4 + ث.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 235,
+      "source_detail": "الدرس: التكامل بالتعويض",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "(س² + 1)⁴ / 4 + ث",
+        "(س² + 1)³ / 3 + ث",
+        "2 (س² + 1)⁴ + ث",
+        "(س² + 1)⁴ + ث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "(س² + 1)⁴ / 4 + ث"
+    },
+    {
+      "id": "ye-math-u7-l3-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l3",
+      "difficulty": 3,
+      "question_text": "ما ∫ س / √(س² + 1) دس؟",
+      "explanation": "بالتعويض ع = س² + 1، دع = 2س دس، فيصبح التكامل (1/2)∫ ع^(-1/2) دع = √ع + ث = √(س²+1) + ث.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 235,
+      "source_detail": "الدرس: التكامل بالتعويض",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "√(س² + 1) + ث",
+        "2√(س² + 1) + ث",
+        "1 / √(س² + 1) + ث",
+        "(س² + 1) + ث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "√(س² + 1) + ث"
+    },
+    {
+      "id": "ye-math-u7-l4-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l4",
+      "difficulty": 3,
+      "question_text": "ما ∫ س هـ^س دس؟",
+      "explanation": "بالتجزئة: ع = س، دص = هـ^س دس، فيكون الناتج س هـ^س - ∫ هـ^س دس = س هـ^س - هـ^س + ث = (س-1) هـ^س + ث.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 240,
+      "source_detail": "الدرس: التكامل بالتجزئة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "(س - 1) هـ^س + ث",
+        "س هـ^س + ث",
+        "(س + 1) هـ^س + ث",
+        "هـ^س + ث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "(س - 1) هـ^س + ث"
+    },
+    {
+      "id": "ye-math-u7-l4-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l4",
+      "difficulty": 2,
+      "question_text": "ما قاعدة التكامل بالتجزئة؟",
+      "explanation": "قاعدة التكامل بالتجزئة: ∫ ع دص = ع ص - ∫ ص دع، وتُستخدم عندما يكون المكامل حاصل ضرب دالتين.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 240,
+      "source_detail": "الدرس: التكامل بالتجزئة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "∫ ع دص = ع ص - ∫ ص دع",
+        "∫ ع دص = ع ص + ∫ ص دع",
+        "∫ ع دص = دع × دص",
+        "∫ ع دص = ع / ص"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "∫ ع دص = ع ص - ∫ ص دع"
+    },
+    {
+      "id": "ye-math-u7-l5-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l5",
+      "difficulty": 2,
+      "question_text": "ما ∫ دس / (س - 1)؟",
+      "explanation": "تكامل 1/(س-1) هو اللوغاريتم الطبيعي لمطلق المقام: لو |س - 1| + ث.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 244,
+      "source_detail": "الدرس: تكامل الدوال الكسرية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "لو |س - 1| + ث",
+        "1 / (س - 1)² + ث",
+        "(س - 1) + ث",
+        "لو (س + 1) + ث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لو |س - 1| + ث"
+    },
+    {
+      "id": "ye-math-u7-l5-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l5",
+      "difficulty": 3,
+      "question_text": "ما ∫ دس / (س² - 1)؟",
+      "explanation": "بالكسور الجزئية: 1/(س²-1) = (1/2)[1/(س-1) - 1/(س+1)]، فيكون التكامل (1/2)لو|س-1| - (1/2)لو|س+1| + ث = (1/2)لو|(س-1)/(س+1)| + ث.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 244,
+      "source_detail": "الدرس: تكامل الدوال الكسرية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "(1/2) لو |(س - 1)/(س + 1)| + ث",
+        "لو |س² - 1| + ث",
+        "(1/2) لو |س² - 1| + ث",
+        "لو |(س + 1)/(س - 1)| + ث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "(1/2) لو |(س - 1)/(س + 1)| + ث"
+    },
+    {
+      "id": "ye-math-u7-l6-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l6",
+      "difficulty": 2,
+      "question_text": "ما المساحة المحصورة بين منحنى ص = س² والمحور س من س = 0 إلى س = 2؟",
+      "explanation": "المساحة = ∫₀² س² دس = [س³/3]₀² = 8/3 وحدة مربعة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 248,
+      "source_detail": "الدرس: تطبيقات التكامل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "8/3",
+        "4",
+        "2",
+        "16/3"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "8/3"
+    },
+    {
+      "id": "ye-math-u7-l6-002",
+      "type": "true_false",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l6",
+      "difficulty": 1,
+      "question_text": "التكامل المحدد يُستخدم في حساب المساحات والحجوم الدورانية.",
+      "explanation": "من تطبيقات التكامل المحدد حساب مساحات المناطق المستوية وحجوم الأجسام الدورانية وأطوال المنحنيات.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 248,
+      "source_detail": "الدرس: تطبيقات التكامل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-math-u7-l7-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l7",
+      "difficulty": 3,
+      "question_text": "ما المساحة المحصورة بين منحنيي ص = س² وص = س من س = 0 إلى س = 1؟",
+      "explanation": "المساحة = ∫₀¹ (س - س²) دس = [س²/2 - س³/3]₀¹ = 1/2 - 1/3 = 1/6 وحدة مربعة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 248,
+      "source_detail": "الدرس: حساب مساحات المناطق المستوية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "1/6",
+        "1/2",
+        "1/3",
+        "5/6"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1/6"
+    },
+    {
+      "id": "ye-math-u7-l7-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l7",
+      "difficulty": 2,
+      "question_text": "ما المساحة المحصورة بين منحنى ص = س والمحور س من س = 0 إلى س = 3؟",
+      "explanation": "المساحة = ∫₀³ س دس = [س²/2]₀³ = 9/2 وحدة مربعة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 248,
+      "source_detail": "الدرس: حساب مساحات المناطق المستوية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "9/2",
+        "3",
+        "9",
+        "6"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "9/2"
+    },
+    {
+      "id": "ye-math-u7-l8-001",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l8",
+      "difficulty": 3,
+      "question_text": "ما حجم الجسم الناتج من دوران منحنى ص = س حول المحور س من س = 0 إلى س = 2؟",
+      "explanation": "الحجم = π ∫₀² ص² دس = π ∫₀² س² دس = π × [س³/3]₀² = 8π/3 وحدة مكعبة.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 251,
+      "source_detail": "الدرس: الحجم الدوراني",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 90,
+      "media_ref": null,
+      "options": [
+        "8π/3",
+        "4π",
+        "8π",
+        "2π"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "8π/3"
+    },
+    {
+      "id": "ye-math-u7-l8-002",
+      "type": "mcq",
+      "subject_id": "math",
+      "unit_id": "math-u7",
+      "lesson_id": "math-u7-l8",
+      "difficulty": 2,
+      "question_text": "ما صيغة حجم الجسم الدوراني الناتج من دوران منحنى ص = د(س) حول المحور س من أ إلى ب؟",
+      "explanation": "حجم الجسم الدوراني حول المحور س يساوي π مضروبة في التكامل المحدد لمربع الدالة: ح = π ∫ من أ إلى ب ص² دس.",
+      "source": "كتاب الرياضيات — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 251,
+      "source_detail": "الدرس: الحجم الدوراني",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "π ∫ ص² دس",
+        "∫ ص دس",
+        "2π ∫ ص دس",
+        "π ∫ ص دس"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "π ∫ ص² دس"
+    }
+  ]
+}

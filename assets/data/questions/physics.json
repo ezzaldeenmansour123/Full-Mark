@@ -1,0 +1,4862 @@
+{
+  "format": "abqariya-content-pack",
+  "version": 1,
+  "pack": {
+    "id": "ye-physics-3sec-2027",
+    "title_ar": "أسئلة الفيزياء — ثالث ثانوي علمي (صنعاء 2027)",
+    "title_en": "Physics questions — Grade 12 (Sanaa 2027)",
+    "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+    "is_demo": false,
+    "curriculum_year": "2025-2026",
+    "created_at": "2026-11-25"
+  },
+  "subjects": [
+    {
+      "id": "physics",
+      "name_ar": "الفيزياء",
+      "name_en": "Physics",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027"
+    }
+  ],
+  "units": [
+    {
+      "id": "physics-u1",
+      "subject_id": "physics",
+      "title_ar": "كمية التحرك والمقذوفات",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 9,
+      "sort_order": 1
+    },
+    {
+      "id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "التيار المتردد (المتناوب)",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 29,
+      "sort_order": 2
+    },
+    {
+      "id": "physics-u3",
+      "subject_id": "physics",
+      "title_ar": "الإلكترونيات",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 61,
+      "sort_order": 3
+    },
+    {
+      "id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "الأجهزة الإلكترونية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 85,
+      "sort_order": 4
+    },
+    {
+      "id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "الفيزياء الذرية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 114,
+      "sort_order": 5
+    },
+    {
+      "id": "physics-u6",
+      "subject_id": "physics",
+      "title_ar": "الإشعاع والمادة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 144,
+      "sort_order": 6
+    },
+    {
+      "id": "physics-u7",
+      "subject_id": "physics",
+      "title_ar": "الفيزياء النووية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 173,
+      "sort_order": 7
+    },
+    {
+      "id": "physics-u8",
+      "subject_id": "physics",
+      "title_ar": "الطاقة الشمسية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 185,
+      "sort_order": 8
+    },
+    {
+      "id": "physics-u9",
+      "subject_id": "physics",
+      "title_ar": "الفيزياء الكونية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 198,
+      "sort_order": 9
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-u1-l1",
+      "unit_id": "physics-u1",
+      "subject_id": "physics",
+      "title_ar": "كمية التحرك",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 10,
+      "source_detail": "الدرس: كمية التحرك",
+      "sort_order": 1
+    },
+    {
+      "id": "physics-u1-l2",
+      "unit_id": "physics-u1",
+      "subject_id": "physics",
+      "title_ar": "التصادم في بعدين",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس: التصادم في بعدين",
+      "sort_order": 2
+    },
+    {
+      "id": "physics-u1-l3",
+      "unit_id": "physics-u1",
+      "subject_id": "physics",
+      "title_ar": "الصواريخ ذاتية الدفع",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس: الصواريخ ذاتية الدفع",
+      "sort_order": 3
+    },
+    {
+      "id": "physics-u1-l4",
+      "unit_id": "physics-u1",
+      "subject_id": "physics",
+      "title_ar": "سرعة الإفلات من الجاذبية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 17,
+      "source_detail": "الدرس: سرعة الإفلات من الجاذبية",
+      "sort_order": 4
+    },
+    {
+      "id": "physics-u1-l5",
+      "unit_id": "physics-u1",
+      "subject_id": "physics",
+      "title_ar": "حركة الأقمار الصناعية حول الأرض",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 19,
+      "source_detail": "الدرس: حركة الأقمار الصناعية حول الأرض",
+      "sort_order": 5
+    },
+    {
+      "id": "physics-u1-l6",
+      "unit_id": "physics-u1",
+      "subject_id": "physics",
+      "title_ar": "كمية التحرك الزاوي",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 22,
+      "source_detail": "الدرس: كمية التحرك الزاوي",
+      "sort_order": 6
+    },
+    {
+      "id": "physics-u1-l7",
+      "unit_id": "physics-u1",
+      "subject_id": "physics",
+      "title_ar": "حركة المقذوفات",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 23,
+      "source_detail": "الدرس: حركة المقذوفات",
+      "sort_order": 7
+    },
+    {
+      "id": "physics-u1-l8",
+      "unit_id": "physics-u1",
+      "subject_id": "physics",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 8
+    },
+    {
+      "id": "physics-u2-l1",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "التيار المتردد",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 30,
+      "source_detail": "الدرس: التيار المتردد",
+      "sort_order": 1
+    },
+    {
+      "id": "physics-u2-l10",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "دائرة الرنين",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 51,
+      "source_detail": "الدرس: دائرة الرنين",
+      "sort_order": 10
+    },
+    {
+      "id": "physics-u2-l11",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "الدائرة المهتزة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 52,
+      "source_detail": "الدرس: الدائرة المهتزة",
+      "sort_order": 11
+    },
+    {
+      "id": "physics-u2-l12",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "المفاعلة الحثية للتيار المتردد في عدة ملفات متصلة معاً",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 54,
+      "source_detail": "الدرس: المفاعلة الحثية للتيار المتردد في عدة ملفات متصلة معاً",
+      "sort_order": 12
+    },
+    {
+      "id": "physics-u2-l13",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 58,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 13
+    },
+    {
+      "id": "physics-u2-l2",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "مولد التيار المتردد (الدينامو)",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 32,
+      "source_detail": "الدرس: مولد التيار المتردد (الدينامو)",
+      "sort_order": 2
+    },
+    {
+      "id": "physics-u2-l3",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "الأمبير الحراري",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 37,
+      "source_detail": "الدرس: الأمبير الحراري",
+      "sort_order": 3
+    },
+    {
+      "id": "physics-u2-l4",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "تطبيقات قانون أوم في دوائر التيار المتردد",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 39,
+      "source_detail": "الدرس: تطبيقات قانون أوم في دوائر التيار المتردد",
+      "sort_order": 4
+    },
+    {
+      "id": "physics-u2-l5",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "مكثف متصل بمصدر تيار متردد",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 40,
+      "source_detail": "الدرس: مكثف متصل بمصدر تيار متردد",
+      "sort_order": 5
+    },
+    {
+      "id": "physics-u2-l6",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "المفاعلة السعوية للمكثف",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس: المفاعلة السعوية للمكثف",
+      "sort_order": 6
+    },
+    {
+      "id": "physics-u2-l7",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "ملف حثي متصل بمصدر تيار متردد",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 44,
+      "source_detail": "الدرس: ملف حثي متصل بمصدر تيار متردد",
+      "sort_order": 7
+    },
+    {
+      "id": "physics-u2-l8",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "المفاعلة الحثية للملف",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 46,
+      "source_detail": "الدرس: المفاعلة الحثية للملف",
+      "sort_order": 8
+    },
+    {
+      "id": "physics-u2-l9",
+      "unit_id": "physics-u2",
+      "subject_id": "physics",
+      "title_ar": "مقاومة أومية وملف حثي ومكثف متصلة معاً على التوالي بمصدر تيار كهربائي متردد",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس: مقاومة أومية وملف حثي ومكثف متصلة معاً على التوالي بمصدر تيار كهربائي متردد",
+      "sort_order": 9
+    },
+    {
+      "id": "physics-u3-l1",
+      "unit_id": "physics-u3",
+      "subject_id": "physics",
+      "title_ar": "أشباه الموصلات",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: أشباه الموصلات",
+      "sort_order": 1
+    },
+    {
+      "id": "physics-u3-l2",
+      "unit_id": "physics-u3",
+      "subject_id": "physics",
+      "title_ar": "أشباه الموصلات النقية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: أشباه الموصلات النقية",
+      "sort_order": 2
+    },
+    {
+      "id": "physics-u3-l3",
+      "unit_id": "physics-u3",
+      "subject_id": "physics",
+      "title_ar": "أشباه الموصلات غير النقية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 64,
+      "source_detail": "الدرس: أشباه الموصلات غير النقية",
+      "sort_order": 3
+    },
+    {
+      "id": "physics-u3-l4",
+      "unit_id": "physics-u3",
+      "subject_id": "physics",
+      "title_ar": "الوصلة الثنائية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 67,
+      "source_detail": "الدرس: الوصلة الثنائية",
+      "sort_order": 4
+    },
+    {
+      "id": "physics-u3-l5",
+      "unit_id": "physics-u3",
+      "subject_id": "physics",
+      "title_ar": "استخدام الوصلة الثنائية في تقويم التيار المتردد",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 70,
+      "source_detail": "الدرس: استخدام الوصلة الثنائية في تقويم التيار المتردد",
+      "sort_order": 5
+    },
+    {
+      "id": "physics-u3-l6",
+      "unit_id": "physics-u3",
+      "subject_id": "physics",
+      "title_ar": "الترانزستور",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 71,
+      "source_detail": "الدرس: الترانزستور",
+      "sort_order": 6
+    },
+    {
+      "id": "physics-u3-l7",
+      "unit_id": "physics-u3",
+      "subject_id": "physics",
+      "title_ar": "استخدامات الترانزستور",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس: استخدامات الترانزستور",
+      "sort_order": 7
+    },
+    {
+      "id": "physics-u3-l8",
+      "unit_id": "physics-u3",
+      "subject_id": "physics",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 80,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 8
+    },
+    {
+      "id": "physics-u4-l1",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "التوصيل الكهربائي في الغازات",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 87,
+      "source_detail": "الدرس: التوصيل الكهربائي في الغازات",
+      "sort_order": 1
+    },
+    {
+      "id": "physics-u4-l10",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "التلفاز الملون",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 105,
+      "source_detail": "الدرس: التلفاز الملون",
+      "sort_order": 10
+    },
+    {
+      "id": "physics-u4-l11",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 107,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 11
+    },
+    {
+      "id": "physics-u4-l2",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "أنبوبة أشعة الكاثود",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 89,
+      "source_detail": "الدرس: أنبوبة أشعة الكاثود",
+      "sort_order": 2
+    },
+    {
+      "id": "physics-u4-l3",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "كاشف الذبذبات (الأوسيلوسكوب)",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 90,
+      "source_detail": "الدرس: كاشف الذبذبات (الأوسيلوسكوب)",
+      "sort_order": 3
+    },
+    {
+      "id": "physics-u4-l4",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "الرادار",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 92,
+      "source_detail": "الدرس: الرادار",
+      "sort_order": 4
+    },
+    {
+      "id": "physics-u4-l5",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "إرسال واستقبال الموجات اللاسلكية (الموجات الراديوية)",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 95,
+      "source_detail": "الدرس: إرسال واستقبال الموجات اللاسلكية (الموجات الراديوية)",
+      "sort_order": 5
+    },
+    {
+      "id": "physics-u4-l6",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "إرسال الموجات اللاسلكية (الإرسال الإذاعي)",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 95,
+      "source_detail": "الدرس: إرسال الموجات اللاسلكية (الإرسال الإذاعي)",
+      "sort_order": 6
+    },
+    {
+      "id": "physics-u4-l7",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "استقبال الموجات اللاسلكية (الاستقبال الإذاعي)",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 96,
+      "source_detail": "الدرس: استقبال الموجات اللاسلكية (الاستقبال الإذاعي)",
+      "sort_order": 7
+    },
+    {
+      "id": "physics-u4-l8",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "التلفاز (التلفزيون)",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 99,
+      "source_detail": "الدرس: التلفاز (التلفزيون)",
+      "sort_order": 8
+    },
+    {
+      "id": "physics-u4-l9",
+      "unit_id": "physics-u4",
+      "subject_id": "physics",
+      "title_ar": "عملية إرسال الصور تلفازياً",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 101,
+      "source_detail": "الدرس: عملية إرسال الصور تلفازياً",
+      "sort_order": 9
+    },
+    {
+      "id": "physics-u5-l1",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "نظرية دالتون الذرية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 115,
+      "source_detail": "الدرس: نظرية دالتون الذرية",
+      "sort_order": 1
+    },
+    {
+      "id": "physics-u5-l10",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "مخطط مستويات الطاقة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 131,
+      "source_detail": "الدرس: مخطط مستويات الطاقة",
+      "sort_order": 10
+    },
+    {
+      "id": "physics-u5-l11",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 142,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 11
+    },
+    {
+      "id": "physics-u5-l2",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "نموذج طومسون",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 115,
+      "source_detail": "الدرس: نموذج طومسون",
+      "sort_order": 2
+    },
+    {
+      "id": "physics-u5-l3",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "إثارة العناصر كيميائياً",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 116,
+      "source_detail": "الدرس: إثارة العناصر كيميائياً",
+      "sort_order": 3
+    },
+    {
+      "id": "physics-u5-l4",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "طيف المصادر الضوئية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 117,
+      "source_detail": "الدرس: طيف المصادر الضوئية",
+      "sort_order": 4
+    },
+    {
+      "id": "physics-u5-l5",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "طيف ذرة الهيدروجين",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 119,
+      "source_detail": "الدرس: طيف ذرة الهيدروجين",
+      "sort_order": 5
+    },
+    {
+      "id": "physics-u5-l6",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "نموذج رذرفورد",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 121,
+      "source_detail": "الدرس: نموذج رذرفورد",
+      "sort_order": 6
+    },
+    {
+      "id": "physics-u5-l7",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "إشعاع الجسم الأسود",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 123,
+      "source_detail": "الدرس: إشعاع الجسم الأسود",
+      "sort_order": 7
+    },
+    {
+      "id": "physics-u5-l8",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "مبدأ بلانك في تكميم الطاقة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 124,
+      "source_detail": "الدرس: مبدأ بلانك في تكميم الطاقة",
+      "sort_order": 8
+    },
+    {
+      "id": "physics-u5-l9",
+      "unit_id": "physics-u5",
+      "subject_id": "physics",
+      "title_ar": "نظرية بور لذرة الهيدروجين",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 125,
+      "source_detail": "الدرس: نظرية بور لذرة الهيدروجين",
+      "sort_order": 9
+    },
+    {
+      "id": "physics-u6-l1",
+      "unit_id": "physics-u6",
+      "subject_id": "physics",
+      "title_ar": "الظاهرة الكهروضوئية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 145,
+      "source_detail": "الدرس: الظاهرة الكهروضوئية",
+      "sort_order": 1
+    },
+    {
+      "id": "physics-u6-l2",
+      "unit_id": "physics-u6",
+      "subject_id": "physics",
+      "title_ar": "الخلية الكهروضوئية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 146,
+      "source_detail": "الدرس: الخلية الكهروضوئية",
+      "sort_order": 2
+    },
+    {
+      "id": "physics-u6-l3",
+      "unit_id": "physics-u6",
+      "subject_id": "physics",
+      "title_ar": "تجربة ميليكان لدراسة الظاهرة الكهروضوئية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "source_detail": "الدرس: تجربة ميليكان لدراسة الظاهرة الكهروضوئية",
+      "sort_order": 3
+    },
+    {
+      "id": "physics-u6-l4",
+      "unit_id": "physics-u6",
+      "subject_id": "physics",
+      "title_ar": "تفسير أينشتاين (النظرية الكمية)",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 152,
+      "source_detail": "الدرس: تفسير أينشتاين (النظرية الكمية)",
+      "sort_order": 4
+    },
+    {
+      "id": "physics-u6-l5",
+      "unit_id": "physics-u6",
+      "subject_id": "physics",
+      "title_ar": "استخدامات الخلية الكهروضوئية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 156,
+      "source_detail": "الدرس: استخدامات الخلية الكهروضوئية",
+      "sort_order": 5
+    },
+    {
+      "id": "physics-u6-l6",
+      "unit_id": "physics-u6",
+      "subject_id": "physics",
+      "title_ar": "الأشعة السينية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 157,
+      "source_detail": "الدرس: الأشعة السينية",
+      "sort_order": 6
+    },
+    {
+      "id": "physics-u6-l7",
+      "unit_id": "physics-u6",
+      "subject_id": "physics",
+      "title_ar": "الليزر",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 163,
+      "source_detail": "الدرس: الليزر",
+      "sort_order": 7
+    },
+    {
+      "id": "physics-u6-l8",
+      "unit_id": "physics-u6",
+      "subject_id": "physics",
+      "title_ar": "جهاز ليزر الياقوت",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 167,
+      "source_detail": "الدرس: جهاز ليزر الياقوت",
+      "sort_order": 8
+    },
+    {
+      "id": "physics-u6-l9",
+      "unit_id": "physics-u6",
+      "subject_id": "physics",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 171,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 9
+    },
+    {
+      "id": "physics-u7-l1",
+      "unit_id": "physics-u7",
+      "subject_id": "physics",
+      "title_ar": "تركيب النواة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 174,
+      "source_detail": "الدرس: تركيب النواة",
+      "sort_order": 1
+    },
+    {
+      "id": "physics-u7-l2",
+      "unit_id": "physics-u7",
+      "subject_id": "physics",
+      "title_ar": "النشاط الإشعاعي",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 175,
+      "source_detail": "الدرس: النشاط الإشعاعي",
+      "sort_order": 2
+    },
+    {
+      "id": "physics-u7-l3",
+      "unit_id": "physics-u7",
+      "subject_id": "physics",
+      "title_ar": "التحلل الإشعاعي وعمر النصف",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 179,
+      "source_detail": "الدرس: التحلل الإشعاعي وعمر النصف",
+      "sort_order": 3
+    },
+    {
+      "id": "physics-u7-l4",
+      "unit_id": "physics-u7",
+      "subject_id": "physics",
+      "title_ar": "طاقة الربط النووية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 180,
+      "source_detail": "الدرس: طاقة الربط النووية",
+      "sort_order": 4
+    },
+    {
+      "id": "physics-u7-l5",
+      "unit_id": "physics-u7",
+      "subject_id": "physics",
+      "title_ar": "التفاعل المتسلسل",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 181,
+      "source_detail": "الدرس: التفاعل المتسلسل",
+      "sort_order": 5
+    },
+    {
+      "id": "physics-u7-l6",
+      "unit_id": "physics-u7",
+      "subject_id": "physics",
+      "title_ar": "المفاعلات النووية السلمية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 182,
+      "source_detail": "الدرس: المفاعلات النووية السلمية",
+      "sort_order": 6
+    },
+    {
+      "id": "physics-u7-l7",
+      "unit_id": "physics-u7",
+      "subject_id": "physics",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 183,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 7
+    },
+    {
+      "id": "physics-u8-l1",
+      "unit_id": "physics-u8",
+      "subject_id": "physics",
+      "title_ar": "الطاقة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 186,
+      "source_detail": "الدرس: الطاقة",
+      "sort_order": 1
+    },
+    {
+      "id": "physics-u8-l2",
+      "unit_id": "physics-u8",
+      "subject_id": "physics",
+      "title_ar": "أعظم مصدر للطاقة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 187,
+      "source_detail": "الدرس: أعظم مصدر للطاقة",
+      "sort_order": 2
+    },
+    {
+      "id": "physics-u8-l3",
+      "unit_id": "physics-u8",
+      "subject_id": "physics",
+      "title_ar": "أنواع الإشعاعات الشمسية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 189,
+      "source_detail": "الدرس: أنواع الإشعاعات الشمسية",
+      "sort_order": 3
+    },
+    {
+      "id": "physics-u8-l4",
+      "unit_id": "physics-u8",
+      "subject_id": "physics",
+      "title_ar": "تطبيقات لاستغلال الطاقة الشمسية في الحياة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 192,
+      "source_detail": "الدرس: تطبيقات لاستغلال الطاقة الشمسية في الحياة",
+      "sort_order": 4
+    },
+    {
+      "id": "physics-u8-l5",
+      "unit_id": "physics-u8",
+      "subject_id": "physics",
+      "title_ar": "توليد الطاقة الحرارية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 193,
+      "source_detail": "الدرس: توليد الطاقة الحرارية",
+      "sort_order": 5
+    },
+    {
+      "id": "physics-u8-l6",
+      "unit_id": "physics-u8",
+      "subject_id": "physics",
+      "title_ar": "توليد الطاقة الكهربائية",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 194,
+      "source_detail": "الدرس: توليد الطاقة الكهربائية",
+      "sort_order": 6
+    },
+    {
+      "id": "physics-u8-l7",
+      "unit_id": "physics-u8",
+      "subject_id": "physics",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 197,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 7
+    },
+    {
+      "id": "physics-u9-l1",
+      "unit_id": "physics-u9",
+      "subject_id": "physics",
+      "title_ar": "الكون",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 199,
+      "source_detail": "الدرس: الكون",
+      "sort_order": 1
+    },
+    {
+      "id": "physics-u9-l2",
+      "unit_id": "physics-u9",
+      "subject_id": "physics",
+      "title_ar": "الكون الممتد",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 201,
+      "source_detail": "الدرس: الكون الممتد",
+      "sort_order": 2
+    },
+    {
+      "id": "physics-u9-l3",
+      "unit_id": "physics-u9",
+      "subject_id": "physics",
+      "title_ar": "المجرات",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 202,
+      "source_detail": "الدرس: المجرات",
+      "sort_order": 3
+    },
+    {
+      "id": "physics-u9-l4",
+      "unit_id": "physics-u9",
+      "subject_id": "physics",
+      "title_ar": "النجوم",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 204,
+      "source_detail": "الدرس: النجوم",
+      "sort_order": 4
+    },
+    {
+      "id": "physics-u9-l5",
+      "unit_id": "physics-u9",
+      "subject_id": "physics",
+      "title_ar": "نشوء وتطور النجوم",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 205,
+      "source_detail": "الدرس: نشوء وتطور النجوم",
+      "sort_order": 5
+    },
+    {
+      "id": "physics-u9-l6",
+      "unit_id": "physics-u9",
+      "subject_id": "physics",
+      "title_ar": "المسافات بين النجوم",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 208,
+      "source_detail": "الدرس: المسافات بين النجوم",
+      "sort_order": 6
+    },
+    {
+      "id": "physics-u9-l7",
+      "unit_id": "physics-u9",
+      "subject_id": "physics",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 210,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 7
+    }
+  ],
+  "questions": [
+    {
+      "id": "ye-physics-u1-l1-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l1",
+      "difficulty": 1,
+      "question_text": "ما تعريف كمية التحرك الخطي لجسم متحرك؟",
+      "explanation": "كمية التحرك الخطي تساوي كتلة الجسم مضروبة في سرعته (ك = كتلة × سرعة)، وهي كمية متجهة اتجاهها باتجاه السرعة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 10,
+      "source_detail": "الدرس: كمية التحرك",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "حاصل ضرب كتلة الجسم في سرعته",
+        "حاصل قسمة كتلة الجسم على سرعته",
+        "حاصل جمع كتلة الجسم وسرعته",
+        "حاصل ضرب كتلة الجسم في تسارعه"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "حاصل ضرب كتلة الجسم في سرعته"
+    },
+    {
+      "id": "ye-physics-u1-l1-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l1",
+      "difficulty": 2,
+      "question_text": "جسم كتلته 2 كجم يتحرك بسرعة 5 م/ث، فما مقدار كمية تحركه؟",
+      "explanation": "كمية التحرك = الكتلة × السرعة = 2 × 5 = 10 كجم.م/ث.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 10,
+      "source_detail": "الدرس: كمية التحرك",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "10 كجم.م/ث",
+        "2.5 كجم.م/ث",
+        "7 كجم.م/ث",
+        "25 كجم.م/ث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "10 كجم.م/ث"
+    },
+    {
+      "id": "ye-physics-u1-l2-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l2",
+      "difficulty": 1,
+      "question_text": "في التصادم المرن بين جسمين، ماذا يبقى محفوظاً؟",
+      "explanation": "في التصادم المرن تبقى كمية التحرك الكلية محفوظة، ويبقى مجموع الطاقة الحركية قبل التصادم مساوياً لمجموعها بعده.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس: التصادم في بعدين",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "كمية التحرك والطاقة الحركية معاً",
+        "الطاقة الحركية فقط",
+        "كمية التحرك فقط دون الطاقة",
+        "لا شيء منهما"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "كمية التحرك والطاقة الحركية معاً"
+    },
+    {
+      "id": "ye-physics-u1-l2-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l2",
+      "difficulty": 2,
+      "question_text": "في التصادم غير المرن يبقى مجموع الطاقة الحركية للأجسام المتصادمة بعد التصادم مساوياً لمجموعها قبله.",
+      "explanation": "في التصادم غير المرن لا يبقى مجموع الطاقة الحركية محفوظاً (يتحول جزء منها إلى صور أخرى)، بينما تبقى كمية التحرك محفوظة في الحالتين.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس: التصادم في بعدين",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "خطأ"
+    },
+    {
+      "id": "ye-physics-u1-l3-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l3",
+      "difficulty": 1,
+      "question_text": "على أي مبدأ يعتمد دفع الصاروخ ذاتي الدفع؟",
+      "explanation": "يدفع الصاروخ نفسه بقذف الغازات بسرعة كبيرة إلى الخلف، فتكتسب الغازات كمية تحرك في اتجاه، ويكتسب الصاروخ كمية تحرك مساوية في الاتجاه المعاكس.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس: الصواريخ ذاتية الدفع",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "حفظ كمية التحرك",
+        "حفظ الطاقة الحركية فقط",
+        "قانون أوم",
+        "الطفو"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "حفظ كمية التحرك"
+    },
+    {
+      "id": "ye-physics-u1-l3-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l3",
+      "difficulty": 2,
+      "question_text": "يستطيع الصاروخ ذاتي الدفع أن يتحرك في الفضاء الخارجي الخالي من الهواء.",
+      "explanation": "دفع الصاروخ لا يحتاج إلى هواء يدفع عليه؛ بل يعتمد على قذف الغازات، لذا يعمل في الفراغ.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس: الصواريخ ذاتية الدفع",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u1-l4-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l4",
+      "difficulty": 1,
+      "question_text": "ما المقصود بسرعة الإفلات من الجاذبية؟",
+      "explanation": "سرعة الإفلات هي أقل سرعة ابتدائية تمكّن الجسم من الإفلات نهائياً من مجال جاذبية الكوكب دون أن يعود إليه.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 17,
+      "source_detail": "الدرس: سرعة الإفلات من الجاذبية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أقل سرعة يجب أن ينطلق بها الجسم ليفلت من جاذبية الكوكب ولا يعود إليه",
+        "أكبر سرعة يمكن أن يتحرك بها جسم على سطح الأرض",
+        "سرعة دوران الكوكب حول نفسه",
+        "سرعة سقوط الأجسام نحو الأرض"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أقل سرعة يجب أن ينطلق بها الجسم ليفلت من جاذبية الكوكب ولا يعود إليه"
+    },
+    {
+      "id": "ye-physics-u1-l4-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l4",
+      "difficulty": 3,
+      "question_text": "تبلغ سرعة الإفلات من سطح الأرض تقريباً:",
+      "explanation": "سرعة الإفلات من الأرض نحو 11.2 كم/ث، وهي أكبر من السرعة المدارية الأولى (نحو 7.9 كم/ث).",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 17,
+      "source_detail": "الدرس: سرعة الإفلات من الجاذبية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "11.2 كم/ث",
+        "7.9 كم/ث",
+        "3.1 كم/ث",
+        "1.6 كم/ث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "11.2 كم/ث"
+    },
+    {
+      "id": "ye-physics-u1-l5-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l5",
+      "difficulty": 1,
+      "question_text": "ما القوة التي تحفظ القمر الصناعي في مداره حول الأرض؟",
+      "explanation": "الجاذبية الأرضية تعمل قوة جذب مركزية تحفظ القمر في مداره الدائري حول الأرض.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 19,
+      "source_detail": "الدرس: حركة الأقمار الصناعية حول الأرض",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "قوة الجاذبية الأرضية",
+        "قوة الطفو",
+        "قوة الاحتكاك مع الهواء",
+        "الدفع النفاث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "قوة الجاذبية الأرضية"
+    },
+    {
+      "id": "ye-physics-u1-l5-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l5",
+      "difficulty": 2,
+      "question_text": "القمر الصناعي الثابت بالنسبة للأرض (الجغرافي) يتميز بأن:",
+      "explanation": "القمر الجغرافي يكمل دورة حول الأرض في 24 ساعة في مستوى خط الاستواء، فيبدو ثابتاً فوق نقطة واحدة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 19,
+      "source_detail": "الدرس: حركة الأقمار الصناعية حول الأرض",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "دورته حول الأرض 24 ساعة ويدور في مستوى خط الاستواء",
+        "يدور حول القطبين فقط",
+        "سرعته صفر بالنسبة للأرض دائماً لأنه ساكن",
+        "يبعد عن الأرض بضع مئات من الأمتار"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "دورته حول الأرض 24 ساعة ويدور في مستوى خط الاستواء"
+    },
+    {
+      "id": "ye-physics-u1-l6-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l6",
+      "difficulty": 1,
+      "question_text": "ما تعريف كمية التحرك الزاوي لجسم يدور؟",
+      "explanation": "كمية التحرك الزاوي تساوي عزم القصور الذاتي مضروباً في السرعة الزاوية (L = Iω).",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 22,
+      "source_detail": "الدرس: كمية التحرك الزاوي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "حاصل ضرب عزم القصور الذاتي في السرعة الزاوية",
+        "حاصل ضرب الكتلة في السرعة الخطية",
+        "حاصل ضرب القوة في الزمن",
+        "حاصل ضرب العزم في نصف القطر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "حاصل ضرب عزم القصور الذاتي في السرعة الزاوية"
+    },
+    {
+      "id": "ye-physics-u1-l6-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l6",
+      "difficulty": 2,
+      "question_text": "تبقى كمية التحرك الزاوي محفوظة عندما لا يؤثر عزم خارجي على الجسم الدوار.",
+      "explanation": "عند غياب العزم الخارجي تبقى كمية التحرك الزاوي ثابتة، فيزداد عزم القصور الذاتي فتقل السرعة الزاوية والعكس.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 22,
+      "source_detail": "الدرس: كمية التحرك الزاوي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u1-l7-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l7",
+      "difficulty": 1,
+      "question_text": "في حركة المقذوف (بإهمال مقاومة الهواء)، كيف تتغير السرعة الأفقية؟",
+      "explanation": "لا توجد قوة أفقية تؤثر في المقذوف، فتبقى مركبة السرعة الأفقية ثابتة، بينما تتغير المركبة الرأسية بتأثير الجاذبية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 23,
+      "source_detail": "الدرس: حركة المقذوفات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تبقى ثابتة",
+        "تزداد بانتظام",
+        "تتناقص بانتظام",
+        "تصبح صفراً عند أعلى نقطة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تبقى ثابتة"
+    },
+    {
+      "id": "ye-physics-u1-l7-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l7",
+      "difficulty": 2,
+      "question_text": "عند أي زاوية قذف يكون المدى الأفقي للمقذوف أكبر ما يمكن (عند ثبات سرعة القذف)؟",
+      "explanation": "المدى الأفقي يبلغ أقصى قيمة عند زاوية قذف 45 درجة، وعند زاويتي قذف متتامتين يكون المدى متساوياً.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 23,
+      "source_detail": "الدرس: حركة المقذوفات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "45 درجة",
+        "30 درجة",
+        "60 درجة",
+        "90 درجة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "45 درجة"
+    },
+    {
+      "id": "ye-physics-u1-l8-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l8",
+      "difficulty": 3,
+      "question_text": "جسمان كتلتاهما متساويتان، سرعة الأول ضعف سرعة الثاني، فكمية تحرك الأول تساوي:",
+      "explanation": "كمية التحرك تتناسب طردياً مع السرعة عند ثبات الكتلة، فإذا تضاعفت السرعة تضاعفت كمية التحرك.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ضعف كمية تحرك الثاني",
+        "كمية تحرك الثاني نفسها",
+        "نصف كمية تحرك الثاني",
+        "أربعة أمثال كمية تحرك الثاني"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ضعف كمية تحرك الثاني"
+    },
+    {
+      "id": "ye-physics-u1-l8-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u1",
+      "lesson_id": "physics-u1-l8",
+      "difficulty": 2,
+      "question_text": "في التصادم المرن تتحول كل الطاقة الحركية إلى حرارة وصوت.",
+      "explanation": "في التصادم المرن تبقى الطاقة الحركية محفوظة ولا تتحول إلى صور أخرى، بخلاف التصادم غير المرن.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "خطأ"
+    },
+    {
+      "id": "ye-physics-u2-l1-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l1",
+      "difficulty": 1,
+      "question_text": "ما التيار الكهربائي المتردد؟",
+      "explanation": "التيار المتردد تتغير شدته واتجاهه مع الزمن دورياً، بخلاف التيار المستمر الثابت الشدة والاتجاه.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 30,
+      "source_detail": "الدرس: التيار المتردد",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تيار تتغير شدته واتجاهه مع الزمن",
+        "تيار ثابت الشدة والاتجاه",
+        "تيار شدته ثابتة واتجاهه متغير فقط",
+        "تيار لا يمر إلا في المكثفات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تيار تتغير شدته واتجاهه مع الزمن"
+    },
+    {
+      "id": "ye-physics-u2-l1-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l1",
+      "difficulty": 2,
+      "question_text": "أي مما يأتي من أنواع التيار المتردد؟",
+      "explanation": "من أنواع التيار المتردد: الجيبي (الأكثر شيوعاً)، والمنشاري، والمثلثي، والرباعي.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 30,
+      "source_detail": "الدرس: التيار المتردد",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الجيبي والمنشاري والمثلثي والرباعي",
+        "المستمر والمتناوب فقط",
+        "الحراري والضوئي",
+        "الساكن والمتحرك"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الجيبي والمنشاري والمثلثي والرباعي"
+    },
+    {
+      "id": "ye-physics-u2-l10-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l10",
+      "difficulty": 3,
+      "question_text": "متى تحدث حالة الرنين في دائرة (مقاومة وملف ومكثف) على التوالي؟",
+      "explanation": "عند الرنين تتساوى المفاعلتان فيلغي كل منهما تأثير الآخر، فتكون المعاوقة مساوية للمقاومة الأومية فقط.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 51,
+      "source_detail": "الدرس: دائرة الرنين",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "عندما تتساوى المفاعلة الحثية مع المفاعلة السعوية",
+        "عندما تكون المقاومة صفراً",
+        "عندما تكون المفاعلة الحثية صفراً",
+        "عندما يكون التردد صفراً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عندما تتساوى المفاعلة الحثية مع المفاعلة السعوية"
+    },
+    {
+      "id": "ye-physics-u2-l10-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l10",
+      "difficulty": 2,
+      "question_text": "في حالة الرنين تكون شدة التيار في الدائرة:",
+      "explanation": "عند الرنين تقل المعاوقة إلى أقل قيمة (تساوي المقاومة)، فتبلغ شدة التيار أكبر قيمة ممكنة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 51,
+      "source_detail": "الدرس: دائرة الرنين",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أكبر ما يمكن",
+        "أصغر ما يمكن",
+        "صفراً",
+        "مساوية للجهد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أكبر ما يمكن"
+    },
+    {
+      "id": "ye-physics-u2-l11-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l11",
+      "difficulty": 1,
+      "question_text": "مم تتكون الدائرة المهتزة؟",
+      "explanation": "الدائرة المهتزة دائرة (ملف ومكثف) تتبادل فيها الطاقة بين المجال الكهربائي للمكثف والمجال المغناطيسي للملف.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 52,
+      "source_detail": "الدرس: الدائرة المهتزة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من ملف حثي ومكثف",
+        "من مقاومة وبطارية فقط",
+        "من مكثفين فقط",
+        "من ملفين فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من ملف حثي ومكثف"
+    },
+    {
+      "id": "ye-physics-u2-l11-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l11",
+      "difficulty": 2,
+      "question_text": "في الدائرة المهتزة المثالية تتبادل الطاقة باستمرار بين المكثف والملف دون فقدان.",
+      "explanation": "في الدائرة المثالية (بلا مقاومة) تتحول طاقة المكثف إلى طاقة مغناطيسية في الملف ثم تعود، فتستمر الاهتزازات.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 52,
+      "source_detail": "الدرس: الدائرة المهتزة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u2-l12-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l12",
+      "difficulty": 1,
+      "question_text": "عند توصيل ملفين حثيين على التوالي، فإن معامل الحث الكلي يكون:",
+      "explanation": "عند التوصيل على التوالي تتجمع معامِلات الحث، فيكون المعامل الكلي مجموع المعاملات.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 54,
+      "source_detail": "الدرس: المفاعلة الحثية للتيار المتردد في عدة ملفات متصلة معاً",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مجموع معاملي الحث",
+        "حاصل ضرب معاملي الحث",
+        "أصغر من كل منهما",
+        "متوسطهما الحسابي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مجموع معاملي الحث"
+    },
+    {
+      "id": "ye-physics-u2-l12-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l12",
+      "difficulty": 2,
+      "question_text": "عند توصيل ملفات على التوازي، فإن المفاعلة الحثية الكلية تكون:",
+      "explanation": "في التوصيل على التوازي تتجمع مقلوبات المفاعلات، فتكون المفاعلة الكلية أقل من مفاعلة أي ملف منفرداً.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 54,
+      "source_detail": "الدرس: المفاعلة الحثية للتيار المتردد في عدة ملفات متصلة معاً",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أقل من مفاعلة كل ملف على حدة",
+        "أكبر من مجموع المفاعلات",
+        "مساوية لمجموع المفاعلات",
+        "صفراً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أقل من مفاعلة كل ملف على حدة"
+    },
+    {
+      "id": "ye-physics-u2-l13-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l13",
+      "difficulty": 3,
+      "question_text": "مكثف سعته كبيرة متصل بمصدر متردد تردده عالٍ، فمفاعلته السعوية تكون:",
+      "explanation": "المفاعلة السعوية تتناسب عكسياً مع كل من السعة والتردد، فزيادتهما معاً تجعلها صغيرة جداً.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 58,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "صغيرة جداً",
+        "كبيرة جداً",
+        "مساوية للمفاعلة الحثية دائماً",
+        "لا نهائية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "صغيرة جداً"
+    },
+    {
+      "id": "ye-physics-u2-l13-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l13",
+      "difficulty": 2,
+      "question_text": "التيار المتردد الجيبي هو الأكثر شيوعاً واستخداماً في حياتنا.",
+      "explanation": "التيار الجيبي هو الشائع في المنازل والمصانع، وتولده المولدات، وتردد الشبكة في اليمن 50 هرتز.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 58,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u2-l2-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l2",
+      "difficulty": 1,
+      "question_text": "ما وظيفة مولد التيار المتردد (الدينامو)؟",
+      "explanation": "الدينامو يحول الطاقة الميكانيكية (دوران الملف) إلى طاقة كهربائية مترددة اعتماداً على الحث الكهرومغناطيسي.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 32,
+      "source_detail": "الدرس: مولد التيار المتردد (الدينامو)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تحويل الطاقة الميكانيكية إلى طاقة كهربائية مترددة",
+        "تحويل الطاقة الكهربائية إلى طاقة ميكانيكية",
+        "تخزين الشحنة الكهربائية",
+        "تقويم التيار المتردد إلى مستمر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تحويل الطاقة الميكانيكية إلى طاقة كهربائية مترددة"
+    },
+    {
+      "id": "ye-physics-u2-l2-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l2",
+      "difficulty": 2,
+      "question_text": "تتغير القوة الدافعة الكهربائية المتولدة في الدينامو جيبياً مع الزمن.",
+      "explanation": "عند دوران الملف في المجال المغناطيسي تتغير القوة الدافعة جيبياً، فتبلغ نهايتها العظمى ثم تهبط إلى الصفر وتتغير إشارتها كل نصف دورة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 32,
+      "source_detail": "الدرس: مولد التيار المتردد (الدينامو)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u2-l3-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l3",
+      "difficulty": 1,
+      "question_text": "ما المقصود بالأمبير الحراري (القيمة الفعالة للتيار المتردد)؟",
+      "explanation": "الأمبير الحراري هو القيمة الفعالة للتيار المتردد، وتساوي قيمة التيار المستمر المكافئ له في الأثر الحراري.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 37,
+      "source_detail": "الدرس: الأمبير الحراري",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "قيمة التيار المستمر الذي يولد الحرارة نفسها التي يولدها التيار المتردد في المقاومة نفسها والزمن نفسه",
+        "أقصى قيمة يصل إليها التيار المتردد",
+        "متوسط التيار المتردد في نصف دورة",
+        "قيمة التيار عند لحظة الصفر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "قيمة التيار المستمر الذي يولد الحرارة نفسها التي يولدها التيار المتردد في المقاومة نفسها والزمن نفسه"
+    },
+    {
+      "id": "ye-physics-u2-l3-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l3",
+      "difficulty": 3,
+      "question_text": "إذا كانت القيمة العظمى لتيار متردد 14.14 أمبير، فما قيمته الفعالة تقريباً؟",
+      "explanation": "القيمة الفعالة = القيمة العظمى ÷ √2 = 14.14 ÷ 1.414 ≈ 10 أمبير.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 37,
+      "source_detail": "الدرس: الأمبير الحراري",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "10 أمبير",
+        "14.14 أمبير",
+        "20 أمبير",
+        "7.07 أمبير"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "10 أمبير"
+    },
+    {
+      "id": "ye-physics-u2-l4-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l4",
+      "difficulty": 1,
+      "question_text": "في دائرة تيار متردد تحتوي على مقاومة أومية فقط، ما العلاقة بين التيار والجهد؟",
+      "explanation": "في المقاومة الأومية يكون التيار والجهد في الطور نفسه، أي يبلغان النهاية العظمى والصفر معاً.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 39,
+      "source_detail": "الدرس: تطبيقات قانون أوم في دوائر التيار المتردد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "التيار والجهد في الطور نفسه",
+        "التيار يسبق الجهد بربع دورة",
+        "التيار يتأخر عن الجهد بربع دورة",
+        "التيار صفر دائماً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "التيار والجهد في الطور نفسه"
+    },
+    {
+      "id": "ye-physics-u2-l4-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l4",
+      "difficulty": 2,
+      "question_text": "في دائرة مقاومة أومية متصلة بمصدر متردد، إذا تضاعف الجهد الفعال فماذا يحدث للتيار الفعال؟",
+      "explanation": "ينطبق قانون أوم على القيم الفعالة (جـ = ت × م)، فإذا تضاعف الجهد تضاعف التيار عند ثبات المقاومة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 39,
+      "source_detail": "الدرس: تطبيقات قانون أوم في دوائر التيار المتردد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "يتضاعف",
+        "يبقى ثابتاً",
+        "يقل إلى النصف",
+        "يصبح صفراً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يتضاعف"
+    },
+    {
+      "id": "ye-physics-u2-l5-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l5",
+      "difficulty": 1,
+      "question_text": "كيف يتصرف المكثف عند توصيله بمصدر تيار مستمر بعد اكتمال شحنه؟",
+      "explanation": "بعد اكتمال شحن المكثف يمنع مرور التيار المستمر، بينما يمرر التيار المتردد لأنه يشحن ويفرغ باستمرار.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 40,
+      "source_detail": "الدرس: مكثف متصل بمصدر تيار متردد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "يمنع مرور التيار المستمر",
+        "يمرر التيار المستمر دون مقاومة",
+        "يحول التيار المستمر إلى متردد",
+        "يفرغ شحنته باستمرار"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يمنع مرور التيار المستمر"
+    },
+    {
+      "id": "ye-physics-u2-l5-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l5",
+      "difficulty": 2,
+      "question_text": "في دائرة مكثف متصل بمصدر متردد، يسبق التيار الجهد بربع دورة.",
+      "explanation": "في المكثف يبلغ التيار نهايته العظمى قبل الجهد بربع دورة، أي أن التيار يتقدم على الجهد بزاوية طور 90 درجة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 40,
+      "source_detail": "الدرس: مكثف متصل بمصدر تيار متردد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u2-l6-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l6",
+      "difficulty": 1,
+      "question_text": "ما العلاقة بين المفاعلة السعوية للمكثف وتردد التيار المتردد؟",
+      "explanation": "المفاعلة السعوية = 1 ÷ (2π × التردد × السعة)، فتقل بزيادة التردد وتزداد بنقصانه.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس: المفاعلة السعوية للمكثف",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تتناسب عكسياً مع التردد",
+        "تتناسب طردياً مع التردد",
+        "لا تعتمد على التردد",
+        "تتناسب مع مربع التردد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تتناسب عكسياً مع التردد"
+    },
+    {
+      "id": "ye-physics-u2-l6-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l6",
+      "difficulty": 2,
+      "question_text": "إذا تضاعفت سعة المكثف عند ثبات التردد، فماذا يحدث لمفاعلته السعوية؟",
+      "explanation": "المفاعلة السعوية تتناسب عكسياً مع السعة، فتضاعف السعة يقلل المفاعلة إلى النصف.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس: المفاعلة السعوية للمكثف",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تقل إلى النصف",
+        "تتضاعف",
+        "تبقى ثابتة",
+        "تصبح صفراً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تقل إلى النصف"
+    },
+    {
+      "id": "ye-physics-u2-l7-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l7",
+      "difficulty": 1,
+      "question_text": "في دائرة ملف حثي متصل بمصدر متردد، ما العلاقة بين التيار والجهد؟",
+      "explanation": "في الملف الحثي يتأخر التيار عن الجهد بربع دورة (90 درجة) بسبب القوة الدافعة الحثية العكسية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 44,
+      "source_detail": "الدرس: ملف حثي متصل بمصدر تيار متردد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "التيار يتأخر عن الجهد بربع دورة",
+        "التيار يسبق الجهد بربع دورة",
+        "التيار والجهد في الطور نفسه",
+        "الجهد صفر دائماً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "التيار يتأخر عن الجهد بربع دورة"
+    },
+    {
+      "id": "ye-physics-u2-l7-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l7",
+      "difficulty": 2,
+      "question_text": "يقاوم الملف الحثي التغير في شدة التيار المار فيه.",
+      "explanation": "عند تغير التيار تتولد في الملف قوة دافعة حثية عكسية تعارض هذا التغير، وهذا أساس عمل الملف في دوائر التيار المتردد.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 44,
+      "source_detail": "الدرس: ملف حثي متصل بمصدر تيار متردد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u2-l8-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l8",
+      "difficulty": 1,
+      "question_text": "ما العلاقة بين المفاعلة الحثية للملف وتردد التيار المتردد؟",
+      "explanation": "المفاعلة الحثية = 2π × التردد × معامل الحث، فتزداد بزيادة التردد.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 46,
+      "source_detail": "الدرس: المفاعلة الحثية للملف",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تتناسب طردياً مع التردد",
+        "تتناسب عكسياً مع التردد",
+        "لا تعتمد على التردد",
+        "تتناسب عكسياً مع مربع التردد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تتناسب طردياً مع التردد"
+    },
+    {
+      "id": "ye-physics-u2-l8-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l8",
+      "difficulty": 2,
+      "question_text": "ملف معامل حثه كبير يمرر التيار المتردد عالي التردد:",
+      "explanation": "بزيادة التردد تزداد المفاعلة الحثية، فيقاوم الملف مرور التيار عالي التردد أكثر من منخفضه.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 46,
+      "source_detail": "الدرس: المفاعلة الحثية للملف",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بصعوبة أكبر من التيار منخفض التردد",
+        "بسهولة أكبر من التيار منخفض التردد",
+        "بالسهولة نفسها مهما كان التردد",
+        "لا يمرره أبداً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بصعوبة أكبر من التيار منخفض التردد"
+    },
+    {
+      "id": "ye-physics-u2-l9-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l9",
+      "difficulty": 3,
+      "question_text": "في دائرة (مقاومة وملف ومكثف) على التوالي، ما الذي يحدد المعاوقة الكلية؟",
+      "explanation": "المعاوقة = الجذر التربيعي لمجموع مربع المقاومة ومربع الفرق بين المفاعلة الحثية والسعوية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس: مقاومة أومية وملف حثي ومكثف متصلة معاً على التوالي بمصدر تيار كهربائي متردد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "المقاومة والفرق بين المفاعلتين الحثية والسعوية",
+        "المقاومة فقط",
+        "المفاعلة السعوية فقط",
+        "سعة المكثف فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "المقاومة والفرق بين المفاعلتين الحثية والسعوية"
+    },
+    {
+      "id": "ye-physics-u2-l9-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u2",
+      "lesson_id": "physics-u2-l9",
+      "difficulty": 2,
+      "question_text": "إذا كانت المفاعلة الحثية أكبر من المفاعلة السعوية في دائرة التوالي، فإن التيار يكون:",
+      "explanation": "عندما تغلب المفاعلة الحثية يكون للدائرة تأثير حثي، فيتأخر التيار عن الجهد، والعكس عند غلبة المفاعلة السعوية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس: مقاومة أومية وملف حثي ومكثف متصلة معاً على التوالي بمصدر تيار كهربائي متردد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "متأخراً عن الجهد",
+        "سابقاً للجهد",
+        "في الطور نفسه مع الجهد",
+        "صفراً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "متأخراً عن الجهد"
+    },
+    {
+      "id": "ye-physics-u3-l1-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l1",
+      "difficulty": 1,
+      "question_text": "كيف تصنف المواد من حيث التوصيل الكهربائي؟",
+      "explanation": "تنقسم المواد حسب توصيلها للتيار الكهربائي إلى موصلات (كمعظم الفلزات)، وعوازل (كالخشب والمطاط)، وأشباه موصلات بينهما.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: أشباه الموصلات",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "موصلات وعوازل وأشباه موصلات",
+        "موصلات وعوازل فقط",
+        "فلزات ولا فلزات فقط",
+        "صلبة وسائلة وغازية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "موصلات وعوازل وأشباه موصلات"
+    },
+    {
+      "id": "ye-physics-u3-l1-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l1",
+      "difficulty": 2,
+      "question_text": "أي مما يأتي من أشباه الموصلات؟",
+      "explanation": "السيليكون والجرمانيوم من أشباه الموصلات، بينما النحاس والألمنيوم موصلات، والخشب والزجاج عوازل.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: أشباه الموصلات",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "السيليكون والجرمانيوم",
+        "النحاس والألمنيوم",
+        "الخشب والمطاط",
+        "الزجاج والبورسلين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "السيليكون والجرمانيوم"
+    },
+    {
+      "id": "ye-physics-u3-l2-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l2",
+      "difficulty": 1,
+      "question_text": "ما المقصود بشبه الموصل النقي؟",
+      "explanation": "شبه الموصل النقي بلورة من السيليكون أو الجرمانيوم لا تحوي شوائب، وتوصيلها ضعيف عند درجات الحرارة المنخفضة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: أشباه الموصلات النقية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بلورة سيليكون أو جرمانيوم خالية من الشوائب",
+        "فلز نقي خالٍ من الشوائب",
+        "محلول ملحي نقي",
+        "عازل نقي لا يوصل أبداً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بلورة سيليكون أو جرمانيوم خالية من الشوائب"
+    },
+    {
+      "id": "ye-physics-u3-l2-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l2",
+      "difficulty": 2,
+      "question_text": "في شبه الموصل النقي يكون عدد الإلكترونات الحرة مساوياً لعدد الفجوات.",
+      "explanation": "كل إلكترون يتحرر من رابطته يترك فجوة خلفه، فيتساوى عدد الإلكترونات الحرة مع عدد الفجوات في البلورة النقية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: أشباه الموصلات النقية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u3-l3-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l3",
+      "difficulty": 1,
+      "question_text": "ما حاملات الشحنة الغالبة في شبه الموصل من النوع السالب (N)؟",
+      "explanation": "عند تطعيم السيليكون بعنصر خماسي التكافؤ (كالفوسفور) تزداد الإلكترونات الحرة فتكون هي حاملات الشحنة الغالبة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 64,
+      "source_detail": "الدرس: أشباه الموصلات غير النقية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الإلكترونات الحرة",
+        "الفجوات",
+        "البروتونات",
+        "الأيونات الموجبة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الإلكترونات الحرة"
+    },
+    {
+      "id": "ye-physics-u3-l3-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l3",
+      "difficulty": 2,
+      "question_text": "بأي عنصر يُطعم السيليكون للحصول على شبه موصل من النوع الموجب (P)؟",
+      "explanation": "التطعيم بعنصر ثلاثي التكافؤ كالبورون يزيد الفجوات، فيصبح شبه الموصل من النوع الموجب (P).",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 64,
+      "source_detail": "الدرس: أشباه الموصلات غير النقية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "عنصر ثلاثي التكافؤ كالبورون",
+        "عنصر خماسي التكافؤ كالفوسفور",
+        "عنصر ثنائي التكافؤ كالمغنيسيوم",
+        "عنصر أحادي التكافؤ كالصوديوم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عنصر ثلاثي التكافؤ كالبورون"
+    },
+    {
+      "id": "ye-physics-u3-l4-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l4",
+      "difficulty": 1,
+      "question_text": "ماذا يحدث عند توصيل الوصلة الثنائية (PN) في الانحياز الأمامي؟",
+      "explanation": "في الانحياز الأمامي تضيق منطقة الاستنزاف ويسمح للتيار بالمرور، أما الانحياز العكسي فيوسعها ويمنع المرور.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 67,
+      "source_detail": "الدرس: الوصلة الثنائية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "يقل عرض منطقة الاستنزاف ويسمح بمرور التيار",
+        "يزداد عرض منطقة الاستنزاف ويمنع التيار",
+        "تنعكس قطبية الوصلة",
+        "تتحول الوصلة إلى مقاومة ثابتة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يقل عرض منطقة الاستنزاف ويسمح بمرور التيار"
+    },
+    {
+      "id": "ye-physics-u3-l4-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l4",
+      "difficulty": 2,
+      "question_text": "تسمح الوصلة الثنائية بمرور التيار في اتجاه واحد فقط.",
+      "explanation": "الوصلة الثنائية توصل في الانحياز الأمامي وتمنع في الانحياز العكسي، لذا يمر التيار في اتجاه واحد.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 67,
+      "source_detail": "الدرس: الوصلة الثنائية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u3-l5-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l5",
+      "difficulty": 1,
+      "question_text": "ما وظيفة التقويم باستخدام الوصلة الثنائية؟",
+      "explanation": "تستخدم الوصلة الثنائية في تقويم التيار المتردد، أي تحويله إلى تيار مستمر (نبضي) لأنها تسمح بالمرور في اتجاه واحد.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 70,
+      "source_detail": "الدرس: استخدام الوصلة الثنائية في تقويم التيار المتردد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تحويل التيار المتردد إلى تيار مستمر",
+        "تحويل التيار المستمر إلى متردد",
+        "رفع جهد التيار المتردد",
+        "تخزين التيار المتردد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تحويل التيار المتردد إلى تيار مستمر"
+    },
+    {
+      "id": "ye-physics-u3-l5-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l5",
+      "difficulty": 2,
+      "question_text": "في تقويم نصف الموجة باستخدام وصلة واحدة، ماذا يحدث لنصف الدورة السالب؟",
+      "explanation": "في تقويم نصف الموجة تسمح الوصلة بمرور نصف الدورة الموجب فقط وتمنع النصف السالب.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 70,
+      "source_detail": "الدرس: استخدام الوصلة الثنائية في تقويم التيار المتردد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "يُمنع مروره",
+        "يمر كما هو",
+        "ينعكس إلى موجب",
+        "يتضاعف"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يُمنع مروره"
+    },
+    {
+      "id": "ye-physics-u3-l6-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l6",
+      "difficulty": 1,
+      "question_text": "مم يتكون الترانزستور؟",
+      "explanation": "الترانزستور في أبسط صورة ثلاث بلورات ملتصقة من مادة شبه موصلة، وهو من نوع (N-P-N) أو (P-N-P).",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 71,
+      "source_detail": "الدرس: الترانزستور",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من ثلاث بلورات من مادة شبه موصلة ملتصقة",
+        "من بلورتين فقط",
+        "من ملف ومكثف",
+        "من سلكين معدنيين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من ثلاث بلورات من مادة شبه موصلة ملتصقة"
+    },
+    {
+      "id": "ye-physics-u3-l6-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l6",
+      "difficulty": 2,
+      "question_text": "ما أطراف الترانزستور الثلاثة؟",
+      "explanation": "أطراف الترانزستور هي: الباعث (E) الذي تتحرك منه حاملات الشحنة، والقاعدة (B) الوسطى، والمجمع (C) الذي يجمعها.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 71,
+      "source_detail": "الدرس: الترانزستور",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الباعث والقاعدة والمجمع",
+        "الأنود والكاثود والشبكة",
+        "الموجب والسالب والأرضي",
+        "الدخل والخرج والتغذية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الباعث والقاعدة والمجمع"
+    },
+    {
+      "id": "ye-physics-u3-l7-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l7",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من استخدامات الترانزستور؟",
+      "explanation": "يستخدم الترانزستور مضخماً للإشارات الضعيفة، ومفتاحاً إلكترونياً، وفي توليد الذبذبات.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس: استخدامات الترانزستور",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تضخيم الإشارات الكهربائية",
+        "توليد الضوء فقط",
+        "قياس درجة الحرارة فقط",
+        "تخزين الماء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تضخيم الإشارات الكهربائية"
+    },
+    {
+      "id": "ye-physics-u3-l7-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l7",
+      "difficulty": 2,
+      "question_text": "يمكن استخدام الترانزستور مفتاحاً إلكترونياً يفتح الدائرة ويغلقها دون أجزاء متحركة.",
+      "explanation": "بتغيير تيار القاعدة يمكن جعل الترانزستور موصلاً أو غير موصل، فيعمل مفتاحاً إلكترونياً سريعاً بلا أجزاء ميكانيكية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس: استخدامات الترانزستور",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u3-l8-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l8",
+      "difficulty": 3,
+      "question_text": "عند رفع درجة حرارة شبه الموصل النقي، فإن توصيله الكهربائي:",
+      "explanation": "بزيادة الحرارة تتحرر إلكترونات أكثر من روابطها فيزداد عدد حاملات الشحنة، فيزداد التوصيل، بعكس الفلزات.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 80,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "يزداد",
+        "يقل",
+        "يبقى ثابتاً",
+        "يصبح صفراً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يزداد"
+    },
+    {
+      "id": "ye-physics-u3-l8-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u3",
+      "lesson_id": "physics-u3-l8",
+      "difficulty": 2,
+      "question_text": "السيليكون من أكثر مواد أشباه الموصلات استخداماً في صناعة الدوائر المتكاملة.",
+      "explanation": "يدخل السيليكون في صناعة الوصلات والترانزستورات والدوائر المتكاملة، وهو أساس الصناعات الإلكترونية الحديثة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 80,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u4-l1-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l1",
+      "difficulty": 1,
+      "question_text": "كيف يصبح الغاز موصلاً للكهرباء؟",
+      "explanation": "الغاز العازل يصبح موصلاً عند تأين ذراته، فتتكون أيونات موجبة وإلكترونات حرة تحمل التيار.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 87,
+      "source_detail": "الدرس: التوصيل الكهربائي في الغازات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بتأين ذراته فيتكون أيونات وإلكترونات حرة",
+        "بتسخينه حتى يتجمد",
+        "بضغطه حتى يصبح سائلاً",
+        "بتبريده إلى الصفر المطلق"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بتأين ذراته فيتكون أيونات وإلكترونات حرة"
+    },
+    {
+      "id": "ye-physics-u4-l1-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l1",
+      "difficulty": 2,
+      "question_text": "التفريغ الكهربائي في الغازات يحدث عند جهد عالٍ بين قطبين داخل أنبوب مفرغ جزئياً.",
+      "explanation": "عند جهد كافٍ تتأين ذرات الغاز داخل الأنبوب ويمر تيار التفريغ، كما في مصابيح النيون وأنابيب التفريغ.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 87,
+      "source_detail": "الدرس: التوصيل الكهربائي في الغازات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u4-l10-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l10",
+      "difficulty": 1,
+      "question_text": "على أي ألوان أساسية يعتمد التلفاز الملون؟",
+      "explanation": "يعتمد التلفاز الملون على الألوان الأساسية الثلاثة: الأحمر والأخضر والأزرق، وبمزجها بنسب مختلفة تتكون كل الألوان.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 105,
+      "source_detail": "الدرس: التلفاز الملون",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الأحمر والأخضر والأزرق",
+        "الأحمر والأصفر والأسود",
+        "الأبيض والأسود والرمادي",
+        "البنفسجي والبرتقالي والوردي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الأحمر والأخضر والأزرق"
+    },
+    {
+      "id": "ye-physics-u4-l10-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l10",
+      "difficulty": 2,
+      "question_text": "كيف تظهر الألوان المختلفة على شاشة التلفاز الملون؟",
+      "explanation": "تتكون كل نقطة ملونة من ثلاث نقاط صغيرة بالألوان الأساسية، وباختلاف شدة إضاءة كل منها يظهر اللون المطلوب.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 105,
+      "source_detail": "الدرس: التلفاز الملون",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بمزج شدات الألوان الثلاثة الأساسية بنسب مختلفة",
+        "بصبغ الشاشة بلون واحد ثابت",
+        "بتغيير لون الزجاج فقط",
+        "بإضافة ألوان مائية للشاشة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بمزج شدات الألوان الثلاثة الأساسية بنسب مختلفة"
+    },
+    {
+      "id": "ye-physics-u4-l11-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l11",
+      "difficulty": 3,
+      "question_text": "أي جهاز يعتمد على انعكاس الموجات الراديوية عن الأجسام؟",
+      "explanation": "الرادار يرسل موجات راديوية تنعكس عن الأجسام فيحدد بعدها واتجاهها، بينما الأوسيلوسكوب يعرض الموجات الكهربائية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 107,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الرادار",
+        "الأوسيلوسكوب",
+        "الدينامو",
+        "الخلية الكهروضوئية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الرادار"
+    },
+    {
+      "id": "ye-physics-u4-l11-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l11",
+      "difficulty": 2,
+      "question_text": "الموجات الراديوية المستخدمة في البث موجات كهرومغناطيسية سرعتها في الفراغ سرعة الضوء.",
+      "explanation": "كل الموجات الكهرومغناطيسية ومنها الراديوية تنتشر في الفراغ بسرعة الضوء تقريباً (3×10^8 م/ث).",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 107,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u4-l2-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l2",
+      "difficulty": 1,
+      "question_text": "ما أشعة الكاثود؟",
+      "explanation": "أشعة الكاثود سيل من الإلكترونات تنبعث من الكاثود وتتسارع نحو الأنود، وتنحرف بالمجالين الكهربائي والمغناطيسي.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 89,
+      "source_detail": "الدرس: أنبوبة أشعة الكاثود",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "سيل من الإلكترونات السريعة المنبعثة من الكاثود",
+        "سيل من البروتونات",
+        "أشعة ضوئية مرئية",
+        "موجات راديوية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "سيل من الإلكترونات السريعة المنبعثة من الكاثود"
+    },
+    {
+      "id": "ye-physics-u4-l2-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l2",
+      "difficulty": 2,
+      "question_text": "ما الذي يحدث عندما تصطدم أشعة الكاثود بشاشة مطلية بمادة فلورية؟",
+      "explanation": "عند اصطدام الإلكترونات السريعة بالشاشة الفلورية تتوهج مواضع الاصطدام، وهذا أساس شاشات التلفاز القديمة والأوسيلوسكوب.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 89,
+      "source_detail": "الدرس: أنبوبة أشعة الكاثود",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تتوهج الشاشة وتضيء",
+        "تنعكس الأشعة دون أثر",
+        "تتوقف الأشعة وتبرد",
+        "يذوب طلاء الشاشة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تتوهج الشاشة وتضيء"
+    },
+    {
+      "id": "ye-physics-u4-l3-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l3",
+      "difficulty": 1,
+      "question_text": "ما الاستخدام الرئيس لكاشف الذبذبات (الأوسيلوسكوب)؟",
+      "explanation": "الأوسيلوسكوب يعرض الإشارة الكهربائية على شاشته فيعرف شكلها وسعتها وزمنها الدوري، ومنه يحسب التردد.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 90,
+      "source_detail": "الدرس: كاشف الذبذبات (الأوسيلوسكوب)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "عرض شكل الموجات الكهربائية وقياس جهدها وترددها",
+        "قياس شدة التيار المستمر فقط",
+        "توليد الموجات الراديوية",
+        "شحن البطاريات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عرض شكل الموجات الكهربائية وقياس جهدها وترددها"
+    },
+    {
+      "id": "ye-physics-u4-l3-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l3",
+      "difficulty": 2,
+      "question_text": "يعتمد الأوسيلوسكوب في عمله على انحراف حزمة إلكترونات بمجالين كهربائيين.",
+      "explanation": "تنحرف حزمة الإلكترونات داخل أنبوبة الأوسيلوسكوب رأسياً بجهد الإشارة وأفقياً بقاعدة زمنية، فترسم شكل الموجة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 90,
+      "source_detail": "الدرس: كاشف الذبذبات (الأوسيلوسكوب)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u4-l4-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l4",
+      "difficulty": 1,
+      "question_text": "على أي مبدأ يعمل الرادار؟",
+      "explanation": "يرسل الرادار نبضات راديوية تنعكس عن الهدف، ومن زمن الذهاب والعودة يحسب بعد الهدف واتجاهه وسرعته.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 92,
+      "source_detail": "الدرس: الرادار",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "إرسال موجات راديوية وانعكاسها عن الأجسام وقياس زمن عودتها",
+        "إرسال موجات صوتية فقط",
+        "التقاط الأشعة تحت الحمراء من الأجسام",
+        "قياس المجال المغناطيسي للأرض"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "إرسال موجات راديوية وانعكاسها عن الأجسام وقياس زمن عودتها"
+    },
+    {
+      "id": "ye-physics-u4-l4-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l4",
+      "difficulty": 2,
+      "question_text": "يستخدم الرادار في:",
+      "explanation": "يستخدم الرادار في المطارات لمراقبة الطائرات، وفي الأرصاد الجوية، وفي المجال العسكري لتحديد الأهداف.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 92,
+      "source_detail": "الدرس: الرادار",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الملاحة الجوية ومراقبة الطقس وتحديد الأهداف",
+        "تسخين الطعام",
+        "إضاءة المنازل",
+        "توليد الكهرباء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الملاحة الجوية ومراقبة الطقس وتحديد الأهداف"
+    },
+    {
+      "id": "ye-physics-u4-l5-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l5",
+      "difficulty": 1,
+      "question_text": "ما الموجات اللاسلكية المستخدمة في البث الإذاعي؟",
+      "explanation": "الموجات اللاسلكية موجات كهرومغناطيسية تنتشر في الفراغ بسرعة الضوء، وتحمل الإشارة الصوتية بعد تضمينها.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 95,
+      "source_detail": "الدرس: إرسال واستقبال الموجات اللاسلكية (الموجات الراديوية)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "موجات كهرومغناطيسية تنتشر في الفضاء بسرعة الضوء",
+        "موجات صوتية تحتاج وسطاً مادياً",
+        "موجات مائية",
+        "موجات زلزالية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "موجات كهرومغناطيسية تنتشر في الفضاء بسرعة الضوء"
+    },
+    {
+      "id": "ye-physics-u4-l5-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l5",
+      "difficulty": 2,
+      "question_text": "تنتشر الموجات الراديوية في الفراغ دون الحاجة إلى وسط مادي.",
+      "explanation": "الموجات الكهرومغناطيسية ومنها الراديوية لا تحتاج وسطاً مادياً، لذا تصل إشاراتها عبر الفضاء.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 95,
+      "source_detail": "الدرس: إرسال واستقبال الموجات اللاسلكية (الموجات الراديوية)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u4-l6-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l6",
+      "difficulty": 1,
+      "question_text": "ما المقصود بتضمين الموجة الحاملة في الإرسال الإذاعي؟",
+      "explanation": "في الإرسال تُحمَّل الإشارة الصوتية منخفضة التردد على موجة حاملة عالية التردد (بتضمين سعتها أو ترددها) لتنتشر لمسافات بعيدة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 95,
+      "source_detail": "الدرس: إرسال الموجات اللاسلكية (الإرسال الإذاعي)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تحميل الإشارة الصوتية على موجة عالية التردد",
+        "تقوية الصوت بمكبر صوت",
+        "تحويل الصوت إلى ضوء",
+        "تسجيل الصوت على شريط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تحميل الإشارة الصوتية على موجة عالية التردد"
+    },
+    {
+      "id": "ye-physics-u4-l6-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l6",
+      "difficulty": 2,
+      "question_text": "أي أنواع التضمين يستخدم في إذاعات (FM)؟",
+      "explanation": "في البث (FM) يُضمَّن الصوت بتغيير تردد الموجة الحاملة، بينما في (AM) يُضمَّن بتغيير سعتها.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 95,
+      "source_detail": "الدرس: إرسال الموجات اللاسلكية (الإرسال الإذاعي)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تضمين التردد",
+        "تضمين السعة",
+        "تضمين الطول",
+        "تضمين اللون"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تضمين التردد"
+    },
+    {
+      "id": "ye-physics-u4-l7-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l7",
+      "difficulty": 1,
+      "question_text": "ما وظيفة دائرة الرنين في جهاز الاستقبال الإذاعي؟",
+      "explanation": "دائرة الرنين (ملف ومكثف متغير) تُضبط على تردد المحطة المطلوبة فيستجيب لها الجهاز دون غيرها من المحطات.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 96,
+      "source_detail": "الدرس: استقبال الموجات اللاسلكية (الاستقبال الإذاعي)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "اختيار المحطة المطلوبة من بين الموجات الملتقطة",
+        "تضخيم الصوت فقط",
+        "تحويل الموجات إلى حرارة",
+        "شحن بطارية الجهاز"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "اختيار المحطة المطلوبة من بين الموجات الملتقطة"
+    },
+    {
+      "id": "ye-physics-u4-l7-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l7",
+      "difficulty": 2,
+      "question_text": "بعد اختيار الإشارة في المستقبل تُفكّ عن الموجة الحاملة ثم تُضخَّم وتحوَّل إلى صوت في السماعة.",
+      "explanation": "في الاستقبال تُنتقى الإشارة بدائرة الرنين، ثم تُستخلص منها الإشارة الصوتية (الكشف)، وتُضخَّم لتسمع في السماعة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 96,
+      "source_detail": "الدرس: استقبال الموجات اللاسلكية (الاستقبال الإذاعي)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u4-l8-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l8",
+      "difficulty": 1,
+      "question_text": "ما وظيفة الكاميرا التلفازية؟",
+      "explanation": "الكاميرا التلفازية تحول الصورة إلى إشارات كهربائية تُرسل عبر الموجات، ثم يعيد جهاز الاستقبال تحويلها إلى صورة على الشاشة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 99,
+      "source_detail": "الدرس: التلفاز (التلفزيون)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تحويل الصورة الضوئية إلى إشارات كهربائية",
+        "تحويل الصوت إلى صورة",
+        "توليد الموجات الراديوية",
+        "تخزين الصور على ورق"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تحويل الصورة الضوئية إلى إشارات كهربائية"
+    },
+    {
+      "id": "ye-physics-u4-l8-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l8",
+      "difficulty": 2,
+      "question_text": "يعتمد التلفاز القديم في عرض الصورة على حزمة إلكترونات تمسح الشاشة سطراً بعد سطر.",
+      "explanation": "في أنبوبة أشعة الكاثود تمسح الحزمة الإلكترونية الشاشة الفلورية بسرعة سطراً بعد سطر فتتكون الصورة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 99,
+      "source_detail": "الدرس: التلفاز (التلفزيون)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u4-l9-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l9",
+      "difficulty": 1,
+      "question_text": "كيف تُرسل الصورة تلفازياً؟",
+      "explanation": "تُمسح الصورة عنصراً بعد عنصر وتُحوَّل شدة إضاءة كل عنصر إلى إشارة كهربائية، فتُرسل متتابعة ثم تُعاد تركيبها في المستقبل.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 101,
+      "source_detail": "الدرس: عملية إرسال الصور تلفازياً",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بتقسيمها إلى عناصر صغيرة تُحوَّل إلى إشارات كهربائية متتابعة",
+        "بإرسالها دفعة واحدة كصورة ورقية",
+        "بتحويلها إلى موجات صوتية فقط",
+        "بتجميدها ثم إذابتها عند الاستقبال"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بتقسيمها إلى عناصر صغيرة تُحوَّل إلى إشارات كهربائية متتابعة"
+    },
+    {
+      "id": "ye-physics-u4-l9-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u4",
+      "lesson_id": "physics-u4-l9",
+      "difficulty": 2,
+      "question_text": "يرافق إرسال الصورة تلفازياً إرسال الصوت معها في الوقت نفسه.",
+      "explanation": "يُرسل البث التلفازي إشارة الصورة وإشارة الصوت معاً، فيستقبلها الجهاز ويعرضهما متزامنتين.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 101,
+      "source_detail": "الدرس: عملية إرسال الصور تلفازياً",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u5-l1-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l1",
+      "difficulty": 1,
+      "question_text": "في أي عام أعلن دالتون نظريته الذرية؟",
+      "explanation": "أعلن الكيميائي الإنجليزي جون دالتون نظريته الذرية عام 1803م، ونصت على أن المادة تتكون من ذرات غير قابلة للانقسام.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 115,
+      "source_detail": "الدرس: نظرية دالتون الذرية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1803م",
+        "1897م",
+        "1913م",
+        "1905م"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1803م"
+    },
+    {
+      "id": "ye-physics-u5-l1-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l1",
+      "difficulty": 2,
+      "question_text": "افترض دالتون أن الذرة غير قابلة للانقسام أو الهدم.",
+      "explanation": "نصت نظرية دالتون على أن الذرة أصغر جزء في المادة غير قابلة للانقسام، ثم أبطل اكتشاف الإلكترون هذا الافتراض.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 115,
+      "source_detail": "الدرس: نظرية دالتون الذرية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u5-l10-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l10",
+      "difficulty": 3,
+      "question_text": "ما طاقة المستوى الأرضي (n=1) لذرة الهيدروجين؟",
+      "explanation": "طاقة المستوى الأرضي لذرة الهيدروجين -13.6 eV، والإشارة السالبة تعني أن الذرة مرتبطة وتحتاج طاقة لتحرير إلكترونها.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 131,
+      "source_detail": "الدرس: مخطط مستويات الطاقة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "-13.6 إلكترون فولت",
+        "13.6 إلكترون فولت",
+        "صفر",
+        "-3.4 إلكترون فولت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "-13.6 إلكترون فولت"
+    },
+    {
+      "id": "ye-physics-u5-l10-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l10",
+      "difficulty": 2,
+      "question_text": "ما طاقة التأين لذرة الهيدروجين؟",
+      "explanation": "طاقة التأين هي الطاقة اللازمة لنقل الإلكترون من المستوى الأرضي إلى ما لا نهاية، وتساوي 13.6 eV لذرة الهيدروجين.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 131,
+      "source_detail": "الدرس: مخطط مستويات الطاقة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "13.6 إلكترون فولت",
+        "3.4 إلكترون فولت",
+        "1.51 إلكترون فولت",
+        "0.85 إلكترون فولت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "13.6 إلكترون فولت"
+    },
+    {
+      "id": "ye-physics-u5-l11-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l11",
+      "difficulty": 3,
+      "question_text": "أي نموذج ذري فسر الطيف الخطي لذرة الهيدروجين؟",
+      "explanation": "نموذج بور وحده فسر الطيف الخطي للهيدروجين بفرض مستويات طاقة مكماة، بينما عجزت عنه النماذج السابقة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 142,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نموذج بور",
+        "نموذج دالتون",
+        "نموذج طومسون",
+        "نموذج رذرفورد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نموذج بور"
+    },
+    {
+      "id": "ye-physics-u5-l11-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l11",
+      "difficulty": 2,
+      "question_text": "طاقة الفوتون المنبعث عند انتقال إلكترون بين مستويين تساوي الفرق بين طاقتي المستويين.",
+      "explanation": "عند انتقال الإلكترون من مستوى أعلى إلى أدنى ينبعث فوتون طاقته = الفرق بين طاقتي المستويين (hf = E2 - E1).",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 142,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u5-l2-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l2",
+      "difficulty": 1,
+      "question_text": "كيف تصور طومسون الذرة في نموذجه؟",
+      "explanation": "نموذج طومسون (حلوى البرقوق) يصور الذرة كرة متجانسة موجبة الشحنة تنغرس فيها إلكترونات سالبة الشحنة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 115,
+      "source_detail": "الدرس: نموذج طومسون",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "كرة موجبة الشحنة تنغرس فيها الإلكترونات السالبة",
+        "نواة صغيرة موجبة تحيط بها إلكترونات",
+        "إلكترونات تدور في مدارات ثابتة",
+        "ذرات صلبة لا تحوي شحنات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "كرة موجبة الشحنة تنغرس فيها الإلكترونات السالبة"
+    },
+    {
+      "id": "ye-physics-u5-l2-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l2",
+      "difficulty": 2,
+      "question_text": "من العالم الذي اكتشف الإلكترون وقاده ذلك إلى نموذجه الذري؟",
+      "explanation": "اكتشف طومسون الإلكترون (الجسيم سالب الشحنة) من تجاربه على أشعة الكاثود، ووضع نموذجه للذرة بناء على ذلك.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 115,
+      "source_detail": "الدرس: نموذج طومسون",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "جوزيف طومسون",
+        "دالتون",
+        "رذرفورد",
+        "بور"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "جوزيف طومسون"
+    },
+    {
+      "id": "ye-physics-u5-l3-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l3",
+      "difficulty": 1,
+      "question_text": "ماذا يحدث للذرة عند إثارتها؟",
+      "explanation": "عند إثارة الذرة (بالتسخين أو التفريغ الكهربائي) يمتص إلكترون طاقة وينتقل إلى مستوى أعلى، ثم يعود فيشع الطاقة على هيئة ضوء.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 116,
+      "source_detail": "الدرس: إثارة العناصر كيميائياً",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ينتقل إلكترون إلى مستوى طاقة أعلى",
+        "تتفكك النواة",
+        "يفقد الإلكترون شحنته",
+        "تتحول الذرة إلى أيون موجب دائماً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ينتقل إلكترون إلى مستوى طاقة أعلى"
+    },
+    {
+      "id": "ye-physics-u5-l3-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l3",
+      "difficulty": 2,
+      "question_text": "عند عودة الإلكترون المثار إلى مستواه الأصلي تنبعث طاقة على هيئة فوتون.",
+      "explanation": "الإلكترون المثار غير مستقر، فيعود إلى مستوى أقل ويشع الفرق في الطاقة على هيئة فوتون (ضوء).",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 116,
+      "source_detail": "الدرس: إثارة العناصر كيميائياً",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u5-l4-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l4",
+      "difficulty": 1,
+      "question_text": "ما الطيف الخطي؟",
+      "explanation": "الطيف الخطي يتكون من خطوط مضيئة منفصلة، وكل عنصر له طيف خطي يميزه كبصمة، بخلاف الطيف المتصل الذي تحويه الأجسام المتوهجة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 117,
+      "source_detail": "الدرس: طيف المصادر الضوئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "طيف يتكون من خطوط مضيئة منفصلة بأطوال موجية محددة",
+        "طيف متصل بكل الألوان",
+        "طيف لا يحوي أي خطوط",
+        "طيف الأشعة تحت الحمراء فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "طيف يتكون من خطوط مضيئة منفصلة بأطوال موجية محددة"
+    },
+    {
+      "id": "ye-physics-u5-l4-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l4",
+      "difficulty": 2,
+      "question_text": "أي مصدر يعطي طيفاً متصلاً؟",
+      "explanation": "الأجسام الصلبة والسائلة المتوهجة كفتيل المصباح تعطي طيفاً متصلاً بكل الألوان، بينما الغازات المثارة تعطي طيفاً خطياً.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 117,
+      "source_detail": "الدرس: طيف المصادر الضوئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "فتيل مصباح متوهج",
+        "غاز الهيدروجين المثار",
+        "بخار الصوديوم",
+        "غاز النيون في أنبوب تفريغ"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "فتيل مصباح متوهج"
+    },
+    {
+      "id": "ye-physics-u5-l5-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l5",
+      "difficulty": 1,
+      "question_text": "أي سلسلة من سلاسل طيف الهيدروجين تقع في منطقة الضوء المرئي؟",
+      "explanation": "سلسلة بالمر تقع في الضوء المرئي، أما ليمان ففي فوق البنفسجية، وباشن وبراكيت في تحت الحمراء.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 119,
+      "source_detail": "الدرس: طيف ذرة الهيدروجين",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "سلسلة بالمر",
+        "سلسلة ليمان",
+        "سلسلة باشن",
+        "سلسلة براكيت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "سلسلة بالمر"
+    },
+    {
+      "id": "ye-physics-u5-l5-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l5",
+      "difficulty": 2,
+      "question_text": "تنتج خطوط طيف الهيدروجين عن:",
+      "explanation": "ينتج كل خط في الطيف عن انتقال إلكترون من مستوى طاقة أعلى إلى مستوى أدنى، فينبعث فوتون بطاقة تساوي الفرق بين المستويين.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 119,
+      "source_detail": "الدرس: طيف ذرة الهيدروجين",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "انتقال الإلكترون بين مستويات الطاقة في الذرة",
+        "انقسام النواة",
+        "اهتزاز البروتونات",
+        "دوران الذرة حول نفسها"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "انتقال الإلكترون بين مستويات الطاقة في الذرة"
+    },
+    {
+      "id": "ye-physics-u5-l6-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l6",
+      "difficulty": 1,
+      "question_text": "ما أهم نتيجة لتجربة رذرفورد بقذف صفيحة الذهب بجسيمات ألفا؟",
+      "explanation": "مرت معظم جسيمات ألفا دون انحراف وانحرف القليل بزوايا كبيرة، فاستنتج رذرفورد أن الذرة معظمها فراغ وأن كتلتها تتركز في نواة صغيرة موجبة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 121,
+      "source_detail": "الدرس: نموذج رذرفورد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أن معظم كتلة الذرة وشحنتها الموجبة تتركز في نواة صغيرة",
+        "أن الذرة كرة مصمتة",
+        "أن الإلكترونات داخل النواة",
+        "أن الذرة لا تحوي فراغاً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أن معظم كتلة الذرة وشحنتها الموجبة تتركز في نواة صغيرة"
+    },
+    {
+      "id": "ye-physics-u5-l6-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l6",
+      "difficulty": 2,
+      "question_text": "في نموذج رذرفورد تدور الإلكترونات حول النواة كما تدور الكواكب حول الشمس.",
+      "explanation": "تصور رذرفورد الذرة كنظام شمسي مصغر: نواة موجبة في المركز وإلكترونات سالبة تدور حولها، لكن النموذج لم يفسر استقرار الذرة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 121,
+      "source_detail": "الدرس: نموذج رذرفورد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u5-l7-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l7",
+      "difficulty": 1,
+      "question_text": "ما الجسم الأسود؟",
+      "explanation": "الجسم الأسود جسم مثالي يمتص كل الإشعاع الساقط عليه، وإشعاعه يعتمد على درجة حرارته فقط، وقد عجزت الفيزياء الكلاسيكية عن تفسير طيفه.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 123,
+      "source_detail": "الدرس: إشعاع الجسم الأسود",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "جسم مثالي يمتص كل الإشعاع الساقط عليه ويشع طاقة تعتمد على درجة حرارته",
+        "جسم أسود اللون لا يشع أبداً",
+        "جسم لا يمتص أي إشعاع",
+        "قطعة فحم فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "جسم مثالي يمتص كل الإشعاع الساقط عليه ويشع طاقة تعتمد على درجة حرارته"
+    },
+    {
+      "id": "ye-physics-u5-l7-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l7",
+      "difficulty": 2,
+      "question_text": "عجزت الفيزياء الكلاسيكية عن تفسير إشعاع الجسم الأسود، وكان ذلك مدخلاً لنظرية الكم.",
+      "explanation": "تنبأت النظرية الكلاسيكية بإشعاع لا نهائي عند الأطوال الموجية القصيرة (الكارثة فوق البنفسجية)، فجاء حل بلانك بفكرة تكميم الطاقة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 123,
+      "source_detail": "الدرس: إشعاع الجسم الأسود",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u5-l8-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l8",
+      "difficulty": 1,
+      "question_text": "ما نص فرض بلانك في تكميم الطاقة؟",
+      "explanation": "افترض بلانك أن طاقة الإشعاع مكماة: E = h×f، حيث h ثابت بلانك (6.625×10^-34 جول.ثانية).",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 124,
+      "source_detail": "الدرس: مبدأ بلانك في تكميم الطاقة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الطاقة تنبعث وتمتص على هيئة دفعات منفصلة (كمات) طاقة كل منها = ثابت بلانك × التردد",
+        "الطاقة تنبعث باستمرار بأي قيمة",
+        "الطاقة لا تنبعث أبداً",
+        "الطاقة تتناسب مع الطول الموجي فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الطاقة تنبعث وتمتص على هيئة دفعات منفصلة (كمات) طاقة كل منها = ثابت بلانك × التردد"
+    },
+    {
+      "id": "ye-physics-u5-l8-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l8",
+      "difficulty": 2,
+      "question_text": "ما قيمة ثابت بلانك تقريباً؟",
+      "explanation": "ثابت بلانك h ≈ 6.625×10^-34 جول.ثانية، وهو يربط طاقة الفوتون بتردده.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 124,
+      "source_detail": "الدرس: مبدأ بلانك في تكميم الطاقة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "6.625 × 10^-34 جول.ثانية",
+        "3 × 10^8 م/ث",
+        "1.6 × 10^-19 كولوم",
+        "9.11 × 10^-31 كجم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "6.625 × 10^-34 جول.ثانية"
+    },
+    {
+      "id": "ye-physics-u5-l9-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l9",
+      "difficulty": 1,
+      "question_text": "في أي عام أعلن بور نظريته لذرة الهيدروجين؟",
+      "explanation": "أعلن نيلز بور نظريته لذرة الهيدروجين عام 1913م، وفسر بها طيف الهيدروجين وسلسلة بالمر.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 125,
+      "source_detail": "الدرس: نظرية بور لذرة الهيدروجين",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1913م",
+        "1803م",
+        "1895م",
+        "1925م"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1913م"
+    },
+    {
+      "id": "ye-physics-u5-l9-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u5",
+      "lesson_id": "physics-u5-l9",
+      "difficulty": 2,
+      "question_text": "ما فرض بور الأول عن حركة الإلكترون في ذرة الهيدروجين؟",
+      "explanation": "افترض بور أن الإلكترون يدور في مدارات دائرية ثابتة (مستويات طاقة) دون أن يشع طاقة ما دام فيها.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 125,
+      "source_detail": "الدرس: نظرية بور لذرة الهيدروجين",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "يدور الإلكترون في مدارات دائرية محددة دون أن يشع طاقة",
+        "يدور الإلكترون في أي مدار ويشع طاقة باستمرار",
+        "يسكن الإلكترون داخل النواة",
+        "يتحرك الإلكترون حركة عشوائية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يدور الإلكترون في مدارات دائرية محددة دون أن يشع طاقة"
+    },
+    {
+      "id": "ye-physics-u6-l1-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l1",
+      "difficulty": 1,
+      "question_text": "ما الظاهرة الكهروضوئية؟",
+      "explanation": "الظاهرة الكهروضوئية انبعاث إلكترونات (تسمى الإلكترونات الضوئية) من سطح فلز عند سقوط ضوء عليه بتردد مناسب.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 145,
+      "source_detail": "الدرس: الظاهرة الكهروضوئية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "انبعاث إلكترونات من سطح فلز عند تعرضه للضوء",
+        "انبعاث ضوء من فلز مسخن",
+        "انكسار الضوء في الماء",
+        "امتصاص الضوء دون أي أثر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "انبعاث إلكترونات من سطح فلز عند تعرضه للضوء"
+    },
+    {
+      "id": "ye-physics-u6-l1-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l1",
+      "difficulty": 2,
+      "question_text": "من العالم الذي اكتشف الظاهرة الكهروضوئية عام 1887م؟",
+      "explanation": "اكتشف هيرتز الظاهرة الكهروضوئية عام 1887م أثناء تجاربه على الأمواج الكهرومغناطيسية، ثم فسرها أينشتاين عام 1905م.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 145,
+      "source_detail": "الدرس: الظاهرة الكهروضوئية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "هيرتز",
+        "أينشتاين",
+        "نيوتن",
+        "بلانك"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "هيرتز"
+    },
+    {
+      "id": "ye-physics-u6-l2-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l2",
+      "difficulty": 1,
+      "question_text": "ما وظيفة الخلية الكهروضوئية؟",
+      "explanation": "الخلية الكهروضوئية تعتمد على الظاهرة الكهروضوئية فتحول الضوء الساقط عليها إلى تيار كهربائي.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 146,
+      "source_detail": "الدرس: الخلية الكهروضوئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تحويل الطاقة الضوئية إلى طاقة كهربائية",
+        "تحويل الطاقة الكهربائية إلى ضوئية",
+        "تخزين الضوء",
+        "توليد المجال المغناطيسي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تحويل الطاقة الضوئية إلى طاقة كهربائية"
+    },
+    {
+      "id": "ye-physics-u6-l2-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l2",
+      "difficulty": 2,
+      "question_text": "تتكون الخلية الكهروضوئية من مهبط فلزي حساس للضوء ومصعد يجمع الإلكترونات المنبعثة.",
+      "explanation": "عند سقوط الضوء على المهبط تنبعث إلكترونات تجذبها المصعد، فيمر تيار في الدائرة الخارجية يدل على شدة الضوء.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 146,
+      "source_detail": "الدرس: الخلية الكهروضوئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u6-l3-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l3",
+      "difficulty": 1,
+      "question_text": "ماذا أثبتت تجربة ميليكان في دراسة الظاهرة الكهروضوئية؟",
+      "explanation": "أثبتت تجارب ميليكان أن الطاقة الحركية العظمى للإلكترونات الضوئية تزداد خطياً مع تردد الضوء، مؤكدة تفسير أينشتاين.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "source_detail": "الدرس: تجربة ميليكان لدراسة الظاهرة الكهروضوئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أن الطاقة الحركية العظمى للإلكترونات المنبعثة تتناسب مع تردد الضوء الساقط",
+        "أن عدد الإلكترونات يعتمد على شدة الضوء فقط",
+        "أن الضوء موجة فقط",
+        "أن الإلكترونات لا تنبعث أبداً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أن الطاقة الحركية العظمى للإلكترونات المنبعثة تتناسب مع تردد الضوء الساقط"
+    },
+    {
+      "id": "ye-physics-u6-l3-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l3",
+      "difficulty": 2,
+      "question_text": "يوجد تردد حدي (عتبة) لكل فلز، فإذا كان تردد الضوء الساقط أقل منه لم تنبعث إلكترونات مهما زادت شدة الضوء.",
+      "explanation": "الانبعاث الكهروضوئي يتوقف على تردد الضوء لا على شدته؛ فالضوء ذو التردد الأقل من التردد الحدي لا يحرر إلكترونات.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "source_detail": "الدرس: تجربة ميليكان لدراسة الظاهرة الكهروضوئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u6-l4-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l4",
+      "difficulty": 1,
+      "question_text": "بم فسر أينشتاين الظاهرة الكهروضوئية؟",
+      "explanation": "فسر أينشتاين الظاهرة عام 1905م بأن الضوء حزم من الفوتونات، ويمتص الإلكترون فوتوناً واحداً فيتحرر إذا كانت طاقته تكفي.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 152,
+      "source_detail": "الدرس: تفسير أينشتاين (النظرية الكمية)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بأن الضوء يتكون من فوتونات طاقة كل منها = h×f",
+        "بأن الضوء موجة مستمرة فقط",
+        "بأن الإلكترونات تنبعث بالحرارة",
+        "بأن الفلز يذوب بالضوء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بأن الضوء يتكون من فوتونات طاقة كل منها = h×f"
+    },
+    {
+      "id": "ye-physics-u6-l4-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l4",
+      "difficulty": 3,
+      "question_text": "ما معادلة أينشتاين الكهروضوئية؟",
+      "explanation": "معادلة أينشتاين: KE_max = hf − W0، حيث W0 دالة الشغل وهي أقل طاقة لتحرير إلكترون من سطح الفلز.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 152,
+      "source_detail": "الدرس: تفسير أينشتاين (النظرية الكمية)",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الطاقة الحركية العظمى = طاقة الفوتون − دالة الشغل",
+        "الطاقة الحركية العظمى = طاقة الفوتون + دالة الشغل",
+        "الطاقة الحركية = الكتلة × السرعة",
+        "طاقة الفوتون = الكتلة × مربع السرعة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الطاقة الحركية العظمى = طاقة الفوتون − دالة الشغل"
+    },
+    {
+      "id": "ye-physics-u6-l5-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l5",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من استخدامات الخلية الكهروضوئية؟",
+      "explanation": "تستخدم الخلية الكهروضوئية في الأبواب الآلية، وأجهزة الإنذار، ومقاييس الضوء، والخلايا الشمسية، وتشغيل الأجهزة بالضوء.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 156,
+      "source_detail": "الدرس: استخدامات الخلية الكهروضوئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "فتح الأبواب تلقائياً وإنذار السرقة وقياس شدة الضوء",
+        "تسخين الماء بالفحم",
+        "توليد البخار",
+        "تبريد الهواء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "فتح الأبواب تلقائياً وإنذار السرقة وقياس شدة الضوء"
+    },
+    {
+      "id": "ye-physics-u6-l5-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l5",
+      "difficulty": 2,
+      "question_text": "تستخدم الخلايا الشمسية (وهي خلايا كهروضوئية) في توليد الكهرباء من ضوء الشمس.",
+      "explanation": "الخلايا الشمسية خلايا كهروضوئية تحول طاقة ضوء الشمس مباشرة إلى طاقة كهربائية، وتستخدم في الأقمار الصناعية والمنازل.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 156,
+      "source_detail": "الدرس: استخدامات الخلية الكهروضوئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u6-l6-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l6",
+      "difficulty": 1,
+      "question_text": "من مكتشف الأشعة السينية وفي أي عام؟",
+      "explanation": "اكتشف العالم الألماني رونتجن الأشعة السينية صدفة عام 1895م عندما اصطدمت حزمة إلكترونات بسطح فلزي داخل أنبوب مفرغ.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 157,
+      "source_detail": "الدرس: الأشعة السينية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "رونتجن عام 1895م",
+        "أينشتاين عام 1905م",
+        "هيرتز عام 1887م",
+        "بور عام 1913م"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "رونتجن عام 1895م"
+    },
+    {
+      "id": "ye-physics-u6-l6-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l6",
+      "difficulty": 2,
+      "question_text": "ما طول موجة الأشعة السينية تقريباً؟",
+      "explanation": "الأشعة السينية إشعاع كهرومغناطيسي طول موجته قصير جداً (نحو 10^-10 إلى 10^-8 متر)، لذا له طاقة عالية وقدرة اختراق كبيرة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 157,
+      "source_detail": "الدرس: الأشعة السينية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نحو 10^-10 متر",
+        "نحو 10^-2 متر",
+        "نحو 1 متر",
+        "نحو 10^3 متر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نحو 10^-10 متر"
+    },
+    {
+      "id": "ye-physics-u6-l7-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l7",
+      "difficulty": 1,
+      "question_text": "ما الليزر؟",
+      "explanation": "الليزر ضوء ناتج عن الانبعاث المحثوث: أحادي اللون، ومترابط (متسق)، وموجه في حزمة ضيقة شديدة التركيز.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 163,
+      "source_detail": "الدرس: الليزر",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "حزمة ضوئية أحادية اللون ومترابطة وموجهة تنتج بالانبعاث المحثوث",
+        "ضوء عادي من مصباح متوهج",
+        "أشعة سينية",
+        "موجات راديوية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "حزمة ضوئية أحادية اللون ومترابطة وموجهة تنتج بالانبعاث المحثوث"
+    },
+    {
+      "id": "ye-physics-u6-l7-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l7",
+      "difficulty": 2,
+      "question_text": "ما مبدأ عمل الليزر؟",
+      "explanation": "يعتمد الليزر على انقلاب التعداد (عدد الذرات المثارة أكبر من غير المثارة) فيمر فوتون فيحث الذرات المثارة على انبعاث فوتونات مماثلة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 163,
+      "source_detail": "الدرس: الليزر",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الانبعاث المحثوث بعد حدوث انقلاب التعداد",
+        "الانكسار الكلي للضوء",
+        "الانبعاث الحراري فقط",
+        "التأين بالحرارة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الانبعاث المحثوث بعد حدوث انقلاب التعداد"
+    },
+    {
+      "id": "ye-physics-u6-l8-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l8",
+      "difficulty": 1,
+      "question_text": "مم يتكون ليزر الياقوت؟",
+      "explanation": "ليزر الياقوت أول ليزر عملي: بلورة ياقوت (أكسيد ألمنيوم مطعم بأيونات الكروم) تُضخ ضوئياً فتشع ضوءاً أحمر.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 167,
+      "source_detail": "الدرس: جهاز ليزر الياقوت",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من بلورة أكسيد ألمنيوم مطعمة بالكروم (ياقوت)",
+        "من غاز الهيليوم والنيون",
+        "من سائل ملون",
+        "من فلز النحاس"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من بلورة أكسيد ألمنيوم مطعمة بالكروم (ياقوت)"
+    },
+    {
+      "id": "ye-physics-u6-l8-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l8",
+      "difficulty": 2,
+      "question_text": "ما لون ضوء ليزر الياقوت؟",
+      "explanation": "يشع ليزر الياقوت ضوءاً أحمر طول موجته نحو 694.3 نانومتر، ويستخدم في الطب والصناعة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 167,
+      "source_detail": "الدرس: جهاز ليزر الياقوت",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أحمر",
+        "أزرق",
+        "أخضر",
+        "أصفر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أحمر"
+    },
+    {
+      "id": "ye-physics-u6-l9-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l9",
+      "difficulty": 3,
+      "question_text": "إذا زادت شدة الضوء الساقط على سطح فلز (مع ثبات تردده)، فماذا يحدث؟",
+      "explanation": "زيادة الشدة تعني زيادة عدد الفوتونات فيزداد عدد الإلكترونات المنبعثة، أما طاقتها الحركية العظمى فتعتمد على التردد فقط.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 171,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "يزداد عدد الإلكترونات المنبعثة دون أن تزداد طاقتها الحركية العظمى",
+        "تزداد الطاقة الحركية العظمى للإلكترونات",
+        "يتوقف الانبعاث",
+        "يقل عدد الإلكترونات المنبعثة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يزداد عدد الإلكترونات المنبعثة دون أن تزداد طاقتها الحركية العظمى"
+    },
+    {
+      "id": "ye-physics-u6-l9-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u6",
+      "lesson_id": "physics-u6-l9",
+      "difficulty": 2,
+      "question_text": "للأشعة السينية قدرة اختراق عالية، لذا تستخدم في تصوير العظام والكشف عن الكسور.",
+      "explanation": "تخترق الأشعة السينية الأنسجة الرخوة أكثر من العظام، فيظهر العظم واضحاً في الصورة، وهذا أساس استخدامها الطبي.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 171,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u7-l1-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l1",
+      "difficulty": 1,
+      "question_text": "مم تتكون نواة الذرة؟",
+      "explanation": "تتكون النواة من بروتونات موجبة الشحنة ونيوترونات متعادلة، وتسمى معاً النويات (النوكليونات).",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 174,
+      "source_detail": "الدرس: تركيب النواة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من بروتونات ونيوترونات",
+        "من إلكترونات وبروتونات",
+        "من إلكترونات فقط",
+        "من فوتونات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من بروتونات ونيوترونات"
+    },
+    {
+      "id": "ye-physics-u7-l1-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l1",
+      "difficulty": 2,
+      "question_text": "ما العدد الكتلي للنواة؟",
+      "explanation": "العدد الكتلي A يساوي عدد البروتونات Z زائد عدد النيوترونات N، وهو يحدد كتلة النواة تقريباً.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 174,
+      "source_detail": "الدرس: تركيب النواة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مجموع عدد البروتونات والنيوترونات",
+        "عدد البروتونات فقط",
+        "عدد الإلكترونات فقط",
+        "الفرق بين البروتونات والنيوترونات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مجموع عدد البروتونات والنيوترونات"
+    },
+    {
+      "id": "ye-physics-u7-l2-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l2",
+      "difficulty": 1,
+      "question_text": "ما النشاط الإشعاعي؟",
+      "explanation": "النشاط الإشعاعي ظاهرة طبيعية تنبعث فيها النوى غير المستقرة جسيمات أو أشعة (ألفا وبيتا وجاما) دون تدخل خارجي.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 175,
+      "source_detail": "الدرس: النشاط الإشعاعي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "انبعاث نوى غير مستقرة إشعاعات تلقائياً لتتحول إلى نوى أكثر استقراراً",
+        "انقسام النواة بفعل قذفها بنيوترونات فقط",
+        "امتصاص النواة للضوء",
+        "تحول الإلكترونات إلى بروتونات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "انبعاث نوى غير مستقرة إشعاعات تلقائياً لتتحول إلى نوى أكثر استقراراً"
+    },
+    {
+      "id": "ye-physics-u7-l2-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l2",
+      "difficulty": 2,
+      "question_text": "ما جسيم ألفا؟",
+      "explanation": "جسيم ألفا نواة هيليوم (بروتونان ونيوترونان)، شحنته موجبة، وقدرته على الاختراق ضعيفة، بينما جسيم بيتا إلكترون، وأشعة جاما فوتونات.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 175,
+      "source_detail": "الدرس: النشاط الإشعاعي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نواة ذرة هيليوم (بروتونان ونيوترونان)",
+        "إلكترون سريع",
+        "فوتون عالي الطاقة",
+        "نيوترون حر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نواة ذرة هيليوم (بروتونان ونيوترونان)"
+    },
+    {
+      "id": "ye-physics-u7-l3-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l3",
+      "difficulty": 1,
+      "question_text": "ما عمر النصف لمادة مشعة؟",
+      "explanation": "عمر النصف هو الزمن الذي تتحلل فيه نصف كمية المادة المشعة، وهو ثابت مميز لكل نظير مشع ولا يتأثر بالظروف الخارجية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 179,
+      "source_detail": "الدرس: التحلل الإشعاعي وعمر النصف",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الزمن اللازم لتحلل نصف عدد نوى المادة المشعة",
+        "الزمن اللازم لتحلل كل النوى",
+        "نصف عمر الذرة الواحدة",
+        "الزمن اللازم لتضاعف النوى"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الزمن اللازم لتحلل نصف عدد نوى المادة المشعة"
+    },
+    {
+      "id": "ye-physics-u7-l3-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l3",
+      "difficulty": 3,
+      "question_text": "إذا كان عمر النصف لمادة مشعة 10 أيام، فكم يتبقى من 80 جم منها بعد 20 يوماً؟",
+      "explanation": "بعد عمر نصف واحد يبقى 40 جم، وبعد عمرين (20 يوماً) يبقى النصف أي 20 جم.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 179,
+      "source_detail": "الدرس: التحلل الإشعاعي وعمر النصف",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "20 جم",
+        "40 جم",
+        "10 جم",
+        "60 جم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "20 جم"
+    },
+    {
+      "id": "ye-physics-u7-l4-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l4",
+      "difficulty": 3,
+      "question_text": "ما طاقة الربط النووية؟",
+      "explanation": "طاقة الربط هي الطاقة التي تربط النويات معاً في النواة، وتساوي طاقة الكتلة المفقودة (Δm×c²) عند تكوين النواة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 180,
+      "source_detail": "الدرس: طاقة الربط النووية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الطاقة اللازمة لتفكيك النواة إلى بروتوناتها ونيوتروناتها",
+        "طاقة الإلكترون في مداره",
+        "طاقة انشطار الذرة بالضوء",
+        "الطاقة الحركية للنواة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الطاقة اللازمة لتفكيك النواة إلى بروتوناتها ونيوتروناتها"
+    },
+    {
+      "id": "ye-physics-u7-l4-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l4",
+      "difficulty": 2,
+      "question_text": "كتلة النواة أقل من مجموع كتل مكوناتها منفردة، والفرق يسمى النقص في الكتلة.",
+      "explanation": "عند تكوين النواة يتحول جزء من كتلة مكوناتها إلى طاقة ربط (حسب معادلة أينشتاين E=mc²)، فيظهر النقص في الكتلة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 180,
+      "source_detail": "الدرس: طاقة الربط النووية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u7-l5-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l5",
+      "difficulty": 1,
+      "question_text": "ما التفاعل المتسلسل في الانشطار النووي؟",
+      "explanation": "في الانشطار المتسلسل يطلق كل انشطار لنواة يورانيوم 235 نيوترونات تشطر نوى أخرى، فيستمر التفاعل ويتضاعف.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 181,
+      "source_detail": "الدرس: التفاعل المتسلسل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تفاعل يستمر فيه كل انشطار بإطلاق نيوترونات تسبب انشطارات جديدة",
+        "تفاعل يتوقف بعد انشطار واحد",
+        "اندماج نواتين خفيفتين",
+        "تحلل نواة واحدة ببطء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تفاعل يستمر فيه كل انشطار بإطلاق نيوترونات تسبب انشطارات جديدة"
+    },
+    {
+      "id": "ye-physics-u7-l5-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l5",
+      "difficulty": 2,
+      "question_text": "ما الشرط اللازم لاستمرار التفاعل المتسلسل؟",
+      "explanation": "يستمر التفاعل المتسلسل إذا كانت كتلة المادة مساوية للكتلة الحرجة أو أكبر، فيكفي عدد النيوترونات لإحداث انشطارات جديدة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 181,
+      "source_detail": "الدرس: التفاعل المتسلسل",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أن تكون كتلة المادة الانشطارية مساوية للكتلة الحرجة أو أكبر منها",
+        "أن تكون درجة الحرارة صفراً",
+        "أن يغيب الماء تماماً",
+        "أن تكون المادة سائلة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أن تكون كتلة المادة الانشطارية مساوية للكتلة الحرجة أو أكبر منها"
+    },
+    {
+      "id": "ye-physics-u7-l6-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l6",
+      "difficulty": 1,
+      "question_text": "ما الاستخدام السلمي الرئيس للمفاعلات النووية؟",
+      "explanation": "تستخدم المفاعلات النووية سلمياً في توليد الكهرباء، وفي الطب والزراعة والصناعة، عبر انشطار متحكم فيه ينتج حرارة تدير التوربينات.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 182,
+      "source_detail": "الدرس: المفاعلات النووية السلمية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "توليد الطاقة الكهربائية",
+        "صناعة الأسلحة فقط",
+        "توليد الضوء المباشر",
+        "تحلية مياه البحر بالحرارة فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "توليد الطاقة الكهربائية"
+    },
+    {
+      "id": "ye-physics-u7-l6-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l6",
+      "difficulty": 2,
+      "question_text": "ما وظيفة قضبان التحكم في المفاعل النووي؟",
+      "explanation": "قضبان التحكم (من الكادميوم أو البورون) تمتص النيوترونات، فإذا أُدخلت قل معدل الانشطار، وإذا سُحبت زاد، فيبقى التفاعل متحكماً فيه.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 182,
+      "source_detail": "الدرس: المفاعلات النووية السلمية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "امتصاص النيوترونات الزائدة للتحكم في معدل التفاعل",
+        "تسخين الماء مباشرة",
+        "توليد الكهرباء",
+        "تبريد الوقود بالهواء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "امتصاص النيوترونات الزائدة للتحكم في معدل التفاعل"
+    },
+    {
+      "id": "ye-physics-u7-l7-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l7",
+      "difficulty": 3,
+      "question_text": "أي الإشعاعات النووية أكبر قدرة على الاختراق؟",
+      "explanation": "أشعة جاما (فوتونات عالية الطاقة) أكبر قدرة على الاختراق، ثم بيتا، ثم ألفا وهي الأضعف اختراقاً لكنها الأشد تأيناً.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 183,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "أشعة جاما",
+        "جسيمات ألفا",
+        "جسيمات بيتا",
+        "النيوترونات البطيئة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أشعة جاما"
+    },
+    {
+      "id": "ye-physics-u7-l7-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u7",
+      "lesson_id": "physics-u7-l7",
+      "difficulty": 2,
+      "question_text": "يستخدم عمر النصف في تقدير أعمار الآثار والأحافير (كالتأريخ بالكربون 14).",
+      "explanation": "بقياس نسبة النظير المشع المتبقي إلى ناتج تحلله وعمر نصفه يمكن تقدير عمر العينة، ومن ذلك التأريخ بالكربون المشع.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 183,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u8-l1-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l1",
+      "difficulty": 1,
+      "question_text": "ما تعريف الطاقة؟",
+      "explanation": "الطاقة هي القدرة على إنجاز شغل، ولها صور عديدة: حركية، وكامنة، وحرارية، وكهربائية، وكيميائية، ونووية، وتتحول من صورة إلى أخرى.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 186,
+      "source_detail": "الدرس: الطاقة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "القدرة على إنجاز شغل",
+        "القوة المؤثرة في جسم",
+        "كتلة الجسم مضروبة في سرعته",
+        "معدل تغير السرعة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "القدرة على إنجاز شغل"
+    },
+    {
+      "id": "ye-physics-u8-l1-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l1",
+      "difficulty": 2,
+      "question_text": "أي مما يأتي من مصادر الطاقة المتجددة؟",
+      "explanation": "الطاقة الشمسية وطاقة الرياح والمياه الجارية مصادر متجددة لا تنفد، أما الفحم والنفط والغاز فمصادر ناضبة ملوثة للبيئة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 186,
+      "source_detail": "الدرس: الطاقة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الشمس والرياح والمياه الجارية",
+        "الفحم والنفط والغاز",
+        "اليورانيوم فقط",
+        "البنزين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الشمس والرياح والمياه الجارية"
+    },
+    {
+      "id": "ye-physics-u8-l2-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l2",
+      "difficulty": 1,
+      "question_text": "ما أعظم مصدر للطاقة على الأرض؟",
+      "explanation": "الشمس أعظم مصدر للطاقة؛ فهي مصدر الطاقة الحرارية والضوئية، ومنها تتولد طاقة الرياح والمياه، وتكون الوقود الأحفوري عبر العصور.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 187,
+      "source_detail": "الدرس: أعظم مصدر للطاقة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الشمس",
+        "الفحم",
+        "الرياح",
+        "النفط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الشمس"
+    },
+    {
+      "id": "ye-physics-u8-l2-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l2",
+      "difficulty": 2,
+      "question_text": "تصل طاقة الشمس إلى الأرض على هيئة إشعاع كهرومغناطيسي.",
+      "explanation": "تنتقل طاقة الشمس عبر الفضاء بالإشعاع الكهرومغناطيسي (ضوء مرئي وأشعة تحت حمراء وفوق بنفسجية) بسرعة الضوء.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 187,
+      "source_detail": "الدرس: أعظم مصدر للطاقة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u8-l3-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l3",
+      "difficulty": 1,
+      "question_text": "ما أنواع الإشعاع الشمسي الواصل إلى سطح الأرض؟",
+      "explanation": "الإشعاع الشمسي الواصل إلى الأرض ثلاثة أنواع: مباشر يصل دون انحراف، ومنتشر تتشتته جزيئات الهواء والغيوم، ومنعكس عن الأسطح.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 189,
+      "source_detail": "الدرس: أنواع الإشعاعات الشمسية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مباشر ومنتشر ومنعكس",
+        "مباشر فقط",
+        "منتشر فقط",
+        "منعكس فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مباشر ومنتشر ومنعكس"
+    },
+    {
+      "id": "ye-physics-u8-l3-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l3",
+      "difficulty": 2,
+      "question_text": "أي جزء من الإشعاع الشمسي يسبب الإحساس بالحرارة؟",
+      "explanation": "الأشعة تحت الحمراء هي المسؤولة أساساً عن الإحساس بالحرارة، بينما تسبب فوق البنفسجية اسمرار الجلد.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 189,
+      "source_detail": "الدرس: أنواع الإشعاعات الشمسية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الأشعة تحت الحمراء",
+        "الأشعة فوق البنفسجية",
+        "أشعة جاما",
+        "الموجات الراديوية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الأشعة تحت الحمراء"
+    },
+    {
+      "id": "ye-physics-u8-l4-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l4",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من تطبيقات استغلال الطاقة الشمسية في الحياة اليومية؟",
+      "explanation": "من التطبيقات المباشرة للطاقة الشمسية: تجفيف المحاصيل، وتسخين الماء، والطهي بأفران شمسية، وتحلية المياه، وتوليد الكهرباء.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 192,
+      "source_detail": "الدرس: تطبيقات لاستغلال الطاقة الشمسية في الحياة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تجفيف المحاصيل وتسخين الماء والطهي الشمسي",
+        "تشغيل السيارات بالبنزين",
+        "توليد الكهرباء بالفحم",
+        "تدفئة المنازل بالغاز"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تجفيف المحاصيل وتسخين الماء والطهي الشمسي"
+    },
+    {
+      "id": "ye-physics-u8-l4-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l4",
+      "difficulty": 2,
+      "question_text": "يمكن استخدام الطاقة الشمسية في تحلية مياه البحر وتقطيرها.",
+      "explanation": "تسخن الطاقة الشمسية مياه البحر فتتبخر ثم تتكثف ماء عذباً، وهي طريقة مهمة لتحلية المياه في المناطق المشمسة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 192,
+      "source_detail": "الدرس: تطبيقات لاستغلال الطاقة الشمسية في الحياة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u8-l5-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l5",
+      "difficulty": 1,
+      "question_text": "كيف يولد المجمع الشمسي (السخان الشمسي) الطاقة الحرارية؟",
+      "explanation": "في السخان الشمسي يمتص سطح أسود الإشعاع فيسخن، وتنتقل حرارته إلى الماء في الأنابيب فيسخن للاستخدام المنزلي.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 193,
+      "source_detail": "الدرس: توليد الطاقة الحرارية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "يمتص لوح أسود الإشعاع الشمسي فيسخن الماء المار فيه",
+        "يحرق الوقود لتسخين الماء",
+        "يحول الضوء إلى كهرباء أولاً",
+        "يبرد الماء بالهواء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يمتص لوح أسود الإشعاع الشمسي فيسخن الماء المار فيه"
+    },
+    {
+      "id": "ye-physics-u8-l5-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l5",
+      "difficulty": 2,
+      "question_text": "لماذا يطلى سطح المجمع الشمسي باللون الأسود؟",
+      "explanation": "السطح الأسود يمتص أكبر قدر من الإشعاع الشمسي الساقط عليه ويحوله إلى حرارة، بعكس السطح الأبيض العاكس.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 193,
+      "source_detail": "الدرس: توليد الطاقة الحرارية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "لأن الأسود يمتص الإشعاع الشمسي أكثر من غيره",
+        "لأن الأسود يعكس الإشعاع",
+        "لأن الأسود يمنع تسخين الماء",
+        "للزينة فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأن الأسود يمتص الإشعاع الشمسي أكثر من غيره"
+    },
+    {
+      "id": "ye-physics-u8-l6-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l6",
+      "difficulty": 1,
+      "question_text": "ما الجهاز الذي يحول طاقة ضوء الشمس مباشرة إلى طاقة كهربائية؟",
+      "explanation": "الخلية الشمسية (من السيليكون غالباً) تحول ضوء الشمس مباشرة إلى كهرباء بالظاهرة الكهروضوئية، دون أجزاء متحركة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 194,
+      "source_detail": "الدرس: توليد الطاقة الكهربائية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الخلية الشمسية (الكهروضوئية)",
+        "الدينامو",
+        "البطارية الجافة",
+        "المحول الكهربائي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الخلية الشمسية (الكهروضوئية)"
+    },
+    {
+      "id": "ye-physics-u8-l6-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l6",
+      "difficulty": 2,
+      "question_text": "يمكن تجميع الخلايا الشمسية في ألواح لتوليد كهرباء تكفي لتشغيل المنازل والأقمار الصناعية.",
+      "explanation": "تُوصل الخلايا الشمسية في ألواح ومصفوفات لزيادة القدرة، فتشغل المنازل والمضخات والأقمار الصناعية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 194,
+      "source_detail": "الدرس: توليد الطاقة الكهربائية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u8-l7-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l7",
+      "difficulty": 3,
+      "question_text": "أي مما يأتي ميزة للطاقة الشمسية؟",
+      "explanation": "الطاقة الشمسية نظيفة لا تلوث البيئة، ومتجددة لا تنفد، ومتوفرة مجاناً في المناطق المشمسة كاليمن.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 197,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نظيفة ومتجددة ولا تنفد",
+        "ملوثة للهواء",
+        "تنفد بسرعة",
+        "تحتاج وقوداً باستمرار"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نظيفة ومتجددة ولا تنفد"
+    },
+    {
+      "id": "ye-physics-u8-l7-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u8",
+      "lesson_id": "physics-u8-l7",
+      "difficulty": 2,
+      "question_text": "من عيوب الطاقة الشمسية أنها لا تتوفر ليلاً وتتأثر بالغيوم.",
+      "explanation": "تعتمد الطاقة الشمسية على سطوع الشمس، فتنقطع ليلاً وتضعف في الأيام الغائمة، لذا تحتاج بطاريات للتخزين.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 197,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u9-l1-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l1",
+      "difficulty": 1,
+      "question_text": "مم يتكون الكون؟",
+      "explanation": "الكون يشمل كل ما هو موجود: المجرات بما فيها من نجوم وكواكب وغازات وغبار، والفراغ الكوني بينها.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 199,
+      "source_detail": "الدرس: الكون",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من مجرات ونجوم وكواكب وغازات وغبار كوني",
+        "من الشمس والأرض فقط",
+        "من النجوم فقط",
+        "من الكواكب فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من مجرات ونجوم وكواكب وغازات وغبار كوني"
+    },
+    {
+      "id": "ye-physics-u9-l1-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l1",
+      "difficulty": 2,
+      "question_text": "مجرة درب التبانة هي المجرة التي تنتمي إليها مجموعتنا الشمسية.",
+      "explanation": "تنتمي الشمس وكواكبها إلى مجرة درب التبانة، وهي مجرة حلزونية تحوي مئات المليارات من النجوم.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 199,
+      "source_detail": "الدرس: الكون",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-physics-u9-l2-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l2",
+      "difficulty": 3,
+      "question_text": "ما الدليل على أن الكون يتمدد؟",
+      "explanation": "لاحظ هابل أن أطياف المجرات البعيدة منزاحة نحو الأحمر، أي أنها تبتعد عنا، وكلما بعدت المجرة زادت سرعة ابتعادها، فالكون يتمدد.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 201,
+      "source_detail": "الدرس: الكون الممتد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "انزياح ضوء المجرات البعيدة نحو الأحمر",
+        "ثبات مواقع النجوم",
+        "انكماش المجرات",
+        "توقف حركة الكواكب"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "انزياح ضوء المجرات البعيدة نحو الأحمر"
+    },
+    {
+      "id": "ye-physics-u9-l2-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l2",
+      "difficulty": 2,
+      "question_text": "ما النظرية التي تفسر نشأة الكون من انفجار عظيم؟",
+      "explanation": "نظرية الانفجار العظيم تقول إن الكون بدأ من نقطة شديدة الكثافة والحرارة قبل نحو 13.8 مليار سنة، ثم تمدد وبرد وتكونت المجرات والنجوم.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 201,
+      "source_detail": "الدرس: الكون الممتد",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نظرية الانفجار العظيم (الانفجار الكبير)",
+        "نظرية الحالة الثابتة",
+        "نظرية الجاذبية",
+        "نظرية الكم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نظرية الانفجار العظيم (الانفجار الكبير)"
+    },
+    {
+      "id": "ye-physics-u9-l3-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l3",
+      "difficulty": 1,
+      "question_text": "ما المجرة؟",
+      "explanation": "المجرة نظام ضخم من ملايين أو مليارات النجوم والغازات والغبار تربطها الجاذبية، وتوجد في الكون مليارات المجرات.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 202,
+      "source_detail": "الدرس: المجرات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تجمع هائل من النجوم والغازات والغبار مرتبط بالجاذبية",
+        "نجم واحد كبير",
+        "كوكب يدور حول نجم",
+        "سحابة ماء في السماء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تجمع هائل من النجوم والغازات والغبار مرتبط بالجاذبية"
+    },
+    {
+      "id": "ye-physics-u9-l3-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l3",
+      "difficulty": 2,
+      "question_text": "ما أنواع المجرات من حيث الشكل؟",
+      "explanation": "تصنف المجرات حسب شكلها إلى حلزونية (كدرب التبانة)، وبيضاوية (إهليجية)، وغير منتظمة الشكل.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 202,
+      "source_detail": "الدرس: المجرات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "حلزونية وبيضاوية وغير منتظمة",
+        "دائرية ومربعة ومثلثة",
+        "حمراء وزرقاء فقط",
+        "صغيرة وكبيرة فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "حلزونية وبيضاوية وغير منتظمة"
+    },
+    {
+      "id": "ye-physics-u9-l4-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l4",
+      "difficulty": 1,
+      "question_text": "ما النجم؟",
+      "explanation": "النجم كرة من الغاز الملتهب، وتتولد طاقته من اندماج نووي في باطنه (تحول الهيدروجين إلى هيليوم)، فيشع ضوءاً وحرارة.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 204,
+      "source_detail": "الدرس: النجوم",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "كرة غازية ملتهبة تشع ضوءاً وحرارة من تفاعلات نووية في باطنها",
+        "جسم صخري بارد يعكس ضوء الشمس",
+        "كوكب صغير",
+        "قمر يدور حول كوكب"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "كرة غازية ملتهبة تشع ضوءاً وحرارة من تفاعلات نووية في باطنها"
+    },
+    {
+      "id": "ye-physics-u9-l4-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l4",
+      "difficulty": 2,
+      "question_text": "بم يصنف النجوم حسب لونها؟",
+      "explanation": "لون النجم يدل على درجة حرارة سطحه: النجوم الزرقاء أسخن، ثم البيضاء، ثم الصفراء كالشمس، ثم الحمراء أبردها.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 204,
+      "source_detail": "الدرس: النجوم",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بدرجة حرارتها: الزرقاء أسخن من الحمراء",
+        "بحجمها فقط",
+        "ببعدها عن الأرض فقط",
+        "بعدد كواكبها"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بدرجة حرارتها: الزرقاء أسخن من الحمراء"
+    },
+    {
+      "id": "ye-physics-u9-l5-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l5",
+      "difficulty": 1,
+      "question_text": "من أين تنشأ النجوم؟",
+      "explanation": "تنشأ النجوم من سدم غازية تتقلص تحت تأثير الجاذبية، فترتفع حرارتها حتى يبدأ الاندماج النووي في باطنها فتولد نجماً.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 205,
+      "source_detail": "الدرس: نشوء وتطور النجوم",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من سدم (سحب) من الغاز والغبار تتقلص بفعل الجاذبية",
+        "من انفجار الكواكب",
+        "من تبخر مياه البحار",
+        "من احتراق الفحم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من سدم (سحب) من الغاز والغبار تتقلص بفعل الجاذبية"
+    },
+    {
+      "id": "ye-physics-u9-l5-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l5",
+      "difficulty": 2,
+      "question_text": "ماذا يحدث للنجم الضخم بعد نفاد وقوده النووي؟",
+      "explanation": "النجوم الضخمة تنتهي بانفجار مستعر أعظم، وتتحول بقاياها إلى نجم نيوتروني أو ثقب أسود حسب كتلتها، أما النجوم الصغيرة فتصبح أقزاماً بيضاء.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 205,
+      "source_detail": "الدرس: نشوء وتطور النجوم",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ينفجر كمستعر أعظم وقد يتحول إلى نجم نيوتروني أو ثقب أسود",
+        "يتحول إلى كوكب",
+        "يبقى مضيئاً إلى الأبد",
+        "يتحول إلى قمر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ينفجر كمستعر أعظم وقد يتحول إلى نجم نيوتروني أو ثقب أسود"
+    },
+    {
+      "id": "ye-physics-u9-l6-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l6",
+      "difficulty": 1,
+      "question_text": "ما السنة الضوئية؟",
+      "explanation": "السنة الضوئية وحدة مسافة تساوي المسافة التي يقطعها الضوء في سنة (نحو 9.46 تريليون كم)، وتستخدم لقياس المسافات بين النجوم.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 208,
+      "source_detail": "الدرس: المسافات بين النجوم",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "المسافة التي يقطعها الضوء في سنة واحدة",
+        "الزمن الذي يحتاجه الضوء للوصول إلى الشمس",
+        "عمر النجم بالسنين",
+        "المسافة بين الأرض والقمر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "المسافة التي يقطعها الضوء في سنة واحدة"
+    },
+    {
+      "id": "ye-physics-u9-l6-002",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l6",
+      "difficulty": 3,
+      "question_text": "كم تساوي السنة الضوئية تقريباً بالكيلومترات؟",
+      "explanation": "سرعة الضوء 3×10^8 م/ث، فتقطع في سنة نحو 9.46×10^12 كم، وهذه هي السنة الضوئية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 208,
+      "source_detail": "الدرس: المسافات بين النجوم",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "9.46 × 10^12 كم",
+        "3 × 10^8 كم",
+        "150 مليون كم",
+        "384 ألف كم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "9.46 × 10^12 كم"
+    },
+    {
+      "id": "ye-physics-u9-l7-001",
+      "type": "mcq",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l7",
+      "difficulty": 2,
+      "question_text": "أقرب نجم إلى الأرض بعد الشمس هو:",
+      "explanation": "أقرب نجم إلينا بعد الشمس هو بروكسيما قنطورس (ألفا قنطورس) ويبعد نحو 4.2 سنة ضوئية.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 210,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ألفا قنطورس (بروكسيما)",
+        "الشعرى اليمانية",
+        "النسر الواقع",
+        "الدبران"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ألفا قنطورس (بروكسيما)"
+    },
+    {
+      "id": "ye-physics-u9-l7-002",
+      "type": "true_false",
+      "subject_id": "physics",
+      "unit_id": "physics-u9",
+      "lesson_id": "physics-u9-l7",
+      "difficulty": 2,
+      "question_text": "تبلغ المسافة بين الأرض والشمس نحو 150 مليون كم، ويقطعها الضوء في نحو 8 دقائق.",
+      "explanation": "يبعد الضوء عن الشمس نحو 8 دقائق ضوئية، أي أن ضوء الشمس الذي نراه الآن غادرها قبل 8 دقائق.",
+      "source": "كتاب الفيزياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 210,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    }
+  ]
+}

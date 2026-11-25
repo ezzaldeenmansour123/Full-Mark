@@ -1,0 +1,3320 @@
+{
+  "format": "abqariya-content-pack",
+  "version": 1,
+  "pack": {
+    "id": "ye-biology-3sec-2027",
+    "title_ar": "أسئلة الأحياء — ثالث ثانوي علمي (صنعاء 2027)",
+    "title_en": "Biology questions — Grade 12 (Sanaa 2027)",
+    "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+    "is_demo": false,
+    "curriculum_year": "2025-2026",
+    "created_at": "2026-11-25"
+  },
+  "subjects": [
+    {
+      "id": "biology",
+      "name_ar": "الأحياء",
+      "name_en": "Biology",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027"
+    }
+  ],
+  "units": [
+    {
+      "id": "biology-u1",
+      "subject_id": "biology",
+      "title_ar": "الجهاز العصبي",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 8,
+      "sort_order": 1
+    },
+    {
+      "id": "biology-u2",
+      "subject_id": "biology",
+      "title_ar": "الجهاز الهرموني",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 40,
+      "sort_order": 2
+    },
+    {
+      "id": "biology-u3",
+      "subject_id": "biology",
+      "title_ar": "التكاثر في الكائنات الحية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 61,
+      "sort_order": 3
+    },
+    {
+      "id": "biology-u4",
+      "subject_id": "biology",
+      "title_ar": "أساسيات علم الوراثة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 96,
+      "sort_order": 4
+    },
+    {
+      "id": "biology-u5",
+      "subject_id": "biology",
+      "title_ar": "الوراثة الجزيئية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 131,
+      "sort_order": 5
+    },
+    {
+      "id": "biology-u7",
+      "subject_id": "biology",
+      "title_ar": "البيئة ومشكلاتها",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 162,
+      "sort_order": 6
+    },
+    {
+      "id": "biology-u6",
+      "subject_id": "biology",
+      "title_ar": "التقانة الحيوية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 144,
+      "sort_order": 6
+    },
+    {
+      "id": "biology-u8",
+      "subject_id": "biology",
+      "title_ar": "تاريخ الأرض",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 187,
+      "sort_order": 7
+    }
+  ],
+  "lessons": [
+    {
+      "id": "biology-u1-l1",
+      "unit_id": "biology-u1",
+      "subject_id": "biology",
+      "title_ar": "الجهاز العصبي في الكائن الحي",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 9,
+      "source_detail": "الدرس: الجهاز العصبي في الكائن الحي",
+      "sort_order": 1
+    },
+    {
+      "id": "biology-u1-l2",
+      "unit_id": "biology-u1",
+      "subject_id": "biology",
+      "title_ar": "أنواع الخلايا العصبية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس: أنواع الخلايا العصبية",
+      "sort_order": 2
+    },
+    {
+      "id": "biology-u1-l3",
+      "unit_id": "biology-u1",
+      "subject_id": "biology",
+      "title_ar": "أجزاء الجهاز العصبي في الإنسان",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 20,
+      "source_detail": "الدرس: أجزاء الجهاز العصبي في الإنسان",
+      "sort_order": 3
+    },
+    {
+      "id": "biology-u1-l4",
+      "unit_id": "biology-u1",
+      "subject_id": "biology",
+      "title_ar": "المستقبلات الحسية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 26,
+      "source_detail": "الدرس: المستقبلات الحسية",
+      "sort_order": 4
+    },
+    {
+      "id": "biology-u1-l5",
+      "unit_id": "biology-u1",
+      "subject_id": "biology",
+      "title_ar": "المستقبلات الضوئية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 26,
+      "source_detail": "الدرس: المستقبلات الضوئية",
+      "sort_order": 5
+    },
+    {
+      "id": "biology-u1-l6",
+      "unit_id": "biology-u1",
+      "subject_id": "biology",
+      "title_ar": "المستقبلات الآلية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 32,
+      "source_detail": "الدرس: المستقبلات الآلية",
+      "sort_order": 6
+    },
+    {
+      "id": "biology-u1-l7",
+      "unit_id": "biology-u1",
+      "subject_id": "biology",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 38,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 7
+    },
+    {
+      "id": "biology-u2-l1",
+      "unit_id": "biology-u2",
+      "subject_id": "biology",
+      "title_ar": "الجهاز الهرموني في النبات",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 41,
+      "source_detail": "الدرس: الجهاز الهرموني في النبات",
+      "sort_order": 1
+    },
+    {
+      "id": "biology-u2-l2",
+      "unit_id": "biology-u2",
+      "subject_id": "biology",
+      "title_ar": "الجهاز الهرموني في الحيوان",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 45,
+      "source_detail": "الدرس: الجهاز الهرموني في الحيوان",
+      "sort_order": 2
+    },
+    {
+      "id": "biology-u2-l3",
+      "unit_id": "biology-u2",
+      "subject_id": "biology",
+      "title_ar": "الجهاز الهرموني في الإنسان",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 46,
+      "source_detail": "الدرس: الجهاز الهرموني في الإنسان",
+      "sort_order": 3
+    },
+    {
+      "id": "biology-u2-l4",
+      "unit_id": "biology-u2",
+      "subject_id": "biology",
+      "title_ar": "أمراض الجهاز الهرموني وطرق الوقاية منها",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 58,
+      "source_detail": "الدرس: أمراض الجهاز الهرموني وطرق الوقاية منها",
+      "sort_order": 4
+    },
+    {
+      "id": "biology-u2-l5",
+      "unit_id": "biology-u2",
+      "subject_id": "biology",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 60,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 5
+    },
+    {
+      "id": "biology-u3-l1",
+      "unit_id": "biology-u3",
+      "subject_id": "biology",
+      "title_ar": "التكاثر",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: التكاثر",
+      "sort_order": 1
+    },
+    {
+      "id": "biology-u3-l2",
+      "unit_id": "biology-u3",
+      "subject_id": "biology",
+      "title_ar": "التكاثر اللاجنسي",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: التكاثر اللاجنسي",
+      "sort_order": 2
+    },
+    {
+      "id": "biology-u3-l3",
+      "unit_id": "biology-u3",
+      "subject_id": "biology",
+      "title_ar": "التكاثر الجنسي في النباتات",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس: التكاثر الجنسي في النباتات",
+      "sort_order": 3
+    },
+    {
+      "id": "biology-u3-l4",
+      "unit_id": "biology-u3",
+      "subject_id": "biology",
+      "title_ar": "التكاثر الجنسي في الطلائعيات",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 70,
+      "source_detail": "الدرس: التكاثر الجنسي في الطلائعيات",
+      "sort_order": 4
+    },
+    {
+      "id": "biology-u3-l5",
+      "unit_id": "biology-u3",
+      "subject_id": "biology",
+      "title_ar": "التكاثر الجنسي في الحيوانات",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "source_detail": "الدرس: التكاثر الجنسي في الحيوانات",
+      "sort_order": 5
+    },
+    {
+      "id": "biology-u3-l6",
+      "unit_id": "biology-u3",
+      "subject_id": "biology",
+      "title_ar": "التكاثر الجنسي في الإنسان",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "source_detail": "الدرس: التكاثر الجنسي في الإنسان",
+      "sort_order": 6
+    },
+    {
+      "id": "biology-u3-l7",
+      "unit_id": "biology-u3",
+      "subject_id": "biology",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 93,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 7
+    },
+    {
+      "id": "biology-u4-l1",
+      "unit_id": "biology-u4",
+      "subject_id": "biology",
+      "title_ar": "أساسيات علم الوراثة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 97,
+      "source_detail": "الدرس: أساسيات علم الوراثة",
+      "sort_order": 1
+    },
+    {
+      "id": "biology-u4-l2",
+      "unit_id": "biology-u4",
+      "subject_id": "biology",
+      "title_ar": "تطور علم الوراثة الحديث",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 98,
+      "source_detail": "الدرس: تطور علم الوراثة الحديث",
+      "sort_order": 2
+    },
+    {
+      "id": "biology-u4-l3",
+      "unit_id": "biology-u4",
+      "subject_id": "biology",
+      "title_ar": "الشكل الجسمي والشكل الظاهري",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 104,
+      "source_detail": "الدرس: الشكل الجسمي والشكل الظاهري",
+      "sort_order": 3
+    },
+    {
+      "id": "biology-u4-l4",
+      "unit_id": "biology-u4",
+      "subject_id": "biology",
+      "title_ar": "دور الكروموسومات في الوراثة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 111,
+      "source_detail": "الدرس: دور الكروموسومات في الوراثة",
+      "sort_order": 4
+    },
+    {
+      "id": "biology-u4-l5",
+      "unit_id": "biology-u4",
+      "subject_id": "biology",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 129,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 5
+    },
+    {
+      "id": "biology-u5-l1",
+      "unit_id": "biology-u5",
+      "subject_id": "biology",
+      "title_ar": "الكروموسومات والجينات",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 132,
+      "source_detail": "الدرس: الكروموسومات والجينات",
+      "sort_order": 1
+    },
+    {
+      "id": "biology-u5-l2",
+      "unit_id": "biology-u5",
+      "subject_id": "biology",
+      "title_ar": "دور مادة (DNA) في نقل الصفات الوراثية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 135,
+      "source_detail": "الدرس: دور مادة (DNA) في نقل الصفات الوراثية",
+      "sort_order": 2
+    },
+    {
+      "id": "biology-u5-l3",
+      "unit_id": "biology-u5",
+      "subject_id": "biology",
+      "title_ar": "الحمض النووي الريبوزي",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 136,
+      "source_detail": "الدرس: الحمض النووي الريبوزي",
+      "sort_order": 3
+    },
+    {
+      "id": "biology-u5-l4",
+      "unit_id": "biology-u5",
+      "subject_id": "biology",
+      "title_ar": "تطبيقات على الوراثة الجزيئية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 140,
+      "source_detail": "الدرس: تطبيقات على الوراثة الجزيئية",
+      "sort_order": 4
+    },
+    {
+      "id": "biology-u5-l5",
+      "unit_id": "biology-u5",
+      "subject_id": "biology",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 143,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 5
+    },
+    {
+      "id": "biology-u6-l1",
+      "unit_id": "biology-u6",
+      "subject_id": "biology",
+      "title_ar": "التقانة الحيوية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 145,
+      "source_detail": "الدرس: التقانة الحيوية",
+      "sort_order": 1
+    },
+    {
+      "id": "biology-u6-l2",
+      "unit_id": "biology-u6",
+      "subject_id": "biology",
+      "title_ar": "الهندسة الجينية أو الوراثية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 146,
+      "source_detail": "الدرس: الهندسة الجينية أو الوراثية",
+      "sort_order": 2
+    },
+    {
+      "id": "biology-u6-l3",
+      "unit_id": "biology-u6",
+      "subject_id": "biology",
+      "title_ar": "استخدام التقانة الحيوية في إنتاج الغذاء",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج الغذاء",
+      "sort_order": 3
+    },
+    {
+      "id": "biology-u6-l4",
+      "unit_id": "biology-u6",
+      "subject_id": "biology",
+      "title_ar": "استخدام التقانة الحيوية في إنتاج الدواء",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 152,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج الدواء",
+      "sort_order": 4
+    },
+    {
+      "id": "biology-u6-l5",
+      "unit_id": "biology-u6",
+      "subject_id": "biology",
+      "title_ar": "استخدام التقانة الحيوية في إنتاج الوقود",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 155,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج الوقود",
+      "sort_order": 5
+    },
+    {
+      "id": "biology-u6-l6",
+      "unit_id": "biology-u6",
+      "subject_id": "biology",
+      "title_ar": "استخدام التقانة الحيوية في معالجة المخلفات الملوثة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 156,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في معالجة المخلفات الملوثة",
+      "sort_order": 6
+    },
+    {
+      "id": "biology-u6-l7",
+      "unit_id": "biology-u6",
+      "subject_id": "biology",
+      "title_ar": "استخدام التقانة الحيوية في إنتاج بعض المواد الصناعية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 158,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج بعض المواد الصناعية",
+      "sort_order": 7
+    },
+    {
+      "id": "biology-u6-l8",
+      "unit_id": "biology-u6",
+      "subject_id": "biology",
+      "title_ar": "الاستنساخ",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 158,
+      "source_detail": "الدرس: الاستنساخ",
+      "sort_order": 8
+    },
+    {
+      "id": "biology-u6-l9",
+      "unit_id": "biology-u6",
+      "subject_id": "biology",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 161,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 9
+    },
+    {
+      "id": "biology-u7-l1",
+      "unit_id": "biology-u7",
+      "subject_id": "biology",
+      "title_ar": "المقصود بالبيئة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 163,
+      "source_detail": "الدرس: المقصود بالبيئة",
+      "sort_order": 1
+    },
+    {
+      "id": "biology-u7-l2",
+      "unit_id": "biology-u7",
+      "subject_id": "biology",
+      "title_ar": "مشكلات التلوث لمكونات البيئة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 164,
+      "source_detail": "الدرس: مشكلات التلوث لمكونات البيئة",
+      "sort_order": 2
+    },
+    {
+      "id": "biology-u7-l3",
+      "unit_id": "biology-u7",
+      "subject_id": "biology",
+      "title_ar": "ملوثات الهواء",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 165,
+      "source_detail": "الدرس: ملوثات الهواء",
+      "sort_order": 3
+    },
+    {
+      "id": "biology-u7-l4",
+      "unit_id": "biology-u7",
+      "subject_id": "biology",
+      "title_ar": "تلوث الماء",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 171,
+      "source_detail": "الدرس: تلوث الماء",
+      "sort_order": 4
+    },
+    {
+      "id": "biology-u7-l5",
+      "unit_id": "biology-u7",
+      "subject_id": "biology",
+      "title_ar": "التلوث الضوضائي",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 173,
+      "source_detail": "الدرس: التلوث الضوضائي",
+      "sort_order": 5
+    },
+    {
+      "id": "biology-u7-l6",
+      "unit_id": "biology-u7",
+      "subject_id": "biology",
+      "title_ar": "التلوث الإشعاعي",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 176,
+      "source_detail": "الدرس: التلوث الإشعاعي",
+      "sort_order": 6
+    },
+    {
+      "id": "biology-u7-l7",
+      "unit_id": "biology-u7",
+      "subject_id": "biology",
+      "title_ar": "مخلفات الغذاء",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 178,
+      "source_detail": "الدرس: مخلفات الغذاء",
+      "sort_order": 7
+    },
+    {
+      "id": "biology-u7-l8",
+      "unit_id": "biology-u7",
+      "subject_id": "biology",
+      "title_ar": "مشكلات استنزاف الموارد البيئية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 181,
+      "source_detail": "الدرس: مشكلات استنزاف الموارد البيئية",
+      "sort_order": 8
+    },
+    {
+      "id": "biology-u7-l9",
+      "unit_id": "biology-u7",
+      "subject_id": "biology",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 186,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 9
+    },
+    {
+      "id": "biology-u8-l1",
+      "unit_id": "biology-u8",
+      "subject_id": "biology",
+      "title_ar": "الصخور الرسوبية",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 188,
+      "source_detail": "الدرس: الصخور الرسوبية",
+      "sort_order": 1
+    },
+    {
+      "id": "biology-u8-l2",
+      "unit_id": "biology-u8",
+      "subject_id": "biology",
+      "title_ar": "الأحافير",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 191,
+      "source_detail": "الدرس: الأحافير",
+      "sort_order": 2
+    },
+    {
+      "id": "biology-u8-l3",
+      "unit_id": "biology-u8",
+      "subject_id": "biology",
+      "title_ar": "التاريخ الطبقي للصخور",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 202,
+      "source_detail": "الدرس: التاريخ الطبقي للصخور",
+      "sort_order": 3
+    },
+    {
+      "id": "biology-u8-l4",
+      "unit_id": "biology-u8",
+      "subject_id": "biology",
+      "title_ar": "مبدأ التعاقب للحفريات",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 202,
+      "source_detail": "الدرس: مبدأ التعاقب للحفريات",
+      "sort_order": 4
+    },
+    {
+      "id": "biology-u8-l5",
+      "unit_id": "biology-u8",
+      "subject_id": "biology",
+      "title_ar": "أحداث في تاريخ الأرض",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 209,
+      "source_detail": "الدرس: أحداث في تاريخ الأرض",
+      "sort_order": 5
+    },
+    {
+      "id": "biology-u8-l6",
+      "unit_id": "biology-u8",
+      "subject_id": "biology",
+      "title_ar": "مقياس الزمن الجيولوجي",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 207,
+      "source_detail": "الدرس: مقياس الزمن الجيولوجي",
+      "sort_order": 6
+    },
+    {
+      "id": "biology-u8-l7",
+      "unit_id": "biology-u8",
+      "subject_id": "biology",
+      "title_ar": "تقويم الوحدة",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 220,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "sort_order": 7
+    }
+  ],
+  "questions": [
+    {
+      "id": "ye-biology-u1-l1-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l1",
+      "difficulty": 1,
+      "question_text": "ما وظيفة الجهاز العصبي في الكائن الحي؟",
+      "explanation": "الجهاز العصبي يستقبل المؤثرات من البيئة الداخلية والخارجية، وينسق استجابة الجسم لها، وهو أسرع أجهزة التنسيق في الكائنات.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 9,
+      "source_detail": "الدرس: الجهاز العصبي في الكائن الحي",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "استقبال المؤثرات والاستجابة لها وتنسيق أنشطة الجسم",
+        "نقل الغذاء فقط",
+        "إنتاج الطاقة فقط",
+        "هضم الطعام"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "استقبال المؤثرات والاستجابة لها وتنسيق أنشطة الجسم"
+    },
+    {
+      "id": "ye-biology-u1-l1-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l1",
+      "difficulty": 2,
+      "question_text": "كيف تستجيب الأميبا (كائن وحيد الخلية) للمؤثرات؟",
+      "explanation": "الكائنات وحيدة الخلية كالأميبا والبراميسيوم ليس لها جهاز عصبي، لكنها تستجيب للمؤثرات بالحركة (بالأقدام الكاذبة أو الأهداب).",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 9,
+      "source_detail": "الدرس: الجهاز العصبي في الكائن الحي",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بالحركة بالأقدام الكاذبة نحو الغذاء أو بعيداً عن الخطر",
+        "بإرسال سيالات عصبية",
+        "بانقباض العضلات",
+        "بالتنفس فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بالحركة بالأقدام الكاذبة نحو الغذاء أو بعيداً عن الخطر"
+    },
+    {
+      "id": "ye-biology-u1-l2-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l2",
+      "difficulty": 1,
+      "question_text": "ما وظيفة الألياف العصبية الحسية؟",
+      "explanation": "الألياف الحسية (الواردة) تنقل السيالات من أعضاء الحس إلى الدماغ والحبل الشوكي، بينما الحركية (الصادرة) تنقل الأوامر إلى العضلات والغدد.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس: أنواع الخلايا العصبية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نقل السيالات العصبية من المستقبلات إلى الجهاز العصبي المركزي",
+        "نقل الأوامر من الدماغ إلى العضلات",
+        "ربط نصفي الدماغ",
+        "إفراز الهرمونات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نقل السيالات العصبية من المستقبلات إلى الجهاز العصبي المركزي"
+    },
+    {
+      "id": "ye-biology-u1-l2-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l2",
+      "difficulty": 2,
+      "question_text": "ما وظيفة الألياف العصبية الحركية؟",
+      "explanation": "الألياف الحركية تنقل سيالات الأوامر من الدماغ والحبل الشوكي إلى العضلات والغدد فتستجيب.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس: أنواع الخلايا العصبية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نقل الأوامر من الجهاز العصبي المركزي إلى أعضاء الاستجابة",
+        "نقل الإحساس من الجلد إلى الدماغ",
+        "توصيل الغذاء للخلايا",
+        "حماية الدماغ"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نقل الأوامر من الجهاز العصبي المركزي إلى أعضاء الاستجابة"
+    },
+    {
+      "id": "ye-biology-u1-l3-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l3",
+      "difficulty": 1,
+      "question_text": "مم يتكون الجهاز العصبي المركزي في الإنسان؟",
+      "explanation": "يتكون الجهاز العصبي المركزي من الدماغ (داخل الجمجمة) والحبل الشوكي (داخل العمود الفقري)، أما الأعصاب المتصلة بهما فهي الجهاز الطرفي.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 20,
+      "source_detail": "الدرس: أجزاء الجهاز العصبي في الإنسان",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من الدماغ والحبل الشوكي",
+        "من الأعصاب الطرفية فقط",
+        "من الغدد الصماء",
+        "من العضلات والعظام"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من الدماغ والحبل الشوكي"
+    },
+    {
+      "id": "ye-biology-u1-l3-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l3",
+      "difficulty": 2,
+      "question_text": "كم يبلغ وزن الدماغ في الإنسان البالغ تقريباً؟",
+      "explanation": "يبلغ وزن دماغ الإنسان نحو 1500 جرام، ويحوي نحو 100 مليار خلية عصبية، ويحميه الجمجمة والأغشية السحائية والسائل الدماغي الشوكي.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 20,
+      "source_detail": "الدرس: أجزاء الجهاز العصبي في الإنسان",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نحو 1500 جرام",
+        "نحو 150 جراماً",
+        "نحو 15 كيلوجراماً",
+        "نحو 500 جرام"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نحو 1500 جرام"
+    },
+    {
+      "id": "ye-biology-u1-l4-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l4",
+      "difficulty": 1,
+      "question_text": "ما وظيفة المستقبلات الحسية؟",
+      "explanation": "المستقبلات الحسية خلايا أو أعضاء متخصصة تستقبل مؤثراً معيناً وتحوله إلى سيال عصبي ينقله العصب الحسي إلى الدماغ.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 26,
+      "source_detail": "الدرس: المستقبلات الحسية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تحويل المؤثرات (ضوء، صوت، لمس) إلى سيالات عصبية",
+        "إفراز الهرمونات",
+        "ضخ الدم",
+        "هضم الطعام"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تحويل المؤثرات (ضوء، صوت، لمس) إلى سيالات عصبية"
+    },
+    {
+      "id": "ye-biology-u1-l4-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l4",
+      "difficulty": 2,
+      "question_text": "أين توجد المستقبلات الكيميائية في الإنسان؟",
+      "explanation": "المستقبلات الكيميائية تستجيب للمواد الكيميائية: في الأنف للروائح، وفي اللسان للطعم (حلو، مالح، حامض، مر).",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 26,
+      "source_detail": "الدرس: المستقبلات الحسية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "في الأنف واللسان (الشم والتذوق)",
+        "في العين فقط",
+        "في الأذن فقط",
+        "في الجلد فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "في الأنف واللسان (الشم والتذوق)"
+    },
+    {
+      "id": "ye-biology-u1-l5-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l5",
+      "difficulty": 1,
+      "question_text": "ما العضو الذي يحوي المستقبلات الضوئية في الإنسان؟",
+      "explanation": "المستقبلات الضوئية في شبكية العين: العصي (للرؤية في الضوء الخافت) والمخاريط (للألوان والرؤية في الضوء الساطع).",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 26,
+      "source_detail": "الدرس: المستقبلات الضوئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "العين (الشبكية)",
+        "الأذن",
+        "الأنف",
+        "الجلد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "العين (الشبكية)"
+    },
+    {
+      "id": "ye-biology-u1-l5-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l5",
+      "difficulty": 2,
+      "question_text": "ما وظيفة المخاريط في شبكية العين؟",
+      "explanation": "المخاريط مستقبلات ضوئية تميز الألوان وتعمل في الضوء الساطع، أما العصي فحساسة للضوء الخافت ولا تميز الألوان.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 26,
+      "source_detail": "الدرس: المستقبلات الضوئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تمييز الألوان والرؤية في الضوء الساطع",
+        "الرؤية في الظلام فقط",
+        "سماع الأصوات",
+        "إفراز الدموع"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تمييز الألوان والرؤية في الضوء الساطع"
+    },
+    {
+      "id": "ye-biology-u1-l6-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l6",
+      "difficulty": 1,
+      "question_text": "ما المستقبلات الآلية؟",
+      "explanation": "المستقبلات الآلية تستجيب للمؤثرات الميكانيكية: اللمس والضغط في الجلد، والصوت والتوازن في الأذن.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 32,
+      "source_detail": "الدرس: المستقبلات الآلية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مستقبلات تستجيب للضغط واللمس والاهتزاز والصوت",
+        "مستقبلات تستجيب للضوء",
+        "مستقبلات تستجيب للمواد الكيميائية",
+        "مستقبلات تستجيب للحرارة فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مستقبلات تستجيب للضغط واللمس والاهتزاز والصوت"
+    },
+    {
+      "id": "ye-biology-u1-l6-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l6",
+      "difficulty": 2,
+      "question_text": "أين توجد مستقبلات السمع والتوازن؟",
+      "explanation": "في الأذن الداخلية توجد مستقبلات السمع (في القوقعة) ومستقبلات التوازن (في القنوات الهلالية)، وهي مستقبلات آلية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 32,
+      "source_detail": "الدرس: المستقبلات الآلية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "في الأذن الداخلية",
+        "في العين",
+        "في الأنف",
+        "في اللسان"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "في الأذن الداخلية"
+    },
+    {
+      "id": "ye-biology-u1-l7-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l7",
+      "difficulty": 3,
+      "question_text": "أي مما يأتي من مكونات الجهاز العصبي المركزي؟",
+      "explanation": "الجهاز العصبي المركزي يتكون من الدماغ والحبل الشوكي، ويتصل بهما الجهاز العصبي الطرفي المكون من الأعصاب.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 38,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الدماغ والحبل الشوكي",
+        "الأعصاب القحفية فقط",
+        "الغدة الدرقية",
+        "العقد الليمفاوية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الدماغ والحبل الشوكي"
+    },
+    {
+      "id": "ye-biology-u1-l7-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u1",
+      "lesson_id": "biology-u1-l7",
+      "difficulty": 2,
+      "question_text": "الخلية العصبية (العصبون) هي الوحدة البنائية والوظيفية للجهاز العصبي.",
+      "explanation": "يتكون الجهاز العصبي من خلايا عصبية (عصبونات) تتكون كل منها من جسم خلية وزوائد شجيرية ومحور، وتنقل السيالات العصبية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 38,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u2-l1-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u2",
+      "lesson_id": "biology-u2-l1",
+      "difficulty": 1,
+      "question_text": "ما الهرمونات النباتية؟",
+      "explanation": "الهرمونات النباتية مواد كيميائية تنتجها أنسجة معينة وتنتقل إلى أجزاء أخرى فتنظم النمو والإزهار ونضج الثمار.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 41,
+      "source_detail": "الدرس: الجهاز الهرموني في النبات",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مواد كيميائية تنظم نمو النبات وتفاعلاته",
+        "أعضاء تنتج البذور",
+        "أصباغ تلون الأزهار",
+        "مواد تثبت النبات في التربة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مواد كيميائية تنظم نمو النبات وتفاعلاته"
+    },
+    {
+      "id": "ye-biology-u2-l1-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u2",
+      "lesson_id": "biology-u2-l1",
+      "difficulty": 2,
+      "question_text": "ما وظيفة هرمون الأوكسين في النبات؟",
+      "explanation": "الأوكسينات هرمونات نباتية تحفز استطالة الخلايا، وتتجمع في الجانب المظلل فينمو أكثر فينحني الساق نحو الضوء.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 41,
+      "source_detail": "الدرس: الجهاز الهرموني في النبات",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "استطالة الخلايا والانتحاء نحو الضوء",
+        "تساقط الأوراق فقط",
+        "إغلاق الثغور دائماً",
+        "تثبيط النمو كلياً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "استطالة الخلايا والانتحاء نحو الضوء"
+    },
+    {
+      "id": "ye-biology-u2-l2-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u2",
+      "lesson_id": "biology-u2-l2",
+      "difficulty": 1,
+      "question_text": "كيف تنتقل الهرمونات في جسم الحيوان؟",
+      "explanation": "الهرمونات مواد كيميائية تفرزها الغدد الصماء في الدم مباشرة، فينقلها الدم إلى الأعضاء المستهدفة في الجسم.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 45,
+      "source_detail": "الدرس: الجهاز الهرموني في الحيوان",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "عبر الدم إلى الأعضاء المستهدفة",
+        "عبر الأعصاب فقط",
+        "عبر الهواء",
+        "عبر الجلد فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عبر الدم إلى الأعضاء المستهدفة"
+    },
+    {
+      "id": "ye-biology-u2-l2-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u2",
+      "lesson_id": "biology-u2-l2",
+      "difficulty": 2,
+      "question_text": "التنسيق الهرموني أبطأ من التنسيق العصبي لكن تأثيره أطول مدة.",
+      "explanation": "السيال العصبي سريع وقصير الأثر، أما الهرمون فينتقل بالدم ببطء ويبقى تأثيره مدة أطول.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 45,
+      "source_detail": "الدرس: الجهاز الهرموني في الحيوان",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u2-l3-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u2",
+      "lesson_id": "biology-u2-l3",
+      "difficulty": 1,
+      "question_text": "أي غدة تسمى الغدة الرئيسية (سيدة الغدد) في الإنسان؟",
+      "explanation": "الغدة النخامية في قاعدة الدماغ تسمى سيدة الغدد لأن هرموناتها تنظم عمل معظم الغدد الصماء الأخرى.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 46,
+      "source_detail": "الدرس: الجهاز الهرموني في الإنسان",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الغدة النخامية",
+        "الغدة الدرقية",
+        "البنكرياس",
+        "الغدة الكظرية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الغدة النخامية"
+    },
+    {
+      "id": "ye-biology-u2-l3-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u2",
+      "lesson_id": "biology-u2-l3",
+      "difficulty": 2,
+      "question_text": "ما هرمون البنكرياس الذي ينظم مستوى السكر في الدم؟",
+      "explanation": "يفرز البنكرياس الأنسولين فيخفض سكر الدم بإدخال الجلوكوز إلى الخلايا، ونقصه يسبب مرض السكري.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 46,
+      "source_detail": "الدرس: الجهاز الهرموني في الإنسان",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الأنسولين",
+        "الثيروكسين",
+        "الأدرينالين",
+        "هرمون النمو"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الأنسولين"
+    },
+    {
+      "id": "ye-biology-u2-l4-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u2",
+      "lesson_id": "biology-u2-l4",
+      "difficulty": 1,
+      "question_text": "ما سبب مرض السكري؟",
+      "explanation": "يحدث السكري عند نقص الأنسولين أو ضعف استجابة الخلايا له، فيرتفع سكر الدم، ويعالج بالأنسولين وتنظيم الغذاء.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 58,
+      "source_detail": "الدرس: أمراض الجهاز الهرموني وطرق الوقاية منها",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نقص إفراز هرمون الأنسولين أو عدم فاعليته",
+        "زيادة إفراز الثيروكسين",
+        "نقص هرمون النمو",
+        "زيادة الأدرينالين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نقص إفراز هرمون الأنسولين أو عدم فاعليته"
+    },
+    {
+      "id": "ye-biology-u2-l4-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u2",
+      "lesson_id": "biology-u2-l4",
+      "difficulty": 2,
+      "question_text": "ما سبب تضخم الغدة الدرقية (الدُراق)؟",
+      "explanation": "اليود ضروري لإنتاج هرمون الثيروكسين، فنقصه في الغذاء يسبب تضخم الغدة الدرقية، والوقاية بتناول الملح المضاف إليه اليود.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 58,
+      "source_detail": "الدرس: أمراض الجهاز الهرموني وطرق الوقاية منها",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نقص اليود في الغذاء",
+        "زيادة اليود في الغذاء",
+        "نقص فيتامين د",
+        "زيادة السكر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نقص اليود في الغذاء"
+    },
+    {
+      "id": "ye-biology-u2-l5-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u2",
+      "lesson_id": "biology-u2-l5",
+      "difficulty": 3,
+      "question_text": "أي مما يأتي غدة صماء؟",
+      "explanation": "الغدد الصماء (كالدرقية والنخامية والبنكرياس) تفرز هرموناتها في الدم مباشرة بلا قنوات، بخلاف الغدد ذات القنوات كاللعابية والعرقية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 60,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الغدة الدرقية",
+        "الغدة اللعابية",
+        "الغدة العرقية",
+        "الغدة الدمعية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الغدة الدرقية"
+    },
+    {
+      "id": "ye-biology-u2-l5-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u2",
+      "lesson_id": "biology-u2-l5",
+      "difficulty": 2,
+      "question_text": "هرمون الثيروكسين الذي تفرزه الغدة الدرقية ينظم معدل الأيض (عمليات التمثيل الغذائي) في الجسم.",
+      "explanation": "الثيروكسين يرفع معدل الأيض، فنقصه يسبب الخمول وزيادة الوزن، وزيادته تسبب النحافة وسرعة ضربات القلب.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 60,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u3-l1-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l1",
+      "difficulty": 1,
+      "question_text": "ما التكاثر؟",
+      "explanation": "التكاثر عملية حيوية تنتج أفراداً جديدة من النوع نفسه، وبه يستمر النوع ويعوض الأفراد التي تموت.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: التكاثر",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "عملية إنتاج أفراد جديدة من النوع نفسه تحفظ استمرار النوع",
+        "عملية هضم الطعام",
+        "عملية التنفس الخلوي",
+        "عملية نمو الفرد فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عملية إنتاج أفراد جديدة من النوع نفسه تحفظ استمرار النوع"
+    },
+    {
+      "id": "ye-biology-u3-l1-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l1",
+      "difficulty": 2,
+      "question_text": "ما نوعا التكاثر في الكائنات الحية؟",
+      "explanation": "التكاثر نوعان: لاجنسي بفرد أبوي واحد دون أمشاج، وجنسي باندماج مشيجين (ذكر وأنثى) من فردين أو فرد واحد.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: التكاثر",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "جنسي ولاجنسي",
+        "داخلي وخارجي",
+        "سريع وبطيء",
+        "نباتي وحيواني"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "جنسي ولاجنسي"
+    },
+    {
+      "id": "ye-biology-u3-l2-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l2",
+      "difficulty": 1,
+      "question_text": "ما صفة الأفراد الناتجة من التكاثر اللاجنسي؟",
+      "explanation": "التكاثر اللاجنسي يتم بفرد أبوي واحد وبالانقسام، فينتج أفراداً مطابقة وراثياً للأب، فلا يحدث تنوع وراثي.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: التكاثر اللاجنسي",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "مطابقة للفرد الأبوي تماماً (نسخة منه)",
+        "مختلفة تماماً عن الفرد الأبوي",
+        "نصف صفات الأب ونصف صفات الأم",
+        "أضعف دائماً من الأبوي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "مطابقة للفرد الأبوي تماماً (نسخة منه)"
+    },
+    {
+      "id": "ye-biology-u3-l2-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l2",
+      "difficulty": 2,
+      "question_text": "أي مما يأتي من طرق التكاثر اللاجنسي؟",
+      "explanation": "من طرق التكاثر اللاجنسي: الانشطار الثنائي (في البراميسيوم والبكتيريا)، والتبرعم (في الخميرة والهيدرا)، والتفتت، وتكوين الأبواغ.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: التكاثر اللاجنسي",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الانشطار الثنائي والتبرعم",
+        "التلقيح والإخصاب",
+        "تكوين البذور",
+        "الاقتران"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الانشطار الثنائي والتبرعم"
+    },
+    {
+      "id": "ye-biology-u3-l3-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l3",
+      "difficulty": 1,
+      "question_text": "أين تتكون حبوب اللقاح في الزهرة؟",
+      "explanation": "تتكون حبوب اللقاح (الأمشاج الذكرية) في المتك أعلى السداة، بينما تتكون البويضات في المبيض داخل الكربلة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس: التكاثر الجنسي في النباتات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "في المتك (جزء السداة)",
+        "في المبيض",
+        "في البتلات",
+        "في الساق"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "في المتك (جزء السداة)"
+    },
+    {
+      "id": "ye-biology-u3-l3-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l3",
+      "difficulty": 2,
+      "question_text": "ماذا ينتج عن إخصاب البويضة في النباتات الزهرية؟",
+      "explanation": "بعد التلقيح والإخصاب تتحول البويضة المخصبة إلى بذرة، ويتحول المبيض إلى ثمرة تحمي البذور وتساعد في انتشارها.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس: التكاثر الجنسي في النباتات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بذرة داخل ثمرة",
+        "زهرة جديدة فقط",
+        "ورقة جديدة",
+        "جذر جديد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بذرة داخل ثمرة"
+    },
+    {
+      "id": "ye-biology-u3-l4-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l4",
+      "difficulty": 1,
+      "question_text": "كيف تتكاثر الطلائعيات جنسياً مثل البراميسيوم؟",
+      "explanation": "في الاقتران يقترن فردا براميسيوم ويتبادلان المواد النووية، فينتج أفراد جديدة بصفات وراثية متجددة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 70,
+      "source_detail": "الدرس: التكاثر الجنسي في الطلائعيات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بالاقتران وتبادل المواد النووية بين فردين",
+        "بتكوين البذور",
+        "بالتلقيح بحبوب اللقاح",
+        "بوضع البيض"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بالاقتران وتبادل المواد النووية بين فردين"
+    },
+    {
+      "id": "ye-biology-u3-l4-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l4",
+      "difficulty": 2,
+      "question_text": "تتكاثر الطلائعيات لاجنسياً بالانشطار الثنائي في الظروف المناسبة.",
+      "explanation": "البراميسيوم والأميبا تتكاثر لاجنسياً بالانشطار الثنائي، وتلجأ إلى الاقتران (الجنسي) عند تغير الظروف.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 70,
+      "source_detail": "الدرس: التكاثر الجنسي في الطلائعيات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u3-l5-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l5",
+      "difficulty": 1,
+      "question_text": "ما الفرق بين الإخصاب الخارجي والداخلي؟",
+      "explanation": "في الإخصاب الخارجي تطلق الأمشاج في الماء فيحدث الإخصاب خارجه، أما الداخلي فيتم داخل جسم الأنثى فيحمي البويضات المخصبة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "source_detail": "الدرس: التكاثر الجنسي في الحيوانات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الخارجي يتم خارج جسم الأنثى (كالأسماك)، والداخلي داخل جسمها (كالطيور والثدييات)",
+        "الخارجي أسرع دائماً",
+        "الداخلي لا ينتج أفراداً",
+        "لا فرق بينهما"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الخارجي يتم خارج جسم الأنثى (كالأسماك)، والداخلي داخل جسمها (كالطيور والثدييات)"
+    },
+    {
+      "id": "ye-biology-u3-l5-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l5",
+      "difficulty": 2,
+      "question_text": "أين يتم إخصاب البويضة في الإنسان؟",
+      "explanation": "يحدث الإخصاب في قناة فالوب عند التقاء الحيوان المنوي بالبويضة، ثم تنتقل البويضة المخصبة إلى الرحم لتنغرس وتنمو.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "source_detail": "الدرس: التكاثر الجنسي في الحيوانات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "في قناة فالوب",
+        "في الرحم",
+        "في المبيض",
+        "في المهبل"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "في قناة فالوب"
+    },
+    {
+      "id": "ye-biology-u3-l6-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l6",
+      "difficulty": 1,
+      "question_text": "ما دورة الحيض عند المرأة؟",
+      "explanation": "دورة الحيض دورة شهرية (نحو 28 يوماً) تنضج فيها بويضة في المبيض وتتغير بطانة الرحم، فإذا لم يحدث إخصاب انسلخت البطانة ونزل دم الحيض.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "source_detail": "الدرس: التكاثر الجنسي في الإنسان",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "دورة شهرية تتغير فيها بطانة الرحم والمبيض استعداداً للحمل",
+        "دورة يومية للنوم",
+        "دورة تنفسية",
+        "دورة هضم شهرية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "دورة شهرية تتغير فيها بطانة الرحم والمبيض استعداداً للحمل"
+    },
+    {
+      "id": "ye-biology-u3-l6-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l6",
+      "difficulty": 2,
+      "question_text": "أين ينمو الجنين في الإنسان؟",
+      "explanation": "ينغرس الجنين في بطانة الرحم وينمو فيه طوال فترة الحمل (نحو 9 أشهر)، وتغذيه المشيمة عبر الحبل السري.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 79,
+      "source_detail": "الدرس: التكاثر الجنسي في الإنسان",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "في الرحم",
+        "في قناة فالوب",
+        "في المبيض",
+        "في المشيمة فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "في الرحم"
+    },
+    {
+      "id": "ye-biology-u3-l7-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l7",
+      "difficulty": 3,
+      "question_text": "أي مما يأتي تكاثر لاجنسي؟",
+      "explanation": "تبرعم الهيدرا تكاثر لاجنسي بفرد أبوي واحد، أما الإخصاب والتلقيح والاقتران فتكاثر جنسي باندماج أمشاج أو تبادل نووي.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 93,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تبرعم الهيدرا",
+        "إخصاب بويضة الإنسان",
+        "تلقيح زهرة",
+        "اقتران البراميسيوم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تبرعم الهيدرا"
+    },
+    {
+      "id": "ye-biology-u3-l7-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u3",
+      "lesson_id": "biology-u3-l7",
+      "difficulty": 2,
+      "question_text": "التكاثر الجنسي ينتج أفراداً متنوعة وراثياً أكثر من التكاثر اللاجنسي.",
+      "explanation": "في التكاثر الجنسي تختلط صفات الأبوين فينتج تنوع وراثي يساعد النوع على التكيف، بينما اللاجنسي ينتج نسخاً مطابقة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 93,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u4-l1-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u4",
+      "lesson_id": "biology-u4-l1",
+      "difficulty": 1,
+      "question_text": "ما علم الوراثة؟",
+      "explanation": "علم الوراثة يدرس كيفية انتقال الصفات من جيل إلى آخر، والقوانين التي تحكم هذا الانتقال.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 97,
+      "source_detail": "الدرس: أساسيات علم الوراثة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "علم يدرس انتقال الصفات الوراثية من الآباء إلى الأبناء",
+        "علم يدرس تركيب الصخور",
+        "علم يدرس حركة الكواكب",
+        "علم يدرس الطقس"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "علم يدرس انتقال الصفات الوراثية من الآباء إلى الأبناء"
+    },
+    {
+      "id": "ye-biology-u4-l1-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u4",
+      "lesson_id": "biology-u4-l1",
+      "difficulty": 2,
+      "question_text": "ما المقصود بالوراثة؟",
+      "explanation": "الوراثة انتقال الصفات (كلون العين وشكل الأنف) من الآباء إلى الأبناء عبر الجينات المحمولة على الكروموسومات.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 97,
+      "source_detail": "الدرس: أساسيات علم الوراثة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "انتقال الصفات الوراثية من الآباء إلى الأبناء",
+        "اكتساب صفات من البيئة فقط",
+        "تغير لون الجلد بالشمس",
+        "نمو الجسم مع العمر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "انتقال الصفات الوراثية من الآباء إلى الأبناء"
+    },
+    {
+      "id": "ye-biology-u4-l2-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u4",
+      "lesson_id": "biology-u4-l2",
+      "difficulty": 1,
+      "question_text": "من مؤسس علم الوراثة الحديث؟",
+      "explanation": "يعد الراهب جريجور مندل مؤسس علم الوراثة الحديث بتجاربه على نبات البازلاء في القرن التاسع عشر.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 98,
+      "source_detail": "الدرس: تطور علم الوراثة الحديث",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "جريجور مندل",
+        "داروين",
+        "واتسون",
+        "باستور"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "جريجور مندل"
+    },
+    {
+      "id": "ye-biology-u4-l2-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u4",
+      "lesson_id": "biology-u4-l2",
+      "difficulty": 2,
+      "question_text": "على أي نبات أجرى مندل تجاربه الوراثية الشهيرة؟",
+      "explanation": "اختار مندل نبات البازلاء لسهولة زراعته وقصر دورة حياته ووضوح صفاته المتقابلة (كطول الساق ولون البذور).",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 98,
+      "source_detail": "الدرس: تطور علم الوراثة الحديث",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "البازلاء",
+        "القمح",
+        "الذرة",
+        "الفول"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "البازلاء"
+    },
+    {
+      "id": "ye-biology-u4-l3-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u4",
+      "lesson_id": "biology-u4-l3",
+      "difficulty": 1,
+      "question_text": "ما المقصود بالشكل الظاهري (النمط الظاهري)؟",
+      "explanation": "الشكل الظاهري هو ما يظهر على الكائن من صفات (كاللون والطول)، بينما الشكل الجيني هو التركيب الوراثي (الجينات) المسؤول عنها.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 104,
+      "source_detail": "الدرس: الشكل الجسمي والشكل الظاهري",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الصفات الظاهرة للكائن كاللون والطول",
+        "تركيب الجينات في الخلايا",
+        "عدد الكروموسومات فقط",
+        "شكل الخلية تحت المجهر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الصفات الظاهرة للكائن كاللون والطول"
+    },
+    {
+      "id": "ye-biology-u4-l3-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u4",
+      "lesson_id": "biology-u4-l3",
+      "difficulty": 3,
+      "question_text": "إذا كان التركيب الجيني لصفة ما (Aa) فإن الصفة الظاهرة تكون:",
+      "explanation": "الجين السائد (A) يظهر أثره في وجود جين متنح (a)، فالكائن (Aa) يظهر بالصفة السائدة رغم حمله الجين المتنحي.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 104,
+      "source_detail": "الدرس: الشكل الجسمي والشكل الظاهري",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الصفة السائدة",
+        "الصفة المتنحية دائماً",
+        "بلا صفة",
+        "صفة جديدة تماماً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الصفة السائدة"
+    },
+    {
+      "id": "ye-biology-u4-l4-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u4",
+      "lesson_id": "biology-u4-l4",
+      "difficulty": 1,
+      "question_text": "كم عدد الكروموسومات في الخلية الجسمية للإنسان؟",
+      "explanation": "تحوي كل خلية جسمية في الإنسان 46 كروموسوماً مرتبة في 23 زوجاً، منها 22 زوجاً جسمية وزوج واحد جنسي.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 111,
+      "source_detail": "الدرس: دور الكروموسومات في الوراثة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "46 كروموسوماً (23 زوجاً)",
+        "23 كروموسوماً",
+        "44 كروموسوماً",
+        "92 كروموسوماً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "46 كروموسوماً (23 زوجاً)"
+    },
+    {
+      "id": "ye-biology-u4-l4-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u4",
+      "lesson_id": "biology-u4-l4",
+      "difficulty": 2,
+      "question_text": "ما الكروموسومات الجنسية عند الذكر في الإنسان؟",
+      "explanation": "الأنثى تحمل كروموسومين جنسيين (XX) والذكر (XY)، والكروموسوم Y هو الذي يحدد الذكورة، وتنتقل بعض الصفات مع الكروموسوم X كعمى الألوان.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 111,
+      "source_detail": "الدرس: دور الكروموسومات في الوراثة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "XY",
+        "XX",
+        "YY",
+        "XO"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "XY"
+    },
+    {
+      "id": "ye-biology-u4-l5-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u4",
+      "lesson_id": "biology-u4-l5",
+      "difficulty": 3,
+      "question_text": "ما الجين؟",
+      "explanation": "الجين وحدة الوراثة: قطعة من جزيء DNA على الكروموسوم تحمل تعليمات بناء بروتين يحدد صفة معينة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 129,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "قطعة من DNA تحمل معلومات صفة وراثية معينة",
+        "خلية كاملة",
+        "بروتين في الدم",
+        "عضو في الجسم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "قطعة من DNA تحمل معلومات صفة وراثية معينة"
+    },
+    {
+      "id": "ye-biology-u4-l5-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u4",
+      "lesson_id": "biology-u4-l5",
+      "difficulty": 2,
+      "question_text": "الصفات المكتسبة خلال حياة الفرد (كقوة العضلات بالتدريب) لا تورث للأبناء.",
+      "explanation": "تورث الصفات المحمولة في الجينات فقط، أما الصفات المكتسبة من البيئة والتدريب فلا تنتقل إلى الأبناء.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 129,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u5-l1-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u5",
+      "lesson_id": "biology-u5-l1",
+      "difficulty": 1,
+      "question_text": "مم يتكون الكروموسوم؟",
+      "explanation": "يتكون الكروموسوم من جزيء DNA ملتف حول بروتينات، وتحمل الجينات على هذا الجزيء مرتبة على طول الكروموسوم.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 132,
+      "source_detail": "الدرس: الكروموسومات والجينات",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "من DNA وبروتينات",
+        "من RNA فقط",
+        "من دهون فقط",
+        "من ماء وأملاح"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من DNA وبروتينات"
+    },
+    {
+      "id": "ye-biology-u5-l1-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u5",
+      "lesson_id": "biology-u5-l1",
+      "difficulty": 2,
+      "question_text": "كم عدد الأحماض النووية الرئيسية في الخلية؟",
+      "explanation": "في الخلية حمضان نوويان: DNA (الحمض النووي الريبوزي منقوص الأكسجين) وRNA (الحمض النووي الريبوزي)، وكلاهما يشارك في نقل الصفات وبناء البروتين.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 132,
+      "source_detail": "الدرس: الكروموسومات والجينات",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "حمضان: DNA وRNA",
+        "حمض واحد",
+        "ثلاثة أحماض",
+        "أربعة أحماض"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "حمضان: DNA وRNA"
+    },
+    {
+      "id": "ye-biology-u5-l2-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u5",
+      "lesson_id": "biology-u5-l2",
+      "difficulty": 1,
+      "question_text": "ما شكل جزيء DNA؟",
+      "explanation": "جزيء DNA على شكل سلم حلزوني مزدوج: سلسلتان من النيوكليوتيدات مرتبطتان بقواعد نيتروجينية (A مع T، وC مع G).",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 135,
+      "source_detail": "الدرس: دور مادة (DNA) في نقل الصفات الوراثية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "سلم حلزوني مزدوج",
+        "سلسلة واحدة مستقيمة",
+        "كرة مصمتة",
+        "حلقة مغلقة فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "سلم حلزوني مزدوج"
+    },
+    {
+      "id": "ye-biology-u5-l2-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u5",
+      "lesson_id": "biology-u5-l2",
+      "difficulty": 2,
+      "question_text": "كيف يتضاعف DNA عند انقسام الخلية؟",
+      "explanation": "يتضاعف DNA تضاعفاً شبه محافظ: ينفصل الشريطان ويبنى على كل شريط شريط جديد مكمل، فينتج جزيئان كل منهما شريط قديم وشريط جديد.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 135,
+      "source_detail": "الدرس: دور مادة (DNA) في نقل الصفات الوراثية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تضاعف شبه محافظ: كل جزيء جديد يحوي سلسلة قديمة وسلسلة جديدة",
+        "يتضاعف دون أن ينفصل شريطاه",
+        "يتحول إلى RNA أولاً",
+        "يتفكك ولا يتضاعف"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تضاعف شبه محافظ: كل جزيء جديد يحوي سلسلة قديمة وسلسلة جديدة"
+    },
+    {
+      "id": "ye-biology-u5-l3-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u5",
+      "lesson_id": "biology-u5-l3",
+      "difficulty": 1,
+      "question_text": "ما الفرق بين RNA وDNA؟",
+      "explanation": "RNA سلسلة واحدة من النيوكليوتيدات، وسكره ريبوز، وقواعده (A, U, C, G) حيث يحل اليوراسيل محل الثايمين في DNA.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 136,
+      "source_detail": "الدرس: الحمض النووي الريبوزي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "RNA سلسلة واحدة وسكره ريبوز وقاعدته يوراسيل بدل الثايمين",
+        "RNA سلسلتان وسكره منقوص الأكسجين",
+        "RNA لا يحوي قواعد نيتروجينية",
+        "لا فرق بينهما"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "RNA سلسلة واحدة وسكره ريبوز وقاعدته يوراسيل بدل الثايمين"
+    },
+    {
+      "id": "ye-biology-u5-l3-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u5",
+      "lesson_id": "biology-u5-l3",
+      "difficulty": 2,
+      "question_text": "ما أنواع RNA المشاركة في بناء البروتين؟",
+      "explanation": "يشارك في بناء البروتين: RNA الرسول (mRNA) يحمل التعليمات، والناقل (tRNA) ينقل الأحماض الأمينية، والريبوزومي (rRNA) يبني الريبوزوم.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 136,
+      "source_detail": "الدرس: الحمض النووي الريبوزي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "رسول وناقل وريبوزومي",
+        "رسول فقط",
+        "ناقل فقط",
+        "ريبوزومي فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "رسول وناقل وريبوزومي"
+    },
+    {
+      "id": "ye-biology-u5-l4-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u5",
+      "lesson_id": "biology-u5-l4",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من تطبيقات الوراثة الجزيئية؟",
+      "explanation": "من تطبيقات الوراثة الجزيئية: إنتاج الأنسولين وهرمون النمو بالهندسة الوراثية، والبصمة الوراثية، والعلاج الجيني، وتحسين المحاصيل.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 140,
+      "source_detail": "الدرس: تطبيقات على الوراثة الجزيئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "إنتاج الأنسولين البشري بالهندسة الوراثية",
+        "صناعة الفحم",
+        "تكرير النفط",
+        "صهر الحديد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "إنتاج الأنسولين البشري بالهندسة الوراثية"
+    },
+    {
+      "id": "ye-biology-u5-l4-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u5",
+      "lesson_id": "biology-u5-l4",
+      "difficulty": 2,
+      "question_text": "ما البصمة الوراثية؟",
+      "explanation": "البصمة الوراثية تحليل لمواقع مميزة في DNA تختلف بين الأفراد، فتستخدم في إثبات النسب وكشف الجرائم.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 140,
+      "source_detail": "الدرس: تطبيقات على الوراثة الجزيئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نمط مميز من DNA يختلف من شخص لآخر ويستخدم في إثبات الهوية",
+        "بصمة إصبع اليد",
+        "صورة للوجه",
+        "تحليل دم عادي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نمط مميز من DNA يختلف من شخص لآخر ويستخدم في إثبات الهوية"
+    },
+    {
+      "id": "ye-biology-u5-l5-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u5",
+      "lesson_id": "biology-u5-l5",
+      "difficulty": 3,
+      "question_text": "ما القاعدة النيتروجينية التي ترتبط بالأدينين في جزيء DNA؟",
+      "explanation": "في DNA يرتبط الأدينين (A) بالثايمين (T) برابطتين هيدروجينيتين، والجوانين (G) بالسيتوزين (C) بثلاث روابط.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 143,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الثايمين",
+        "الجوانين",
+        "اليوراسيل",
+        "السيتوزين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الثايمين"
+    },
+    {
+      "id": "ye-biology-u5-l5-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u5",
+      "lesson_id": "biology-u5-l5",
+      "difficulty": 2,
+      "question_text": "خطوات بناء البروتين تبدأ بنسخ التعليمات من DNA إلى RNA رسول ثم ترجمتها في الريبوزوم.",
+      "explanation": "يُنسخ جزء من DNA إلى mRNA في النواة، ثم ينتقل إلى الريبوزوم حيث تترجم شفرته إلى سلسلة أحماض أمينية تكون البروتين.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 143,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u7-l1-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l1",
+      "difficulty": 1,
+      "question_text": "ما المقصود بالبيئة؟",
+      "explanation": "البيئة تشمل كل ما يحيط بالكائن الحي: الكائنات الحية (نبات وحيوان وإنسان وكائنات دقيقة) والعوامل غير الحية (هواء وماء وتربة وضوء وحرارة).",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 163,
+      "source_detail": "الدرس: المقصود بالبيئة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "كل ما يحيط بالكائن الحي من عوامل حية وغير حية يؤثر فيه ويتأثر به",
+        "التربة فقط",
+        "الهواء فقط",
+        "الماء فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "كل ما يحيط بالكائن الحي من عوامل حية وغير حية يؤثر فيه ويتأثر به"
+    },
+    {
+      "id": "ye-biology-u7-l1-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l1",
+      "difficulty": 2,
+      "question_text": "ما مراحل علاقة الإنسان بالبيئة عبر التاريخ؟",
+      "explanation": "مرت علاقة الإنسان بالبيئة بمراحل: جمع والتقاط وصيد، ثم رعي، ثم زراعة (قبل نحو 12 ألف سنة)، ثم صناعة أحدثت أكبر تغيير في البيئة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 163,
+      "source_detail": "الدرس: المقصود بالبيئة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "جمع والتقاط، ثم رعي، ثم زراعة، ثم صناعة",
+        "صناعة فقط",
+        "زراعة فقط",
+        "صيد فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "جمع والتقاط، ثم رعي، ثم زراعة، ثم صناعة"
+    },
+    {
+      "id": "ye-biology-u7-l2-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l2",
+      "difficulty": 1,
+      "question_text": "ما المقصود بتلوث البيئة؟",
+      "explanation": "التلوث إدخال ملوثات (كيميائية أو فيزيائية أو حيوية) إلى الهواء أو الماء أو التربة بكميات تضر بالكائنات الحية وتخل بتوازن البيئة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 164,
+      "source_detail": "الدرس: مشكلات التلوث لمكونات البيئة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "إدخال مواد ضارة إلى مكونات البيئة بكمية تخل بتوازنها وتضر بالكائنات الحية",
+        "تنظيف البيئة",
+        "زراعة الأشجار",
+        "تدوير النفايات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "إدخال مواد ضارة إلى مكونات البيئة بكمية تخل بتوازنها وتضر بالكائنات الحية"
+    },
+    {
+      "id": "ye-biology-u7-l2-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l2",
+      "difficulty": 2,
+      "question_text": "أي مما يأتي من ملوثات التربة؟",
+      "explanation": "تلوث التربة بمبيدات الآفات والأسمدة الزائدة والنفايات الصلبة يفسد خصوبتها وينتقل إلى النبات ثم إلى الإنسان عبر الغذاء.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 164,
+      "source_detail": "الدرس: مشكلات التلوث لمكونات البيئة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "المبيدات الحشرية والأسمدة الكيميائية الزائدة",
+        "الأكسجين",
+        "ضوء الشمس",
+        "مياه الأمطار النقية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "المبيدات الحشرية والأسمدة الكيميائية الزائدة"
+    },
+    {
+      "id": "ye-biology-u7-l3-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l3",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من ملوثات الهواء؟",
+      "explanation": "من ملوثات الهواء: الدخان والغبار، وغازات عوادم السيارات والمصانع (كأول أكسيد الكربون وثاني أكسيد الكبريت)، وتسبب أمراضاً تنفسية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 165,
+      "source_detail": "الدرس: ملوثات الهواء",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "دخان المصانع وعوادم السيارات",
+        "الأكسجين النقي",
+        "بخار الماء النقي",
+        "ضوء الشمس"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "دخان المصانع وعوادم السيارات"
+    },
+    {
+      "id": "ye-biology-u7-l3-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l3",
+      "difficulty": 2,
+      "question_text": "ما الغاز الرئيس المسبب لظاهرة الاحتباس الحراري؟",
+      "explanation": "ثاني أكسيد الكربون من حرق الوقود الأحفوري يحبس حرارة الأرض (الاحتباس الحراري)، فيرتفع متوسط درجة حرارة الأرض ويتغير المناخ.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 165,
+      "source_detail": "الدرس: ملوثات الهواء",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ثاني أكسيد الكربون",
+        "الأكسجين",
+        "النيتروجين",
+        "الهيدروجين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ثاني أكسيد الكربون"
+    },
+    {
+      "id": "ye-biology-u7-l4-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l4",
+      "difficulty": 1,
+      "question_text": "ما أسباب تلوث الماء؟",
+      "explanation": "يتلوث الماء بمخلفات المصانع ومياه الصرف غير المعالجة والمبيدات والأسمدة، فتنتشر الأمراض وتموت الكائنات المائية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 171,
+      "source_detail": "الدرس: تلوث الماء",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "إلقاء مخلفات المصانع ومياه الصرف الصحي والمبيدات في المياه",
+        "سقوط المطر",
+        "جريان الأنهار",
+        "تبخر المياه"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "إلقاء مخلفات المصانع ومياه الصرف الصحي والمبيدات في المياه"
+    },
+    {
+      "id": "ye-biology-u7-l4-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l4",
+      "difficulty": 2,
+      "question_text": "تلوث الماء يهدد صحة الإنسان والكائنات المائية معاً.",
+      "explanation": "المياه الملوثة تنقل أمراضاً كالكوليرا والتيفوئيد، وتقتل الأسماك والكائنات المائية أو تسممها فتصل إلى الإنسان عبر الغذاء.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 171,
+      "source_detail": "الدرس: تلوث الماء",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u7-l5-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l5",
+      "difficulty": 1,
+      "question_text": "ما التلوث الضوضائي؟",
+      "explanation": "التلوث الضوضائي أصوات عالية (من وسائل النقل والمصانع ومكبرات الصوت) تسبب ضعف السمع والتوتر واضطراب النوم.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 173,
+      "source_detail": "الدرس: التلوث الضوضائي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الأصوات العالية المزعجة التي تضر بالسمع والصحة",
+        "الصوت الهادئ",
+        "الموسيقى فقط",
+        "صوت الطيور"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الأصوات العالية المزعجة التي تضر بالسمع والصحة"
+    },
+    {
+      "id": "ye-biology-u7-l5-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l5",
+      "difficulty": 2,
+      "question_text": "ما أثر التعرض المستمر للضوضاء العالية؟",
+      "explanation": "التعرض الطويل للأصوات العالية يضعف السمع تدريجياً، ويسبب التوتر وارتفاع ضغط الدم واضطراب النوم والتركيز.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 173,
+      "source_detail": "الدرس: التلوث الضوضائي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ضعف السمع واضطراب النوم والتوتر",
+        "تحسين السمع",
+        "تقوية الذاكرة",
+        "لا أثر له"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ضعف السمع واضطراب النوم والتوتر"
+    },
+    {
+      "id": "ye-biology-u7-l6-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l6",
+      "difficulty": 1,
+      "question_text": "ما مصادر التلوث الإشعاعي؟",
+      "explanation": "مصادر التلوث الإشعاعي: التفجيرات والتجارب النووية، وحوادث المفاعلات، والنفايات المشعة، وتسرب المواد المشعة إلى الهواء والماء والتربة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 176,
+      "source_detail": "الدرس: التلوث الإشعاعي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "التجارب النووية وحوادث المفاعلات والنفايات المشعة",
+        "ضوء الشمس العادي",
+        "الموجات الراديوية",
+        "الأصوات العالية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "التجارب النووية وحوادث المفاعلات والنفايات المشعة"
+    },
+    {
+      "id": "ye-biology-u7-l6-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l6",
+      "difficulty": 2,
+      "question_text": "التعرض للإشعاع النووي قد يسبب أمراضاً خطيرة كالسرطان وتشوهات الأجنة.",
+      "explanation": "الإشعاع النووي يتلف الخلايا والجينات، فيسبب السرطان وتشوهات الأجنة، لذا تلزم الوقاية منه والتخلص الآمن من نفاياته.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 176,
+      "source_detail": "الدرس: التلوث الإشعاعي",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u7-l7-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l7",
+      "difficulty": 1,
+      "question_text": "كيف تلوث مخلفات الغذاء البيئة؟",
+      "explanation": "مخلفات الغذاء المتحللة تنشر الروائح الكريهة وتجذب الحشرات والقوارض وتنقل الأمراض، ويجب التخلص منها بطريقة صحية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 178,
+      "source_detail": "الدرس: مخلفات الغذاء",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بتحللها وتعفنها فتنشر الروائح والحشرات والأمراض",
+        "بتحولها إلى سماد نافع دائماً",
+        "بتبخرها دون أثر",
+        "بتحولها إلى ماء نقي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بتحللها وتعفنها فتنشر الروائح والحشرات والأمراض"
+    },
+    {
+      "id": "ye-biology-u7-l7-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l7",
+      "difficulty": 2,
+      "question_text": "ما الطريقة السليمة للتخلص من مخلفات الغذاء؟",
+      "explanation": "التخلص السليم من مخلفات الغذاء يكون بجمعها والتخلص منها في أماكن مخصصة، أو تحويلها إلى سماد عضوي (كمبوست) بطريقة صحية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 178,
+      "source_detail": "الدرس: مخلفات الغذاء",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "جمعها في أكياس مغلقة والتخلص منها في أماكن مخصصة أو تحويلها إلى سماد",
+        "رميها في الشوارع",
+        "رميها في مياه الشرب",
+        "حرقها داخل المنازل"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "جمعها في أكياس مغلقة والتخلص منها في أماكن مخصصة أو تحويلها إلى سماد"
+    },
+    {
+      "id": "ye-biology-u7-l8-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l8",
+      "difficulty": 3,
+      "question_text": "ما المقصود باستنزاف الموارد البيئية؟",
+      "explanation": "استنزاف الموارد استهلاكها الجائر (كقطع الغابات والإفراط في سحب المياه الجوفية) بمعدل يفوق تجددها، فيهدد الأجيال القادمة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 181,
+      "source_detail": "الدرس: مشكلات استنزاف الموارد البيئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "استهلاك الموارد الطبيعية بمعدل أسرع من تجددها",
+        "توفير الموارد",
+        "تدوير الموارد",
+        "حماية الموارد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "استهلاك الموارد الطبيعية بمعدل أسرع من تجددها"
+    },
+    {
+      "id": "ye-biology-u7-l8-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l8",
+      "difficulty": 2,
+      "question_text": "أي مما يأتي حل لمشكلة استنزاف الموارد؟",
+      "explanation": "من الحلول: ترشيد استهلاك الماء والطاقة، وإعادة تدوير النفايات، وحماية الغابات، واستخدام الطاقة الشمسية والرياح.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 181,
+      "source_detail": "الدرس: مشكلات استنزاف الموارد البيئية",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ترشيد الاستهلاك وإعادة التدوير واستخدام الطاقة المتجددة",
+        "زيادة الاستهلاك",
+        "قطع الغابات",
+        "الإفراط في استخدام المبيدات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ترشيد الاستهلاك وإعادة التدوير واستخدام الطاقة المتجددة"
+    },
+    {
+      "id": "ye-biology-u7-l9-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l9",
+      "difficulty": 2,
+      "question_text": "أي مما يأتي ملوث للهواء؟",
+      "explanation": "ثاني أكسيد الكبريت من حرق الفحم والنفط يلوث الهواء ويسبب الأمطار الحمضية وأمراض الجهاز التنفسي.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 186,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ثاني أكسيد الكبريت من حرق الفحم",
+        "الأكسجين",
+        "النيتروجين",
+        "بخار الماء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ثاني أكسيد الكبريت من حرق الفحم"
+    },
+    {
+      "id": "ye-biology-u7-l9-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u7",
+      "lesson_id": "biology-u7-l9",
+      "difficulty": 2,
+      "question_text": "حماية البيئة مسؤولية مشتركة بين الفرد والمجتمع والدولة.",
+      "explanation": "حماية البيئة تتطلب وعي الأفراد وترشيد استهلاكهم، وتشريعات الدولة، وتعاون المجتمع في النظافة والتشجير وإعادة التدوير.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 186,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u8-l1-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l1",
+      "difficulty": 1,
+      "question_text": "كيف تتكون الصخور الرسوبية؟",
+      "explanation": "تتكون الصخور الرسوبية من تراكم الرواسب (فتات صخور وبقايا كائنات) في طبقات، ثم ضغطها وتماسكها عبر الزمن.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 188,
+      "source_detail": "الدرس: الصخور الرسوبية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بترسب الفتات والرواسب في طبقات ثم تماسكها",
+        "بتبريد الصهارة",
+        "بتحول الصخور بالحرارة والضغط",
+        "بتجمد الماء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بترسب الفتات والرواسب في طبقات ثم تماسكها"
+    },
+    {
+      "id": "ye-biology-u8-l1-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l1",
+      "difficulty": 2,
+      "question_text": "ما أصغر وحدة في الصخور الرسوبية؟",
+      "explanation": "تتكون الصخور الرسوبية من طبقات متتابعة، والطبقة أصغر وحدة فيها، وتترسب الطبقات الأحدث فوق الأقدم.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 188,
+      "source_detail": "الدرس: الصخور الرسوبية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الطبقة (الستراتا)",
+        "البلورة",
+        "الحبيبة",
+        "المعدن"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الطبقة (الستراتا)"
+    },
+    {
+      "id": "ye-biology-u8-l2-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l2",
+      "difficulty": 1,
+      "question_text": "ما الأحافير؟",
+      "explanation": "الأحافير بقايا كائنات قديمة (كعظام وأصداف) أو آثارها (كآثار أقدام) حفظت في الصخور الرسوبية بعد دفنها بسرعة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 191,
+      "source_detail": "الدرس: الأحافير",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بقايا أو آثار كائنات حية قديمة محفوظة في الصخور الرسوبية",
+        "صخور بركانية",
+        "معادن نفيسة",
+        "بلورات ملح"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بقايا أو آثار كائنات حية قديمة محفوظة في الصخور الرسوبية"
+    },
+    {
+      "id": "ye-biology-u8-l2-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l2",
+      "difficulty": 2,
+      "question_text": "ما شروط تكون الأحافير؟",
+      "explanation": "تتكون الأحافير عند دفن الكائن بسرعة في رواسب تحميه من التحلل، ووجود أجزاء صلبة (عظام أو أصداف) يساعد على حفظه.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 191,
+      "source_detail": "الدرس: الأحافير",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "وجود أجزاء صلبة في الكائن ودفنه بسرعة في رواسب تحميه",
+        "تعرض الكائن للهواء مدة طويلة",
+        "وجود الكائن في الماء فقط",
+        "ذوبان الكائن كاملاً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "وجود أجزاء صلبة في الكائن ودفنه بسرعة في رواسب تحميه"
+    },
+    {
+      "id": "ye-biology-u8-l3-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l3",
+      "difficulty": 1,
+      "question_text": "ما مبدأ تراكب الطبقات في تحديد العمر النسبي للصخور؟",
+      "explanation": "في التتابع الطبقي غير المقلوب تكون الطبقة السفلى أقدم لأنها ترسبت أولاً، والطبقة العليا أحدث.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 202,
+      "source_detail": "الدرس: التاريخ الطبقي للصخور",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الطبقة السفلى أقدم من الطبقة العليا",
+        "الطبقة العليا أقدم من السفلى",
+        "كل الطبقات في العمر نفسه",
+        "لا علاقة بين موقع الطبقة وعمرها"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الطبقة السفلى أقدم من الطبقة العليا"
+    },
+    {
+      "id": "ye-biology-u8-l3-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l3",
+      "difficulty": 2,
+      "question_text": "بم يستدل على العمر النسبي للصخور؟",
+      "explanation": "يحدد العمر النسبي للصخور بتتابع طبقاتها (الأقدم أسفل) وبالأحافير التي تحويها، دون تحديد عمرها بالسنين.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 202,
+      "source_detail": "الدرس: التاريخ الطبقي للصخور",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "بتتابع طبقاتها وما تحويه من أحافير",
+        "بلون الصخور فقط",
+        "بوزن الصخور فقط",
+        "بمكان وجودها فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بتتابع طبقاتها وما تحويه من أحافير"
+    },
+    {
+      "id": "ye-biology-u8-l4-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l4",
+      "difficulty": 1,
+      "question_text": "ما مبدأ تعاقب الأحافير؟",
+      "explanation": "مبدأ تعاقب الأحافير: تظهر أنواع الأحافير في الطبقات بترتيب زمني ثابت، فيستدل بها على عمر الطبقات ومضاهاتها في أماكن مختلفة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 202,
+      "source_detail": "الدرس: مبدأ التعاقب للحفريات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تتعاقب الأحافير في الطبقات بترتيب ثابت يعكس تطور الكائنات عبر الزمن",
+        "توجد الأحافير نفسها في كل الطبقات",
+        "الأحافير لا تتغير عبر الزمن",
+        "الأحافير توجد في الصخور النارية فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تتعاقب الأحافير في الطبقات بترتيب ثابت يعكس تطور الكائنات عبر الزمن"
+    },
+    {
+      "id": "ye-biology-u8-l4-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l4",
+      "difficulty": 2,
+      "question_text": "تساعد الأحافير المرشدة في تحديد عمر الطبقات الصخرية ومضاهاتها بين المناطق.",
+      "explanation": "الأحافير المرشدة أنواع عاشت مدة قصيرة وانتشرت واسعاً، فيستدل بوجودها في طبقة على عمرها وتطابقها مع طبقات أخرى.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 202,
+      "source_detail": "الدرس: مبدأ التعاقب للحفريات",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u8-l5-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l5",
+      "difficulty": 1,
+      "question_text": "ما أهم حدث في تاريخ الأرض قبل نحو 600 مليون سنة؟",
+      "explanation": "قبل نحو 600 مليون سنة بدأ الدهر الظاهر (الفانيروزوي) بظهور كائنات عديدة الخلايا بأجزاء صلبة تحفظ أحافيرها.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 209,
+      "source_detail": "الدرس: أحداث في تاريخ الأرض",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "ظهور الكائنات عديدة الخلايا وبدء الدهر الظاهر (الفانيروزوي)",
+        "ظهور الإنسان",
+        "تكون القمر",
+        "انقراض الديناصورات"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "ظهور الكائنات عديدة الخلايا وبدء الدهر الظاهر (الفانيروزوي)"
+    },
+    {
+      "id": "ye-biology-u8-l5-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l5",
+      "difficulty": 2,
+      "question_text": "متى ظهر الإنسان على الأرض في مقياس الزمن الجيولوجي؟",
+      "explanation": "الإنسان حديث جداً في تاريخ الأرض: ظهر في الدهر الحديث (العصر الرباعي) قبل نحو مليوني سنة، بينما عمر الأرض نحو 4.6 مليار سنة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 209,
+      "source_detail": "الدرس: أحداث في تاريخ الأرض",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "في أحدث العصور (الدهر الحديث) قبل نحو مليوني سنة تقريباً",
+        "مع بداية الأرض",
+        "قبل الديناصورات",
+        "قبل 600 مليون سنة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "في أحدث العصور (الدهر الحديث) قبل نحو مليوني سنة تقريباً"
+    },
+    {
+      "id": "ye-biology-u8-l6-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l6",
+      "difficulty": 3,
+      "question_text": "ما أكبر وحدات مقياس الزمن الجيولوجي؟",
+      "explanation": "يقسم الزمن الجيولوجي إلى دهور (أكبرها)، ثم حقب، ثم عصور، ثم أدهار (أدوار)، وكل وحدة تتميز بأحداث وكائنات مميزة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 207,
+      "source_detail": "الدرس: مقياس الزمن الجيولوجي",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الدهر",
+        "العصر",
+        "الحقبة",
+        "الدور"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الدهر"
+    },
+    {
+      "id": "ye-biology-u8-l6-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l6",
+      "difficulty": 2,
+      "question_text": "كم يبلغ عمر الأرض تقريباً؟",
+      "explanation": "يقدر عمر الأرض بنحو 4.6 مليار سنة، ومعظم هذا التاريخ ينتمي إلى ما قبل الكمبري (الدهر الخفي)، بينما الدهر الظاهر نحو 600 مليون سنة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 207,
+      "source_detail": "الدرس: مقياس الزمن الجيولوجي",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نحو 4.6 مليار سنة",
+        "نحو 600 مليون سنة",
+        "نحو 4.6 مليون سنة",
+        "نحو 13 مليار سنة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نحو 4.6 مليار سنة"
+    },
+    {
+      "id": "ye-biology-u8-l7-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l7",
+      "difficulty": 2,
+      "question_text": "في أي نوع من الصخور توجد الأحافير غالباً؟",
+      "explanation": "توجد الأحافير غالباً في الصخور الرسوبية لأنها تتكون بترسب الرواسب التي تدفن الكائنات وتحفظها، بخلاف النارية المتكونة من صهارة حارة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 220,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الصخور الرسوبية",
+        "الصخور النارية",
+        "الصخور المتحولة",
+        "الصخور البركانية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الصخور الرسوبية"
+    },
+    {
+      "id": "ye-biology-u8-l7-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u8",
+      "lesson_id": "biology-u8-l7",
+      "difficulty": 2,
+      "question_text": "تستخدم الأحافير في الاستدلال على حياة الماضي وعلى وجود النفط والغاز.",
+      "explanation": "تدرس الأحافير لمعرفة الكائنات القديمة وبيئاتها وأعمار الصخور، وتساعد في التنقيب عن النفط والغاز في الطبقات الرسوبية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 220,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "toc-verified"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u6-l1-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l1",
+      "difficulty": 1,
+      "question_text": "ما المقصود بالتقانة الحيوية؟",
+      "explanation": "التقانة الحيوية (Biotechnology) من (Bio) بمعنى حيوي و(technology) بمعنى تقانة: تحويل المعارف العلمية لعلم الأحياء إلى تطبيقات عملية يستفيد منها الإنسان، أو استخدام الكائنات الحية أو نظمها أو تعليماتها الحيوية في التصنيع وإنتاج مواد جديدة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 145,
+      "source_detail": "الدرس: التقانة الحيوية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تحويل المعارف العلمية لعلم الأحياء إلى تطبيقات عملية يستفيد منها الإنسان",
+        "دراسة الكائنات الحية في بيئتها الطبيعية فقط",
+        "تصنيف الكائنات الحية حسب صفاتها الظاهرية",
+        "قياس سرعة التفاعلات الكيميائية داخل الخلية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تحويل المعارف العلمية لعلم الأحياء إلى تطبيقات عملية يستفيد منها الإنسان"
+    },
+    {
+      "id": "ye-biology-u6-l1-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l1",
+      "difficulty": 1,
+      "question_text": "استخدم الإنسان التقانة الحيوية منذ القدم في صناعة الجبن واللبن الرائب (الزبادي) والخبز.",
+      "explanation": "بدأ الإنسان باستخدام التقانة الحيوية في إنتاج مواد جديدة منذ القدم، وخاصة في صناعة بعض المواد الغذائية كالجبن واللبن الرائب (الزبادي)، وفي عمليات التخمر وصناعة الخبز.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 145,
+      "source_detail": "الدرس: التقانة الحيوية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u6-l2-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l2",
+      "difficulty": 1,
+      "question_text": "متى بدأ العلماء تطوير تقنية الهندسة الجينية (الوراثية)؟",
+      "explanation": "الهندسة الجينية أو الوراثية من أحدث التقنيات في مجال علوم الحياة في عصرنا الحديث، وقد بدأ العلماء تطوير هذه التقنية في السبعينات من القرن العشرين.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 146,
+      "source_detail": "الدرس: الهندسة الجينية أو الوراثية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "في السبعينات من القرن العشرين",
+        "في الأربعينات من القرن التاسع عشر",
+        "في التسعينات من القرن العشرين",
+        "في بداية القرن الحادي والعشرين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "في السبعينات من القرن العشرين"
+    },
+    {
+      "id": "ye-biology-u6-l2-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l2",
+      "difficulty": 2,
+      "question_text": "ماذا تفعل الهندسة الجينية في حمض DNA للكائن الحي؟",
+      "explanation": "تعتمد الهندسة الجينية على دراسة الحمض النووي DNA والجينات المكونة له في الكائنات الحية وخاصة الدقيقة كالبكتيريا، وتستخدم في إضافة أو حذف جين أو أكثر من حمض DNA للكائن الحي، للاستفادة منه في صناعة منتجات متنوعة خاصة في الغذاء والأدوية كإنتاج هرمون الأنسولين وهرمون النمو.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 146,
+      "source_detail": "الدرس: الهندسة الجينية أو الوراثية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "تضيف جيناً أو أكثر أو تحذف جيناً أو أكثر من حمض DNA للكائن الحي",
+        "تغيّر عدد الكروموسومات فقط دون المساس بالجينات",
+        "توقف انقسام الخلية نهائياً",
+        "تحوّل حمض DNA إلى حمض RNA"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تضيف جيناً أو أكثر أو تحذف جيناً أو أكثر من حمض DNA للكائن الحي"
+    },
+    {
+      "id": "ye-biology-u6-l3-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l3",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من تطبيقات التقانة الحيوية في إنتاج الغذاء؟",
+      "explanation": "تنتقل جينات من نبات إلى آخر لتحسين إنتاجه، مثل نقل جينات من البطاطس إلى الذرة، ويمكن تكبير أوراق النبات وزيادة قيمة منتجاتها الغذائية بواسطة الهندسة الوراثية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 147,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج الغذاء",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "نقل جينات من نبات إلى آخر لتحسين إنتاجه",
+        "إنتاج البنسلين كمضاد حيوي",
+        "إنتاج الكحول كوقود للسيارات",
+        "معالجة مياه الصرف الصحي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نقل جينات من نبات إلى آخر لتحسين إنتاجه"
+    },
+    {
+      "id": "ye-biology-u6-l3-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l3",
+      "difficulty": 2,
+      "question_text": "يعارض بعض الناس استخدام الأغذية المعدلة وراثياً خوفاً من أن يكون لها آثار ضارة على مستهلكيها.",
+      "explanation": "رغم أن علماء التقانة الحيوية يبشرون فقراء العالم بمنتجات رخيصة تحمل قيمة غذائية عالية، إلا أن هناك معارضة قوية لاستخدام الأغذية المعدلة وراثياً خوفاً من أن يكون لها آثار ضارة على مستهلكيها.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 152,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج الغذاء",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u6-l4-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l4",
+      "difficulty": 1,
+      "question_text": "في أي عام اكتُشف البنسلين تقريباً؟",
+      "explanation": "اكتُشف البنسلين في عام 1928م تقريباً كمضاد حيوي يقوم بإنتاجه فطر البنسيليوم، وله أثر فاعل في معالجة كثير من الأمراض والالتهابات.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 152,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج الدواء",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "1928م",
+        "1914م",
+        "1945م",
+        "1970م"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "1928م"
+    },
+    {
+      "id": "ye-biology-u6-l4-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l4",
+      "difficulty": 2,
+      "question_text": "متى بدأ إنتاج البنسلين بكميات تجارية؟",
+      "explanation": "منذ أن تمكن الإنسان من اكتشاف تأثير البنسلين على أنواع من البكتيريا الممرضة واستخدامه كمضاد حيوي وإنتاجه بكميات تجارية في الأربعينات من القرن العشرين، حصل تطور كبير في الرعاية الصحية وتوفير الأدوية والمضادات الحيوية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 152,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج الدواء",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "في الأربعينات من القرن العشرين",
+        "في العشرينات من القرن العشرين",
+        "في السبعينات من القرن العشرين",
+        "في التسعينات من القرن العشرين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "في الأربعينات من القرن العشرين"
+    },
+    {
+      "id": "ye-biology-u6-l5-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l5",
+      "difficulty": 1,
+      "question_text": "ما الكحولان اللذان يمكن إنتاجهما بالتقانة الحيوية واستخدامهما كوقود لتشغيل الآلات؟",
+      "explanation": "أمكن استخدام التقانة الحيوية في إنتاج الكحول (الميثانول والإيثانول) الذي يمكن استخدامه كوقود لتشغيل الآلات بدلاً من المنتجات النفطية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 155,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج الوقود",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الميثانول والإيثانول",
+        "الجليسرول والبنزين",
+        "الميثان والبروبان",
+        "الإيثانول وحمض الخليك"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الميثانول والإيثانول"
+    },
+    {
+      "id": "ye-biology-u6-l5-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l5",
+      "difficulty": 2,
+      "question_text": "في أي بلد بدأ العلماء في السبعينات (1970م) محاولات إنتاج الكحول بتخمير مخلفات قصب السكر بفطر الخميرة؟",
+      "explanation": "بدأ العلماء في البرازيل في السبعينات محاولات لإنتاج الكحول عن طريق استخدام فطر الخميرة في تخمير مخلفات وسيقان قصب السكر، وتواصلت الأبحاث حتى صار فيها ما يزيد عن 400 وحدة تخمير وتقطير لإنتاج الكحول، ويستخدم الآن بصورته النقية أو مخلوطاً مع البنزين كوقود في معظم السيارات في البرازيل.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 155,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج الوقود",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "البرازيل",
+        "الهند",
+        "الصين",
+        "ألمانيا"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "البرازيل"
+    },
+    {
+      "id": "ye-biology-u6-l6-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l6",
+      "difficulty": 1,
+      "question_text": "ما الغاز الذي تنتجه بكتيريا (Methanogenic) في نهاية تحليل مخلفات الصرف الصحي؟",
+      "explanation": "في التحليل الحيوي التخميري لمخلفات الصرف الصحي تنشط أنواع أخرى من البكتيريا (Methanogenic) لتحويل نواتج التحليل إلى غاز الميثان (CH4) والماء، ويمكن استخدام الميثان كوقود.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 156,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في معالجة المخلفات الملوثة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "غاز الميثان (CH4)",
+        "غاز الأكسجين",
+        "غاز ثاني أكسيد الكربون فقط",
+        "غاز النيتروجين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "غاز الميثان (CH4)"
+    },
+    {
+      "id": "ye-biology-u6-l6-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l6",
+      "difficulty": 2,
+      "question_text": "يساعد تحليل مخلفات الصرف الصحي بالكائنات الدقيقة على تخليص البيئة من ملوث رئيسي لها.",
+      "explanation": "تحليل مخلفات الصرف الصحي بالكائنات الدقيقة مثل البكتيريا يحوّلها إلى مواد غير ضارة، ويمكن الاستفادة منها في أغراض مختلفة مثل الوقود، ويساعد على تخليص البيئة من ملوث رئيسي لها.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 156,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في معالجة المخلفات الملوثة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u6-l7-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l7",
+      "difficulty": 1,
+      "question_text": "أي مما يأتي من المواد التي تُنتج بمساعدة الكائنات الحية الدقيقة؟",
+      "explanation": "استطاع الإنسان الاستعانة ببعض الكائنات الحية الدقيقة في صناعة وإنتاج الصابون والمواد المنظفة الأخرى والمواد المذيبة والمواد الداخلة في صباغة الأقمشة وتلوينها والمواد الحافظة ومبيدات الحشرات والأعشاب الضارة، إضافة إلى صناعة الأدوية والمضادات الحيوية والهرمونات والأنزيمات.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 158,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج بعض المواد الصناعية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "الصابون والمواد المنظفة",
+        "الحديد والصلب",
+        "الزجاج",
+        "الأسمنت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الصابون والمواد المنظفة"
+    },
+    {
+      "id": "ye-biology-u6-l7-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l7",
+      "difficulty": 1,
+      "question_text": "تدخل الكائنات الحية الدقيقة في صناعة الأدوية والمضادات الحيوية والهرمونات والأنزيمات.",
+      "explanation": "من تطبيقات التقانة الحيوية في إنتاج بعض المواد الصناعية: صناعة الأدوية والمضادات الحيوية والهرمونات والأنزيمات بمساعدة الكائنات الحية الدقيقة.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 158,
+      "source_detail": "الدرس: استخدام التقانة الحيوية في إنتاج بعض المواد الصناعية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    },
+    {
+      "id": "ye-biology-u6-l8-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l8",
+      "difficulty": 1,
+      "question_text": "ما المقصود بالاستنساخ؟",
+      "explanation": "يقصد بالاستنساخ إنتاج كائن حي من خلية جسدية لكائن حي آخر، ويكون الكائن الجديد مشابهاً تماماً للكائن الذي أُخذت منه الخلية الجسدية.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 158,
+      "source_detail": "الدرس: الاستنساخ",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "إنتاج كائن حي من خلية جسدية لكائن حي آخر يكون مشابهاً تماماً له",
+        "تزاوج كائنين من نوعين مختلفين",
+        "نقل جين من نبات إلى حيوان",
+        "انقسام الخلية إلى خليتين متماثلتين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "إنتاج كائن حي من خلية جسدية لكائن حي آخر يكون مشابهاً تماماً له"
+    },
+    {
+      "id": "ye-biology-u6-l8-002",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l8",
+      "difficulty": 2,
+      "question_text": "ما اسم النعجة التي استنسخها العلماء وذُكرت في الكتاب مثالاً على الاستنساخ؟",
+      "explanation": "يعد الاستنساخ من أهم تطبيقات التقانة الحيوية وأخطرها؛ ولعلك قد سمعت عن استنساخ النعجة (دوللي) قبل عدة سنوات عندما اتبع العلماء خطوات محددة في عملية استنساخها.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 158,
+      "source_detail": "الدرس: الاستنساخ",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "دوللي",
+        "ليلى",
+        "سارة",
+        "نعمة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "دوللي"
+    },
+    {
+      "id": "ye-biology-u6-l9-001",
+      "type": "mcq",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l9",
+      "difficulty": 2,
+      "question_text": "لماذا تضيف ربة البيت جزءاً من اللبن الزبادي إلى الحليب؟",
+      "explanation": "من أسئلة تقويم الوحدة: تضيف ربة البيت جزءاً من اللبن الزبادي (اللبن الرائب) إلى الحليب لإنتاج كمية جديدة من الزبادي، لأن الزبادي يحوي الكائنات الدقيقة التي تحوّل الحليب إلى زبادي بالتخمر.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 161,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null,
+      "options": [
+        "لإنتاج كمية جديدة من الزبادي",
+        "لتبريد الحليب",
+        "لإزالة الدسم من الحليب",
+        "لتحلية الحليب"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لإنتاج كمية جديدة من الزبادي"
+    },
+    {
+      "id": "ye-biology-u6-l9-002",
+      "type": "true_false",
+      "subject_id": "biology",
+      "unit_id": "biology-u6",
+      "lesson_id": "biology-u6-l9",
+      "difficulty": 1,
+      "question_text": "التقانة الحيوية سلاح ذو حدين.",
+      "explanation": "من أسئلة تقويم الوحدة: التقانة الحيوية سلاح ذو حدين — لها فوائد عظيمة في الغذاء والدواء والوقود ومعالجة المخلفات وإنتاج المواد الصناعية، ولها مخاطر محتملة كالآثار الضارة للأغذية المعدلة وراثياً وخطورة الاستنساخ.",
+      "source": "كتاب الأحياء — الصف الثالث الثانوي العلمي، الجمهورية اليمنية، طبعة صنعاء 2027",
+      "source_page": 161,
+      "source_detail": "الدرس: تقويم الوحدة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 45,
+      "media_ref": null,
+      "correct_answer": "صح"
+    }
+  ]
+}

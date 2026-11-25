@@ -1,0 +1,3934 @@
+{
+  "format": "abqariya-content-pack",
+  "version": 1,
+  "pack": {
+    "id": "ye-islamic-3sec-2027",
+    "title_ar": "أسئلة التربية الإسلامية — ثالث ثانوي علمي (صنعاء 2027)",
+    "title_en": "Islamic Education questions — Grade 12 (Sanaa 2027)",
+    "source": "التربية الإسلامية — الصف الثالث الثانوي العلمي، اليمن، طبعة صنعاء 2027",
+    "is_demo": false,
+    "curriculum_year": "2025-2026",
+    "created_at": "2026-11-25"
+  },
+  "subjects": [
+    {
+      "id": "islamic",
+      "name_ar": "التربية الإسلامية",
+      "name_en": "Islamic Education",
+      "source": "التربية الإسلامية — الصف الثالث الثانوي العلمي، اليمن، طبعة صنعاء 2027"
+    }
+  ],
+  "units": [
+    {
+      "id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "القرآن الكريم — الحفظ والتفسير",
+      "title_en": "Quran — Memorisation and Tafsir",
+      "sort_order": 1,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 12
+    },
+    {
+      "id": "islamic-u2",
+      "subject_id": "islamic",
+      "title_ar": "القرآن الكريم — علوم القرآن",
+      "title_en": "Quran — Quranic Sciences",
+      "sort_order": 2,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 88
+    },
+    {
+      "id": "islamic-u3",
+      "subject_id": "islamic",
+      "title_ar": "القرآن الكريم — التجويد والتلاوة",
+      "title_en": "Quran — Tajwid and Recitation",
+      "sort_order": 3,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 98
+    },
+    {
+      "id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "الإيمان",
+      "title_en": "Iman",
+      "sort_order": 4,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 8
+    },
+    {
+      "id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "الفقه — الجزاء والعقوبات في الإسلام",
+      "title_en": "Fiqh — Retribution and Punishments in Islam",
+      "sort_order": 5,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 8
+    },
+    {
+      "id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "الحديث والتهذيب — وحدة العلم النافع",
+      "title_en": "Hadith and Tahdhib",
+      "sort_order": 6,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 9
+    },
+    {
+      "id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "السيرة النبوية",
+      "title_en": "The Prophet's Biography",
+      "sort_order": 7,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 8
+    }
+  ],
+  "lessons": [
+    {
+      "id": "islamic-u1-l1",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "فاحشة الزنا وعقوبتها",
+      "sort_order": 1,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس: فاحشة الزنا وعقوبتها"
+    },
+    {
+      "id": "islamic-u1-l2",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "جريمة القذف",
+      "sort_order": 2,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 18,
+      "source_detail": "الدرس: جريمة القذف"
+    },
+    {
+      "id": "islamic-u1-l3",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "حادثة الإفك",
+      "sort_order": 3,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 24,
+      "source_detail": "الدرس: حادثة الإفك"
+    },
+    {
+      "id": "islamic-u1-l4",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "خطورة خطوات الشيطان",
+      "sort_order": 4,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 32,
+      "source_detail": "الدرس: خطورة خطوات الشيطان"
+    },
+    {
+      "id": "islamic-u1-l5",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "آداب الاستئذان لدخول البيوت",
+      "sort_order": 5,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 38,
+      "source_detail": "الدرس: آداب الاستئذان لدخول البيوت"
+    },
+    {
+      "id": "islamic-u1-l6",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "عوامل الطهر والعفة",
+      "sort_order": 6,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس: عوامل الطهر والعفة"
+    },
+    {
+      "id": "islamic-u1-l7",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "الحث على الزواج، والأمر بالتعفف",
+      "sort_order": 7,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 48,
+      "source_detail": "الدرس: الحث على الزواج، والأمر بالتعفف"
+    },
+    {
+      "id": "islamic-u1-l8",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "نور الإيمان وظلمات الكفر",
+      "sort_order": 8,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 54,
+      "source_detail": "الدرس: نور الإيمان وظلمات الكفر"
+    },
+    {
+      "id": "islamic-u1-l9",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "من دلائل قدرة الله تعالى في الكون",
+      "sort_order": 9,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 60,
+      "source_detail": "الدرس: من دلائل قدرة الله تعالى في الكون"
+    },
+    {
+      "id": "islamic-u1-l10",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "طاعة الله ورسوله",
+      "sort_order": 10,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 64,
+      "source_detail": "الدرس: طاعة الله ورسوله"
+    },
+    {
+      "id": "islamic-u1-l11",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "استخلاف الله للمؤمنين في الأرض",
+      "sort_order": 11,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 70,
+      "source_detail": "الدرس: استخلاف الله للمؤمنين في الأرض"
+    },
+    {
+      "id": "islamic-u1-l12",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "آداب الاستئذان داخل البيوت",
+      "sort_order": 12,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 75,
+      "source_detail": "الدرس: آداب الاستئذان داخل البيوت"
+    },
+    {
+      "id": "islamic-u1-l13",
+      "unit_id": "islamic-u1",
+      "subject_id": "islamic",
+      "title_ar": "علاقة الأمة بقيادتها المؤمنة",
+      "sort_order": 13,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 82,
+      "source_detail": "الدرس: علاقة الأمة بقيادتها المؤمنة"
+    },
+    {
+      "id": "islamic-u2-l1",
+      "unit_id": "islamic-u2",
+      "subject_id": "islamic",
+      "title_ar": "حاكمية القرآن الكريم",
+      "sort_order": 1,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 88,
+      "source_detail": "الدرس: حاكمية القرآن الكريم"
+    },
+    {
+      "id": "islamic-u2-l2",
+      "unit_id": "islamic-u2",
+      "subject_id": "islamic",
+      "title_ar": "الإعجاز في القرآن الكريم",
+      "sort_order": 2,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 92,
+      "source_detail": "الدرس: الإعجاز في القرآن الكريم"
+    },
+    {
+      "id": "islamic-u3-l1",
+      "unit_id": "islamic-u3",
+      "subject_id": "islamic",
+      "title_ar": "أحكام الوقف والسكت",
+      "sort_order": 1,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 98,
+      "source_detail": "الدرس: أحكام الوقف والسكت"
+    },
+    {
+      "id": "islamic-u3-l2",
+      "unit_id": "islamic-u3",
+      "subject_id": "islamic",
+      "title_ar": "اصطلاحات حفص",
+      "sort_order": 2,
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 102,
+      "source_detail": "الدرس: اصطلاحات حفص"
+    },
+    {
+      "id": "islamic-u4-l1",
+      "unit_id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "عظمة الله تعالى",
+      "sort_order": 1,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 8,
+      "source_detail": "الدرس: عظمة الله تعالى"
+    },
+    {
+      "id": "islamic-u4-l2",
+      "unit_id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "الإسلام دين تحرر من الطاغوت",
+      "sort_order": 2,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 15,
+      "source_detail": "الدرس: الإسلام دين تحرر من الطاغوت"
+    },
+    {
+      "id": "islamic-u4-l3",
+      "unit_id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "الإسلام دين وعي وزكاة",
+      "sort_order": 3,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 19,
+      "source_detail": "الدرس: الإسلام دين وعي وزكاة"
+    },
+    {
+      "id": "islamic-u4-l4",
+      "unit_id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "الإسلام دين العدل والقسط",
+      "sort_order": 4,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 26,
+      "source_detail": "الدرس: الإسلام دين العدل والقسط"
+    },
+    {
+      "id": "islamic-u4-l5",
+      "unit_id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "الإسلام دين المسئولية",
+      "sort_order": 5,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 32,
+      "source_detail": "الدرس: الإسلام دين المسئولية"
+    },
+    {
+      "id": "islamic-u4-l6",
+      "unit_id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "التقوى",
+      "sort_order": 6,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 38,
+      "source_detail": "الدرس: التقوى"
+    },
+    {
+      "id": "islamic-u4-l7",
+      "unit_id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "عداوة أهل الكتاب",
+      "sort_order": 7,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 46,
+      "source_detail": "الدرس: عداوة أهل الكتاب"
+    },
+    {
+      "id": "islamic-u4-l8",
+      "unit_id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "خطورة النفاق",
+      "sort_order": 8,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 53,
+      "source_detail": "الدرس: خطورة النفاق"
+    },
+    {
+      "id": "islamic-u4-l9",
+      "unit_id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "نعيم الجنة",
+      "sort_order": 9,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 60,
+      "source_detail": "الدرس: نعيم الجنة"
+    },
+    {
+      "id": "islamic-u4-l10",
+      "unit_id": "islamic-u4",
+      "subject_id": "islamic",
+      "title_ar": "عذاب النار",
+      "sort_order": 10,
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 67,
+      "source_detail": "الدرس: عذاب النار"
+    },
+    {
+      "id": "islamic-u5-l1",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "الجزاء والعقوبات في الإسلام",
+      "sort_order": 1,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 8,
+      "source_detail": "الدرس: الجزاء والعقوبات في الإسلام"
+    },
+    {
+      "id": "islamic-u5-l2",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "العقوبات الشرعية",
+      "sort_order": 2,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس: العقوبات الشرعية"
+    },
+    {
+      "id": "islamic-u5-l3",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "عقوبة فاحشة الزنا",
+      "sort_order": 3,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 20,
+      "source_detail": "الدرس: عقوبة فاحشة الزنا"
+    },
+    {
+      "id": "islamic-u5-l4",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "عقوبة القذف",
+      "sort_order": 4,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 24,
+      "source_detail": "الدرس: عقوبة القذف"
+    },
+    {
+      "id": "islamic-u5-l5",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "عقوبة شرب الخمر",
+      "sort_order": 5,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 29,
+      "source_detail": "الدرس: عقوبة شرب الخمر"
+    },
+    {
+      "id": "islamic-u5-l6",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "عقوبة جريمة السرقة",
+      "sort_order": 6,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 34,
+      "source_detail": "الدرس: عقوبة جريمة السرقة"
+    },
+    {
+      "id": "islamic-u5-l7",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "عقوبة جريمة الحرابة",
+      "sort_order": 7,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 38,
+      "source_detail": "الدرس: عقوبة جريمة الحرابة"
+    },
+    {
+      "id": "islamic-u5-l8",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "عقوبة قتل النفس المحرمة",
+      "sort_order": 8,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 41,
+      "source_detail": "الدرس: عقوبة قتل النفس المحرمة"
+    },
+    {
+      "id": "islamic-u5-l9",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "الديات والأروش",
+      "sort_order": 9,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 46,
+      "source_detail": "الدرس: الديات والأروش"
+    },
+    {
+      "id": "islamic-u5-l10",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "طرق إثبات الدعوى",
+      "sort_order": 10,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 51,
+      "source_detail": "الدرس: طرق إثبات الدعوى"
+    },
+    {
+      "id": "islamic-u5-l11",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "الميراث (أسبابه، وموانعه، وأنواعه)",
+      "sort_order": 11,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 57,
+      "source_detail": "الدرس: الميراث (أسبابه، وموانعه، وأنواعه)"
+    },
+    {
+      "id": "islamic-u5-l12",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "أصحاب الفروض المقدرة في كتاب الله",
+      "sort_order": 12,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: أصحاب الفروض المقدرة في كتاب الله"
+    },
+    {
+      "id": "islamic-u5-l13",
+      "unit_id": "islamic-u5",
+      "subject_id": "islamic",
+      "title_ar": "قضايا معاصرة وموقف الشريعة منها",
+      "sort_order": 13,
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 68,
+      "source_detail": "الدرس: قضايا معاصرة وموقف الشريعة منها"
+    },
+    {
+      "id": "islamic-u6-l1",
+      "unit_id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "العلم النافع",
+      "sort_order": 1,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 9,
+      "source_detail": "الدرس: العلم النافع"
+    },
+    {
+      "id": "islamic-u6-l2",
+      "unit_id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "حديث العرض على كتاب الله",
+      "sort_order": 2,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 17,
+      "source_detail": "الدرس: حديث العرض على كتاب الله"
+    },
+    {
+      "id": "islamic-u6-l3",
+      "unit_id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "الصلاة على النبي ﷺ",
+      "sort_order": 3,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 22,
+      "source_detail": "الدرس: الصلاة على النبي ﷺ"
+    },
+    {
+      "id": "islamic-u6-l4",
+      "unit_id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "لتحفظن حديثي إلى إسرافيل",
+      "sort_order": 4,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس: لتحفظن حديثي إلى إسرافيل"
+    },
+    {
+      "id": "islamic-u6-l5",
+      "unit_id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "عوامل الاستقامة وعوامل الانحراف",
+      "sort_order": 5,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 33,
+      "source_detail": "الدرس: عوامل الاستقامة وعوامل الانحراف"
+    },
+    {
+      "id": "islamic-u6-l6",
+      "unit_id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "فضل الجهاد في سبيل الله",
+      "sort_order": 6,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 41,
+      "source_detail": "الدرس: فضل الجهاد في سبيل الله"
+    },
+    {
+      "id": "islamic-u6-l7",
+      "unit_id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "العفاف",
+      "sort_order": 7,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس: العفاف"
+    },
+    {
+      "id": "islamic-u6-l8",
+      "unit_id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "الشخصية المتميزة للمسلم",
+      "sort_order": 8,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 53,
+      "source_detail": "الدرس: الشخصية المتميزة للمسلم"
+    },
+    {
+      "id": "islamic-u6-l9",
+      "unit_id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "تداعى عليكم الأمم",
+      "sort_order": 9,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 57,
+      "source_detail": "الدرس: تداعى عليكم الأمم"
+    },
+    {
+      "id": "islamic-u6-l10",
+      "unit_id": "islamic-u6",
+      "subject_id": "islamic",
+      "title_ar": "حديث الثقلين",
+      "sort_order": 10,
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس: حديث الثقلين"
+    },
+    {
+      "id": "islamic-u7-l1",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "الرسول القائد",
+      "sort_order": 1,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 8,
+      "source_detail": "الدرس: الرسول القائد"
+    },
+    {
+      "id": "islamic-u7-l2",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "صلح الحديبية",
+      "sort_order": 2,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس: صلح الحديبية"
+    },
+    {
+      "id": "islamic-u7-l3",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "مكاتبات الرسول للملوك والأمراء",
+      "sort_order": 3,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 21,
+      "source_detail": "الدرس: مكاتبات الرسول للملوك والأمراء"
+    },
+    {
+      "id": "islamic-u7-l4",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "غزوة خيبر",
+      "sort_order": 4,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس: غزوة خيبر"
+    },
+    {
+      "id": "islamic-u7-l5",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "غزوة مؤتة",
+      "sort_order": 5,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 34,
+      "source_detail": "الدرس: غزوة مؤتة"
+    },
+    {
+      "id": "islamic-u7-l6",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "فتح مكة",
+      "sort_order": 6,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس: فتح مكة"
+    },
+    {
+      "id": "islamic-u7-l7",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "غزوة حنين",
+      "sort_order": 7,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 49,
+      "source_detail": "الدرس: غزوة حنين"
+    },
+    {
+      "id": "islamic-u7-l8",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "غزوة تبوك",
+      "sort_order": 8,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 57,
+      "source_detail": "الدرس: غزوة تبوك"
+    },
+    {
+      "id": "islamic-u7-l9",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "عام الوفود وإعلان البراءة",
+      "sort_order": 9,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 66,
+      "source_detail": "الدرس: عام الوفود وإعلان البراءة"
+    },
+    {
+      "id": "islamic-u7-l10",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "إسلام أهل اليمن",
+      "sort_order": 10,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس: إسلام أهل اليمن"
+    },
+    {
+      "id": "islamic-u7-l11",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "حجة الوداع",
+      "sort_order": 11,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 77,
+      "source_detail": "الدرس: حجة الوداع"
+    },
+    {
+      "id": "islamic-u7-l12",
+      "unit_id": "islamic-u7",
+      "subject_id": "islamic",
+      "title_ar": "أعمال النبي بعد حجة الوداع ووفاته",
+      "sort_order": 12,
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 82,
+      "source_detail": "الدرس: أعمال النبي بعد حجة الوداع ووفاته"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ye-islamic-u1-l1-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l1",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس الأول من سورة النور؟",
+      "options": [
+        "الآيات (1-3) من سورة النور",
+        "الآيات (4-10) من سورة النور",
+        "الآيات (11-20) من سورة النور",
+        "الآيات (27-29) من سورة النور"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الآيات (1-3) من سورة النور",
+      "explanation": "يذكر الدرس الأول عنوانه (فاحشة الزنا وعقوبتها) وأن الآيات الكريمة هي الآيات (1-3) من سورة النور، وتتضمن الآيات الأولى من سورة النور مجموعة من الأحكام والتعاليم، ومنها أهمية السورة وبيان مدى بشاعة جريمة الزنا وعقوبتها والآثار الكارثية التي تسببها.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس الأول: فاحشة الزنا وعقوبتها",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l1-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l1",
+      "difficulty": 2,
+      "question_text": "ما معنى كلمة (فرضناها) في أول سورة النور، كما في معاني المفردات؟",
+      "options": [
+        "أحكمناها وأوجبناها",
+        "أهملناها وتركناها",
+        "خففنا أحكامها",
+        "نسخناها"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أحكمناها وأوجبناها",
+      "explanation": "يذكر الدرس في معاني المفردات: فرضناها أي أحكمناها وأوجبناها، وطائفة أي جماعة، ورأفة أي رحمة. والآيات تبين عقوبة الزنا وأنها مئة جلدة لكل واحد من الزاني والزانية.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 12,
+      "source_detail": "الدرس الأول: فاحشة الزنا وعقوبتها",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l10-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l10",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس العاشر عن طاعة الله ورسوله؟",
+      "options": [
+        "الآيات (41-46) من سورة النور",
+        "الآيات (47-54) من سورة النور",
+        "الآيات (55-57) من سورة النور",
+        "الآيات (58-61) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (47-54) من سورة النور",
+      "explanation": "يذكر الدرس العاشر عنوانه (طاعة الله ورسوله) وأن الآيات الكريمة هي الآيات (47-54) من سورة النور، وفيها بيان حال من يقولون آمنا بالله وبالرسول وأطعنا ثم يتولى فريق منهم، وأن قول المؤمنين إذا دعوا إلى الله ورسوله ليحكم بينهم أن يقولوا سمعنا وأطعنا.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 64,
+      "source_detail": "الدرس العاشر: طاعة الله ورسوله",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l10-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l10",
+      "difficulty": 2,
+      "question_text": "من هم المفلحون والفائزون كما في الآيات؟",
+      "options": [
+        "الذين يقولون آمنا ثم يتولون عن حكم الله ورسوله",
+        "الذين إذا دعوا إلى الله ورسوله ليحكم بينهم قالوا سمعنا وأطعنا، ومن يطع الله ورسوله ويخش الله ويتقه",
+        "الذين يأتون إلى الحكم مذعنين فقط إذا كان الحق لهم",
+        "الذين يقسمون بالله جهد أيمانهم"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الذين إذا دعوا إلى الله ورسوله ليحكم بينهم قالوا سمعنا وأطعنا، ومن يطع الله ورسوله ويخش الله ويتقه",
+      "explanation": "تبين الآيات أن قول المؤمنين إذا دعوا إلى الله ورسوله ليحكم بينهم أن يقولوا سمعنا وأطعنا وأولئك هم المفلحون، وأن من يطع الله ورسوله ويخش الله ويتقه فأولئك هم الفائزون، بينما من يتولى بعد الإيمان فما أولئك بالمؤمنين.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 64,
+      "source_detail": "الدرس العاشر: طاعة الله ورسوله",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l11-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l11",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس الحادي عشر عن استخلاف الله للمؤمنين في الأرض؟",
+      "options": [
+        "الآيات (47-54) من سورة النور",
+        "الآيات (55-57) من سورة النور",
+        "الآيات (58-61) من سورة النور",
+        "الآيات (62-64) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (55-57) من سورة النور",
+      "explanation": "يذكر الدرس الحادي عشر عنوانه (استخلاف الله للمؤمنين في الأرض) وأن الآيات الكريمة هي الآيات (55-57) من سورة النور، وفيها وعد الله الذين آمنوا وعملوا الصالحات ليستخلفنهم في الأرض كما استخلف الذين من قبلهم وليمكنن لهم دينهم وليبدلنهم من بعد خوفهم أمناً.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 70,
+      "source_detail": "الدرس الحادي عشر: استخلاف الله للمؤمنين في الأرض",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l11-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l11",
+      "difficulty": 2,
+      "question_text": "ما معنى (ليستخلفنهم في الأرض) كما في معاني المفردات؟",
+      "options": [
+        "يمكن لدولتهم ويجعل لهم الغلبة للدين",
+        "يهلكهم ويزيل دولتهم",
+        "يفرقهم في الأرض",
+        "يمنعهم من إقامة الصلاة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يمكن لدولتهم ويجعل لهم الغلبة للدين",
+      "explanation": "يذكر الدرس في معاني المفردات: ليستخلفنهم في الأرض أي يمكن لدولتهم ويجعل لهم الغلبة للدين، ولا تحسبن الذين كفروا معجزين أي لا تظن أنهم يمنعون أحداً من حرصهم والتغلب عليهم. والآيات تبين أن الاستخلاف والتمكين والأمن مشروط بالإيمان والعمل الصالح وعبادة الله وحده لا يشركون به شيئاً، مع إقام الصلاة وإيتاء الزكاة وطاعة الرسول.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 70,
+      "source_detail": "الدرس الحادي عشر: استخلاف الله للمؤمنين في الأرض",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l12-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l12",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس الثاني عشر عن آداب الاستئذان داخل البيوت؟",
+      "options": [
+        "الآيات (55-57) من سورة النور",
+        "الآيات (58-61) من سورة النور",
+        "الآيات (62-64) من سورة النور",
+        "الآيات (27-29) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (58-61) من سورة النور",
+      "explanation": "يذكر الدرس الثاني عشر عنوانه (آداب الاستئذان داخل البيوت) وأن الآيات الكريمة هي الآيات (58-61) من سورة النور، وفيها استئذان الذين ملكت أيمانكم والذين لم يبلغوا الحلم في ثلاث عورات، واستئذان الأطفال إذا بلغوا الحلم، وحكم القواعد من النساء.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 75,
+      "source_detail": "الدرس الثاني عشر: آداب الاستئذان داخل البيوت",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l12-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l12",
+      "difficulty": 2,
+      "question_text": "ما الأوقات الثلاثة التي يستأذن فيها الذين ملكت أيمانكم والذين لم يبلغوا الحلم؟",
+      "options": [
+        "من قبل صلاة الفجر، وحين تضعون ثيابكم من الظهيرة، ومن بعد صلاة العشاء",
+        "بعد الفجر وبعد الظهر وبعد العصر",
+        "في الصباح والمساء فقط",
+        "عند كل صلاة من الصلوات الخمس"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "من قبل صلاة الفجر، وحين تضعون ثيابكم من الظهيرة، ومن بعد صلاة العشاء",
+      "explanation": "تبين الآيات أن الذين ملكت أيمانكم والذين لم يبلغوا الحلم منكم يستأذنون ثلاث مرات: من قبل صلاة الفجر، وحين تضعون ثيابكم من الظهيرة، ومن بعد صلاة العشاء، وهي ثلاث عورات لكم، وأن الأطفال إذا بلغوا الحلم فليستأذنوا كما استأذن الذين من قبلهم.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 75,
+      "source_detail": "الدرس الثاني عشر: آداب الاستئذان داخل البيوت",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l13-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l13",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس الثالث عشر عن علاقة الأمة بقيادتها المؤمنة؟",
+      "options": [
+        "الآيات (58-61) من سورة النور",
+        "الآيات (62) إلى آخر سورة النور",
+        "الآيات (1-3) من سورة النور",
+        "الآيات (27-29) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (62) إلى آخر سورة النور",
+      "explanation": "يذكر الدرس الثالث عشر عنوانه (علاقة الأمة بقيادتها المؤمنة) وأن الآيات الكريمة هي الآيات (62) إلى آخر سورة النور، وفيها أن المؤمنين هم الذين آمنوا بالله ورسوله وإذا كانوا معه على أمر جامع لم يذهبوا حتى يستأذنوه، وأن من يستأذن الرسول هم المؤمنون بالله ورسوله.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 82,
+      "source_detail": "الدرس الثالث عشر: علاقة الأمة بقيادتها المؤمنة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l13-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l13",
+      "difficulty": 2,
+      "question_text": "ماذا يجب على من يخالف عن أمر الرسول ﷺ، كما في الآيات؟",
+      "options": [
+        "لا شيء عليه",
+        "أن يحذر أن تصيبه فتنة أو يصيبه عذاب أليم",
+        "أن يذهب حيث شاء دون استئذان",
+        "أن يدعو الرسول كما يدعو بعضهم بعضاً"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "أن يحذر أن تصيبه فتنة أو يصيبه عذاب أليم",
+      "explanation": "تبين الآيات أن الذين يتسللون من المؤمنين لواذاً يعلمهم الله، وأن من يخالف عن أمر الرسول فليحذر أن تصيبه فتنة أو يصيبه عذاب أليم، وأن لله ما في السماوات والأرض، وأنه يعلم ما أنتم عليه ويوم يرجعون إليه فينبئهم بما عملوا والله بكل شيء عليم.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 82,
+      "source_detail": "الدرس الثالث عشر: علاقة الأمة بقيادتها المؤمنة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l2-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l2",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس الثاني عن جريمة القذف؟",
+      "options": [
+        "الآيات (1-3) من سورة النور",
+        "الآيات (4-10) من سورة النور",
+        "الآيات (11-20) من سورة النور",
+        "الآيات (21-26) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (4-10) من سورة النور",
+      "explanation": "يذكر الدرس الثاني عنوانه (جريمة القذف) وأن الآيات الكريمة هي الآيات (4-10) من سورة النور، وفيها حكم قذف المحصنات وعقوبته، وأحكام اللعان بين الزوجين.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 18,
+      "source_detail": "الدرس الثاني: جريمة القذف",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l2-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l2",
+      "difficulty": 2,
+      "question_text": "من المقصود بـ(المحصنات) في آيات القذف، كما في معاني المفردات؟",
+      "options": [
+        "النساء المسلمات العفيفات بالزنا",
+        "النساء غير المسلمات",
+        "الرجال المتزوجون فقط",
+        "الأطفال الصغار"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "النساء المسلمات العفيفات بالزنا",
+      "explanation": "يذكر الدرس في معاني المفردات: المحصنات هن النساء المسلمات العفيفات بالزنا، والفاسقون هم الخارجون عن طاعة الله، ويرمون أي يقذفون. والآيات تبين أن من يقذف المحصنات ثم لم يأت بأربعة شهداء يجلد ثمانين جلدة ولا تقبل له شهادة أبداً.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 18,
+      "source_detail": "الدرس الثاني: جريمة القذف",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l3-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l3",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس الثالث عن حادثة الإفك؟",
+      "options": [
+        "الآيات (4-10) من سورة النور",
+        "الآيات (11-20) من سورة النور",
+        "الآيات (21-26) من سورة النور",
+        "الآيات (27-29) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (11-20) من سورة النور",
+      "explanation": "يذكر الدرس الثالث عنوانه (حادثة الإفك) وأن الآيات الكريمة هي الآيات (11-20) من سورة النور، وفيها بيان أن الذين جاءوا بالإفك عصبة منكم، وأن المؤمنين كان عليهم حين سمعوه أن يظنوا بأنفسهم خيراً ويقولوا هذا إفك مبين.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 24,
+      "source_detail": "الدرس الثالث: حادثة الإفك",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l3-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l3",
+      "difficulty": 2,
+      "question_text": "ماذا كان على المؤمنين والمؤمنات أن يفعلوا حين سمعوا الإفك، كما في الآيات؟",
+      "options": [
+        "أن ينشروا الخبر بين الناس",
+        "أن يظنوا بأنفسهم خيراً ويقولوا هذا إفك مبين",
+        "أن يسكتوا دون أي موقف",
+        "أن يطالبوا بعقوبة من سمع الخبر"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "أن يظنوا بأنفسهم خيراً ويقولوا هذا إفك مبين",
+      "explanation": "تبين الآيات أن المؤمنين كان عليهم حين سمعوا الإفك أن يظنوا بأنفسهم خيراً ويقولوا هذا إفك مبين، وأن يأتي من جاء بالإفك بأربعة شهداء، وإلا فهم عند الله هم الكاذبون، وأن تلقي الإفك بالألسنة والقول بما ليس لهم به علم أمر يحسبونه هيناً وهو عند الله عظيم.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 24,
+      "source_detail": "الدرس الثالث: حادثة الإفك",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l4-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l4",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس الرابع عن خطورة خطوات الشيطان؟",
+      "options": [
+        "الآيات (11-20) من سورة النور",
+        "الآيات (21-26) من سورة النور",
+        "الآيات (27-29) من سورة النور",
+        "الآيات (30-31) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (21-26) من سورة النور",
+      "explanation": "يذكر الدرس الرابع عنوانه (خطورة خطوات الشيطان) وأن الآيات الكريمة هي الآيات (21-26) من سورة النور، وفيها النهي عن اتباع خطوات الشيطان، والحث على العفو والصفح، وبيان عذاب الذين يرمون المحصنات الغافلات المؤمنات.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 32,
+      "source_detail": "الدرس الرابع: خطورة خطوات الشيطان",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l4-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l4",
+      "difficulty": 2,
+      "question_text": "بماذا يأمر الشيطان من يتبع خطواته، كما في الآيات؟",
+      "options": [
+        "بالفحشاء والمنكر",
+        "بالصلاة والزكاة",
+        "بالعفو والصفح",
+        "بصلة الأرحام"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بالفحشاء والمنكر",
+      "explanation": "تبين الآيات أن من يتبع خطوات الشيطان فإنه يأمر بالفحشاء والمنكر، وأن الفضل والرحمة من الله هما اللذان يزكيان الإنسان، وأن على أهل الفضل والسعة ألا يمتنعوا عن الإنفاق على أولي القربى والمساكين والمهاجرين في سبيل الله، وأن يعفوا ويصفحوا.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 32,
+      "source_detail": "الدرس الرابع: خطورة خطوات الشيطان",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l5-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l5",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس الخامس عن آداب الاستئذان لدخول البيوت؟",
+      "options": [
+        "الآيات (21-26) من سورة النور",
+        "الآيات (27-29) من سورة النور",
+        "الآيات (30-31) من سورة النور",
+        "الآيات (32-33) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (27-29) من سورة النور",
+      "explanation": "يذكر الدرس الخامس عنوانه (آداب الاستئذان لدخول البيوت) وأن الآيات الكريمة هي الآيات (27-29) من سورة النور، وفيها الأمر بالاستئذان والتسليم قبل دخول البيوت، وأنه إن قيل لكم ارجعوا فارجعوا هو أزكى لكم.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 38,
+      "source_detail": "الدرس الخامس: آداب الاستئذان لدخول البيوت",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l5-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l5",
+      "difficulty": 2,
+      "question_text": "ما معنى (أزكى لكم) في آية الاستئذان، كما في معاني المفردات؟",
+      "options": [
+        "أطهر وأسمى لأنفسكم",
+        "أسهل وأسرع لكم",
+        "أقرب إلى بيوتكم",
+        "أكثر مالاً لكم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أطهر وأسمى لأنفسكم",
+      "explanation": "يذكر الدرس في معاني المفردات: تستأنسوا أي حتى تستأذنوا، وأزكى لكم أي أطهر وأسمى لأنفسكم، ومتاع أي حاجة ومنفعة لكم. والآيات تبين أنه لا يجوز دخول بيوت غير بيوتكم حتى تستأنسوا وتسلموا على أهلها، وإن قيل لكم ارجعوا فارجعوا هو أزكى لكم.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 38,
+      "source_detail": "الدرس الخامس: آداب الاستئذان لدخول البيوت",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l6-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l6",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس السادس عن عوامل الطهر والعفة؟",
+      "options": [
+        "الآيات (27-29) من سورة النور",
+        "الآيات (30-31) من سورة النور",
+        "الآيات (32-33) من سورة النور",
+        "الآيات (35-36) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (30-31) من سورة النور",
+      "explanation": "يذكر الدرس السادس عنوانه (عوامل الطهر والعفة) وأن الآيات الكريمة هي الآيات (30-31) من سورة النور، وفيها الأمر للمؤمنين والمؤمنات بغض البصر وحفظ الفرج، وبيان ما يجوز للمرأة إبداؤه من زينتها ولمن.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس السادس: عوامل الطهر والعفة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l6-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l6",
+      "difficulty": 2,
+      "question_text": "بماذا أمر الله المؤمنين والمؤمنات في أول الآيتين (30-31) من سورة النور؟",
+      "options": [
+        "بغض البصر وحفظ الفرج",
+        "بترك الصلاة",
+        "بإبداء الزينة لكل الناس",
+        "بالسفر دون محرم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بغض البصر وحفظ الفرج",
+      "explanation": "تبين الآيات الأمر للمؤمنين أن يغضوا من أبصارهم ويحفظوا فروجهم، وأن يغضضن المؤمنات من أبصارهن ويحفظن فروجهن، وأن لا يبدين زينتهن إلا ما ظهر منها، وأن يضربن بخمرهن على جيوبهن، ولا يبدين زينتهن إلا لمن ذكرهم الله من المحارم.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس السادس: عوامل الطهر والعفة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l7-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l7",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس السابع عن الحث على الزواج والأمر بالتعفف؟",
+      "options": [
+        "الآيات (30-31) من سورة النور",
+        "الآيات (32-34) من سورة النور",
+        "الآيات (35-40) من سورة النور",
+        "الآيات (41-46) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (32-34) من سورة النور",
+      "explanation": "يذكر الدرس السابع عنوانه (الحث على الزواج، والأمر بالتعفف) وأن الآيات الكريمة هي الآيات (32-34) من سورة النور، وفيها الأمر بإنكاح الأيامى والصالحين من العباد والإماء، وأن الفقراء يغنيهم الله من فضله، والأمر بالتعفف لمن لا يجد نكاحاً حتى يغنيه الله من فضله.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 48,
+      "source_detail": "الدرس السابع: الحث على الزواج، والأمر بالتعفف",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l7-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l7",
+      "difficulty": 2,
+      "question_text": "بماذا أمر الله الذين لا يجدون نكاحاً، كما في الآيات؟",
+      "options": [
+        "بأن يتزوجوا بأي طريقة ولو بالحرام",
+        "بأن يستعففوا حتى يغنيهم الله من فضله",
+        "بأن يتركوا العمل",
+        "بأن يسألوا الناس"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "بأن يستعففوا حتى يغنيهم الله من فضله",
+      "explanation": "تبين الآيات: (وليستعفف الذين لا يجدون نكاحاً حتى يغنيهم الله من فضله)، وأن الله يغني الفقراء من فضله إذا تزوجوا، وأن من أراد من المماليك الكتابة فليكاتبهم أهلهم إن علموا فيهم خيراً، وأن لا يكرهوا فتياتهم على البغاء إن أردن تحصناً.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 48,
+      "source_detail": "الدرس السابع: الحث على الزواج، والأمر بالتعفف",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l8-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l8",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس الثامن عن نور الإيمان وظلمات الكفر؟",
+      "options": [
+        "الآيات (32-34) من سورة النور",
+        "الآيات (35-40) من سورة النور",
+        "الآيات (41-46) من سورة النور",
+        "الآيات (47-54) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (35-40) من سورة النور",
+      "explanation": "يذكر الدرس الثامن عنوانه (نور الإيمان وظلمات الكفر) وأن الآيات الكريمة هي الآيات (35-40) من سورة النور، وفيها آية النور: الله نور السماوات والأرض، وبيان حال المؤمنين الذين لا تلهيهم تجارة ولا بيع عن ذكر الله وإقام الصلاة وإيتاء الزكاة.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 54,
+      "source_detail": "الدرس الثامن: نور الإيمان وظلمات الكفر",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l8-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l8",
+      "difficulty": 2,
+      "question_text": "من الرجال الذين ذكرتهم الآيات في بيوت الله، كما في الدرس؟",
+      "options": [
+        "رجال لا تلهيهم تجارة ولا بيع عن ذكر الله وإقام الصلاة وإيتاء الزكاة، يخافون يوماً تتقلب فيه القلوب والأبصار",
+        "رجال يجمعون المال ولا يذكرون الله",
+        "رجال يبيعون ويشترون في المساجد",
+        "رجال لا يصلون ولا يزكون"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "رجال لا تلهيهم تجارة ولا بيع عن ذكر الله وإقام الصلاة وإيتاء الزكاة، يخافون يوماً تتقلب فيه القلوب والأبصار",
+      "explanation": "تبين الآيات أن في بيوت أذن الله أن ترفع ويذكر فيها اسمه يسبح له فيها بالغدو والآصال رجال لا تلهيهم تجارة ولا بيع عن ذكر الله وإقام الصلاة وإيتاء الزكاة، يخافون يوماً تتقلب فيه القلوب والأبصار، ليجزيهم الله أحسن ما عملوا ويزيدهم من فضله.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 54,
+      "source_detail": "الدرس الثامن: نور الإيمان وظلمات الكفر",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l9-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l9",
+      "difficulty": 1,
+      "question_text": "ما الآيات الكريمة التي يتناولها الدرس التاسع عن دلائل قدرة الله في الكون؟",
+      "options": [
+        "الآيات (35-40) من سورة النور",
+        "الآيات (41-46) من سورة النور",
+        "الآيات (47-54) من سورة النور",
+        "الآيات (55-57) من سورة النور"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الآيات (41-46) من سورة النور",
+      "explanation": "يذكر الدرس التاسع عنوانه (من دلائل قدرة الله تعالى في الكون) وأن الآيات الكريمة هي الآيات (41-46) من سورة النور، وفيها تسبيح من في السماوات والأرض والطير لله، وتسخير السحاب والمطر والبرق، وتقليب الليل والنهار، وخلق كل دابة من ماء.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 60,
+      "source_detail": "الدرس التاسع: من دلائل قدرة الله تعالى في الكون",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u1-l9-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u1",
+      "lesson_id": "islamic-u1-l9",
+      "difficulty": 2,
+      "question_text": "مما خلق الله كل دابة، كما في الآيات؟",
+      "options": [
+        "من تراب",
+        "من ماء",
+        "من نار",
+        "من هواء"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "من ماء",
+      "explanation": "تبين الآيات أن الله خلق كل دابة من ماء، فمنهم من يمشي على بطنه ومنهم من يمشي على رجلين ومنهم من يمشي على أربع، يخلق الله ما يشاء، إن الله على كل شيء قدير، وأن الله يهدي من يشاء إلى صراط مستقيم.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 60,
+      "source_detail": "الدرس التاسع: من دلائل قدرة الله تعالى في الكون",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u2-l1-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u2",
+      "lesson_id": "islamic-u2-l1",
+      "difficulty": 1,
+      "question_text": "لمن الملك والتشريع وحده، كما يذكر درس حاكمية القرآن الكريم؟",
+      "options": [
+        "للملوك والرؤساء",
+        "لله وحده، فهو وحده الملك وله حق التصرف في ملكه، وهو وحده من يملك حق التشريع لعباده",
+        "للناس جميعاً",
+        "للعلماء فقط"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "لله وحده، فهو وحده الملك وله حق التصرف في ملكه، وهو وحده من يملك حق التشريع لعباده",
+      "explanation": "يذكر الدرس أن الأمر والحكم لله رب العالمين؛ لأن الكون في ملكه وسلطانه، وأن (الملك) بـ(ال) تفيد الاختصاص بأنه وحده الملك، وهو من له ملك السماوات والأرض، فهو وحده من له حق التصرف فيها، وبما أن الله هو الملك العظيم والكريم والحكيم والرحيم بعباده؛ فهو وحده من يملك حق التشريع لهم.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 88,
+      "source_detail": "الدرس الأول: حاكمية القرآن الكريم",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u2-l1-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u2",
+      "lesson_id": "islamic-u2-l1",
+      "difficulty": 2,
+      "question_text": "لماذا كان الله وحده هو من يملك حق التشريع للإنسان؟",
+      "options": [
+        "لأنه هو الذي خلق الإنسان وخلق هذا العالم، وهو الذي يعلم السر في السماوات والأرض، ويعلم أعماق النفس البشرية، ويعلم ما يصلحها وما هو في مصلحتها",
+        "لأن الإنسان لا يعرف شيئاً عن نفسه",
+        "لأن التشريع من عمل البشر",
+        "لأن الله يحتاج إلى التشريع"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأنه هو الذي خلق الإنسان وخلق هذا العالم، وهو الذي يعلم السر في السماوات والأرض، ويعلم أعماق النفس البشرية، ويعلم ما يصلحها وما هو في مصلحتها",
+      "explanation": "يذكر الدرس أن الله هو الذي خلق الإنسان وخلق هذا العالم، وهو الذي يعلم السر في السماوات والأرض، ويعلم أعماق النفس البشرية، ويعلم ما يصلحها وما هو في مصلحتها، وهو من يعلم كيف سيكون التشريع مناسباً مع الحياة ومع الإنسان، فنحن بحاجة إلى أن نقطع وأن نثق بأن الله هو من له الأمر والحكم والسلطان علينا.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 88,
+      "source_detail": "الدرس الأول: حاكمية القرآن الكريم",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u2-l2-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u2",
+      "lesson_id": "islamic-u2-l2",
+      "difficulty": 1,
+      "question_text": "ما المعجزة كما يعرفها درس الإعجاز في القرآن الكريم؟",
+      "options": [
+        "أمر خارق للعادة، لا يستطيع أحد أن يأتي بمثله، يؤيد الله به أنبياءه، ويؤكد من خلالها صدق ما جاءوا به",
+        "أمر عادي يستطيع كل الناس فعله",
+        "حيلة من حيل السحرة",
+        "قصة من قصص الأولين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أمر خارق للعادة، لا يستطيع أحد أن يأتي بمثله، يؤيد الله به أنبياءه، ويؤكد من خلالها صدق ما جاءوا به",
+      "explanation": "يذكر الدرس أن المعجزة هي أمر خارق للعادة، لا يستطيع أحد أن يأتي بمثله، يؤيد الله به أنبياءه، ويؤكد من خلالها صدق ما جاءوا به، وأن من حكمة الله أنه أيد أنبياءه بمعجزات لتكون لهم دليلاً على صدق ما جاءوا به وحجة على أقوامهم، وأعظم تلك المعجزات هي القرآن الكريم.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 92,
+      "source_detail": "الدرس الثاني: الإعجاز في القرآن الكريم",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u2-l2-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u2",
+      "lesson_id": "islamic-u2-l2",
+      "difficulty": 2,
+      "question_text": "بماذا يختلف القرآن الكريم عن معجزات الأنبياء السابقين؟",
+      "options": [
+        "معجزات الأنبياء كانت تنتهي بوفاة النبي، أما القرآن فلا يزال معجزة خالدة إلى آخر أيام الدنيا",
+        "القرآن معجزة مؤقتة انتهت بوفاة النبي ﷺ",
+        "لا فرق بينهما",
+        "معجزات الأنبياء السابقين كانت خالدة والقرآن مؤقت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "معجزات الأنبياء كانت تنتهي بوفاة النبي، أما القرآن فلا يزال معجزة خالدة إلى آخر أيام الدنيا",
+      "explanation": "يذكر الدرس أن المعجزات التي كانت تأتي للأنبياء كانت تنتهي بوفاة ذلك النبي، إلا معجزة نبينا محمد ﷺ وهي القرآن الكريم؛ فإنه لا يزال معجزة خالدة إلى آخر أيام الدنيا. ومن أمثلة معجزات الأنبياء: نجاة إبراهيم من النار، وتحويل عصا موسى إلى ثعبان، وإحياء الموتى وإبراء الأبرص والأكمه على يد عيسى.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 92,
+      "source_detail": "الدرس الثاني: الإعجاز في القرآن الكريم",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u3-l1-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u3",
+      "lesson_id": "islamic-u3-l1",
+      "difficulty": 1,
+      "question_text": "ما الوقف في التجويد، وما الوقف اللازم؟",
+      "options": [
+        "الوقف هو قطع الصوت عن القراءة زمناً يتنفس فيه القارئ عادة بنية استئناف القراءة؛ والوقف اللازم هو ما يجب الوقوف عنده وإلا فسد المعنى، ويشار إليه في المصحف بالرمز (م)",
+        "الوقف هو وصل القراءة دون توقف؛ والوقف اللازم لا يوجد في المصحف",
+        "الوقف هو السكت الطويل بين الآيات؛ والوقف اللازم يرمز له بـ(لا)",
+        "الوقف هو خفض الصوت؛ والوقف اللازم يجوز تركه دائماً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الوقف هو قطع الصوت عن القراءة زمناً يتنفس فيه القارئ عادة بنية استئناف القراءة؛ والوقف اللازم هو ما يجب الوقوف عنده وإلا فسد المعنى، ويشار إليه في المصحف بالرمز (م)",
+      "explanation": "يذكر الدرس أن الوقف هو قطع الصوت عن القراءة زمناً يتنفس فيه القارئ عادة بنية استئناف القراءة، ومن أنواعه: الوقف اللازم وهو ما يجب الوقوف عنده وإلا فسد المعنى، ويشار إليه في المصحف بالرمز (م)، كما في قوله تعالى: إنما يستجيب الذين يسمعون والموتى يبعثهم الله.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 98,
+      "source_detail": "الدرس الأول: أحكام الوقف والسكت",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u3-l1-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u3",
+      "lesson_id": "islamic-u3-l1",
+      "difficulty": 2,
+      "question_text": "ما الفرق بين الوقف الممنوع والوقف الجائز؟",
+      "options": [
+        "الوقف الممنوع ما يمنع الوقوف عنده لأن المعنى لا يتم إلا بالوصل ويرمز له بـ(لا)، والوقف الجائز ما يستوي فيه جواز الوصل والوقف ويرمز له بـ(ج)",
+        "الوقف الممنوع يرمز له بـ(م) والوقف الجائز يرمز له بـ(لا)",
+        "لا فرق بينهما",
+        "الوقف الممنوع جائز دائماً والوقف الجائز ممنوع دائماً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الوقف الممنوع ما يمنع الوقوف عنده لأن المعنى لا يتم إلا بالوصل ويرمز له بـ(لا)، والوقف الجائز ما يستوي فيه جواز الوصل والوقف ويرمز له بـ(ج)",
+      "explanation": "يذكر الدرس أن الوقف الممنوع هو ما يمنع الوقوف عنده لأن المعنى لا يتم إلا بالوصل، ويرمز إليه في المصحف بالرمز (لا)، والوقف الجائز هو ما يستوي فيه جواز الوصل والوقف، ويرمز إليه في المصحف بالرمز (ج).",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 98,
+      "source_detail": "الدرس الأول: أحكام الوقف والسكت",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u3-l2-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u3",
+      "lesson_id": "islamic-u3-l2",
+      "difficulty": 1,
+      "question_text": "ما دلالة العلامة (م) في اصطلاحات ضبط المصحف؟",
+      "options": [
+        "النهي عن الوقف",
+        "لزوم الوقف",
+        "جواز الوقف",
+        "الوصل أولى من الوقف"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "لزوم الوقف",
+      "explanation": "يذكر الدرس جدول اصطلاحات الضبط: العلامة (م) دلالتها لزوم الوقف، والعلامة (لا) دلالتها النهي عن الوقف، والعلامة (صلى) دلالتها الوصل أولى من الوقف، والعلامة (قلى) دلالتها الوقف أولى من الوصل، والعلامة (ج) دلالتها جواز الوقف.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 102,
+      "source_detail": "الدرس الثاني: اصطلاحات حفص",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u3-l2-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u3",
+      "lesson_id": "islamic-u3-l2",
+      "difficulty": 2,
+      "question_text": "ما دلالة العلامتين (صلى) و(قلى) في اصطلاحات ضبط المصحف؟",
+      "options": [
+        "(صلى) لزوم الوقف و(قلى) النهي عن الوقف",
+        "(صلى) الوصل أولى من الوقف و(قلى) الوقف أولى من الوصل",
+        "(صلى) جواز الوقف و(قلى) المد الزائد",
+        "(صلى) المد الزائد و(قلى) جواز الوقف"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "(صلى) الوصل أولى من الوقف و(قلى) الوقف أولى من الوصل",
+      "explanation": "يذكر الدرس جدول اصطلاحات الضبط: (صلى) دلالتها الوصل أولى من الوقف، و(قلى) دلالتها الوقف أولى من الوصل، و(ج) دلالتها جواز الوقف، و(م) لزوم الوقف، و(لا) النهي عن الوقف، و(∴) إذا وقف على أحدهما لا يوقف على الآخر، و(~) المد الزائد على المد الطبيعي.",
+      "source": "القرآن الكريم وعلومه — طبعة صنعاء 2027",
+      "source_page": 102,
+      "source_detail": "الدرس الثاني: اصطلاحات حفص",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l1-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l1",
+      "difficulty": 1,
+      "question_text": "ما الذي يملأ القلب شعوراً بعظمة الله المدبر الحكيم القدير، كما يذكر الدرس الأول؟",
+      "options": [
+        "أنه الحي القيوم الذي لا يغفل ولا ينام ولا يسهو",
+        "أنه يحتاج إلى من يعينه على تدبير الكون",
+        "أن علمه محدود بما في الأرض فقط",
+        "أن ملكه يشاركه فيه أحد من خلقه"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أنه الحي القيوم الذي لا يغفل ولا ينام ولا يسهو",
+      "explanation": "يذكر الدرس أن من مظاهر عظمة الله أنه الحي القيوم، فلا يغفل ولا ينام ولا يسهو، وهو وحده الجدير بثقتنا، وهو الملك العظيم نافذ الملك لا يغالبه أحد في ملكه، ويعلم الغيب والشهادة ووسع علمه كل شيء.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 9,
+      "source_detail": "الدرس الأول: عظمة الله تعالى",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l1-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l1",
+      "difficulty": 2,
+      "question_text": "من مظاهر عظمة الله تعالى في الدرس: عظمة رحمته بعباده وعظمة هدايته وتشريعه. ما الدليل الذي ذكره الدرس على أن القرآن من أبرز مظاهر عظمة الله؟",
+      "options": [
+        "أن الله أنزل فيه سبعاً من المثاني والقرآن العظيم، كما في سورة الحجر",
+        "أن القرآن نزل دفعة واحدة في ليلة واحدة",
+        "أن القرآن كتاب تاريخ فقط",
+        "أن القرآن لا يتحدث عن هداية الإنسان"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أن الله أنزل فيه سبعاً من المثاني والقرآن العظيم، كما في سورة الحجر",
+      "explanation": "يذكر الدرس أن القرآن الكريم من أبرز مظاهر وتجليات عظمة الله سبحانه وتعالى، مستشهداً بقوله تعالى في سورة الحجر عن إيتاء سبع من المثاني والقرآن العظيم. كما ذكر من مظاهر العظمة: رحمته الواسعة التي وسعت كل شيء، وهدايته المستمرة للإنسان.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 10,
+      "source_detail": "الدرس الأول: عظمة الله تعالى",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l10-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l10",
+      "difficulty": 1,
+      "question_text": "لماذا كان إخبار الله لنا بعذاب جهنم وتقديم الوعيد به رحمة ولطفاً بعباده؟",
+      "options": [
+        "لأن معرفة الإنسان بهذا الخطر تدفعه للاستقامة والقيام بما يقيه منه",
+        "لأن الله يريد تخويف الناس بلا فائدة",
+        "لأن العذاب لا يقع على أحد",
+        "لأن الإنسان لا يستطيع أن يتقي العذاب"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأن معرفة الإنسان بهذا الخطر تدفعه للاستقامة والقيام بما يقيه منه",
+      "explanation": "يذكر الدرس أن من نواحي أهمية الإيمان بعذاب جهنم: أن في إخبار الله لنا بذلك العذاب وتقديم الوعيد به رحمة ولطفاً من الله تعالى بعباده؛ لأن معرفة الإنسان بهذا الخطر تدفعه للاستقامة والقيام بما يقيه منه.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 68,
+      "source_detail": "الدرس العاشر: عذاب النار",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l10-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l10",
+      "difficulty": 2,
+      "question_text": "من خصائص عذاب أهل النار التي ذكرها الدرس:",
+      "options": [
+        "أن أبواب جهنم تبقى مفتوحة لمن أراد الخروج",
+        "أنهم بعد ما يسحبون ويقذفون من أبواب جهنم إلى داخلها تغلق أبوابها إغلاقاً أبدياً ويوثق إغلاقها بعمد على أبوابها",
+        "أن عذابهم خفيف ومحتمل",
+        "أنهم يخرجون منها متى شاءوا"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "أنهم بعد ما يسحبون ويقذفون من أبواب جهنم إلى داخلها تغلق أبوابها إغلاقاً أبدياً ويوثق إغلاقها بعمد على أبوابها",
+      "explanation": "يذكر الدرس من خصائص عذاب أهل النار: أن من أقسى ما يكون على الكفار والمجرمين والعصاة والخبثاء أنهم بعد ما يسحبون ويقذفون من أبواب جهنم إلى داخلها تغلق أبوابها إغلاقاً أبدياً، ويوثق إغلاقها المحكم بعمد على أبوابها، مستشهداً بقوله تعالى في سورة الهمزة.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 68,
+      "source_detail": "الدرس العاشر: عذاب النار",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l2-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l2",
+      "difficulty": 1,
+      "question_text": "ما أول مضامين الشهادة التي يعبر بها الإنسان عن انتمائه للإسلام، كما يذكر الدرس؟",
+      "options": [
+        "الصلاة على النبي",
+        "قول: أشهد أن لا إله إلا الله، أي لا أحد يستحق الخوف والرغبة والثقة والتعظيم والانقياد إلا الله",
+        "صيام رمضان",
+        "الزكاة"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "قول: أشهد أن لا إله إلا الله، أي لا أحد يستحق الخوف والرغبة والثقة والتعظيم والانقياد إلا الله",
+      "explanation": "يذكر الدرس أن للتحرر من الطاغوت أهمية كبيرة، منها أنه أول مضامين الشهادة التي يعبر الإنسان بها عن انتمائه للإسلام بقول (أشهد أن لا إله إلا الله)، فمعناها أن الإنسان يشهد أنه لا أحد يستحق أن يُخاف أو يُرغب أو يُوثق به أو يُعظم أو يُنقاد له إلا الله سبحانه.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 16,
+      "source_detail": "الدرس الثاني: الإسلام دين تحرر من الطاغوت",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l2-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l2",
+      "difficulty": 2,
+      "question_text": "من ثمار التحرر من الطاغوت التي ذكرها الدرس:",
+      "options": [
+        "تحقيق استقلالية الأمة في كل المجالات، وكبح جرائم الطواغيت، والثبات على سبيل النجاة",
+        "الاستسلام للطغاة ومداهنتهم",
+        "تحويل العبادات إلى طقوس لا أثر لها",
+        "تثبيت هيمنة الطغاة والمستكبرين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تحقيق استقلالية الأمة في كل المجالات، وكبح جرائم الطواغيت، والثبات على سبيل النجاة",
+      "explanation": "يذكر الدرس من ثمار التحرر من الطاغوت: تحقيق استقلالية الأمة في كل المجالات ثقافياً وعلمياً وسياسياً واقتصادياً وعسكرياً، وكبح جرائم الطواغيت، والثبات على سبيل النجاة؛ فلا يمكن التمسك بالحق والثبات على سبيل الله إلا بالتحرر من تأثير الجائرين الطغاة.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 17,
+      "source_detail": "الدرس الثاني: الإسلام دين تحرر من الطاغوت",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l3-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l3",
+      "difficulty": 1,
+      "question_text": "ما النموذج الأرقى للوعي والبصيرة الذي ذكره الدرس الثالث؟",
+      "options": [
+        "النبي ﷺ، الذي جسد حركة رسول الله في الاستبصار بنور الله والاعتماد على القرآن في تشخيص الناس وتحديد العدو",
+        "علماء السوء الذين يدجنون الأمة للطاغوت",
+        "المفاهيم الظلامية التي تقدمها وسائل الإعلام",
+        "الأنظمة التي توالي أعداء الأمة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "النبي ﷺ، الذي جسد حركة رسول الله في الاستبصار بنور الله والاعتماد على القرآن في تشخيص الناس وتحديد العدو",
+      "explanation": "يذكر الدرس أن النموذج الأرقى للوعي والبصيرة هو النبي ﷺ، فقد جسد حركة رسول الله القدوة المثلى والنموذج الأسمى للاستبصار بنور الله في حركته في واقع الحياة، فكان يعتمد على القرآن في تشخيص الناس وتحديد العدو وتشخيص واقعه والسبيل الأقوم لمواجهته.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 20,
+      "source_detail": "الدرس الثالث: الإسلام دين وعي وزكاة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l3-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l3",
+      "difficulty": 2,
+      "question_text": "من ثمار الوعي والبصيرة التي ذكرها الدرس:",
+      "options": [
+        "الوعي بحقيقة الوجود الإنساني ودور الإنسان ومسؤوليته، واكتساب المعرفة السليمة، وتصحيح المسار، وتقوية الإيمان، والحصانة من تضليل المضلين",
+        "الانشغال بالمفاهيم الظلامية وتقبلها",
+        "الاعتماد على وسائل الإعلام والأفلام في فهم الدين",
+        "الخضوع لقوى الطاغوت والاستكبار"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الوعي بحقيقة الوجود الإنساني ودور الإنسان ومسؤوليته، واكتساب المعرفة السليمة، وتصحيح المسار، وتقوية الإيمان، والحصانة من تضليل المضلين",
+      "explanation": "يذكر الدرس من ثمار الوعي والبصيرة: الوعي بحقيقة الوجود الإنساني وطبيعة دور الإنسان ومسؤوليته في الحياة، واكتساب المعرفة السليمة بخالقنا وأنفسنا وبما حولنا وبمصيرنا، والقدرة على تصحيح المسار ومعالجة الخلل، وتقوية الإيمان وتقويم المشاعر، وتقييم المسارات بالمعايير القرآنية، والحصانة من تضليل المضلين وإفسادهم وهيمنتهم.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 21,
+      "source_detail": "الدرس الثالث: الإسلام دين وعي وزكاة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l4-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l4",
+      "difficulty": 1,
+      "question_text": "ما الغاية والهدف من رسالات الله، كما يذكر الدرس الرابع؟",
+      "options": [
+        "إقامة العدل والقسط في الحياة",
+        "جمع المال والثروة",
+        "بناء القصور والمدن",
+        "السيطرة على الشعوب"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "إقامة العدل والقسط في الحياة",
+      "explanation": "يذكر الدرس أن إقامة العدل والقسط هو الغاية والهدف من رسالات الله، مستشهداً بقوله تعالى في سورة الحديد عن إرسال الرسل وإنزال الكتاب والميزان ليقوم الناس بالقسط، وأن إقامة القسط كانت مهمة الأنبياء الأساسية، وهي في دين الإسلام مسؤولية رئيسة على كل مسلم.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس الرابع: الإسلام دين العدل والقسط",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l4-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l4",
+      "difficulty": 2,
+      "question_text": "ما الذي يدل على أن تشريعات الله مبنية على القسط ومؤدية إليه؟",
+      "options": [
+        "أن الله شهد لنفسه بأنه القائم بالقسط في تشريعه وهدايته وتدبيره لشؤون خلقه، وأمر بالعدل",
+        "أن تشريعات الله فيها حيف وظلم",
+        "أن العدل والقسط من عمل قوى الشر فقط",
+        "أن المؤمنين لا علاقة لهم بإقامة العدل"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أن الله شهد لنفسه بأنه القائم بالقسط في تشريعه وهدايته وتدبيره لشؤون خلقه، وأمر بالعدل",
+      "explanation": "يذكر الدرس أن تشريعات الله كلها مبنية في نفسها على القسط والعدل، فلا حيف فيها ولا ظلم، وتؤدي بالإنسان والمجتمع والأمة إلى إقامة القسط في المجالات المختلفة، وأن الله شهد لنفسه بأنه القائم بالقسط، وأمر بالعدل، والمعينون بإقامة العدل والقسط في الحياة هم المؤمنون.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس الرابع: الإسلام دين العدل والقسط",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l5-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l5",
+      "difficulty": 1,
+      "question_text": "ما المسؤولية كما يعرفها الدرس الخامس؟",
+      "options": [
+        "الأمانة التي حملها الله الإنسان باستخلافه على الأرض، وما أعطاه من مؤهلات للقيام بها",
+        "الحرية المطلقة بلا قيود",
+        "الانشغال بأمور الآخرين فقط",
+        "ترك العمل والتوكل بلا سعي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الأمانة التي حملها الله الإنسان باستخلافه على الأرض، وما أعطاه من مؤهلات للقيام بها",
+      "explanation": "يذكر الدرس أن المسؤولية هي الأمانة التي حملها الله الإنسان باستخلافه على الأرض، وما أعطاه من مؤهلات للقيام بها، مستشهداً بقوله تعالى في سورة الأحزاب عن عرض الأمانة على السماوات والأرض والجبال وحمل الإنسان لها.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 33,
+      "source_detail": "الدرس الخامس: الإسلام دين المسئولية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l5-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l5",
+      "difficulty": 2,
+      "question_text": "ما الفرق بين المسؤولية الفردية والمسؤولية الجماعية في الخطاب القرآني كما يذكره الدرس؟",
+      "options": [
+        "الفردية تقع على عاتق كل شخص في أقواله وأفعاله، والجماعية تتعلق بالأمة ككل كالأمر بالمعروف والنهي عن المنكر وإقامة القسط",
+        "الفردية تخص الأمة كلها، والجماعية تخص الفرد وحده",
+        "لا فرق بينهما إطلاقاً",
+        "الفردية لا تشمل مسؤولية الرئيس عن من تحته"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الفردية تقع على عاتق كل شخص في أقواله وأفعاله، والجماعية تتعلق بالأمة ككل كالأمر بالمعروف والنهي عن المنكر وإقامة القسط",
+      "explanation": "ينقسم الدرس المسؤولية إلى: فردية تقع على عاتق كل شخص في أقواله وأفعاله وتركه، وتندرج تحتها مسؤولية الفرد تجاه الآخرين كمسؤولية الرئيس عن من تحته والزوج عن أهل بيته، لقوله ﷺ: (كلكم راع، وكلكم مسؤول عن رعيته)؛ وجماعية تتعلق بالأمة ككل كالأمر بالمعروف والنهي عن المنكر والاعتصام بحبل الله وتبليغ رسالة الله وإقامة القسط في الأرض.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 33,
+      "source_detail": "الدرس الخامس: الإسلام دين المسئولية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l6-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l6",
+      "difficulty": 1,
+      "question_text": "لماذا كانت التقوى وصية الله المتكررة للبشرية كلها عبر العصور؟",
+      "options": [
+        "لأن قبول كل الأعمال مرهون بها، وهي وصية الله للبشرية كلها وللأنبياء وللمؤمنين",
+        "لأنها تخص جيلاً واحداً فقط",
+        "لأن الأنبياء لم يدعوا إليها",
+        "لأنها لا علاقة لها بقبول الأعمال"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأن قبول كل الأعمال مرهون بها، وهي وصية الله للبشرية كلها وللأنبياء وللمؤمنين",
+      "explanation": "يذكر الدرس أن القرآن جعل قبول كل الأعمال مرهوناً بالتقوى، وأنها وصية الله المتكررة لأنبيائه ولعباده عبر العصور، فهي وصية الله للبشرية كلها في كل عصر وجيل، ويأتي الأمر الإلهي بها حتى للأنبياء وللمؤمنين.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 39,
+      "source_detail": "الدرس السادس: التقوى",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l6-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l6",
+      "difficulty": 2,
+      "question_text": "ما الدليل الذي ذكره الدرس على أن التقوى معيار قبول الأعمال؟",
+      "options": [
+        "قوله تعالى في سورة المائدة عن قبول العمل من المتقين",
+        "أن التقوى لا تذكر في القرآن إلا مرة واحدة",
+        "أن الأنبياء لم يأمروا أقوامهم بالتقوى",
+        "أن التقوى تقترن فقط بأمور الدنيا"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "قوله تعالى في سورة المائدة عن قبول العمل من المتقين",
+      "explanation": "يذكر الدرس أن التقوى معيار قبول الأعمال، مستشهداً بقوله تعالى في سورة المائدة عن أن الله إنما يتقبل من المتقين، وأن كثيراً من التوجيهات المهمة في القرآن يأتي معها الأمر بالتقوى، وأن كل الأنبياء كانوا يدعون أقوامهم للتقوى ويأمرونهم بها.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 39,
+      "source_detail": "الدرس السادس: التقوى",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l7-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l7",
+      "difficulty": 1,
+      "question_text": "لماذا يعد أهل الكتاب العدو الأكثر خطورة من بين جميع الأعداء، كما يذكر الدرس السابع؟",
+      "options": [
+        "لأنهم يدركون أهمية الدين في بناء الأمم ونهضتها، وما له من نتائج ترتبط باستقلال وحرية الشعوب المؤمنة والواعية",
+        "لأنهم لا يعرفون شيئاً عن الدين",
+        "لأنهم يعيشون بعيداً عن بلاد المسلمين",
+        "لأنهم لا يستخدمون أي وسائل للتضليل"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأنهم يدركون أهمية الدين في بناء الأمم ونهضتها، وما له من نتائج ترتبط باستقلال وحرية الشعوب المؤمنة والواعية",
+      "explanation": "يذكر الدرس أن من الأسباب التي جعلت أهل الكتاب العدو الأكثر خطورة: معرفتهم بأهمية الدين والسنن الإلهية، فهم يدركون أهمية الدين في بناء الأمم ونهضتها، ويدركون ما له من نتائج عظيمة ترتبط باستقلال وحرية الشعوب المؤمنة والواعية، ولذا فإن هدفهم الأساسي أن يفصلونا عن هذا الدين.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس السابع: عداوة أهل الكتاب",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l7-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l7",
+      "difficulty": 2,
+      "question_text": "ما الأسلوب الخطير الذي يتقنه أهل الكتاب ويمارسونه بدرجة كبيرة، كما يذكره الدرس؟",
+      "options": [
+        "لبس الحق بالباطل: يزيفون التاريخ ويصنعون رموزاً ويقلبون المفاهيم، فيقدمون الاحتلال على أنه تحرير",
+        "الصدق الكامل في نقل الأخبار",
+        "الابتعاد عن وسائل الإعلام",
+        "احترام عقائد المسلمين"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لبس الحق بالباطل: يزيفون التاريخ ويصنعون رموزاً ويقلبون المفاهيم، فيقدمون الاحتلال على أنه تحرير",
+      "explanation": "يذكر الدرس أن لبس الحق بالباطل أسلوب خطير يتقنه ويمارسه أهل الكتاب (اليهود والنصارى) بدرجة كبيرة، فيزيفون التاريخ ويصنعون رموزاً ويقلبون المفاهيم؛ فيقدمون الاحتلال على أنه تحرير، مستشهداً بقوله تعالى في سورة آل عمران عن لبس الحق بالباطل.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس السابع: عداوة أهل الكتاب",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l8-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l8",
+      "difficulty": 1,
+      "question_text": "ما منشأ النفاق كما يذكره الدرس الثامن؟",
+      "options": [
+        "اختلال في الولاء الإيماني، حين يتولى الإنسان أعداء الأمة حتى يصل إلى معيتهم وتأييدهم في المواقف والرؤى، نتيجة عدم إدراك خطورة الولاء للكافرين",
+        "كثرة الصلاة والصيام",
+        "الحرص على العلم النافع",
+        "التمسك بالقرآن والسنة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "اختلال في الولاء الإيماني، حين يتولى الإنسان أعداء الأمة حتى يصل إلى معيتهم وتأييدهم في المواقف والرؤى، نتيجة عدم إدراك خطورة الولاء للكافرين",
+      "explanation": "يذكر الدرس أن النفاق في أصله اختلال في الولاء الإيماني، وذلك حين يتولى الإنسان أعداء الأمة حتى يصل إلى معيتهم وتأييدهم في المواقف والرؤى، نتيجة عدم إدراك خطورة الولاء للكافرين وما يترتب عليه من فساد وضرر عظيمين على الأمة.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 54,
+      "source_detail": "الدرس الثامن: خطورة النفاق",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l8-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l8",
+      "difficulty": 2,
+      "question_text": "ما أبرز صفات المنافقين التي ذكرها الدرس؟",
+      "options": [
+        "موالاة أهل الكتاب وصنع المبررات لذلك باسم المحافظة على المصلحة وغيرها",
+        "إقامة القسط والعدل في الأرض",
+        "الارتباط الحقيقي بدين الله",
+        "مواجهة أعداء الأمة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "موالاة أهل الكتاب وصنع المبررات لذلك باسم المحافظة على المصلحة وغيرها",
+      "explanation": "يذكر الدرس من أبرز صفات المنافقين: موالاة أهل الكتاب وصنع المبررات لذلك باسم المحافظة على المصلحة وغيرها، مستشهداً بقوله تعالى في سورة المائدة. كما أن المنافقين يسعون لضرب الدين من داخل الأمة الإسلامية ويتحركون تحت عنوان الإسلام لإفقاد المسلمين ارتباطهم الحقيقي بدين الله.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 54,
+      "source_detail": "الدرس الثامن: خطورة النفاق",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l9-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l9",
+      "difficulty": 1,
+      "question_text": "ما شرط استحقاق دخول الجنة كما يذكره الدرس التاسع؟",
+      "options": [
+        "الإيمان بالله وحده دون تقوى أو عمل صالح",
+        "الإيمان بالله المصحوب بالتقوى والاستقامة والعمل الصالح",
+        "مجرد الانتساب إلى الإسلام بالاسم",
+        "كثرة المال والجاه في الدنيا"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "الإيمان بالله المصحوب بالتقوى والاستقامة والعمل الصالح",
+      "explanation": "يذكر الدرس أن استحقاق دخول الجنة لا يكون دون إيمان بالله تعالى، ولا يكون بمجرد الإيمان فقط دون تقوى ولا عمل صالح؛ لأن ذلك مناف لعدل الله وحكمته، حيث جعل شرط دخول الجنة الإيمان المصحوب بالتقوى والاستقامة والعمل الصالح.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 61,
+      "source_detail": "الدرس التاسع: نعيم الجنة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u4-l9-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u4",
+      "lesson_id": "islamic-u4-l9",
+      "difficulty": 2,
+      "question_text": "كيف وصف النبي ﷺ ما في الجنة، كما ينقل الدرس؟",
+      "options": [
+        "فيها ما لا عين رأت، ولا أذن سمعت، ولا خطر على قلب بشر",
+        "فيها مثل ما في الدنيا تماماً بلا زيادة",
+        "فيها الطعام فقط دون غيره",
+        "فيها ما يشتهيه الإنسان من الدنيا فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "فيها ما لا عين رأت، ولا أذن سمعت، ولا خطر على قلب بشر",
+      "explanation": "ينقل الدرس وصف النبي ﷺ للجنة: أن فيها (ما لا عين رأت، ولا أذن سمعت، ولا خطر على قلب بشر). كما يذكر أن الجنة عالم مبهج تتوفر فيه كل الرغبات وكل ما تشتهيه النفس من الطعام والشراب والثياب والزينة.",
+      "source": "الإيمان — طبعة صنعاء 2027",
+      "source_page": 61,
+      "source_detail": "الدرس التاسع: نعيم الجنة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l1-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l1",
+      "difficulty": 1,
+      "question_text": "ما دور العقوبات الشرعية على كثير من الجرائم كالزنا والسرقة، كما يذكر الدرس الأول؟",
+      "options": [
+        "تمثل رادعاً للكثير من الناس يدفعهم إلى الانضباط",
+        "تشجع الناس على ارتكاب الجرائم",
+        "لا أثر لها في حياة الناس",
+        "تخص الآخرة فقط ولا علاقة لها بالدنيا"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تمثل رادعاً للكثير من الناس يدفعهم إلى الانضباط",
+      "explanation": "يذكر الدرس أن كثيراً من الجرائم كالزنا والسرقة ونحوها عليها عقوبات في الشرع الإلهي تمثل رادعاً للكثير من الناس يدفعهم إلى الانضباط، وأن للأعمال السيئة آثاراً وعقوبات بعضها عاجلة في الدنيا وبعضها آجلة في الآخرة.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 9,
+      "source_detail": "الدرس الأول: الجزاء والعقوبات في الإسلام",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l1-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l1",
+      "difficulty": 2,
+      "question_text": "ما المثال الذي ذكره الدرس على العقوبات الإلهية العاجلة في الدنيا بسبب المفاسد الأخلاقية؟",
+      "options": [
+        "انتشار مرض الإيدز الذي تسببه المفاسد الأخلاقية في المجتمعات التي لا تلتزم أخلاقياً",
+        "انتشار الأمطار الغزيرة",
+        "كثرة المحاصيل الزراعية",
+        "ازدهار التجارة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "انتشار مرض الإيدز الذي تسببه المفاسد الأخلاقية في المجتمعات التي لا تلتزم أخلاقياً",
+      "explanation": "يذكر الدرس أنه من الواضح ظهور الكثير من المفاسد في أي مجتمع لا يقيم حدود الله حتى تظهر في أوساطه عقوبات إلهية أخرى؛ مثل انتشار مرض (الإيدز) الذي تسببه المفاسد الأخلاقية، فهو نوع من العقوبات الإلهية العاجلة في جرائم الفساد الأخلاقي.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 9,
+      "source_detail": "الدرس الأول: الجزاء والعقوبات في الإسلام",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l10-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l10",
+      "difficulty": 1,
+      "question_text": "ما الإقرار، ولماذا يعتبر أقوى طرق الإثبات؟",
+      "options": [
+        "الإقرار هو إخبار الشخص شفاهاً أو كتابة عن ثبوت حق لغيره في نفسه؛ وهو شهادة في النفس وحجة مطلقة وبينة واضحة لا يحتاج معها إلى دليل آخر",
+        "الإقرار هو إنكار الحقوق",
+        "الإقرار حجة في الأموال فقط",
+        "الإقرار لا يصح إلا بشهادة الشهود"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الإقرار هو إخبار الشخص شفاهاً أو كتابة عن ثبوت حق لغيره في نفسه؛ وهو شهادة في النفس وحجة مطلقة وبينة واضحة لا يحتاج معها إلى دليل آخر",
+      "explanation": "يذكر الدرس أن الإقرار هو إخبار الشخص شفاهاً أو كتابة عن ثبوت حق لغيره في نفسه، وأن الإقرار شهادة في النفس وهو حجة مطلقة وبينة واضحة لا يحتاج معها إلى دليل آخر، لذلك يعتبر أقوى طرق الإثبات، وأن الإقرار حجة في جميع الحقوق من الأموال والأعراض والدماء.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 52,
+      "source_detail": "الدرس العاشر: طرق إثبات الدعوى",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l10-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l10",
+      "difficulty": 2,
+      "question_text": "ما شروط الشاهد التي ذكرها الدرس؟",
+      "options": [
+        "أن يكون بالغاً عاقلاً مختاراً عدلاً، وأن يكون قد عاين المشهود به بنفسه، وألا يكون مجلوداً في حد أو مجروحاً في عدالته، وألا يجد لنفسه نفعاً أو يدفع عنها ضرراً، وألا يكون خصماً للمشهود عليه",
+        "أن يكون صغيراً غير بالغ",
+        "أن يشهد بما سمعه فقط دون معاينة",
+        "أن يكون خصماً للمشهود عليه"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أن يكون بالغاً عاقلاً مختاراً عدلاً، وأن يكون قد عاين المشهود به بنفسه، وألا يكون مجلوداً في حد أو مجروحاً في عدالته، وألا يجد لنفسه نفعاً أو يدفع عنها ضرراً، وألا يكون خصماً للمشهود عليه",
+      "explanation": "يذكر الدرس أن الشهادة هي الإخبار بما علمه الشاهد بلفظ خاص وهو: أشهد، ويشترط في الشاهد: أن يكون بالغاً عاقلاً مختاراً عدلاً، وأن يكون قد عاين المشهود به بنفسه إلا فيما يثبت بالسمع واللمس والشهرة، وألا يكون مجلوداً في حد أو مجروحاً في عدالته، وألا يجد لنفسه نفعاً أو يدفع عنها ضرراً، وألا يكون خصماً للمشهود عليه.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 52,
+      "source_detail": "الدرس العاشر: طرق إثبات الدعوى",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l11-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l11",
+      "difficulty": 1,
+      "question_text": "ما موانع الإرث التي ذكرها الدرس؟",
+      "options": [
+        "قتل الوارث مورثه عمداً، واختلاف الملة بين المورث والوارث",
+        "كثرة المال",
+        "قلة الورثة",
+        "بعد القرابة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "قتل الوارث مورثه عمداً، واختلاف الملة بين المورث والوارث",
+      "explanation": "يذكر الدرس أن الشخص يمنع من الميراث في إحدى الحالتين: قتل الوارث مورثه عمداً فيمنع من الميراث لقول النبي ﷺ: (ليس للقاتل من الميراث شيء)؛ واختلاف الملة فمتى حصل الاختلاف في الملة بين المورث والوارث فإن ذلك مانع من الميراث كأن يكون أحدهما مسلماً والآخر كافراً فلا توارث بين أهل ملتين.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 58,
+      "source_detail": "الدرس الحادي عشر: الميراث (أسبابه، وموانعه، وأنواعه)",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l11-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l11",
+      "difficulty": 2,
+      "question_text": "ما الحقوق الأربعة المتعلقة بالتركة بعد وفاة المورث، مرتبة؟",
+      "options": [
+        "تقسيم التركة أولاً ثم قضاء الديون",
+        "تكاليف تجهيز المتوفى، ثم قضاء ديونه من رأس التركة، ثم تنفيذ ما صح من وصاياه من ثلث ما بقي، ثم تقسيم ما بقي في الورثة",
+        "تنفيذ الوصايا أولاً ثم تجهيز المتوفى",
+        "قضاء الديون فقط دون غيرها"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "تكاليف تجهيز المتوفى، ثم قضاء ديونه من رأس التركة، ثم تنفيذ ما صح من وصاياه من ثلث ما بقي، ثم تقسيم ما بقي في الورثة",
+      "explanation": "يذكر الدرس أن الحقوق التي تتعلق بالتركة بعد وفاة المورث أربعة مقدم بعضها على بعض وهي: تكاليف تجهيز المتوفى في الوجه الشرعي من تغسيل وتكفين ودفن ونحوها؛ قضاء ديونه وتخرج من رأس التركة؛ تنفيذ ما صح من وصاياه وتخرج من ثلث ما بقي من ماله؛ تقسيم ما بقي في الورثة في الفرائض الشرعية.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 58,
+      "source_detail": "الدرس الحادي عشر: الميراث (أسبابه، وموانعه، وأنواعه)",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l12-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l12",
+      "difficulty": 1,
+      "question_text": "متى يستحق الزوج النصف من تركة زوجته؟",
+      "options": [
+        "إذا كان للميت فرع وارث",
+        "إذا لم يكن للميت فرع وارث",
+        "في كل الحالات",
+        "إذا كان للميت أبناء فقط"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "إذا لم يكن للميت فرع وارث",
+      "explanation": "يذكر الدرس أن أصحاب النصف هم: الزوج ويستحق النصف إذا لم يكن للميت فرع وارث؛ والبنت الواحدة تستحق النصف بشرط عدم المعصب والمشارك؛ وبنت الابن الواحدة تحل محل البنت عند عدم وجودها؛ والأخت الشقيقة الواحدة؛ والأخت لأب الواحدة، وكل واحدة تستحق النصف بشرط عدم المعصب والمشارك.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 63,
+      "source_detail": "الدرس الثاني عشر: أصحاب الفرائض المقدرة في كتاب الله",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l12-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l12",
+      "difficulty": 2,
+      "question_text": "من أصحاب النصف في الفرائض المقدرة؟",
+      "options": [
+        "الزوج عند عدم الفرع الوارث، والبنت الواحدة، وبنت الابن الواحدة عند عدم البنت، والأخت الشقيقة الواحدة، والأخت لأب الواحدة، بشرط عدم المعصب والمشارك",
+        "الأب والأم فقط",
+        "الابن والبنت فقط",
+        "الزوجة والأم فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الزوج عند عدم الفرع الوارث، والبنت الواحدة، وبنت الابن الواحدة عند عدم البنت، والأخت الشقيقة الواحدة، والأخت لأب الواحدة، بشرط عدم المعصب والمشارك",
+      "explanation": "يذكر الدرس أصحاب النصف: الزوج يستحق النصف إذا لم يكن للميت فرع وارث؛ والبنت الواحدة تستحق النصف بشرط عدم المعصب والمشارك؛ وبنت الابن الواحدة تحل محل البنت عند عدم وجودها وترث النصف بشرط عدم المعصب والمشارك؛ والأخت الشقيقة الواحدة تستحق النصف بشرط عدم المعصب والمشارك؛ والأخت لأب الواحدة تستحق النصف بشرط عدم المعصب والمشارك.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 63,
+      "source_detail": "الدرس الثاني عشر: أصحاب الفرائض المقدرة في كتاب الله",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l13-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l13",
+      "difficulty": 1,
+      "question_text": "ما حكم نقل عضو من مكان إلى آخر في جسم الإنسان نفسه، كأخذ شيء من الفخذ وتجميل الجلد المحترق؟",
+      "options": [
+        "جائز عند الضرورة والتأكد من أنه ليس هناك خطر في الحياة عند نزع المنقول من مكانه وتركيبه في مكان آخر",
+        "محرم مطلقاً",
+        "جائز بلا أي شرط",
+        "مكروه فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "جائز عند الضرورة والتأكد من أنه ليس هناك خطر في الحياة عند نزع المنقول من مكانه وتركيبه في مكان آخر",
+      "explanation": "يذكر الدرس أن لعملية زراعة الأعضاء وترقيعها في جسم الإنسان ثلاث صور: الصورة الأولى نقل عضو أو جزء منه من مكان إلى آخر في جسم الإنسان نفسه، كأخذ شيء من الفخذ وتجميل الجلد المحترق أو المجروح، وهذا جائز عند الضرورة والتأكد من أنه ليس هناك خطر في الحياة عند نزع المنقول من مكانه وتركيبه في مكان آخر.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 69,
+      "source_detail": "الدرس الثالث عشر: قضايا معاصرة وموقف الشريعة منها",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l13-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l13",
+      "difficulty": 2,
+      "question_text": "ما شروط جواز نقل عضو من إنسان إلى آخر؟",
+      "options": [
+        "أن يكون ببيع العضو مقابل المال",
+        "أن يكون عن طريق التبرع بلا عوض، وأن يكون عند الضرورة التي لا بديل عنها لإنقاذ حياة المريض، وألا يتضرر المتبرع، وأن يغلب الظن بنجاح العملية وعدم وجود ضرر أو خطر",
+        "أن يكون المتبرع متضرراً من إزالة العضو",
+        "أن يكون النقل بلا ضرورة"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "أن يكون عن طريق التبرع بلا عوض، وأن يكون عند الضرورة التي لا بديل عنها لإنقاذ حياة المريض، وألا يتضرر المتبرع، وأن يغلب الظن بنجاح العملية وعدم وجود ضرر أو خطر",
+      "explanation": "يذكر الدرس أن الصورة الثانية لنقل الأعضاء وهي نقل عضو أو جزء منه من إنسان إلى آخر تجوز بالشروط الآتية: أن يكون ذلك عن طريق التبرع بلا عوض؛ وأن يكون عند الضرورة التي لا بديل عنها لإنقاذ حياة المريض؛ وألا يتضرر المتبرع من إزالة العضو منه أو بعضه؛ وأن يغلب الظن بنجاح العملية وعدم وجود ضرر أو خطر من عملية الزرع أو الترقيع.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 69,
+      "source_detail": "الدرس الثالث عشر: قضايا معاصرة وموقف الشريعة منها",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l2-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l2",
+      "difficulty": 1,
+      "question_text": "ما نوعا العقوبات الشرعية كما يقسمهما الدرس الثاني؟",
+      "options": [
+        "عقوبات مالية (الكفارة والدية والأرش) وعقوبات بدنية (الحدود والتعزير والقصاص)",
+        "عقوبات مالية فقط",
+        "عقوبات بدنية فقط",
+        "عقوبات معنوية وعقوبات لفظية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عقوبات مالية (الكفارة والدية والأرش) وعقوبات بدنية (الحدود والتعزير والقصاص)",
+      "explanation": "يذكر الدرس أن العقوبات الشرعية تنقسم إلى نوعين: عقوبات مالية تشمل الكفارة والدية والأرش، وعقوبات بدنية تشمل الحدود والتعزير والقصاص. ويوضح الدرس النوع الثاني وهو العقوبات البدنية المتمثلة في الحدود والتعزير.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 15,
+      "source_detail": "الدرس الثاني: العقوبات الشرعية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l2-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l2",
+      "difficulty": 2,
+      "question_text": "ما تعريف الحدود في الاصطلاح، وما مثال عليها؟",
+      "options": [
+        "عقوبة بدنية مقدرة شرعاً لاستيفاء حق الله تعالى، مثل حد الزنا وحد السرقة وحد شرب الخمر وحد الحرابة وحد القذف",
+        "عقوبة مالية يدفعها الجاني لأهل المجني عليه",
+        "عقوبة يختارها القاضي بلا تقدير شرعي",
+        "عقوبة تخص الكفار فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عقوبة بدنية مقدرة شرعاً لاستيفاء حق الله تعالى، مثل حد الزنا وحد السرقة وحد شرب الخمر وحد الحرابة وحد القذف",
+      "explanation": "يذكر الدرس أن الحدود في اللغة جمع حد وهو المانع أو الحاجز بين شيئين، وفي الاصطلاح هي عقوبة بدنية مقدرة شرعاً لاستيفاء حق الله تعالى، مثل حد الزنا وحد السرقة وحد شرب الخمر وحد الحرابة وحد القذف. ومن شروط إقامة الحدود: الأهلية بأن يكون بالغاً عاقلاً، والاختيار بأن يكون مختاراً غير مكره.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 15,
+      "source_detail": "الدرس الثاني: العقوبات الشرعية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l3-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l3",
+      "difficulty": 1,
+      "question_text": "ما حكم الزنا في الإسلام كما يذكره الدرس الثالث؟",
+      "options": [
+        "مباح بشروط",
+        "من أكبر الكبائر الخطيرة، وفاحشة من أعظم الفواحش، وقد حرم الله تعالى الزنا وشدد في تحريمه وحذر حتى من الاقتراب منه",
+        "مكروه فقط",
+        "جائز في بعض الحالات"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "من أكبر الكبائر الخطيرة، وفاحشة من أعظم الفواحش، وقد حرم الله تعالى الزنا وشدد في تحريمه وحذر حتى من الاقتراب منه",
+      "explanation": "يذكر الدرس أن الزنا من أكبر الكبائر الخطيرة، وفاحشة من أعظم الفواحش، وقد حرم الله تعالى الزنا وشدد في تحريمه، وحذر حتى من الاقتراب منه واتباع خطوات الشيطان التي تسوق إليه، وأن الإسلام حرص في أحكامه وتشريعاته على صيانة الأسرة ونسيج المجتمع وطهارة النفوس وحفظ القيم والحرمات.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 20,
+      "source_detail": "الدرس الثالث: عقوبة فاحشة الزنا",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l3-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l3",
+      "difficulty": 2,
+      "question_text": "بماذا يثبت حد الزنا، وما شروط صحة الإقرار به؟",
+      "options": [
+        "بشهادة شاهد واحد فقط",
+        "بالإقرار الصحيح أو بشهادة أربعة شهود عدول؛ ويشترط في الإقرار أن يكون باللفظ الصريح وأن يتكرر أربع مرات وأن يكون لدى القاضي أو ولي الأمر الشرعي وأن يكون المقر مكلفاً مختاراً",
+        "بالظن والشبهة فقط",
+        "بإقرار الصبي أو المكره"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "بالإقرار الصحيح أو بشهادة أربعة شهود عدول؛ ويشترط في الإقرار أن يكون باللفظ الصريح وأن يتكرر أربع مرات وأن يكون لدى القاضي أو ولي الأمر الشرعي وأن يكون المقر مكلفاً مختاراً",
+      "explanation": "يذكر الدرس أن حد الزنا يثبت بإحدى طريقتين: الإقرار وهو اعتراف الزاني نفسه بالفعل، أو شهادة أربعة شهود. ويشترط في صحة الإقرار بالزنا: الإقرار باللفظ الصريح فلا يكفي الكناية ولا التلميح، وتكرار الإقرار في أربعة مجالس أو في مجلس واحد أربع مرات، وأن يكون لدى القاضي أو ولي الأمر الشرعي، وأن يكون مكلفاً مختاراً بالغاً عاقلاً فلا يصح من الصبي ولا المكره ولا فاقد الوعي.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 21,
+      "source_detail": "الدرس الثالث: عقوبة فاحشة الزنا",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l4-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l4",
+      "difficulty": 1,
+      "question_text": "ما حكم القذف في الإسلام؟",
+      "options": [
+        "مباح إذا كان المقذوف غير متزوج",
+        "محرم شرعاً، وهو من الكبائر الموبقات، وقد توعد الله القاذف بأشد العذاب في الآخرة، فلا يجوز قذف أحد نهائياً",
+        "جائز إذا كان القاذف صادقاً في ظنه",
+        "مكروه فقط"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "محرم شرعاً، وهو من الكبائر الموبقات، وقد توعد الله القاذف بأشد العذاب في الآخرة، فلا يجوز قذف أحد نهائياً",
+      "explanation": "يذكر الدرس أن القذف محرم شرعاً، وهو من الكبائر الموبقات، وقد توعد الله سبحانه القاذف بأشد العذاب في الآخرة، فلا يجوز قذف أحد نهائياً سواء كان رجلاً أو امرأة، متزوجاً أو غير متزوج.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 25,
+      "source_detail": "الدرس الرابع: عقوبة القذف",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l4-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l4",
+      "difficulty": 2,
+      "question_text": "بماذا يثبت القذف، وما مثال على الكناية فيه؟",
+      "options": [
+        "يثبت بشهادة عدلين أو بإقرار القاذف ولو مرة واحدة؛ والكناية لفظ غير صريح يحتمل الزنا وغيره مثل أن يقول: أنت فاجر أو عاهر، أو يا ابن الحرام",
+        "يثبت بالظن فقط؛ والكناية هي اللفظ الصريح",
+        "يثبت بشهادة شاهد واحد؛ والكناية لا توجب الحد",
+        "لا يثبت القذف بأي طريق"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يثبت بشهادة عدلين أو بإقرار القاذف ولو مرة واحدة؛ والكناية لفظ غير صريح يحتمل الزنا وغيره مثل أن يقول: أنت فاجر أو عاهر، أو يا ابن الحرام",
+      "explanation": "يذكر الدرس أن القذف يثبت بأحد أمرين: شهادة عدلين، أو إقرار القاذف ولو مرة واحدة حيث كان بالغاً عاقلاً غير أخرس. والكناية هي اللفظ غير الصريح الذي يحتمل الزنا وغيره، مثل أن يقول: أنت فاجر أو عاهر، أو يا ابن الحرام. ومن الشروط التي توجب حد القذف: أن يكون المقذوف مسلماً عفيفاً في الظاهر من الزنا، وأن يقذفه أحد بزنا، وأن يكون القاذف مصرحاً أو مكنياً أو معرضاً قاصداً، وألا يكتمل عدد الشهود في زنا المقذوف.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 25,
+      "source_detail": "الدرس الرابع: عقوبة القذف",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l5-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l5",
+      "difficulty": 1,
+      "question_text": "لماذا سميت الخمر (أم الخبائث)؟",
+      "options": [
+        "لأنها من الكبائر، وقد حرم الإسلام شربها وبيعها وشراءها وحملها وكل ما يرتبط بها",
+        "لأنها مشروب مفيد للصحة",
+        "لأن تحريمها يخص شربها فقط",
+        "لأنها لا تضر بالإنسان"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأنها من الكبائر، وقد حرم الإسلام شربها وبيعها وشراءها وحملها وكل ما يرتبط بها",
+      "explanation": "يذكر الدرس أن الإسلام حرم الخمر وشدد في تحريمها واعتبرها من الكبائر وسماها النبي (أم الخبائث)، ولم يقتصر الأمر على تحريم شربها فقط، وإنما حرم بيع الخمر وشراءها وحملها وكل ما يرتبط بها، بدليل ما روي عن رسول الله ﷺ أنه قال: (لعن الله الخمر وشاربها وساقيها وبائعها ومبتاعها وعاصرها ومعتصرها وحاملها والمحمولة إليه وآكل ثمنها).",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 30,
+      "source_detail": "الدرس الخامس: عقوبة شرب الخمر",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l5-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l5",
+      "difficulty": 2,
+      "question_text": "ما حكم المخدرات كالأفيون والحشيش والكوكايين والهيروين والشبو، وحكم القليل من المسكر؟",
+      "options": [
+        "حكمها حكم الخمر في التحريم، ولا يجوز تناولها أو تعاطيها أو الترويج لها؛ والقليل والكثير من المسكر سواء في التحريم",
+        "يجوز تناول القليل منها",
+        "المخدرات مباحة والخمر فقط محرمة",
+        "يجوز الترويج لها ولا يجوز شربها"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "حكمها حكم الخمر في التحريم، ولا يجوز تناولها أو تعاطيها أو الترويج لها؛ والقليل والكثير من المسكر سواء في التحريم",
+      "explanation": "يذكر الدرس أن المشروبات المسكرة والمخدرات بكل أنواعها كالأفيون والحشيش والكوكايين والهيروين والشبو حكمها حكم الخمر في التحريم، ولا يجوز شرعاً تناولها أو تعاطيها أو الترويج لها، وأن القليل والكثير من المسكر سواء في التحريم لقول النبي ﷺ: (كل مسكر خمر، وكل خمر حرام) وقوله: (ما أسكر كثيره فقليله حرام).",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 30,
+      "source_detail": "الدرس الخامس: عقوبة شرب الخمر",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l6-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l6",
+      "difficulty": 1,
+      "question_text": "ما حد السرقة متى اكتملت شروطه، كما يذكره الدرس السادس؟",
+      "options": [
+        "قطع يد السارق من الرسغ وهو مفصل الكف، فإذا عاد إلى السرقة قطعت رجله اليسرى من مفصل القدم، فإن عاد حبس حتى تظهر توبته",
+        "السجن فقط دون أي حد آخر",
+        "الغرامة المالية فقط",
+        "الجلد مئة جلدة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "قطع يد السارق من الرسغ وهو مفصل الكف، فإذا عاد إلى السرقة قطعت رجله اليسرى من مفصل القدم، فإن عاد حبس حتى تظهر توبته",
+      "explanation": "يذكر الدرس أن حد السرقة يجب متى اكتملت شروطه، بقطع يد السارق من الرسغ وهو مفصل الكف، فإذا عاد إلى السرقة قطعت رجله اليسرى من مفصل القدم، فإن عاد حبس حتى تظهر توبته، وقد حدد قانون العقوبات في الجمهورية اليمنية مدة الحبس بخمس عشرة سنة.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 35,
+      "source_detail": "الدرس السادس: عقوبة جريمة السرقة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l6-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l6",
+      "difficulty": 2,
+      "question_text": "ما الحكمة من تشريع حد السرقة؟",
+      "options": [
+        "صيانة الأموال والممتلكات، وأمن الناس في نفوسهم وأموالهم، فيتحقق الأمن والاستقرار في المجتمع، وليرتدع السارق وغيره عن التعدي في أموال الناس",
+        "زيادة دخل الدولة من الغرامات",
+        "تشجيع الناس على حماية أموالهم بأنفسهم",
+        "معاقبة الفقراء فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "صيانة الأموال والممتلكات، وأمن الناس في نفوسهم وأموالهم، فيتحقق الأمن والاستقرار في المجتمع، وليرتدع السارق وغيره عن التعدي في أموال الناس",
+      "explanation": "يذكر الدرس أن الإسلام حرم الاعتداء في مال الغير وأخذه بغير حق بأي وسيلة، وقد جاء تشريع الحد في السارق صيانة للأموال والممتلكات، ولأمن الناس في نفوسهم وأموالهم، فيتحقق الأمن والاستقرار في المجتمع، وشرع الله الحد بقطع يده تنكيلاً به ومعاقبة له على عدوانه وحتى يرتدع هو وغيره عن التعدي في أموال الناس وأخذها دون وجه حق.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 35,
+      "source_detail": "الدرس السادس: عقوبة جريمة السرقة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l7-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l7",
+      "difficulty": 1,
+      "question_text": "لماذا غلظ الإسلام العقوبة في الحرابة بأقسى وأشد العقوبات؟",
+      "options": [
+        "لزجر الناس عن ارتكاب تلك الجرائم، لما تسببه من اختلال للأمن وما يترتب عليها من أضرار اجتماعية واقتصادية خطيرة في الفرد والمجتمع",
+        "لأنها جريمة لا ضرر منها",
+        "لأنها تقع في الصحراء فقط",
+        "لأنها جريمة مالية بسيطة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لزجر الناس عن ارتكاب تلك الجرائم، لما تسببه من اختلال للأمن وما يترتب عليها من أضرار اجتماعية واقتصادية خطيرة في الفرد والمجتمع",
+      "explanation": "يذكر الدرس أن الإسلام غلظ العقوبة في الحرابة بأقسى وأشد العقوبات؛ لزجر الناس عن ارتكاب تلك الجرائم، فحكم عليهم بالقتل أو بقطع اليد والرجل من خلاف، وذلك لما تسببه جرائم الحرابة من اختلال للأمن وما يترتب عليها من أضرار اجتماعية واقتصادية خطيرة في الفرد والمجتمع.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 39,
+      "source_detail": "الدرس السابع: عقوبة الحرابة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l7-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l7",
+      "difficulty": 2,
+      "question_text": "ما حد المحارب إذا قبض فيه وقد أخذ المال ولم يحصل منه القتل؟",
+      "options": [
+        "القتل فقط",
+        "القتل والصلب",
+        "قطع يده ورجله من خلاف: قطع اليد اليمنى من مفصل الكف وقطع الرجل اليسرى من مفصل القدم",
+        "السجن مدة لا تزيد عن خمس سنوات"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "قطع يده ورجله من خلاف: قطع اليد اليمنى من مفصل الكف وقطع الرجل اليسرى من مفصل القدم",
+      "explanation": "يذكر الدرس أنواع حد الحرابة: إذا كانت الحرابة بقتل النفس دون أخذ المال فتستوجب القتل؛ وإذا كانت بالقتل وأخذ المال فتستوجب القتل والصلب؛ وإذا قبض في المحاربين وقد أخذوا المال ولم يحصل منهم القتل فيجب قطع يد المحارب ورجله من خلاف بقطع اليد اليمنى من مفصل الكف وقطع الرجل اليسرى من مفصل القدم؛ ومن أخاف الطريق فقط ولم يحصل منه قتل ولا أخذ مال فإنه يسجن مدة لا تزيد عن خمس سنوات.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 39,
+      "source_detail": "الدرس السابع: عقوبة الحرابة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l8-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l8",
+      "difficulty": 1,
+      "question_text": "ما عقوبة القتل العمد؟",
+      "options": [
+        "الدية فقط",
+        "القصاص، وهو أن يقتص من القاتل بالقتل",
+        "السجن مدة سنة واحدة",
+        "لا عقوبة عليه"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "القصاص، وهو أن يقتص من القاتل بالقتل",
+      "explanation": "يذكر الدرس أن القتل العمد هو تعمد إزهاق روح إنسان معصوم الدم بما يقتل غالباً، وعقوبة القتل العمد هي القصاص وهو أن يقتص من القاتل بالقتل، ويترتب على القتل العمد الإثم العظيم الموجب لغضب الله ولعنته ودخول النار والخلود فيها ما لم يتب ويكفر عن فعله بتسليم نفسه للقصاص.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس الثامن: عقوبة قتل النفس المحرمة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l8-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l8",
+      "difficulty": 2,
+      "question_text": "لمن يكون حق القصاص في القتل العمد، وهل يجوز لأحد تنفيذه بنفسه؟",
+      "options": [
+        "القصاص حق لأولياء المقتول، يحكم به القاضي، فلا يجوز لأحد تنفيذ القصاص بنفسه",
+        "القصاص حق لأي شخص في المجتمع",
+        "يجوز لكل فرد تنفيذ القصاص بنفسه",
+        "القصاص حق للقاتل نفسه"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "القصاص حق لأولياء المقتول، يحكم به القاضي، فلا يجوز لأحد تنفيذ القصاص بنفسه",
+      "explanation": "يذكر الدرس أن القصاص حق لأولياء المقتول في حال حصل القتل عمداً وعدواناً بأي وسيلة من وسائل القتل، يحكم بذلك القاضي، فلا يجوز لأحد تنفيذ القصاص بنفسه، ولا فرق في القصاص في القتل العمد بين أن يكون القاتل واحداً أو جماعة فإن الجماعة تقتل بالواحد إذا ثبت أنهم قتلوه جميعاً عمداً.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس الثامن: عقوبة قتل النفس المحرمة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l9-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l9",
+      "difficulty": 1,
+      "question_text": "ما الدية، وفيمن تجب دية القتل الخطأ؟",
+      "options": [
+        "الدية هي المال الواجب بالجناية في نفس أو فيما دونها؛ ودية القتل الخطأ تجب في العاقلة",
+        "الدية هي العقوبة البدنية؛ وتجب في مال الجاني دائماً",
+        "الدية هي الكفارة؛ وتجب على المجني عليه",
+        "الدية لا تجب إلا في القتل العمد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الدية هي المال الواجب بالجناية في نفس أو فيما دونها؛ ودية القتل الخطأ تجب في العاقلة",
+      "explanation": "يذكر الدرس أن الدية هي المال الواجب بالجناية في نفس أو فيما دونها، وأن دية القتل العمد تجب إذا عفا الولي عن القصاص إلى الدية وتجب في مال الجاني، وأن دية شبه العمد في عاقلة الجاني، وأن دية القتل الخطأ تجب في العاقلة.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس التاسع: الديات والأروش",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u5-l9-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u5",
+      "lesson_id": "islamic-u5-l9",
+      "difficulty": 2,
+      "question_text": "ما الأرش، ومتى يعدل عن القصاص إلى الدية أو الأرش؟",
+      "options": [
+        "الأرش هو المال الواجب المقدر شرعاً بالاعتداء في ما دون النفس مما ليس فيه دية كاملة كاللسان والأصبع؛ ويعدل عن القصاص إلى الدية أو الأرش إذا كانت الجناية بطريق الخطأ أو تنازل المجني عليه عن القصاص مقابل الدية أو الأرش",
+        "الأرش هو القصاص نفسه؛ ولا يعدل عنه أبداً",
+        "الأرش هو السجن؛ ويعدل إليه دائماً",
+        "الأرش لا يكون إلا في القتل العمد"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الأرش هو المال الواجب المقدر شرعاً بالاعتداء في ما دون النفس مما ليس فيه دية كاملة كاللسان والأصبع؛ ويعدل عن القصاص إلى الدية أو الأرش إذا كانت الجناية بطريق الخطأ أو تنازل المجني عليه عن القصاص مقابل الدية أو الأرش",
+      "explanation": "يذكر الدرس أن الأرش هو المال الواجب المقدر شرعاً بالاعتداء في ما دون النفس، أي مما ليس فيه دية كاملة من الأعضاء كاللسان والأصبع ونحوها، وأن الأصل في الجنايات هو القصاص إلا أنه قد يعدل عن القصاص إلى الدية أو الأرش إذا كانت الجناية بطريق الخطأ، أو إذا تنازل المجني عليه عن القصاص مقابل الدية أو الأرش.",
+      "source": "الفقه — طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس التاسع: الديات والأروش",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l1-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l1",
+      "difficulty": 1,
+      "question_text": "بماذا شبه النبي ﷺ ما بعثه الله به من الهدى والعلم؟",
+      "options": [
+        "كمثل غيث أصاب أرضاً، فكانت منها طائفة طيبة قبلت الماء فأنبتت الكلأ والعشب الكثير",
+        "كمثل نار تحرق كل شيء",
+        "كمثل ريح عاصفة لا تثبت",
+        "كمثل جبل لا يتحرك"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "كمثل غيث أصاب أرضاً، فكانت منها طائفة طيبة قبلت الماء فأنبتت الكلأ والعشب الكثير",
+      "explanation": "يذكر الدرس نص الحديث: مثل ما بعثني الله به من الهدى والعلم كمثل غيث أصاب أرضاً، فكانت منها طائفة طيبة قبلت الماء فأنبتت الكلأ والعشب الكثير، وكانت منها أجادب أمسكت الماء فنفع الله بها الناس فشربوا وسقوا وزرعوا، وأصاب طائفة أخرى إنما هي قيعان لا تمسك ماء ولا تنبت كلأ.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 9,
+      "source_detail": "الدرس الأول: العلم النافع",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l1-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l1",
+      "difficulty": 2,
+      "question_text": "ما معنى (الكلأ) و(أجادب) في الحديث، كما في معاني العبارات؟",
+      "options": [
+        "الكلأ: النبات الذي ترعاه؛ وأجادب: أراض مجدبة لا تنبت",
+        "الكلأ: الماء الكثير؛ وأجادب: الأنهار الجارية",
+        "الكلأ: الصخور الصلبة؛ وأجادب: الجبال العالية",
+        "الكلأ: الأشجار المثمرة؛ وأجادب: الحدائق"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "الكلأ: النبات الذي ترعاه؛ وأجادب: أراض مجدبة لا تنبت",
+      "explanation": "يذكر الدرس في معاني العبارات: الكلأ هو النبات الذي ترعاه، وأجادب هي أراض مجدبة لا تنبت، وقيعان هي الأرض المستوية، ولم يرفع بذلك رأساً أي لم يهتم بالهدى. والحديث يبين أن مثل من فقه في دين الله ونفعه ما بعث به النبي فعلم وعلم، ومثل من لم يرفع بذلك رأساً ولم يقبل هدى الله.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 9,
+      "source_detail": "الدرس الأول: العلم النافع",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l10-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l10",
+      "difficulty": 1,
+      "question_text": "ما الثقلان اللذان تركهما النبي ﷺ للأمة؟",
+      "options": [
+        "كتاب الله وعترتي أهل بيتي",
+        "المال والجاه",
+        "القوة والسلاح",
+        "العلم والعمل فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "كتاب الله وعترتي أهل بيتي",
+      "explanation": "يذكر الدرس حديث الثقلين: إني تارك فيكم ما إن تمسكتم به لن تضلوا بعدي أبداً: كتاب الله وعترتي أهل بيتي. كما يذكر حديث الولاية: من كنت مولاه فهذا علي مولاه. والدرس يبين أن القرآن الكريم كتاب هداية، وأن رسول الله ﷺ كان القائد الأول والقدوة الأسمى في مسيرة الهداية بكتاب الله.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس العاشر: حديث الثقلين",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l10-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l10",
+      "difficulty": 2,
+      "question_text": "ما نتيجة التمسك بالثقلين كما في الحديث؟",
+      "options": [
+        "الضلال بعد النبي ﷺ",
+        "لن تضلوا بعدي أبداً",
+        "الفرقة والاختلاف",
+        "لا شيء يترتب على ذلك"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "لن تضلوا بعدي أبداً",
+      "explanation": "يذكر الدرس أن النبي ﷺ قال: إني تارك فيكم ما إن تمسكتم به لن تضلوا بعدي أبداً: كتاب الله وعترتي أهل بيتي. وأن العامل الأساسي المؤثر على واقع الأمة هو طبيعة علاقتها بمنهج الله؛ فلن تفلح الأمة إلا إذا تعاملت مع القرآن الكريم على أساس أنه كتاب هداية.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 62,
+      "source_detail": "الدرس العاشر: حديث الثقلين",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l2-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l2",
+      "difficulty": 1,
+      "question_text": "ما القاعدة التي يقررها حديث العرض على كتاب الله؟",
+      "options": [
+        "أن يقبل كل ما يروى عن النبي دون تمييز",
+        "أن يعرض ما أتى عن النبي على كتاب الله، فما وافق كتاب الله يؤخذ وما خالف كتاب الله يترك",
+        "أن يترك كتاب الله ويؤخذ بالحديث فقط",
+        "أن يعرض كتاب الله على الحديث"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "أن يعرض ما أتى عن النبي على كتاب الله، فما وافق كتاب الله يؤخذ وما خالف كتاب الله يترك",
+      "explanation": "يذكر الدرس نص الحديث عن عرض ما يأتي عن النبي على كتاب الله: فما أتاكم عني فاعرضوه على كتاب الله، فما وافق كتاب الله فخذوه، وما خالف كتاب الله فدعوه. وفي رحاب الحديث يبين الدرس أن القرآن الكريم هو الكلمة الجامعة بين المسلمين، وهو هدى الله ومنهاجه، وهو المنهج الصافي الذي لا يأتيه الباطل من بين يديه ولا من خلفه، وهو الحاكمية المطلقة والأولوية في كل شيء.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 17,
+      "source_detail": "الدرس الثاني: حديث العرض على كتاب الله",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l2-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l2",
+      "difficulty": 2,
+      "question_text": "لماذا كان القرآن الكريم هو المرجع الذي تعرض عليه الأحاديث؟",
+      "options": [
+        "لأنه الكلمة الجامعة بين المسلمين، وهو هدى الله ومنهاجه، والمنهج الصافي الذي لا يأتيه الباطل من بين يديه ولا من خلفه",
+        "لأنه كتاب تاريخ فقط",
+        "لأنه لا يتحدث عن الأحكام",
+        "لأنه نزل بعد الحديث"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأنه الكلمة الجامعة بين المسلمين، وهو هدى الله ومنهاجه، والمنهج الصافي الذي لا يأتيه الباطل من بين يديه ولا من خلفه",
+      "explanation": "يذكر الدرس في رحاب الحديث أن القرآن الكريم هو الكلمة الجامعة بين المسلمين، وهو هدى الله ومنهاجه، وهو المنهج الصافي الذي لا يأتيه الباطل من بين يديه ولا من خلفه، وهو الحاكمية المطلقة والأولوية في كل شيء، وقد أنزله الله على رسوله هداية للبشرية والمعرفة لإقامة القسط في الأرض.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 17,
+      "source_detail": "الدرس الثاني: حديث العرض على كتاب الله",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l3-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l3",
+      "difficulty": 1,
+      "question_text": "ما الصيغة التي علمها النبي ﷺ للصحابة للصلاة عليه حين سألوه: كيف الصلاة عليك؟",
+      "options": [
+        "اللهم صل على محمد وعلى آل محمد كما صليت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد، وبارك على محمد وعلى آل محمد كما باركت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد",
+        "السلام عليك أيها النبي فقط",
+        "اللهم اغفر لمحمد فقط",
+        "لا توجد صيغة معينة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "اللهم صل على محمد وعلى آل محمد كما صليت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد، وبارك على محمد وعلى آل محمد كما باركت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد",
+      "explanation": "يذكر الدرس أن الصحابة سألوا رسول الله ﷺ حين نزل قول الله تعالى عن الصلاة على النبي: قد عرفنا السلام عليك، فكيف الصلاة عليك؟ فقال ﷺ: قولوا: اللهم صل على محمد وعلى آل محمد كما صليت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد، وبارك على محمد وعلى آل محمد كما باركت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 22,
+      "source_detail": "الدرس الثالث: الصلاة على النبي ﷺ",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l3-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l3",
+      "difficulty": 2,
+      "question_text": "ما الصلاة على النبي ﷺ كما يبينها الدرس في رحاب الحديث؟",
+      "options": [
+        "دعاء من المؤمن بأن يمنح الله نبيه محمداً ﷺ وأهل بيته العافية والمحبة والرحمة والعزة والحكمة والبركة التي تعينهم على أداء دورهم ومسؤولياتهم",
+        "مجرد تحية بلا معنى",
+        "دعاء للنبي بالمال فقط",
+        "صلاة مفروضة في كل وقت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "دعاء من المؤمن بأن يمنح الله نبيه محمداً ﷺ وأهل بيته العافية والمحبة والرحمة والعزة والحكمة والبركة التي تعينهم على أداء دورهم ومسؤولياتهم",
+      "explanation": "يذكر الدرس أن الصلاة على النبي ﷺ هي دعاء من المؤمن بأن يمنح الله نبيه محمداً ﷺ وأهل بيته العافية والمحبة والرحمة والعزة والحكمة والبركة التي تعينهم على أداء دورهم ومسؤولياتهم، مثل ما منحه الله من ذلك لنبي الله إبراهيم وآل إبراهيم، وهذه هي الصلاة التي اتفق المسلمون على ورودها في التشهد الأخير في الصلاة.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 22,
+      "source_detail": "الدرس الثالث: الصلاة على النبي ﷺ",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l4-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l4",
+      "difficulty": 1,
+      "question_text": "ما الميثاق الذي أخذه الله على الذين أوتوا الكتاب، كما في الآية التي استشهد بها الدرس؟",
+      "options": [
+        "أن يكتموا الكتاب ولا يبينوه للناس",
+        "أن يبينوه للناس ولا يكتمونه",
+        "أن يبيعوه بثمن قليل",
+        "أن ينبذوه وراء ظهورهم"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "أن يبينوه للناس ولا يكتمونه",
+      "explanation": "يستشهد الدرس بقوله تعالى عن ميثاق الذين أوتوا الكتاب: لتبيننه للناس ولا تكتمونه، وأن من نبذه وراء ظهورهم واشتروا به ثمناً قليلاً فبئس ما يشترون. والدرس يتحدث عن حفظ الحديث وتبليغه وعدم كتمانه.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس الرابع: لتحفظن حديثي إلى إسرافيل",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l4-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l4",
+      "difficulty": 2,
+      "question_text": "ما معنى (شبراً بذراع وذراعاً بذراع) كما في معاني العبارات؟",
+      "options": [
+        "خطوة بخطوة، أي تتبعونهم خطوة بخطوة",
+        "مسافة بعيدة لا تدرك",
+        "قياس دقيق للطول",
+        "سرعة في المشي"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "خطوة بخطوة، أي تتبعونهم خطوة بخطوة",
+      "explanation": "يذكر الدرس في معاني العبارات: شبراً بذراع وذراعاً بذراع أي خطوة بخطوة، أي تتبعونهم خطوة بخطوة، والضب حيوان بري يدخل مسكنه، ولتحفظن حديثي إلى إسرافيل أي لتقوموا بأمره وتنشروه. والحديث يحذر من اتباع سنن من كان قبلكم خطوة بخطوة حتى لو دخلوا جحر ضب لدخلتموه.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس الرابع: لتحفظن حديثي إلى إسرافيل",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l5-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l5",
+      "difficulty": 1,
+      "question_text": "ما الحديث الذي يقرر الاستقامة بعد الإيمان؟",
+      "options": [
+        "قل آمنت بالله ثم استقم",
+        "قل آمنت بالله ثم نم",
+        "قل آمنت بالله ثم اترك العمل",
+        "قل آمنت بالله ثم اسكت"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "قل آمنت بالله ثم استقم",
+      "explanation": "يذكر الدرس نص الحديث: قال رسول الله ﷺ: (قل آمنت بالله ثم استقم). وفي رحابه يبين الدرس أن لا قيمة للإيمان إذا لم يتحقق في الواقع وبصيغته العملية، فالاستقامة على دين الله ومبادئه أهم ما يطلبه المؤمن ويتمنى بالله عليه.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 33,
+      "source_detail": "الدرس الخامس: عوامل الاستقامة وعوامل الانحراف",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l5-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l5",
+      "difficulty": 2,
+      "question_text": "على أي ركنين أساسيين يجب أن تكون الاستقامة مبنية، كما يذكر الدرس؟",
+      "options": [
+        "تعبيد النفس بالإيمان بالله، والاستعانة بالله على ذلك: إياك نعبد وإياك نستعين",
+        "كثرة المال وقوة البدن",
+        "ترك الصلاة والصيام",
+        "الاعتماد على النفس دون الله"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تعبيد النفس بالإيمان بالله، والاستعانة بالله على ذلك: إياك نعبد وإياك نستعين",
+      "explanation": "يذكر الدرس أن الاستقامة يجب أن تكون مبنية على ركنين أساسيين هما: تعبيد النفس بالإيمان بالله، والاستعانة بالله على ذلك: إياك نعبد وإياك نستعين، وأن سورة الفاتحة التي نرددها في كل صلاة تتضمن الطلب الأساسي لكل مؤمن حريص على جهاد نفسه، وهو أن يطلب من الله أن يهديه في واقعه الفكري والشعوري والعملي ليسير على صراط الله المستقيم.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 33,
+      "source_detail": "الدرس الخامس: عوامل الاستقامة وعوامل الانحراف",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l6-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l6",
+      "difficulty": 1,
+      "question_text": "ما فضل الغدوة أو الروحة في سبيل الله كما في الحديث؟",
+      "options": [
+        "خير من الدنيا وما فيها",
+        "مثل الصلاة في البيت",
+        "أقل من الصيام",
+        "لا فضل لها"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "خير من الدنيا وما فيها",
+      "explanation": "يذكر الدرس نص الحديث: قال رسول الله ﷺ: (لغدوة في سبيل الله أو روحة خير من الدنيا وما فيها). وفي رحابه يبين الدرس عظمة الجهاد والمرابطة في سبيل الله وفضلهما عن سائر الأعمال الأخرى من العبادات والقربات.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 41,
+      "source_detail": "الدرس السادس: فضل الجهاد في سبيل الله",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l6-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l6",
+      "difficulty": 2,
+      "question_text": "لماذا كان أثر القتال في سبيل الله أعظم من أثر العبادات الفرضية، كما يذكر الدرس؟",
+      "options": [
+        "لأن أثر العبادات الفرضية خاص بصاحبها، أما القتال في سبيل الله فأثره في الواقع عظيم وشامل لحياة الناس بإحقاق الحق وإقامة العدل ورفع القهر والظلم وإنقاذ الناس وهداية الأمة",
+        "لأن العبادات لا قيمة لها",
+        "لأن القتال أسهل من الصيام",
+        "لأن القتال لا يحتاج إلى نية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأن أثر العبادات الفرضية خاص بصاحبها، أما القتال في سبيل الله فأثره في الواقع عظيم وشامل لحياة الناس بإحقاق الحق وإقامة العدل ورفع القهر والظلم وإنقاذ الناس وهداية الأمة",
+      "explanation": "يذكر الدرس أن النوع من المرابط في جهاد القتال في سبيل الله أعظم من عبادة ستين سنة في أهله، أي ما يعادل عمراً كاملاً من العبادات المتواصلة بصيام النهار وقيام الليل، لأن أثر تلك العبادات الفرضية خاص بصاحبها، أما القتال في سبيل الله فأثره في الواقع عظيم وشامل لحياة الناس، بإحقاق الحق وإقامة العدل، ورفع القهر والظلم، وإنقاذ الناس، وهداية الأمة.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 41,
+      "source_detail": "الدرس السادس: فضل الجهاد في سبيل الله",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l7-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l7",
+      "difficulty": 1,
+      "question_text": "ما العفاف كما يعرفه الدرس السابع؟",
+      "options": [
+        "كف النفس عما يعيبها ويشينها، والابتعاد عما يذهب المروءة",
+        "كثرة المال والجاه",
+        "ترك العمل والعبادة",
+        "الانشغال بأمور الدنيا"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "كف النفس عما يعيبها ويشينها، والابتعاد عما يذهب المروءة",
+      "explanation": "يذكر الدرس أن العفاف هو كف النفس عما يعيبها ويشينها، والابتعاد عما يذهب المروءة، وأن الإسلام دعا إلى الاستقامة والتحلي بالصفات الشريفة والأخلاق الحسنة، فالمسلم يتحرك بها في حياته.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس السابع: العفاف",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l7-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l7",
+      "difficulty": 2,
+      "question_text": "ما معنى (يستعفف) و(يستغن) و(يتصبر) في الحديث، كما في معاني العبارات؟",
+      "options": [
+        "يستعفف: يمتنع عن المحرمات ويحاول الالتزام بها؛ ويستغن: يعود نفسه الاكتفاء والقناعة بما لديه؛ ويتصبر: يروض نفسه على الصبر والتحمل",
+        "يستعفف: يطلب المال؛ ويستغن: يترك العمل؛ ويتصبر: يشتكي",
+        "يستعفف: يصوم؛ ويستغن: يصلي؛ ويتصبر: يحج",
+        "يستعفف: يسكت؛ ويستغن: يتكلم؛ ويتصبر: ينام"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يستعفف: يمتنع عن المحرمات ويحاول الالتزام بها؛ ويستغن: يعود نفسه الاكتفاء والقناعة بما لديه؛ ويتصبر: يروض نفسه على الصبر والتحمل",
+      "explanation": "يذكر الدرس نص الحديث: من يستعفف يعفه الله، ومن يستغن يغنه الله، ومن يتصبر يصبره الله. وفي معاني العبارات: يستعفف أي يمتنع عن المحرمات ويحاول الالتزام بها، ويستغن أي يعود نفسه الاكتفاء والقناعة بما لديه، ويتصبر أي يروض نفسه على الصبر والتحمل.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 47,
+      "source_detail": "الدرس السابع: العفاف",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l8-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l8",
+      "difficulty": 1,
+      "question_text": "بماذا وصف الله الأمة الإسلامية في الآية التي استشهد بها الدرس الثامن؟",
+      "options": [
+        "أمة وسطاً لتكونوا شهداء على الناس ويكون الرسول عليكم شهيداً",
+        "أمة متفرقة لا يجمعها شيء",
+        "أمة لا تعرف العدل",
+        "أمة ضعيفة لا قيمة لها"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أمة وسطاً لتكونوا شهداء على الناس ويكون الرسول عليكم شهيداً",
+      "explanation": "يستشهد الدرس بقوله تعالى: وكذلك جعلناكم أمة وسطاً لتكونوا شهداء على الناس ويكون الرسول عليكم شهيداً. وفي رحابه يبين الدرس أن الشخصية التي يريدها الله في قرآنه للمؤمن شخصية متكاملة قوية عزيزة حرة رحيمة حكيمة ناجحة واعية، تكمل فيها صفات السمو في الجانب الفكري والشعوري والعملي على أرقى صورة.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 53,
+      "source_detail": "الدرس الثامن: الشخصية المتميزة للمسلم",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l8-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l8",
+      "difficulty": 2,
+      "question_text": "بماذا شبه الدرس المؤمن في شخصيته المتميزة؟",
+      "options": [
+        "بالنحلة: لا يأخذ إلا الطيب في الرزق والمعرفة والتعامل والاحترام، ولا يصدر عنه إلا الشيء النافع الطيب كالنحلة في منطقه وأفعاله ومواقفه",
+        "بالذئب الذي يأخذ كل شيء",
+        "بالحجر الذي لا يتحرك",
+        "بالنار التي تحرق كل شيء"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بالنحلة: لا يأخذ إلا الطيب في الرزق والمعرفة والتعامل والاحترام، ولا يصدر عنه إلا الشيء النافع الطيب كالنحلة في منطقه وأفعاله ومواقفه",
+      "explanation": "يذكر الدرس أن الحديث نموذج للشخصية الفاعلة المؤثرة الناجحة، التي تقترب بها الصورة عن مؤمن رزقه الله في نفسه راق في ذوقه ووعيه ومعاشرته وسلوكه، لا يأخذ إلا الطيب في الرزق والمعرفة والتعامل والاحترام، ولا يصدر عنه إلا الشيء النافع الطيب كالنحلة في منطقه وأفعاله ومواقفه، ويصاحب ذلك تأثير في الناس.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 53,
+      "source_detail": "الدرس الثامن: الشخصية المتميزة للمسلم",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l9-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l9",
+      "difficulty": 1,
+      "question_text": "بماذا شبه النبي ﷺ حال الأمة حين تتداعى عليها الأمم؟",
+      "options": [
+        "بغثاء كغثاء السيل، مع أنهم كثير يومئذ",
+        "بجبل راسخ لا يتحرك",
+        "بنار مشتعلة لا تنطفئ",
+        "ببحر هادئ لا موج فيه"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بغثاء كغثاء السيل، مع أنهم كثير يومئذ",
+      "explanation": "يذكر الدرس نص الحديث: يوشك أن تداعى عليكم الأمم كما تداعى الأكلة إلى قصعتها، قالوا: يا رسول الله، أمن قلة نحن يومئذ؟ قال: بل أنتم يومئذ كثير ولكنكم غثاء كغثاء السيل، ولينزعن الله من صدور عدوكم المهابة منكم، وليقذفن في قلوبكم الوهن.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 57,
+      "source_detail": "الدرس التاسع: تداعى عليكم الأمم",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u6-l9-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u6",
+      "lesson_id": "islamic-u6-l9",
+      "difficulty": 2,
+      "question_text": "ما الوهن الذي يصيب الأمة حين تتداعى عليها الأمم؟",
+      "options": [
+        "حب الدنيا وكراهية الموت",
+        "كثرة العدد",
+        "قلة المال",
+        "بعد المسافة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "حب الدنيا وكراهية الموت",
+      "explanation": "يذكر الدرس أن الصحابة سألوا: وما الوهن يا رسول الله؟ قال: حب الدنيا وكراهية الموت. وفي معاني العبارات: الأكلة جمع آكل، وقصعتها الوعاء الذي يوضع فيه الأكل، وغثاء السيل ما يحمله السيل في أعلاه من رغوة ومن فتات، والوهن الضعف.",
+      "source": "الحديث والتهذيب — طبعة صنعاء 2027",
+      "source_page": 57,
+      "source_detail": "الدرس التاسع: تداعى عليكم الأمم",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l1-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l1",
+      "difficulty": 1,
+      "question_text": "بماذا وصف الدرس النبي محمداً ﷺ كقائد؟",
+      "options": [
+        "قائد حكيم وقدوة حسنة، حاز من قوة الإيمان وسمو النفس ونفاذ البصيرة وعظمة الأخلاق ما جعله يجسد منتهى الكمال الإنساني",
+        "قائد عسكري فقط لا علاقة له بالأخلاق",
+        "قائد لا يهتم بأمته",
+        "قائد يعتمد على القوة وحدها"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "قائد حكيم وقدوة حسنة، حاز من قوة الإيمان وسمو النفس ونفاذ البصيرة وعظمة الأخلاق ما جعله يجسد منتهى الكمال الإنساني",
+      "explanation": "يذكر الدرس أن الدنيا لم تعرف قائداً حكيماً وقدوة حسنة كما هو نبينا محمد ﷺ، الذي حاز من قوة الإيمان، وسمو النفس، ونفاذ البصيرة، وعظمة الأخلاق، ما جعله يجسد منتهى الكمال الإنساني، فكان أهلاً للإعداد والتأهيل والاصطفاء الإلهي؛ ليكون بذلك أشرف بني البشر، وخاتم النبيين، والقدوة الخالدة للأجيال.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 8,
+      "source_detail": "الدرس الأول: الرسول القائد",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l1-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l1",
+      "difficulty": 2,
+      "question_text": "لماذا كان النبي ﷺ التجسيد الأرقى والأعلم للنموذج البشري الذي أراده الله؟",
+      "options": [
+        "لأن أصل الرسالة هو عبودية الله التامة، وانقياده واتباعه وتجسيده لما أوحى الله إليه، فكان قرآناً يمشي على الأرض",
+        "لأنه كان غنياً بالمال",
+        "لأنه كان أقوى الناس جسداً",
+        "لأنه كان ملكاً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأن أصل الرسالة هو عبودية الله التامة، وانقياده واتباعه وتجسيده لما أوحى الله إليه، فكان قرآناً يمشي على الأرض",
+      "explanation": "يذكر الدرس في الصفات القيادية للرسول ﷺ أن أصل الرسالة هو عبودية الله التامة لله، وانقياده واتباعه وتجسيده لما أوحى الله إليه، فكان التجسيد الأرقى والأعلم للنموذج البشري الذي أراده الله، وكان قرآناً يمشي على الأرض، فتجسدت فيه الحكمة والوعي والسمو والصفات التي كان بها القائد الأول والأمثل لبني البشر في طريق اهتدائهم ونجاتهم وفوزهم في الدنيا والآخرة.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 8,
+      "source_detail": "الدرس الأول: الرسول القائد",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l10-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l10",
+      "difficulty": 1,
+      "question_text": "بماذا تميز أهل اليمن عن كثير من قبائل العرب في إسلامهم؟",
+      "options": [
+        "أسلموا طواعية دون حرب أو قتال، فكانوا السابقين في بداية الدعوة، والفاتحين بشرف الإيواء والنصرة عند الهجرة",
+        "أسلموا بعد حرب طويلة",
+        "أسلموا خوفاً من القتل",
+        "لم يسلموا أبداً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أسلموا طواعية دون حرب أو قتال، فكانوا السابقين في بداية الدعوة، والفاتحين بشرف الإيواء والنصرة عند الهجرة",
+      "explanation": "يذكر الدرس أن ما يميز أهل اليمن عن كثير من قبائل العرب، أنهم أسلموا طواعية دون حرب أو قتال، فكانوا السابقين في بداية الدعوة، والفاتحين بشرف الإيواء والنصرة عند الهجرة. كما أنهم كانوا قد وفدوا إلى رسول الله ﷺ قبل فتح مكة، وفي عام الوفود في طلبة الوافدين، فاستبشر النبي ﷺ بقدومهم، وأحسن وفادتهم، وأثنى على إيمانهم.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس العاشر: إسلام أهل اليمن",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l10-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l10",
+      "difficulty": 2,
+      "question_text": "بماذا وصف النبي ﷺ أهل اليمن في حديثه المشهور؟",
+      "options": [
+        "أتاكم أهل اليمن هم أرق قلوباً وألين أفئدة، الإيمان يمان والحكمة يمانية",
+        "أتاكم أهل اليمن هم أشد الناس قسوة",
+        "أتاكم أهل اليمن هم أغنى الناس",
+        "أتاكم أهل اليمن هم أبعد الناس عن الإيمان"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أتاكم أهل اليمن هم أرق قلوباً وألين أفئدة، الإيمان يمان والحكمة يمانية",
+      "explanation": "يذكر الدرس أنه حين جاء النبي ﷺ خبر إسلام أهل اليمن سجد لله شكراً، وقال ﷺ حديثه المشهور: أتاكم أهل اليمن هم أرق قلوباً وألين أفئدة، الإيمان يمان والحكمة يمانية، ونزل عليه قول الله تعالى: إذا جاء نصر الله والفتح ورأيت الناس يدخلون في دين الله أفواجاً فسبح بحمد ربك واستغفره إنه كان تواباً، وقال: الله أكبر جاء الفتح وجاء النصر، وجاء أهل اليمن.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 72,
+      "source_detail": "الدرس العاشر: إسلام أهل اليمن",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l11-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l11",
+      "difficulty": 1,
+      "question_text": "لماذا سميت حجة النبي ﷺ في العام العاشر للهجرة بـ(حجة الوداع)؟",
+      "options": [
+        "لأنها كانت الحجة الوحيدة لرسول الله ﷺ، وخطب فيها خطبة جامعة اشتملت على أصول الإسلام ومبادئه الأساسية",
+        "لأنها كانت أول حجة في الإسلام",
+        "لأن النبي ﷺ لم يصل إلى مكة",
+        "لأن الحج منع بعدها"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأنها كانت الحجة الوحيدة لرسول الله ﷺ، وخطب فيها خطبة جامعة اشتملت على أصول الإسلام ومبادئه الأساسية",
+      "explanation": "يذكر الدرس أنه عندما اقترب موعد الحج في العام العاشر للهجرة، أعلن ﷺ أنه سيحج بالناس في الموسم، وكانت هي الحجة الوحيدة لرسول الله ﷺ، وسميت هذه الحجة بـ(حجة الوداع)، وخطب فيها خطبة جامعة اشتملت على أصول الإسلام ومبادئه الأساسية.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 77,
+      "source_detail": "الدرس الحادي عشر: حجة الوداع",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l11-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l11",
+      "difficulty": 2,
+      "question_text": "ما أهمية فريضة الحج في الإسلام كما يذكر الدرس؟",
+      "options": [
+        "تدعيم رابطة الأخوة بين المسلمين، إذ تنصهر فيها كل الاختلافات بينهم بعد أن وحدتهم رابطة الإيمان وجمعتهم أخوة الإسلام، فيجتمعون في مكان واحد ولباس واحد وشعار واحد، وهي فرصة لتعارفهم وتآلفهم وتعاونهم واجتماع كلمتهم",
+        "جمع المال فقط",
+        "السياحة والترفيه",
+        "لا أهمية لها"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "تدعيم رابطة الأخوة بين المسلمين، إذ تنصهر فيها كل الاختلافات بينهم بعد أن وحدتهم رابطة الإيمان وجمعتهم أخوة الإسلام، فيجتمعون في مكان واحد ولباس واحد وشعار واحد، وهي فرصة لتعارفهم وتآلفهم وتعاونهم واجتماع كلمتهم",
+      "explanation": "يذكر الدرس أن من أهمية الحج في الإسلام تدعيم رابطة الأخوة بين المسلمين، إذ تنصهر فيها كل الاختلافات بين المسلمين، بعد أن وحدتهم رابطة الإيمان، وجمعتهم أخوة الإسلام، وأتوا من كل مكان، على اختلاف ألوانهم وأجناسهم ولغاتهم، لأداء هذه الفريضة في مكان واحد، ولباس واحد، وشعار واحد، ما يجعل من فريضة الحج فرصة مهمة لتعارف المسلمين، وتآلفهم، وتعاونهم، واجتماع كلمتهم، بالإضافة إلى أنها مؤتمر إسلامي كبير للتشاور فيما بين المسلمين حول قضايا الأمة.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 77,
+      "source_detail": "الدرس الحادي عشر: حجة الوداع",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l12-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l12",
+      "difficulty": 1,
+      "question_text": "ما الآية التي نزلت على النبي ﷺ في طريق عودته من حجة الوداع إلى المدينة؟",
+      "options": [
+        "يا أيها الرسول بلغ ما أنزل إليك من ربك وإن لم تفعل فما بلغت رسالته والله يعصمك من الناس إن الله لا يهدي القوم الكافرين",
+        "إذا جاء نصر الله والفتح",
+        "لقد صدق الله رسوله الرؤيا بالحق",
+        "قل يا أيها الناس إني رسول الله إليكم جميعاً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "يا أيها الرسول بلغ ما أنزل إليك من ربك وإن لم تفعل فما بلغت رسالته والله يعصمك من الناس إن الله لا يهدي القوم الكافرين",
+      "explanation": "يذكر الدرس أنه لما أكمل رسول الله ﷺ والمسلمون مناسك الحج في حجة الوداع، وأشرفوا أن يفترقوا، وبدأ رسول الله ﷺ رحلة العودة إلى المدينة، نزلت عليه آية من القرآن، جعلته يدعو المسلمين ويجمعهم مرة ثانية لبلاغ مهم. وفي حديث الغدير: لما وصل موكب الرسول ﷺ إلى مكان قريب من (الجحفة) يقال له: (غدير خم)، نزل عليه قول الله تعالى: يا أيها الرسول بلغ ما أنزل إليك من ربك وإن لم تفعل فما بلغت رسالته والله يعصمك من الناس إن الله لا يهدي القوم الكافرين، فوقف الرسول ﷺ المسلمين هناك عند (غدير خم).",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 82,
+      "source_detail": "الدرس الثاني عشر: أعمال النبي بعد حجة الوداع ووفاته",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l12-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l12",
+      "difficulty": 2,
+      "question_text": "أين وقف النبي ﷺ المسلمين ليبلغهم البلاغ المهم بعد حجة الوداع؟",
+      "options": [
+        "عند غدير خم، وهو مكان قريب من الجحفة",
+        "في مكة المكرمة",
+        "في المدينة المنورة",
+        "في خيبر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "عند غدير خم، وهو مكان قريب من الجحفة",
+      "explanation": "يذكر الدرس أنه في طريق عودة الرسول ﷺ إلى المدينة بعد إكمال مناسك الحج، ومعه تلك الوفود التي لم تشهد لها مكة نظيراً في تاريخها آنذاك، ولما وصل موكب الرسول ﷺ إلى مكان قريب من (الجحفة) يقال له: (غدير خم)، نزل عليه قول الله تعالى: يا أيها الرسول بلغ ما أنزل إليك من ربك وإن لم تفعل فما بلغت رسالته، فوقف الرسول ﷺ المسلمين هناك عند (غدير خم).",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 82,
+      "source_detail": "الدرس الثاني عشر: أعمال النبي بعد حجة الوداع ووفاته",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l2-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l2",
+      "difficulty": 1,
+      "question_text": "ما الذي دفع النبي ﷺ والمسلمين للخروج إلى الحديبية؟",
+      "options": [
+        "رؤيا رآها النبي ﷺ في المنام أنه دخل المسجد الحرام وطاف بالبيت ومعه المسلمون، وأن رؤيا الأنبياء حق",
+        "رغبة في القتال",
+        "طلب المال من قريش",
+        "الهجرة إلى مكة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "رؤيا رآها النبي ﷺ في المنام أنه دخل المسجد الحرام وطاف بالبيت ومعه المسلمون، وأن رؤيا الأنبياء حق",
+      "explanation": "يذكر الدرس أن رسول الله ﷺ رأى في المنام أنه دخل المسجد الحرام وطاف بالبيت ومعه المسلمون، وأن رؤيا الأنبياء حق، فقد أمر النبي ﷺ أصحابه بذلك، وأمرهم أن يتجهزوا للخروج معه لأداء العمرة. ويستشهد الدرس بقوله تعالى: لقد صدق الله رسوله الرؤيا بالحق لتدخلن المسجد الحرام إن شاء الله آمنين محلقين رؤوسكم ومقصرين لا تخافون.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس الثاني: صلح الحديبية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l2-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l2",
+      "difficulty": 2,
+      "question_text": "لماذا كان للمسلمين حق مشروع في الذهاب إلى البيت الحرام في مكة؟",
+      "options": [
+        "لأن مكة هي القبلة المقدمة في رسالة الله، والبيت الذي بناه أنبياء الله، والذي جعله مثابة للناس، ولا يحق لقريش أن تمنع الرسول والمسلمين عنه",
+        "لأن مكة كانت ملكاً للمسلمين",
+        "لأن قريش دعتهم إلى ذلك",
+        "لأن البيت الحرام كان خالياً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأن مكة هي القبلة المقدمة في رسالة الله، والبيت الذي بناه أنبياء الله، والذي جعله مثابة للناس، ولا يحق لقريش أن تمنع الرسول والمسلمين عنه",
+      "explanation": "يذكر الدرس أنه جاء الوقت المناسب ليحقق المسلمون حقهم المشروع في الذهاب للبيت الحرام في مكة المكرمة، كونه القبلة المقدمة في رسالة الله، ويبينه الذي بناه أنبياء الله، والذي جعله مثابة للناس، ولا يحق لقريش أن تمنع الرسول والمسلمين عنه.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 14,
+      "source_detail": "الدرس الثاني: صلح الحديبية",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l3-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l3",
+      "difficulty": 1,
+      "question_text": "بماذا امتازت رسالة الإسلام كما يذكر الدرس الثالث؟",
+      "options": [
+        "بأنها رسالة عالمية لا تقتصر على فئة معينة أو مجتمع محدد ولا على زمن بعينه، بل تشمل الناس جميعاً",
+        "بأنها رسالة خاصة بالعرب فقط",
+        "بأنها رسالة لزمن معين فقط",
+        "بأنها رسالة سرية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بأنها رسالة عالمية لا تقتصر على فئة معينة أو مجتمع محدد ولا على زمن بعينه، بل تشمل الناس جميعاً",
+      "explanation": "يذكر الدرس أن رسالة الإسلام امتازت بأنها رسالة عالمية لا تقتصر على فئة معينة، أو مجتمع محدد، ولا على زمن بعينه، ولكنها رسالة عالمية تشمل الناس جميعاً، قال تعالى: وما أرسلناك إلا كافة للناس بشيراً ونذيراً، وقال عز من قائل: قل يا أيها الناس إني رسول الله إليكم جميعاً.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 21,
+      "source_detail": "الدرس الثالث: مكاتبات الرسول للملوك والأمراء",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l3-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l3",
+      "difficulty": 2,
+      "question_text": "متى شرع النبي ﷺ في إرسال الكتب إلى الملوك وأمراء العرب ورؤساء القبائل؟",
+      "options": [
+        "بعد عودته من الحديبية في أواخر السنة السادسة وبداية السنة السابعة من الهجرة",
+        "قبل الهجرة إلى المدينة",
+        "في السنة الأولى من الهجرة",
+        "بعد فتح مكة مباشرة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "بعد عودته من الحديبية في أواخر السنة السادسة وبداية السنة السابعة من الهجرة",
+      "explanation": "يذكر الدرس أن الدعوة إلى الإسلام هي الهدف الأسمى من بعثة النبي الأعظم ﷺ، فقد شرع بعد عودته من الحديبية في أواخر السنة السادسة وبداية السنة السابعة من الهجرة بإرسال الكتب إلى الملوك وأمراء العرب، ورؤساء القبائل، يدعوهم إلى عبادة الله تعالى وتوحيده، والدخول في دين الله تعالى الذي ارتضاه لعباده، وختم تلك الرسائل بخاتم (محمد رسول الله)، واختار لحملها رسلاً من أصحابه من ذوي الكفاءة.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 21,
+      "source_detail": "الدرس الثالث: مكاتبات الرسول للملوك والأمراء",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l4-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l4",
+      "difficulty": 1,
+      "question_text": "ما سبب نجاح النبي ﷺ العظيم في مواجهة يهود خيبر؟",
+      "options": [
+        "أنه اهتدى بالقرآن الكريم في تخطيطه لواقع اليهود ونفسياتهم ومؤامراتهم وطبيعة أهدافهم وأساليبهم، وفي معرفة الطريقة المثلى للتعامل معهم وإحباط كيدهم",
+        "أنه كان أكثر عدداً منهم",
+        "أنه كان يملك أسلحة حديثة",
+        "أنه لم يكن يعرف شيئاً عنهم"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أنه اهتدى بالقرآن الكريم في تخطيطه لواقع اليهود ونفسياتهم ومؤامراتهم وطبيعة أهدافهم وأساليبهم، وفي معرفة الطريقة المثلى للتعامل معهم وإحباط كيدهم",
+      "explanation": "يذكر الدرس أن السبب في نجاح النبي ﷺ أن رسول الله ﷺ اهتدى بالقرآن الكريم في تخطيطه لواقع اليهود، ونفسياتهم ومؤامراتهم، وطبيعة أهدافهم وأساليبهم، وفي معرفة الطريقة المثلى للتعامل معهم وإحباط كيدهم، فلم يكن غريباً ذلك النجاح العظيم الذي حققه رسول الله ﷺ في مواجهتهم.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس الرابع: غزوة خيبر",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l4-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l4",
+      "difficulty": 2,
+      "question_text": "ما الذي فعله يهود خيبر بعد نقضهم عهودهم مع رسول الله ﷺ؟",
+      "options": [
+        "انضموا مع تحالف الأحزاب ضد النبي ﷺ في غزوة الخندق سعياً لاستئصال المسلمين، ثم اهتموا ببناء الحصون والأسوار والخنادق المنيعة وجمع السلاح والغذاء والمؤن",
+        "أسلموا جميعاً طواعية",
+        "هاجروا إلى المدينة",
+        "اعتذروا للنبي ﷺ"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "انضموا مع تحالف الأحزاب ضد النبي ﷺ في غزوة الخندق سعياً لاستئصال المسلمين، ثم اهتموا ببناء الحصون والأسوار والخنادق المنيعة وجمع السلاح والغذاء والمؤن",
+      "explanation": "يذكر الدرس أن يهود خيبر قد نقضوا عهودهم مع رسول الله، وانضموا مع تحالف الأحزاب ضد النبي ﷺ في غزوة الخندق سعياً لاستئصال المسلمين، وبعد هزيمة الأحزاب كانت يهود خيبر تخرج للتدريب العسكري بعشرات آلاف مقاتل، واهتموا ببناء الحصون والأسوار والخنادق المنيعة كما هو دينهم، ويعدون السلاح ويجمعون الغذاء والمؤن، بما يكفيهم عاماً كاملاً.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 27,
+      "source_detail": "الدرس الرابع: غزوة خيبر",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l5-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l5",
+      "difficulty": 1,
+      "question_text": "ما الحادثة التي كانت في مقدمة أسباب غزوة مؤتة؟",
+      "options": [
+        "قتل الحارث بن عمير الأزدي مبعوث الرسول ﷺ إلى أمير بصرى على يد شرحبيل بن عمرو الغساني عامل هرقل ملك الروم",
+        "نقض قريش لصلح الحديبية",
+        "إسلام أهل اليمن",
+        "فتح مكة"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "قتل الحارث بن عمير الأزدي مبعوث الرسول ﷺ إلى أمير بصرى على يد شرحبيل بن عمرو الغساني عامل هرقل ملك الروم",
+      "explanation": "يذكر الدرس أن من حوادث الاعتداء على بعض المسلمين، وفي مقدمتها حادثة قتل الحارث بن عمير الأزدي مبعوث الرسول ﷺ إلى أمير بصرى على يد شرحبيل بن عمرو الغساني عامل هرقل ملك الروم. وكان لحادثة الحادثة وقع شديد على النبي ﷺ والمسلمين؛ لأن الرسل لا تقتل في أعراف الأمم والشعوب، فقتل الرسل ظلم كبير، وعدوان غاشم، وإهانة بالغة للرسول.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 34,
+      "source_detail": "الدرس الخامس: غزوة مؤتة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l5-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l5",
+      "difficulty": 2,
+      "question_text": "لماذا كان قتل رسول النبي ﷺ إلى بصرى جريمة كبيرة في أعراف الأمم؟",
+      "options": [
+        "لأن الرسل لا تقتل في أعراف الأمم والشعوب، فقتل الرسل ظلم كبير، وعدوان غاشم، وإهانة بالغة للرسول",
+        "لأن الرسول كان يحمل مالاً كثيراً",
+        "لأن الرسول كان من أقارب هرقل",
+        "لأن الرسول كان ملكاً"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأن الرسل لا تقتل في أعراف الأمم والشعوب، فقتل الرسل ظلم كبير، وعدوان غاشم، وإهانة بالغة للرسول",
+      "explanation": "يذكر الدرس أن قتل الحارث بن عمير الأزدي مبعوث الرسول ﷺ إلى أمير بصرى كان له وقع شديد على النبي ﷺ والمسلمين؛ لأن الرسل لا تقتل في أعراف الأمم والشعوب، فقتل الرسل ظلم كبير، وعدوان غاشم، وإهانة بالغة للرسول، فكان لا بد للنبي ﷺ أن يتخذ موقفاً حاسماً إزاء المعتدين بعد هذا الموقف الغادر.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 34,
+      "source_detail": "الدرس الخامس: غزوة مؤتة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l6-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l6",
+      "difficulty": 1,
+      "question_text": "ما سبب خروج النبي ﷺ إلى مكة لفتحها؟",
+      "options": [
+        "نقض قريش لصلح الحديبية، إذ شجعت حلفاءها بني بكر على مهاجمة قبيلة خزاعة التي كانت قد أسلمت ودخلت في حلف مع الرسول ﷺ، وأمدتهم بالسلاح والخيل والرجال",
+        "رغبة النبي ﷺ في زيارة مكة فقط",
+        "دعوة أهل مكة للنبي ﷺ",
+        "نزول الوحي بذلك دون سبب"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "نقض قريش لصلح الحديبية، إذ شجعت حلفاءها بني بكر على مهاجمة قبيلة خزاعة التي كانت قد أسلمت ودخلت في حلف مع الرسول ﷺ، وأمدتهم بالسلاح والخيل والرجال",
+      "explanation": "يذكر الدرس أن قريشاً أصرت على عدائها، واستمرت في عدائها وكيدها للمسلمين، حتى بعد عقد صلح الحديبية مع النبي ﷺ، وقد تعمدت نقض الصلح، فشجعت حلفاءها بني بكر، لهاجمة قبيلة خزاعة، التي قد كانت أسلمت ودخلت في حلف مع الرسول ﷺ؛ وأمدت قريش بني بكر بالسلاح والخيل والرجال، وقام بنو بكر بالهجوم والاعتداء على قبيلة خزاعة، وقتلوا الكثير منهم.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس السادس: فتح مكة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l6-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l6",
+      "difficulty": 2,
+      "question_text": "ما الذي زاد من جرم اعتداء بني بكر على خزاعة؟",
+      "options": [
+        "أنهم قتلوهم داخل المسجد الحرام دون مراعاة لحرمة البيت الحرام",
+        "أنهم قتلوهم في ساحة القتال فقط",
+        "أنهم لم يقتلوا أحداً",
+        "أنهم اعتذروا بعد ذلك"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أنهم قتلوهم داخل المسجد الحرام دون مراعاة لحرمة البيت الحرام",
+      "explanation": "يذكر الدرس أن رجالاً من خزاعة التجأوا للاحتماء بالمسجد الحرام، فلحقهم رجال بني بكر وقتلوهم هناك، دون مراعاة لحرمة البيت الحرام. ويستشهد الدرس بقوله تعالى: إنا فتحنا لك فتحاً مبيناً ليغفر لك الله ما تقدم من ذنبك وما تأخر ويتم نعمته عليك ويهديك صراطاً مستقيماً وينصرك الله نصراً عزيزاً.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 42,
+      "source_detail": "الدرس السادس: فتح مكة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l7-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l7",
+      "difficulty": 1,
+      "question_text": "ما سبب غزوة حنين كما يذكر الدرس؟",
+      "options": [
+        "أن قبيلة هوازن أخذت على عاتقها مواجهة المسلمين، خشية أن يجهزوا لقتالهم بعد هزيمة قريش، ورأوا أن يتحركوا سريعاً لتوجيه ضربة استباقية للقضاء عليهم",
+        "أن المسلمين أرادوا نهب أموال هوازن",
+        "أن هوازن طلبت الصلح",
+        "أن هوازن أسلمت وطلبت الحماية"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أن قبيلة هوازن أخذت على عاتقها مواجهة المسلمين، خشية أن يجهزوا لقتالهم بعد هزيمة قريش، ورأوا أن يتحركوا سريعاً لتوجيه ضربة استباقية للقضاء عليهم",
+      "explanation": "يذكر الدرس أن الانتصار العظيم الذي حققه المسلمون على قريش بفتح مكة، ودخول الكثير من القبائل العربية في الإسلام، شكل صدمة كبيرة للقبائل العربية الأخرى التي تعارض الإسلام، وفي مقدمتها قبيلة هوازن التي أخذت على عاتقها مواجهة المسلمين؛ خشية أن يجهزوا لقتالهم بعد هزيمة قريش، ورأوا أن عليهم أن يتحركوا سريعاً لتوجيه ضربة استباقية للقضاء عليهم.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 49,
+      "source_detail": "الدرس السابع: غزوة حنين",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l7-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l7",
+      "difficulty": 2,
+      "question_text": "ما الدرس المستفاد من قوله تعالى: ويوم حنين إذ أعجبتكم كثرتكم فلم تغن عنكم شيئاً؟",
+      "options": [
+        "أن الكثرة وحدها لا تغني عن المؤمنين شيئاً إذا أعجبوا بها، وأن النصر من عند الله وحده",
+        "أن الكثرة هي سبب النصر دائماً",
+        "أن القلة هي سبب الهزيمة دائماً",
+        "أن النصر يأتي بالعدد فقط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أن الكثرة وحدها لا تغني عن المؤمنين شيئاً إذا أعجبوا بها، وأن النصر من عند الله وحده",
+      "explanation": "يستشهد الدرس بقوله تعالى: لقد نصركم الله في مواطن كثيرة ويوم حنين إذ أعجبتكم كثرتكم فلم تغن عنكم شيئاً وضاقت عليكم الأرض بما رحبت ثم وليتم مدبرين ثم أنزل الله سكينته على رسوله وعلى المؤمنين وأنزل جنوداً لم تروها وعذب الذين كفروا وذلك جزاء الكافرين. فالآية تبين أن كثرة المسلمين يوم حنين لم تغن عنهم شيئاً حين أعجبوا بها، وأن النصر جاء من الله وحده.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 49,
+      "source_detail": "الدرس السابع: غزوة حنين",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l8-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l8",
+      "difficulty": 1,
+      "question_text": "ما الذي دفع النبي ﷺ لتجهيز جيش كبير للخروج إلى تبوك؟",
+      "options": [
+        "وصول الأخبار عن تحركات الروم وحلفائهم واعتزامهم القيام بحملة عسكرية ضد الدولة الإسلامية وحشدهم حشوداً كبيرة لغزو المدينة واستئصال شأفة المسلمين",
+        "رغبة في التجارة مع الروم",
+        "دعوة الروم للنبي ﷺ للزيارة",
+        "طلب المسلمين للسفر"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "وصول الأخبار عن تحركات الروم وحلفائهم واعتزامهم القيام بحملة عسكرية ضد الدولة الإسلامية وحشدهم حشوداً كبيرة لغزو المدينة واستئصال شأفة المسلمين",
+      "explanation": "يذكر الدرس أنه بعد عودة الرسول ﷺ إلى المدينة عقب فتح مكة والانتصار في حنين، وصلت الأخبار إلى النبي ﷺ عن تحركات الروم وحلفائهم، وعلمهم من العرب الموالين لهم، واعتزامهم القيام بحملة عسكرية ضد الدولة الإسلامية، وأنهم قد حشدوا حشوداً كبيرة لغزو المدينة واستئصال شأفة المسلمين؛ فرأى رسول الله ﷺ ضرورة الخروج إليهم، بهمة جهادية لا تحل، وعزم لا يقهر، وبدأ في تجهيز جيش كبير للخروج إلى الشام لمواجهة جيش الروم والتصدي لهم.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 57,
+      "source_detail": "الدرس الثامن: غزوة تبوك",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l8-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l8",
+      "difficulty": 2,
+      "question_text": "ما الذي ميز الاستعداد لغزوة تبوك عن غيرها من الغزوات؟",
+      "options": [
+        "أن النبي ﷺ أعلن عن وجهته وأعلم الناس بها، ليتهيأ الناس لهذه الغزوة، نظراً لبعد المسافة ومشقة الطريق وكثرة العدو، وليحشد أكبر عدد ممكن من الناس إرهاباً للأعداء",
+        "أن النبي ﷺ لم يعلن عن وجهته إطلاقاً",
+        "أن الجيش خرج دون استعداد",
+        "أن النبي ﷺ لم يخرج مع الجيش"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "أن النبي ﷺ أعلن عن وجهته وأعلم الناس بها، ليتهيأ الناس لهذه الغزوة، نظراً لبعد المسافة ومشقة الطريق وكثرة العدو، وليحشد أكبر عدد ممكن من الناس إرهاباً للأعداء",
+      "explanation": "يذكر الدرس أنه لدوافع أمنية لم يكن النبي ﷺ يعلن عن وجهته إذا أراد أن يخرج لغزوة؛ باستثناء البعض من المقربين من إليه من أصحابه، إلا في هذه الغزوة، فقد أعلن النبي ﷺ عن مراده، وأعلم الناس بوجهته؛ ليتهيأ الناس لهذه الغزوة، نظراً لبعد المسافة، ومشقة الطريق، وكثرة العدو، وليحشد أكبر عدد ممكن من الناس إرهاباً للأعداء. ويستشهد الدرس بقوله تعالى: انفروا خفافاً وثقالاً وجاهدوا بأموالكم وأنفسكم في سبيل الله ذلكم خير لكم إن كنتم تعلمون.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 57,
+      "source_detail": "الدرس الثامن: غزوة تبوك",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l9-001",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l9",
+      "difficulty": 1,
+      "question_text": "لماذا سمي العام التاسع للهجرة بـ(عام الوفود)؟",
+      "options": [
+        "لأن وفود العرب أقبلت إلى المدينة تعلن إسلامها وولاءها للرسول ﷺ، وتتابعت تلك الوفود وفداً بعد آخر، وأكثرها كانت في ذلك العام",
+        "لأن النبي ﷺ وفد إلى مكة",
+        "لأن الوفود منعت من دخول المدينة",
+        "لأن العام التاسع كان عام قحط"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "لأن وفود العرب أقبلت إلى المدينة تعلن إسلامها وولاءها للرسول ﷺ، وتتابعت تلك الوفود وفداً بعد آخر، وأكثرها كانت في ذلك العام",
+      "explanation": "يذكر الدرس أن وفود العرب أقبلت إلى المدينة تعلن إسلامها وولاءها للرسول ﷺ، وتتابعت تلك الوفود وفداً بعد آخر، منها: وفد جهينة، وثقيف، وطي، وتغلب، وعنس، وحنيفة، وتميم، وفزارة، ومحارب، وغيرها، ووفدت من اليمن وفود كثيرة، وجاءت الوفود في العام التاسع، وفي غيره، إلا أن أكثرها كانت فيه، فسمي (عام الوفود).",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 66,
+      "source_detail": "الدرس التاسع: عام الوفود وإعلان البراءة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-islamic-u7-l9-002",
+      "type": "mcq",
+      "subject_id": "islamic",
+      "unit_id": "islamic-u7",
+      "lesson_id": "islamic-u7-l9",
+      "difficulty": 2,
+      "question_text": "ما الغاية الكبرى من إعلان البراءة من المشركين في موسم الحج الأكبر؟",
+      "options": [
+        "إيذان بسيادة الإسلام، وتطهير الجزيرة العربية من الشرك والوثنية، وتحويل الحج إلى حج إسلامي خالص يحقق غاياته الكبرى في بناء أمة الإسلام واستقلالها",
+        "منع الحج نهائياً",
+        "إعلان الحرب على جميع القبائل",
+        "ترك الحج للمسلمين فقط دون سبب"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "إيذان بسيادة الإسلام، وتطهير الجزيرة العربية من الشرك والوثنية، وتحويل الحج إلى حج إسلامي خالص يحقق غاياته الكبرى في بناء أمة الإسلام واستقلالها",
+      "explanation": "يذكر الدرس أن النبي ﷺ أرسل علي بن أبي طالب في موسم الحج الأكبر، وكان ذلك إيذاناً بسيادة الإسلام، وتطهير الجزيرة العربية من الشرك والوثنية، ومن أهم الخطوات لتحويل الحج إلى حج إسلامي خالص، يحقق غاياته الكبرى في بناء أمة الإسلام واستقلالها وموقعها الخامس من أعدائها. ويستشهد الدرس بقوله تعالى: براءة من الله ورسوله إلى الذين عاهدتم من المشركين.",
+      "source": "السيرة النبوية — طبعة صنعاء 2027",
+      "source_page": 66,
+      "source_detail": "الدرس التاسع: عام الوفود وإعلان البراءة",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    }
+  ]
+}

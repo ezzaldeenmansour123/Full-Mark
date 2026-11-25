@@ -1,0 +1,3116 @@
+{
+  "format": "abqariya-content-pack",
+  "version": 1,
+  "pack": {
+    "id": "ye-english-3sec-2027",
+    "title_ar": "أسئلة اللغة الإنجليزية — ثالث ثانوي علمي (صنعاء 2027)",
+    "title_en": "English questions — Grade 12 (Sanaa 2027)",
+    "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+    "is_demo": false,
+    "curriculum_year": "2025-2026",
+    "created_at": "2026-11-25"
+  },
+  "subjects": [
+    {
+      "id": "english",
+      "name_ar": "اللغة الإنجليزية",
+      "name_en": "English",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027"
+    }
+  ],
+  "units": [
+    {
+      "id": "english-u1",
+      "subject_id": "english",
+      "title_ar": "Describing things",
+      "title_en": "Describing things",
+      "sort_order": 1,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 1
+    },
+    {
+      "id": "english-u2",
+      "subject_id": "english",
+      "title_ar": "Reporting events",
+      "title_en": "Reporting events",
+      "sort_order": 2,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 9
+    },
+    {
+      "id": "english-u3",
+      "subject_id": "english",
+      "title_ar": "Looking for a job",
+      "title_en": "Looking for a job",
+      "sort_order": 3,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 17
+    },
+    {
+      "id": "english-u4",
+      "subject_id": "english",
+      "title_ar": "Tables, flow charts and diagrams",
+      "title_en": "Tables, flow charts and diagrams",
+      "sort_order": 4,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 25
+    },
+    {
+      "id": "english-u5",
+      "subject_id": "english",
+      "title_ar": "Working things out",
+      "title_en": "Working things out",
+      "sort_order": 5,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 33
+    },
+    {
+      "id": "english-u6",
+      "subject_id": "english",
+      "title_ar": "Looking back",
+      "title_en": "Looking back",
+      "sort_order": 6,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 41
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-u1-l1",
+      "unit_id": "english-u1",
+      "subject_id": "english",
+      "title_ar": "Shapes, coverings and materials",
+      "title_en": "Shapes, coverings and materials",
+      "sort_order": 1,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 1,
+      "source_detail": "Lesson: Shapes, coverings and materials"
+    },
+    {
+      "id": "english-u1-l2",
+      "unit_id": "english-u1",
+      "subject_id": "english",
+      "title_ar": "Lost",
+      "title_en": "Lost",
+      "sort_order": 2,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 2,
+      "source_detail": "Lesson: Lost"
+    },
+    {
+      "id": "english-u1-l3",
+      "unit_id": "english-u1",
+      "subject_id": "english",
+      "title_ar": "An unusual animal",
+      "title_en": "An unusual animal",
+      "sort_order": 3,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 3,
+      "source_detail": "Lesson: An unusual animal"
+    },
+    {
+      "id": "english-u1-l4",
+      "unit_id": "english-u1",
+      "subject_id": "english",
+      "title_ar": "Language review 1",
+      "title_en": "Language review 1",
+      "sort_order": 4,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 4,
+      "source_detail": "Lesson: Language review 1"
+    },
+    {
+      "id": "english-u1-l5",
+      "unit_id": "english-u1",
+      "subject_id": "english",
+      "title_ar": "The countryside",
+      "title_en": "The countryside",
+      "sort_order": 5,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 5,
+      "source_detail": "Lesson: The countryside"
+    },
+    {
+      "id": "english-u1-l6",
+      "unit_id": "english-u1",
+      "subject_id": "english",
+      "title_ar": "A drive in the countryside",
+      "title_en": "A drive in the countryside",
+      "sort_order": 6,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 6,
+      "source_detail": "Lesson: A drive in the countryside"
+    },
+    {
+      "id": "english-u1-l7",
+      "unit_id": "english-u1",
+      "subject_id": "english",
+      "title_ar": "Language review 2",
+      "title_en": "Language review 2",
+      "sort_order": 7,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 7,
+      "source_detail": "Lesson: Language review 2"
+    },
+    {
+      "id": "english-u1-l8",
+      "unit_id": "english-u1",
+      "subject_id": "english",
+      "title_ar": "A view from a window",
+      "title_en": "A view from a window",
+      "sort_order": 8,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 8,
+      "source_detail": "Lesson: A view from a window"
+    },
+    {
+      "id": "english-u2-l1",
+      "unit_id": "english-u2",
+      "subject_id": "english",
+      "title_ar": "Newspaper headlines",
+      "title_en": "Newspaper headlines",
+      "sort_order": 1,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 9,
+      "source_detail": "Lesson: Newspaper headlines"
+    },
+    {
+      "id": "english-u2-l2",
+      "unit_id": "english-u2",
+      "subject_id": "english",
+      "title_ar": "Today's news",
+      "title_en": "Today's news",
+      "sort_order": 2,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 10,
+      "source_detail": "Lesson: Today's news"
+    },
+    {
+      "id": "english-u2-l3",
+      "unit_id": "english-u2",
+      "subject_id": "english",
+      "title_ar": "Don and Debbie: dreamers",
+      "title_en": "Don and Debbie: dreamers",
+      "sort_order": 3,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 11,
+      "source_detail": "Lesson: Don and Debbie: dreamers"
+    },
+    {
+      "id": "english-u2-l4",
+      "unit_id": "english-u2",
+      "subject_id": "english",
+      "title_ar": "Language review 3",
+      "title_en": "Language review 3",
+      "sort_order": 4,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 12,
+      "source_detail": "Lesson: Language review 3"
+    },
+    {
+      "id": "english-u2-l5",
+      "unit_id": "english-u2",
+      "subject_id": "english",
+      "title_ar": "Natural disasters",
+      "title_en": "Natural disasters",
+      "sort_order": 5,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 13,
+      "source_detail": "Lesson: Natural disasters"
+    },
+    {
+      "id": "english-u2-l6",
+      "unit_id": "english-u2",
+      "subject_id": "english",
+      "title_ar": "A newspaper report",
+      "title_en": "A newspaper report",
+      "sort_order": 6,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 14,
+      "source_detail": "Lesson: A newspaper report"
+    },
+    {
+      "id": "english-u2-l7",
+      "unit_id": "english-u2",
+      "subject_id": "english",
+      "title_ar": "Language review 4",
+      "title_en": "Language review 4",
+      "sort_order": 7,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 15,
+      "source_detail": "Lesson: Language review 4"
+    },
+    {
+      "id": "english-u2-l8",
+      "unit_id": "english-u2",
+      "subject_id": "english",
+      "title_ar": "Armenia – 7, December 1988",
+      "title_en": "Armenia – 7, December 1988",
+      "sort_order": 8,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 16,
+      "source_detail": "Lesson: Armenia – 7, December 1988"
+    },
+    {
+      "id": "english-u3-l1",
+      "unit_id": "english-u3",
+      "subject_id": "english",
+      "title_ar": "Getting work experience",
+      "title_en": "Getting work experience",
+      "sort_order": 1,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 17,
+      "source_detail": "Lesson: Getting work experience"
+    },
+    {
+      "id": "english-u3-l2",
+      "unit_id": "english-u3",
+      "subject_id": "english",
+      "title_ar": "Thinking about the future",
+      "title_en": "Thinking about the future",
+      "sort_order": 2,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 18,
+      "source_detail": "Lesson: Thinking about the future"
+    },
+    {
+      "id": "english-u3-l3",
+      "unit_id": "english-u3",
+      "subject_id": "english",
+      "title_ar": "Getting careers advice",
+      "title_en": "Getting careers advice",
+      "sort_order": 3,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 19,
+      "source_detail": "Lesson: Getting careers advice"
+    },
+    {
+      "id": "english-u3-l4",
+      "unit_id": "english-u3",
+      "subject_id": "english",
+      "title_ar": "Language review 5",
+      "title_en": "Language review 5",
+      "sort_order": 4,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 20,
+      "source_detail": "Lesson: Language review 5"
+    },
+    {
+      "id": "english-u3-l5",
+      "unit_id": "english-u3",
+      "subject_id": "english",
+      "title_ar": "Jobs and qualities",
+      "title_en": "Jobs and qualities",
+      "sort_order": 5,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 21,
+      "source_detail": "Lesson: Jobs and qualities"
+    },
+    {
+      "id": "english-u3-l6",
+      "unit_id": "english-u3",
+      "subject_id": "english",
+      "title_ar": "Applying for a job",
+      "title_en": "Applying for a job",
+      "sort_order": 6,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 22,
+      "source_detail": "Lesson: Applying for a job"
+    },
+    {
+      "id": "english-u3-l7",
+      "unit_id": "english-u3",
+      "subject_id": "english",
+      "title_ar": "Language review 6",
+      "title_en": "Language review 6",
+      "sort_order": 7,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 23,
+      "source_detail": "Lesson: Language review 6"
+    },
+    {
+      "id": "english-u3-l8",
+      "unit_id": "english-u3",
+      "subject_id": "english",
+      "title_ar": "A business letter",
+      "title_en": "A business letter",
+      "sort_order": 8,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 24,
+      "source_detail": "Lesson: A business letter"
+    },
+    {
+      "id": "english-u4-l1",
+      "unit_id": "english-u4",
+      "subject_id": "english",
+      "title_ar": "Food",
+      "title_en": "Food",
+      "sort_order": 1,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 25,
+      "source_detail": "Lesson: Food"
+    },
+    {
+      "id": "english-u4-l2",
+      "unit_id": "english-u4",
+      "subject_id": "english",
+      "title_ar": "Learning to cook",
+      "title_en": "Learning to cook",
+      "sort_order": 2,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 26,
+      "source_detail": "Lesson: Learning to cook"
+    },
+    {
+      "id": "english-u4-l3",
+      "unit_id": "english-u4",
+      "subject_id": "english",
+      "title_ar": "Agriculture in Yemen",
+      "title_en": "Agriculture in Yemen",
+      "sort_order": 3,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 27,
+      "source_detail": "Lesson: Agriculture in Yemen"
+    },
+    {
+      "id": "english-u4-l4",
+      "unit_id": "english-u4",
+      "subject_id": "english",
+      "title_ar": "Language review 7",
+      "title_en": "Language review 7",
+      "sort_order": 4,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 28,
+      "source_detail": "Lesson: Language review 7"
+    },
+    {
+      "id": "english-u4-l5",
+      "unit_id": "english-u4",
+      "subject_id": "english",
+      "title_ar": "Words and more words",
+      "title_en": "Words and more words",
+      "sort_order": 5,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 29,
+      "source_detail": "Lesson: Words and more words"
+    },
+    {
+      "id": "english-u4-l6",
+      "unit_id": "english-u4",
+      "subject_id": "english",
+      "title_ar": "Investigating the world around us",
+      "title_en": "Investigating the world around us",
+      "sort_order": 6,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 30,
+      "source_detail": "Lesson: Investigating the world around us"
+    },
+    {
+      "id": "english-u4-l7",
+      "unit_id": "english-u4",
+      "subject_id": "english",
+      "title_ar": "Language review 8",
+      "title_en": "Language review 8",
+      "sort_order": 7,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 31,
+      "source_detail": "Lesson: Language review 8"
+    },
+    {
+      "id": "english-u4-l8",
+      "unit_id": "english-u4",
+      "subject_id": "english",
+      "title_ar": "Frozen peas",
+      "title_en": "Frozen peas",
+      "sort_order": 8,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 32,
+      "source_detail": "Lesson: Frozen peas"
+    },
+    {
+      "id": "english-u5-l1",
+      "unit_id": "english-u5",
+      "subject_id": "english",
+      "title_ar": "Word sets",
+      "title_en": "Word sets",
+      "sort_order": 1,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 33,
+      "source_detail": "Lesson: Word sets"
+    },
+    {
+      "id": "english-u5-l2",
+      "unit_id": "english-u5",
+      "subject_id": "english",
+      "title_ar": "Possibilities",
+      "title_en": "Possibilities",
+      "sort_order": 2,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 34,
+      "source_detail": "Lesson: Possibilities"
+    },
+    {
+      "id": "english-u5-l3",
+      "unit_id": "english-u5",
+      "subject_id": "english",
+      "title_ar": "Puzzles and riddles",
+      "title_en": "Puzzles and riddles",
+      "sort_order": 3,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 35,
+      "source_detail": "Lesson: Puzzles and riddles"
+    },
+    {
+      "id": "english-u5-l4",
+      "unit_id": "english-u5",
+      "subject_id": "english",
+      "title_ar": "Language review 9",
+      "title_en": "Language review 9",
+      "sort_order": 4,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 36,
+      "source_detail": "Lesson: Language review 9"
+    },
+    {
+      "id": "english-u5-l5",
+      "unit_id": "english-u5",
+      "subject_id": "english",
+      "title_ar": "The mystery of the Mary Celeste",
+      "title_en": "The mystery of the Mary Celeste",
+      "sort_order": 5,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 37,
+      "source_detail": "Lesson: The mystery of the Mary Celeste"
+    },
+    {
+      "id": "english-u5-l6",
+      "unit_id": "english-u5",
+      "subject_id": "english",
+      "title_ar": "What could have happened?",
+      "title_en": "What could have happened?",
+      "sort_order": 6,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 38,
+      "source_detail": "Lesson: What could have happened?"
+    },
+    {
+      "id": "english-u5-l7",
+      "unit_id": "english-u5",
+      "subject_id": "english",
+      "title_ar": "Language review 10",
+      "title_en": "Language review 10",
+      "sort_order": 7,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 39,
+      "source_detail": "Lesson: Language review 10"
+    },
+    {
+      "id": "english-u5-l8",
+      "unit_id": "english-u5",
+      "subject_id": "english",
+      "title_ar": "Tracks in the sand",
+      "title_en": "Tracks in the sand",
+      "sort_order": 8,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 40,
+      "source_detail": "Lesson: Tracks in the sand"
+    },
+    {
+      "id": "english-u6-l1",
+      "unit_id": "english-u6",
+      "subject_id": "english",
+      "title_ar": "Emergencies in the news",
+      "title_en": "Emergencies in the news",
+      "sort_order": 1,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 41,
+      "source_detail": "Lesson: Emergencies in the news"
+    },
+    {
+      "id": "english-u6-l2",
+      "unit_id": "english-u6",
+      "subject_id": "english",
+      "title_ar": "A lucky escape",
+      "title_en": "A lucky escape",
+      "sort_order": 2,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 42,
+      "source_detail": "Lesson: A lucky escape"
+    },
+    {
+      "id": "english-u6-l3",
+      "unit_id": "english-u6",
+      "subject_id": "english",
+      "title_ar": "Accident at Jebel Kebir",
+      "title_en": "Accident at Jebel Kebir",
+      "sort_order": 3,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 43,
+      "source_detail": "Lesson: Accident at Jebel Kebir"
+    },
+    {
+      "id": "english-u6-l4",
+      "unit_id": "english-u6",
+      "subject_id": "english",
+      "title_ar": "Saving Anwar",
+      "title_en": "Saving Anwar",
+      "sort_order": 4,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 44,
+      "source_detail": "Lesson: Saving Anwar"
+    },
+    {
+      "id": "english-u6-l5",
+      "unit_id": "english-u6",
+      "subject_id": "english",
+      "title_ar": "How a hospital works",
+      "title_en": "How a hospital works",
+      "sort_order": 5,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 45,
+      "source_detail": "Lesson: How a hospital works"
+    },
+    {
+      "id": "english-u6-l6",
+      "unit_id": "english-u6",
+      "subject_id": "english",
+      "title_ar": "Working in public service",
+      "title_en": "Working in public service",
+      "sort_order": 6,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 46,
+      "source_detail": "Lesson: Working in public service"
+    },
+    {
+      "id": "english-u6-l7",
+      "unit_id": "english-u6",
+      "subject_id": "english",
+      "title_ar": "Huge changes in Libyan health care",
+      "title_en": "Huge changes in Libyan health care",
+      "sort_order": 7,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 47,
+      "source_detail": "Lesson: Huge changes in Libyan health care"
+    },
+    {
+      "id": "english-u6-l8",
+      "unit_id": "english-u6",
+      "subject_id": "english",
+      "title_ar": "Discovering Yemen",
+      "title_en": "Discovering Yemen",
+      "sort_order": 8,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 48,
+      "source_detail": "Lesson: Discovering Yemen"
+    },
+    {
+      "id": "english-u6-l9",
+      "unit_id": "english-u6",
+      "subject_id": "english",
+      "title_ar": "Tourism and the future",
+      "title_en": "Tourism and the future",
+      "sort_order": 9,
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 49,
+      "source_detail": "Lesson: Tourism and the future"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ye-english-u1-l1-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l1",
+      "difficulty": 1,
+      "question_text": "Which word from the lesson best describes the shape of an orange?",
+      "options": [
+        "Rectangular",
+        "Round",
+        "Triangular",
+        "Straight"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Round",
+      "explanation": "The lesson gives the example sentence 'An orange is round.' Round is one of the shape words taught, along with rectangular, curved, square, triangular and straight.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 1,
+      "source_detail": "Lesson: Shapes, coverings and materials",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l1-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l1",
+      "difficulty": 2,
+      "question_text": "A fish is covered with ______, and a sheep is covered with ______.",
+      "options": [
+        "feathers / fur",
+        "scales / wool",
+        "hair / scales",
+        "wool / feathers"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "scales / wool",
+      "explanation": "The lesson's animal coverings are: hair, feathers, skin, fur, scales and wool. A fish has scales and a sheep has wool.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 1,
+      "source_detail": "Lesson: Shapes, coverings and materials",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l2-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l2",
+      "difficulty": 1,
+      "question_text": "In 'Lost', what has happened to the passenger's luggage?",
+      "options": [
+        "It was stolen at the airport",
+        "It has not arrived yet",
+        "It was sent to the wrong city",
+        "He left it on the plane from Paris"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "It has not arrived yet",
+      "explanation": "The passenger says he has just got off the plane from Paris, but his luggage hasn't arrived yet. He has two suitcases to describe.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 2,
+      "source_detail": "Lesson: Lost",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l2-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l2",
+      "difficulty": 2,
+      "question_text": "How does June describe her lost twin sister Kate?",
+      "options": [
+        "Taller than June, with short hair and a blue T-shirt",
+        "The same age as June, not as tall, a little bit fatter, with much longer hair",
+        "Older than June, with the same hair and a red dress",
+        "Shorter than June, with glasses and a green T-shirt"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "The same age as June, not as tall, a little bit fatter, with much longer hair",
+      "explanation": "June says Kate is her twin sister, ten years old, the same age as her, not as tall as her, a little bit fatter, and her hair is much longer. Her T-shirt is red.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 2,
+      "source_detail": "Lesson: Lost",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l3-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l3",
+      "difficulty": 1,
+      "question_text": "What is Rama?",
+      "options": [
+        "A cross between a lion and a tiger",
+        "A cross between a male camel and a female llama",
+        "A cross between a wolf and a jackal",
+        "A cross between a horse and a donkey"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "A cross between a male camel and a female llama",
+      "explanation": "The article says Rama the cama was born in Dubai in January 1998, a cross between a male camel and a female llama.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 3,
+      "source_detail": "Lesson: An unusual animal",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l3-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l3",
+      "difficulty": 2,
+      "question_text": "According to the article, how is Rama different from a camel and from a llama?",
+      "options": [
+        "She is bigger than a camel and smaller than a llama",
+        "She is bigger than a llama but not as big as a camel, and has the llama's valuable wool coat",
+        "She has no hump and lives in the mountains of South America",
+        "She is the same size as a camel and has the camel's hair coat"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "She is bigger than a llama but not as big as a camel, and has the llama's valuable wool coat",
+      "explanation": "Rama has a hump on her back like her father, is bigger than a llama but not as big as a camel, and has the wool coat of the llama, which is very valuable, unlike the hair coat of the camel.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 3,
+      "source_detail": "Lesson: An unusual animal",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l4-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l4",
+      "difficulty": 1,
+      "question_text": "Choose the correct comparative sentence.",
+      "options": [
+        "Hassan is older than me.",
+        "Hassan is more older than me.",
+        "Hassan is oldest than me.",
+        "Hassan is as older than me."
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Hassan is older than me.",
+      "explanation": "The lesson's example is 'Hassan is older than me.' The comparative form is 'older than', and the superlative is 'the oldest boy in the class'.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 4,
+      "source_detail": "Lesson: Language review 1",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l4-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l4",
+      "difficulty": 2,
+      "question_text": "Which sentence shows contrast in the way 'whereas' is used in the lesson?",
+      "options": [
+        "Whereas Ahmed worked hard, his brother didn't.",
+        "Whereas Ahmed worked hard, and his brother worked hard too.",
+        "Ahmed worked hard whereas to pass his exam.",
+        "Whereas is used only at the end of a sentence."
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Whereas Ahmed worked hard, his brother didn't.",
+      "explanation": "The lesson says 'whereas' can be used to give the same meaning as 'but', only to describe opposites: 'Whereas Ahmed worked hard, his brother didn't.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 4,
+      "source_detail": "Lesson: Language review 1",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l5-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l5",
+      "difficulty": 1,
+      "question_text": "Which of these is a word for describing the weather in 'The countryside'?",
+      "options": [
+        "A misty day",
+        "A rocky hill",
+        "A deep valley",
+        "A wide river"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "A misty day",
+      "explanation": "The lesson teaches four weather phrases: rainy weather, a misty day, a sunny afternoon and a windy evening.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 5,
+      "source_detail": "Lesson: The countryside",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l5-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l5",
+      "difficulty": 2,
+      "question_text": "Which pair correctly matches two countryside features from the lesson?",
+      "options": [
+        "A stream is a mountain; a desert is a river",
+        "Farmland is land used for farming; a valley is low land between hills",
+        "A coastline is a hill; a desert is a stream",
+        "A river is a small stream; a hill is flat farmland"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Farmland is land used for farming; a valley is low land between hills",
+      "explanation": "The lesson's countryside words are: a stream, a mountain, farmland, a river, a coastline, a valley, a desert and a hill. Farmland is farming land and a valley is the low land between hills.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 5,
+      "source_detail": "Lesson: The countryside",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l6-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l6",
+      "difficulty": 1,
+      "question_text": "In 'A drive in the countryside', where did the writer spend his holiday?",
+      "options": [
+        "In Scotland",
+        "In Wales",
+        "In Yemen",
+        "In Ireland"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "In Wales",
+      "explanation": "The text begins: 'Last year, I spent my holiday in Wales, where the scenery is wonderful.' He drives along the coast road.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 6,
+      "source_detail": "Lesson: A drive in the countryside",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l6-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l6",
+      "difficulty": 2,
+      "question_text": "What happens to the river as the writer drives higher?",
+      "options": [
+        "It gets wider and wider until it reaches the sea",
+        "It gets narrower and narrower until it is just a stream",
+        "It disappears underground",
+        "It joins the sea on the left"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "It gets narrower and narrower until it is just a stream",
+      "explanation": "The writer says: 'I drove higher and higher and the river got narrower and narrower, until it was just a stream.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 6,
+      "source_detail": "Lesson: A drive in the countryside",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l7-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l7",
+      "difficulty": 1,
+      "question_text": "According to Language review 2, what is the correct order of adjectives before a noun?",
+      "options": [
+        "Colour, opinion, size, age, shape, nationality, material",
+        "Opinion, size/build, age, shape, colour, nationality, material",
+        "Material, nationality, colour, shape, age, size, opinion",
+        "Age, opinion, colour, size, shape, material, nationality"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Opinion, size/build, age, shape, colour, nationality, material",
+      "explanation": "The lesson lists the adjective order: 1 Opinion (good, bad, beautiful), 2 Size/build, 3 Age, 4 Shape, 5 Colour, 6 Nationality, 7 Material — e.g. 'a beautiful, old, Yemeni building'.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 7,
+      "source_detail": "Lesson: Language review 2",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l7-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l7",
+      "difficulty": 2,
+      "question_text": "Which sentence joins two actions correctly with the -ing form, as taught in the lesson?",
+      "options": [
+        "The children ran out of school, laughing and shouting happily.",
+        "The children ran out of school, laugh and shout happily.",
+        "The children ran out of school, laughed and shouted happily.",
+        "The children ran out of school, to laugh and shouting happily."
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "The children ran out of school, laughing and shouting happily.",
+      "explanation": "The lesson shows joining sentences with the -ing form: 'The children ran out of school. They were laughing and shouting happily.' becomes 'The children ran out of school, laughing and shouting happily.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 7,
+      "source_detail": "Lesson: Language review 2",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l8-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l8",
+      "difficulty": 1,
+      "question_text": "In 'A view from a window', what time does Jane open her bedroom curtains?",
+      "options": [
+        "At five o'clock in the morning",
+        "At six o'clock in the morning",
+        "At seven o'clock in the morning",
+        "At eight o'clock in the morning"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "At six o'clock in the morning",
+      "explanation": "The text says: 'It was six o'clock in the morning. Jane opened the curtains of her bedroom window and looked out.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 8,
+      "source_detail": "Lesson: A view from a window",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u1-l8-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u1",
+      "lesson_id": "english-u1-l8",
+      "difficulty": 2,
+      "question_text": "How is Jane's description organised?",
+      "options": [
+        "From near to far",
+        "From far to near",
+        "From left to right only",
+        "In no particular order"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "From far to near",
+      "explanation": "Jane first describes the far-away horizon (a wall of white mist), then the wood a little bit nearer, then the field with cows, and finally the chickens just below her window — the description moves from far to near.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 8,
+      "source_detail": "Lesson: A view from a window",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l1-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l1",
+      "difficulty": 1,
+      "question_text": "According to the lesson, what is usually left out of English-language newspaper headlines?",
+      "options": [
+        "The verb 'to be', the articles a, an and the",
+        "All nouns and verbs",
+        "Numbers and dates",
+        "The names of people and places"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "The verb 'to be', the articles a, an and the",
+      "explanation": "The lesson says headlines generally use shortened, simplified sentences: in English-language headlines, the verb 'to be', the articles a, an and the are often left out, and the present tense is used even when talking about the past or the future.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 9,
+      "source_detail": "Lesson: Newspaper headlines",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l1-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l1",
+      "difficulty": 2,
+      "question_text": "Which word-formation example from the lesson is correct?",
+      "options": [
+        "pain + killer = painkiller; hope + less = hopeless",
+        "dark + ness = darken; un + well = well",
+        "pain + less = painless; hope + killer = hopeless",
+        "dark + en = darkness; un + well = unwell"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "pain + killer = painkiller; hope + less = hopeless",
+      "explanation": "The lesson's word-formation clues give: two known words make a new word (pain + killer = painkiller), suffixes (hope + less = hopeless, dark + en = darken) and prefixes (un + well = unwell).",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 9,
+      "source_detail": "Lesson: Newspaper headlines",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l2-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l2",
+      "difficulty": 1,
+      "question_text": "In 'Today's news', what did the wind turbines on White Hill start to do?",
+      "options": [
+        "They stopped working after a storm",
+        "They came into operation, providing power for over 600 homes",
+        "They were demolished to build a castle",
+        "They were moved to the south of England"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "They came into operation, providing power for over 600 homes",
+      "explanation": "The Daily Post summary says: 'Wind Turbines Start Operation — These wind turbines on White Hill came into operation yesterday, providing power for over 600 homes.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 10,
+      "source_detail": "Lesson: Today's news",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l2-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l2",
+      "difficulty": 2,
+      "question_text": "According to the Daily Post summary, what is the 'Arctic ice scare'?",
+      "options": [
+        "The Arctic ice layer is half as thick as it was ten years ago",
+        "A ship was trapped in Arctic ice for ten years",
+        "The North Pole has completely melted",
+        "Scientists found a Roman dam under the ice"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "The Arctic ice layer is half as thick as it was ten years ago",
+      "explanation": "The summary says: 'Arctic ice scare — The arctic ice layer is half as thick as it was ten years ago, a scientist working at the North Pole said yesterday.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 10,
+      "source_detail": "Lesson: Today's news",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l3-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l3",
+      "difficulty": 1,
+      "question_text": "In Don's dream, what frightens him?",
+      "options": [
+        "A spaceship landing in the field",
+        "Two men with horrible faces, one holding a gun, and he cannot move",
+        "A bird talking to him in the balloon",
+        "Falling from a kilometre high"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Two men with horrible faces, one holding a gun, and he cannot move",
+      "explanation": "Don dreams he is working in the fields with his brother when two men run towards them; one is holding a gun, and he and his brother want to run but cannot move. He calls it a nightmare.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 11,
+      "source_detail": "Lesson: Don and Debbie: dreamers",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l3-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l3",
+      "difficulty": 2,
+      "question_text": "What happens at the end of Debbie's dream?",
+      "options": [
+        "She wakes up after falling off the bird's back from a kilometre high",
+        "She lands the balloon safely on a mountain",
+        "The bird tells her to climb back into the balloon",
+        "She flies over the sea and never wakes up"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "She wakes up after falling off the bird's back from a kilometre high",
+      "explanation": "Debbie dreams of flying in a balloon, then on a bird's back over mountains and sea. She loses her hold on the bird's feathers, falls from a kilometre high, and wakes up.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 11,
+      "source_detail": "Lesson: Don and Debbie: dreamers",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l4-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l4",
+      "difficulty": 1,
+      "question_text": "Choose the correct passive sentence, as taught in Language review 3.",
+      "options": [
+        "The police arrested a man for dangerous driving.",
+        "A man was arrested for dangerous driving.",
+        "A man arrested for dangerous driving.",
+        "The police was arrested a man."
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "A man was arrested for dangerous driving.",
+      "explanation": "The lesson explains the passive makes the thing done more important than the person who does it: 'The police arrested a man for dangerous driving' becomes 'A man was arrested for dangerous driving.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 12,
+      "source_detail": "Lesson: Language review 3",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l4-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l4",
+      "difficulty": 2,
+      "question_text": "Which sentence uses 'be + to + infinitive' to talk about a future plan, as in the lesson?",
+      "options": [
+        "The President is to meet the ambassador tomorrow.",
+        "The President met the ambassador yesterday.",
+        "The President is meeting the ambassador now.",
+        "The President has met the ambassador before."
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "The President is to meet the ambassador tomorrow.",
+      "explanation": "The lesson says 'be + to + infinitive' is used to talk about future plans or forecasts, often in newspapers: 'The President is to meet the ambassador tomorrow.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 12,
+      "source_detail": "Lesson: Language review 3",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l5-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l5",
+      "difficulty": 1,
+      "question_text": "According to the definitions in 'Natural disasters', what is a famine?",
+      "options": [
+        "A shortage of food, during which people sometimes starve",
+        "A mountain with a hole in the top",
+        "A very large wood that catches fire",
+        "A powerful storm with strong winds"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "A shortage of food, during which people sometimes starve",
+      "explanation": "The lesson defines a famine as a shortage of food: 'During a famine, people sometimes starve, they die of hunger.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 13,
+      "source_detail": "Lesson: Natural disasters",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l5-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l5",
+      "difficulty": 2,
+      "question_text": "What causes an earthquake, according to the lesson?",
+      "options": [
+        "Two plates moving along a fault line",
+        "Smoke rising from a volcano",
+        "A long period without rain",
+        "Deep water over normally dry land"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Two plates moving along a fault line",
+      "explanation": "The lesson explains the earth's crust is divided into plates; where two plates meet is a fault line, and two plates moving along a fault line causes an earthquake, during which the ground moves and shakes.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 13,
+      "source_detail": "Lesson: Natural disasters",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l6-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l6",
+      "difficulty": 1,
+      "question_text": "In the newspaper report, how strong were the hurricane winds?",
+      "options": [
+        "Over 100 kph",
+        "Over 240 kph",
+        "Over 500 kph",
+        "Over 50 kph"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Over 240 kph",
+      "explanation": "The report says the storm hit late on Tuesday evening and 'Winds of over 240 kph demolished all the wooden houses and tore the roofs off others.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 14,
+      "source_detail": "Lesson: A newspaper report",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l6-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l6",
+      "difficulty": 2,
+      "question_text": "According to the report, what happened in the large towns of Central America?",
+      "options": [
+        "Nearly three-quarters of all buildings were destroyed",
+        "Only the hospitals were damaged",
+        "The towns were not affected at all",
+        "All the roads were rebuilt in one day"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Nearly three-quarters of all buildings were destroyed",
+      "explanation": "The report says: 'In the large towns, nearly three-quarters of all buildings have been destroyed. In the countryside, whole villages, in which hundreds of people lived, have disappeared.' About 10,000 are feared dead.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 14,
+      "source_detail": "Lesson: A newspaper report",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l7-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l7",
+      "difficulty": 1,
+      "question_text": "Which sentence uses the present perfect tense to describe the present situation, as in Language review 4?",
+      "options": [
+        "The storm hit the area late on Tuesday evening.",
+        "The worst hurricane in living memory has caused terrible damage.",
+        "People stood around silently.",
+        "The house I used to live in is very old."
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "The worst hurricane in living memory has caused terrible damage.",
+      "explanation": "The lesson says to use the present perfect tense to describe the present situation: 'The worst hurricane in living memory has caused terrible damage.' The past simple is for something that happened at a known time.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 15,
+      "source_detail": "Lesson: Language review 4",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l7-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l7",
+      "difficulty": 2,
+      "question_text": "In 'Sana'a Secondary School, to which I went when I was younger, is one of the biggest schools in the country', where is the preposition?",
+      "options": [
+        "At the end of the relative clause",
+        "At the beginning of the relative clause, between commas",
+        "There is no preposition in the sentence",
+        "After the verb 'is'"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "At the beginning of the relative clause, between commas",
+      "explanation": "The lesson contrasts the two kinds of relative clause: in a necessary-information clause the preposition is at the end ('the house I used to live in'), but in an additional-information clause it is at the beginning ('to which I went when I was younger') and the clause is written between commas.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 15,
+      "source_detail": "Lesson: Language review 4",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l8-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l8",
+      "difficulty": 1,
+      "question_text": "According to the Richter scale table in 'Armenia – 7, December 1988', what effect does an earthquake of more than 8.0 have?",
+      "options": [
+        "Slight damage to buildings",
+        "Considerable damage to buildings",
+        "Great damage",
+        "Almost total damage"
+      ],
+      "correct_option_index": 3,
+      "correct_answer": "Almost total damage",
+      "explanation": "The table says: More than 8.0 — Almost total damage; More than 7.4 — Great damage; 7.0–7.3 — Serious damage, metal bridges bent; 6.2–6.9 — Considerable damage; 5.5–6.1 — Slight damage.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 16,
+      "source_detail": "Lesson: Armenia – 7, December 1988",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u2-l8-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u2",
+      "lesson_id": "english-u2-l8",
+      "difficulty": 2,
+      "question_text": "What did the newsflashes report about the town of Spitak?",
+      "options": [
+        "It was completely flattened, with about 20,000 killed",
+        "It was not damaged at all",
+        "It was hit by a flood, not an earthquake",
+        "Its people were evacuated before the earthquake"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "It was completely flattened, with about 20,000 killed",
+      "explanation": "A newsflash at 15.00 says: 'Spitak completely flattened. Most of population — 20,000 — killed. In Leninakan, Armenia's largest city, thousands of people are homeless. One in five buildings destroyed.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 16,
+      "source_detail": "Lesson: Armenia – 7, December 1988",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l1-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l1",
+      "difficulty": 1,
+      "question_text": "What is 'work experience', as explained in the lesson?",
+      "options": [
+        "A full-time permanent job after school",
+        "The chance to find out about different jobs by working at weekends or in school holidays",
+        "A training course at university",
+        "An interview for a job"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "The chance to find out about different jobs by working at weekends or in school holidays",
+      "explanation": "The lesson says organisations help young people by offering them 'work experience' — the chance to find out about different jobs by working at the weekends or in the school holidays.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 17,
+      "source_detail": "Lesson: Getting work experience",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l1-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l1",
+      "difficulty": 2,
+      "question_text": "Which work experience notice asks for someone with a driving licence?",
+      "options": [
+        "WEO 8, the Ministry of Health office job",
+        "WEO 7, helping the Society for the Handicapped organise trips",
+        "WEO 5, the City TV station job",
+        "WEO 2, the Central Hospital job"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "WEO 7, helping the Society for the Handicapped organise trips",
+      "explanation": "Notice WEO 7 says: 'Would you like to help the Society for the Handicapped organise trips for its members? You will take the members on trips yourself, so a driving licence is required. No experience is necessary.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 17,
+      "source_detail": "Lesson: Getting work experience",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l2-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l2",
+      "difficulty": 1,
+      "question_text": "What is Patrick's ambition, and what is his best subject?",
+      "options": [
+        "To become a doctor; Biology",
+        "To become a teacher; Mathematics",
+        "To work in business; Sport",
+        "To become a social worker; History"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "To become a doctor; Biology",
+      "explanation": "Patrick's ambition after leaving school is to become a doctor. His best subject is Biology and his worst is Mathematics. He has been going to first-aid evening classes and enjoys underwater swimming.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 18,
+      "source_detail": "Lesson: Thinking about the future",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l2-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l2",
+      "difficulty": 2,
+      "question_text": "Which person would most suit work helping other people as a social worker?",
+      "options": [
+        "Justin, who likes driving and cooking",
+        "Fareeda, who is very helpful, takes old people shopping and wants to help other people",
+        "Clara, who collects folk-music CDs",
+        "Andrew, who has a driving licence and likes nature"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Fareeda, who is very helpful, takes old people shopping and wants to help other people",
+      "explanation": "Fareeda is described as very helpful and popular; at weekends she takes old people shopping in her parents' car, and she wants to help other people in some way, perhaps as a social worker.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 18,
+      "source_detail": "Lesson: Thinking about the future",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l3-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l3",
+      "difficulty": 1,
+      "question_text": "In 'Getting careers advice', what is the school-leaver good at?",
+      "options": [
+        "Mathematics and Chemistry",
+        "History and Geography",
+        "English and Sport",
+        "Physics and Biology"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "History and Geography",
+      "explanation": "The school-leaver says he is not good at Maths — 'I'm hopeless at it' — and when asked what he is good at, he answers 'History... and Geography... and that's it.' He has recently been working in a hospital and enjoys it very much.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 19,
+      "source_detail": "Lesson: Getting careers advice",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l3-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l3",
+      "difficulty": 2,
+      "question_text": "Which phrase is used in the lesson for TURNING DOWN advice?",
+      "options": [
+        "That's a good idea.",
+        "If I were you, I would...",
+        "That's not a very good idea.",
+        "Can you help me, please?"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "That's not a very good idea.",
+      "explanation": "The lesson's boxes give: Asking for advice — 'Can you help me, please?'; Accepting advice — 'That's a good idea'; Giving advice — 'If I were you, I would...'; Turning down advice — 'That's not a very good idea', 'I don't like doing that', 'I'm not good/very bad at that.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 19,
+      "source_detail": "Lesson: Getting careers advice",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l4-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l4",
+      "difficulty": 1,
+      "question_text": "Which sentence is in the present perfect continuous, as taught in Language review 5?",
+      "options": [
+        "I have done my homework.",
+        "He has been playing football.",
+        "I have lived here for six years.",
+        "It began to rain."
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "He has been playing football.",
+      "explanation": "The lesson's examples of the present perfect continuous are: 'He has been playing football', 'It has been raining', 'Mona has been studying English for six years' and 'The weather has been getting warmer recently.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 20,
+      "source_detail": "Lesson: Language review 5",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l4-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l4",
+      "difficulty": 2,
+      "question_text": "What is the difference between 'I've read that book' and 'I've been reading that book' in the lesson?",
+      "options": [
+        "The simple tense emphasises completion of the action; the continuous tense emphasises how long the action has been going on",
+        "The simple tense is about the future; the continuous is about the past",
+        "There is no difference in meaning",
+        "The continuous tense is only used with the verb 'read'"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "The simple tense emphasises completion of the action; the continuous tense emphasises how long the action has been going on",
+      "explanation": "The lesson says the simple tense emphasises the completion of the action and can refer to actions that happened a long time ago, while the continuous tense emphasises how long the action has been going on and usually refers to something that has been happening recently.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 20,
+      "source_detail": "Lesson: Language review 5",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l5-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l5",
+      "difficulty": 1,
+      "question_text": "Which of these job names is a compound noun, as taught in 'Jobs and qualities'?",
+      "options": [
+        "Teacher",
+        "Taxi-driver",
+        "Doctor",
+        "Nurse"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Taxi-driver",
+      "explanation": "The lesson says some job names combine two nouns into one word and are called compounds, for example taxi-driver. Sometimes they are joined (shopkeeper), sometimes hyphenated (life-guard), sometimes two words (English teacher).",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 21,
+      "source_detail": "Lesson: Jobs and qualities",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l5-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l5",
+      "difficulty": 2,
+      "question_text": "If you want to be a teacher you must be patient. What noun does the employer ask for?",
+      "options": [
+        "Politeness",
+        "Patience",
+        "Confidence",
+        "Ability"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Patience",
+      "explanation": "The lesson says: 'If you want to be a teacher you must be patient. In an advertisement the employer will ask for someone who shows patience.' The adjective–noun pairs include polite/politeness, patient/patience, confident/confidence and able/ability.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 21,
+      "source_detail": "Lesson: Jobs and qualities",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l6-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l6",
+      "difficulty": 1,
+      "question_text": "What does the Adult Education Development Worker job involve?",
+      "options": [
+        "Teaching adults with learning difficulties in their own homes",
+        "Selling ice-cream to hospitals and hotels",
+        "Organising trips for the handicapped",
+        "Working in a hospital as a nurse"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Teaching adults with learning difficulties in their own homes",
+      "explanation": "The advertisement says the Ministry of Education is looking for a confident and well-educated individual to work locally, teaching adults with learning difficulties in their own homes. A driving licence is desirable and the successful applicant will have good communication skills, experience of teaching and be computer literate.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 22,
+      "source_detail": "Lesson: Applying for a job",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l6-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l6",
+      "difficulty": 2,
+      "question_text": "Which applicant better fits the job's requirements, and why?",
+      "options": [
+        "Tim Brook, because he has worked in adult education for two years",
+        "Kate Ash, because she is a qualified teacher with adult-education training, experience with adults with learning difficulties, computer experience and a driving licence",
+        "Neither applicant has any relevant experience",
+        "Both applicants are equally qualified in every way"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Kate Ash, because she is a qualified teacher with adult-education training, experience with adults with learning difficulties, computer experience and a driving licence",
+      "explanation": "Kate Ash is 24, a qualified Primary School teacher since 21, has had training in adult education, spent months teaching evening classes for adults with learning difficulties, has been using computers, and has recently passed her driving test. Tim Brook has adult-education experience and a driving licence but no experience of working on computers.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 22,
+      "source_detail": "Lesson: Applying for a job",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l7-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l7",
+      "difficulty": 1,
+      "question_text": "Which preposition correctly follows 'interested', as taught in Language review 6?",
+      "options": [
+        "interested for",
+        "interested in",
+        "interested of",
+        "interested to"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "interested in",
+      "explanation": "The lesson lists words commonly followed by prepositions: nouns — training in, experience of, chance of; adjectives — interested in, grateful for; verbs — look forward to, applying for. They are always followed by a noun or a gerund.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 23,
+      "source_detail": "Lesson: Language review 6",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l7-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l7",
+      "difficulty": 2,
+      "question_text": "Which connecting word shows CONSEQUENCE in the lesson?",
+      "options": [
+        "Furthermore",
+        "As well as",
+        "Consequently",
+        "Also"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "Consequently",
+      "explanation": "For addition the lesson gives as well as, together with, as well/also, furthermore and in addition. For consequence it gives because, so, therefore, thus (followed by -ing), consequently, as a consequence, as a result, accordingly and that is why.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 23,
+      "source_detail": "Lesson: Language review 6",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l8-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l8",
+      "difficulty": 1,
+      "question_text": "If you begin a business letter with 'Dear Sir', how must you close it?",
+      "options": [
+        "Yours sincerely",
+        "Yours faithfully",
+        "Best wishes",
+        "Love"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Yours faithfully",
+      "explanation": "The lesson's note says: if you use the greeting 'Dear Sir' or 'Dear Madam', you must use 'Yours faithfully' to close; if you use 'Dear Mr/Mrs Jones', you must use 'Yours sincerely'.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 24,
+      "source_detail": "Lesson: A business letter",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u3-l8-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u3",
+      "lesson_id": "english-u3-l8",
+      "difficulty": 2,
+      "question_text": "According to the 'Fantastic Job Opportunity' advertisement, who are the newspaper looking for?",
+      "options": [
+        "Experienced teachers over 25",
+        "Young men and women to train as reporters and photographers for a magazine for people under 25",
+        "Doctors for a new hospital",
+        "Drivers with a full licence"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Young men and women to train as reporters and photographers for a magazine for people under 25",
+      "explanation": "The advertisement says: 'We are looking for young men and women to train as reporters and photographers for a new general interest magazine for people under 25. No experience is necessary but the successful applicants must be willing to work hard and already have a wide range of interests.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 24,
+      "source_detail": "Lesson: A business letter",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l1-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l1",
+      "difficulty": 1,
+      "question_text": "Which of these foods is a grain crop, according to 'Food'?",
+      "options": [
+        "Sorghum",
+        "Mango",
+        "Fig",
+        "Grape"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Sorghum",
+      "explanation": "The lesson lists things grown in Yemen — dates, figs, mangoes, papayas, sorghum, apricots, grapes, pears — and asks 'What is a grain crop?' Sorghum is the grain crop among them.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 25,
+      "source_detail": "Lesson: Food",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l1-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l1",
+      "difficulty": 2,
+      "question_text": "What do you get if you squeeze a lemon, and which verb means to cut something into small pieces?",
+      "options": [
+        "Lemon juice / chop",
+        "Lemon peel / grate",
+        "Lemon oil / grind",
+        "Lemon pulp / boil"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Lemon juice / chop",
+      "explanation": "The lesson's cooking verbs are boil, squeeze, peel, crush, grate, chop, grill and grind, and it asks 'What do you get if you squeeze a lemon?' — lemon juice. 'Chop' means to cut into small pieces.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 25,
+      "source_detail": "Lesson: Food",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l2-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l2",
+      "difficulty": 1,
+      "question_text": "In 'Learning to cook', what is a loomi?",
+      "options": [
+        "A mixture of spices",
+        "A small, dried lime",
+        "A kind of fish",
+        "A cooking pot"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "A small, dried lime",
+      "explanation": "James's mother explains: 'It's a loomi — a small, dried lime.' Baharat, by contrast, is a mixture of spices.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 26,
+      "source_detail": "Lesson: Learning to cook",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l2-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l2",
+      "difficulty": 2,
+      "question_text": "What is the correct order of the main steps in making the fish curry?",
+      "options": [
+        "Fry the fish first, then fry the onions and spices, then add water",
+        "Fry the onions and garlic, add the spices, add tomatoes and loomi, cover with water and simmer; fry the fish separately and add it to the sauce",
+        "Boil the fish in water, then add the raw spices",
+        "Add the spices to the raw fish, then boil everything together for fifteen minutes"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Fry the onions and garlic, add the spices, add tomatoes and loomi, cover with water and simmer; fry the fish separately and add it to the sauce",
+      "explanation": "The mother explains: fry the onions and garlic, add the spices and fry for a further two minutes, add the tomatoes, loomi, lemon juice, salt and pepper, cover with water and simmer for fifteen minutes. While the mixture is boiling gently, fry the fish pieces until golden brown, then put the fish into the sauce and simmer for a further fifteen minutes.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 26,
+      "source_detail": "Lesson: Learning to cook",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l3-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l3",
+      "difficulty": 1,
+      "question_text": "According to 'Agriculture in Yemen', what is Yemen's most famous crop?",
+      "options": [
+        "Cotton",
+        "Coffee",
+        "Sorghum",
+        "Dates"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Coffee",
+      "explanation": "The text says that in the highest parts of the slopes, with a moderate climate and rather cold winter nights, 'it is here that Yemen's most famous crop, coffee, is grown.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 27,
+      "source_detail": "Lesson: Agriculture in Yemen",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l3-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l3",
+      "difficulty": 2,
+      "question_text": "What grows in the Tihamah, the hot coastal zone of Northern Yemen?",
+      "options": [
+        "Apples, pears and grapes",
+        "Dates and cotton, as well as vegetables and grains",
+        "Only coffee",
+        "Mangoes, papayas and bananas"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Dates and cotton, as well as vegetables and grains",
+      "explanation": "The Tihamah (sea level to 300m) has a tropical climate, hot and humid in summer. 'Dates and cotton grow well here, as do vegetables and grains, which are both a winter and summer crop.' Mangoes, papayas and bananas grow in Zone 2 (300–2,200m).",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 27,
+      "source_detail": "Lesson: Agriculture in Yemen",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l4-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l4",
+      "difficulty": 1,
+      "question_text": "Choose the correct passive form of 'People grow coffee in Yemen.'",
+      "options": [
+        "Coffee grows in Yemen by people.",
+        "Coffee is grown in Yemen.",
+        "Coffee was growing in Yemen.",
+        "People are grown coffee in Yemen."
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Coffee is grown in Yemen.",
+      "explanation": "Language review 7 shows: 'People grow coffee in Yemen' becomes 'Coffee is grown in Yemen.' The passive is used when you want to make the object more important than the subject, and the original subject is often omitted.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 28,
+      "source_detail": "Lesson: Language review 7",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l4-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l4",
+      "difficulty": 2,
+      "question_text": "Which sentence correctly uses 'while' + present continuous with present simple to show two actions happening at the same time?",
+      "options": [
+        "While the mixture is boiling gently, you fry the pieces of fish.",
+        "While the mixture boiled gently, you fried the pieces of fish yesterday.",
+        "While the mixture is boiling gently, you fried the pieces of fish.",
+        "While the mixture boils gently, you will fry the pieces of fish tomorrow."
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "While the mixture is boiling gently, you fry the pieces of fish.",
+      "explanation": "The lesson's example is: 'While the mixture is boiling gently, you fry the pieces of fish.' — while + present continuous with the present simple shows two actions happening at the same time.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 28,
+      "source_detail": "Lesson: Language review 7",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l5-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l5",
+      "difficulty": 1,
+      "question_text": "According to 'Words and more words', which English words came from Arabic?",
+      "options": [
+        "Table and dinner",
+        "Algebra and zero",
+        "Kayak and igloo",
+        "Blueberry and farmhouse"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Algebra and zero",
+      "explanation": "The text says English borrowed words from many languages: from Latin, Greek and French (table, dinner, medicine); kayak and igloo from the Eskimo language; and 'the Arabic words algebra and zero' came into English through contact with Arab mathematicians. Sugar, cotton and coffee also came from the Arab world through trade.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 29,
+      "source_detail": "Lesson: Words and more words",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l5-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l5",
+      "difficulty": 2,
+      "question_text": "Which word is made by combining two different words, as taught in the lesson?",
+      "options": [
+        "Unhappy (prefix un- + happy)",
+        "Careless (care + -less)",
+        "Blueberry (blue + berry)",
+        "Comfortable (comfort + -able)"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "Blueberry (blue + berry)",
+      "explanation": "The lesson lists four ways of making new words: borrowing, adding a prefix or suffix (re- in remake, -less in careless, -able in comfortable), combining two words (blue + berry = blueberry, farmhouse, handbag, newspaper), and changing how a word is used (milk as noun and verb).",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 29,
+      "source_detail": "Lesson: Words and more words",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l6-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l6",
+      "difficulty": 1,
+      "question_text": "What was Aisha Yousif's hypothesis in her water-pressure experiment?",
+      "options": [
+        "The deeper the water, the greater the pressure.",
+        "The thicker the dam, the weaker the pressure.",
+        "Water pressure is the same at every depth.",
+        "The top jet of water is always the longest."
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "The deeper the water, the greater the pressure.",
+      "explanation": "Aisha's hypothesis was: 'The deeper the water, the greater the pressure.' Her question was why a dam is thicker at the bottom than at the top.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 30,
+      "source_detail": "Lesson: Investigating the world around us",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l6-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l6",
+      "difficulty": 2,
+      "question_text": "What did Aisha's data show, and what did she conclude?",
+      "options": [
+        "All four jets were the same length; the hypothesis was wrong",
+        "The jet at the top was the longest; pressure is greatest at the top",
+        "The jet at the bottom was the longest and the jet at the top the shortest, so the data confirmed the hypothesis",
+        "No water came out of any hole, so the experiment failed"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "The jet at the bottom was the longest and the jet at the top the shortest, so the data confirmed the hypothesis",
+      "explanation": "Her data: 'Four jets of water came out of the bottle. The jet at the top was the shortest and the jet at the bottom was the longest. The other two jets were in-between.' Her conclusion: the length of the jet is related to the pressure of the water — the greater the pressure, the longer the jet — so the data confirms the hypothesis.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 30,
+      "source_detail": "Lesson: Investigating the world around us",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l7-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l7",
+      "difficulty": 1,
+      "question_text": "In Language review 8, which sentence correctly uses 'have' + infinitive to give an instruction?",
+      "options": [
+        "Have the boy to put away his bag.",
+        "Have the boy put away his bag.",
+        "Have the boy putting away his bag.",
+        "Have the boy puts away his bag."
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Have the boy put away his bag.",
+      "explanation": "The lesson says have/get + infinitive replace instruction words such as ask, tell or order. With 'have', the infinitive is WITHOUT 'to': 'Have the boy put away his bag.' (With 'get' it is 'Get the boy to put away his bag.')",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 31,
+      "source_detail": "Lesson: Language review 8",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l7-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l7",
+      "difficulty": 2,
+      "question_text": "Which sentence uses two comparatives to show how one action causes the other, as in the lesson?",
+      "options": [
+        "The water is deeper than the dam.",
+        "The deeper the water, the greater the pressure.",
+        "The pressure is greater at the bottom.",
+        "Water pressure increases with depth."
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "The deeper the water, the greater the pressure.",
+      "explanation": "The lesson teaches two comparatives, one in each half of the sentence, to show how one action causes the other: 'The deeper the water, the greater the pressure' and 'The further you go down, the more your ears hurt.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 31,
+      "source_detail": "Lesson: Language review 8",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l8-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l8",
+      "difficulty": 1,
+      "question_text": "Why are frozen peas fresher than the peas you buy in the market?",
+      "options": [
+        "Because they are picked when they are hard",
+        "Because they are processed within two or three hours of being picked, while ordinary peas take many hours or even days to reach the shops",
+        "Because they are stored at -18°C for months",
+        "Because they are washed in salt water"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Because they are processed within two or three hours of being picked, while ordinary peas take many hours or even days to reach the shops",
+      "explanation": "The text says frozen peas are fresher because they are processed within two or three hours of being picked or harvested. Ordinary peas are first sent to the market and then on to shops, which can take many hours or even days, and all this time the peas are getting less and less fresh.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 32,
+      "source_detail": "Lesson: Frozen peas",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u4-l8-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u4",
+      "lesson_id": "english-u4-l8",
+      "difficulty": 2,
+      "question_text": "What is 'blanching' in the frozen-pea process?",
+      "options": [
+        "Cooling the peas to less than 20°C",
+        "Packing the peas into big bags",
+        "Passing the peas through boiling water for one minute, or through steam for two or three minutes",
+        "Choosing the softer peas for freezing"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "Passing the peas through boiling water for one minute, or through steam for two or three minutes",
+      "explanation": "The process: the softer peas are chosen for freezing and the harder ones kept for canning; the peas are cleaned by fans, washed, then 'passed through boiling water for one minute, or through steam for two or three minutes, a process known as blanching.' Then they are cooled to less than 20°C, passed through salt water or brine, washed again and quick-frozen.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 32,
+      "source_detail": "Lesson: Frozen peas",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l1-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l1",
+      "difficulty": 1,
+      "question_text": "In 'Word sets', what do we call a group of connected words such as table, sofa, chair and armchair?",
+      "options": [
+        "A word set",
+        "A sentence",
+        "A paragraph",
+        "A spelling list"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "A word set",
+      "explanation": "The lesson says: 'A group of connected words is called a word set.' Table, sofa, chair and armchair are all pieces of furniture, so they belong to the same word set.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 33,
+      "source_detail": "Lesson: Word sets",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l1-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l1",
+      "difficulty": 2,
+      "question_text": "Which of these words belongs to the harbour word set in the lesson?",
+      "options": [
+        "Armchair",
+        "Telescope",
+        "Sofa",
+        "Table"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Telescope",
+      "explanation": "The harbour picture's word set includes mast, pulling up the sail, rowing, deck, cabin, horizon, climbing aboard, bow, oar, telescope, fishing boat, tanker, stern and net. Armchair, sofa and table belong to the furniture word set.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 33,
+      "source_detail": "Lesson: Word sets",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l2-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l2",
+      "difficulty": 1,
+      "question_text": "The children find an object with a number on it. Which sentence shows they are now CERTAIN what it is?",
+      "options": [
+        "It might be a coin.",
+        "It may be a piece of jewellery.",
+        "It must be a coin.",
+        "It could be an earring."
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "It must be a coin.",
+      "explanation": "The lesson says may/might/could express possibilities, but 'must' expresses certainty. When the children see the number on the object, they say: 'No, look. There is a number here. It must be a coin.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 34,
+      "source_detail": "Lesson: Possibilities",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l2-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l2",
+      "difficulty": 2,
+      "question_text": "What would happen if there was no more rain in Yemen, according to the lesson's example?",
+      "options": [
+        "The whole country would turn to desert.",
+        "The rivers would become wider.",
+        "People would move to the coast.",
+        "The farmland would produce more food."
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "The whole country would turn to desert.",
+      "explanation": "The lesson's example answer is: 'If there was no more rain in Yemen, the whole country would turn to desert.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 34,
+      "source_detail": "Lesson: Possibilities",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l3-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l3",
+      "difficulty": 1,
+      "question_text": "Who says: 'Can anybody tell me the name of the highest mountain in Africa?'",
+      "options": [
+        "A firefighter",
+        "A teacher",
+        "A farmer",
+        "A tour guide"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "A teacher",
+      "explanation": "In the lesson's puzzle, only one answer is possible for each speaker. 'Can anybody tell me the name of the highest mountain in Africa?' is the question of a teacher asking a class.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 35,
+      "source_detail": "Lesson: Puzzles and riddles",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l3-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l3",
+      "difficulty": 2,
+      "question_text": "What is the answer to this riddle: 'North, south, east or west — I'll show you where they are.'?",
+      "options": [
+        "A calculator",
+        "A parachute",
+        "A compass",
+        "A football"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "A compass",
+      "explanation": "The riddle object that shows north, south, east and west is a compass. The other riddles in the lesson are a football ('People kick me all the time...'), a calculator ('Without me you have to do your Mathematics homework in your head') and a parachute ('Hold me, jump off a mountain and fly like a bird').",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 35,
+      "source_detail": "Lesson: Puzzles and riddles",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l4-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l4",
+      "difficulty": 1,
+      "question_text": "Which sentence correctly uses 'must not' to forbid something, as taught in Language review 9?",
+      "options": [
+        "You must not look at your books during an exam.",
+        "It must not be a toothbrush.",
+        "You must not be able to swim.",
+        "It must not rain tomorrow."
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "You must not look at your books during an exam.",
+      "explanation": "The lesson says 'must not' is only used when you tell somebody they are not allowed to do something: 'You must not look at your books during an exam.' For negative certainty we use 'can't': 'It can't be a toothbrush.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 36,
+      "source_detail": "Lesson: Language review 9",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l4-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l4",
+      "difficulty": 2,
+      "question_text": "What is the difference between 'I saw the goats coming down the street' and 'I saw the goats come down the street'?",
+      "options": [
+        "The -ing form emphasises the action was continuous; the infinitive emphasises the action was completed",
+        "The -ing form is past tense; the infinitive is present tense",
+        "There is no difference in meaning",
+        "The -ing form is wrong after 'saw'"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "The -ing form emphasises the action was continuous; the infinitive emphasises the action was completed",
+      "explanation": "The lesson says sense verbs (see, hear, feel) are followed by object + verb. The -ing form emphasises the action was continuous ('I saw the goats coming down the street'), while the infinitive emphasises the action was completed ('I saw the goats come down the street').",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 36,
+      "source_detail": "Lesson: Language review 9",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l5-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l5",
+      "difficulty": 1,
+      "question_text": "On what date did Captain Morehouse of the Dei Gratia sight the Mary Celeste?",
+      "options": [
+        "5th December 1872",
+        "5th December 1873",
+        "7th December 1888",
+        "5th November 1872"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "5th December 1872",
+      "explanation": "The text begins: 'On 5th December 1872, Captain Morehouse of the Dei Gratia was sailing from New York to Gibraltar... at about nine o'clock in the morning, they sighted another ship.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 37,
+      "source_detail": "Lesson: The mystery of the Mary Celeste",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l5-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l5",
+      "difficulty": 2,
+      "question_text": "What did Captain Morehouse find when he boarded the Mary Celeste?",
+      "options": [
+        "The ship was completely deserted, but everything was in place and nothing had been taken",
+        "The crew had been killed by pirates",
+        "The ship was sinking and the lifeboats were gone",
+        "The captain's cabin had been robbed of gold and jewellery"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "The ship was completely deserted, but everything was in place and nothing had been taken",
+      "explanation": "The ship was deserted — nobody on deck, no one at the wheel — but in the cabins everything was in place, food was hanging over a dead fire and a half-eaten meal was on the table. Captain Morehouse found gold, jewellery and money on board: nothing had been taken and there was no sign of panic.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 37,
+      "source_detail": "Lesson: The mystery of the Mary Celeste",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l6-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l6",
+      "difficulty": 1,
+      "question_text": "Which of these is one of the possible explanations given for the Mary Celeste mystery?",
+      "options": [
+        "Pirates may have attacked the ship and sold the crew as slaves",
+        "The crew were rescued by a passing submarine",
+        "The ship was hit by a meteor",
+        "The crew flew away in a balloon"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Pirates may have attacked the ship and sold the crew as slaves",
+      "explanation": "The lesson lists five possible explanations: a huge monster dragged the people into the water; an island appeared and sank; a hurricane blew everybody off the ship; the people caught a terrible disease and drowned themselves; pirates attacked the ship, took the crew and passengers and sold them as slaves.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 38,
+      "source_detail": "Lesson: What could have happened?",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l6-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l6",
+      "difficulty": 2,
+      "question_text": "Which modal verb does the lesson use to express a possibility about the past, as in 'A hurricane ___ have blown everybody off the ship'?",
+      "options": [
+        "must",
+        "could",
+        "will",
+        "shall"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "could",
+      "explanation": "The lesson's explanations use may/might/could + have + past participle for past possibilities: 'A huge monster may have come up out of the sea', 'An island might have appeared suddenly', 'A hurricane could have blown everybody off the ship.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 38,
+      "source_detail": "Lesson: What could have happened?",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l7-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l7",
+      "difficulty": 1,
+      "question_text": "In reported speech, what does 'will' become?",
+      "options": [
+        "Would",
+        "Could",
+        "Should",
+        "Might"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Would",
+      "explanation": "Language review 10 shows the changes in reported speech: 'will' becomes 'would' and 'can' becomes 'could'; the simple past and the past perfect both become the past perfect.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 39,
+      "source_detail": "Lesson: Language review 10",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l7-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l7",
+      "difficulty": 2,
+      "question_text": "Which sentence correctly reports a suggestion using 'suggest + -ing'?",
+      "options": [
+        "I suggested to take a taxi.",
+        "I suggested taking a taxi.",
+        "I suggested that taking a taxi.",
+        "I suggested took a taxi."
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "I suggested taking a taxi.",
+      "explanation": "The lesson says: 'The verb suggest can be followed by the -ing form of the verb: I suggested taking a taxi.' It can also be followed by 'that + subject + should + infinitive': 'The Captain suggested that the sailors should search the ship.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 39,
+      "source_detail": "Lesson: Language review 10",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l8-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l8",
+      "difficulty": 1,
+      "question_text": "In 'Tracks in the sand', what did the narrator see the man do on the train?",
+      "options": [
+        "He took a gun out of his pocket, waved it, and jumped off the train as it was going round a bend",
+        "He bought a ticket and sat down quietly",
+        "He fell asleep in his seat",
+        "He spoke to the woman sitting next to him"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "He took a gun out of his pocket, waved it, and jumped off the train as it was going round a bend",
+      "explanation": "The narrator says: 'I saw him take a gun out of his pocket. He waved it... and jumped off the train as it was going round a bend.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 40,
+      "source_detail": "Lesson: Tracks in the sand",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u5-l8-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u5",
+      "lesson_id": "english-u5-l8",
+      "difficulty": 2,
+      "question_text": "What did the tracks in the sand show the narrator?",
+      "options": [
+        "The footprints of only one man, leading out of the village into the desert",
+        "The footprints of a large group of people going to the town",
+        "Tyre tracks of a car going to the railway station",
+        "No footprints at all, because the wind had covered them"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "The footprints of only one man, leading out of the village into the desert",
+      "explanation": "The narrator followed the tracks: 'They led out of the village into the desert. The footprints were those of one man only.' A woman in the village also said she had seen someone going off in the direction of the tracks.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 40,
+      "source_detail": "Lesson: Tracks in the sand",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l1-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l1",
+      "difficulty": 1,
+      "question_text": "Which headline matches the story of Mrs Khalifa Al-Tamari and her two children?",
+      "options": [
+        "DRIVERS INJURED IN HIGHWAY CRASH AND FIRE",
+        "HIT-AND-RUN DRIVER INJURES STUDENT",
+        "FAMILY SAVED FROM BURNING HOME",
+        "CASTLE TO GO"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "FAMILY SAVED FROM BURNING HOME",
+      "explanation": "Mrs Khalifa Al-Tamari, her son Amri (5) and daughter Shareefa (2) were rescued from a fire in their flat in Medina Road. Her husband Mustapha, helped by Fire Officer Nasser Badawi, carried his wife and children to safety.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 41,
+      "source_detail": "Lesson: Emergencies in the news",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l1-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l1",
+      "difficulty": 2,
+      "question_text": "What happened to Alia Nawaz, 18, in Harib Street?",
+      "options": [
+        "She was rescued from a burning flat",
+        "She was badly injured when a blue Suzuki jeep hit her and drove straight on",
+        "She was saved by two fire engines",
+        "She was treated for burns on her arms"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "She was badly injured when a blue Suzuki jeep hit her and drove straight on",
+      "explanation": "The article says: 'Alia Nawaz, 18, was badly injured yesterday in a horrific accident in Harib Street. Walking home from school at 1.30, she was hit by a blue Suzuki jeep which drove straight on.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 41,
+      "source_detail": "Lesson: Emergencies in the news",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l2-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l2",
+      "difficulty": 1,
+      "question_text": "In 'A lucky escape', how should you start describing the picture?",
+      "options": [
+        "With the things in the foreground",
+        "With the things furthest away",
+        "With the people on the right",
+        "With the nearest car"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "With the things furthest away",
+      "explanation": "The lesson says: 'Look at the picture. Then describe it using words that you collected in your Workbook in the last lesson and the language below. Start with the things furthest away.' The language is: 'In the distance, you can see... Nearer us, there's... In the foreground, there are...'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 42,
+      "source_detail": "Lesson: A lucky escape",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l2-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l2",
+      "difficulty": 2,
+      "question_text": "Which headline from page 41 fits the picture in 'A lucky escape'?",
+      "options": [
+        "FAMILY SAVED FROM BURNING HOME",
+        "HIT-AND-RUN DRIVER INJURES STUDENT",
+        "DRIVERS INJURED IN HIGHWAY CRASH AND FIRE",
+        "WIND TURBINES START OPERATION"
+      ],
+      "correct_option_index": 2,
+      "correct_answer": "DRIVERS INJURED IN HIGHWAY CRASH AND FIRE",
+      "explanation": "The lesson asks learners to 'choose and read out the correct headline from page 41'. The picture shows a highway crash scene on a mountain road with a lorry, a car, a police car and injured people, which fits 'DRIVERS INJURED IN HIGHWAY CRASH AND FIRE'.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 42,
+      "source_detail": "Lesson: A lucky escape",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l3-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l3",
+      "difficulty": 1,
+      "question_text": "What turned an ordinary job into a terrifying incident for Anwar at Jebel Kebir?",
+      "options": [
+        "A large rock started to roll, and hundreds and thousands of bees rose from the hives",
+        "A fire broke out in the farmhouse",
+        "A flood washed away the road",
+        "A snake bit Anwar on the hand"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "A large rock started to roll, and hundreds and thousands of bees rose from the hives",
+      "explanation": "Anwar and his father Kassim were nearly finished with the line of beehives when they heard a loud crash: a large rock was starting to roll, other rocks rolled and bounced down, and 'hundreds and thousands of bees rose from the hives.' Anwar tripped and fell, and his hat and face covering fell off.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 43,
+      "source_detail": "Lesson: Accident at Jebel Kebir",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l3-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l3",
+      "difficulty": 2,
+      "question_text": "Why did the incident become a major medical emergency, and where did Salwa decide to take Anwar?",
+      "options": [
+        "Anwar broke his leg; to the clinic in the village",
+        "Anwar had been stung hundreds of times and was almost unconscious; to the hospital in Hajjah",
+        "Anwar had lost a lot of blood; to Tripoli Central Hospital",
+        "Anwar could not breathe; to the fire station"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Anwar had been stung hundreds of times and was almost unconscious; to the hospital in Hajjah",
+      "explanation": "Salwa Mafous, the District Nurse, said: 'He's been stung hundreds of times... I've never seen anything like it!' Then she held his wrist to check his pulse: 'Quick! We must get him to hospital in Hajjah.' She put Anwar on the back seat of her car and drove away at high speed.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 43,
+      "source_detail": "Lesson: Accident at Jebel Kebir",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l4-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l4",
+      "difficulty": 1,
+      "question_text": "What is the task in 'Saving Anwar'?",
+      "options": [
+        "To read a text about Anwar and answer questions",
+        "To listen to a conversation and number the pictures in the order you hear them",
+        "To write a letter to the hospital",
+        "To act out the accident at Jebel Kebir"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "To listen to a conversation and number the pictures in the order you hear them",
+      "explanation": "The lesson says: 'Listen to the conversation. In Workbook activity A, number the pictures in the order you hear them.' The pictures show stages of saving Anwar, such as the drive to hospital and treatment in the hospital.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 44,
+      "source_detail": "Lesson: Saving Anwar",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l5-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l5",
+      "difficulty": 1,
+      "question_text": "In 'How a hospital works', who are put on the 'fast track'?",
+      "options": [
+        "People with less serious injuries, who wait longer",
+        "Patients who come by ambulance with a bad injury, such as from a bad car crash",
+        "Patients who only need an X-ray",
+        "Visitors who come with a patient"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "Patients who come by ambulance with a bad injury, such as from a bad car crash",
+      "explanation": "The visitor explains: 'We have a two-track system. We put people with really bad injuries on the 'fast track'. They're patients who come in by ambulance from a bad car crash, for example, or people like Anwar. They're the highest priorities, of course, and they get immediate treatment.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 45,
+      "source_detail": "Lesson: How a hospital works",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l5-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l5",
+      "difficulty": 2,
+      "question_text": "What does the reception nurse do in the casualty process?",
+      "options": [
+        "She registers the patient's personal details",
+        "She examines each patient and gives a priority — red for bad injuries and for young children and old people, blue for less serious injuries",
+        "She sends the patient for an X-ray",
+        "She drives the ambulance"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "She examines each patient and gives a priority — red for bad injuries and for young children and old people, blue for less serious injuries",
+      "explanation": "After the receptionist registers personal details, 'the reception nurse... quickly examines each patient and gives each one a priority — red for bad injuries and also for young children and old people, and blue for people with less serious injuries.' She adds her notes to the registration form and sends it to the team of doctors.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 45,
+      "source_detail": "Lesson: How a hospital works",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l6-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l6",
+      "difficulty": 1,
+      "question_text": "Which job does the district nurse do, according to 'Working in public service'?",
+      "options": [
+        "She works at the main entry port for Hajjis, helping people with cultural and social problems",
+        "She visits several villages each week, deals with major health problems, sends people to hospital in Hajjah and does health education",
+        "She plans the rebuilding of the city centre",
+        "She teaches English at a school"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "She visits several villages each week, deals with major health problems, sends people to hospital in Hajjah and does health education",
+      "explanation": "The third speaker says: 'Before, there was no health care in the area. I've been working here for eight years now, and things have really improved. I visit several each week, and I deal with more major problems... I also do a lot of health education. I feel good that we've reduced death and disease so much.' This is the district nurse.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 46,
+      "source_detail": "Lesson: Working in public service",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l6-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l6",
+      "difficulty": 2,
+      "question_text": "What do all three people in 'Working in public service' like about their work?",
+      "options": [
+        "They all earn a very high salary",
+        "They all like helping to make life better for other people",
+        "They all work in the same hospital",
+        "They all travel to other countries"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "They all like helping to make life better for other people",
+      "explanation": "The lesson ends with: 'Discuss what all these people like about their work.' Each speaker describes helping others: rebuilding the city to make life better for everyone, helping people with their problems, and improving health care and reducing death and disease.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 46,
+      "source_detail": "Lesson: Working in public service",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l7-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l7",
+      "difficulty": 1,
+      "question_text": "Why did Dr Suleiman Badawi decide to become a doctor in 1960?",
+      "options": [
+        "He wanted to earn a high salary in Tripoli",
+        "His friend Sadiq died of tuberculosis and his sister Fareeda was dying too, while the nearest doctor was 200 kilometres away",
+        "He was asked to run the Trachoma Centre in Benghazi",
+        "He wanted to study in Cairo"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "His friend Sadiq died of tuberculosis and his sister Fareeda was dying too, while the nearest doctor was 200 kilometres away",
+      "explanation": "Dr Badawi says: 'I remember the day in 1960 when I decided to become a doctor. I was 16, and two months earlier a good friend of mine, Sadiq, had died of tuberculosis. Now it seemed my younger sister, Fareeda, was going to die too... the nearest doctor was 200 kilometres away.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 47,
+      "source_detail": "Lesson: Huge changes in Libyan health care",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l7-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l7",
+      "difficulty": 2,
+      "question_text": "What happened in Dr Badawi's life in 1973, and what has Libya now stopped?",
+      "options": [
+        "He became Senior Surgeon at Tripoli Central Hospital; malaria, tuberculosis and trachoma have been stopped",
+        "He was asked to run the new Trachoma Centre in Benghazi; malaria, tuberculosis and trachoma have been stopped",
+        "He went to Cairo to train; measles has been stopped",
+        "He qualified as a doctor; tuberculosis has been stopped"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "He was asked to run the new Trachoma Centre in Benghazi; malaria, tuberculosis and trachoma have been stopped",
+      "explanation": "In 1973 he was asked to run the new Trachoma Centre in Benghazi. He became Senior Surgeon at Tripoli Central Hospital in 1987. He says: 'Through hard work, we have at last stopped the terrible diseases of yesterday — malaria, tuberculosis and trachoma.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 47,
+      "source_detail": "Lesson: Huge changes in Libyan health care",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l8-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l8",
+      "difficulty": 1,
+      "question_text": "In 'Discovering Yemen', how should you describe the picture?",
+      "options": [
+        "Start with the two four-wheel-drives in the foreground, then the things further away in the distance",
+        "Start with the mountains in the distance and end with the sky",
+        "Describe only the people in the cars",
+        "Start with the village and end with the cars"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "Start with the two four-wheel-drives in the foreground, then the things further away in the distance",
+      "explanation": "The lesson says: 'Describe what you can see — first the two four-wheel-drives in the foreground and then the things further away in the distance.' Then learners discuss where the picture was taken and where the people might be going.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 48,
+      "source_detail": "Lesson: Discovering Yemen",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l9-001",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l9",
+      "difficulty": 1,
+      "question_text": "Who is Faysal Hatem Al Qadhi, in the article 'Discovering Yemen'?",
+      "options": [
+        "The writer of the article",
+        "The driver of the four-wheel-drive and owner of a little travel company",
+        "A doctor at a hospital in Sana'a",
+        "A teacher from the capital"
+      ],
+      "correct_option_index": 1,
+      "correct_answer": "The driver of the four-wheel-drive and owner of a little travel company",
+      "explanation": "The article says: 'I became friends with Faysal Hatem Al Qadhi, the driver of the four-wheel-drive. I found out to my surprise that he was the owner of the little travel company that was taking us on this trip.'",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 49,
+      "source_detail": "Lesson: Tourism and the future",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    },
+    {
+      "id": "ye-english-u6-l9-002",
+      "type": "mcq",
+      "subject_id": "english",
+      "unit_id": "english-u6",
+      "lesson_id": "english-u6-l9",
+      "difficulty": 2,
+      "question_text": "What is Faysal's ambition for his travel company, and what does he hope for in a few years' time?",
+      "options": [
+        "To own eight or ten four-wheel-drives in two years and take visitors all over Yemen; to have a wife and children and own a house",
+        "To become very rich and move to the capital; to buy a hotel",
+        "To sell the company and work for a newspaper; to travel abroad",
+        "To keep just one old four-wheel-drive; to live alone in the mountains"
+      ],
+      "correct_option_index": 0,
+      "correct_answer": "To own eight or ten four-wheel-drives in two years and take visitors all over Yemen; to have a wife and children and own a house",
+      "explanation": "Faysal started his company fifteen months ago with just one old four-wheel-drive and now has two new vehicles. 'His ambition is to have eight or ten 4WDs two years from now and to take visitors all over Yemen.' He hopes in a few years he will have a wife and children; he doesn't want to be very rich, but hopes to own a house and give his family what they need.",
+      "source": "English Pupil's Course — Grade 12, Yemen, Sanaa 2027",
+      "source_page": 49,
+      "source_detail": "Lesson: Tourism and the future",
+      "tags": [
+        "page-read"
+      ],
+      "time_limit_seconds": 60,
+      "media_ref": null
+    }
+  ]
+}
