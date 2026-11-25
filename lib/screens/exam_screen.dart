@@ -73,18 +73,17 @@ class _ExamScreenState extends State<ExamScreen> {
           subject: world.id,
           subjectTitleAr: world.name,
           bank: bank,
-          onSubmitted: (ExamResult result) {
-            // كل امتحان مكتمل يُحفظ في exam_results.
-            unawaited(
-              DatabaseHelper.instance.recordExamResult(
-                examType: 'ministerial_exam',
-                subjectId: world.id,
-                totalQuestions: result.totalQuestions,
-                correctCount: result.correct,
-                scorePct: result.accuracyPercent.round(),
-                durationMs: result.secondsUsed * 1000,
-                isDemo: result.isDemoExam,
-              ),
+          onSubmitted: (ExamResult result) async {
+            // كل امتحان مكتمل يُحفظ في exam_results — والانتظار هنا
+            // حقيقي: فشل الإدخال كان يضيع بصمت مع unawaited.
+            await DatabaseHelper.instance.recordExamResult(
+              examType: 'ministerial_exam',
+              subjectId: world.id,
+              totalQuestions: result.totalQuestions,
+              correctCount: result.correct,
+              scorePct: result.accuracyPercent.round(),
+              durationMs: result.secondsUsed * 1000,
+              isDemo: result.isDemoExam,
             );
           },
         ),

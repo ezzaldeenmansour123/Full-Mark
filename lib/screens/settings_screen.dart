@@ -6,6 +6,7 @@ import 'package:material_ui/material_ui.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../core/backup.dart';
+import '../core/version.dart';
 import '../core/progress_store.dart';
 import '../core/routes.dart';
 import '../db/database.dart';
@@ -105,7 +106,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     try {
       final Map<String, Object?> data = await buildBackupData(
         DatabaseHelper.instance,
-        appVersion: '0.1.3+4',
+        appVersion: kAppVersion,
       );
       final String json = encodeBackupJson(data);
       final Uint8List bytes =
@@ -309,6 +310,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                   onTap: _exportBackup,
                 ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+                  child: Text(
+                    'ملاحظة: النسخة تحفظ التقدّم فقط (محاولات/إنجازات/مراجعة) — '
+                    'أما الأسئلة والمنهج فهي داخل التطبيق ويجب أن تكون موجودة '
+                    'على الجهاز المستقبِل قبل الاستيراد.',
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                ),
                 ListTile(
                   leading: const Icon(Icons.download),
                   title: const Text('استيراد نسخة احتياطية'),
@@ -351,7 +361,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 const ListTile(
                   leading: Icon(Icons.verified),
                   title: Text('الإصدار'),
-                  subtitle: Text('0.1.3+4'),
+                  subtitle: const Text(kAppVersion),
                 ),
                 const ListTile(
                   leading: Icon(Icons.wifi_off),

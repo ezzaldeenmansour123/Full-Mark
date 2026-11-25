@@ -311,6 +311,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
 
   Widget _buildTrendSection(ThemeData theme, AnalyticsSummary summary) {
     final List<double> trend = summary.accuracyTrend;
+    final List<DateTime> dates = summary.trendDates;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
@@ -323,17 +324,25 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
         const SizedBox(height: 8),
         if (trend.isEmpty)
           const Text('لا يوجد اتجاه بعد — يظهر بعد لعب أيام متعددة.'),
-        ...trend.asMap().entries.map((entry) => Card(
-              child: ListTile(
-                title: Text('اليوم ${entry.key + 1}'),
-                subtitle: LinearProgressIndicator(
-                  value: entry.value / 100,
-                  minHeight: 8,
-                  borderRadius: BorderRadius.circular(4),
-                ),
-                trailing: Text('${entry.value.round()}%'),
+        ...trend.asMap().entries.map((entry) {
+          final DateTime? day =
+              entry.key < dates.length ? dates[entry.key] : null;
+          return Card(
+            child: ListTile(
+              title: Text(
+                day == null
+                    ? 'اليوم ${entry.key + 1}'
+                    : '${day.day}/${day.month}/${day.year}',
               ),
-            )),
+              subtitle: LinearProgressIndicator(
+                value: entry.value / 100,
+                minHeight: 8,
+                borderRadius: BorderRadius.circular(4),
+              ),
+              trailing: Text('${entry.value.round()}%'),
+            ),
+          );
+        }),
       ],
     );
   }

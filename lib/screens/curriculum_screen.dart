@@ -1,7 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 
 import '../content/curriculum.dart';
-import '../core/routes.dart';
 import '../db/database.dart';
 import '../games/arabic_games.dart';
 import '../games/english_games.dart';
@@ -43,6 +42,10 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
   CurriculumData? _data;
   String? _error;
 
+  /// عدد الأسئلة لكل درس (null = لم يُحمَّل بعد؛ لا يُعرض أي ادعاء
+  /// عن درس قبل تحميل عدده، حتى لا تظهر شارة «لا توجد أسئلة» كاذبة).
+  Map<String, int>? _questionCounts;
+
   @override
   void initState() {
     super.initState();
@@ -52,6 +55,12 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     }).catchError((Object e) {
       if (!mounted) return;
       setState(() => _error = e.toString());
+    });
+    DatabaseHelper.instance
+        .getQuestionCountsForSubject(widget.subjectId)
+        .then((Map<String, int> counts) {
+      if (!mounted) return;
+      setState(() => _questionCounts = counts);
     });
   }
 
@@ -116,9 +125,10 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
           child: Padding(
             padding: EdgeInsets.all(16),
             child: Text(
-              'أسئلة الدروس متوفرة من الحزم الموثقة — اضغطي على أي درس '
-              'لبدء لعب أسئلته. كل سؤال يعرض مصدره ورقم صفحته، ولا يُعرض '
-              'أي سؤال مخترع أو بلا مصدر.',
+              'أسئلة الدروس متوفرة من الحزم الموثقة — شارة العدد على '
+              'كل درس توضح عدد أسئلته، والدرس بلا أسئلة يظهر «لا توجد '
+              'أسئلة» ولا يُفتح. كل سؤال يعرض مصدره ورقم صفحته، ولا '
+              'يُعرض أي سؤال مخترع أو بلا مصدر.',
               textAlign: TextAlign.center,
             ),
           ),
@@ -258,9 +268,10 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     );
   }
 
-  /// يفتح أسئلة درس واحد: أولاً منتقي الأنماط (الأنماط الخمسة القابلة
-  /// للعب فعلاً + محاكاة الامتحان الوزاري)، ثم `GameScreen` بالنمط
-  /// المختار. درس بلا أسئلة: رسالة صادقة، بلا لعبة وبلا أسئلة مخترعة.
+  /// يفتح أسئلة درس واحد: أولاً منتقي الأنماط (الأنماط القابلة
+  /// للعب فعلاً)، ثم `GameScreen` بالنمط المختار. درس بلا أسئلة:
+  /// لا أيقونة لعب ولا ضغطة عليه أصلاً (شارة «لا توجد أسئلة»)،
+  /// والحارس هنا احتياط أخير فقط: رسالة صادقة بلا أسئلة مخترعة.
   /// تُحفظ المرحلة الأخيرة عند بدء اللعبة، وتُسجَّل النتيجة كاملة
   /// (مع معرّف الدرس وعنوانه) قبل ظهور شاشة النتيجة.
   Future<void> _playLesson(String lessonTitle, String lessonId) async {
@@ -280,10 +291,6 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     }
     final String? picked = await _showModePicker(lessonTitle, questions);
     if (!mounted || picked == null) return;
-    if (picked == 'ministerial_exam') {
-      await Navigator.of(context).pushNamed(AppRoutes.exam);
-      return;
-    }
     if (picked == 'complete_equation') {
       await _playEquationGame(lessonTitle, lessonId);
       return;
@@ -382,8 +389,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     );
   }
 
-  /// Mode picker: ONLY the 7 really playable modes, plus the
-  /// ministerial-exam entry (which opens ExamScreen). Every entry
+  /// Mode picker: ONLY the 8 really playable modes. Every entry
   /// launches a real playable game — no placeholder entries.
   /// «أكمل المعادلة» is chemistry-only: its 4 equations are all
   /// chemistry, so it is hidden for other subjects. A mode is also
@@ -430,13 +436,10 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
                 isThreeLine: true,
                 onTap: () => Navigator.of(context).pop(mode.routeId),
               ),
-            ListTile(
-              leading: const Icon(Icons.school),
-              title: const Text('محاكاة الامتحان الوزاري'),
-              subtitle: const Text('جلسة امتحان مؤقتة كاملة — شاشة مستقلة.'),
-              onTap: () =>
-                  Navigator.of(context).pop('ministerial_exam'),
-            ),
+            // لا مدخل «محاكاة الامتحان الوزاري» هنا: الامتحان عام
+            // على المادة كلها ولا يخص هذا الدرس، وزرّه موجود في
+            // الشاشة الرئيسية وشاشة الامتحان. (أُزيل في v0.1.4؛
+            // كان يفتح الامتحان العام متجاهلاً الدرس المختار.)
           ],
         ),
       ),
@@ -468,22 +471,57 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
             ),
           for (int i = 0; i < unit.lessons.length; i++)
             if (allowPlay)
-              ListTile(
-                dense: true,
-                leading: CircleAvatar(
-                  radius: 13,
-                  backgroundColor: widget.color.withValues(alpha: 0.15),
-                  child: Text(
-                    '${i + 1}',
-                    style: TextStyle(fontSize: 12, color: widget.color),
-                  ),
-                ),
-                title: Text(unit.lessons[i]),
-                trailing: const Icon(Icons.play_circle_outline),
-                onTap: () => _playLesson(
-                  unit.lessons[i],
-                  '${widget.subjectId}-u${unit.number}-l${i + 1}',
-                ),
+              Builder(
+                builder: (BuildContext context) {
+                  final String lessonId =
+                      '${widget.subjectId}-u${unit.number}-l${i + 1}';
+                  // قبل تحميل الأعداد: السلوك القديم (أيقونة لعب)؛
+                  // وبعد التحميل: شارة العدد، والدرس بلا أسئلة بلا
+                  // أيقونة لعب وبلا ضغطة (الرسالة على الشارة نفسها).
+                  final int? count = _questionCounts?[lessonId];
+                  final bool noQuestions =
+                      _questionCounts != null && (count ?? 0) == 0;
+                  return ListTile(
+                    dense: true,
+                    leading: CircleAvatar(
+                      radius: 13,
+                      backgroundColor: widget.color.withValues(alpha: 0.15),
+                      child: Text(
+                        '${i + 1}',
+                        style: TextStyle(fontSize: 12, color: widget.color),
+                      ),
+                    ),
+                    title: Text(unit.lessons[i]),
+                    trailing: _questionCounts == null
+                        ? const Icon(Icons.play_circle_outline)
+                        : noQuestions
+                            ? const Chip(
+                                label: Text(
+                                  'لا توجد أسئلة',
+                                  style: TextStyle(fontSize: 11),
+                                ),
+                                visualDensity: VisualDensity.compact,
+                              )
+                            : Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: <Widget>[
+                                  Chip(
+                                    label: Text(
+                                      '$count أسئلة',
+                                      style:
+                                          const TextStyle(fontSize: 11),
+                                    ),
+                                    visualDensity: VisualDensity.compact,
+                                  ),
+                                  const SizedBox(width: 4),
+                                  const Icon(Icons.play_circle_outline),
+                                ],
+                              ),
+                    onTap: noQuestions
+                        ? null
+                        : () => _playLesson(unit.lessons[i], lessonId),
+                  );
+                },
               )
             else
               // Variant lesson rows are NOT tappable: plain text, never

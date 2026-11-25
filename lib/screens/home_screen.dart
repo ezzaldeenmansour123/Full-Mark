@@ -13,9 +13,14 @@ import '../models/question.dart';
 ///
 /// كل زر ينتقل إلى شاشة حقيقية. لا أزرار ميتة في هذا التطبيق.
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key, required this.store});
+  const HomeScreen({super.key, required this.store, this.seedError});
 
   final ProgressStore store;
+
+  /// Seeding problem reported at startup (missing/corrupt question
+  /// pack, or a failed curriculum/questions seed) — shown as a banner
+  /// so the missing content is never silent.
+  final String? seedError;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -51,7 +56,15 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _saveName() async {
     final String name = _nameController.text.trim();
-    if (name.isEmpty) return;
+    if (name.isEmpty) {
+      // كان الزر صامتاً تماماً عند الاسم الفارغ — الآن يشرح السبب.
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('اكتبي اسمك أولاً ثم اضغطي «حفظ الاسم»'),
+        ),
+      );
+      return;
+    }
     await widget.store.setPlayerName(name);
     if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
@@ -83,6 +96,19 @@ class _HomeScreenState extends State<HomeScreen> {
               child: ListView(
                 padding: const EdgeInsets.all(20),
                 children: <Widget>[
+                  if (widget.seedError != null)
+                    Card(
+                      color: Colors.amber.withValues(alpha: 0.2),
+                      child: Padding(
+                        padding: const EdgeInsets.all(12),
+                        child: Text(
+                          'تنبيه: بعض المحتوى لم يُحمَّل.\n${widget.seedError!}',
+                          style: const TextStyle(fontSize: 13),
+                        ),
+                      ),
+                    ),
+                  if (widget.seedError != null)
+                    const SizedBox(height: 12),
                   _buildHeader(theme),
                   const SizedBox(height: 20),
                   _buildNameField(theme),
@@ -168,7 +194,10 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildStatsCard(ThemeData theme) {
-    final int xpInLevel = _progress.xp % 500;
+    // Canonical helper (flat 500 XP per level) — the literals used
+    // to be duplicated here and could drift from levelForXp.
+    final int toNext = xpToNextLevel(_progress.xp);
+    final int xpInLevel = (500 - toNext) % 500;
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -266,6 +295,13 @@ class _HomeScreenState extends State<HomeScreen> {
         .getQuestionsForLesson(subjectId, stageId);
     if (!mounted) return;
     if (questions.isEmpty) {
+      // الدرس المحفوظ صار بلا أسئلة: امسحيه من «آخر مرحلة» حتى لا
+      // يبقى زر «متابعة» عالقاً عليه إلى الأبد، ثم حدّثي الشاشة
+      // فيعود الزر إلى «ابدئي أول مرحلة».
+      await DatabaseHelper.instance.clearLastStage();
+      if (!mounted) return;
+      await _load();
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(

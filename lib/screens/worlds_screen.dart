@@ -73,7 +73,7 @@ const List<WorldDef> kWorlds = <WorldDef>[
 ///
 /// كل العوالم السبعة مفتوحة من أول تثبيت — لا قفل تسلسلي: الضغط على أي
 /// عالم يعرض هيكل منهجه اليمني الموثّق من curriculum.json (وحدات ودروس
-/// بمصادرها وطبعاتها)، مع حالة «الأسئلة قيد الإعداد» حيث لا أسئلة بعد.
+/// بمصادرها وطبعاتها)، مع حالة «بلا أسئلة بعد» حيث لا أسئلة بعد.
 /// شريط التقدّم والنجوم حقيقيان من قاعدة البيانات ويتحركان بعد اللعب.
 class WorldsScreen extends StatefulWidget {
   const WorldsScreen({super.key});
@@ -158,7 +158,7 @@ class _WorldsScreenState extends State<WorldsScreen> {
 
   void _openWorld(BuildContext context, WorldDef world) {
     // كل عالم مفتوح: يعرض هيكل المنهج اليمني الموثّق من curriculum.json
-    // (وحدات ودروس بمصادرها وطبعاتها)، مع حالة «الأسئلة قيد الإعداد».
+    // (وحدات ودروس بمصادرها وطبعاتها)، مع حالة «بلا أسئلة بعد».
     Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => CurriculumScreen(
