@@ -153,7 +153,7 @@ void main() {
     });
 
     test('mixed demo/real pool is a partial demo, never a full simulation', () {
-      final realQ = Question(
+      final realQ = const Question(
         id: 'r1',
         subject: 'physics',
         unit: 'u1',
@@ -176,7 +176,7 @@ void main() {
     });
 
     test('types filter keeps only answerable types in the exam', () {
-      final fillQ = Question(
+      final fillQ = const Question(
         id: 'f1',
         subject: 'physics',
         unit: 'u1',
