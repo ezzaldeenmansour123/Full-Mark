@@ -45,6 +45,19 @@ class GameResult {
   /// Ids of questions answered wrongly (for the review plan).
   final List<String> wrongQuestionIds;
 
+  /// Ids of the questions actually played in this game, in play order.
+  /// Empty only when the game plays no bank questions at all (the
+  /// Islamic ordering game). DatabaseHelper.recordGameResult uses it
+  /// to skip questions that were NOT played — before, unplayed
+  /// questions were recorded as correct attempts.
+  final List<String> playedQuestionIds;
+
+  /// Real per-question time, keyed by question id (seconds). Empty
+  /// when the mode does not measure per-question time (sentence /
+  /// ordering / memory games) — callers must store 0 ("not measured"),
+  /// never a fabricated even spread of the total.
+  final Map<String, int> secondsByQuestionId;
+
   const GameResult({
     required this.modeId,
     required this.subject,
@@ -57,12 +70,32 @@ class GameResult {
     required this.elapsedSeconds,
     required this.perQuestionCorrect,
     required this.wrongQuestionIds,
+    this.playedQuestionIds = const <String>[],
+    this.secondsByQuestionId = const <String, int>{},
   });
 
   double get accuracyPercent =>
       totalQuestions == 0 ? 0 : correct * 100.0 / totalQuestions;
 
   int get stars => starsForAccuracy(accuracyPercent);
+
+  /// Streak bonus for a per-question correctness list, the same
+  /// rule the engine uses (GameEngine: each correct answer given while
+  /// the running streak is >= 3 earns +1 bonus). Shared so the
+  /// sentence/ordering games record a real bonus instead of 0.
+  static int streakBonusFor(List<bool> results) {
+    var streak = 0;
+    var bonus = 0;
+    for (final bool v in results) {
+      if (v) {
+        streak++;
+        if (streak >= 3) bonus++;
+      } else {
+        streak = 0;
+      }
+    }
+    return bonus;
+  }
 
   int get xpEarned => xpFor(correct: correct, streakBonus: streakBonus);
 
@@ -92,5 +125,7 @@ class GameResult {
         'xpEarned': xpEarned,
         'perQuestionCorrect': perQuestionCorrect,
         'wrongQuestionIds': wrongQuestionIds,
+        'playedQuestionIds': playedQuestionIds,
+        'secondsByQuestionId': secondsByQuestionId,
       };
 }
