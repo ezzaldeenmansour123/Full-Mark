@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../db/database.dart';
 import '../exam/ministerial_exam_screen.dart';
@@ -130,7 +130,7 @@ class _ExamScreenState extends State<ExamScreen> {
                 ),
                 const SizedBox(height: 16),
                 if (_questionCount == 0) ...<Widget>[
-                  const ElevatedButton.icon(
+                  ElevatedButton.icon(
                     onPressed: null,
                     icon: Icon(Icons.play_arrow),
                     label: Text('ابدئي المحاكاة'),

@@ -5,7 +5,7 @@
 // on any database code — onComplete is reported locally only.
 // NOT run — no Flutter/Dart SDK here.
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import '../labs/math_lab.dart';
 import '../labs/physics_lab.dart';
 import '../labs/chemistry_lab.dart';
