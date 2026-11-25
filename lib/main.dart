@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'content/curriculum.dart';
+import 'content/question_packs.dart';
 import 'core/progress_store.dart';
 import 'db/database.dart';
 import 'core/routes.dart';
@@ -25,14 +26,22 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final ProgressStore store = SqliteProgressStore();
   await store.init();
-  // زرع هيكل منهج صنعاء 2027 (وحدات/دروس فقط، بلا أسئلة) عند أول
-  // تشغيل — إن كان جدول الوحدات فارغاً. أي فشل هنا لا يمنع التشغيل.
+  // زرع هيكل منهج صنعاء 2027 (وحدات/دروس فقط) عند أول تشغيل — إن كان
+  // جدول الوحدات فارغاً. أي فشل هنا لا يمنع التشغيل.
   try {
     await DatabaseHelper.instance.seedCurriculumIfEmpty(
       () async => (await CurriculumData.load()).seedRows(),
     );
   } catch (_) {
     // يبقى التطبيق يعمل بهيكل فارغ صادق («قيد الإعداد»).
+  }
+  // زرع حزم الأسئلة الموثقة (بعد المنهج، لمفاتيحها الأجنبية) — حزمة
+  // مفقودة أو تالفة تُتخطَّى وتبقى مادتها «قيد الإعداد».
+  try {
+    await DatabaseHelper.instance
+        .seedQuestionPacks(await QuestionPacks.loadAll());
+  } catch (_) {
+    // يبقى التطبيق يعمل بلا أسئلة صادق («قيد الإعداد»).
   }
   final bool darkMode = await store.isDarkMode();
   runApp(AbqariyaApp(store: store, startDarkMode: darkMode));
