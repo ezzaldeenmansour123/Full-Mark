@@ -367,7 +367,7 @@ class DatabaseHelper {
     },
     <String, Object>{
       'id': 'fifty_attempts',
-      'title_ar': 'عبقرية صاعدة',
+      'title_ar': 'متفوقة صاعدة',
       'description_ar': 'أكملي 50 محاولة.',
       'icon_key': 'trending_up',
       'condition_type': 'attempts',

@@ -1,4 +1,4 @@
-// ABQARIYA — SQLite schema (single source of truth).
+// FULL MARK — SQLite schema (single source of truth).
 //
 // Phase 0 / Database v1. Written 2026-11-25. NOT compiled or tested locally:
 // no Flutter/Dart SDK exists in this environment, so `flutter analyze`,
