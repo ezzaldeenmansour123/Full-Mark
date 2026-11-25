@@ -69,7 +69,7 @@ const String kDemoSource = 'demo — not Yemeni curriculum';
 
 /// Subjects = the 7 worlds. Seeded from the content pack, never hard-coded
 /// in UI code: if a pack has no rows for a subject, that world shows
-/// «قيد الإعداد» instead of fake content.
+/// «بلا أسئلة بعد» instead of fake content.
 const String kCreateSubjects = '''
 CREATE TABLE IF NOT EXISTS subjects (
   id          TEXT PRIMARY KEY,
@@ -313,7 +313,7 @@ CREATE TABLE IF NOT EXISTS content_packs (
 
 /// Tiny key/value store: replaces shared_preferences entirely.
 /// Keys in v1: 'db_version' (mirrors kDatabaseVersion), 'demo_visible'
-/// ('1'/'0'), 'dark_mode' ('1'/'0'), 'sound_enabled' ('1'/'0'),
+/// ('1'/'0'), 'dark_mode' ('1'/'0'),
 /// 'last_pack_id', 'onboarding_done' ('1'/'0').
 const String kCreateAppMeta = '''
 CREATE TABLE IF NOT EXISTS app_meta (

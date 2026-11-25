@@ -132,7 +132,9 @@ class DatabaseHelper {
   /// حقيقة مهمة: v1 لم تُشحن أبداً على جهاز حقيقي (لا APK بُني بعد)،
   /// فلا توجد بيانات مستخدم حقيقية متوقعة. مع ذلك لا تُسقَط بيانات
   /// بصمت: تُقرأ بيانات v1 أولاً، ثم تُعاد كتابتها في المخطط الجديد:
-  /// - الإعدادات (player_name/sound_enabled/dark_mode) تُنقل كما هي.
+  /// - الإعدادات (player_name/dark_mode) تُنقل كما هي.
+  ///   (أُزيل إعداد sound_enabled في v0.1.4: لا أصوات في التطبيق
+  ///   ولا زر صوت في الواجهة، فالإعداد كان ميتاً.)
   /// - إجماليات اللاعب (XP/نجوم/آخر مرحلة) تُنقل إلى app_meta.
   /// - الإنجازات المفتوحة تُنقل (بعد زرع كتالوج الإنجازات).
   /// - المحاولات: صفوف v1 تشير إلى أسئلة بجدول أسئلة قديم أُزيل، ولا
@@ -229,9 +231,7 @@ class DatabaseHelper {
     if (isLegacy) {
       await db.transaction((Transaction txn) async {
         for (final MapEntry<String, String> e in legacySettings.entries) {
-          if (e.key == 'player_name' ||
-              e.key == 'sound_enabled' ||
-              e.key == 'dark_mode') {
+          if (e.key == 'player_name' || e.key == 'dark_mode') {
             await txn.insert(
               tableAppMeta,
               <String, Object>{
@@ -433,7 +433,6 @@ class DatabaseHelper {
           'db_version': '$dbVersion',
           'demo_visible': '1',
           'dark_mode': '0',
-          'sound_enabled': '1',
           'onboarding_done': '0',
           'player_xp': '0',
           'player_stars': '0',
@@ -665,6 +664,18 @@ class DatabaseHelper {
     await _setMeta('last_stage_title', stageTitle);
   }
 
+  /// يمسح آخر مرحلة محفوظة (عندما يتبيّن أنها بلا أسئلة مثلاً)،
+  /// فيعود زر «متابعة» إلى «ابدئي أول مرحلة» بدل التعليق على
+  /// درس لا يمكن لعبه.
+  Future<void> clearLastStage() async {
+    final Database db = await database;
+    await db.delete(
+      tableAppMeta,
+      where: 'key IN (?, ?)',
+      whereArgs: const <Object?>['last_stage_id', 'last_stage_title'],
+    );
+  }
+
   Future<void> _upsertProgress({
     required String entityType,
     required String entityId,
@@ -725,9 +736,13 @@ class DatabaseHelper {
     );
     final int totalCount = (total.first['c'] as int? ?? 0);
     if (totalCount == 0) return 0;
+    // Labs persist as stage rows 'lab:…' but have no row in `stages`,
+    // so counting them here inflated the percentage (labs completed
+    // without any curriculum stage could push it up arbitrarily).
     final List<Map<String, Object?>> done = await db.rawQuery(
       "SELECT COUNT(*) AS c FROM $tableProgress "
-      "WHERE entity_type = 'stage' AND stars >= 1",
+      "WHERE entity_type = 'stage' AND stars >= 1 "
+      "AND entity_id NOT LIKE 'lab:%'",
     );
     final int doneCount = (done.first['c'] as int? ?? 0);
     return doneCount / totalCount;
@@ -782,6 +797,18 @@ class DatabaseHelper {
   Future<void> markStageCompleted(String stageId) async {
     await _upsertProgress(
         entityType: 'stage', entityId: stageId, stars: 1);
+  }
+
+  /// True when this stage already has >= 1 star (used to award lab
+  /// XP only on the FIRST completion, never on every replay).
+  Future<bool> isStageCompleted(String stageId) async {
+    final Database db = await database;
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      "SELECT COUNT(*) AS c FROM $tableProgress "
+      "WHERE entity_type = 'stage' AND entity_id = ? AND stars >= 1",
+      <Object?>[stageId],
+    );
+    return ((rows.first['c'] as int? ?? 0)) > 0;
   }
 
   // ------------------------------------------------------------------ محاولات
@@ -867,17 +894,6 @@ class DatabaseHelper {
     return result;
   }
 
-  Future<int> getAttemptsTodayCount() async {
-    final Database db = await database;
-    final DateTime now = DateTime.now();
-    final DateTime startOfDay = DateTime(now.year, now.month, now.day);
-    final List<Map<String, Object?>> rows = await db.rawQuery(
-      'SELECT COUNT(*) AS c FROM $tableAttempts WHERE answered_at >= ?',
-      <Object?>[startOfDay.millisecondsSinceEpoch],
-    );
-    return (rows.first['c'] as int? ?? 0);
-  }
-
   /// كل صفوف المحاولات مرتّبة من الأقدم إلى الأحدث (للتحليلات التي
   /// تحتاج التسلسل الكامل، مثل حساب السلاسل والأيام النشطة).
   Future<List<Map<String, Object?>>> getAllAttempts() async {
@@ -944,6 +960,30 @@ class DatabaseHelper {
   /// كل أسئلة مادة واحدة كنماذج [Question] (لمحاكاة الامتحان).
   /// صف تالف يُتخطَّى بصمت مع بقاء بقية الصفوف — لا سؤال بلا مصدر
   /// يصل إلى اللاعب أبداً (يفرضه Question.fromJson).
+  /// عدد الأسئلة لكل درس في مادة واحدة (درس بلا أسئلة = غائب من
+  /// الخريطة). تُستخدم لإظهار شارة عدد الأسئلة على كل درس، ولإخفاء
+  /// زر اللعب عن الدروس التي لا أسئلة لها بعد — بدل أيقونة لعب
+  /// توهم بأن الدرس قابل للعب.
+  Future<Map<String, int>> getQuestionCountsForSubject(
+    String subjectId,
+  ) async {
+    final Database db = await database;
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      '''
+      SELECT lesson_id, COUNT(*) AS c
+      FROM $tableQuestions
+      WHERE subject_id = ?
+      GROUP BY lesson_id
+      ''',
+      <Object?>[subjectId],
+    );
+    final Map<String, int> result = <String, int>{};
+    for (final Map<String, Object?> row in rows) {
+      result[row['lesson_id'] as String] = (row['c'] as int? ?? 0);
+    }
+    return result;
+  }
+
   Future<List<Question>> getQuestionsForSubject(String subjectId) async {
     final Database db = await database;
     final List<Map<String, Object?>> rows = await db.rawQuery(
@@ -1134,12 +1174,23 @@ class DatabaseHelper {
         'game-${DateTime.now().millisecondsSinceEpoch}';
     final Set<String> wrongIds = result.wrongQuestionIds.toSet();
     for (final Question q in playedQuestions) {
+      // Real per-question time when the mode measured it (engine games);
+      // 0 when it did not (sentence / ordering / memory games) — never
+      // an even spread of the total, which fabricated measurements.
+      // Only questions this result actually played: when the screen
+      // truncated the list to the mode's questionCount, the rest must
+      // NOT be recorded (previously they were recorded as correct).
+      if (result.playedQuestionIds.isNotEmpty &&
+          !result.playedQuestionIds.contains(q.id)) {
+        continue;
+      }
       await recordAttempt(
         questionId: q.id,
         isCorrect: !wrongIds.contains(q.id),
         xpEarned: 0,
         mode: mode,
         sessionId: session,
+        timeMs: (result.secondsByQuestionId[q.id] ?? 0) * 1000,
       );
     }
     final int now = DateTime.now().millisecondsSinceEpoch;
@@ -1308,15 +1359,6 @@ class DatabaseHelper {
     }
   }
 
-  Future<int> getReviewQueueCount() async {
-    final Database db = await database;
-    final List<Map<String, Object?>> rows = await db.rawQuery(
-      'SELECT COUNT(*) AS c FROM $tableReviewQueue WHERE next_review_at <= ?',
-      <Object?>[DateTime.now().millisecondsSinceEpoch],
-    );
-    return (rows.first['c'] as int? ?? 0);
-  }
-
   Future<List<Map<String, Object?>>> getDueReviewItems() async {
     final Database db = await database;
     return db.query(
@@ -1406,9 +1448,4 @@ class DatabaseHelper {
     });
   }
 
-  Future<void> close() async {
-    final Database? db = _db;
-    _db = null;
-    await db?.close();
-  }
 }
