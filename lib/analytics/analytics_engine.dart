@@ -7,8 +7,6 @@
 //    results. Every screen using this must label it as such.
 //  - No fake data: with zero attempts every mastery is 0 / "no data".
 
-import '../models/game_result.dart';
-
 /// One recorded attempt on one question (local storage only).
 class Attempt {
   final String questionId;
