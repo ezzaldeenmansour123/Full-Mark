@@ -23,7 +23,7 @@
 //  Atom counting is done by the pure function countAtoms() — no UI state
 //  involved — so the check cannot drift from the display.
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Chemistry Lab — molecule builder + equation balancer.
 ///
@@ -91,12 +91,20 @@ class _ChemistryLabState extends State<ChemistryLab> {
   }
 
   /// Is the current balancer state balanced?
+  ///
+  /// Atom counting goes through [countAtoms] so the check cannot drift
+  /// from the display: left is H₂ + O₂, right is H₂O.
   bool get _balanced {
-    final leftH = _cH2 * 2;
-    final leftO = _cO2 * 2;
-    final rightH = _cH2O * 2;
-    final rightO = _cH2O * 1;
-    return leftH == rightH && leftO == rightO;
+    final Map<String, int> left = <String, int>{};
+    for (final Map<String, int> part in <Map<String, int>>[
+      countAtoms(_cH2, const <String, int>{'H': 2}),
+      countAtoms(_cO2, const <String, int>{'O': 2}),
+    ]) {
+      part.forEach((String k, int v) => left[k] = (left[k] ?? 0) + v);
+    }
+    final Map<String, int> right =
+        countAtoms(_cH2O, const <String, int>{'H': 2, 'O': 1});
+    return left['H'] == right['H'] && left['O'] == right['O'];
   }
 
   Map<String, int> get _targetCounts => switch (_target) {

@@ -31,7 +31,7 @@
 //  so taps stay correct after rotate/zoom.
 
 import 'dart:math' as math;
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Biology Lab — heart, cell, digestive system diagrams.
 ///

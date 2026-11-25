@@ -23,7 +23,7 @@
 //  clock — the label says so.
 
 import 'dart:math' as math;
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Physics Lab — free fall, pendulum, DC circuit.
 ///
@@ -403,7 +403,7 @@ class _CircuitPainter extends CustomPainter {
     canvas.drawLine(Offset(cx - 6, cy + 4), Offset(cx + 6, cy - 4),
         Paint()..color = Colors.amber..strokeWidth = 2);
     final label = TextPainter(
-        text: TextSpan(
+        text: const TextSpan(
             text: 'بطارية  •  مقاومة  •  مصباح',
             style: const TextStyle(color: Colors.grey, fontSize: 12)),
         textDirection: TextDirection.rtl)

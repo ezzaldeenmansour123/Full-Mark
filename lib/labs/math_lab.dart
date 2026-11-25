@@ -18,7 +18,7 @@
 //     root only if b=0 (infinite) else none — handled explicitly.
 
 import 'dart:math' as math;
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Math Lab — function plotter + quadratic solver.
 ///
@@ -46,7 +46,7 @@ class _MathLabState extends State<MathLab> {
   _Mode _mode = _Mode.quadratic;
   double _a = 1, _b = -5, _c = 6; // quadratic coefficients
   double _m = 2, _bb = 1; // linear: y = mx + b
-  double _xMin = -10, _xMax = 10;
+  final double _xMin = -10, _xMax = 10;
   int _quizIndex = 0;
   int _quizScore = 0;
   bool _quizDone = false;
