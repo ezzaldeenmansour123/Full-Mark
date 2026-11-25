@@ -496,7 +496,7 @@ verification** until the user device-tests.
 
 | # | Risk / decision | Status |
 |---|---|---|
-| 1 | **Yemeni textbooks not provided — content layer is structure-only.** The documented curriculum structure is now in `assets/data/curriculum.json` (see §11: 51 units / 391 lessons, Sanaa 2027 as default per user decision 2026-11-25). No lesson text and no questions can be written, imported or tested until the user supplies the books/PDFs **or** a written Ministry permission (copyright: «حقوق الطبع محفوظة لوزارة التربية والتعليم»). Questions stay «قيد الإعداد». | **BLOCKER — awaiting user / Ministry permission** |
+| 1 | **Yemeni textbooks not provided — content layer is structure-only.** The documented curriculum structure is now in `assets/data/curriculum.json` (see §11: 53 units / 400 lessons, Sanaa 2027 as default per user decision 2026-11-25; chemistry corrected to 9 units and biology unit 6 corrected to biotechnology, both from the PDFs themselves). No lesson text and no questions can be written, imported or tested until the user supplies the books/PDFs **or** a written Ministry permission (copyright: «حقوق الطبع محفوظة لوزارة التربية والتعليم»). Questions stay «قيد الإعداد». | **BLOCKER — awaiting user / Ministry permission** |
 | 2 | Flutter 3.50 `material.dart` deprecation — skeleton must follow the `flutter create` template (`material_ui`) or pin a compatible approach. | Open for skeleton agent; CI decides |
 | 3 | Flame 1.38.2 vs pure CustomPainter — Flame is optional; fallback is Option C (§6.5). | Decided with fallback |
 | 4 | True 3D (flutter3d) deferred to post-v1, pending 1.0.0 stable. | Decided |
@@ -516,7 +516,7 @@ verification** until the user device-tests.
 | `docs/SIZE_BUDGET.md` | ≤ 100 MB budget table |
 | `assets/schema/content_schema.json` | JSON Schema (draft 2020-12) for content packs |
 | `assets/data/demo_questions.json` | 14 demo questions, all `source = "demo — not Yemeni curriculum"` |
-| `assets/data/curriculum.json` | **Documented Yemeni curriculum structure only** (51 units / 391 lessons, Sanaa 2027 default) — see §11 and `docs/CURRICULUM.md` |
+| `assets/data/curriculum.json` | **Documented Yemeni curriculum structure only** (53 units / 400 lessons, Sanaa 2027 default) — see §11 and `docs/CURRICULUM.md` |
 | `lib/content/curriculum.dart` | `CurriculumData` loader (rootBundle) + `seedRows()` for units/lessons |
 | `lib/screens/curriculum_screen.dart` | World detail screen rendering the documented structure |
 | `docs/CURRICULUM.md` | Curriculum decision log (Sanaa 2027 default, chemistry settled to 7 units, copyright) |
@@ -551,7 +551,7 @@ for each of the 7 subjects. It holds **no lesson text and no questions**.
 | English | Pupil's Course 6 units / 49 lessons + Science reader 11 + Arts reader 7 |
 | Islamic + Quran | 5 books (Sanaa): Quran (13+2+2), Iman 10, Fiqh 13, Hadith & Tahdhib 10, Sira 12 |
 
-Total in the default view (Sanaa 2027): **51 units / 391 lessons**.
+Total in the default view (Sanaa 2027): **53 units / 400 lessons** (chemistry corrected 2026-11-25: 9 units / 61 lessons, verified from the photographed TOC of the downloaded PDF; biology corrected 2026-11-25: unit 6 is biotechnology, 9 lessons, verified from the photographed TOC + introduction of the downloaded PDF — no nutrition unit exists in that book).
 Every subject carries `books[]` with `source_url` and edition; every
 unit carries its semester where documented (marked "استنتاج" where
 inferred); OCR-suspicious titles are kept verbatim with a `note`.
