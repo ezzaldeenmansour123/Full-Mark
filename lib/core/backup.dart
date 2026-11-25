@@ -520,7 +520,7 @@ class _ImportPlan {
 }
 
 /// Stage ids for the four real labs — progress rows for labs use
-/// 'lab:<labId>' (see LabDetailScreen._stageId). Kept here so the
+/// 'lab:`<labId>`' (see LabDetailScreen._stageId). Kept here so the
 /// orphan check recognises them without importing the lab widgets.
 const Set<String> _kLabStageIds = <String>{
   'lab:math_lab',
