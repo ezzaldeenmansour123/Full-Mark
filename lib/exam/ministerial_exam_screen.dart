@@ -2,7 +2,8 @@
 // Timed session, question navigation, mark-for-review, submit,
 // auto-grading, per-question review with explanations.
 // Demo exams are labelled "محاكاة تجريبية" — never presented as a real
-// ministerial exam. Empty bank: honest «قيد الإعداد» state.
+// ministerial exam. Empty bank: honest empty state — no exam can start
+// without documented questions.
 
 import 'dart:async';
 
@@ -52,6 +53,8 @@ class _MinisterialExamScreenState extends State<MinisterialExamScreen> {
         units: widget.units,
         bank: widget.bank,
         totalSeconds: widget.totalSeconds,
+        // بذرة جديدة في كل جلسة: ترتيب أسئلة مختلف في كل محاولة.
+        seed: DateTime.now().millisecondsSinceEpoch,
       );
       _selected = _session!.answerFor(0);
       _timer = Timer.periodic(const Duration(seconds: 1), (t) {
@@ -122,8 +125,8 @@ class _MinisterialExamScreenState extends State<MinisterialExamScreen> {
           child: Padding(
             padding: EdgeInsets.all(24),
             child: Text(
-              'قيد الإعداد — أسئلة المنهج اليمني لم تُضف بعد.\n'
-              'لا يمكن بدء محاكاة امتحان بدون أسئلة معتمدة.',
+              'لا يمكن بدء محاكاة امتحان بدون أسئلة موثّقة — لم تُضف '
+              'أسئلة هذه المادة بعد.',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 18),
             ),
