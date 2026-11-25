@@ -405,7 +405,7 @@ class _CircuitPainter extends CustomPainter {
     final label = TextPainter(
         text: const TextSpan(
             text: 'بطارية  •  مقاومة  •  مصباح',
-            style: const TextStyle(color: Colors.grey, fontSize: 12)),
+            style: TextStyle(color: Colors.grey, fontSize: 12)),
         textDirection: TextDirection.rtl)
       ..layout();
     label.paint(canvas, Offset((size.width - label.width) / 2, size.height - 18));
