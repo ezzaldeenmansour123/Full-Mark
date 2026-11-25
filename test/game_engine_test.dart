@@ -149,22 +149,24 @@ void main() {
   });
 
   group('game modes gating', () {
-    test('exactly 5 modes are playable', () {
+    test('exactly 7 modes are playable', () {
       final playable =
           kGameModes.where((m) => m.isPlayable).map((m) => m.routeId).toList();
-      expect(playable.length, 5);
+      expect(playable.length, 7);
       expect(playable, containsAll(<String>[
         'quiz',
         'true_false',
         'time_race',
         'memory_match',
         'boss_20',
+        'complete_equation',
+        'concept_match',
       ]));
     });
 
-    test('other 7 modes are defined but not playable', () {
+    test('other 5 modes are defined but not playable', () {
       expect(kGameModes.length, 12);
-      expect(kGameModes.where((m) => !m.isPlayable).length, 7);
+      expect(kGameModes.where((m) => !m.isPlayable).length, 5);
     });
   });
 }
