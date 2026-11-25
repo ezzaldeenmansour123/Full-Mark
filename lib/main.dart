@@ -12,6 +12,7 @@ import 'core/theme.dart';
 import 'screens/achievements_screen.dart';
 import 'screens/analytics_screen.dart';
 import 'screens/daily_challenge_screen.dart';
+import 'screens/edition_screen.dart';
 import 'screens/exam_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/lab_detail_screen.dart';
@@ -160,6 +161,11 @@ class _AbqariyaAppState extends State<AbqariyaApp> {
         return MaterialPageRoute<void>(
           settings: settings,
           builder: (_) => const ExamScreen(),
+        );
+      case AppRoutes.edition:
+        return MaterialPageRoute<void>(
+          settings: settings,
+          builder: (_) => const EditionScreen(),
         );
       case AppRoutes.analytics:
         return MaterialPageRoute<void>(
