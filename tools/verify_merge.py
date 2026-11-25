@@ -16,7 +16,7 @@ Checks the 2026-11-25 merge pass:
   7. Dart delimiter balance ({[( )]} + string/comment awareness is
      approximated — a balance failure is a hard fail, a pass is not a
      proof of compilability; see TEST_REPORT.md).
-  8. DB v2: schema.dart kDatabaseVersion == 2, database.dart uses
+  8. DB v3: schema.dart kDatabaseVersion == 3, database.dart uses
      kCreateAllStatements and defines onUpgrade + seedCurriculumRows.
   9. Seed IDs are unique (subject-uN / -lM) and unit numbers are unique
      per subject.
@@ -228,9 +228,9 @@ bad = [str(f.relative_to(ROOT)) for f in dart_files
        if not balanced(f.read_text(encoding="utf-8"))]
 check("all Dart files delimiter-balanced", not bad, "; ".join(bad[:5]))
 
-print("== 8/9. DB v2 + seed IDs ==")
+print("== 8/9. DB v3 + seed IDs ==")
 schema = (ROOT / "lib/db/schema.dart").read_text(encoding="utf-8")
-check("schema kDatabaseVersion == 2", "const int kDatabaseVersion = 2;" in schema)
+check("schema kDatabaseVersion == 3", "const int kDatabaseVersion = 3;" in schema)
 db = (ROOT / "lib/db/database.dart").read_text(encoding="utf-8")
 check("database.dart uses kCreateAllStatements",
       "kCreateAllStatements" in db)

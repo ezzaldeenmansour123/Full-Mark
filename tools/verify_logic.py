@@ -5,7 +5,7 @@ Mirrors, exactly:
   lib/models/game_result.dart   (stars, XP)
   lib/games/game_engine.dart    (streak bonus rule)
   lib/analytics/analytics_engine.dart (mastery, SM-2, insufficient data)
-  lib/achievements/achievements.dart  (XP levels, daily reward)
+  lib/core/progress_store.dart      (XP levels: flat 500 XP/level)
   lib/exam/ministerial_exam.dart      (auto-grading)
 
 Run: python3 tools/verify_logic.py
@@ -149,14 +149,12 @@ def sm2_review(state: ReviewState, quality: int, today: date) -> ReviewState:
 
 
 # ---------------------------------------------------------------- XP levels
+# Canonical curve (lib/core/progress_store.dart levelForXp):
+# flat 500 XP per level — level N starts at (N-1)*500 XP.
 def xp_for_level(level: int) -> int:
     if level <= 1:
         return 0
-    total, cost = 0, 100
-    for _ in range(2, level + 1):
-        total += cost
-        cost += 50
-    return total
+    return (level - 1) * 500
 
 
 def level_for_xp(total_xp: int) -> int:
@@ -164,18 +162,6 @@ def level_for_xp(total_xp: int) -> int:
     while total_xp >= xp_for_level(level + 1):
         level += 1
     return level
-
-
-# -------------------------------------------------------------- daily reward
-def daily_reward(last_claimed: date | None, streak_days: int,
-                 today: date) -> tuple[bool, int, int]:
-    """Return (can_claim, xp_if_claimed_today, new_streak_if_claimed)."""
-    if last_claimed == today:
-        return False, 0, streak_days
-    continuing = last_claimed == today - timedelta(days=1)
-    streak = streak_days + 1 if continuing else 1
-    xp = min(50, 20 + 5 * (streak - 1))
-    return True, xp, streak
 
 
 # --------------------------------------------------------------- exam grade
@@ -268,21 +254,11 @@ def main() -> None:
         st = sm2_review(st, 0, today)
     assert st.ease == 1.3
 
-    # XP levels
-    assert xp_for_level(1) == 0 and xp_for_level(2) == 100
-    assert xp_for_level(3) == 250 and xp_for_level(4) == 450
-    assert level_for_xp(0) == 1 and level_for_xp(99) == 1
-    assert level_for_xp(100) == 2 and level_for_xp(250) == 3
-
-    # daily reward (local date only)
-    can, xp, streak = daily_reward(None, 0, date(2026, 11, 25))
-    assert (can, xp, streak) == (True, 20, 1)
-    can, xp, streak = daily_reward(date(2026, 11, 25), 1, date(2026, 11, 25))
-    assert (can, xp) == (False, 0)  # already claimed today
-    can, xp, streak = daily_reward(date(2026, 11, 25), 1, date(2026, 11, 26))
-    assert (can, xp, streak) == (True, 25, 2)  # consecutive day
-    can, xp, streak = daily_reward(date(2026, 11, 25), 1, date(2026, 11, 28))
-    assert (can, xp, streak) == (True, 20, 1)  # skipped day resets
+    # XP levels (canonical: flat 500 XP/level, progress_store.dart)
+    assert xp_for_level(1) == 0 and xp_for_level(2) == 500
+    assert xp_for_level(3) == 1000 and xp_for_level(4) == 1500
+    assert level_for_xp(0) == 1 and level_for_xp(499) == 1
+    assert level_for_xp(500) == 2 and level_for_xp(1000) == 3
 
     # exam auto-grading
     g = grade_exam(["أ", "ب"], {0: "أ", 1: "ب"})
@@ -297,9 +273,7 @@ def main() -> None:
     print(f"  mastery: 4/6 = {s['overall']:.1f}% ; weakest unit = "
           f"{ws['weakest_units'][0]}")
     print(f"  SM-2 intervals: 1,3,7,14,30 ; ease floor 1.3  OK")
-    print(f"  levels: L2=100 XP, L3=250 XP, L4=450 XP  OK")
-    print(f"  daily reward: day1=20 XP, consecutive day=25 XP, "
-          f"skipped day resets to 20 XP  OK")
+    print(f"  levels: L2=500 XP, L3=1000 XP, L4=1500 XP (flat 500/level)  OK")
     print(f"  exam grading: 2/2 -> 100.0%  OK")
 
 
