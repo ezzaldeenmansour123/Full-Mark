@@ -1,6 +1,6 @@
 // ABQARIYA — GameEngine: pure game logic, no UI, no I/O, no network.
 // Works with ANY list of [Question]s, including an EMPTY list (the screen
-// then shows the honest «قيد الإعداد» empty state — the engine never
+// then shows the honest empty state — the engine never
 // invents questions). Seeded shuffling makes a game reproducible.
 // Mirrored in Python in tools/verify_logic.py (scoring / stars / XP).
 

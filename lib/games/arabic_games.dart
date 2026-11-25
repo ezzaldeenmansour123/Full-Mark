@@ -7,6 +7,10 @@
 
 import 'package:material_ui/material_ui.dart';
 
+import '../db/database.dart';
+import '../models/game_result.dart';
+import '../models/question.dart';
+
 /// One sentence-building item: [words] in shuffled display order,
 /// [correctOrder] the correct order (same words, correct sequence).
 class SentenceItem {
@@ -78,10 +82,20 @@ const SentenceItem kDemoSentence = SentenceItem(
 );
 
 /// Sentence-building widget: tap words in order to build the sentence.
-/// Shows a «تجريبي» badge on every demo item.
+/// Shows a «تجريبي» badge ONLY on demo items (real curriculum items
+/// never show it). The «تحقق» button counts only the FIRST check of each
+/// sentence: repeated presses after an answer is submitted are ignored,
+/// so a correct sentence can never be counted twice.
 class ArabicSentenceGame extends StatefulWidget {
   final List<SentenceItem> items;
-  final void Function(int correct, int total)? onFinished;
+
+  /// (correct, total, per-item correctness in order, item ids in order).
+  final void Function(
+    int correct,
+    int total,
+    List<bool> perItemCorrect,
+    List<String> itemIds,
+  )? onFinished;
 
   const ArabicSentenceGame({
     super.key,
@@ -99,11 +113,50 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
   String? _feedback;
   int _correct = 0;
 
+  /// True once the current sentence has been checked. While true the
+  /// «تحقق» button is disabled and further presses cannot re-count.
+  bool _answered = false;
+
+  /// Per-item correctness, in play order. An item the player skips
+  /// with «التالي» without checking counts as wrong (false).
+  final List<bool> _perItemCorrect = <bool>[];
+
+  void _recordCurrentItem(bool correct) {
+    if (_perItemCorrect.length <= _index) {
+      _perItemCorrect.add(correct);
+    }
+  }
+
+  void _goNext() {
+    if (!_answered) _recordCurrentItem(false);
+    if (_index + 1 >= widget.items.length) {
+      while (_perItemCorrect.length < widget.items.length) {
+        _perItemCorrect.add(false);
+      }
+      widget.onFinished?.call(
+        _correct,
+        widget.items.length,
+        List<bool>.unmodifiable(_perItemCorrect),
+        widget.items.map((i) => i.id).toList(growable: false),
+      );
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('انتهت اللعبة: $_correct / ${widget.items.length}')),
+      );
+    } else {
+      setState(() {
+        _index++;
+        _picked.clear();
+        _feedback = null;
+        _answered = false;
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     if (widget.items.isEmpty) {
       return const Center(
-        child: Text('قيد الإعداد — جمل المنهج اليمني لم تُضف بعد.'),
+        child: Text('لا توجد جمل متاحة بعد من أسئلة اللغة العربية.'),
       );
     }
     final item = widget.items[_index];
@@ -114,7 +167,7 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Chip(label: Text('تجريبي')),
+          if (item.isDemo) const Chip(label: Text('تجريبي')),
           Text('رتّب الكلمات لتكوين جملة صحيحة',
               style: Theme.of(context).textTheme.titleMedium),
           const SizedBox(height: 8),
@@ -132,7 +185,9 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
             runSpacing: 8,
             children: remaining
                 .map((w) => FilledButton.tonal(
-                      onPressed: () => setState(() => _picked.add(w)),
+                      onPressed: _answered
+                          ? null
+                          : () => setState(() => _picked.add(w)),
                       child: Text(w),
                     ))
                 .toList(),
@@ -142,12 +197,14 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
           Row(
             children: [
               FilledButton(
-                onPressed: _picked.isEmpty
+                onPressed: _picked.isEmpty || _answered
                     ? null
                     : () {
                         final ok = checkSentenceOrder(item, _picked);
                         setState(() {
                           _feedback = ok ? 'صحيحة ✓' : 'غير صحيحة ✗ — حاول مجدداً';
+                          _answered = true;
+                          _recordCurrentItem(ok);
                           if (ok) _correct++;
                         });
                       },
@@ -155,28 +212,20 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
               ),
               const SizedBox(width: 8),
               OutlinedButton(
-                onPressed: () => setState(() {
-                  _picked.clear();
-                  _feedback = null;
-                }),
+                // After an answer is submitted the attempt is final:
+                // resetting is disabled so the same sentence cannot be
+                // re-checked and counted twice.
+                onPressed: _answered
+                    ? null
+                    : () => setState(() {
+                          _picked.clear();
+                          _feedback = null;
+                        }),
                 child: const Text('إعادة'),
               ),
               const Spacer(),
               FilledButton(
-                onPressed: () {
-                  if (_index + 1 >= widget.items.length) {
-                    widget.onFinished?.call(_correct, widget.items.length);
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('انتهت اللعبة: $_correct / ${widget.items.length}')),
-                    );
-                  } else {
-                    setState(() {
-                      _index++;
-                      _picked.clear();
-                      _feedback = null;
-                    });
-                  }
-                },
+                onPressed: _goNext,
                 child: const Text('التالي'),
               ),
             ],
@@ -248,6 +297,157 @@ class _ArabicIrabGameState extends State<ArabicIrabGame> {
           ],
         ],
       ),
+    );
+  }
+}
+
+/// Longest run of `true` in [results] (best streak for a game result).
+int _longestTrueRun(List<bool> results) {
+  var best = 0;
+  var run = 0;
+  for (final ok in results) {
+    run = ok ? run + 1 : 0;
+    if (run > best) best = run;
+  }
+  return best;
+}
+
+/// لعبة بناء الجمل — اللغة العربية — fed by REAL database questions.
+///
+/// Each item is built from one real Arabic question: the sentence is
+/// that question's correct answer text (split into words, shuffled for
+/// display), so nothing is invented and the source shown is the
+/// question's own source. Only answers of 3+ words are usable.
+/// Finishing records a real [GameResult] via
+/// [DatabaseHelper.recordGameResult] (mode 'arabic_sentence', with the
+/// source questions as [playedQuestions] so each attempt maps to the
+/// question whose answer the player ordered).
+class ArabicSentenceGameScreen extends StatefulWidget {
+  const ArabicSentenceGameScreen({super.key});
+
+  @override
+  State<ArabicSentenceGameScreen> createState() =>
+      _ArabicSentenceGameScreenState();
+}
+
+class _ArabicSentenceGameScreenState extends State<ArabicSentenceGameScreen> {
+  List<SentenceItem> _items = <SentenceItem>[];
+  List<Question> _sourceQuestions = <Question>[];
+  bool _loading = true;
+  bool _saved = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    final questions =
+        await DatabaseHelper.instance.getQuestionsForSubject('arabic');
+    final usable = questions.where((q) {
+      final words = q.correctAnswer.trim().split(' ');
+      return words.length >= 3 && !q.correctAnswer.contains('/');
+    }).toList()
+      ..shuffle();
+    final picked = usable.take(8).toList();
+    final items = picked.map((q) {
+      final words = q.correctAnswer.trim().split(' ');
+      final display = List<String>.from(words)..shuffle();
+      return SentenceItem(
+        id: q.id,
+        words: display,
+        correctOrder: words,
+        source: q.source,
+      );
+    }).toList(growable: false);
+    // Game start: remember this as the last stage.
+    await DatabaseHelper.instance.setLastStage(
+      'arabic',
+      'لعبة بناء الجمل — اللغة العربية',
+    );
+    if (!mounted) return;
+    setState(() {
+      _items = items;
+      _sourceQuestions = picked;
+      _loading = false;
+    });
+  }
+
+  Future<void> _onFinished(
+    int correct,
+    int total,
+    List<bool> perItemCorrect,
+    List<String> itemIds,
+  ) async {
+    if (_saved || total == 0) return;
+    _saved = true;
+    final wrongIds = <String>[
+      for (var i = 0; i < itemIds.length; i++)
+        if (i >= perItemCorrect.length || !perItemCorrect[i]) itemIds[i],
+    ];
+    final result = GameResult(
+      modeId: 'arabic_sentence',
+      subject: 'arabic',
+      totalQuestions: total,
+      correct: correct,
+      wrong: total - correct,
+      skipped: 0,
+      bestStreak: _longestTrueRun(perItemCorrect),
+      streakBonus: 0,
+      elapsedSeconds: 0,
+      perQuestionCorrect: List<bool>.unmodifiable(perItemCorrect),
+      wrongQuestionIds: wrongIds,
+    );
+    await DatabaseHelper.instance.recordGameResult(
+      result: result,
+      playedQuestions: _sourceQuestions,
+      mode: 'arabic_sentence',
+      stageId: 'arabic',
+      lessonTitle: 'لعبة بناء الجمل — اللغة العربية',
+    );
+    if (!mounted) return;
+    await showDialog<void>(
+      context: context,
+      builder: (BuildContext context) => AlertDialog(
+        title: const Text('نتيجة لعبة بناء الجمل'),
+        content: Text(
+          'أجبت $correct من $total جملة صحيحة '
+          '(${(correct * 100 / total).round()}٪)\n'
+          'النقاط (XP): ${result.xpEarned}',
+        ),
+        actions: <Widget>[
+          FilledButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('رجوع'),
+          ),
+        ],
+      ),
+    );
+    if (mounted) Navigator.of(context).pop();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('لعبة بناء الجمل — اللغة العربية')),
+      body: _loading
+          ? const Center(child: CircularProgressIndicator())
+          : _items.isEmpty
+              ? const Center(
+                  child: Padding(
+                    padding: EdgeInsets.all(24),
+                    child: Text(
+                      'لا توجد جمل متاحة بعد من أسئلة اللغة العربية — '
+                      'ستُضاف فور توفرها من الكتاب المعتمد.',
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                )
+              : ArabicSentenceGame(
+                  items: _items,
+                  onFinished: _onFinished,
+                ),
     );
   }
 }

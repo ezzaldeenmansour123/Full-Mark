@@ -1,8 +1,9 @@
 // ABQARIYA — 12 game modes: enum + config.
-// Only 5 modes are TRULY PLAYABLE in this delivery (see [isPlayable]:
-// quiz, true_false, time_race, memory_match, boss_20). The other 7 are
-// defined here so their config exists, but the game screen shows an honest
-// «قيد الإعداد» state for them — never a dead button, never a fake game.
+// The registry keeps all 12 configs (tests pin the count), but the UI
+// exposes ONLY the 5 truly playable modes (see [isPlayable]: quiz,
+// true_false, time_race, memory_match, boss_20). The other 7 never
+// appear in any picker, and GameScreen never shows a placeholder
+// screen for them; ministerial_exam links to ExamScreen instead.
 
 import '../models/question.dart';
 
@@ -194,18 +195,44 @@ GameModeConfig modeConfigByRouteId(String routeId) =>
     );
 
 /// Which question types a mode can use. Playable modes filter the bank
-/// to these types; other types are simply not offered in that mode.
+/// to these types; other types are excluded at load time and reported
+/// honestly by GameScreen (never silently dropped). `match` is not
+/// supported by any mode yet: no match rows exist in the bank and the
+/// pair structure has no game UI, so it is always excluded with a
+/// message instead of being offered as a broken game.
 List<QuestionType> questionTypesForMode(GameModeId id) {
   switch (id) {
     case GameModeId.quiz:
     case GameModeId.timeRace:
     case GameModeId.boss20:
-      return const [QuestionType.mcq, QuestionType.trueFalse];
+      return const [
+        QuestionType.mcq,
+        QuestionType.trueFalse,
+        QuestionType.fill,
+        QuestionType.ordering,
+      ];
     case GameModeId.trueFalse:
       return const [QuestionType.trueFalse];
     case GameModeId.memoryMatch:
-      return const [QuestionType.mcq, QuestionType.match];
+      return const [QuestionType.mcq];
     default:
       return const [QuestionType.mcq];
+  }
+}
+
+/// Arabic label for a question type, used in honest "unsupported type"
+/// messages shown to the player.
+String questionTypeLabelAr(QuestionType type) {
+  switch (type) {
+    case QuestionType.mcq:
+      return 'اختيار من متعدد';
+    case QuestionType.trueFalse:
+      return 'صح أم خطأ';
+    case QuestionType.fill:
+      return 'أكمل الفراغ';
+    case QuestionType.ordering:
+      return 'ترتيب';
+    case QuestionType.match:
+      return 'مطابقة';
   }
 }

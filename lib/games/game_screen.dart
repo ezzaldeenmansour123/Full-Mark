@@ -1,17 +1,21 @@
 // ABQARIYA — GameScreen: real playable Flutter screen.
 // Playable for real: quiz, true_false, time_race, memory_match, boss_20.
-// Other modes: honest «قيد الإعداد» state inside this screen — never a
-// dead button. Empty bank: honest «قيد الإعداد — أسئلة المنهج اليمني
-// لم تُضف بعد». Demo questions show a visible «تجريبي» badge.
-// Offline only. No network, no accounts, no ads.
+// The 7 non-playable modes never reach this screen (the mode picker
+// only offers playable modes); ministerial_exam links to ExamScreen.
+// Empty bank: honest message, never invented questions. Demo questions
+// (is_demo rows) show a visible «تجريبي» badge — real curriculum
+// questions never do. Offline only. No network, no accounts, no ads.
 // Route: GameScreen(modeRouteId: 'quiz', subject: 'physics', questions: [...])
 // The caller passes the question list (from JSON/DB); this screen never
-// invents questions.
+// invents questions. [onFinished] is awaited before the result screen
+// appears, so the caller's recordGameResult save always lands first.
 
 import 'dart:async';
 
 import 'package:material_ui/material_ui.dart';
 
+import '../core/routes.dart';
+import '../db/database.dart';
 import '../models/game_result.dart';
 import '../models/question.dart';
 import 'game_engine.dart';
@@ -26,8 +30,17 @@ class GameScreen extends StatefulWidget {
   /// Questions supplied by the caller (JSON/DB). May be empty.
   final List<Question> questions;
 
+  /// Lesson id (e.g. 'physics-u1-l2') for "continue where you left off".
+  /// When set, the lesson is saved as the last stage on game start and
+  /// again on finish.
+  final String? lessonId;
+
+  /// Stage id for progress records; defaults to [lessonId].
+  final String? stageId;
+
   /// Called with the finished result (for saving XP / analytics locally).
-  final void Function(GameResult result)? onFinished;
+  /// Awaited by this screen before the result summary is shown.
+  final Future<void> Function(GameResult result)? onFinished;
 
   const GameScreen({
     super.key,
@@ -35,6 +48,8 @@ class GameScreen extends StatefulWidget {
     required this.subject,
     required this.subjectTitleAr,
     required this.questions,
+    this.lessonId,
+    this.stageId,
     this.onFinished,
   });
 
@@ -45,13 +60,24 @@ class GameScreen extends StatefulWidget {
 class _GameScreenState extends State<GameScreen> {
   late final GameModeConfig _mode;
   late final GameEngine _engine;
+
+  /// Questions whose type this mode cannot play (e.g. `match`). They
+  /// are excluded at load time and reported honestly — never silently
+  /// dropped, never offered as a broken game.
+  late final List<Question> _excludedQuestions;
   Timer? _timer;
   int _secondsLeft = 0;
   int _secondsOnQuestion = 0;
   String? _selectedAnswer;
   bool _showFeedback = false;
   bool _lastCorrect = false;
+  bool _timedOut = false;
   GameResult? _result;
+  bool _finishing = false;
+
+  // --- fill / ordering state ---
+  final TextEditingController _fillController = TextEditingController();
+  final List<String> _pickedOrdering = <String>[];
 
   // --- memory_match state ---
   List<_MemoryCard> _cards = [];
@@ -59,10 +85,14 @@ class _GameScreenState extends State<GameScreen> {
   bool _memoryLock = false;
   int _memoryMatches = 0;
   int _memoryTries = 0;
-  // Pairs matched on the first attempt (no prior failed flip of that
-  // pair) — used for an honest accuracy, not an automatic 100%.
-  int _memoryFirstTryMatches = 0;
+  // Ids of questions whose pair was matched on the FIRST try (no prior
+  // failed flip of that pair). This is the honest per-question record:
+  // the result marks exactly these questions correct — never "first N".
+  final Set<String> _memoryFirstTryKeys = {};
   final Set<String> _memoryFailedKeys = {};
+  int _memoryStreak = 0;
+  int _memoryBestStreak = 0;
+  DateTime? _memoryStartedAt;
 
   @override
   void initState() {
@@ -72,6 +102,9 @@ class _GameScreenState extends State<GameScreen> {
     final usable = widget.questions
         .where((q) => allowed.contains(q.type))
         .toList();
+    _excludedQuestions = widget.questions
+        .where((q) => !allowed.contains(q.type))
+        .toList();
     _engine = GameEngine.startGame(
       modeId: _mode.routeId,
       subject: widget.subject,
@@ -79,14 +112,26 @@ class _GameScreenState extends State<GameScreen> {
       secondsPerQuestion: _mode.secondsPerQuestion,
       seed: DateTime.now().millisecondsSinceEpoch,
     );
-    if (_mode.id == GameModeId.memoryMatch) _buildMemoryCards();
+    if (_mode.id == GameModeId.memoryMatch) {
+      _buildMemoryCards();
+      _memoryStartedAt = DateTime.now();
+    }
+    // Game start: remember this lesson as the last stage (the caller
+    // also saves it before pushing; this covers direct launches).
+    final String? lessonId = widget.lessonId;
+    if (lessonId != null) {
+      unawaited(DatabaseHelper.instance.setLastStage(
+        lessonId,
+        widget.subjectTitleAr,
+      ));
+    }
     _startQuestionTimer();
   }
 
   void _buildMemoryCards() {
     final cards = <_MemoryCard>[];
     for (final q in _engine.questions) {
-      // Pair = question text <-> correct answer. Only mcq/match questions
+      // Pair = question text <-> correct answer. Only mcq questions
       // reach here (filtered in initState).
       cards.add(_MemoryCard(key: q.id, label: q.text, isQuestion: true));
       cards.add(_MemoryCard(key: q.id, label: q.correctAnswer, isQuestion: false));
@@ -101,15 +146,23 @@ class _GameScreenState extends State<GameScreen> {
     _secondsLeft = _mode.secondsPerQuestion;
     if (_secondsLeft <= 0) return;
     _timer = Timer.periodic(const Duration(seconds: 1), (t) {
-      if (!mounted || _result != null) return;
+      if (!mounted || _result != null || _showFeedback) return;
       setState(() {
         _secondsLeft--;
         _secondsOnQuestion++;
       });
       if (_secondsLeft <= 0) {
-        // Time up: count as a wrong answer and move on.
+        // Time up: record a wrong answer, then STOP on the feedback
+        // panel (correct answer + explanation) until the player taps
+        // "التالي" — never auto-advance past feedback.
+        _timer?.cancel();
         _engine.answer('', secondsTaken: _secondsOnQuestion);
-        _advanceOrFinish();
+        setState(() {
+          _selectedAnswer = null;
+          _showFeedback = true;
+          _lastCorrect = false;
+          _timedOut = true;
+        });
       }
     });
   }
@@ -117,6 +170,7 @@ class _GameScreenState extends State<GameScreen> {
   @override
   void dispose() {
     _timer?.cancel();
+    _fillController.dispose();
     super.dispose();
   }
 
@@ -127,26 +181,56 @@ class _GameScreenState extends State<GameScreen> {
       _selectedAnswer = answer;
       _showFeedback = true;
       _lastCorrect = correct;
+      _timedOut = false;
     });
   }
 
-  void _advanceOrFinish() {
+  void _chooseFill() {
+    final answer = _fillController.text.trim();
+    if (answer.isEmpty) return;
+    _choose(answer);
+  }
+
+  void _chooseOrdering() {
+    if (_pickedOrdering.isEmpty) return;
+    _choose(_pickedOrdering.join(' | '));
+  }
+
+  Future<void> _advanceOrFinish() async {
     _timer?.cancel();
     _engine.next();
     if (_engine.isFinished) {
-      final result = _engine.finish();
-      widget.onFinished?.call(result);
-      setState(() => _result = result);
+      await _finishGame(_engine.finish());
     } else {
       setState(() {
         _selectedAnswer = null;
         _showFeedback = false;
+        _timedOut = false;
+        _fillController.clear();
+        _pickedOrdering.clear();
       });
       _startQuestionTimer();
     }
   }
 
-  void _onMemoryTap(int index) {
+  /// Shared finish path: save the last stage, await the caller's
+  /// recordGameResult (via [onFinished]), then show the summary.
+  Future<void> _finishGame(GameResult result) async {
+    if (_finishing || _result != null) return;
+    _finishing = true;
+    final String? lessonId = widget.lessonId;
+    if (lessonId != null) {
+      await DatabaseHelper.instance.setLastStage(
+        lessonId,
+        widget.subjectTitleAr,
+      );
+    }
+    await widget.onFinished?.call(result);
+    if (!mounted) return;
+    setState(() => _result = result);
+  }
+
+  Future<void> _onMemoryTap(int index) async {
     if (_memoryLock || _result != null) return;
     final card = _cards[index];
     if (card.flipped || card.matched) return;
@@ -165,36 +249,52 @@ class _GameScreenState extends State<GameScreen> {
             first.copyWith(matched: true, flipped: true);
         _cards[index] = card.copyWith(matched: true, flipped: true);
         _memoryMatches++;
-        if (firstTry) _memoryFirstTryMatches++;
+        if (firstTry) {
+          _memoryFirstTryKeys.add(card.key);
+          _memoryStreak++;
+          if (_memoryStreak > _memoryBestStreak) {
+            _memoryBestStreak = _memoryStreak;
+          }
+        } else {
+          _memoryStreak = 0;
+        }
         _firstFlippedIndex = null;
       });
       if (_memoryMatches * 2 >= _cards.length) {
-        // Finished: "correct" = pairs matched on the first try, so the
-        // accuracy honestly reflects failed attempts (not an automatic
-        // 100% just for finishing the board).
-        final total = _engine.totalQuestions;
+        // Finished: correctness is per-question — exactly the pairs
+        // matched on the first try are correct, the rest are wrong.
+        // No fabricated "first N correct", no automatic 100%.
+        final questions = _engine.questions;
+        final perQuestionCorrect = questions
+            .map((q) => _memoryFirstTryKeys.contains(q.id))
+            .toList(growable: false);
+        final wrongIds = questions
+            .where((q) => !_memoryFirstTryKeys.contains(q.id))
+            .map((q) => q.id)
+            .toList(growable: false);
+        final elapsed = _memoryStartedAt == null
+            ? 0
+            : DateTime.now().difference(_memoryStartedAt!).inSeconds;
         final result = GameResult(
           modeId: _mode.routeId,
           subject: widget.subject,
-          totalQuestions: total,
-          correct: _memoryFirstTryMatches,
-          wrong: total - _memoryFirstTryMatches,
+          totalQuestions: questions.length,
+          correct: _memoryFirstTryKeys.length,
+          wrong: questions.length - _memoryFirstTryKeys.length,
           skipped: 0,
-          bestStreak: _memoryFirstTryMatches,
+          bestStreak: _memoryBestStreak,
           streakBonus: 0,
-          elapsedSeconds: 0,
-          perQuestionCorrect: List<bool>.generate(
-              total, (i) => i < _memoryFirstTryMatches,
-              growable: false),
-          wrongQuestionIds: const [],
+          elapsedSeconds: elapsed,
+          perQuestionCorrect: perQuestionCorrect,
+          wrongQuestionIds: wrongIds,
         );
-        widget.onFinished?.call(result);
-        setState(() => _result = result);
+        await _finishGame(result);
       }
     } else {
       _memoryLock = true;
       _memoryFailedKeys.add(first.key);
       _memoryFailedKeys.add(card.key);
+      _memoryStreak = 0;
       final firstIndex = _firstFlippedIndex!;
       _firstFlippedIndex = null;
       Future.delayed(const Duration(milliseconds: 900), () {
@@ -210,77 +310,104 @@ class _GameScreenState extends State<GameScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // 1) Mode not yet implemented — honest state, never a dead screen.
-    if (!_mode.isPlayable && _mode.id != GameModeId.ministerialExam) {
-      return Scaffold(
-        appBar: AppBar(title: Text(_mode.titleAr)),
-        body: _comingSoon(context, _mode),
-      );
-    }
+    // 1) Ministerial exam has its own screen — link there, never a
+    // dead end. (The picker never sends this id here; this is a guard
+    // for direct launches.)
     if (_mode.id == GameModeId.ministerialExam) {
       return Scaffold(
         appBar: AppBar(title: Text(_mode.titleAr)),
-        body: const Center(
+        body: Center(
           child: Padding(
-            padding: EdgeInsets.all(24),
-            child: Text(
-              'محاكاة الامتحان الوزاري لها شاشتها الخاصة (ExamScreen).\n'
-              'استخدم زر «محاكاة الامتحان الوزاري» من الصفحة الرئيسية.',
-              textAlign: TextAlign.center,
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Text(
+                  _mode.descriptionAr,
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 16),
+                FilledButton(
+                  onPressed: () => Navigator.of(context)
+                      .pushReplacementNamed(AppRoutes.exam),
+                  child: const Text('فتح محاكاة الامتحان الوزاري'),
+                ),
+                const SizedBox(height: 8),
+                OutlinedButton(
+                  onPressed: () => Navigator.of(context).pop(),
+                  child: const Text('رجوع'),
+                ),
+              ],
             ),
           ),
         ),
       );
     }
-    // 2) Empty bank — honest state.
+    // 2) Questions were supplied but none of them can be played in
+    // this mode — say exactly why, naming the unsupported type(s).
+    if (_engine.isEmpty && _excludedQuestions.isNotEmpty) {
+      final types = _excludedQuestions
+          .map((q) => questionTypeLabelAr(q.type))
+          .toSet()
+          .join('، ');
+      return Scaffold(
+        appBar: AppBar(title: Text(_mode.titleAr)),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Text(
+                  'أسئلة هذا الدرس من نوع «$types»، وهذا النوع غير مدعوم '
+                  'في نمط «${_mode.titleAr}» بعد — جرّبي نمطاً آخر أو درساً آخر.',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 18),
+                ),
+                const SizedBox(height: 16),
+                FilledButton(
+                  onPressed: () => Navigator.of(context).pop(),
+                  child: const Text('رجوع'),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+    // 3) Empty bank — honest state.
     if (_engine.isEmpty) {
       return Scaffold(
         appBar: AppBar(title: Text(_mode.titleAr)),
-        body: const Center(
+        body: Center(
           child: Padding(
-            padding: EdgeInsets.all(24),
-            child: Text(
-              'قيد الإعداد — أسئلة المنهج اليمني لم تُضف بعد.\n'
-              'ستظهر الأسئلة هنا فور إضافتها من الكتب المعتمدة.',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 18),
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const Text(
+                  'لا توجد أسئلة متاحة لهذا الدرس بعد.\n'
+                  'ستظهر الأسئلة هنا فور إضافتها من الكتب المعتمدة.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 18),
+                ),
+                const SizedBox(height: 16),
+                FilledButton(
+                  onPressed: () => Navigator.of(context).pop(),
+                  child: const Text('رجوع'),
+                ),
+              ],
             ),
           ),
         ),
       );
     }
-    // 3) Finished — summary.
+    // 4) Finished — summary.
     if (_result != null) return _buildSummary(context, _result!);
-    // 4) Memory-match board.
+    // 5) Memory-match board.
     if (_mode.id == GameModeId.memoryMatch) return _buildMemoryBoard(context);
-    // 5) Normal question flow (quiz / true_false / time_race / boss_20).
+    // 6) Normal question flow (quiz / true_false / time_race / boss_20).
     return _buildQuestion(context);
-  }
-
-  Widget _comingSoon(BuildContext context, GameModeConfig mode) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.all(24),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(Icons.construction, size: 48),
-            const SizedBox(height: 16),
-            Text(mode.titleAr, style: Theme.of(context).textTheme.titleLarge),
-            const SizedBox(height: 8),
-            Text(mode.descriptionAr, textAlign: TextAlign.center),
-            const SizedBox(height: 8),
-            const Text('قيد الإعداد — سيتوفر هذا النمط في تحديث قادم.',
-                textAlign: TextAlign.center),
-            const SizedBox(height: 16),
-            FilledButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: const Text('رجوع'),
-            ),
-          ],
-        ),
-      ),
-    );
   }
 
   Widget _buildQuestion(BuildContext context) {
@@ -326,27 +453,31 @@ class _GameScreenState extends State<GameScreen> {
                     style: TextStyle(color: Colors.orange)),
               ),
             const SizedBox(height: 16),
-            ...q.options.map((opt) {
-              Color? color;
-              if (_showFeedback) {
-                if (opt == q.correctAnswer) {
-                  color = Colors.green;
-                } else if (opt == _selectedAnswer) {
-                  color = Colors.red;
+            if (q.type == QuestionType.fill) _buildFillInput(q),
+            if (q.type == QuestionType.ordering) _buildOrderingInput(q),
+            if (q.type == QuestionType.mcq ||
+                q.type == QuestionType.trueFalse)
+              ...q.options.map((opt) {
+                Color? color;
+                if (_showFeedback) {
+                  if (opt == q.correctAnswer) {
+                    color = Colors.green;
+                  } else if (opt == _selectedAnswer) {
+                    color = Colors.red;
+                  }
                 }
-              }
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 8),
-                child: FilledButton.tonal(
-                  style: FilledButton.styleFrom(
-                    backgroundColor: color,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: FilledButton.tonal(
+                    style: FilledButton.styleFrom(
+                      backgroundColor: color,
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                    ),
+                    onPressed: _showFeedback ? null : () => _choose(opt),
+                    child: Text(opt, textAlign: TextAlign.center),
                   ),
-                  onPressed: _showFeedback ? null : () => _choose(opt),
-                  child: Text(opt, textAlign: TextAlign.center),
-                ),
-              );
-            }),
+                );
+              }),
             if (_showFeedback) ...[
               const SizedBox(height: 8),
               Container(
@@ -360,8 +491,19 @@ class _GameScreenState extends State<GameScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(_lastCorrect ? 'إجابة صحيحة ✓' : 'إجابة خاطئة ✗',
-                        style: const TextStyle(fontWeight: FontWeight.bold)),
+                    Text(
+                      _timedOut
+                          ? 'انتهى الوقت ⏱ — لم تُسجَّل إجابة'
+                          : _lastCorrect
+                              ? 'إجابة صحيحة ✓'
+                              : 'إجابة خاطئة ✗',
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    if (!_lastCorrect) ...[
+                      const SizedBox(height: 4),
+                      Text('الإجابة الصحيحة: ${q.correctAnswer}',
+                          style: const TextStyle(fontWeight: FontWeight.bold)),
+                    ],
                     if (q.explanation.isNotEmpty) ...[
                       const SizedBox(height: 4),
                       Text(q.explanation),
@@ -377,12 +519,86 @@ class _GameScreenState extends State<GameScreen> {
                 onPressed: _advanceOrFinish,
                 child: Text(_engine.currentIndex + 1 >= _engine.totalQuestions
                     ? 'عرض النتيجة'
-                    : 'السؤال التالي'),
+                    : 'التالي'),
               ),
             ],
           ],
         ),
       ),
+    );
+  }
+
+  /// Fill-in-the-blank: free text input, checked case-insensitively
+  /// by the engine against [Question.correctAnswer].
+  Widget _buildFillInput(Question q) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        TextField(
+          controller: _fillController,
+          enabled: !_showFeedback,
+          textInputAction: TextInputAction.done,
+          onSubmitted: (_) => _chooseFill(),
+          decoration: const InputDecoration(
+            labelText: 'اكتبي الإجابة هنا',
+            border: OutlineInputBorder(),
+          ),
+        ),
+        const SizedBox(height: 12),
+        FilledButton(
+          onPressed: _showFeedback ? null : _chooseFill,
+          child: const Text('تحقق'),
+        ),
+      ],
+    );
+  }
+
+  /// Ordering: tap the options in the correct order, then check.
+  /// The attempt is submitted as the options joined with " | ", which
+  /// the engine compares with [Question.correctAnswer].
+  Widget _buildOrderingInput(Question q) {
+    final remaining =
+        q.options.where((o) => !_pickedOrdering.contains(o)).toList();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const Text('اضغطي على العناصر بالترتيب الصحيح:'),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: _pickedOrdering
+              .asMap()
+              .entries
+              .map((e) => Chip(
+                    label: Text('${e.key + 1}. ${e.value}'),
+                    onDeleted: _showFeedback
+                        ? null
+                        : () => setState(
+                            () => _pickedOrdering.remove(e.value)),
+                  ))
+              .toList(),
+        ),
+        const Divider(),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: remaining
+              .map((o) => FilledButton.tonal(
+                    onPressed: _showFeedback
+                        ? null
+                        : () => setState(() => _pickedOrdering.add(o)),
+                    child: Text(o),
+                  ))
+              .toList(),
+        ),
+        const SizedBox(height: 12),
+        FilledButton(
+          onPressed:
+              _showFeedback || _pickedOrdering.isEmpty ? null : _chooseOrdering,
+          child: const Text('تحقق'),
+        ),
+      ],
     );
   }
 
@@ -474,6 +690,8 @@ class _GameScreenState extends State<GameScreen> {
                       subject: widget.subject,
                       subjectTitleAr: widget.subjectTitleAr,
                       questions: widget.questions,
+                      lessonId: widget.lessonId,
+                      stageId: widget.stageId,
                       onFinished: widget.onFinished,
                     ),
                   ),
