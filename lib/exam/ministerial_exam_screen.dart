@@ -6,7 +6,7 @@
 
 import 'dart:async';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../models/question.dart';
 import 'ministerial_exam.dart';
@@ -180,7 +180,7 @@ class _MinisterialExamScreenState extends State<MinisterialExamScreen> {
                       color: i == session.currentIndex
                           ? Theme.of(context).colorScheme.primary
                           : answered
-                              ? Colors.green.withOpacity(0.4)
+                              ? Colors.green.withValues(alpha: 0.4)
                               : Theme.of(context)
                                   .colorScheme
                                   .surfaceContainerHighest,
@@ -203,19 +203,27 @@ class _MinisterialExamScreenState extends State<MinisterialExamScreen> {
               const Text('سؤال تجريبي — ليس من المنهج اليمني.',
                   style: TextStyle(color: Colors.orange)),
             const SizedBox(height: 12),
-            ...q.options.map((opt) => Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: RadioListTile<String>(
-                    title: Text(opt),
-                    value: opt,
-                    groupValue: _selected,
-                    onChanged: (v) {
-                      if (v == null) return;
-                      setState(() => _selected = v);
-                      session.answerCurrent(v);
-                    },
-                  ),
-                )),
+            RadioGroup<String>(
+              groupValue: _selected,
+              onChanged: (String? v) {
+                if (v == null) return;
+                setState(() => _selected = v);
+                session.answerCurrent(v);
+              },
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  ...q.options.map((opt) => Padding(
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: RadioListTile<String>(
+                          title: Text(opt),
+                          value: opt,
+                        ),
+                      )),
+                ],
+              ),
+            ),
             const Spacer(),
             Row(
               children: [
