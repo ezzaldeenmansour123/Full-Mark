@@ -50,10 +50,14 @@ const String kDatabaseName = 'abqariya.db';
 /// seed. The DDL itself is unchanged from v1; v2 adds the onUpgrade
 /// migration in `lib/db/database.dart` (legacy v1 tables -> canonical
 /// schema, user progress preserved) and the curriculum seed path.
-/// `lib/db/database.dart` is the ONLY implementation of this schema:
-/// it runs `kCreateAllStatements` in onCreate and the v1->v2 migration
-/// in onUpgrade. Do not duplicate this DDL anywhere else.
-const int kDatabaseVersion = 2;
+/// v3 (2026-11-25, v0.1.2 data layer): DDL unchanged again; v3 adds the
+/// onUpgrade migration in `lib/db/database.dart` that backfills one
+/// 'quiz' stage per lesson (`stage:<lessonId>:quiz`) for existing
+/// installs, matching what `seedCurriculumRows` now inserts for fresh
+/// installs. `lib/db/database.dart` is the ONLY implementation of this schema:
+/// it runs `kCreateAllStatements` in onCreate and the v1->v2 and v2->v3
+/// migrations in onUpgrade. Do not duplicate this DDL anywhere else.
+const int kDatabaseVersion = 3;
 
 /// Exact demo-source marker. Must match assets/data/demo_questions.json
 /// and assets/schema/content_schema.json character for character.

@@ -18,9 +18,10 @@ import 'schema.dart';
 ///
 /// مبادئ:
 /// - كل البيانات على الجهاز فقط. لا إنترنت ولا خوادم ولا حسابات.
-/// - الإصدار 2. الترقية v1 -> v2 في [_onUpgrade] فقط، مع الحفاظ على
-///   تقدّم اللاعب (انظر التعليق هناك — v1 لم تُشحن على أي جهاز، لذا
-///   الترقية دفاعية وتجمّع المحاولات القديمة في عدّادات بدل إسقاطها).
+/// - الإصدار 3. الترقية v1 -> v2 و v2 -> v3 في [_onUpgrade] فقط، مع
+///   الحفاظ على تقدّم اللاعب (انظر التعليق هناك — v1 لم تُشحن على أي
+///   جهاز، لذا الترقية دفاعية وتجمّع المحاولات القديمة في عدّادات بدل
+///   إسقاطها؛ وترقية v2 -> v3 تزرع مرحلة اختبار واحدة لكل درس موجود).
 /// - إعدادات اللاعب وإجمالياته في جدول `app_meta` (لا جدول `settings`).
 /// - هيكل المنهج (صنعاء 2027) يُزرع عبر [seedCurriculumRows] من
 ///   `CurriculumData.seedRows()`؛ ويستدعيه `main()` عبر
@@ -92,6 +93,38 @@ class DatabaseHelper {
     if (oldVersion < 2) {
       await _migrateV1ToV2(db);
     }
+    if (oldVersion < 3) {
+      await _backfillQuizStages(db);
+    }
+  }
+
+  /// ترقية v2 -> v3: زرع مرحلة اختبار واحدة (`stage:<lessonId>:quiz`)
+  /// لكل درس موجود بلا مرحلة اختبار، مطابقةً لما يزرعه
+  /// [seedCurriculumRows] للتثبيتات الجديدة. آمنة لإعادة التشغيل
+  /// (INSERT OR IGNORE + NOT EXISTS على معرّف المرحلة)، ولا تمسّ أي
+  /// تقدّم أو محاولات أو مراجعة موجودة. ملاحظة: عند ترقية v1 -> v3
+  /// تُنفَّذ أولاً [_migrateV1ToV2] (التي تعيد إنشاء الجداول فارغة)،
+  /// فيجد هذا الاستعلام صفر دروس ولا يزرع شيئاً — والمراحل تُزرع
+  /// لاحقاً مع هيكل المنهج عبر [seedCurriculumRows] عند أول تشغيل.
+  Future<void> _backfillQuizStages(DatabaseExecutor db) async {
+    final int now = DateTime.now().millisecondsSinceEpoch;
+    await db.rawInsert(
+      '''
+      INSERT OR IGNORE INTO $tableStages
+        (id, lesson_id, unit_id, subject_id, mode, title_ar, sort_order,
+         question_count, time_limit_sec, source, source_detail, is_demo,
+         created_at, updated_at)
+      SELECT 'stage:' || l.id || ':quiz', l.id, l.unit_id, l.subject_id,
+             'quiz', l.title_ar || ' — اختبار', 0, 10, NULL,
+             COALESCE(l.source, 'المنهج اليمني — صنعاء 2027'),
+             l.source_detail, 0, ?, ?
+      FROM $tableLessons l
+      WHERE NOT EXISTS (
+        SELECT 1 FROM $tableStages s WHERE s.id = 'stage:' || l.id || ':quiz'
+      )
+      ''',
+      <Object?>[now, now],
+    );
   }
 
   /// ترقية v1 (التنفيذ المبسّط القديم) إلى المخطط الرسمي v2.
@@ -414,8 +447,11 @@ class DatabaseHelper {
   }
 
   /// يزرع هيكل المنهج (مواد/وحدات/دروس — بلا أسئلة) من صفوف
-  /// `CurriculumData.seedRows()`. آمن لإعادة التشغيل (INSERT OR REPLACE).
-  /// يسجّل حزمة محتوى `sanaa-2027` بعدد أسئلة صفر — الأسئلة «قيد الإعداد».
+  /// `CurriculumData.seedRows()`، مع مرحلة اختبار واحدة
+  /// (`stage:<lessonId>:quiz`) لكل درس حتى تعمل شاشة المنهج فوراً.
+  /// آمن لإعادة التشغيل (INSERT OR REPLACE).
+  /// يسجّل حزمة محتوى `sanaa-2027` بعدد أسئلة صفر — الأسئلة تُزرع
+  /// لاحقاً عبر [seedQuestionPacks] من الحزم الموثقة.
   Future<void> seedCurriculumRows(List<Map<String, Object>> rows) async {
     final Database db = await database;
     final int now = DateTime.now().millisecondsSinceEpoch;
@@ -429,6 +465,31 @@ class DatabaseHelper {
           values,
           conflictAlgorithm: ConflictAlgorithm.replace,
         );
+        if (table == 'lessons') {
+          final String lessonId = values['id'] as String;
+          final String lessonTitle = values['title_ar'] as String;
+          await txn.insert(
+            tableStages,
+            <String, Object?>{
+              'id': 'stage:$lessonId:quiz',
+              'lesson_id': lessonId,
+              'unit_id': values['unit_id'],
+              'subject_id': values['subject_id'],
+              'mode': 'quiz',
+              'title_ar': '$lessonTitle — اختبار',
+              'sort_order': 0,
+              'question_count': 10,
+              'time_limit_sec': null,
+              'source': (values['source'] as String?) ??
+                  'المنهج اليمني — صنعاء 2027',
+              'source_detail': values['source_detail'],
+              'is_demo': 0,
+              'created_at': now,
+              'updated_at': now,
+            },
+            conflictAlgorithm: ConflictAlgorithm.replace,
+          );
+        }
       }
       await txn.insert(
         'content_packs',
@@ -485,7 +546,8 @@ class DatabaseHelper {
   /// عدد الأسئلة تُتخطَّى، وغيرها تُستبدل صفوفها (INSERT OR REPLACE)
   /// في معاملة واحدة — لا حزمة نصف مستوردة أبداً. يحدّث إجمالي
   /// أسئلة حزمة `sanaa-2027`. يُستدعى من `main()` بعد زرع المنهج؛
-  /// أي فشل لا يمنع التشغيل (تبقى الأسئلة «قيد الإعداد»).
+  /// أي فشل لا يمنع التشغيل (تبقى أسئلة تلك الحزمة غير متوفرة حتى
+  /// يُعاد زرعها بنجاح).
   Future<void> seedQuestionPacks(List<QuestionPackSeed> packs) async {
     final Database db = await database;
     final int now = DateTime.now().millisecondsSinceEpoch;
@@ -700,13 +762,18 @@ class DatabaseHelper {
   }
 
   /// عدد مراحل المختبر المكتملة (mode = 'lab' ونجمة واحدة على الأقل).
+  /// عدد المختبرات المكتملة (نجمة واحدة على الأقل).
+  ///
+  /// تُحسَب من صفوف التقدّم مباشرة (`entity_id LIKE 'lab:%'`) لأن
+  /// المختبرات الأربعة مستقلة بلا صفوف في جدول `stages` (لا وحدة/درس
+  /// لها)، فالربط مع `stages` كان يُرجع صفراً دائماً.
   Future<int> getCompletedLabStagesCount() async {
     final Database db = await database;
     final List<Map<String, Object?>> rows = await db.rawQuery(
       '''
-      SELECT COUNT(*) AS c FROM $tableStages s
-      JOIN $tableProgress p ON p.entity_type = 'stage' AND p.entity_id = s.id
-      WHERE s.mode = 'lab' AND p.stars >= 1
+      SELECT COUNT(*) AS c FROM $tableProgress
+      WHERE entity_type = 'stage' AND entity_id LIKE 'lab:%'
+        AND stars >= 1
       ''',
     );
     return (rows.first['c'] as int? ?? 0);
@@ -811,6 +878,29 @@ class DatabaseHelper {
     return (rows.first['c'] as int? ?? 0);
   }
 
+  /// كل صفوف المحاولات مرتّبة من الأقدم إلى الأحدث (للتحليلات التي
+  /// تحتاج التسلسل الكامل، مثل حساب السلاسل والأيام النشطة).
+  Future<List<Map<String, Object?>>> getAllAttempts() async {
+    final Database db = await database;
+    return db.query(
+      tableAttempts,
+      orderBy: 'answered_at ASC',
+    );
+  }
+
+  /// عدد محاولات اليوم (من منتصف الليل المحلي) لوضع لعب معيّن.
+  Future<int> getTodayAttemptsCountForMode(String mode) async {
+    final Database db = await database;
+    final DateTime now = DateTime.now();
+    final DateTime startOfDay = DateTime(now.year, now.month, now.day);
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      'SELECT COUNT(*) AS c FROM $tableAttempts '
+      'WHERE mode = ? AND answered_at >= ?',
+      <Object?>[mode, startOfDay.millisecondsSinceEpoch],
+    );
+    return (rows.first['c'] as int? ?? 0);
+  }
+
   Future<int> getTotalQuestions() async {
     final Database db = await database;
     final List<Map<String, Object?>> rows = await db.rawQuery(
@@ -876,6 +966,29 @@ class DatabaseHelper {
       }
     }
     return out;
+  }
+
+  /// سؤال واحد بمعرّفه (لجلسة المراجعة الذكية). يرجع null إن لم يوجد
+  /// الصف أو كان تالفاً — لا سؤال بلا مصدر يصل إلى اللاعب أبداً.
+  Future<Question?> getQuestionById(String id) async {
+    final Database db = await database;
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      '''
+      SELECT q.*, u.title_ar AS unit_title, l.title_ar AS lesson_title
+      FROM $tableQuestions q
+      JOIN $tableUnits u ON u.id = q.unit_id
+      JOIN $tableLessons l ON l.id = q.lesson_id
+      WHERE q.id = ?
+      LIMIT 1
+      ''',
+      <Object?>[id],
+    );
+    if (rows.isEmpty) return null;
+    try {
+      return _questionFromRow(rows.first);
+    } catch (_) {
+      return null;
+    }
   }
 
   /// أسئلة التحدي اليومي: اختيار حتمي من بنك الأسئلة حسب التاريخ
@@ -960,8 +1073,9 @@ class DatabaseHelper {
     ];
   }
 
-  /// يسجّل نتيجة لعبة مكتملة في جدول المحاولات + نقاط الخبرة، عبر
-  /// [recordAttempt] الموجود (لا سلك جديد).
+  /// يسجّل نتيجة لعبة مكتملة: محاولة لكل سؤال معروض + نقاط الخبرة
+  /// والنجوم + تقدّم المرحلة/الدرس + إدراج الأسئلة الخاطئة في قائمة
+  /// المراجعة (مستحقة فوراً) + آخر مرحلة لُعبت.
   ///
   /// افتراض موثّق: يصحّ فقط لأنماط يجيب فيها اللاعب عن كل سؤال معروض
   /// (quiz/time_race/boss_20 — لا زر تخطٍّ في `GameScreen`، وانتهاء
@@ -970,10 +1084,19 @@ class DatabaseHelper {
   /// بمعرّف سؤالها الحقيقي من قاعدة البيانات، ونقاط الخبرة تُضاف مرة
   /// واحدة من `result.xpEarned` (10 لكل صحيحة + 5 مكافأة السلسلة)
   /// حتى لا تُضاعَف.
+  ///
+  /// المعاملات الاختيارية [stageId] و [lessonId] و [lessonTitle]
+  /// يمرّرها المتصل (شاشة المنهج / وضع اللعب) حتى يُحدَّث التقدّم:
+  /// بلا [stageId] تُسجَّل المحاولات والخبرة فقط (كما في التحدي
+  /// اليومي). [lessonTitle] عنوان يُعرض في «آخر مرحلة»، ويُستخدم
+  /// معرّف المرحلة نفسه عند غيابه.
   Future<void> recordGameResult({
     required GameResult result,
     required List<Question> playedQuestions,
     String mode = 'quiz',
+    String? stageId,
+    String? lessonId,
+    String? lessonTitle,
   }) async {
     final String session =
         'game-${DateTime.now().millisecondsSinceEpoch}';
@@ -987,9 +1110,91 @@ class DatabaseHelper {
         sessionId: session,
       );
     }
-    if (result.xpEarned > 0) {
-      await addXp(result.xpEarned);
+    final int now = DateTime.now().millisecondsSinceEpoch;
+    if (wrongIds.isNotEmpty) {
+      final Database db = await database;
+      for (final String questionId in wrongIds) {
+        await db.insert(
+          tableReviewQueue,
+          <String, Object?>{
+            'question_id': questionId,
+            'ease_factor': 2.5,
+            'interval_days': 0,
+            'repetitions': 0,
+            'lapses': 0,
+            'next_review_at': now,
+            'last_reviewed_at': null,
+          },
+          conflictAlgorithm: ConflictAlgorithm.ignore,
+        );
+      }
     }
+    await addXp(result.xpEarned, stars: result.stars);
+    if (stageId != null) {
+      final int bestScore = result.accuracyPercent.round();
+      await _upsertProgress(
+        entityType: 'stage',
+        entityId: stageId,
+        stars: result.stars,
+        bestScore: bestScore,
+      );
+      if (result.passed) {
+        await markStageCompleted(stageId);
+      }
+      await setLastStage(stageId, lessonTitle ?? stageId);
+      if (lessonId != null && lessonId != stageId) {
+        await _upsertProgress(
+          entityType: 'lesson',
+          entityId: lessonId,
+          stars: result.stars,
+          bestScore: bestScore,
+        );
+      }
+    }
+  }
+
+  /// يسجّل نتيجة امتحان/زعيم/اختبار وحدة مكتمل في جدول `exam_results`
+  /// ويعيد معرّف الصف المُدرج. `examType` واحد من
+  /// 'ministerial_exam' أو 'boss' أو 'unit_test' فقط — أي قيمة أخرى
+  /// ترفع [ArgumentError] ولا تُدرج شيئاً.
+  Future<int> recordExamResult({
+    required String examType,
+    String? subjectId,
+    String? unitId,
+    required int totalQuestions,
+    required int correctCount,
+    required int scorePct,
+    required int durationMs,
+    bool isDemo = false,
+    String? note,
+  }) async {
+    const List<String> validTypes = <String>[
+      'ministerial_exam',
+      'boss',
+      'unit_test',
+    ];
+    if (!validTypes.contains(examType)) {
+      throw ArgumentError.value(
+        examType,
+        'examType',
+        'must be one of $validTypes',
+      );
+    }
+    final Database db = await database;
+    final int now = DateTime.now().millisecondsSinceEpoch;
+    return db.insert(tableExamResults, <String, Object?>{
+      'exam_type': examType,
+      'subject_id': subjectId,
+      'unit_id': unitId,
+      'total_questions': totalQuestions,
+      'correct_count': correctCount,
+      'score_pct': scorePct,
+      'duration_ms': durationMs,
+      'is_demo': isDemo ? 1 : 0,
+      'note': note,
+      'started_at': now - durationMs,
+      'finished_at': now,
+    });
   }
 
   Question _questionFromRow(Map<String, Object?> row) {
@@ -1090,6 +1295,34 @@ class DatabaseHelper {
     );
   }
 
+  /// يحدّث (أو ينشئ) صف المراجعة لسؤال بعد جلسة مراجعة SM-2.
+  /// `easeFactor` يُقصّ إلى 1.3 كحدّ أدنى (قيْد المخطط)، و
+  /// `last_reviewed_at` تُسجَّل الآن.
+  Future<void> updateReviewItem({
+    required String questionId,
+    required double easeFactor,
+    required int intervalDays,
+    required int repetitions,
+    required int lapses,
+    required int nextReviewAt,
+  }) async {
+    final Database db = await database;
+    final double clampedEase = easeFactor < 1.3 ? 1.3 : easeFactor;
+    await db.insert(
+      tableReviewQueue,
+      <String, Object?>{
+        'question_id': questionId,
+        'ease_factor': clampedEase,
+        'interval_days': intervalDays,
+        'repetitions': repetitions,
+        'lapses': lapses,
+        'next_review_at': nextReviewAt,
+        'last_reviewed_at': DateTime.now().millisecondsSinceEpoch,
+      },
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
   // -------------------------------------------------------------- إعادة تعيين
 
   /// يمسح التقدّم والمحاولات والإنجازات وقائمة المراجعة فقط.
@@ -1127,12 +1360,15 @@ class DatabaseHelper {
       );
       await txn.delete(
         tableAppMeta,
-        where: 'key IN (?, ?, ?, ?)',
+        where: 'key IN (?, ?, ?, ?, ?, ?, ?)',
         whereArgs: <Object?>[
           'last_stage_id',
           'last_stage_title',
           'attempts_anonymous_total',
           'attempts_anonymous_correct',
+          'legacy_attempts_total',
+          'legacy_attempts_correct',
+          'legacy_attempts_xp',
         ],
       );
     });
