@@ -1,4 +1,4 @@
-// ABQARIYA — GameScreen: real playable Flutter screen.
+// FULL MARK — GameScreen: real playable Flutter screen.
 // Playable for real: quiz, true_false, time_race, memory_match,
 // boss_20, concept_match, unlock. complete_equation has its own
 // screen (EquationGameScreen) — it plays equations, not Question

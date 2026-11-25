@@ -1,4 +1,4 @@
-// ABQARIYA — Equation items for the «أكمل المعادلة» (complete the
+// FULL MARK — Equation items for the «أكمل المعادلة» (complete the
 // equation) game mode.
 //
 // HONESTY — the complete inventory of usable equations, counted

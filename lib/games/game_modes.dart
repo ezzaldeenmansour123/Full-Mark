@@ -1,4 +1,4 @@
-// ABQARIYA — 12 game modes: enum + config.
+// FULL MARK — 12 game modes: enum + config.
 // The registry keeps all 12 configs (tests pin the count), but the UI
 // exposes ONLY the 8 truly playable modes (see [isPlayable]: quiz,
 // true_false, time_race, memory_match, boss_20, complete_equation,

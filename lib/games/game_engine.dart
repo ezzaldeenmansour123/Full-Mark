@@ -1,4 +1,4 @@
-// ABQARIYA — GameEngine: pure game logic, no UI, no I/O, no network.
+// FULL MARK — GameEngine: pure game logic, no UI, no I/O, no network.
 // Works with ANY list of [Question]s, including an EMPTY list (the screen
 // then shows the honest empty state — the engine never
 // invents questions). Seeded shuffling makes a game reproducible.

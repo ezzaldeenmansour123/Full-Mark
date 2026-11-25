@@ -1,4 +1,4 @@
-// ABQARIYA — English games: sentence building.
+// FULL MARK — English games: sentence building.
 // PRONUNCIATION: removed — there is no audio/TTS in this app, so no
 // speaker button is shown anywhere. Nothing here pretends audio exists.
 // The sentence game below is fed by real database questions (see

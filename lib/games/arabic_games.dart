@@ -1,4 +1,4 @@
-// ABQARIYA — Arabic games: sentence building.
+// FULL MARK — Arabic games: sentence building.
 // The sentence game is fed by REAL Arabic database questions (see
 // [ArabicSentenceGameScreen]); the built-in example below is explicitly
 // marked demo and is a generic language exercise, not a curriculum

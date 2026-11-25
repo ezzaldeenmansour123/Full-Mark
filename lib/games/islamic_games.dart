@@ -1,4 +1,4 @@
-// ABQARIYA — Islamic games: ordering / linking concepts.
+// FULL MARK — Islamic games: ordering / linking concepts.
 // CONTENT RULE (critical): concepts here are ONLY general, well-established
 // Islamic education TOPIC TITLES (e.g. "أركان الإسلام"). No Quranic verse
 // and no hadith text is quoted — nothing is reproduced from memory.

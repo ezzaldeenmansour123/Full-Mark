@@ -1,4 +1,4 @@
-// ABQARIYA — EquationGameScreen: the «أكمل المعادلة» (complete the
+// FULL MARK — EquationGameScreen: the «أكمل المعادلة» (complete the
 // equation) game mode, playable for real.
 //
 // The player balances each of the 4 verified equations in
