@@ -10,7 +10,7 @@
 
 import 'dart:async';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../models/game_result.dart';
 import '../models/question.dart';
@@ -353,8 +353,8 @@ class _GameScreenState extends State<GameScreen> {
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   color: _lastCorrect
-                      ? Colors.green.withOpacity(0.15)
-                      : Colors.red.withOpacity(0.15),
+                      ? Colors.green.withValues(alpha: 0.15)
+                      : Colors.red.withValues(alpha: 0.15),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Column(
@@ -413,7 +413,7 @@ class _GameScreenState extends State<GameScreen> {
                       padding: const EdgeInsets.all(6),
                       decoration: BoxDecoration(
                         color: card.matched
-                            ? Colors.green.withOpacity(0.3)
+                            ? Colors.green.withValues(alpha: 0.3)
                             : card.flipped
                                 ? Theme.of(context).colorScheme.primaryContainer
                                 : Theme.of(context).colorScheme.surfaceContainerHighest,

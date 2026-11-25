@@ -6,7 +6,7 @@
 // provided and imported by the content owner. Every item is labelled
 // «تجريبي» when it is demo data.
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// A concept-ordering item: put the [items] in the correct order
 /// ([correctOrder]). Items are topic titles only.

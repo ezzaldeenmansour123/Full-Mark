@@ -12,7 +12,7 @@
 // otherwise [NoTtsAvailable] is used and the button is disabled with an
 // honest message.
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Seam for system TTS. Implement with flutter_tts in the app shell if
 /// desired; this file ships without any TTS dependency.

@@ -5,7 +5,7 @@
 // built-in example below is explicitly marked demo and is a generic
 // language exercise, not a curriculum sentence.
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// One sentence-building item: [words] in shuffled display order,
 /// [correctOrder] the correct order (same words, correct sequence).
