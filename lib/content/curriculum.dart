@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 /// ما يحويه الملف — وما لا يحويه:
 /// - يحوي: هيكل المنهج فقط (عناوين الوحدات والدروس + مصدر وطبعة كل كتاب).
 /// - لا يحوي: نصوص الدروس ولا أي سؤال من الكتب.
-/// - الأسئلة تبقى «قيد الإعداد» حتى تصل الكتب المعتمدة أو إذن الوزارة.
+/// - الأسئلة تبقى «بلا أسئلة بعد» حتى تصل الكتب المعتمدة أو إذن الوزارة.
 ///
 /// المرجع الافتراضي: نسخة صنعاء 2027 (`default_edition: sanaa`) —
 /// قرار المستخدم 2026-11-25. نسخة عدن مذكورة فقط كسطور مقارنة موثقة
@@ -39,11 +39,6 @@ class CurriculumUnit {
   final String? book;
   final int? semester;
   final String? note;
-
-  List<CurriculumLesson> get numberedLessons => <CurriculumLesson>[
-        for (int i = 0; i < lessons.length; i++)
-          CurriculumLesson(number: i + 1, title: lessons[i]),
-      ];
 }
 
 class CurriculumVariant {
@@ -51,14 +46,12 @@ class CurriculumVariant {
     required this.variantId,
     required this.nameAr,
     required this.units,
-    this.sourceUrl,
     this.note,
   });
 
   final String variantId;
   final String nameAr;
   final List<CurriculumUnit> units;
-  final String? sourceUrl;
   final String? note;
 }
 
@@ -67,14 +60,12 @@ class CurriculumBook {
     required this.titleAr,
     this.edition,
     this.pages,
-    this.sourceUrl,
     this.note,
   });
 
   final String titleAr;
   final String? edition;
   final int? pages;
-  final String? sourceUrl;
   final String? note;
 }
 
@@ -129,17 +120,13 @@ class CurriculumSubject {
 class CurriculumData {
   const CurriculumData({
     required this.defaultEdition,
-    required this.questionsStatus,
     required this.copyright,
     required this.subjects,
-    required this.unverifiedGaps,
   });
 
   final String defaultEdition;
-  final String questionsStatus;
   final String copyright;
   final List<CurriculumSubject> subjects;
-  final List<String> unverifiedGaps;
 
   static Future<CurriculumData> load() async {
     final String raw =
@@ -156,14 +143,10 @@ class CurriculumData {
         (json['subjects'] as List<dynamic>?) ?? <dynamic>[];
     return CurriculumData(
       defaultEdition: (meta['default_edition'] as String?) ?? 'sanaa',
-      questionsStatus: (meta['questions_status'] as String?) ?? 'pending',
       copyright: (meta['copyright'] as String?) ?? '',
       subjects: rawSubjects
           .map((dynamic e) =>
               _subjectFromJson(e as Map<String, dynamic>))
-          .toList(),
-      unverifiedGaps: ((json['unverified_gaps'] as List<dynamic>?) ?? <dynamic>[])
-          .map((dynamic e) => e.toString())
           .toList(),
     );
   }
@@ -185,7 +168,6 @@ class CurriculumData {
           titleAr: (b['title_ar'] as String?) ?? '',
           edition: b['edition'] as String?,
           pages: (b['pages'] as num?)?.toInt(),
-          sourceUrl: b['source_url'] as String?,
           note: b['note'] as String?,
         );
       }).toList(),
@@ -197,7 +179,6 @@ class CurriculumData {
           variantId: (v['variant_id'] as String?) ?? '',
           nameAr: (v['variant_name_ar'] as String?) ?? '',
           units: parseUnits(v['units'] as List<dynamic>?),
-          sourceUrl: v['source_url'] as String?,
           note: v['note'] as String?,
         );
       }).toList(),

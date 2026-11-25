@@ -33,8 +33,13 @@ class QuestionPacks {
   QuestionPacks._();
 
   /// مسارات الحزم المضمّنة في التطبيق (مسجّلة أيضاً في `pubspec.yaml`).
-  /// ملف مفقود يُتخطَّى بصمت — التطبيق يعمل بلا أسئلة لتلك المادة
-  /// («قيد الإعداد») بدل أن يتعطّل.
+  /// ملف مفقود أو تالف يُتخطَّى ويُسجَّل في [lastSkippedAssets] — التطبيق يعمل بلا أسئلة لتلك المادة
+  /// («بلا أسئلة بعد») بدل أن يتعطّل.
+  /// Assets skipped by the last [loadAll] call (missing file, corrupt
+  /// JSON, demo pack, or a pack without id/source) — reported to the
+  /// user via the home banner instead of being silently dropped.
+  static List<String> lastSkippedAssets = <String>[],
+
   static const List<String> packAssets = <String>[
     'assets/data/questions/chemistry.json',
     'assets/data/questions/math.json',
@@ -47,6 +52,7 @@ class QuestionPacks {
 
   /// يحمّل كل الحزم الموجودة ويحوّل أسئلتها إلى صفوف قاعدة بيانات.
   static Future<List<QuestionPackSeed>> loadAll() async {
+    lastSkippedAssets = <String>[];
     final List<QuestionPackSeed> out = <QuestionPackSeed>[];
     for (final String asset in packAssets) {
       try {
@@ -55,11 +61,17 @@ class QuestionPacks {
             jsonDecode(raw) as Map<String, dynamic>;
         final Map<String, dynamic> meta =
             (pack['pack'] as Map<String, dynamic>?) ?? <String, dynamic>{};
-        if (meta['is_demo'] == true) continue;
+        if (meta['is_demo'] == true) {
+          lastSkippedAssets.add('$asset (تجريبية — مرفوضة)');
+          continue;
+        }
         final String packId = (meta['id'] as String?) ?? '';
         final String titleAr = (meta['title_ar'] as String?) ?? packId;
         final String source = (meta['source'] as String?) ?? '';
-        if (packId.isEmpty || source.isEmpty) continue;
+        if (packId.isEmpty || source.isEmpty) {
+          lastSkippedAssets.add('$asset (بلا معرّف أو مصدر)');
+          continue;
+        }
         final List<Map<String, Object?>> rows = <Map<String, Object?>>[];
         for (final dynamic q in (pack['questions'] as List<dynamic>? ?? <dynamic>[])) {
           final Map<String, dynamic> row = _questionToRow(q as Map<String, dynamic>);
@@ -72,7 +84,8 @@ class QuestionPacks {
           rows: rows,
         ));
       } catch (_) {
-        // حزمة مفقودة أو تالفة: تُتخطَّى، وتبقى مادتها «قيد الإعداد».
+        // حزمة مفقودة أو تالفة: تُتخطَّى، وتبقى مادتها «بلا أسئلة بعد».
+        lastSkippedAssets.add('$asset (ملف مفقود أو تالف)');
         continue;
       }
     }
