@@ -125,6 +125,32 @@ class _ExamScreenState extends State<ExamScreen> {
                   '«تجريبي» ولا تُقدَّم على أنها أسئلة وزارية حقيقية.',
                   textAlign: TextAlign.center,
                 ),
+                const SizedBox(height: 16),
+                Card(
+                  color: Colors.amber.withValues(alpha: 0.25),
+                  child: const Padding(
+                    padding: EdgeInsets.all(12),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Icon(Icons.warning_amber),
+                        SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            'تنبيه مهم: هذه المحاكاة تستخدم أسئلة '
+                            'تدريبية من بنك أسئلة المنهج فقط، وليست '
+                            'أوراق امتحانات وزارية حقيقية من سنوات '
+                            'سابقة. لا تتضمن هذه النسخة من التطبيق أي '
+                            'أوراق وزارية سابقة موثّقة، ولا يُقدَّم أي '
+                            'سؤال هنا على أنه سؤال وزاري حقيقي، ولا '
+                            'تُقدَّم نتيجتك على أنها توقّع لنتيجة '
+                            'الامتحان الرسمي.',
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
                 const SizedBox(height: 24),
                 const Text(
                   'ما الذي تتضمنه المحاكاة؟',
