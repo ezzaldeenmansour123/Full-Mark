@@ -3,8 +3,9 @@
 #
 # إصدارات مثبّتة بعد التحقق عبر الويب بتاريخ 2026-11-25:
 # - Flutter المستقر الحالي: 3.50.1 مع Dart 3.14.0 (صدر 20 تشرين الثاني/نوفمبر 2026).
-#   نطلب حدًّا أدنى محافظًا (>=3.22 / Dart >=3.4) حتى يعمل المشروع أيضًا على
-#   إصدارات أقدم، بينما يثبّت CI إصدار stable الأحدث.
+#   مكتبة Material انتقلت رسمياً إلى حزمة material_ui بدءاً من Flutter 3.47
+#   (فأصبح `package:flutter/material.dart` مهملاً)، لذا الحد الأدنى الآن
+#   هو Flutter >=3.47 / Dart >=3.13، بينما يثبّت CI إصدار stable الأحدث.
 # - sqflite الأحدث: 2.4.6 (نوفمبر 2026) — يفي بشرط المهمة (^2.4.2) ويتجاوزه.
 # - path الأحدث: 1.9.1.
 name: abqariya
@@ -14,12 +15,18 @@ publish_to: "none"
 version: 0.1.0+1
 
 environment:
-  sdk: ">=3.4.0 <4.0.0"
-  flutter: ">=3.22.0"
+  sdk: ">=3.13.0 <4.0.0"
+  flutter: ">=3.47.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  # material_ui: مكتبة Material الرسمية (انتقلت من SDK بدءاً من 3.47).
+  # كل واجهات التطبيق (MaterialApp، Scaffold، الأزرار...) تأتي منها.
+  material_ui: ^1.11.1
+  # cupertino_ui: مكتبة Cupertino الرسمية — نحتاجها فقط لترجمة عناصر
+  # Cupertino (GlobalCupertinoLocalizations) بعد انتقالها من SDK.
+  cupertino_ui: ^1.1.7
   # flutter_localizations: ترجمة عناصر Material (التواريخ، الأزرار...)
   # إلى العربية — ضرورية لتجربة RTL كاملة. جزء من SDK، بلا إنترنت.
   flutter_localizations:
