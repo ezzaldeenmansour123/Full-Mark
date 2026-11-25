@@ -1,4 +1,4 @@
-// ABQARIYA — 3D Cell Viewer (الخلية ثلاثية الأبعاد)
+// FULL MARK — 3D Cell Viewer (الخلية ثلاثية الأبعاد)
 // A REAL interactive 3D viewer built in pure Dart/Flutter Canvas —
 // no plugins, no downloaded model files, no internet, fully offline.
 //

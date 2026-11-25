@@ -1,4 +1,4 @@
-// ABQARIYA — Math Lab (مختبر الرياضيات)
+// FULL MARK — Math Lab (مختبر الرياضيات)
 // Function plotter + quadratic equation solver.
 // 100% offline. Procedural CustomPainter only — no images, no assets.
 // Content note: teaches general mathematical principles (quadratic / linear

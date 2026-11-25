@@ -1,4 +1,4 @@
-// ABQARIYA — Chemistry Lab (مختبر الكيمياء)
+// FULL MARK — Chemistry Lab (مختبر الكيمياء)
 // Molecule builder + equation balancer game.
 // 100% offline. Procedural CustomPainter only — no images, no assets.
 // Atom counts must balance exactly; valency rules are enforced.

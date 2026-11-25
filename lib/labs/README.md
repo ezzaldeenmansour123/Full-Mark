@@ -1,4 +1,4 @@
-# ABQARIYA — Science Labs (مختبرات العلوم)
+# FULL MARK — Science Labs (مختبرات العلوم)
 
 Offline Flutter labs for 3rd secondary scientific (Yemeni curriculum).
 100% offline, no internet, no accounts, no ads. All drawing is procedural

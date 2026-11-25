@@ -1,4 +1,4 @@
-// ABQARIYA — Biology Lab (مختبر الأحياء)
+// FULL MARK — Biology Lab (مختبر الأحياء)
 // Interactive vector diagrams: human heart, human cell, digestive system.
 // 100% offline. Procedural CustomPainter only — no images, no assets.
 // Diagrams are SIMPLIFIED teaching diagrams — labelled as such on screen.

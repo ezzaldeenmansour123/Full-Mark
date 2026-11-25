@@ -1,4 +1,4 @@
-// ABQARIYA — Physics Lab (مختبر الفيزياء)
+// FULL MARK — Physics Lab (مختبر الفيزياء)
 // Three interactive labs: free fall, pendulum, simple DC circuit.
 // 100% offline. Procedural CustomPainter only — no images, no assets.
 // Formulas are standard physics; units are shown with every result.
