@@ -1,14 +1,23 @@
+import 'dart:async';
+
 import 'package:material_ui/material_ui.dart';
 
 import '../db/database.dart';
+import '../games/game_screen.dart';
+import '../models/game_result.dart';
+import '../models/question.dart';
 
-/// التحدي اليومي: سؤال/مرحلة قصيرة كل يوم.
+/// التحدي اليومي: 10 أسئلة كل يوم، اختيار حتمي حسب التاريخ
+/// (نفس اليوم = نفس الأسئلة) ومخلوط عبر المواد، من بنك الأسئلة
+/// الموثّق — عبر `DatabaseHelper.getDailyChallengeQuestions`.
+/// يلعب في `GameScreen` (وضع quiz)، وتُسجَّل نتيجته في جدول
+/// المحاولات فتظهر الشاشة حالة الإكمال بعد اللعب.
 ///
-/// السلوك الحقيقي في v1:
-/// - إن كان بنك الأسئلة فارغًا (الحال الآن)، تعرض الشاشة بصراحة أن
-///   التحدي قيد الإعداد وأنه سيُفعّل فور وصول محتوى موثّق — بلا سؤال مزيّف.
-/// - إن لعبتِ تحدي اليوم، تعرض الشاشة أنك أكملتِه (من جدول المحاولات).
-/// منطق اختيار سؤال اليوم يملكه وكيل المحتوى/الأسئلة عند توفر البنك.
+/// السلوك الحقيقي:
+/// - إن كان بنك الأسئلة فارغًا، تعرض الشاشة بصراحة أن التحدي
+///   قيد الإعداد — بلا سؤال مزيّف.
+/// - إن لعبتِ تحدي اليوم (أي محاولة مسجلة اليوم)، تعرض الشاشة
+///   أنك أكملتِه (من جدول المحاولات).
 class DailyChallengeScreen extends StatefulWidget {
   const DailyChallengeScreen({super.key});
 
@@ -37,6 +46,43 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
       _attemptsToday = today;
       _loading = false;
     });
+  }
+
+  /// يبدأ تحدي اليوم الحقيقي: 10 أسئلة حتمية من البنك، في لعبة
+  /// quiz، وتُسجَّل النتيجة في المحاولات عند الانتهاء فتظهر حالة
+  /// الإكمال بعد الرجوع. بنك فارغ: رسالة صادقة، بلا لعبة.
+  Future<void> _startChallenge() async {
+    final List<Question> questions = await DatabaseHelper.instance
+        .getDailyChallengeQuestions(DateTime.now());
+    if (!mounted) return;
+    if (questions.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('لا توجد أسئلة موثّقة بعد لبدء التحدي.'),
+        ),
+      );
+      return;
+    }
+    await Navigator.of(context).push<void>(
+      MaterialPageRoute<void>(
+        builder: (_) => GameScreen(
+          modeRouteId: 'quiz',
+          subject: 'daily',
+          subjectTitleAr: 'تحدي اليوم',
+          questions: questions,
+          onFinished: (GameResult result) {
+            unawaited(
+              DatabaseHelper.instance.recordGameResult(
+                result: result,
+                playedQuestions: questions,
+                mode: 'daily_challenge',
+              ),
+            );
+          },
+        ),
+      ),
+    );
+    if (mounted) _load();
   }
 
   @override
@@ -101,14 +147,7 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
                   ),
                   const SizedBox(height: 16),
                   ElevatedButton.icon(
-                    onPressed: () {
-                      // يُربط بمرحلة التحدي عندما يبني وكيل اللعب منطقه.
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text('مرحلة التحدي قيد الربط — عودي قريبًا'),
-                        ),
-                      );
-                    },
+                    onPressed: _startChallenge,
                     icon: const Icon(Icons.play_arrow),
                     label: const Text('ابدئي التحدي'),
                   ),
