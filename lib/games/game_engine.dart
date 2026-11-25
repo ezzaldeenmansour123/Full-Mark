@@ -37,7 +37,7 @@ class GameEngine {
   int _index = 0;
   int _correct = 0;
   int _wrong = 0;
-  int _skipped = 0;
+  final int _skipped = 0;
   int _streak = 0;
   int _bestStreak = 0;
   int _streakBonus = 0;

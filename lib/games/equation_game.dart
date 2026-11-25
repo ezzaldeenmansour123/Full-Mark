@@ -204,7 +204,7 @@ class _EquationGameScreenState extends State<EquationGameScreen> {
           ),
         ],
       ),
-    );
+    ) ?? false;
     if (!mounted) return;
     if (replay) {
       setState(() {

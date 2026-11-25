@@ -12,6 +12,16 @@ import '../db/database.dart';
 import '../models/game_result.dart';
 import '../models/question.dart';
 
+/// Returns true when [attempt] matches [correctOrder] exactly.
+bool checkEnglishSentenceOrder(
+    List<String> correctOrder, List<String> attempt) {
+  if (attempt.length != correctOrder.length) return false;
+  for (var i = 0; i < attempt.length; i++) {
+    if (attempt[i] != correctOrder[i]) return false;
+  }
+  return true;
+}
+
 /// English sentence-building widget: tap words in the correct order.
 /// Shows a «تجريبي» badge ONLY when [isDemo] is true (real curriculum
 /// sentences never show it). «Check» counts only the first check;

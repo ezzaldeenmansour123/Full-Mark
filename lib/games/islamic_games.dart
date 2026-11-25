@@ -125,8 +125,7 @@ class _IslamicOrderingGameState extends State<IslamicOrderingGame> {
               onPressed: _picked.isEmpty
                   ? null
                   : () {
-                      final ok = checkConceptOrder(
-                          item,
+                      final ok = item.isCorrectOrder(
                           _picked
                               .map((int i) => item.items[i])
                               .toList(growable: false));

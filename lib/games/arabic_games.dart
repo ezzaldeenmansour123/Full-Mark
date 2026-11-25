@@ -173,8 +173,7 @@ class _ArabicSentenceGameState extends State<ArabicSentenceGame> {
                 onPressed: _picked.isEmpty || _answered
                     ? null
                     : () {
-                        final ok = checkSentenceOrder(
-                            item,
+                        final ok = item.isCorrectOrder(
                             _picked
                                 .map((int i) => item.words[i])
                                 .toList(growable: false));
