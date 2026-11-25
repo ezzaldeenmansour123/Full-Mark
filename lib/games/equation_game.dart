@@ -16,6 +16,8 @@
 // and it never enters the review queue (review_queue.question_id is
 // a foreign key — a lab-only id could never be reviewed).
 
+import 'dart:async';
+
 import 'package:material_ui/material_ui.dart';
 
 import '../db/database.dart';
