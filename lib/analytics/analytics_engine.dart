@@ -67,6 +67,11 @@ class AnalyticsSummary {
   /// Empty when there is not enough data.
   final List<double> accuracyTrend;
 
+  /// The calendar date of each entry in [accuracyTrend], same order.
+  /// Empty together with the trend. (v0.1.4: rows used to read
+  /// «اليوم 1/2» with no date — now each row shows its real date.)
+  final List<DateTime> trendDates;
+
   const AnalyticsSummary({
     required this.totalAttempts,
     required this.totalCorrect,
@@ -77,6 +82,7 @@ class AnalyticsSummary {
     required this.overallAccuracy,
     required this.avgSecondsPerQuestion,
     required this.accuracyTrend,
+    required this.trendDates,
   });
 
   /// True only with >= 5 attempts. Below that, screens must show
@@ -240,9 +246,15 @@ class AnalyticsEngine {
             .toList()
         : <MasteryEntry>[];
 
-    final avgSeconds = total == 0
+    // Average over MEASURED attempts only (secondsTaken > 0). Attempts
+    // whose time was never measured store 0 and must not drag the
+    // average down to a fake "0 s per question".
+    final measured =
+        attempts.where((Attempt a) => a.secondsTaken > 0).toList();
+    final double? avgSeconds = measured.isEmpty
         ? null
-        : attempts.fold<int>(0, (s, a) => s + a.secondsTaken) / total;
+        : measured.fold<int>(0, (int s, Attempt a) => s + a.secondsTaken) /
+            measured.length;
 
     // Trend: accuracy per calendar day, last 7 days that have data.
     final byDay = <String, List<Attempt>>{};
@@ -252,11 +264,20 @@ class AnalyticsEngine {
       byDay.putIfAbsent(day, () => []).add(a);
     }
     final days = byDay.keys.toList()..sort();
-    final trend = days
-        .skip(days.length > 7 ? days.length - 7 : 0)
+    final List<String> trendDays =
+        days.skip(days.length > 7 ? days.length - 7 : 0).toList();
+    final trend = trendDays.map((d) {
+      final g = byDay[d]!;
+      return g.where((a) => a.correct).length * 100.0 / g.length;
+    }).toList();
+    final trendDates = trendDays
         .map((d) {
-          final g = byDay[d]!;
-          return g.where((a) => a.correct).length * 100.0 / g.length;
+          final parts = d.split('-');
+          return DateTime(
+            int.parse(parts[0]),
+            int.parse(parts[1]),
+            int.parse(parts[2]),
+          );
         })
         .toList();
 
@@ -270,6 +291,7 @@ class AnalyticsEngine {
       overallAccuracy: total == 0 ? null : correct * 100.0 / total,
       avgSecondsPerQuestion: avgSeconds,
       accuracyTrend: total >= kMinAttempts ? trend : const [],
+      trendDates: total >= kMinAttempts ? trendDates : const [],
     );
   }
 
@@ -305,34 +327,6 @@ class AnalyticsEngine {
     });
     return due.take(maxItems).map((s) => s.questionId).toList();
   }
-
-  /// Convert a finished [GameResult] into attempts (one per question).
-  /// Only the ids the engine recorded as wrong are known to be wrong;
-  /// per-question ids are not stored by GameResult, so this helper is
-  /// only used when the caller also passes the question ids in order.
-  static List<Attempt> attemptsFromResult(
-    GameResult result,
-    List<String> questionIdsInOrder, {
-    DateTime? at,
-  }) {
-    final now = at ?? DateTime.now();
-    final out = <Attempt>[];
-    for (var i = 0; i < questionIdsInOrder.length; i++) {
-      final id = questionIdsInOrder[i];
-      final correct = i < result.perQuestionCorrect.length
-          ? result.perQuestionCorrect[i]
-          : false;
-      out.add(Attempt(
-        questionId: id,
-        subject: result.subject,
-        unit: '',
-        correct: correct,
-        secondsTaken: result.totalQuestions == 0
-            ? 0
-            : result.elapsedSeconds ~/ result.totalQuestions,
-        at: now,
-      ));
-    }
-    return out;
-  }
 }
+
+
