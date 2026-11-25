@@ -132,8 +132,8 @@ class _ExamScreenState extends State<ExamScreen> {
                 if (_questionCount == 0) ...<Widget>[
                   ElevatedButton.icon(
                     onPressed: null,
-                    icon: Icon(Icons.play_arrow),
-                    label: Text('ابدئي المحاكاة'),
+                    icon: const Icon(Icons.play_arrow),
+                    label: const Text('ابدئي المحاكاة'),
                   ),
                   const Padding(
                     padding: EdgeInsets.only(top: 8),
