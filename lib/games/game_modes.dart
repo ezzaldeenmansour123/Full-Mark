@@ -1,9 +1,15 @@
 // ABQARIYA — 12 game modes: enum + config.
 // The registry keeps all 12 configs (tests pin the count), but the UI
-// exposes ONLY the 5 truly playable modes (see [isPlayable]: quiz,
-// true_false, time_race, memory_match, boss_20). The other 7 never
-// appear in any picker, and GameScreen never shows a placeholder
-// screen for them; ministerial_exam links to ExamScreen instead.
+// exposes ONLY the 7 truly playable modes (see [isPlayable]: quiz,
+// true_false, time_race, memory_match, boss_20, complete_equation,
+// concept_match). The other 5 never appear in any picker, and
+// GameScreen never shows a placeholder screen for them;
+// ministerial_exam links to ExamScreen instead.
+//
+// complete_equation plays the 4 verified equations in
+// lib/games/equation_items.dart (lab + bank, none invented).
+// concept_match pairs each lesson question stem with its correct
+// answer (MCQ only, from the verified bank).
 
 import '../models/question.dart';
 
@@ -16,7 +22,7 @@ enum GameModeId {
   aim,
   memoryMatch,
   trueFalse,
-  linkConcepts,
+  conceptMatch,
   boss20,
   smartMemory,
   ministerialExam,
@@ -91,12 +97,14 @@ const List<GameModeConfig> kGameModes = <GameModeConfig>[
     id: GameModeId.completeEquation,
     routeId: 'complete_equation',
     titleAr: 'أكمل المعادلة',
-    descriptionAr: 'أكمل المعادلات والعلاقات العلمية الناقصة.',
-    questionCount: 8,
+    descriptionAr:
+        'وازن معادلات كيميائية حقيقية باختيار المعاملات الصحيحة — '
+        '4 معادلات موثقة من المختبر وبنك الأسئلة (الكيمياء فقط).',
+    questionCount: 4,
     secondsPerQuestion: 90,
     totalSeconds: 0,
-    scoringRuleAr: '10 نقاط لكل معادلة مكتملة صحيحة.',
-    isPlayable: false,
+    scoringRuleAr: '10 نقاط لكل معادلة موزونة صحيحة بأصغر المعاملات.',
+    isPlayable: true,
   ),
   GameModeConfig(
     id: GameModeId.lab,
@@ -143,15 +151,17 @@ const List<GameModeConfig> kGameModes = <GameModeConfig>[
     isPlayable: true,
   ),
   GameModeConfig(
-    id: GameModeId.linkConcepts,
-    routeId: 'link_concepts',
-    titleAr: 'اربط المفاهيم',
-    descriptionAr: 'اربط كل مفهوم بتعريفه أو مثاله الصحيح.',
-    questionCount: 8,
-    secondsPerQuestion: 60,
+    id: GameModeId.conceptMatch,
+    routeId: 'concept_match',
+    titleAr: 'مطابقة المفاهيم',
+    descriptionAr:
+        'طابق كل سؤال مع إجابته الصحيحة من أسئلة الدرس نفسه — '
+        '5 أزواج في كل جولة.',
+    questionCount: 5,
+    secondsPerQuestion: 0,
     totalSeconds: 0,
-    scoringRuleAr: '10 نقاط لكل ربط صحيح.',
-    isPlayable: false,
+    scoringRuleAr: '10 نقاط لكل تطابق صحيح من أول محاولة.',
+    isPlayable: true,
   ),
   GameModeConfig(
     id: GameModeId.boss20,
@@ -214,6 +224,7 @@ List<QuestionType> questionTypesForMode(GameModeId id) {
     case GameModeId.trueFalse:
       return const [QuestionType.trueFalse];
     case GameModeId.memoryMatch:
+    case GameModeId.conceptMatch:
       return const [QuestionType.mcq];
     default:
       return const [QuestionType.mcq];

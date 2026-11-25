@@ -1,6 +1,8 @@
 // ABQARIYA — GameScreen: real playable Flutter screen.
-// Playable for real: quiz, true_false, time_race, memory_match, boss_20.
-// The 7 non-playable modes never reach this screen (the mode picker
+// Playable for real: quiz, true_false, time_race, memory_match,
+// boss_20, concept_match. complete_equation has its own screen
+// (EquationGameScreen) — it plays equations, not Question rows.
+// The 5 non-playable modes never reach this screen (the mode picker
 // only offers playable modes); ministerial_exam links to ExamScreen.
 // Empty bank: honest message, never invented questions. Demo questions
 // (is_demo rows) show a visible «تجريبي» badge — real curriculum
@@ -94,6 +96,22 @@ class _GameScreenState extends State<GameScreen> {
   int _memoryBestStreak = 0;
   DateTime? _memoryStartedAt;
 
+  // --- concept_match state ---
+  // Rounds of at most 5 pairs; no round contains two questions with
+  // the same correct answer (otherwise one answer tile would match two
+  // stems and the board would be ambiguous). Correctness is per
+  // question, first-try only — exactly like memory_match.
+  late final List<List<Question>> _conceptRounds;
+  int _conceptRoundIndex = 0;
+  late List<String> _conceptAnswers;
+  String? _conceptSelectedStemId;
+  final Set<String> _conceptMatchedRoundIds = <String>{};
+  final Set<String> _conceptFailedIds = <String>{};
+  final Map<String, bool> _conceptCorrectById = <String, bool>{};
+  final List<bool> _conceptOutcomeSequence = <bool>[];
+  String? _conceptMessage;
+  DateTime? _conceptStartedAt;
+
   @override
   void initState() {
     super.initState();
@@ -115,6 +133,11 @@ class _GameScreenState extends State<GameScreen> {
     if (_mode.id == GameModeId.memoryMatch) {
       _buildMemoryCards();
       _memoryStartedAt = DateTime.now();
+    }
+    if (_mode.id == GameModeId.conceptMatch) {
+      _conceptRounds = _buildConceptRounds(_engine.questions);
+      _conceptStartedAt = DateTime.now();
+      _conceptAnswers = _answersForRound(0);
     }
     // Game start: remember this lesson as the last stage (the caller
     // also saves it before pushing; this covers direct launches).
@@ -138,6 +161,134 @@ class _GameScreenState extends State<GameScreen> {
     }
     cards.shuffle();
     _cards = cards;
+  }
+
+  /// Split questions into rounds of at most 5, guaranteeing that no
+  /// round contains two questions with the same correct answer
+  /// (otherwise one answer tile would match two stems). Every question
+  /// lands in exactly one round — nothing is dropped.
+  static List<List<Question>> _buildConceptRounds(
+    List<Question> questions,
+  ) {
+    final List<List<Question>> rounds = <List<Question>>[];
+    for (final Question q in questions) {
+      List<Question>? target;
+      for (final List<Question> round in rounds) {
+        if (round.length < 5 &&
+            !round.any((Question o) => o.correctAnswer == q.correctAnswer)) {
+          target = round;
+          break;
+        }
+      }
+      target ??= <Question>[];
+      if (!rounds.contains(target)) rounds.add(target);
+      target.add(q);
+    }
+    return rounds;
+  }
+
+  List<String> _answersForRound(int roundIndex) {
+    final List<String> answers = _conceptRounds[roundIndex]
+        .map((Question q) => q.correctAnswer)
+        .toList(growable: false)
+      ..shuffle();
+    return answers;
+  }
+
+  void _onConceptStemTap(String questionId) {
+    if (_result != null || _conceptMatchedRoundIds.contains(questionId)) {
+      return;
+    }
+    setState(() {
+      _conceptSelectedStemId = questionId;
+      _conceptMessage = null;
+    });
+  }
+
+  Future<void> _onConceptAnswerTap(String answer) async {
+    if (_result != null) return;
+    final String? stemId = _conceptSelectedStemId;
+    if (stemId == null) {
+      setState(() => _conceptMessage = 'اختاري سؤالاً أولاً، ثم إجابته.');
+      return;
+    }
+    final List<Question> round = _conceptRounds[_conceptRoundIndex];
+    final Question stem =
+        round.firstWhere((Question q) => q.id == stemId);
+    if (stem.correctAnswer == answer) {
+      final bool firstTry = !_conceptFailedIds.contains(stemId);
+      setState(() {
+        _conceptMatchedRoundIds.add(stemId);
+        _conceptCorrectById[stemId] = firstTry;
+        _conceptOutcomeSequence.add(firstTry);
+        _conceptSelectedStemId = null;
+        _conceptMessage = firstTry
+            ? 'تطابق صحيح ✓'
+            : 'تطابق صحيح، لكن بعد محاولة خاطئة — يُحسب خطأً في النتيجة.';
+      });
+      if (_conceptMatchedRoundIds.length >= round.length) {
+        // Let the player see the final green pair before moving on.
+        await Future<void>.delayed(const Duration(milliseconds: 500));
+        if (!mounted) return;
+        if (_conceptRoundIndex + 1 < _conceptRounds.length) {
+          setState(() {
+            _conceptRoundIndex++;
+            _conceptMatchedRoundIds.clear();
+            _conceptAnswers = _answersForRound(_conceptRoundIndex);
+            _conceptMessage = null;
+          });
+        } else {
+          await _finishConceptGame();
+        }
+      }
+    } else {
+      setState(() {
+        _conceptFailedIds.add(stemId);
+        _conceptSelectedStemId = null;
+        _conceptMessage =
+            'هذه الإجابة لا تطابق السؤال المحدد — جرّبي إجابة أخرى.';
+      });
+    }
+  }
+
+  Future<void> _finishConceptGame() async {
+    final List<Question> questions = _engine.questions;
+    final List<bool> perQuestionCorrect = questions
+        .map((Question q) => _conceptCorrectById[q.id] ?? false)
+        .toList(growable: false);
+    final List<String> wrongIds = questions
+        .where((Question q) => !(_conceptCorrectById[q.id] ?? false))
+        .map((Question q) => q.id)
+        .toList(growable: false);
+    final int correct = perQuestionCorrect.where((bool v) => v).length;
+    final int elapsed = _conceptStartedAt == null
+        ? 0
+        : DateTime.now().difference(_conceptStartedAt!).inSeconds;
+    var streak = 0;
+    var bestStreak = 0;
+    var streakBonus = 0;
+    for (final bool v in _conceptOutcomeSequence) {
+      if (v) {
+        streak++;
+        if (streak > bestStreak) bestStreak = streak;
+        if (streak >= 3) streakBonus++;
+      } else {
+        streak = 0;
+      }
+    }
+    await _finishGame(GameResult(
+      modeId: _mode.routeId,
+      subject: widget.subject,
+      totalQuestions: questions.length,
+      correct: correct,
+      wrong: questions.length - correct,
+      skipped: 0,
+      bestStreak: bestStreak,
+      streakBonus: streakBonus,
+      elapsedSeconds: elapsed,
+      perQuestionCorrect: perQuestionCorrect,
+      wrongQuestionIds: wrongIds,
+    ));
   }
 
   void _startQuestionTimer() {
@@ -406,6 +557,10 @@ class _GameScreenState extends State<GameScreen> {
     if (_result != null) return _buildSummary(context, _result!);
     // 5) Memory-match board.
     if (_mode.id == GameModeId.memoryMatch) return _buildMemoryBoard(context);
+    // 5b) Concept-match board (stems <-> answers, visible lists).
+    if (_mode.id == GameModeId.conceptMatch) {
+      return _buildConceptBoard(context);
+    }
     // 6) Normal question flow (quiz / true_false / time_race / boss_20).
     return _buildQuestion(context);
   }
@@ -599,6 +754,142 @@ class _GameScreenState extends State<GameScreen> {
           child: const Text('تحقق'),
         ),
       ],
+    );
+  }
+
+  Widget _buildConceptBoard(BuildContext context) {
+    final List<Question> round = _conceptRounds[_conceptRoundIndex];
+    final int matched = _conceptMatchedRoundIds.length;
+    return Scaffold(
+      appBar: AppBar(title: Text('${_mode.titleAr} — ${widget.subjectTitleAr}')),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            Text(
+              'الجولة ${_conceptRoundIndex + 1} من ${_conceptRounds.length}'
+              '  •  التطابقات: $matched / ${round.length}',
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 4),
+            const Text(
+              'اضغطي على سؤال من العمود الأيمن، ثم على إجابته الصحيحة '
+              'من العمود الأيسر.',
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 12),
+            Expanded(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        const Text('الأسئلة',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        const SizedBox(height: 8),
+                        Expanded(
+                          child: ListView(
+                            children: [
+                              for (final Question q in round)
+                                _conceptTile(
+                                  context,
+                                  label: q.text,
+                                  selected:
+                                      _conceptSelectedStemId == q.id,
+                                  matched: _conceptMatchedRoundIds
+                                      .contains(q.id),
+                                  onTap: () => _onConceptStemTap(q.id),
+                                ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        const Text('الإجابات',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        const SizedBox(height: 8),
+                        Expanded(
+                          child: ListView(
+                            children: [
+                              for (final String answer in _conceptAnswers)
+                                _conceptTile(
+                                  context,
+                                  label: answer,
+                                  selected: false,
+                                  matched: round.any((Question q) =>
+                                      q.correctAnswer == answer &&
+                                      _conceptMatchedRoundIds.contains(q.id)),
+                                  onTap: () => _onConceptAnswerTap(answer),
+                                ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            if (_conceptMessage != null) ...[
+              const SizedBox(height: 8),
+              Text(
+                _conceptMessage!,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: _conceptMessage!.contains('✓')
+                      ? Colors.green
+                      : Colors.red,
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _conceptTile(
+    BuildContext context, {
+    required String label,
+    required bool selected,
+    required bool matched,
+    required VoidCallback onTap,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: InkWell(
+        onTap: matched ? null : onTap,
+        borderRadius: BorderRadius.circular(8),
+        child: Container(
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: matched
+                ? Colors.green.withValues(alpha: 0.3)
+                : selected
+                    ? Theme.of(context).colorScheme.primaryContainer
+                    : Theme.of(context)
+                        .colorScheme
+                        .surfaceContainerHighest,
+            borderRadius: BorderRadius.circular(8),
+            border: selected
+                ? Border.all(
+                    color: Theme.of(context).colorScheme.primary, width: 2)
+                : null,
+          ),
+          child: Text(label, style: const TextStyle(fontSize: 14)),
+        ),
+      ),
     );
   }
 
