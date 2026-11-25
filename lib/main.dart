@@ -6,6 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart'
 import 'content/curriculum.dart';
 import 'content/question_packs.dart';
 import 'core/progress_store.dart';
+import 'labs/cell_3d.dart';
 import 'db/database.dart';
 import 'core/routes.dart';
 import 'core/theme.dart';
@@ -26,29 +27,59 @@ import 'screens/worlds_screen.dart';
 ///
 /// يفتح قاعدة البيانات المحلية قبل بناء الواجهة (حفظ تلقائي واستئناف
 /// آخر مرحلة يعتمدان عليها)، ويقرأ تفضيل الوضع الداكن المخزّن محليًا.
+/// فشل فتح قاعدة البيانات كان ينهار قبل أول إطار دون أي رسالة — الآن
+/// تظهر شاشة خطأ صريحة. وفشل الزرع كان يُبتلع بصمت — الآن يُسجَّل
+/// في debugPrint ويظهر تنبيه في الشاشة الرئيسية.
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final ProgressStore store = SqliteProgressStore();
-  await store.init();
-  // زرع هيكل منهج صنعاء 2027 (وحدات/دروس فقط) عند أول تشغيل — إن كان
-  // جدول الوحدات فارغاً. أي فشل هنا لا يمنع التشغيل.
+  String? initError;
   try {
-    await DatabaseHelper.instance.seedCurriculumIfEmpty(
-      () async => (await CurriculumData.load()).seedRows(),
-    );
-  } catch (_) {
-    // يبقى التطبيق يعمل بهيكل فارغ صادق («قيد الإعداد»).
+    await store.init();
+  } catch (e) {
+    initError = 'تعذّر فتح قاعدة البيانات المحلية: $e';
+    debugPrint('ABQARIYA init error: $e');
   }
-  // زرع حزم الأسئلة الموثقة (بعد المنهج، لمفاتيحها الأجنبية) — حزمة
-  // مفقودة أو تالفة تُتخطَّى وتبقى مادتها «قيد الإعداد».
+  String? seedError;
+  if (initError == null) {
+    // زرع هيكل منهج صنعاء 2027 (وحدات/دروس فقط) عند أول تشغيل.
+    try {
+      await DatabaseHelper.instance.seedCurriculumIfEmpty(
+        () async => (await CurriculumData.load()).seedRows(),
+      );
+    } catch (e) {
+      seedError = 'تعذّر تحميل هيكل المنهج: $e';
+      debugPrint('ABQARIYA curriculum seed error: $e');
+    }
+    // زرع حزم الأسئلة الموثقة (بعد المنهج، لمفاتيحها الأجنبية).
+    try {
+      await DatabaseHelper.instance
+          .seedQuestionPacks(await QuestionPacks.loadAll());
+    } catch (e) {
+      final String msg = 'تعذّر تحميل حزم الأسئلة: $e';
+      seedError = seedError == null ? msg : '$seedError\n$msg';
+      debugPrint('ABQARIYA questions seed error: $e');
+    }
+    // حزمة مفقودة أو تالفة تُتخطَّى — لكن لا تُخفى: تُذكر في التنبيه.
+    final List<String> skipped = QuestionPacks.lastSkippedAssets;
+    if (skipped.isNotEmpty) {
+      final String note =
+          'حزم أسئلة تُخطّيت (ملف مفقود أو تالف): ${skipped.join('، ')}';
+      seedError = seedError == null ? note : '$seedError\n$note';
+    }
+  }
+  bool darkMode = false;
   try {
-    await DatabaseHelper.instance
-        .seedQuestionPacks(await QuestionPacks.loadAll());
-  } catch (_) {
-    // يبقى التطبيق يعمل بلا أسئلة صادق («قيد الإعداد»).
+    darkMode = await store.isDarkMode();
+  } catch (e) {
+    debugPrint('ABQARIYA dark_mode read error: $e');
   }
-  final bool darkMode = await store.isDarkMode();
-  runApp(AbqariyaApp(store: store, startDarkMode: darkMode));
+  runApp(AbqariyaApp(
+    store: store,
+    startDarkMode: darkMode,
+    initError: initError,
+    seedError: seedError,
+  ));
 }
 
 /// أسماء المسارات — مرجع واحد يتشاركه كل التنقل في التطبيق.
@@ -59,10 +90,21 @@ class AbqariyaApp extends StatefulWidget {
     super.key,
     required this.store,
     required this.startDarkMode,
+    this.initError,
+    this.seedError,
   });
 
   final ProgressStore store;
   final bool startDarkMode;
+
+  /// Set when the local database could not be opened at all — the app
+  /// then shows an error-only screen instead of crashing before the
+  /// first frame.
+  final String? initError;
+
+  /// Set when seeding (curriculum / question packs) failed or a pack
+  /// was skipped — shown as a banner on the home screen.
+  final String? seedError;
 
   @override
   State<AbqariyaApp> createState() => _AbqariyaAppState();
@@ -86,12 +128,41 @@ class _AbqariyaAppState extends State<AbqariyaApp> {
   }
 
   Future<void> _setDarkMode(bool enabled) async {
-    await widget.store.setDarkMode(enabled);
+    try {
+      await widget.store.setDarkMode(enabled);
+    } catch (e) {
+      // فشل الحفظ لا يمنع تبديل المظهر في الجلسة الحالية.
+      debugPrint('ABQARIYA setDarkMode error: $e');
+    }
     _themeMode.value = enabled ? ThemeMode.dark : ThemeMode.light;
   }
 
   @override
   Widget build(BuildContext context) {
+    // Database open failure: an honest error-only screen, never a
+    // crash before the first frame and never a fake empty home.
+    final String? initError = widget.initError;
+    if (initError != null) {
+      return MaterialApp(
+        title: 'عبقرية',
+        debugShowCheckedModeBanner: false,
+        locale: const Locale('ar'),
+        home: Scaffold(
+          appBar: AppBar(title: const Text('عبقرية')),
+          body: Center(
+            child: Padding(
+              padding: const EdgeInsets.all(24),
+              child: Text(
+                'تعذّر تشغيل التطبيق.\n$initError\n\n'
+                'جرّب إعادة تشغيل التطبيق؛ إن تكررت المشكلة فأعد تثبيته '
+                '(سيُفقد التقدّم المحفوظ على الجهاز).',
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+        ),
+      );
+    }
     return ValueListenableBuilder<ThemeMode>(
       valueListenable: _themeMode,
       builder: (BuildContext context, ThemeMode mode, Widget? child) {
@@ -122,7 +193,10 @@ class _AbqariyaAppState extends State<AbqariyaApp> {
       case AppRoutes.home:
         return MaterialPageRoute<void>(
           settings: settings,
-          builder: (_) => HomeScreen(store: store),
+          builder: (_) => HomeScreen(
+            store: store,
+            seedError: widget.seedError,
+          ),
         );
       case AppRoutes.worlds:
         return MaterialPageRoute<void>(
@@ -166,6 +240,11 @@ class _AbqariyaAppState extends State<AbqariyaApp> {
         return MaterialPageRoute<void>(
           settings: settings,
           builder: (_) => const EditionScreen(),
+        );
+      case AppRoutes.cell3d:
+        return MaterialPageRoute<void>(
+          settings: settings,
+          builder: (_) => const Cell3DScreen(),
         );
       case AppRoutes.analytics:
         return MaterialPageRoute<void>(
