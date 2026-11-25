@@ -51,3 +51,19 @@ flutter {
 dependencies {
     // No extra Android dependencies in v1 — offline only.
 }
+
+// file_picker 8.x hardcodes `compileSdk 34` in its own build.gradle, but its
+// flutter_plugin_android_lifecycle dependency requires compileSdk 36+
+// (CI run #88 failed at :file_picker:checkReleaseAarMetadata).
+// The app's own compileSdk = 36 does not propagate to plugin modules, so
+// raise every Android library module to 36 here. This only widens the
+// compile-time API surface; minSdk stays 21.
+// (Root build.gradle.kts forces subprojects to evaluate after :app, so this
+// hook is registered before :file_picker is evaluated.)
+rootProject.subprojects {
+    afterEvaluate {
+        extensions.findByType<com.android.build.gradle.LibraryExtension>()?.let {
+            it.compileSdk = 36
+        }
+    }
+}
