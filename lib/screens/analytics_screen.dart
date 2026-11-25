@@ -172,7 +172,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
               ),
             ),
             const SizedBox(height: 8),
-            Text(
+            const Text(
               'تظهر التحليلات بعد 5 محاولات على الأقل — الدقة، ونقاط '
               'القوة والضعف لكل مادة ووحدة، واتجاه آخر 7 أيام.',
               textAlign: TextAlign.center,
