@@ -41,9 +41,16 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  # أصول خفيفة في v1: بيانات JSON فقط (هيكل المنهج + الأسئلة التجريبية
-  # + مخطط الاستيراد). لا صور ولا فيديو ولا محرك 3D ولا ملفات صوتية.
+  # أصول خفيفة في v1: بيانات JSON فقط (هيكل المنهج + حزم الأسئلة الموثقة
+  # + الأسئلة التجريبية + مخطط الاستيراد). لا صور ولا فيديو ولا محرك 3D ولا ملفات صوتية.
   assets:
     - assets/data/curriculum.json
     - assets/data/demo_questions.json
+    - assets/data/questions/arabic.json
+    - assets/data/questions/biology.json
+    - assets/data/questions/chemistry.json
+    - assets/data/questions/english.json
+    - assets/data/questions/islamic.json
+    - assets/data/questions/math.json
+    - assets/data/questions/physics.json
     - assets/schema/content_schema.json
