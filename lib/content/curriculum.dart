@@ -12,7 +12,9 @@ import 'package:flutter/services.dart';
 /// المرجع الافتراضي: نسخة صنعاء 2027 (`default_edition: sanaa`) —
 /// قرار المستخدم 2026-11-25. نسخة عدن مذكورة فقط كسطور مقارنة موثقة
 /// (حقل `aden_comparison`) وليست محتوى رئيسياً. الكيمياء: حُسم الخلاف
-/// السابق (7 مقابل 9 وحدات) لصالح 7 وحدات — نسخة صنعاء 2027.
+/// السابق (7 مقابل 9 وحدات) — تصحيح 2026-11-25: ملف PDF نفسه 9 وحدات، فاعتُمدت 9 وحدات — نسخة صنعاء 2027.
+/// الأحياء: حُسم الخلاف السابق (التغذية البشرية مقابل التقانة الحيوية) —
+/// تصحيح 2026-11-25: ملف PDF نفسه يقول إن الوحدة 6 «التقانة الحيوية» (9 دروس)، فاعتُمدت — نسخة صنعاء 2027.
 /// انظر `docs/CURRICULUM.md`.
 class CurriculumLesson {
   const CurriculumLesson({required this.number, required this.title});
@@ -109,8 +111,8 @@ class CurriculumSubject {
   /// سطر مقارنة موثق مع نسخة عدن (ليس محتوى رئيسياً).
   final String? adenComparison;
 
-  /// الوحدات المعروضة افتراضياً: وحدات المادة نفسها، أو — للكيمياء —
-  /// وحدات النسخة الافتراضية (أ: 7 وحدات).
+  /// الوحدات المعروضة افتراضياً: وحدات المادة نفسها. الكيمياء:
+  /// 9 وحدات موثقة من ملف PDF نفسه (تصحيح 2026-11-25).
   List<CurriculumUnit> get defaultUnits {
     if (units.isNotEmpty) return units;
     final String? def = defaultVariantId;
@@ -236,14 +238,15 @@ class CurriculumData {
     return null;
   }
 
-  /// عدد الدروس الكلي في العرض الافتراضي (الكيمياء بالنسخة أ).
+  /// عدد الدروس الكلي في العرض الافتراضي (الكيمياء 9 وحدات موثقة من PDF؛ الأحياء: الوحدة 6 تقانة حيوية 9 دروس موثقة من PDF).
   int get totalLessons =>
       subjects.fold<int>(0, (int s, CurriculumSubject sub) => s + sub.lessonCount);
 
   /// صفوف جاهزة لزرع جداول subjects/units/lessons في SQLite
   /// (هيكل فقط — بلا أسئلة). تطابق مخطط `lib/db/schema.dart` v2
   /// (الأعمدة الرسمية: name_ar/source/source_detail/is_demo).
-  /// الكيمياء تُزرع بنسخة صنعاء (7 وحدات). مصدر كل صف هو كتابه
+  /// الكيمياء تُزرع بنسخة صنعاء (9 وحدات موثقة من ملف PDF). الأحياء تُزرع
+  /// بنسخة صنعاء (الوحدة 6 تقانة حيوية، 9 دروس، موثقة من ملف PDF). مصدر كل صف هو كتابه
   /// (عنوان + طبعة صنعاء 2027 + رابط المصدر).
   List<Map<String, Object>> seedRows() {
     final List<Map<String, Object>> rows = <Map<String, Object>>[];
