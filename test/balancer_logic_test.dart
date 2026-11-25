@@ -1,14 +1,24 @@
-// ABQARIYA tests — balancer / gating logic: XP levels, badges,
-// daily reward, exam gating.
+// ABQARIYA tests — balancer / gating logic: stars + XP rules,
+// exam gating, analytics readiness.
 // NOTE: NOT RUN HERE. No Flutter/Dart SDK is available in this
 // environment, so these tests were written carefully but never executed.
 // Run with: flutter test
+//
+// 2026-11-25 (v0.1.2 data layer): the dead `lib/achievements/`
+// system was deleted — its XP-level curve (level 2 at 100 XP, level 3
+// at 250, level 4 at 450, ...) conflicted with the canonical curve in
+// `lib/core/progress_store.dart` (flat 500 XP per level, already locked
+// by test/smoke_test.dart), and its badges / daily reward had no live
+// caller (the achievements screen uses its own kAchievementDefs +
+// DatabaseHelper.getUnlockedAchievementIds()). The XP assertions below
+// now test the canonical per-game rules in
+// `lib/models/game_result.dart` (starsForAccuracy / xpFor) instead.
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:abqariya/achievements/achievements.dart';
 import 'package:abqariya/analytics/analytics_engine.dart';
 import 'package:abqariya/exam/ministerial_exam.dart';
+import 'package:abqariya/models/game_result.dart';
 import 'package:abqariya/models/question.dart';
 
 Question demoQ(String id, String subject) => Question(
@@ -23,104 +33,65 @@ Question demoQ(String id, String subject) => Question(
       source: 'demo — not Yemeni curriculum',
     );
 
+GameResult demoResult({
+  required int totalQuestions,
+  required int correct,
+  int streakBonus = 0,
+}) =>
+    GameResult(
+      modeId: 'quiz',
+      subject: 'physics',
+      totalQuestions: totalQuestions,
+      correct: correct,
+      wrong: totalQuestions - correct,
+      skipped: 0,
+      bestStreak: correct,
+      streakBonus: streakBonus,
+      elapsedSeconds: 60,
+      perQuestionCorrect: List<bool>.filled(totalQuestions, true),
+      wrongQuestionIds: const <String>[],
+    );
+
 void main() {
-  group('XP levels', () {
-    test('level 1 at 0 XP, level 2 at 100 XP', () {
-      expect(levelForXp(0), 1);
-      expect(levelForXp(99), 1);
-      expect(levelForXp(100), 2);
-      expect(xpForLevel(2), 100);
-      expect(xpForLevel(3), 250); // 100 + 150
-      expect(xpForLevel(4), 450); // + 200
+  group('stars (canonical: game_result.dart)', () {
+    test('star thresholds: 90/70/50', () {
+      expect(starsForAccuracy(100), 3);
+      expect(starsForAccuracy(90), 3);
+      expect(starsForAccuracy(89.9), 2);
+      expect(starsForAccuracy(70), 2);
+      expect(starsForAccuracy(69.9), 1);
+      expect(starsForAccuracy(50), 1);
+      expect(starsForAccuracy(49.9), 0);
+      expect(starsForAccuracy(0), 0);
     });
 
-    test('progress inside a level', () {
-      final (into, needed) = xpProgressInLevel(120);
-      expect(into, 20);
-      expect(needed, 150);
-    });
-  });
+    test('GameResult derives stars / passed from accuracy', () {
+      final passed = demoResult(totalQuestions: 10, correct: 9);
+      expect(passed.accuracyPercent, 90);
+      expect(passed.stars, 3);
+      expect(passed.passed, true);
+      expect(passed.needsRetry, false);
 
-  group('badges', () {
-    BadgeProgress progressWith({
-      required double physicsMastery,
-      required int physicsCorrect,
-    }) =>
-        BadgeProgress(
-          totalXp: 0,
-          level: 1,
-          masteryBySubject: {'physics': physicsMastery},
-          correctBySubject: {'physics': physicsCorrect},
-          gamesFinished: 1,
-          bestStreak: 0,
-          activeDays: 1,
-        );
-
-    test('physics badge needs >=80% AND >=10 correct', () {
-      expect(
-        unlockedBadges(progressWith(physicsMastery: 100, physicsCorrect: 9))
-            .any((b) => b.id == 'physics_genius'),
-        false,
-      );
-      expect(
-        unlockedBadges(progressWith(physicsMastery: 80, physicsCorrect: 10))
-            .any((b) => b.id == 'physics_genius'),
-        true,
-      );
-      expect(
-        unlockedBadges(progressWith(physicsMastery: 79, physicsCorrect: 50))
-            .any((b) => b.id == 'physics_genius'),
-        false,
-      );
-    });
-
-    test('first-game badge unlocks after one game', () {
-      const p = BadgeProgress(
-        totalXp: 0,
-        level: 1,
-        masteryBySubject: {},
-        correctBySubject: {},
-        gamesFinished: 1,
-        bestStreak: 0,
-        activeDays: 1,
-      );
-      expect(unlockedBadges(p).any((b) => b.id == 'first_game'), true);
-    });
-
-    test('no badges with zero progress', () {
-      const p = BadgeProgress(
-        totalXp: 0,
-        level: 1,
-        masteryBySubject: {},
-        correctBySubject: {},
-        gamesFinished: 0,
-        bestStreak: 0,
-        activeDays: 0,
-      );
-      expect(unlockedBadges(p), isEmpty);
+      final failed = demoResult(totalQuestions: 10, correct: 4);
+      expect(failed.accuracyPercent, 40);
+      expect(failed.stars, 0);
+      expect(failed.passed, false);
+      expect(failed.needsRetry, true);
     });
   });
 
-  group('daily reward', () {
-    test('can claim once per local day, streak grows on consecutive days', () {
-      final day1 = DateTime(2026, 11, 25);
-      const state = DailyRewardState();
-      expect(state.canClaimToday(now: day1), true);
-      final (after1, xp1) = state.claim(now: day1);
-      expect(xp1, 20);
-      expect(after1.canClaimToday(now: day1), false);
-      expect(after1.claim(now: day1).$2, 0); // second claim same day: 0
-      final (after2, xp2) = after1.claim(now: DateTime(2026, 11, 26));
-      expect(xp2, 25); // consecutive day: 20 + 5
-      expect(after2.streakDays, 2);
+  group('XP (canonical: game_result.dart)', () {
+    test('xpFor: 10 per correct + 5 per streak bonus', () {
+      expect(xpFor(correct: 5, streakBonus: 0), 50);
+      expect(xpFor(correct: 5, streakBonus: 3), 65);
+      expect(xpFor(correct: 0, streakBonus: 0), 0);
+      expect(xpFor(correct: 10, streakBonus: 8), 140);
     });
 
-    test('skipping a day resets the streak, reward capped at 50', () {
-      final (s, _) =
-          const DailyRewardState().claim(now: DateTime(2026, 11, 25));
-      final (s2, xp) = s.claim(now: DateTime(2026, 11, 28));
-      expect(s2.streakDays, 1);
-      expect(xp, 20);
+    test('GameResult.xpEarned follows xpFor', () {
+      final result =
+          demoResult(totalQuestions: 10, correct: 7, streakBonus: 5);
+      expect(result.xpEarned, 70 + 25);
     });
   });
 
