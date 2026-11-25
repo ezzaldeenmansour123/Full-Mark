@@ -45,12 +45,25 @@ jobs:
           cache: true
 
       - name: Regenerate missing platform scaffolding if needed
-        # Safety net: if android/ (or ios/) scaffolding is incomplete in the
-        # repo, `flutter create .` fills the gaps without touching lib/.
+        # Safety net: if android/ scaffolding is incomplete in the repo
+        # (launcher icons or the Gradle wrapper), `flutter create .` fills
+        # the gaps. Without --overwrite it never touches existing files
+        # (lib/main.dart, pubspec.yaml, ...); it only creates missing ones.
+        # It DOES create test/widget_test.dart from the Flutter 3.50
+        # template, which imports package:material_ui and references the
+        # template's MyApp — both absent from this project — so delete it
+        # before analyze (our own tests live in test/ already).
         run: |
-          if [ ! -f android/app/src/main/res/mipmap-hdpi/ic_launcher.png ]; then
-            echo "Launcher icons missing — regenerating platform scaffolding"
+          if [ ! -f android/app/src/main/res/mipmap-hdpi/ic_launcher.png ] || [ ! -f android/gradlew ]; then
+            echo "Platform scaffolding incomplete — regenerating"
             flutter create . --org com.abqariya --project-name abqariya --platforms android
+            # Delete the generated template test ONLY if it is still the
+            # template (material_ui import / MyApp): never delete a real
+            # widget test written for this app.
+            if grep -q "material_ui\|MyApp" test/widget_test.dart 2>/dev/null; then
+              echo "Removing generated template test/widget_test.dart"
+              rm -f test/widget_test.dart
+            fi
           fi
 
       - name: Install dependencies
