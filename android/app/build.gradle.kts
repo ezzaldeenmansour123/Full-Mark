@@ -6,7 +6,11 @@ plugins {
 
 android {
     namespace = "com.abqariya.app"
-    compileSdk = flutter.compileSdkVersion
+    // compileSdk 36 (not flutter.compileSdkVersion): file_picker's
+    // flutter_plugin_android_lifecycle dependency requires consumers to
+    // compile against Android API 36+. Flutter 3.50.1's default is lower,
+    // so the release build failed at :file_picker:checkReleaseAarMetadata.
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
